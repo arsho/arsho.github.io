@@ -2,20 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Shovon&#39;s Diary</title>
-    <link>https://example.com/categories/</link>
+    <link>https://arshovon.com/categories/</link>
     <description>Recent content in Categories on Shovon&#39;s Diary</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zn-Hans</language>
     
-	<atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arshovon.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Test</title>
-      <link>https://example.com/categories/test/</link>
+      <link>https://arshovon.com/categories/test/</link>
       <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
       
-      <guid>https://example.com/categories/test/</guid>
+      <guid>https://arshovon.com/categories/test/</guid>
       <description></description>
     </item>
     

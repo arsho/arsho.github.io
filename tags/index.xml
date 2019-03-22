@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Shovon&#39;s Diary</title>
-    <link>https://example.com/tags/</link>
+    <link>https://arshovon.com/tags/</link>
     <description>Recent content in Tags on Shovon&#39;s Diary</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zn-Hans</language>
     
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arshovon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
