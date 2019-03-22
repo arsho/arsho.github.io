@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shovon&#39;s Diary</title>
+    <title>Ahmedur Rahman Shovon</title>
     <link>https://arshovon.com/</link>
-    <description>Recent content on Shovon&#39;s Diary</description>
+    <description>Recent content on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 22 Mar 2019 12:17:54 +0600</lastBuildDate>
     
@@ -16,7 +16,7 @@
       <pubDate>Fri, 22 Mar 2019 12:17:54 +0600</pubDate>
       
       <guid>https://arshovon.com/blog/2019-03/my-first-post/</guid>
-      <description>HAHAHAHAHA</description>
+      <description>Demo post</description>
     </item>
     
     <item>
