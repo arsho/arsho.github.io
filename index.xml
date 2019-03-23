@@ -28,5 +28,14 @@
       <description>__author__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; __license__ = &amp;quot;GPL&amp;quot; __version__ = &amp;quot;1.0.1&amp;quot; __maintainer__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; import turtle def draw(x_position, y_position, font, value): turtle.up() turtle.goto(x_position, y_position) turtle.write(value,font=font) turtle.down() turtle.hideturtle() canvas_width = 405 canvas_height = 490 turtle.setup(canvas_width, canvas_height, 0, 0) font_color = &#39;red&#39; turtle.color(font_color) turtle.title(&amp;quot;8 of diamond by arsho&amp;quot;) diamond_size = 100 small_diamond_size = 35 number_size = 40 diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, diamond_size, &amp;quot;normal&amp;quot;) small_diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, small_diamond_size, &amp;quot;normal&amp;quot;) number_font = (&amp;quot;Comic Sans MS&amp;quot;, number_size, &amp;quot;normal&amp;quot;) card_value = &amp;quot;8&amp;quot; diamond_value = &amp;quot;\u2666&amp;quot; x_position_left = -170 x_position_middle = -60 x_position_right = 50 y_position = -210 y_distance = 70 top_8_x_position = -190 top_8_y_position = 180 bottom_8_x_position = 150 bottom_8_y_position = -240 top_diamond_x_position = -193 top_diamond_y_position = 135 bottom_diamond_x_position = 145 bottom_diamond_y_position = -190 # Draw top 8 draw(top_8_x_position, top_8_y_position, number_font, card_value) # Draw top diamond draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value) # Draw bottom 8 draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value) # Draw bottom diamond draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value) for i in range(5): if i%2==0: # Draw two diamonds draw(x_position_left, y_position, diamond_font, diamond_value) draw(x_position_right, y_position, diamond_font, diamond_value) else: # Draw two diamonds draw(x_position_middle, y_position, diamond_font, diamond_value) y_position += y_distance  </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://arshovon.com/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arshovon.com/resume/</guid>
+      <description>Ahmedur Rahman Shovon      window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;UA-119139307-1&#39;);    Ahmedur Rahman Shovon Surfer of Technology    shovon.sylhet@gmail.com    8801731246426    arshovon.com    arsho    arsho    arsho    arsho    arsho    arshovon    ars.</description>
+    </item>
+    
   </channel>
 </rss>

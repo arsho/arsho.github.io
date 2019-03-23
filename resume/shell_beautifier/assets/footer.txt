@@ -1,0 +1,40 @@
+                    </div>
+                    <!-- /.accordian -->
+                    </div>
+                    <!-- /.panelbody -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Panels and Wells -->
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="assets/js/sb-admin.js"></script>
+    <script>
+    // tooltip demo
+    $('#accordion').tooltip({
+        selector: "[data-toggle=tooltip]",
+        container: "body"
+    })
+
+    // popover demo
+    $("[data-toggle=popover]")
+        .popover()
+    </script>
+
+</body>
+
+</html>
