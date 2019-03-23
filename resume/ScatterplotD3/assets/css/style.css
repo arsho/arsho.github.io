@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron:500,400,700);
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+body {
+    margin: 0px auto !important;
+    font-family: "Dosis" !important;
+    font-size: 180%;
+}
+.wrapper{
+    margin: 50px auto 0px auto !important;
+    background:  url('../images/graph.png'); 
+    background-repeat: repeat;
+    overflow-x: hidden !important;
+    padding: 0px !important;    
+}
+.container{
+    background: rgba(255, 255, 255, 0.65);  
+}
+.heading-custom {
+    color: #0A2848 !important;
+    margin: 10px auto !important;
+    font-family: "Calligraffitti";
+    font-weight: bold;
+}
+
+.header-custom{
+    text-align: center;
+    border-bottom: 2px solid #0A2848 !important;
+    box-shadow: 0 0 4px 2px #0A2848 !important;
+    -moz-box-shadow: 0 0 4px 2px #0A2848 !important;
+    -o-box-shadow: 0 0 4px 2px #0A2848 !important;
+    -webkit-box-shadow: 0 0 4px 2px #0A2848 !important;
+    background: white;    
+    margin: 10px auto !important;
+
+}
+#description{
+    font-size: 80%;
+    text-align: justify;
+}
+#Chart{
+    background-color: white;
+    margin: 5px auto !important;
+    box-shadow: 0 0 2px 2px #0A2848 !important;
+    -moz-box-shadow: 0 0 2px 2px #0A2848 !important;
+    -o-box-shadow: 0 0 2px 2px #0A2848 !important;
+    -webkit-box-shadow: 0 0 2px 2px #0A2848 !important;
+}
+
+.tooltip-inner{
+    padding: 4px !important;
+    margin: 0px auto !important;    
+    background: #0A2848 !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    text-align: center !important;    
+}
+.tooltip-arrow{
+    /*border-top-color: #0A2848 !important;*/
+    border-bottom-color: #0A2848 !important;
+    /*border-left-color: #0A2848 !important;*/
+    /*border-right-color: #0A2848 !important;*/
+}
+.navbar{
+    border-bottom: 2px solid #204d74;
+    font-family: 'Orbitron', sans-serif;    
+    font-size: 90%;
+}
+.navbar-brand,.navbar li a{
+    color: #0A2848 !important;
+    transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+}
+.navbar-brand:hover,.navbar li a:hover{
+    color: white !important;    
+    background: #0A2848 !important;
+    transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+}
+.navbar-brand{
+    font-family: "Calligraffitti";
+    font-weight: bold;
+}
+
+/*Footer starts*/
+.footer {
+    background: aliceblue !important;
+    padding: 10px !important;
+}
+.footer p{
+    padding: 0px !important;    
+}
+.footer .pull-left{
+    line-height: 30px !important;
+}
+.social:hover {
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+}
+.social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+/*
+    Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+    color: #3B5998;
+}
+
+/*Footer ends*/
+
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1.5s infinite;
+    -moz-animation: blink 1.5s infinite;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* D3 starts */
+svg{
+    padding: 0px;
+    margin: 0px auto;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.d3-tip {
+    line-height: 1;
+    padding: 12px;
+    background: RGBA(10,40,72,0.9);
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 11px;
+    width: 100%;
+    line-height: 1;
+    color: #0A2848 !important;
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -3px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+/* D3 ends*/

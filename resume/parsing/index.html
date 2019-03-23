@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<button id="run">Run</button>
+		<div id="res"></div>
+		<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$("#run").on("click",function(){
+					$.ajax({
+	                    url: "http://api.themoviedb.org/3/find/tt0478970?external_source=imdb_id&api_key=f246d5e5105e9934d3cd4c4c181d618d",
+	                    //force to handle it as text
+	                    dataType: "text",
+	                    success: function(data) {	                        
+	                        //data downloaded so we call parseJSON function and pass downloaded data
+	                        var json = $.parseJSON(data);
+	                        //now json variable contains data in json format
+	                        //let's display the id
+	                        $('#res').html('ID: ' + json["movie_results"][0]["id"] + '<br />');
+	                    }
+	                });
+				});
+			})
+
+
+		</script>
+	</body>
+</html>
