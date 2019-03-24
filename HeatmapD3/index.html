@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualize Data with heatmap using D3.js by arsho</title>
+    <link rel='stylesheet prefetch' href='assets/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='assets/css/animate.min.css'>
+    <link rel='stylesheet prefetch' href='assets/css/font-awesome/css/font-awesome.css'>
+    <link rel="icon" href="assets/images/bar.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--navbar starts-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div id="nav" class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll wow fadeInLeftBig" href="#Home">Heatmap</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right wow fadeInRightBig">
+                    <li><a id="fullScreenBtn" data-toggle="tooltip" data-placement="bottom" title="Chart in full screen" class="page-scroll" href="#" target="_blank">View Fullscreen</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!--navbar ends-->
+    <div class="wrapper" id="Home" style="padding: 0px 30px !important;">
+        <div class="">
+            <div class="row header-custom">
+                <h2 class="heading-custom wow fadeInDownBig" style="padding: 0px !important; margin: 5px auto 0 auto !important;">Monthly Global Land-Surface Temperature</h2>
+                <strong>1753 - 2015 </strong>
+                <br> Temperatures are in Celsius and reported as anomalies relative to the Jan 1951-Dec 1980 average. Estimated Jan 1951-Dec 1980 absolute temperature ℃: 8.66 +/- 0.07
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" id="Chart">
+            </div>
+            <h4 id="description" class="wow fadeIn">
+<dl class="dl-horizontal" style="float:right;">
+  <dt>Details View</dt>
+  <dd>Move mouse over the map to see the details temparature information</dd>
+  <dt>Mark Region</dt>
+  <dd>Click on the colored legend to show the specific colored region in the map</dd>
+  <dt>Show All</dt>
+  <dd>Click on the "Show All" colored legend to show all regions</dd>
+</dl>
+                </h4>
+
+
+            <div class="clearfix"></div>
+            <!--Footer starts-->
+            <div class="row footer">
+                <p class="pull-left wow fadeInLeftBig">© 2016 - Made with love by
+                    <a data-toggle="tooltip" data-placement="top" title="Ahmedur Rahman Shovon" href="https://www.facebook.com/ars.shovon" target="_blank">arsho</a>
+                </p>
+
+                <span class="pull-right wow fadeInRightBig">
+                        <a data-toggle="tooltip" data-placement="top" title="Facebook" href="https://www.facebook.com/ars.shovon"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                        <a data-toggle="tooltip" data-placement="top" title="Github" href="https://github.com/arsho/"><i id="social-gh" class="fa fa-github-square fa-2x social"></i></a>
+                        <a data-toggle="tooltip" data-placement="top" title="Codepen.io" href="http://codepen.io/arsho/"><i id="social-cp" class="fa fa-codepen fa-2x social"></i></a>
+                    </span>
+            </div>
+
+            <!--Footer ends-->
+
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /wrapper -->
+    <script src='assets/js/jquery.min.js'></script>
+    <script src='assets/js/bootstrap.min.js'></script>
+    <script src='assets/js/tooltip.js'></script>
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/d3.v3.min.js"></script>
+    <script src="assets/js/d3.tip.v0.6.3.js"></script>
+    <script src="assets/js/heatmap.js"></script>
+</body>
+
+</html>

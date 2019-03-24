@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="shortcut icon" href="assets/css/linux.ico" type="image/x-icon">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shell Beautifier</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Panels and Wells -->
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="assets/css/sb-admin.css" rel="stylesheet">
+	<script type="text/javascript" src="assets/scripts/shCore.js"></script>
+	<script type="text/javascript" src="assets/scripts/shBrushBash.js"></script>
+	<link type="text/css" rel="stylesheet" href="assets/styles/shCoreDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Shell Beautifier</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="https://www.facebook.com/ars.shovon"><i class="fa fa-user fa-fw"></i> Created By Shovon</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="https://www.facebook.com/ars.shovon"><i class="fa fa-facebook fa-fw"></i> Connect In Facebook</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+        </nav>
+
+        <div id="page-wrapper">
+			<br/><br/>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Beautified Shell Script <small>(Click on the title to toggle collapse mode)</small>
+                        </div>
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion">
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle calculator.sh" class="panel panel-default">
+<div data-toggle="collapse" href="#assignment_shovon0" class="panel-heading">
+<h4 class="panel-title">
+calculator.sh
+</h4>
+</div>
+<div id="assignment_shovon0" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+echo "===========================================";
+echo "                Calculator";
+echo "===========================================";
+printf "Enter a number: ";
+read num1;	#scanning number1
+
+printf "Enter another number: ";
+read num2;	#scanning number2
+
+#stroing sum of two numbers
+sum=$(echo "$num1+$num2" | bc -l);
+
+#stroing substraction of two numbers
+sub1=$(echo "$num1-$num2" | bc -l);
+sub2=$(echo "$num2-$num1" | bc -l);
+
+#stroing multiplication of two numbers
+mul=$(echo "$num1*$num2" | bc -l);
+
+#stroing division of two numbers
+div1=$(echo "$num1/$num2" | bc -l);
+div2=$(echo "$num2/$num1" | bc -l);
+
+echo "";	#printing blank line
+#selecting operation
+echo "Select any of the following operation:";
+echo "1. "$num1 "+" $num2;
+echo "2. "$num1 "-" $num2;
+echo "3. "$num2 "-" $num1;
+echo "4. "$num1 "x" $num2;
+echo "5. "$num1 "/" $num2;
+echo "6. "$num2 "/" $num1;
+echo "7. All of the above";
+echo "8. Exit";
+
+for((i=0;;i++))
+do
+echo "";	#printing blank line
+printf "Enter choice(any integer from 1-8): ";
+read choice;
+
+case $choice in
+1)
+echo $num1 "+" $num2 "=" $sum;
+;;
+2)
+echo $num1 "-" $num2 "=" $sub1;
+;;
+3)
+echo $num2 "-" $num1 "=" $sub2;
+;;
+4)
+echo $num1 "x" $num2 "=" $mul;
+;;
+5)
+echo $num1 "/" $num2 "=" $div1;
+;;
+6)
+echo $num2 "/" $num1 "=" $div2;
+;;
+7)
+#printing all results
+echo $num1 "+" $num2 "=" $sum;
+echo $num1 "-" $num2 "=" $sub1;
+echo $num2 "-" $num1 "=" $sub2;
+echo $num1 "x" $num2 "=" $mul;
+echo $num1 "/" $num2 "=" $div1;
+echo $num2 "/" $num1 "=" $div2;
+;;
+8)
+#exit the program
+break;
+;;
+*)
+echo "Invalid Choice";
+;;
+esac;
+done
+</pre>
+</div>
+ </div>
+ </div>
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle check_arg.sh" class="panel panel-info">
+<div data-toggle="collapse" href="#assignment_shovon1" class="panel-heading">
+<h4 class="panel-title">
+check_arg.sh
+</h4>
+</div>
+<div id="assignment_shovon1" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+printf "Enter command line argument: ";
+read cmd;	#scanning command line arg
+echo ""		#printing blank line
+	
+#checking if its a file
+if [ -f "$cmd" ];
+then
+	echo $cmd "is a valid file.";
+
+#checking if its a directory
+elif [ -d "$cmd" ];
+then
+	echo $cmd "is a directory";
+
+#otherwise ifs something else
+else
+	echo $cmd "is neither a file nor a directory";
+fi 
+
+
+echo ""		#printing blank line
+echo ""		#printing blank line
+</pre>
+</div>
+ </div>
+ </div>
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle copy_file.sh" class="panel panel-default">
+<div data-toggle="collapse" href="#assignment_shovon2" class="panel-heading">
+<h4 class="panel-title">
+copy_file.sh
+</h4>
+</div>
+<div id="assignment_shovon2" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+echo ""		#printing blank line
+echo "		Multiple File Copier";
+echo "		====================";
+
+printf "Enter Destination Directory: ";
+read dest;	#scanning destination directory
+
+#checking if the destination is available
+if [ -d "$dest" ];
+then
+	printf "Enter Filename";
+	printf "(if multiple keep space between names): ";
+	read file;	#scanning filenames
+	echo ""		#printing blank line
+	echo ""		#printing blank line
+
+	#counting files in the destination before start copy
+	oldcnt=$(find $dest -type f | wc -l);
+	#copy command
+	cp=`cp $file $dest`;
+	#listing command
+	ls=`ls $dest`;
+	#counting files in the destination after copy
+	newcnt=$(find $dest -type f | wc -l);
+	#counting successful copied number of files
+	number_of_copied_file=$(($newcnt-$oldcnt));
+
+	#if copied file > 0
+	if [ $number_of_copied_file -ne 0 ];
+	then
+		echo $number_of_copied_file "Files Copied Successfully";
+		echo "Now Direcotry" $dest "Contains:";
+		echo $ls;
+	#if copied file = 0
+	else
+	echo "No New File Is Copied To" $dest ". Check The Filename Again.";
+	fi
+
+#if directory not found
+else
+echo "No Such Directory Found";
+fi
+
+
+echo ""		#printing blank line
+echo ""		#printing blank line
+</pre>
+</div>
+ </div>
+ </div>
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle list_file.sh" class="panel panel-info">
+<div data-toggle="collapse" href="#assignment_shovon3" class="panel-heading">
+<h4 class="panel-title">
+list_file.sh
+</h4>
+</div>
+<div id="assignment_shovon3" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+echo ""		#printing blank line
+echo ""		#printing blank line
+echo "Listing files";
+echo "=============";
+
+echo ""		#printing blank line
+printf "Enter directory absolute path"
+printf "(pwd for current directory): ";
+read dirname;	#scanning dirname from user
+pwd=`pwd`;	#extracting current directory
+
+#if user enter pwd then 
+#change dirname to 
+#the current directory path
+
+if [ "$dirname" == "pwd" ];
+then
+	dirname=$pwd;
+fi
+
+echo "Entered directory: "$dirname;
+ls1="ls -1 $dirname";	#creating a string
+ls=`$ls1`;		#command line argument
+
+
+lsarray=( $ls );	#creating array from the output string
+len=${#lsarray[@]};	#getting array length
+
+if [ $len -ne 0 ];	#show the files if length is not 0
+then
+	echo "Total files in "$dirname "directory = "$len;
+	echo "The files are:"; 	#showing the files
+	for((i=0;i<$len;i++))
+	do
+		echo ${lsarray[$i]};
+	done
+fi
+echo ""		#printing blank line
+</pre>
+</div>
+ </div>
+ </div>
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle power.sh" class="panel panel-default">
+<div data-toggle="collapse" href="#assignment_shovon4" class="panel-heading">
+<h4 class="panel-title">
+power.sh
+</h4>
+</div>
+<div id="assignment_shovon4" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+echo "===========================================";
+echo "               p^q Generator";
+echo "===========================================";
+
+#function to calculate the power
+pow()
+{
+	tmpp=$1;
+	tmpq=$2;
+	res=1;
+	for((i=1;i<=$tmpq;i++))
+	do
+		res=$(($res*$tmpp));
+	done
+	return $res;	#returning the result
+}
+
+printf "Enter p: ";
+read p;		#scanning p
+
+printf "Enter q: ";
+read q;		#scanning q
+
+pow $p $q;	#calling the function for p^q
+result1=$?;	#store the returned value of p^q
+
+pow $q $p;	#calling the function for q^p
+result2=$?	#storing the returned value of q^p
+
+echo "";	#printing blank line
+echo "Select any of the following operation:";
+echo "1. "$p "^" $q;
+echo "2. "$q "^" $p;
+echo "3. All the above";
+echo "4. Exit";
+
+echo "";	#printing blank line
+for((i=0;;i++))
+do
+
+printf "Enter choice: ";
+read choice;
+
+case $choice in
+1)
+echo $p "^" $q "=" $result1;	#printing p^q
+echo "";	#printing blank line
+;;
+2)
+echo $q "^" $p "=" $result2;	#printing q^p
+echo "";	#printing blank line
+;;
+3)
+echo $p "^" $q "=" $result1;	#printing p^q
+echo $q "^" $p "=" $result2;	#printing q^p
+echo "";	#printing blank line
+;;
+4)
+break;
+;;
+esac
+
+done
+</pre>
+</div>
+ </div>
+ </div>
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle reverse_matrix.sh" class="panel panel-info">
+<div data-toggle="collapse" href="#assignment_shovon5" class="panel-heading">
+<h4 class="panel-title">
+reverse_matrix.sh
+</h4>
+</div>
+<div id="assignment_shovon5" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+
+printf "Enter number of rows of a matrix: ";
+read number_of_row;			#scanning number of rows
+
+printf "Enter number of columns of a matrix: ";
+read number_of_column;			#scanning number of columns
+
+echo "Enter a ("$number_of_row "x" $number_of_column") matrix: ";
+
+total_variable=$(($number_of_row*$number_of_column));
+
+for((i=1;i<=$number_of_row;i++))
+do
+	for((j=1;j<=$number_of_column;j++))
+	do
+		printf "Enter Matrix ["$i"]["$j"]: ";
+		pos="$i$j";
+		read matrix[$pos];
+	done
+done
+
+echo "";
+echo "The reverse matrix:";
+for((i=1;i<=$number_of_column;i++))
+do
+	for((j=1;j<=$number_of_row;j++))
+	do
+		pos="$j$i";
+		printf " %9s" ${matrix[$pos]};
+	done
+	echo "";
+done
+
+
+echo "";
+echo "The original matrix:";
+for((i=1;i<=$number_of_row;i++))
+do
+	for((j=1;j<=$number_of_column;j++))
+	do
+		pos="$i$j";
+		printf " %9s" ${matrix[$pos]};
+	done
+	echo "";
+done
+</pre>
+</div>
+ </div>
+ </div>
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle salary.sh" class="panel panel-default">
+<div data-toggle="collapse" href="#assignment_shovon6" class="panel-heading">
+<h4 class="panel-title">
+salary.sh
+</h4>
+</div>
+<div id="assignment_shovon6" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+echo "=====================================";
+echo "         Salary Calculator";
+echo "=====================================";
+
+for((i=0;;i++))
+do
+	printf "Enter basic salary(0 to exit): ";
+	read basic;
+	if [ $basic == 0 ];
+	then
+		break;
+	else
+		a=.1;
+		b=.9;
+		c=.98;
+
+		if [ $basic -le 1500 ];
+		then
+			hra=$(echo "$basic * $a" | bc -l);
+			da=$(echo "$basic * $b" | bc -l);
+		else
+			hra=500;
+			da=$(echo "$basic * $c" | bc -l);
+		fi
+
+		total=$(echo "$basic + $hra + $da" | bc -l);
+		echo "";
+		echo "Calculated Gross Salary";
+		echo "=======================";
+		echo "Basic Salary = "$basic;
+		echo "+        HRA = "$hra;
+		echo "+         DA = "$da;
+		echo "=======================";
+		echo "       Total = "$total;
+		echo "";
+	fi
+done
+</pre>
+</div>
+ </div>
+ </div>
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle upper_case.sh" class="panel panel-info">
+<div data-toggle="collapse" href="#assignment_shovon7" class="panel-heading">
+<h4 class="panel-title">
+upper_case.sh
+</h4>
+</div>
+<div id="assignment_shovon7" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+echo "";	#printing blank line
+echo "		UPPER CASE CONVERTER";
+echo "		====================";
+
+printf "Enter Filename";
+printf "(if multiple keep a space): ";
+read filename;	#scanning filename
+filearray=($filename);
+len=${#filearray[@]};
+
+echo "";	#printing blank line
+echo ${filearray[@]} "are converted successfully";
+echo "We are going to read each file in console to test it.";
+echo "";	#printing blank line
+for((i=0;i<$len;i++))
+do
+	tmpfile=${filearray[$i]};
+	filetext=`tr ['a-z'] ['A-Z'] < $tmpfile`;
+	echo "$filetext" > $tmpfile;
+	echo "Filename:" $tmpfile ":";
+	echo "======================================================";
+	cat $tmpfile;
+	echo "======================================================";
+	echo "";	#printing blank line
+done
+</pre>
+</div>
+ </div>
+ </div>
+<div data-toggle="tooltip" data-placement="top" title="Click to toggle word_count.sh" class="panel panel-default">
+<div data-toggle="collapse" href="#assignment_shovon8" class="panel-heading">
+<h4 class="panel-title">
+word_count.sh
+</h4>
+</div>
+<div id="assignment_shovon8" class="panel-collapse collapse">
+<div class="panel-body">
+<pre class="brush: shell;">
+printf "Enter filename: ";
+read filename;	#scanning filename
+echo ""		#printing blank line
+
+wc=`wc $filename`;	#command sustitute
+wcarray=($wc);		#creating array with output string
+len=${#wcarray[@]};	#getting array length
+
+if [ $len -ne 0 ];	#showing result if len>0
+then
+	echo ""		#printing blank line
+	echo "Details of "$filename;
+	echo "=====================";
+	echo ""		#printing blank line
+	
+	#printing number of lines in the file
+	echo "Total lines = "${wcarray[0]};
+	#printing number of words in the file
+	echo "Total words = "${wcarray[1]};
+	#printing number of characters in the file
+	echo "Total characters = "${wcarray[2]};
+
+	echo ""		#printing blank line
+	echo ""		#printing blank line
+fi
+</pre>
+</div>
+ </div>
+ </div>
+                    </div>
+                    <!-- /.accordian -->
+                    </div>
+                    <!-- /.panelbody -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Panels and Wells -->
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="assets/js/sb-admin.js"></script>
+    <script>
+    // tooltip demo
+    $('#accordion').tooltip({
+        selector: "[data-toggle=tooltip]",
+        container: "body"
+    })
+
+    // popover demo
+    $("[data-toggle=popover]")
+        .popover()
+    </script>
+
+</body>
+
+</html>
