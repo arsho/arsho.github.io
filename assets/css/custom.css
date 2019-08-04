@@ -1,0 +1,36 @@
+/* Navbar */
+.navbar-blog{
+    background: white;
+    color: black;
+}
+
+.navbar-blog .navbar-brand{
+    color: #545e6c;
+}
+
+.navbar-blog a{
+    color: #545e6c;
+}
+
+.navbar-blog a:hover{
+    color: black;
+}
+
+.navbar-toggler {
+    background-color: white;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler-icon-fa{
+    color: black;
+}
+
+/* Sidebar */
+.sidebar_wrapper {
+    background: #a94442;
+    color: #fff;
+}
+
+.sidebar_wrapper a {
+    color: #fff;
+}

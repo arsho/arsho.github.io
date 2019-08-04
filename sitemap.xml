@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://arshovon.com/</loc>
+    <lastmod>2019-05-06T16:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/blog/saas-basic-features/</loc>
+    <lastmod>2019-05-06T16:05:42+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/categories/</loc>
+    <lastmod>2019-05-06T16:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/</loc>
+    <lastmod>2019-05-06T16:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/categories/css/</loc>
+    <lastmod>2019-05-06T16:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/css/</loc>
+    <lastmod>2019-05-06T16:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/saas/</loc>
+    <lastmod>2019-05-06T16:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</loc>
+    <lastmod>2019-05-06T15:05:42+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/git/</loc>
+    <lastmod>2019-05-06T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/categories/installation/</loc>
+    <lastmod>2019-05-06T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/installation/</loc>
+    <lastmod>2019-05-06T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/tree/</loc>
+    <lastmod>2019-05-06T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/ubuntu/</loc>
+    <lastmod>2019-05-06T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/blog/</loc>
+    <lastmod>2018-09-13T22:31:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/snippets/python-reduce-example/</loc>
+    <lastmod>2018-05-07T09:23:37+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/snippets/python-sort-dictionary/</loc>
+    <lastmod>2018-05-07T09:23:37+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/dict/</loc>
+    <lastmod>2018-05-07T09:23:37+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/functional/</loc>
+    <lastmod>2018-05-07T09:23:37+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/python/</loc>
+    <lastmod>2018-05-07T09:23:37+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/snippets/8-diamond/</loc>
+    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/snippets/</loc>
+    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/turtle/</loc>
+    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
