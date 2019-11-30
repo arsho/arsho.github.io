@@ -310,6 +310,14 @@ img[src$="center"] {
   margin: 0 auto;
 }
 
+.blog>article{
+  font-size: 110%;
+}
+
+.blog>article img{
+  max-width: 100%;
+}
+
 .blog>article>h1{
   font-size: 22px;
 }
@@ -334,6 +342,9 @@ img[src$="center"] {
   font-size: 14px;
 }
 
+.taxonomy-title{
+  text-transform: uppercase;
+}
 
 /* Media Queries */
 

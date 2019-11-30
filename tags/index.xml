@@ -6,10 +6,73 @@
     <description>Recent content in Tags on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 May 2019 16:05:42 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 02 Oct 2019 12:14:12 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bootstrap</title>
+      <link>https://arshovon.com/tags/bootstrap/</link>
+      <pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flask</title>
+      <link>https://arshovon.com/tags/flask/</link>
+      <pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c</title>
+      <link>https://arshovon.com/tags/c/</link>
+      <pubDate>Sun, 29 Sep 2019 12:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>file</title>
+      <link>https://arshovon.com/tags/file/</link>
+      <pubDate>Sun, 29 Sep 2019 12:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/file/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csv</title>
+      <link>https://arshovon.com/tags/csv/</link>
+      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/csv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>django</title>
+      <link>https://arshovon.com/tags/django/</link>
+      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://arshovon.com/tags/python/</link>
+      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>css</title>
@@ -66,6 +129,15 @@
     </item>
     
     <item>
+      <title>turtle</title>
+      <link>https://arshovon.com/tags/turtle/</link>
+      <pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate>
+      
+      <guid>https://arshovon.com/tags/turtle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>dict</title>
       <link>https://arshovon.com/tags/dict/</link>
       <pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate>
@@ -80,24 +152,6 @@
       <pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate>
       
       <guid>https://arshovon.com/tags/functional/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://arshovon.com/tags/python/</link>
-      <pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate>
-      
-      <guid>https://arshovon.com/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>turtle</title>
-      <link>https://arshovon.com/tags/turtle/</link>
-      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
-      
-      <guid>https://arshovon.com/tags/turtle/</guid>
       <description></description>
     </item>
     

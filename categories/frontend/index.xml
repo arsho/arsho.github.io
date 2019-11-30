@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>frontend on Ahmedur Rahman Shovon</title>
+    <link>https://arshovon.com/categories/frontend/</link>
+    <description>Recent content in frontend on Ahmedur Rahman Shovon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 May 2019 16:05:42 +0600</lastBuildDate>
+    
+	<atom:link href="https://arshovon.com/categories/frontend/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic features of Saas with example</title>
+      <link>https://arshovon.com/blog/saas-basic-features/</link>
+      <pubDate>Mon, 06 May 2019 16:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/saas-basic-features/</guid>
+      <description>Sass(Syntactically Awesome Style Sheets) is the most mature, stable, and powerful professional grade CSS extension language in the world.
+Features  CSS Compatible: Sass is completely compatible with all versions of CSS. Mature: Sass has been actively supported for about 12 years by its loving Core Team. Frameworks: Popular frameworks built with Sass -&amp;gt; Compass, Bourbon, and Susy. Nesting: HTML elements are nested. But CSS elements are not nested by default.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bootstrap on Ahmedur Rahman Shovon</title>
+    <link>https://arshovon.com/tags/bootstrap/</link>
+    <description>Recent content in bootstrap on Ahmedur Rahman Shovon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Oct 2019 12:14:12 +0600</lastBuildDate>
+    
+	<atom:link href="https://arshovon.com/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example of using Bootstrap&#39;s navbar in Flask</title>
+      <link>https://arshovon.com/snippets/flask-bootstrap-navbar/</link>
+      <pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/snippets/flask-bootstrap-navbar/</guid>
+      <description>Example of using Bootstrap 4&amp;rsquo;s navbar for dynamic routing in Flask.
+Directory structure:
+. ├── app.py ├── requirements.txt └── templates └── index.html  app.py:
+from flask import Flask, render_template app = Flask(__name__) @app.route(&amp;quot;/&amp;quot;) def view_home(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Home page&amp;quot;) @app.route(&amp;quot;/first&amp;quot;) def view_first_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;First page&amp;quot;) @app.route(&amp;quot;/second&amp;quot;) def view_second_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Second page&amp;quot;)  index.html:
+&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- Required meta tags --&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, shrink-to-fit=no&amp;quot;&amp;gt; &amp;lt;!</description>
+    </item>
+    
+  </channel>
+</rss>

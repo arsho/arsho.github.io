@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>django on Ahmedur Rahman Shovon</title>
+    <link>https://arshovon.com/tags/django/</link>
+    <description>Recent content in django on Ahmedur Rahman Shovon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Sep 2019 13:14:12 +0600</lastBuildDate>
+    
+	<atom:link href="https://arshovon.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing Django Custom Management Command</title>
+      <link>https://arshovon.com/blog/django-custom-command/</link>
+      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/django-custom-command/</guid>
+      <description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
+ python manage.py runserver python manage.py makemigrations python manage.py migrate  These commands are built in and lies within Django itself.
+We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.
+These custom admin commands can be invoked using manage.</description>
+    </item>
+    
+  </channel>
+</rss>
