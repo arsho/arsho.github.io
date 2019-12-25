@@ -134,6 +134,11 @@ p {
     margin-bottom: 20px;
 }
 
+.content_wrapper .quote_section{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
 .content_wrapper .section .item {
     margin-bottom: 30px;
     padding-bottom: 0px;
