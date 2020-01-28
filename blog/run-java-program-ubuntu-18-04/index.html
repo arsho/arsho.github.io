@@ -147,68 +147,131 @@ gtag('config', 'UA-119139307-1');
       
       
       
-
-
 <main class="col-12 blog p-3 p-md-4 p-lg-4 p-xl-4" role="main">
-  <h2 class="mb-3">Categories</h2>
+  <article>
+    <header>
+      <h3>Run Java Program in Ubuntu 18.04</h3>
+      <div class="mb-3">
+        <span class="pull-right badge badge-light">
+          <time datetime="2020-01-28T15:05:42&#43;06:00">
+            <i class="fa fa-calendar pr-1"></i>January 28, 2020</time>
+        </span>
+        
+        <a href="https://arshovon.com/categories/" class="badge badge-secondary" title="All categories"><i class="fa fa-folder-open"></i></a>
+
+<a href="https://arshovon.com/categories/java"
+class="badge badge-secondary" title="java" >java</a>
+
+
+        
+        
+        <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
+
+<a href="https://arshovon.com/tags/ubuntu"
+class="badge badge-secondary" title="ubuntu">ubuntu</a>
+
+<a href="https://arshovon.com/tags/java"
+class="badge badge-secondary" title="java">java</a>
+
+<a href="https://arshovon.com/tags/openjdk"
+class="badge badge-secondary" title="openjdk">openjdk</a>
+
+
+        
+      </div>
+    </header>
+    
+
+<p>Run Java Program in Ubuntu 18.04.
+The program will be run using <code>Oracle's OpenJDK JDK 8</code>.</p>
+
+<ul>
+<li><p>Check if Java Runtime Environment(JRE) is installed in machine:</p>
+
+<pre><code class="language-bash">java -version
+</code></pre>
+
+<p>If JRE is installed it will show the version information similar to following:</p>
+
+<pre><code class="language-bash">openjdk 11.0.5 2019-10-15
+OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04)
+OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode)
+</code></pre>
+
+<p>If you do not have installed JRE, install JRE using:</p>
+
+<pre><code class="language-bash">sudo apt-get install openjdk-8-jre
+</code></pre></li>
+
+<li><p>Check if Java compiler is installed in machine:</p>
+
+<pre><code class="language-bash">javac -version
+</code></pre>
+
+<p>If Java compiler is installed it will show the version information similar to following:</p>
+
+<pre><code class="language-bash">javac 1.8.0_232
+</code></pre>
+
+<p>If you do not have installed Java compiler, install it using:</p>
+
+<pre><code class="language-bash">sudo apt-get install openjdk-8-jdk
+</code></pre></li>
+
+<li><p>Go to any directory and create a demo Java program. For example, we are going to create <code>Student.java</code> as following:</p>
+
+<pre><code class="language-java">class Student{
+	public static void main(String[] args){
+		System.out.println(&quot;Hello from Student class&quot;);
+	}
+}
+</code></pre></li>
+
+<li><p>Compile the Java class using:</p>
+
+<pre><code class="language-bash">javac Student.java
+</code></pre></li>
+
+<li><p>Run the compiled program using:</p>
+
+<pre><code class="language-bash">java Student
+</code></pre>
+
+<p>You will see the output like below:</p>
+
+<pre><code class="language-bash">Hello from Student class
+</code></pre></li>
+</ul>
+
+<p><img src="/blog/images/run_java_in_terminal.png?style=center" alt="alt Run Java Program in Ubuntu 18.04" /></p>
+
+<h3 id="reference">Reference:</h3>
+
+<ul>
+<li><a href="https://openjdk.java.net/install/index.html">OpenJDK documentation for Installing OpenJDK</a></li>
+</ul>
+
+  </article>
   
-  <h4>
-    <a href="/categories/frontend">
-      Category: frontend - <span>(1)</span>
+
+<div class="row pt-3">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    
+    <a href="https://arshovon.com/blog/django-custom-command/" class="pt-2 pb-2 btn btn-light mr-2">
+      <i class="fa fa-chevron-left"></i> Writing Django Custom Management Command
     </a>
-  </h4>
-  <ul>
     
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
     
-    <li>
-      <a href="https://arshovon.com/blog/saas-basic-features/">2019-05-06 | Basic features of Saas with example</a>
-    </li>
-    
-  </ul>
-  
-  <h4>
-    <a href="/categories/installation">
-      Category: installation - <span>(1)</span>
-    </a>
-  </h4>
-  <ul>
-    
-    
-    <li>
-      <a href="https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/">2019-05-06 | Install CLI Tools Ubuntu 18.04</a>
-    </li>
-    
-  </ul>
-  
-  <h4>
-    <a href="/categories/java">
-      Category: java - <span>(1)</span>
-    </a>
-  </h4>
-  <ul>
-    
-    
-    <li>
-      <a href="https://arshovon.com/blog/run-java-program-ubuntu-18-04/">2020-01-28 | Run Java Program in Ubuntu 18.04</a>
-    </li>
-    
-  </ul>
-  
-  <h4>
-    <a href="/categories/web-application">
-      Category: web-application - <span>(1)</span>
-    </a>
-  </h4>
-  <ul>
-    
-    
-    <li>
-      <a href="https://arshovon.com/blog/django-custom-command/">2019-09-26 | Writing Django Custom Management Command</a>
-    </li>
-    
-  </ul>
-  
+  </div>
+</div>
+
+
+
 </main>
+
 
     </div> 
   </div> 

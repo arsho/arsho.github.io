@@ -4,19 +4,54 @@
   
   <url>
     <loc>https://arshovon.com/</loc>
-    <lastmod>2019-10-02T12:14:12+06:00</lastmod>
+    <lastmod>2020-01-28T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/categories/</loc>
+    <lastmod>2020-01-28T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</loc>
+    <lastmod>2020-01-28T15:05:42+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/</loc>
+    <lastmod>2020-01-28T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/categories/java/</loc>
+    <lastmod>2020-01-28T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/java/</loc>
+    <lastmod>2020-01-28T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/openjdk/</loc>
+    <lastmod>2020-01-28T15:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/tags/ubuntu/</loc>
+    <lastmod>2020-01-28T15:05:42+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://arshovon.com/snippets/flask-bootstrap-navbar/</loc>
     <lastmod>2019-10-02T12:14:12+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://arshovon.com/tags/</loc>
-    <lastmod>2019-10-02T12:14:12+06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -45,12 +80,6 @@
   <url>
     <loc>https://arshovon.com/tags/file/</loc>
     <lastmod>2019-09-29T12:14:12+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://arshovon.com/categories/</loc>
-    <lastmod>2019-09-26T13:14:12+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -131,12 +160,6 @@
   
   <url>
     <loc>https://arshovon.com/tags/tree/</loc>
-    <lastmod>2019-05-06T15:05:42+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://arshovon.com/tags/ubuntu/</loc>
     <lastmod>2019-05-06T15:05:42+06:00</lastmod>
     <priority>0</priority>
   </url>

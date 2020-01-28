@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ubuntu on Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/tags/ubuntu/</link>
-    <description>Recent content in ubuntu on Ahmedur Rahman Shovon</description>
+    <title>java on Ahmedur Rahman Shovon</title>
+    <link>https://arshovon.com/categories/java/</link>
+    <description>Recent content in java on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Jan 2020 15:05:42 +0600</lastBuildDate>
     
-	<atom:link href="https://arshovon.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arshovon.com/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,19 +21,6 @@
  Check if Java Runtime Environment(JRE) is installed in machine:
 java -version  If JRE is installed it will show the version information similar to following:
 openjdk 11.0.5 2019-10-15 OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04) OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode)  If you do not have installed JRE, install JRE using:</description>
-    </item>
-    
-    <item>
-      <title>Install CLI Tools Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link>
-      <pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid>
-      <description>Install basic development CLI tools in Ubuntu 18.04. It includes:
- oh-my-zsh idle venv git tree  Install Git in Ubuntu 18.04 LTS  Install Git:
-sudo apt install git  Add global configuration for Git user:
-git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot;  Add SSH. Details can be found in this gist
-  Install Oh My Zsh in Ubuntu 18.04 LTS  Install Zsh:</description>
     </item>
     
   </channel>
