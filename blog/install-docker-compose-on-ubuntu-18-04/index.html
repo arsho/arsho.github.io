@@ -150,31 +150,37 @@ gtag('config', 'UA-119139307-1');
 <main class="col-12 blog p-3 p-md-4 p-lg-4 p-xl-4" role="main">
   <article>
     <header>
-      <h3>Run Java Program in Ubuntu 18.04</h3>
+      <h3>Install Docker Compose on Ubuntu 18.04</h3>
       <div class="mb-3">
         <span class="pull-right badge badge-light">
-          <time datetime="2020-01-28T15:05:42&#43;06:00">
-            <i class="fa fa-calendar pr-1"></i>January 28, 2020</time>
+          <time datetime="2020-03-10T09:05:42&#43;06:00">
+            <i class="fa fa-calendar pr-1"></i>March 10, 2020</time>
         </span>
         
         <a href="https://arshovon.com/categories/" class="badge badge-secondary" title="All categories"><i class="fa fa-folder-open"></i></a>
 
-<a href="https://arshovon.com/categories/java"
-class="badge badge-secondary" title="java" >java</a>
+<a href="https://arshovon.com/categories/installation"
+class="badge badge-secondary" title="installation" >installation</a>
+
+<a href="https://arshovon.com/categories/docker"
+class="badge badge-secondary" title="docker" >docker</a>
 
 
         
         
         <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
+<a href="https://arshovon.com/tags/installation"
+class="badge badge-secondary" title="installation">installation</a>
+
 <a href="https://arshovon.com/tags/ubuntu"
 class="badge badge-secondary" title="ubuntu">ubuntu</a>
 
-<a href="https://arshovon.com/tags/java"
-class="badge badge-secondary" title="java">java</a>
+<a href="https://arshovon.com/tags/docker"
+class="badge badge-secondary" title="docker">docker</a>
 
-<a href="https://arshovon.com/tags/openjdk"
-class="badge badge-secondary" title="openjdk">openjdk</a>
+<a href="https://arshovon.com/tags/docker-compose"
+class="badge badge-secondary" title="docker-compose">docker-compose</a>
 
 
         
@@ -182,73 +188,101 @@ class="badge badge-secondary" title="openjdk">openjdk</a>
     </header>
     
 
-<p>Run Java Program in Ubuntu 18.04.
-The program will be run using <code>Oracle's OpenJDK JDK 8</code>.</p>
+<h2 id="what-is-docker-compose">What is Docker Compose?</h2>
+
+<p>Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.</p>
+
+<p>Compose uses a <code>YML</code>\<code>YAML</code> file to configure application&rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.
+Some reasons you might want to use Compose :</p>
 
 <ul>
-<li><p>Check if Java Runtime Environment(JRE) is installed in machine:</p>
-
-<pre><code class="language-bash">java -version
-</code></pre>
-
-<p>If JRE is installed it will show the version information similar to following:</p>
-
-<pre><code class="language-bash">openjdk 11.0.5 2019-10-15
-OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04)
-OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode)
-</code></pre>
-
-<p>If you do not have installed JRE, install JRE using:</p>
-
-<pre><code class="language-bash">sudo apt-get install openjdk-8-jre
-</code></pre></li>
-
-<li><p>Check if Java compiler is installed in machine:</p>
-
-<pre><code class="language-bash">javac -version
-</code></pre>
-
-<p>If Java compiler is installed it will show the version information similar to following:</p>
-
-<pre><code class="language-bash">javac 1.8.0_232
-</code></pre>
-
-<p>If you do not have installed Java compiler, install it using:</p>
-
-<pre><code class="language-bash">sudo apt-get install openjdk-8-jdk
-</code></pre></li>
-
-<li><p>Go to any directory and create a demo Java program. For example, we are going to create <code>Student.java</code> as following:</p>
-
-<pre><code class="language-java">class Student{
-	public static void main(String[] args){
-		System.out.println(&quot;Hello from Student class&quot;);
-	}
-}
-</code></pre></li>
-
-<li><p>Compile the Java class using:</p>
-
-<pre><code class="language-bash">javac Student.java
-</code></pre></li>
-
-<li><p>Run the compiled program using:</p>
-
-<pre><code class="language-bash">java Student
-</code></pre>
-
-<p>You will see the output like below:</p>
-
-<pre><code class="language-bash">Hello from Student class
-</code></pre></li>
+<li>Multiple isolated environments on a single host</li>
+<li>Preserve volume data when containers are created</li>
+<li>Only recreate containers that have changed</li>
+<li>Variables and moving a composition between environments</li>
 </ul>
 
-<p><img src="/blog/images/run_java_in_terminal.png?style=center" alt="alt Run Java Program in Ubuntu 18.04" /></p>
+<p>Compose works in all environments: production, staging, development, testing as well as CI workflows.</p>
 
-<h3 id="reference">Reference:</h3>
+<p>Using Compose is basically a three-step process:</p>
 
 <ul>
-<li><a href="https://openjdk.java.net/install/index.html">OpenJDK documentation for Installing OpenJDK</a></li>
+<li>Define your app&rsquo;s environment with a <code>Dockerfile</code> so it can be reproduced anywhere.</li>
+<li>Define the services that make up your app in <code>docker-compose.yml</code> so they can be run together in an isolated environment.</li>
+<li>Run <code>docker-compose up</code> and Compose will start and run the entire app.</li>
+</ul>
+
+<p>A <code>docker-compose.yml</code> looks like this:</p>
+
+<pre><code>version: '3'
+services:
+	web:
+		build: .
+		ports:
+		- &quot;5000:5000&quot;
+		volumes:
+		- .:/code
+		- logvolume01:/var/log
+		links:
+		- redis
+	redis:
+		image: redis
+volumes:
+	logvolume01: {}
+</code></pre>
+
+<h3 id="prerequisite">Prerequisite</h3>
+
+<p>Docker Compose relies on <code>Docker Engine</code>. So make sure you have installed <code>Docker Engine</code> before installing Docker Composer.
+Instructions on installing <code>Docker Engine</code> can be found in the previous blog post: <a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/">Install Docker on Ubuntu 18.04</a></p>
+
+<h3 id="environment">Environment</h3>
+
+<ul>
+<li><b> Operating System</b> : Ubuntu 18.04 LTS (64-bit)</li>
+<li><b> Processor</b> : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12</li>
+<li><b> Memory</b> : 15.3 GiB</li>
+</ul>
+
+<h4 id="download-latest-version-of-docker-compose">Download Latest Version of Docker Compose</h4>
+
+<p>Ensure that you have installed <code>curl</code> before running the following command.</p>
+
+<pre><code>sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+</code></pre>
+
+<h4 id="apply-executable-permissions-to-the-binary">Apply Executable Permissions to the Binary</h4>
+
+<pre><code>sudo chmod +x /usr/local/bin/docker-compose
+</code></pre>
+
+<h4 id="test-the-installation">Test the Installation</h4>
+
+<pre><code>docker-compose --version
+</code></pre>
+
+<p>It will output like below:</p>
+
+<pre><code>docker-compose version 1.25.4, build 8d51620a
+</code></pre>
+
+<h4 id="command-line-completion-for-docker-and-docker-compose">Command line Completion for Docker and Docker Compose</h4>
+
+<p>Add <code>docker</code> and <code>docker-compose</code> to the plugins list in <code>~/.zshrc</code> to run auto completion within the <code>oh-my-zsh</code> shell. In the following example, <code>...</code> represent other <code>Zsh</code> plugins that have been installed earlier.</p>
+
+<pre><code>plugins=(... docker docker-compose
+)
+</code></pre>
+
+<p><img src="/blog/images/docker-compose-ubuntu-18-04.png?style=center" alt="alt docker compose run" /></p>
+
+<h4 id="references">References</h4>
+
+<ul>
+<li>Compose Overview: <a href="https://docs.docker.com/compose/overview/">https://docs.docker.com/compose/overview/</a></li>
+<li>Compose Features: <a href="https://docs.docker.com/compose/overview/#features">https://docs.docker.com/compose/overview/#features</a></li>
+<li>Compose Installation: <a href="https://docs.docker.com/compose/install/#install-compose">https://docs.docker.com/compose/install/#install-compose</a></li>
+<li>Command-line completion: <a href="https://docs.docker.com/compose/completion/">https://docs.docker.com/compose/completion/</a></li>
 </ul>
 
   </article>
@@ -257,17 +291,13 @@ OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mod
 <div class="row pt-3">
   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
     
-    <a href="https://arshovon.com/blog/django-custom-command/" class="pt-2 pb-2 btn btn-light mr-2">
-      <i class="fa fa-chevron-left"></i> Writing Django Custom Management Command
+    <a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/" class="pt-2 pb-2 btn btn-light mr-2">
+      <i class="fa fa-chevron-left"></i> Install Docker on Ubuntu 18.04
     </a>
     
   </div>
 
   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
-    
-    <a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/" class="pt-2 pb-2 btn btn-light text-grey ml-2">
-      Install Docker on Ubuntu 18.04 <i class="fa fa-chevron-right"></i>
-    </a>
     
   </div>
 </div>

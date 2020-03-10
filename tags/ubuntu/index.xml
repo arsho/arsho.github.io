@@ -6,17 +6,27 @@
     <description>Recent content in ubuntu on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2020 07:05:42 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 09:05:42 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Install Docker Compose on Ubuntu 18.04</title>
+      <link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link>
+      <pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid>
+      <description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
+Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description>
+    </item>
+    
+    <item>
       <title>Install Docker on Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-docker-on-ubuntu-18_04/</link>
+      <link>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</link>
       <pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate>
       
-      <guid>https://arshovon.com/blog/install-docker-on-ubuntu-18_04/</guid>
+      <guid>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</guid>
       <description>Why Docker? Docker is a tool for running application in an isolated environment.
 Some reasons you might want to use Docker:
   Same environment:  Same environment in developers machines and production servers. Acts the same.  Sandbox projects:  Eliminates the risk of getting conflicts while working on different projects on same machine.  Easy working without setup hussle:  Start working directly on others projects without setting all of the environemts.</description>
