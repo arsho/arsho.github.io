@@ -26,25 +26,25 @@
   </url>
   
   <url>
-    <loc>https://arshovon.com/categories/docker/</loc>
-    <lastmod>2020-03-10T07:05:42+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://arshovon.com/tags/docker/</loc>
     <lastmod>2020-03-10T07:05:42+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://arshovon.com/categories/installation/</loc>
+    <loc>https://arshovon.com/categories/docker/</loc>
     <lastmod>2020-03-10T07:05:42+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://arshovon.com/tags/installation/</loc>
+    <lastmod>2020-03-10T07:05:42+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arshovon.com/categories/installation/</loc>
     <lastmod>2020-03-10T07:05:42+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -61,13 +61,13 @@
   </url>
   
   <url>
-    <loc>https://arshovon.com/categories/java/</loc>
+    <loc>https://arshovon.com/tags/java/</loc>
     <lastmod>2020-01-28T15:05:42+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://arshovon.com/tags/java/</loc>
+    <loc>https://arshovon.com/categories/java/</loc>
     <lastmod>2020-01-28T15:05:42+06:00</lastmod>
     <priority>0</priority>
   </url>
