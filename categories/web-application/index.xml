@@ -6,10 +6,20 @@
     <description>Recent content in web application on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Sep 2019 13:14:12 +0600</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 07:05:42 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/categories/web-application/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Develop Flask Application using Docker and Bootstrap Templates</title>
+      <link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link>
+      <pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid>
+      <description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
+Environment   Operating System : Ubuntu 18.04 LTS (64-bit)  Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12  Memory : 15.3 GiB  Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description>
+    </item>
     
     <item>
       <title>Writing Django Custom Management Command</title>

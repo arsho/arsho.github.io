@@ -150,17 +150,17 @@ gtag('config', 'UA-119139307-1');
 <main class="col-12 blog p-3 p-md-4 p-lg-4 p-xl-4" role="main">
   <article>
     <header>
-      <h3>Install Docker Compose on Ubuntu 18.04</h3>
+      <h3>Develop Flask Application using Docker and Bootstrap Templates</h3>
       <div class="mb-3">
         <span class="pull-right badge badge-light">
-          <time datetime="2020-03-10T09:05:42&#43;06:00">
-            <i class="fa fa-calendar pr-1"></i>March 10, 2020</time>
+          <time datetime="2020-03-14T07:05:42&#43;06:00">
+            <i class="fa fa-calendar pr-1"></i>March 14, 2020</time>
         </span>
         
         <a href="https://arshovon.com/categories/" class="badge badge-secondary" title="All categories"><i class="fa fa-folder-open"></i></a>
 
-<a href="https://arshovon.com/categories/installation"
-class="badge badge-secondary" title="installation" >installation</a>
+<a href="https://arshovon.com/categories/web-application"
+class="badge badge-secondary" title="web application" >web application</a>
 
 <a href="https://arshovon.com/categories/deployment"
 class="badge badge-secondary" title="deployment" >deployment</a>
@@ -170,17 +170,14 @@ class="badge badge-secondary" title="deployment" >deployment</a>
         
         <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
-<a href="https://arshovon.com/tags/installation"
-class="badge badge-secondary" title="installation">installation</a>
-
-<a href="https://arshovon.com/tags/ubuntu"
-class="badge badge-secondary" title="ubuntu">ubuntu</a>
+<a href="https://arshovon.com/tags/flask"
+class="badge badge-secondary" title="flask">flask</a>
 
 <a href="https://arshovon.com/tags/docker"
 class="badge badge-secondary" title="docker">docker</a>
 
-<a href="https://arshovon.com/tags/docker-compose"
-class="badge badge-secondary" title="docker-compose">docker-compose</a>
+<a href="https://arshovon.com/tags/bootstrap"
+class="badge badge-secondary" title="bootstrap">bootstrap</a>
 
 
         
@@ -188,53 +185,10 @@ class="badge badge-secondary" title="docker-compose">docker-compose</a>
     </header>
     
 
-<h2 id="what-is-docker-compose">What is Docker Compose?</h2>
-
-<p>Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.</p>
-
-<p>Compose uses a <code>YML</code>\<code>YAML</code> file to configure application&rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.
-Some reasons you might want to use Compose :</p>
-
-<ul>
-<li>Multiple isolated environments on a single host</li>
-<li>Preserve volume data when containers are created</li>
-<li>Only recreate containers that have changed</li>
-<li>Variables and moving a composition between environments</li>
-</ul>
-
-<p>Compose works in all environments: production, staging, development, testing as well as CI workflows.</p>
-
-<p>Using Compose is basically a three-step process:</p>
-
-<ul>
-<li>Define your app&rsquo;s environment with a <code>Dockerfile</code> so it can be reproduced anywhere.</li>
-<li>Define the services that make up your app in <code>docker-compose.yml</code> so they can be run together in an isolated environment.</li>
-<li>Run <code>docker-compose up</code> and Compose will start and run the entire app.</li>
-</ul>
-
-<p>A <code>docker-compose.yml</code> looks like this:</p>
-
-<pre><code>version: '3'
-services:
-	web:
-		build: .
-		ports:
-		- &quot;5000:5000&quot;
-		volumes:
-		- .:/code
-		- logvolume01:/var/log
-		links:
-		- redis
-	redis:
-		image: redis
-volumes:
-	logvolume01: {}
-</code></pre>
-
 <h3 id="prerequisite">Prerequisite</h3>
 
-<p>Docker Compose relies on <code>Docker Engine</code>. So make sure you have installed <code>Docker Engine</code> before installing Docker Composer.
-Instructions on installing <code>Docker Engine</code> can be found in the previous blog post: <a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/">Install Docker on Ubuntu 18.04</a></p>
+<p><code>Docker Engine</code> should be installed in local machine.
+Instructions on installing <code>Docker Engine</code> on Ubuntu can be found in this tutorial: <a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/">Install Docker on Ubuntu 18.04</a></p>
 
 <h3 id="environment">Environment</h3>
 
@@ -244,45 +198,159 @@ Instructions on installing <code>Docker Engine</code> can be found in the previo
 <li><b> Memory</b> : 15.3 GiB</li>
 </ul>
 
-<h4 id="download-latest-version-of-docker-compose">Download Latest Version of Docker Compose</h4>
+<h3 id="code-repository">Code Repository</h3>
 
-<p>Ensure that you have installed <code>curl</code> before running the following command.</p>
+<p>All codes used in this tutorial can be found in this Github repository:
+<a href="https://github.com/arsho/FlaskDockerBootstrap">https://github.com/arsho/FlaskDockerBootstrap</a></p>
 
-<pre><code>sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+<h3 id="directory-structure">Directory structure</h3>
+
+<pre><code>  .
+  ├── app.py
+  ├── Dockerfile
+  ├── readme.md
+  ├── requirements.txt
+  ├── static
+  │   ├── css
+  │   |   └── bootstrap.min.css
+  │   ├── images
+  │   │   ├── bootstrap.png
+  │   │   ├── docker.png
+  │   │   └── flask.svg
+  │   └── js
+  │       └── bootstrap.min.js
+  └── templates
+      └── index.html
 </code></pre>
 
-<h4 id="apply-executable-permissions-to-the-binary">Apply Executable Permissions to the Binary</h4>
+<p><code>requirements.txt</code>:</p>
 
-<pre><code>sudo chmod +x /usr/local/bin/docker-compose
+<pre><code>  click==7.1.1
+  Flask==1.1.1
+  itsdangerous==1.1.0
+  Jinja2==2.11.1
+  MarkupSafe==1.1.1
+  Werkzeug==1.0.0
 </code></pre>
 
-<h4 id="test-the-installation">Test the Installation</h4>
+<p><code>app.py</code>:</p>
 
-<pre><code>docker-compose --version
+<pre><code>from flask import Flask, render_template
+
+
+app = Flask(__name__)
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    return render_template(&quot;index.html&quot;)
 </code></pre>
 
-<p>It will output like below:</p>
+<p><code>templates\index.html</code>:</p>
 
-<pre><code>docker-compose version 1.25.4, build 8d51620a
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+  &lt;title&gt;Flask Application using Docker&lt;/title&gt;
+  &lt;!-- Bootstrap core CSS --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ url_for('static', filename='css/bootstrap.min.css') }}&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+...
+...
+...
+&lt;!-- Bootstrap core JS --&gt;
+&lt;!-- Placed at the end of the document so the pages load faster --&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot; integrity=&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src={{ url_for('static', filename='js/bootstrap.min.js') }}&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 
-<h4 id="command-line-completion-for-docker-and-docker-compose">Command line Completion for Docker and Docker Compose</h4>
+<p><code>Dockerfile</code>:</p>
 
-<p>Add <code>docker</code> and <code>docker-compose</code> to the plugins list in <code>~/.zshrc</code> to run auto completion within the <code>oh-my-zsh</code> shell. In the following example, <code>...</code> represent other <code>Zsh</code> plugins that have been installed earlier.</p>
+<pre><code>FROM python:3
 
-<pre><code>plugins=(... docker docker-compose
-)
+LABEL Author=&quot;Ahmedur Rahman Shovon&quot;
+LABEL E-mail=&quot;shovon.sylhet@gmail.com&quot;
+LABEL version=&quot;0.0.1&quot;
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV FLASK_APP &quot;app.py&quot;
+ENV FLASK_ENV &quot;development&quot;
+ENV FLASK_DEBUG True
+
+RUN mkdir /code
+WORKDIR /code
+ADD requirements.txt /code/
+RUN pip install -r requirements.txt
+ADD . /code/
+EXPOSE 5000
+
+CMD flask run --host=0.0.0.0
 </code></pre>
 
-<p><img src="/blog/images/docker-compose-ubuntu-18-04.png?style=center" alt="alt docker compose run" /></p>
+<p>The above <code>Dockerfile</code> consists of the following sequential steps to execute when Docker image will be created:</p>
 
-<h4 id="references">References</h4>
+<ol>
+<li>It pulls <code>python:3</code> image from DockerHub.</li>
+<li>It sets the author and version information of the <code>Dockerfile</code>.</li>
+<li>It sets the environment variables necessary to run Flask application.</li>
+<li>It creates a directory called <code>code</code> in the container and changed the working directory to <code>code</code>.</li>
+<li>It copies <code>requirements.txt</code> to <code>code</code> and install all the packages listed in <code>requirements.txt</code> recursively.</li>
+<li>It copies all the files to <code>code</code> directory.</li>
+<li>It exposes <code>5000</code> port.</li>
+<li>It runs the <code>Flask</code> application by defining a host so that the application can be accessed from outside the container.</li>
+</ol>
+
+<p><strong>Build Docker Image:</strong>
+  Create a Docker image with tag <code>flask_example</code> from current directory.</p>
+
+<pre><code>docker build -t flask_example .
+</code></pre>
+
+<p><strong>Run Docker as background service:</strong>
+  Run the <code>flask_example</code> image in a container called <code>flask_container</code> as background service.</p>
+
+<pre><code>docker run -d --name flask_container -p 5000:5000 flask_example  
+</code></pre>
+
+<p><strong>Check running docker containers:</strong></p>
+
+<pre><code>docker ps -a
+</code></pre>
+
+<p><img src="/blog/images/docker_flask_bootstrap_run.png?style=center" alt="alt docker run" /></p>
+
+<h2 id="optional">(Optional)</h2>
+
+<p><strong>Stop running docker container:</strong></p>
+
+<pre><code>docker stop flask_container
+</code></pre>
+
+<p><strong>Delete running docker container:</strong></p>
+
+<pre><code>docker rm flask_container
+</code></pre>
+
+<p><strong>Check installed Python packages inside the Docker container:</strong></p>
+
+<pre><code>docker exec -it flask_container pip freeze
+</code></pre>
+
+<p><strong>Application View:</strong></p>
+
+<p><img src="/blog/images/FLASK_DOCKER_BOOTSTRAP.png?style=center" alt="alt flask app" /></p>
+
+<h2 id="reference">Reference</h2>
 
 <ul>
-<li>Compose Overview: <a href="https://docs.docker.com/compose/overview/">https://docs.docker.com/compose/overview/</a></li>
-<li>Compose Features: <a href="https://docs.docker.com/compose/overview/#features">https://docs.docker.com/compose/overview/#features</a></li>
-<li>Compose Installation: <a href="https://docs.docker.com/compose/install/#install-compose">https://docs.docker.com/compose/install/#install-compose</a></li>
-<li>Command-line completion: <a href="https://docs.docker.com/compose/completion/">https://docs.docker.com/compose/completion/</a></li>
+<li><a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/">Install Docker on Ubuntu 18.04</a></li>
+<li><a href="https://github.com/arsho/FlaskDockerBootstrap">FlaskDockerBootstrap Github Repository</a></li>
+<li><a href="https://dev.to/riverfount/dockerize-a-flask-app-17ag">Dev.to tutorial on dockerizing Flask app</a></li>
+<li><a href="https://getbootstrap.com/">Boostrap front-end component library.</a></li>
 </ul>
 
   </article>
@@ -291,17 +359,13 @@ Instructions on installing <code>Docker Engine</code> can be found in the previo
 <div class="row pt-3">
   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
     
-    <a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/" class="pt-2 pb-2 btn btn-light mr-2">
-      <i class="fa fa-chevron-left"></i> Install Docker on Ubuntu 18.04
+    <a href="https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/" class="pt-2 pb-2 btn btn-light mr-2">
+      <i class="fa fa-chevron-left"></i> Install Docker Compose on Ubuntu 18.04
     </a>
     
   </div>
 
   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
-    
-    <a href="https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/" class="pt-2 pb-2 btn btn-light text-grey ml-2">
-      Develop Flask Application using Docker and Bootstrap Templates <i class="fa fa-chevron-right"></i>
-    </a>
     
   </div>
 </div>
