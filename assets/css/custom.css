@@ -1,36 +1,53 @@
 /* Navbar */
 .navbar-blog{
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 .navbar-blog .navbar-brand{
-    color: #545e6c;
+  color: #545e6c;
 }
 
 .navbar-blog a{
-    color: #545e6c;
+  color: #545e6c;
 }
 
 .navbar-blog a:hover{
-    color: black;
+  color: black;
 }
 
 .navbar-toggler {
-    background-color: white;
-    border: 1px solid transparent;
+  background-color: white;
+  border: 1px solid transparent;
 }
 
 .navbar-toggler-icon-fa{
-    color: black;
+  color: black;
 }
 
 /* Sidebar */
 .sidebar_wrapper {
-    background: #a94442;
-    color: #fff;
+  background: #a94442;
+  color: #fff;
 }
 
 .sidebar_wrapper a {
-    color: #fff;
+  color: #fff;
+}
+
+/* Card Shadow */
+
+.card-body-shadow:hover {
+  box-shadow: 0 1px 5px #545e6c;
+}
+
+.card-body-shadow {
+  transition: box-shadow .3s ease;
+}
+
+/* list jumbotron */
+.list-jumbotron{
+  background-image:
+  linear-gradient(to bottom left, #545e6c 0%, transparent 3%, transparent 97%, #545e6c 100%),
+  linear-gradient(to bottom right, #545e6c 0%, transparent 3%, transparent 97%, #545e6c 100%);
 }
