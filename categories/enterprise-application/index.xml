@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker-compose on Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/tags/docker-compose/</link>
-    <description>Recent content in docker-compose on Ahmedur Rahman Shovon</description>
+    <title>enterprise application on Ahmedur Rahman Shovon</title>
+    <link>https://arshovon.com/categories/enterprise-application/</link>
+    <description>Recent content in enterprise application on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Mar 2020 11:05:42 +0600</lastBuildDate>
     
-	<atom:link href="https://arshovon.com/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arshovon.com/categories/enterprise-application/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid>
       <description>What is Odoo? Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in Python, JavaScript and XML.</description>
-    </item>
-    
-    <item>
-      <title>Install Docker Compose on Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link>
-      <pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid>
-      <description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
-Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description>
     </item>
     
   </channel>
