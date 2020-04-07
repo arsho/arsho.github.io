@@ -1,0 +1,20 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  /* Show it is fixed to the top */
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.flag{
+  height: 30px;
+}
+#country_flag_searched_country{
+  height: 32px;
+}
+
+.center{
+  text-align: center;
+}
+.footer{
+  margin-top: 30px;
+}
