@@ -6,10 +6,61 @@
     <description>Recent content in Single Page Applications on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2020 06:30:25 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 05 Apr 2010 06:30:25 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/apps/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>COVID-19 World Status</title>
+      <link>https://arshovon.com/apps/c19/</link>
+      <pubDate>Sun, 05 Apr 2020 11:15:10 +0600</pubDate>
+      
+      <guid>https://arshovon.com/apps/c19/</guid>
+      <description>COVID-19 World Status COVID-19 Summary Global Data Confirmed Cases Death Counts Active Cases Recovered Cases CountrySource Codehmsajal.github.ioarshovon.comCOVID-19 World StatusTotal CasesToday&#39;s cases: Total Deaths(%)Today&#39;s deaths: Cases / MillionDeaths / Million: Total Recovered(%)Affected Countries: Active CasesCritical cases: Total TestsTests per million: Worldwide COVID-19 Data with Instant Search OptionFlagCountryCasesToday CasesCases / MillionDeathsToday DeathsDeaths / MillionTestsTests / MillionRecoveredActiveCriticalCOVID-19 World Map(Total Confirmed Cases)COVID-19 World Map(Total Death Count)COVID-19 World Map(Total Active)COVID-19 World Map(Total Recovered Counts)Countrywise COVID-19 StatusSelect a country to see the current COVID-19 statusTotal CasesToday&#39;s cases: Total Deaths(%)Today&#39;s deaths: Cases / MillionDeaths / Million: Total RecoveredRecover rate: %Active CasesCritical Cases: Total TestsTests per million: First Confirmed Case:  First Death Case:  First Recovery Case:  Data Source: NOVELCovid APIUpdated at: Developed byAhmedur Rahman Shovon&amp;Hasan Mahmud</description>
+    </item>
+    
+    <item>
+      <title>Periodic Table</title>
+      <link>https://arshovon.com/apps/periodic_table/</link>
+      <pubDate>Tue, 15 Sep 2015 17:15:10 +0600</pubDate>
+      
+      <guid>https://arshovon.com/apps/periodic_table/</guid>
+      <description>Periodic Table   The Periodic Table  Developed by Ahmedur Rahman Shovon  &amp; Imran Pollob   Metals Non-Metals Alkali Metals Alkali Earth Metals   Transitional Metals Lanthoids Actinoids   Metaloids Halogens Noble Gas   1 H  Hydrogen1.0079
+                    2 He  Helium4.</description>
+    </item>
+    
+    <item>
+      <title>Typespeed</title>
+      <link>https://arshovon.com/apps/typespeed/</link>
+      <pubDate>Sun, 05 Oct 2014 13:15:10 +0600</pubDate>
+      
+      <guid>https://arshovon.com/apps/typespeed/</guid>
+      <description>body{ background: aliceblue; } .txtarea{ margin: 2px auto; width: 80%; padding: 10px; vertical-align: top; text-align: left; height: 62%; overflow: hidden; line-height: 30px; font-family: Verdana; font-size: 24px; color: black; border: 3px solid rgb(1, 1, 10); border-radius: 7px; background: white; } .txtarea div{ display: inline; } .highlight{ background: rgb(231, 223, 221); color: rgb(20, 133, 162); padding: 3px 6px; border: 2px solid rgb(185, 164, 168); border-radius: 5px; } .ac { color: green; } .</description>
+    </item>
+    
+    <item>
+      <title>Meme Creator</title>
+      <link>https://arshovon.com/apps/meme_creator/</link>
+      <pubDate>Mon, 14 Jul 2014 16:13:50 +0600</pubDate>
+      
+      <guid>https://arshovon.com/apps/meme_creator/</guid>
+      <description>Meme Creator by Shovon  @import url(http://fonts.googleapis.com/css?family=Changa+One); @import url(http://fonts.googleapis.com/css?family=Kavoon); @import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great); @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One); @import url(http://fonts.googleapis.com/css?family=Galindo); body{ margin: 2px auto; } #wrapper { width: 100%; margin: 0px auto; padding: 0px; } #content { width: 95%; padding: 0px 20px; margin: 10px auto; background: rgb(247, 247, 247); border: 1px solid rgba(147, 184, 189,0.8); -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset; -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.</description>
+    </item>
+    
+    <item>
+      <title>Drumpad</title>
+      <link>https://arshovon.com/apps/drumpad/</link>
+      <pubDate>Fri, 02 Mar 2012 15:15:10 +0600</pubDate>
+      
+      <guid>https://arshovon.com/apps/drumpad/</guid>
+      <description>  Drumpad            A (Ride-Cymbal) S (Tom1) D (Tom2) F (Crash-Cymbal)   J (Bass) K (Snare) L (Open-Hi-Hat) ; (Closed-Hi-Hat)      1
+(two and four)  2
+(four on the floor)  3
+(one drop)  4
+(boom boom clap)    DRUMPAD by Shovon
+(play drums using keyboard and or with mouse)         </description>
+    </item>
     
   </channel>
 </rss>
