@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 11:05:42 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 08:05:42 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Internet of Thinks(IOT)</title>
+      <link>https://arshovon.com/categories/internet-of-thinksiot/</link>
+      <pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/categories/internet-of-thinksiot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>deployment</title>
