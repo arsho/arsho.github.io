@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2020 08:05:42 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 00:01:44 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>django</title>
+      <link>https://arshovon.com/tags/django/</link>
+      <pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>django-cms</title>
+      <link>https://arshovon.com/tags/django-cms/</link>
+      <pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/django-cms/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>raspberry pi</title>
@@ -134,15 +152,6 @@
       <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
       
       <guid>https://arshovon.com/tags/csv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>django</title>
-      <link>https://arshovon.com/tags/django/</link>
-      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/tags/django/</guid>
       <description></description>
     </item>
     
