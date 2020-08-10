@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:01:44 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2020 11:07:32 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>algorithm</title>
+      <link>https://arshovon.com/categories/algorithm/</link>
+      <pubDate>Sun, 09 Aug 2020 11:07:32 +0600</pubDate>
+      
+      <guid>https://arshovon.com/categories/algorithm/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>web application</title>
