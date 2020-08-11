@@ -17,7 +17,8 @@
       <pubDate>Sun, 09 Aug 2020 11:07:32 +0600</pubDate>
       
       <guid>https://arshovon.com/blog/counting-sort/</guid>
-      <description>Characteristics  Counting sort can be applied if the input numbers are in the set {0, 1, .. ,k}, a set of non negative integers with a maximum value k. There is no comparisons between input elements take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies relative positions of each input elements. For each element x, counting sort counts number of elements less than x.</description>
+      <description>Characteristics Non negative integers with a known maximum value Counting sort can be applied if the input numbers are in the set {0, 1, .. ,k}, a set of non negative integers with a maximum value k.
+No comparisons between elements There are no comparisons between input elements that take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies the relative positions of each input element.</description>
     </item>
     
   </channel>

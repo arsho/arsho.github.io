@@ -197,19 +197,27 @@ class="badge badge-secondary" title="time-complexity">time-complexity</a>
       </div>
     </header>
     <hr class="my-6">
-    
+    <h2 id="characteristics">Characteristics</h2>
 
-<h3 id="characteristics">Characteristics</h3>
+<h3 id="non-negative-integers-with-a-known-maximum-value">Non negative integers with a known maximum value</h3>
 
-<ul>
-<li>Counting sort can be applied if the input numbers are in the set <code>{0, 1, .. ,k}</code>, a set of non negative integers with a maximum value <code>k</code>.</li>
-<li>There is no comparisons between input elements take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies relative positions of each input elements.</li>
-<li>For each element <code>x</code>, counting sort counts number of elements less than <code>x</code>. Then it uses this information to place element <code>x</code> directly into its correct position.</li>
-<li>It has a linear time complexity. Time complexity of counting sort is <code>O(k+n)</code>, where <code>k: maximum value of the integer set</code> and <code>n: total number of integers in the set</code></li>
-<li>Counting sort is stable. Numbers with the same value appears in the output array as they appear in the input array. Let&rsquo;s take an input array <code>A = [3, 0, 3]</code> and <code>k = 3</code>. In the input array the value <code>3</code> occurs 2 times; at index 0 and 2. Counting sort ensures that in the output array the occurrences of <code>3</code> are placed as same order of the input array.</li>
-</ul>
+<p>Counting sort can be applied if the input numbers are in the set <code>{0, 1, .. ,k}</code>, a set of non negative integers with a maximum value <code>k</code>.</p>
 
-<h3 id="algorithm-pseudocode">Algorithm Pseudocode</h3>
+<h3 id="no-comparisons-between-elements">No comparisons between elements</h3>
+
+<p>There are no comparisons between input elements that take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies the relative positions of each input element. For each element <code>x</code>, counting sort counts number of elements less than <code>x</code>. Then it uses this information to place element <code>x</code> directly into its correct position.</p>
+
+<h3 id="linear-time-complexity">Linear time complexity</h3>
+
+<p>It has a linear time complexity.<br>
+Time complexity: <code>O(k+n)</code>, where <code>k</code>: maximum value of the integer set and <code>n</code>: total number of integers in the set.<br>
+Space complexity: <code>O(k+n)</code>, where <code>k</code>: maximum value of the integer set and <code>n</code>: total number of integers in the set.</p>
+
+<h3 id="stable">Stable</h3>
+
+<p>Counting sort is stable. Numbers with the same value appears in the output array as they appear in the input array. Let's take an input array <code>A = [3, 0, 3]</code> and <code>k = 3</code>. In the input array the value <code>3</code> occurs 2 times; at index 0 and 2. Counting sort ensures that in the output array the occurrences of <code>3</code> are placed as same order as of the input array.</p>
+
+<h2 id="algorithm-pseudocode">Algorithm Pseudocode</h2>
 
 <pre><code class="language-py">Counting_Sort(A, k)
     let R[0 .. A.length-1] be a new array
@@ -227,38 +235,138 @@ class="badge badge-secondary" title="time-complexity">time-complexity</a>
         C[A[i]] = C[A[i]] - 1
 </code></pre>
 
-<h3 id="implementation">Implementation</h3>
+<h2 id="implementation-using-python-3">Implementation using Python 3</h2>
 
-<pre><code class="language-py">def get_sorted_list(A, k):
-    R = []
-    for i in range(0, len(A)):
-        R.append(0)
-    C = []
-    for i in range(0, k+1):
-        C.append(0)
-    for i in range(0, len(A)):
-        C[A[i]] += 1
-    for i in range(1, k+1):
-        C[i] = C[i-1] + C[i]
-    for i in range(len(A)-1, -1, -1):
-        R[C[A[i]]] = A[i]
-        C[A[i]] -= 1
-    return R
+<pre><code class="language-py">&quot;&quot;&quot;
+Implementation of counting sort with test cases
+&quot;&quot;&quot;
+
+def get_sorted_list(numbers, max_value):
+    &quot;&quot;&quot; Returns sorted list of numbers using counting sort algorithm.
+
+        Arguments:
+        numbers -- list of integers, non negative and less than max_value
+        max_value -- integer
+    &quot;&quot;&quot;
+    sorted_numbers = [None] * len(numbers)
+    counts = [0] * (max_value+1)
+    for i in numbers:
+        counts[i] += 1
+    counts[0] -= 1
+    for i in range(1, max_value+1):
+        counts[i] += counts[i-1]
+    for i in numbers[::-1]:
+        sorted_numbers[counts[i]] = i
+        counts[i] -= 1
+    return sorted_numbers
 
 if __name__ == &quot;__main__&quot;:
-    A = [3, 4, 2, 3, 1, 5, 5, 0, 2, 4, 9]
+    A = [1, 5, 0, 0, 3, 3, 2, 1, 1]
+    k = 5
+    expected = [0, 0, 1, 1, 1, 2, 3, 3, 5]
+    assert expected == get_sorted_list(A, k), &quot;Failed on A={}, k={}&quot;.format(A, k)
+
+    A = [9, 7]
     k = 9
-    print(get_sorted_list(A, k))
+    expected = [7, 9]
+    assert expected == get_sorted_list(A, k), &quot;Failed on A={}, k={}&quot;.format(A, k)
 </code></pre>
 
-<!-- **Application View:**
+<h2 id="difference-between-counting-sort-and-pythons-sort-method">Difference between Counting Sort and Python's <code>sort</code> method</h2>
 
-![alt flask app](/blog/images/FLASK_DOCKER_BOOTSTRAP.png?style=center) -->
+<p>Counting sort can be used when the maximum value of an unsorted list of non-negative integers is known. Default <code>sort</code> method of Python programming language uses Timsort <a href="https://en.wikipedia.org/wiki/Timsort">[Timsort - Wiki]</a>. It's worst case performance is <code>O(nlogn)</code> where as counting sort's worst case performance is <code>O(k+n)</code> <a href="https://en.wikipedia.org/wiki/Counting_sort">[Counting sort - Wiki]</a>.</p>
+
+<p>Though counting sort's time complexity is better than Python's default <code>sort</code> method, I could not get better result while comparing the execution time.</p>
+
+<table class="table table-bordered table-hover table-striped">
+<thead>
+<tr>
+<th>Set Size</th>
+<th>Maximum Value</th>
+<th>Counting Sort Time</th>
+<th><code>sort</code> method Time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>9</td>
+<td>5</td>
+<td>2.083620 seconds</td>
+<td>0.130434 seconds</td>
+</tr>
+
+<tr>
+<td>100000</td>
+<td>1000</td>
+<td>91.119714 seconds</td>
+<td>0.528524 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<p>This result is generated using <code>timeit</code> module of Python with the following code.</p>
+
+<pre><code class="language-py">&quot;&quot;&quot;
+Counting sort execution time comparison with Python's sort method
+&quot;&quot;&quot;
+import timeit
+import random
+
+
+def get_sorted_list(numbers, max_value):
+    &quot;&quot;&quot; Returns sorted list of numbers using counting sort algorithm.
+
+        Arguments:
+        numbers -- list of integers, non negative and less than max_value
+        max_value -- integer
+    &quot;&quot;&quot;
+    sorted_numbers = [None] * len(numbers)
+    counts = [0] * (max_value+1)
+    for i in numbers:
+        counts[i] += 1
+    counts[0] -= 1
+    for i in range(1, max_value+1):
+        counts[i] += counts[i-1]
+    for i in numbers[::-1]:
+        sorted_numbers[counts[i]] = i
+        counts[i] -= 1
+    return sorted_numbers
+
+if __name__ == &quot;__main__&quot;:
+    ar = [1, 5, 0, 0, 3, 3, 2, 1, 1]
+    MAX_NUMBER = 5
+    print(timeit.timeit('get_sorted_list(ar, MAX_NUMBER)', globals=globals()))
+    print(timeit.timeit('ar.sort()', globals=globals()))
+
+    MAX_NUMBER = 1000
+    ar = [random.randint(0, MAX_NUMBER) for i in range(10*5)]
+    print(timeit.timeit('get_sorted_list(ar, MAX_NUMBER)', globals=globals()))
+    print(timeit.timeit('ar.sort()', globals=globals()))
+</code></pre>
+
+<h2 id="practice-challenges">Practice challenges</h2>
+
+<h3 id="easy-difficulty-challenges">Easy difficulty challenges:</h3>
+
+<ul>
+<li><a href="https://www.hackerrank.com/challenges/countingsort1/">Counting Sort 1 - Hackerrank</a></li>
+<li><a href="https://www.hackerrank.com/challenges/countingsort2/">Counting Sort 2 - Hackerrank</a></li>
+</ul>
+
+<h3 id="medium-difficulty-challenges">Medium difficulty challenges:</h3>
+
+<ul>
+<li><a href="https://www.hackerrank.com/challenges/countingsort4">The Full Counting Sort - Hackerrank</a></li>
+</ul>
 
 <h2 id="reference">Reference</h2>
 
 <ul>
 <li><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition">Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Timsort">Timsort Wikipedia article</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Counting_sort">Counting sort Wikipedia article</a></li>
+<li><a href="https://docs.python.org/3.6/library/timeit.html#examples">timeit module documentation</a></li>
 </ul>
 
   </article>
