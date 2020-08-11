@@ -276,7 +276,7 @@ if __name__ == &quot;__main__&quot;:
 
 <p>Counting sort can be used when the maximum value of an unsorted list of non-negative integers is known. Default <code>sort</code> method of Python programming language uses Timsort <a href="https://en.wikipedia.org/wiki/Timsort">[Timsort - Wiki]</a>. It's worst case performance is <code>O(nlogn)</code> where as counting sort's worst case performance is <code>O(k+n)</code> <a href="https://en.wikipedia.org/wiki/Counting_sort">[Counting sort - Wiki]</a>.</p>
 
-<p>Though counting sort's time complexity is better than Python's default <code>sort</code> method, I could not get better result while comparing the execution time.</p>
+<p>Though counting sort's time complexity is better than Python's default <code>sort</code> method, <code>sort</code> method gives better result while comparing the execution time.</p>
 
 <table class="table table-bordered table-hover table-striped">
 <thead>
@@ -344,6 +344,9 @@ if __name__ == &quot;__main__&quot;:
     print(timeit.timeit('get_sorted_list(ar, MAX_NUMBER)', globals=globals()))
     print(timeit.timeit('ar.sort()', globals=globals()))
 </code></pre>
+
+<p>According to the comments of <a href="https://stackoverflow.com/questions/63363738/difference-between-counting-sort-and-pythons-sort-method">this Stackoverflow question</a>, counting sort is implemented using Python while <code>sort</code> is implemented in compiled, most likely optimized, C code.
+As <code>sort</code> method is highly optimized, it outweighs the complexity disadvantage.</p>
 
 <h2 id="practice-challenges">Practice challenges</h2>
 
