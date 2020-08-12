@@ -6,10 +6,21 @@
     <description>Recent content on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2020 11:07:32 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2020 02:06:33 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Insertion Sort</title>
+      <link>https://arshovon.com/blog/insertion-sort/</link>
+      <pubDate>Tue, 11 Aug 2020 02:06:33 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/insertion-sort/</guid>
+      <description>Characteristics Simple implementation Insertion sort can be implemented easily with less lines of code. It is quite efficient for small data sets. Though it has same complexity than other quadratic sorting algorithms like selection sort or bubble sort, insertion sort is more efficient.
+Adaptive Insertion sort is adaptive. If the input data set is already sorted, the number of steps are reduced.
+Online Insertion sort works on the data as it receives it.</description>
+    </item>
     
     <item>
       <title>Counting Sort</title>
