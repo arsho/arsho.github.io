@@ -10,29 +10,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 
-<meta name="keywords" content="Ahmedur Rahman Shovon, Shovon, arsho, ar_sho, arshovon, shovon">
-<meta name="description" content="Resume, blog, apps and snippets of Ahmedur Rahman Shovon"/>
+<meta name="keywords" content="algorithm, sorting, time-complexity">
+<meta name="description" content="Feature wise comparisons between sorting algorithms">
 <meta name="author" content="Ahmedur Rahman Shovon">
 
-<meta property="og:url" content="https://arshovon.com/tags/algorithm/">
+<meta property="og:url" content="https://arshovon.com/blog/sorting-algorithm-comparisons/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="algorithm - Ahmedur Rahman Shovon">
-<meta property="og:description" content="Resume, blog, apps and snippets of Ahmedur Rahman Shovon">
+<meta property="og:title" content="Sorting Algorithm Comparisons - Ahmedur Rahman Shovon">
+<meta name="og:description" content="Feature wise comparisons between sorting algorithms">
 <meta property="og:image" content="https://arshovon.com/assets/images/shovon.jpg">
 <meta property="og:image:secure_url" content="https://arshovon.com/assets/images/shovon.jpg">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:alt" content="algorithm - Ahmedur Rahman Shovon" />
+<meta property="og:image:alt" content="Sorting Algorithm Comparisons - Ahmedur Rahman Shovon" />
 <meta property="og:site_name" content="Ahmedur Rahman Shovon"/>
 <meta property="og:locale" content="en-us">
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="https://arshovon.com/assets/images/shovon.jpg" />
-<meta name="twitter:url" content="https://arshovon.com/tags/algorithm/" />
-<meta property="twitter:title" content="algorithm - Ahmedur Rahman Shovon">
-<meta name="twitter:description" content="Resume, blog, apps and snippets of Ahmedur Rahman Shovon" />
-<title>algorithm - Ahmedur Rahman Shovon</title>
+<meta name="twitter:url" content="https://arshovon.com/blog/sorting-algorithm-comparisons/" />
+<meta property="twitter:title" content="Sorting Algorithm Comparisons - Ahmedur Rahman Shovon">
+<meta name="twitter:description" content="Feature wise comparisons between sorting algorithms">
+<title>Sorting Algorithm Comparisons - Ahmedur Rahman Shovon</title>
 
-<link rel="canonical" href="https://arshovon.com/tags/algorithm/">
+<link rel="canonical" href="https://arshovon.com/blog/sorting-algorithm-comparisons/">
 
 <link rel="icon" href="https://arshovon.com/assets/images/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="https://arshovon.com/assets/images/favicon.ico"
@@ -163,35 +163,25 @@ gtag('config', 'UA-119139307-1');
       
       
       
-
 <main class="col-12 blog p-3 p-md-4 p-lg-4 p-xl-4" role="main">
-  <section class="jumbotron text-center list-jumbotron">
-    <div class="container">
-      <h1 class="jumbotron-heading text-uppercase">algorithm</h1>
-      <p class="lead text-muted">
+  <article>
+    <header class="mb-4">
+      <h3>Sorting Algorithm Comparisons</h3>
+      <div class="mb-3">
+        <span class="float-right badge badge-light">
+          <time datetime="2020-08-15T02:06:33&#43;06:00">
+            <i class="fa fa-calendar pr-1"></i>August 15, 2020</time>
+        </span>
         
-      </p>
-    </div>
-  </section>
-  <div class="row">
-    
-    
-    <div class="col-md-6 mb-4">
-      <div class="card text-left">
-        <a href="https://arshovon.com/blog/sorting-algorithm-comparisons/" title=Sorting&#32;Algorithm&#32;Comparisons class="text-decoration-none">
-          <div class="card-body card-body-shadow">
-            <p class="lead mb-0">
-              Sorting Algorithm Comparisons
-            </p>
-          </div>
-        </a>
-        <div class="card-footer">
-          <span class="float-right badge badge-light">
-            <time datetime="2020-08-15T02:06:33&#43;06:00">
-              <i class="fa fa-calendar pr-1"></i>August 15, 2020</time>
-          </span>
-          
-          <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
+        <a href="https://arshovon.com/categories/" class="badge badge-secondary" title="All categories"><i class="fa fa-folder-open"></i></a>
+
+<a href="https://arshovon.com/categories/algorithm"
+class="badge badge-secondary" title="algorithm" >algorithm</a>
+
+
+        
+        
+        <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
 <a href="https://arshovon.com/tags/algorithm"
 class="badge badge-secondary" title="algorithm">algorithm</a>
@@ -203,82 +193,169 @@ class="badge badge-secondary" title="sorting">sorting</a>
 class="badge badge-secondary" title="time-complexity">time-complexity</a>
 
 
-          
-        </div>
+        
       </div>
-      
-    </div>
+    </header>
+    <hr class="my-6">
+    <table class="table table-bordered table-hover table-striped">
+<thead>
+<tr>
+<th>Criteria</th>
+<th>Bubble</th>
+<th>Selection</th>
+<th>Insertion</th>
+<th>Merge</th>
+<th>Quick</th>
+<th>Counting</th>
+<th>Timsort</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Technique</td>
+<td>Brute force</td>
+<td>Brute force</td>
+<td>Brute force</td>
+<td>Divide-and-conquer</td>
+<td>Divide-and-conquer</td>
+<td>Non comparison</td>
+<td>Hybrid</td>
+</tr>
+
+<tr>
+<td>Worst Time</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(nlgn)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(k+n)</td>
+<td>O(nlgn)</td>
+</tr>
+
+<tr>
+<td>Average Time</td>
+<td>Θ(n<sup>2</sup>)</td>
+<td>Θ(n<sup>2</sup>)</td>
+<td>Θ(n<sup>2</sup>)</td>
+<td>Θ(nlgn)</td>
+<td>Θ(nlgn)</td>
+<td>Θ(k+n)</td>
+<td>Θ(nlgn)</td>
+</tr>
+
+<tr>
+<td>Best Time</td>
+<td>Ω(n)</td>
+<td>Ω(n<sup>2</sup>)</td>
+<td>Ω(n)</td>
+<td>Ω(nlgn)</td>
+<td>Ω(nlgn)</td>
+<td>Ω(k+n)</td>
+<td>Ω(n)</td>
+</tr>
+
+<tr>
+<td>Space</td>
+<td>O(1)</td>
+<td>O(1)</td>
+<td>O(1)</td>
+<td>O(n)</td>
+<td>O(n)</td>
+<td>O(k+n)</td>
+<td>O(n)</td>
+</tr>
+
+<tr>
+<td>Stable</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>In-place</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Online</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Adaptive</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Suitable for</td>
+<td>Sorted list</td>
+<td></td>
+<td>Almost sorted list</td>
+<td>List with unknown order</td>
+<td></td>
+<td>0&lt;=A[i]&lt;=k</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition">Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li>
+<li><a href="https://arshovon.com/blog/insertion-sort/">Insertion sort</a></li>
+<li><a href="https://arshovon.com/blog/counting-sort/">Counting sort</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sorting_algorithm">Sorting Algorithm - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Timsort">Timsort - Wikipedia</a></li>
+<li><a href="https://wiki.c2.com/?TimSort">Timsort - C2 article</a></li>
+<li><a href="https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/">Analysis of different sorting techniques - Geeksforgeeks</a></li>
+</ul>
+
+  </article>
+  
+
+<div class="row pt-3">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
     
-    <div class="col-md-6 mb-4">
-      <div class="card text-left">
-        <a href="https://arshovon.com/blog/insertion-sort/" title=Insertion&#32;Sort class="text-decoration-none">
-          <div class="card-body card-body-shadow">
-            <p class="lead mb-0">
-              Insertion Sort
-            </p>
-          </div>
-        </a>
-        <div class="card-footer">
-          <span class="float-right badge badge-light">
-            <time datetime="2020-08-11T02:06:33&#43;06:00">
-              <i class="fa fa-calendar pr-1"></i>August 11, 2020</time>
-          </span>
-          
-          <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
-
-<a href="https://arshovon.com/tags/algorithm"
-class="badge badge-secondary" title="algorithm">algorithm</a>
-
-<a href="https://arshovon.com/tags/sorting"
-class="badge badge-secondary" title="sorting">sorting</a>
-
-<a href="https://arshovon.com/tags/time-complexity"
-class="badge badge-secondary" title="time-complexity">time-complexity</a>
-
-
-          
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="col-md-6 mb-4">
-      <div class="card text-left">
-        <a href="https://arshovon.com/blog/counting-sort/" title=Counting&#32;Sort class="text-decoration-none">
-          <div class="card-body card-body-shadow">
-            <p class="lead mb-0">
-              Counting Sort
-            </p>
-          </div>
-        </a>
-        <div class="card-footer">
-          <span class="float-right badge badge-light">
-            <time datetime="2020-08-09T11:07:32&#43;06:00">
-              <i class="fa fa-calendar pr-1"></i>August 9, 2020</time>
-          </span>
-          
-          <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
-
-<a href="https://arshovon.com/tags/algorithm"
-class="badge badge-secondary" title="algorithm">algorithm</a>
-
-<a href="https://arshovon.com/tags/sorting"
-class="badge badge-secondary" title="sorting">sorting</a>
-
-<a href="https://arshovon.com/tags/time-complexity"
-class="badge badge-secondary" title="time-complexity">time-complexity</a>
-
-
-          
-        </div>
-      </div>
-      
-    </div>
+    <a href="https://arshovon.com/blog/insertion-sort/" class="pt-2 pb-2 btn btn-light mr-2">
+      <i class="fa fa-chevron-left"></i> Insertion Sort
+    </a>
     
   </div>
-  
-</main>
 
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+    
+  </div>
+</div>
+
+
+
+</main>
 
 
     </div> 
