@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2020 02:06:33 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2020 07:05:42 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>installation</title>
+      <link>https://arshovon.com/categories/installation/</link>
+      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/categories/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iot</title>
+      <link>https://arshovon.com/categories/iot/</link>
+      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/categories/iot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm</title>
@@ -53,15 +71,6 @@
       <pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate>
       
       <guid>https://arshovon.com/categories/enterprise-application/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>installation</title>
-      <link>https://arshovon.com/categories/installation/</link>
-      <pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/categories/installation/</guid>
       <description></description>
     </item>
     

@@ -41,7 +41,7 @@ Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then
       <guid>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</guid>
       <description>Why Docker? Docker is a tool for running application in an isolated environment.
 Some reasons you might want to use Docker:
-  Same environment:  Same environment in developers machines and production servers. Acts the same.  Sandbox projects:  Eliminates the risk of getting conflicts while working on different projects on same machine.  Easy working without setup hussle:  Start working directly on others projects without setting all of the environemts.</description>
+  Same environment:  Same environment in developers machines and production servers. Acts the same.  Sandbox projects:  Eliminates the risk of getting conflicts while working on different projects on same machine.  Easy working without setup hassle:  Start working directly on others projects without setting all of the environments.</description>
     </item>
     
     <item>

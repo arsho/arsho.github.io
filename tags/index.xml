@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2020 02:06:33 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2020 07:05:42 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>docker</title>
+      <link>https://arshovon.com/tags/docker/</link>
+      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>installation</title>
+      <link>https://arshovon.com/tags/installation/</link>
+      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iot</title>
+      <link>https://arshovon.com/tags/iot/</link>
+      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>https://arshovon.com/tags/raspberry-pi/</link>
+      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm</title>
@@ -53,15 +89,6 @@
       <pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate>
       
       <guid>https://arshovon.com/tags/django-cms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>raspberry pi</title>
-      <link>https://arshovon.com/tags/raspberry-pi/</link>
-      <pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
@@ -111,29 +138,11 @@
     </item>
     
     <item>
-      <title>docker</title>
-      <link>https://arshovon.com/tags/docker/</link>
-      <pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>flask</title>
       <link>https://arshovon.com/tags/flask/</link>
       <pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate>
       
       <guid>https://arshovon.com/tags/flask/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>installation</title>
-      <link>https://arshovon.com/tags/installation/</link>
-      <pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/tags/installation/</guid>
       <description></description>
     </item>
     
