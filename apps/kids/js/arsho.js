@@ -1,10 +1,10 @@
 $(document).ready(function(){
-
+    $('[data-toggle="tooltip"]').tooltip();
     var valid_operators = {
-        "addition": "+",
-        "substraction": "-",
-        "multiplication": "x",
-        "division": "÷"
+        "addition": `<i class="fas fa-plus"></i>`,
+        "substraction": `<i class="fas fa-minus"></i>`,
+        "multiplication": `<i class="fas fa-times"></i>`,
+        "division": `<i class="fas fa-divide"></i>`
     };
 
     var bangla_to_english_mapper = {
@@ -21,7 +21,7 @@ $(document).ready(function(){
     };
 
     var english_to_bangla_mapper = {
-        "0": '০' ,
+        "0": '০',
         "1": '১',
         "2": '২',
         "3": '৩',
@@ -106,13 +106,13 @@ $(document).ready(function(){
         ${question["operand_2"]}
         </td>
         <td>
-        =
+        <i class="fas fa-equals"></i>
         </td>
         <td>
-        <input id="${question["question_id"]}" class="answer_input form-control" type="text">
+        <input id="${question["question_id"]}" class="answer_input form-control" type="${question["input_type"]}" tabindex="${question["question_id"]+1}">
         </td>
         <td>
-        <button class="btn btn-light"><i class="fa fa-2x fa-share"></i></button>
+        <button class="btn btn-light"><i class="fa fa-2x fa-calculator"></i></button>
         </td>
         </tr>`;
         // fa-long-arrow-alt-right
@@ -156,9 +156,11 @@ $(document).ready(function(){
             question["correct_answer"] = get_correct_answer(operand_1, operand_2, operator);
             question["operand_1"] = operand_1;
             question["operand_2"] = operand_2;
+            question["input_type"] = "number";
             if(quiz_settings["quiz_language"] === "bn"){
                 question["operand_1"] = operand_1.toLocaleString("bn-BD");
                 question["operand_2"] = operand_2.toLocaleString("bn-BD");
+                question["input_type"] = "text";
             }
             question["operator"] = operator;
             question["question_id"] = i;
@@ -201,6 +203,4 @@ $(document).ready(function(){
             $(this).val(bangla_value);
         }
     });
-
-
 });
