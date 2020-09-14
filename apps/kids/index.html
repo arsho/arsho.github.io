@@ -139,9 +139,51 @@
             </div>
         </div>
 
-        <div class="mb-2 invisible table-responsive" id="quiz_wrapper">
-            <table class="table table-sm quiz_rows" id="quiz_rows">
-            </table>
+        <div class="mb-2 invisible" id="quiz_wrapper">
+
+            <div class="card-deck mt-4 mb-4">
+                <div class="card text-center border-success text-success p-1" id="correct_answers_card">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <i class="far fa-check-circle fa-5x"></i>
+                        </div>
+                        <div class="col-md-9 pt-2 pb-2">
+                            <div class="card-body p-0">
+                                <h5 class="card-title m-0" id="correct_answers_title">
+                                    Correct Answer
+                                </h5>
+                                <h2 class="card-title m-0 mt-1" id="correct_answers_value">
+
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-center border-danger text-danger p-1" id="wrong_answers_card">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <i class="far fa-times-circle fa-5x"></i>
+                        </div>
+                        <div class="col-md-9 pt-2 pb-2">
+                            <div class="card-body p-0">
+                                <h5 class="card-title m-0" id="wrong_answers_title">
+                                    Wrong Answer
+                                </h5>
+                                <h2 class="card-title m-0 mt-1" id="wrong_answers_value">
+
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ./card-deck -->
+
+            <div class="table-responsive">
+                <table class="table table-sm quiz_rows" id="quiz_rows">
+                </table>
+            </div>
         </div>
     </div>
     <footer class="footer w-100 text-center d-flex align-items-center justify-content-center text-muted">

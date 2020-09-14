@@ -31,3 +31,43 @@ body{
 .quiz_row{
     min-height: 100px;
 }
+
+.quiz_rows tr td input:focus{
+    border-color: white;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    border: 2px solid #343a40;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 544px) {
+    .quiz_rows tr td, .quiz_rows tr td input{
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    .quiz_rows tr td, .quiz_rows tr td input{
+        font-size: 1rem !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .quiz_rows tr td, .quiz_rows tr td input{
+        font-size: 1.8rem !important;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .quiz_rows tr td, .quiz_rows tr td input{
+        font-size: 2rem !important;
+    }
+}
