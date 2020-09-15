@@ -190,6 +190,7 @@ $(document).ready(function(){
             $("#correct_answers_value").html(get_converted_value("0", "bn"));
             $("#wrong_answers_value").html(get_converted_value("0", "bn"));
         }
+        $(".answer_input")[0].focus();
     });
 
     $("body").on("focusout", "input.answer_input", function(event){
