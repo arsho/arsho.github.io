@@ -36,6 +36,37 @@ $(document).ready(function(){
     var quiz_data = [];
     var quiz_settings = {};
 
+    function celebrate(){
+        var end = Date.now() + (5 * 1000);
+
+        // go Buckeyes!
+        var colors = ['#FF0000', '#093657', '#D7B030'];
+
+        (function frame() {
+            confetti({
+                particleCount: 3,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 },
+                colors: colors,
+                disableForReducedMotion: true
+            });
+            confetti({
+                particleCount: 3,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 },
+                colors: colors,
+                disableForReducedMotion: true
+            });
+
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+        }());
+
+    }
+
     function get_random_integer(min_number, max_number){
         return Math.floor(Math.random() * (max_number - min_number + 1) + min_number);
     }
@@ -211,6 +242,11 @@ $(document).ready(function(){
             $(this).closest(".quiz_row").addClass("bg-danger");
         }
         total_correct_new = $(".quiz_row.bg-success").length;
+
+        if(total_correct_new == quiz_data.length){
+            celebrate();
+        }
+
         total_wrong_new = $(".quiz_row.bg-danger").length;
         if(total_correct_new !== total_correct_old){
             $("#correct_answers_card").fadeOut();
@@ -235,11 +271,21 @@ $(document).ready(function(){
         switch (event.which) {
             case 37:
             prev_question = question_id-1;
-            $("#"+prev_question).focus();
+            if(prev_question==-1){
+                $("#"+question_id).blur();
+            }
+            else{
+                $("#"+prev_question).focus();
+            }
             break;
             case 39:
             next_question = question_id+1;
-            $("#"+next_question).focus();
+            if(next_question==total_anwer_input){
+                $("#"+question_id).blur();
+            }
+            else{
+                $("#"+next_question).focus();
+            }
             break;
             default:
             break;

@@ -135,8 +135,8 @@ p {
 }
 
 .content_wrapper .quote_section{
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .content_wrapper .section .item {
@@ -311,44 +311,44 @@ code {
 }
 
 img[src$="center"] {
-  display:block;
-  margin: 0 auto;
+    display:block;
+    margin: 0 auto;
 }
 
 .blog>article{
-  font-size: 110%;
+    font-size: 110%;
 }
 
 .blog>article img{
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .blog>article>h1{
-  font-size: 22px;
+    font-size: 22px;
 }
 
 .blog>article>h2{
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .blog>article>h3{
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .blog>article>h4{
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .blog>article>h5{
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .blog>article>h6{
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .taxonomy-title{
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 /* Media Queries */
