@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Meme Creator by Shovon</title>
+		<title>Meme Creator</title>
+		<meta name="keywords" content="meme creator, canvas, meme">
+		<meta name="description" content="Create a meme with custom image"/>
+		<meta name="author" content="Ahmedur Rahman Shovon">
+
+		<meta property="og:url" content="https://arshovon.com/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Meme Creator">
+		<meta property="og:description" content="Create a meme with custom image">
+		<meta property="og:image" content="https://arshovon.com/apps/meme_creator/demo/sho_gray.png">
+		<meta property="og:image:secure_url" content="https://arshovon.com/apps/meme_creator/demo/sho_gray.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:alt" content="Meme Creator" />
+		<meta property="og:site_name" content="Meme Creator"/>
+		<meta property="og:locale" content="en-us">
 		<style>
 		@import url(http://fonts.googleapis.com/css?family=Changa+One);
 		@import url(http://fonts.googleapis.com/css?family=Kavoon);
@@ -344,7 +358,7 @@
 		        </table>
 		        <!--h2 id="footer"> Created by shovon</h2-->
 				<div id="rib" class="nicediv" title="Click to visit my profile">
-					<h3>Created by Shovon</h3>
+					<h3>Developed by Shovon</h3>
 				</div>
 		    </div>
 		</div>
@@ -591,10 +605,16 @@
 			}
 			function save_meme()
 			{
-				window.open(document.getElementById("my_canvas").toDataURL());
+				var image_data = document.getElementById("my_canvas").toDataURL();
+			    var temporary_link = document.createElement('a');
+			    temporary_link.download = 'meme_'+Date.now()+'.png';
+			    temporary_link.href = image_data;
+			    document.body.appendChild(temporary_link);
+			    temporary_link.click();
+			    document.body.removeChild(temporary_link);
 			}
 			document.getElementById("rib").onclick=function(){
-				location.href="https://www.facebook.com/ars.shovon";
+				location.href="https://arshovon.com/";
 			}
 		</script>
 	</body>
