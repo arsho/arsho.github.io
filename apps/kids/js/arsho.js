@@ -36,12 +36,10 @@ $(document).ready(function(){
     var quiz_data = [];
     var quiz_settings = {};
 
-    function celebrate(){
+    function display_celebration_effects(){
         var end = Date.now() + (5 * 1000);
-
         // go Buckeyes!
         var colors = ['#FF0000', '#093657', '#D7B030'];
-
         (function frame() {
             confetti({
                 particleCount: 3,
@@ -64,7 +62,19 @@ $(document).ready(function(){
                 requestAnimationFrame(frame);
             }
         }());
+    }
 
+    function display_celebration_message(){
+        $("#celebration_message").html("Very Good!");
+        if(quiz_settings["quiz_language"] === "bn"){
+            $("#celebration_message").html("খুব ভালো!");
+        }
+        $('#celebration_deck').slideDown("slow");
+    }
+
+    function celebrate(){
+        display_celebration_effects();
+        display_celebration_message();
     }
 
     function get_random_integer(min_number, max_number){
@@ -153,12 +163,12 @@ $(document).ready(function(){
 
     function get_quiz_settings(){
         $max_number_operand_1 = parseInt($("#max_number_operand_1").val());
-        if(!$max_number_operand_1){
+        if($max_number_operand_1 == NaN){
             $max_number_operand_1 = 30;
         }
         $max_number_operand_2 = parseInt($("#max_number_operand_2").val());
-        if(!$max_number_operand_2){
-            $max_number_operand_2 = 15;
+        if($max_number_operand_2 == NaN){
+            $max_number_operand_2 = 10;
         }
         $number_of_questions = parseInt($("#number_of_questions").val());
         $quiz_language = $("#quiz_language").val();
@@ -186,6 +196,12 @@ $(document).ready(function(){
             var operand_1 = get_random_integer(min_number, max_number_operand_1);
             var operand_2 = get_random_integer(min_number, max_number_operand_2);
             var operator = get_random_operator(operators);
+            // Handle Division by zero error
+            if(operator == valid_operators["division"]){
+                if(operand_2 == 0){
+                    operand_2 = 1;
+                }
+            }
             question["correct_answer"] = get_correct_answer(operand_1, operand_2, operator);
             question["operand_1"] = operand_1;
             question["operand_2"] = operand_2;
@@ -222,6 +238,7 @@ $(document).ready(function(){
             $("#wrong_answers_value").html(get_converted_value("0", "bn"));
         }
         $(".answer_input")[0].focus();
+        $('#celebration_deck').hide();
     });
 
     $("body").on("focusout", "input.answer_input", function(event){
