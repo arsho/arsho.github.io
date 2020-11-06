@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Install Avro Phonetic in Ubuntu 20.04 LTS</title>
+      <link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link>
+      <pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid>
+      <description>How to install Avro Phonetic in Ubuntu 20.04 LTS  Open Ubuntu Software Search Avro Phonetic in Ubuntu Software  Click Install  Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language  Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic)  The Avro Phonetic will be added to the Input Sources  Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut   References  Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description>
+    </item>
+    
+    <item>
       <title>Create custom email address and attach with Gmail</title>
       <link>https://arshovon.com/blog/custom-email-with-gmail/</link>
       <pubDate>Wed, 14 Oct 2020 13:14:12 +0600</pubDate>
