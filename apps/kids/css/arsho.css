@@ -5,7 +5,7 @@ body{
 }
 
 .footer {
-  min-height: 5vh;
+    min-height: 5vh;
 }
 
 .datamate_red {
@@ -15,6 +15,10 @@ body{
 .blog-header-logo {
     font-family: 'Rock Salt', cursive;
     cursor: pointer;
+}
+
+.celebration-text {
+    font-family: 'Galada', cursive;
 }
 
 .content{
