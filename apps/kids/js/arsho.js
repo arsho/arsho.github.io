@@ -154,7 +154,6 @@ $(document).ready(function(){
         <button class="btn btn-light"><i class="fa fa-2x fa-calculator"></i></button>
         </td>
         </tr>`;
-        // fa-long-arrow-alt-right
     }
 
     function get_quiz_settings(){
@@ -236,7 +235,7 @@ $(document).ready(function(){
             $("#wrong_answers_value").html(get_converted_value("0", "bn"));
         }
         $(".answer_input")[0].focus();
-        //$('#celebration_deck').hide();
+        $('#celebration_deck').hide();
     });
 
     $("body").on("focusout", "input.answer_input", function(event){
