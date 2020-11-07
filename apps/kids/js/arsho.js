@@ -35,6 +35,7 @@ $(document).ready(function(){
 
     var quiz_data = [];
     var quiz_settings = {};
+    $('#celebration_deck').hide();
 
     function display_celebration_effects(){
         var end = Date.now() + (5 * 1000);
