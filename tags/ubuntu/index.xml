@@ -6,10 +6,21 @@
     <description>Recent content in ubuntu on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2020 15:05:42 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 03 Dec 2020 15:05:42 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Run YesWorkflow Docker Image on Ubuntu 20.04</title>
+      <link>https://arshovon.com/blog/yesworkflow-docker-run/</link>
+      <pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid>
+      <description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
+Run Docker image of YesWorkflow  Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
+import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description>
+    </item>
     
     <item>
       <title>Install Avro Phonetic in Ubuntu 20.04 LTS</title>
