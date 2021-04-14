@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Understanding Time Complexity</title>
+      <link>https://arshovon.com/blog/understanding-time-complexity/</link>
+      <pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/understanding-time-complexity/</guid>
+      <description>Algorithm efficiency The efficiency of an algorithm is mainly measured by time complexity and space complexity. Time complexity describes the computational time required to run an algorithm for a set of input elements. It is generally expressed as a function of the size of the input.
+Asymptotic notations Three types of asymptotic notations are used to express both the time complexity and space complexity of an algorithm. We will compare these notations by three different scenarios of the same algorithm, the linear search algorithm.</description>
+    </item>
+    
+    <item>
       <title>Run YesWorkflow Docker Image on Ubuntu 20.04</title>
       <link>https://arshovon.com/blog/yesworkflow-docker-run/</link>
       <pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate>
