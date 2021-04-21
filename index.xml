@@ -126,15 +126,6 @@ Solution: Add local machine&amp;rsquo;s SSH key to Raspberry Pi for password les
     </item>
     
     <item>
-      <title>COVID-19 World Status</title>
-      <link>https://arshovon.com/apps/c19/</link>
-      <pubDate>Sun, 05 Apr 2020 11:15:10 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/c19/</guid>
-      <description>COVID-19 World Status     COVID-19    Summary    Data    Confirmed    Death    Active    Recovered    Country    About     Code       COVID-19 World Status   Total Cases    Today&#39;s cases:      Total Deaths   (%)    Today&#39;s deaths:      Cases / Million    Deaths / Million:      Total Recovered   (%)    Affected Countries:      Active Cases    Critical cases:      Total Tests    Tests per million:                        Worldwide COVID-19 Data with Instant Search Option   Flag Country Cases Today Cases Deaths Today Deaths Tests Active Recovered Critical Cases / Million Deaths / Million Tests / Million          COVID-19 World Map(Total Confirmed Cases)   Mouse over any country to see total confirmed cases and click to see country&#39;s details.</description>
-    </item>
-    
-    <item>
       <title>Setup Odoo with Docker Compose</title>
       <link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link>
       <pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate>
@@ -314,6 +305,15 @@ Argentina 2 Brazil 5 England 1 France 2 Germany 4 Italy 4 Spain 1 Uruguay 2  SOR
 (one drop)  4
 (boom boom clap)    DRUMPAD by Shovon
 (play drums using keyboard and or with mouse)         </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://arshovon.com/apps/c19/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arshovon.com/apps/c19/</guid>
+      <description>COVID-19 World Status     COVID-19    Summary    Data    Confirmed    Death    Active    Recovered    Country    About     Code       COVID-19 World Status   Total Cases    Today&#39;s cases:      Total Deaths   (%)    Today&#39;s deaths:      Cases / Million    Deaths / Million:      Total Recovered   (%)    Affected Countries:      Active Cases    Critical cases:      Total Tests    Tests per million:                        Worldwide COVID-19 Data with Instant Search Option   Flag Country Cases Today Cases Deaths Today Deaths Tests Active Recovered Critical Cases / Million Deaths / Million Tests / Million          COVID-19 World Map(Total Confirmed Cases)   Mouse over any country to see total confirmed cases and click to see country&#39;s details.</description>
     </item>
     
   </channel>
