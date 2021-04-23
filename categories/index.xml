@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Apr 2021 00:01:36 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 23 Apr 2021 05:05:11 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>installation</title>
+      <link>https://arshovon.com/categories/installation/</link>
+      <pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate>
+      
+      <guid>https://arshovon.com/categories/installation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm</title>
@@ -17,15 +26,6 @@
       <pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate>
       
       <guid>https://arshovon.com/categories/algorithm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>installation</title>
-      <link>https://arshovon.com/categories/installation/</link>
-      <pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/categories/installation/</guid>
       <description></description>
     </item>
     

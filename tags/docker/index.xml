@@ -6,10 +6,19 @@
     <description>Recent content in docker on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 15:05:42 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 23 Apr 2021 05:05:11 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Gatsby on Ubuntu 20.04</title>
+      <link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link>
+      <pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid>
+      <description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description>
+    </item>
     
     <item>
       <title>Run YesWorkflow Docker Image on Ubuntu 20.04</title>

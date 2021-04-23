@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Install Gatsby on Ubuntu 20.04</title>
+      <link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link>
+      <pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid>
+      <description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description>
+    </item>
+    
+    <item>
       <title>Understanding Time Complexity</title>
       <link>https://arshovon.com/blog/understanding-time-complexity/</link>
       <pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate>

@@ -10,29 +10,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 
-<meta name="keywords" content="installation, raspberry pi, docker, iot">
-<meta name="description" content="Install Docker on Raspberry Pi">
+<meta name="keywords" content="installation, ubuntu, docker, gatsby">
+<meta name="description" content="Install Gatsaby on Ubuntu 20.04 LTS">
 <meta name="author" content="Ahmedur Rahman Shovon">
 
-<meta property="og:url" content="https://arshovon.com/blog/install-docker-on-raspberry-pi/">
+<meta property="og:url" content="https://arshovon.com/blog/install-gatsby-on-ubuntu/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Install Docker on Raspberry Pi - Ahmedur Rahman Shovon">
-<meta name="og:description" content="Install Docker on Raspberry Pi">
-<meta property="og:image" content="https://arshovon.com/blog/images/docker-raspberry-hello-world.png">
-<meta property="og:image:secure_url" content="https://arshovon.com/blog/images/docker-raspberry-hello-world.png">
+<meta property="og:title" content="Install Gatsby on Ubuntu 20.04 - Ahmedur Rahman Shovon">
+<meta name="og:description" content="Install Gatsaby on Ubuntu 20.04 LTS">
+<meta property="og:image" content="https://arshovon.com/blog/images/gatsby_ubuntu.png">
+<meta property="og:image:secure_url" content="https://arshovon.com/blog/images/gatsby_ubuntu.png">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="Install Docker on Raspberry Pi - Ahmedur Rahman Shovon" />
+<meta property="og:image:alt" content="Install Gatsby on Ubuntu 20.04 - Ahmedur Rahman Shovon" />
 <meta property="og:site_name" content="Ahmedur Rahman Shovon"/>
 <meta property="og:locale" content="en-us">
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://arshovon.com/blog/images/docker-raspberry-hello-world.png" />
-<meta name="twitter:url" content="https://arshovon.com/blog/install-docker-on-raspberry-pi/" />
-<meta property="twitter:title" content="Install Docker on Raspberry Pi - Ahmedur Rahman Shovon">
-<meta name="twitter:description" content="Install Docker on Raspberry Pi">
-<title>Install Docker on Raspberry Pi - Ahmedur Rahman Shovon</title>
+<meta name="twitter:image" content="https://arshovon.com/blog/images/gatsby_ubuntu.png" />
+<meta name="twitter:url" content="https://arshovon.com/blog/install-gatsby-on-ubuntu/" />
+<meta property="twitter:title" content="Install Gatsby on Ubuntu 20.04 - Ahmedur Rahman Shovon">
+<meta name="twitter:description" content="Install Gatsaby on Ubuntu 20.04 LTS">
+<title>Install Gatsby on Ubuntu 20.04 - Ahmedur Rahman Shovon</title>
 
-<link rel="canonical" href="https://arshovon.com/blog/install-docker-on-raspberry-pi/">
+<link rel="canonical" href="https://arshovon.com/blog/install-gatsby-on-ubuntu/">
 
 <link rel="icon" href="https://arshovon.com/assets/images/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="https://arshovon.com/assets/images/favicon.ico"
@@ -164,20 +164,17 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 <main class="col-12 blog p-3 p-md-5" role="main">
   <article>
     <header class="mb-4">
-      <h3>Install Docker on Raspberry Pi</h3>
+      <h3>Install Gatsby on Ubuntu 20.04</h3>
       <div class="mb-3">
         <span class="float-right badge badge-light">
-          <time datetime="2020-08-30T07:05:42&#43;06:00">
-            <i class="fa fa-calendar pr-1"></i>August 30, 2020</time>
+          <time datetime="2021-04-23T05:05:11&#43;06:00">
+            <i class="fa fa-calendar pr-1"></i>April 23, 2021</time>
         </span>
         
         <a href="https://arshovon.com/categories/" class="badge badge-secondary" title="All categories"><i class="fa fa-folder-open"></i></a>
 
 <a href="https://arshovon.com/categories/installation"
 class="badge badge-secondary" title="installation" >installation</a>
-
-<a href="https://arshovon.com/categories/internet-of-thinks"
-class="badge badge-secondary" title="Internet of Thinks" >Internet of Thinks</a>
 
 
         
@@ -186,11 +183,11 @@ class="badge badge-secondary" title="Internet of Thinks" >Internet of Thinks</a>
 
 <a href="https://arshovon.com/tags/installation" class="badge badge-secondary" title="installation">installation</a>
 
-<a href="https://arshovon.com/tags/raspberry-pi" class="badge badge-secondary" title="raspberry pi">raspberry pi</a>
+<a href="https://arshovon.com/tags/ubuntu" class="badge badge-secondary" title="ubuntu">ubuntu</a>
 
 <a href="https://arshovon.com/tags/docker" class="badge badge-secondary" title="docker">docker</a>
 
-<a href="https://arshovon.com/tags/iot" class="badge badge-secondary" title="iot">iot</a>
+<a href="https://arshovon.com/tags/gatsby" class="badge badge-secondary" title="gatsby">gatsby</a>
 
 
         
@@ -199,91 +196,134 @@ class="badge badge-secondary" title="Internet of Thinks" >Internet of Thinks</a>
     <hr class="my-6">
     
 
-<h2 id="environment">Environment</h2>
+<h3 id="what-is-gatsby">What is Gatsby?</h3>
+
+<p>Gatsby is a React based build time static site generator that uses Webpack and GraphQL.
+It makes easy to work with data in React apps. It contains GraphQL data layer.
+During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time.
+As it generates the static files, Gatsby applications can be deployed in anywhere.</p>
+
+<h3 id="steps-to-install-gatsby-on-ubuntu-20-04">Steps to install Gatsby on Ubuntu 20.04</h3>
 
 <ul>
-<li><b> Operating System</b> : Raspbian GNU/Linux 9 (stretch)</li>
-<li><b> Model</b> : Raspberry Pi 2 (Model B)</li>
+<li><p>Update and upgrade the OS:</p>
+
+<pre><code class="language-bash">sudo apt update
+sudo apt -y upgrade
+</code></pre></li>
+
+<li><p>Install <code>curl</code>:</p>
+
+<pre><code class="language-bash">sudo apt-get install curl
+</code></pre></li>
+
+<li><p>Download and install latest version of <code>nvm</code>:</p>
+
+<pre><code class="language-bash">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+</code></pre></li>
+
+<li><p>(Optional) To use <code>nvm</code> in <code>zsh</code>, append the following lines to the <code>./zshrc</code> file:</p>
+
+<pre><code class="language-bash">export NVM_DIR=~/.nvm
+ [ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot;
+</code></pre></li>
+
+<li><p>Close and restart the terminal.</p></li>
+
+<li><p>Check <code>nvm</code> version:</p>
+
+<pre><code class="language-bash">nvm --version
+</code></pre></li>
+
+<li><p>Set default Node.js version:</p>
+
+<pre><code class="language-bash">nvm install 12
+nvm use 12
+</code></pre></li>
+
+<li><p>Check <code>node</code> and <code>npm</code> version:</p>
+
+<pre><code class="language-bash">npm --version
+node --version
+</code></pre></li>
+
+<li><p>Install Gatsby CLI:</p>
+
+<pre><code class="language-bash">npm install -g gatsby-cli
+</code></pre></li>
+
+<li><p>Check if <code>gatsby-cli</code> is installed properly:</p>
+
+<pre><code class="language-bash">gatsby --help
+</code></pre></li>
+
+<li><p>(Optional) We may get error message like:</p>
+
+<pre><code class="language-bash">Gatsby requires Node.js 12.13.0 or higher (you have v10.24.0)
+</code></pre>
+
+<p>To solve this, first we need to install nvm 12:</p>
+
+<pre><code class="language-bash">nvm install 12
+nvm alias default 12
+</code></pre>
+
+<p>Then, to install Node.js version 12, we need to install <code>n</code>:</p>
+
+<pre><code class="language-bash">npm install -g n
+</code></pre>
+
+<p>Take ownership of the system directories:</p>
+
+<pre><code class="language-bash"># make cache folder (if missing) and take ownership
+sudo mkdir -p /usr/local/n
+sudo chown -R $(whoami) /usr/local/n
+# take ownership of Node.js install destination folders
+sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
+</code></pre>
+
+<p>Finally, install Node.js version 12:</p>
+
+<pre><code class="language-bash">n 12
+</code></pre>
+
+<p>Then, install Gatsby CLI:</p>
+
+<pre><code class="language-bash">npm install -g gatsby-cli
+</code></pre>
+
+<p>Check if <code>gatsby-cli</code> is installed properly:</p>
+
+<pre><code class="language-bash">gatsby --help
+</code></pre></li>
+
+<li><p>Create a new site using Gatsby:</p>
+
+<pre><code class="language-bash">gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
+</code></pre></li>
+
+<li><p>Change the current directory to the site directory:</p>
+
+<pre><code class="language-bash">cd hello-world
+</code></pre></li>
+
+<li><p>Run the site:</p>
+
+<pre><code class="language-bash">gatsby develop
+</code></pre></li>
 </ul>
 
-<h2 id="docker-installation-procedure-on-raspberry-pi">Docker Installation Procedure on Raspberry Pi</h2>
+<p><img src="/blog/images/gatsby_ubuntu.png?style=center" alt="alt gatsby run hello-world" /></p>
 
-<p>The following steps showed the step by step installation guideline.</p>
-
-<h3 id="raspian-information">Raspian Information</h3>
+<h3 id="references">References</h3>
 
 <ul>
-<li><p>Check the model of the Raspberry Pi:</p>
-
-<pre><code>cat /proc/device-tree/model
-</code></pre>
-
-<p>It confirms that I have a Raspberry Pi 2 (Model B)</p>
-
-<pre><code>Raspberry Pi 2 Model B Rev 1.1
-</code></pre></li>
-
-<li><p>Check the Operating System (OS) of the Raspberry Pi:</p>
-
-<pre><code>cat /etc/os-release
-</code></pre>
-
-<p>This shows the details information of the OS.</p>
-
-<pre><code>PRETTY_NAME=&quot;Raspbian GNU/Linux 9 (stretch)&quot;
-NAME=&quot;Raspbian GNU/Linux&quot;
-VERSION_ID=&quot;9&quot;
-VERSION=&quot;9 (stretch)&quot;
-VERSION_CODENAME=stretch
-ID=raspbian
-ID_LIKE=debian
-HOME_URL=&quot;http://www.raspbian.org/&quot;
-SUPPORT_URL=&quot;http://www.raspbian.org/RaspbianForums&quot;
-BUG_REPORT_URL=&quot;http://www.raspbian.org/RaspbianBugs&quot;
-</code></pre></li>
-</ul>
-
-<h3 id="install-docker">Install Docker</h3>
-
-<ul>
-<li><p>Update and Upgrade Existing Packages:</p>
-
-<pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade -y
-</code></pre></li>
-
-<li><p>Install the Docker client:</p>
-
-<pre><code>curl -sSL https://get.docker.com | sh
-</code></pre>
-
-<p><img src="/blog/images/docker-raspberry-version.png?style=center" alt="alt docker version" title="Docker version information" /></p></li>
-
-<li><p>Add current user to <code>docker</code> group to user Docker as a non-root user:</p>
-
-<pre><code>sudo usermod -aG docker ${USER}
-</code></pre></li>
-
-<li><p>Log out and re login to the system to take effect. Default password of Raspian is: <code>raspberry</code>.</p></li>
-
-<li><p>Check Docker version:</p>
-
-<pre><code>docker --version
-Docker version 19.03.12, build 48a6621
-</code></pre></li>
-
-<li><p>Run the <code>hello-world</code> docker application:</p>
-
-<pre><code>docker run hello-world
-</code></pre>
-
-<p><img src="/blog/images/docker-raspberry-hello-world.png?style=center" alt="alt docker run hello-world" title="Running hello world docker example" /></p></li>
-</ul>
-
-<h2 id="reference">Reference</h2>
-
-<ul>
-<li><a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">Raspberry Pi Blog: Docker comes to Raspberry Pi</a></li>
-<li><a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/">Introduction to Docker and installation process on Ubuntu 18.04</a></li>
+<li><a href="https://www.gatsbyjs.com/">Gatsby official website</a></li>
+<li><a href="https://www.gatsbyjs.com/docs/tutorial/part-zero/">Set Up Your Development Environment</a></li>
+<li><a href="https://www.gatsbyjs.com/docs/upgrading-node-js/">Upgrading Your Node.js Version</a></li>
+<li><a href="https://github.com/tj/n">n – Interactively Manage Your Node.js Versions</a></li>
+<li><a href="https://www.gatsbyjs.com/docs/tutorial/">Tutorial: Learn how Gatsby works</a></li>
+<li><a href="https://www.bigcommerce.com/blog/what-is-gatsby/">What is Gatsby JS, and How Are Ecommerce Developers Using it to Make Blazing-Fast Stores?</a></li>
 </ul>
 
   </article>
@@ -292,17 +332,13 @@ Docker version 19.03.12, build 48a6621
 <div class="row pt-3">
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         
-        <a href="https://arshovon.com/blog/sorting-algorithm-comparisons/" class="pt-2 pb-2 btn btn-light mr-2">
-            <i class="fa fa-chevron-left"></i> Sorting Algorithm Comparisons
+        <a href="https://arshovon.com/blog/understanding-time-complexity/" class="pt-2 pb-2 btn btn-light mr-2">
+            <i class="fa fa-chevron-left"></i> Understanding Time Complexity
         </a>
         
     </div>
 
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
-        
-        <a href="https://arshovon.com/blog/custom-email-with-gmail/" class="pt-2 pb-2 btn btn-light text-grey ml-2">
-            Create custom email address and attach with Gmail <i class="fa fa-chevron-right"></i>
-        </a>
         
     </div>
 </div>
