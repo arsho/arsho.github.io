@@ -174,7 +174,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             <i class="fa fa-calendar pr-1"></i>August 11, 2020</time>
           
             , Updated on
-            <time datetime="2021-04-28T15:41:30&#43;06:00">
+            <time datetime="2021-04-28T20:28:16&#43;06:00">
               <i class="fa fa-calendar pr-1"></i>April 28, 2021</time>
           
         </span>
@@ -422,11 +422,11 @@ if __name__ == &quot;__main__&quot;:
 
 
 <div style="margin: 0 auto;" class="my-4">
-    <canvas id="710"></canvas>
+    <canvas id="450"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js" integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('710').getContext('2d');
+    var ctx = document.getElementById('450').getContext('2d');
     var options = 
 {
     type: 'line',
@@ -451,7 +451,11 @@ if __name__ == &quot;__main__&quot;:
     options: {
         maintainAspectRatio: true,
         borderWidth: 3,
-        responsive: true,   
+        responsive: true,  
+        interaction: {
+            mode: 'x',
+            intersect: false
+        },         
         plugins: {
             title: {
                 display: true,
@@ -615,9 +619,9 @@ if __name__ == &quot;__main__&quot;:
 <li><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition">Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion sort Wikipedia article</a></li>
 <li><a href="https://docs.python.org/3.6/library/timeit.html#examples">timeit module documentation</a></li>
-<li><a href="https://arshovon.com/blog/counting-sort/">Counting sort</a></li>
-<li><a href="https://arshovon.com/blog/bubble-sort/">Bubble sort</a></li>
-<li><a href="https://arshovon.com/blog/sorting-algorithm-comparisons/">Sorting Algorithm Comparisons</a></li>
+<li><a href="/blog/counting-sort/">Counting sort</a></li>
+<li><a href="/blog/bubble-sort/">Bubble sort</a></li>
+<li><a href="/blog/sorting-algorithm-comparisons/">Sorting Algorithm Comparisons</a></li>
 </ul>
 
   </article>

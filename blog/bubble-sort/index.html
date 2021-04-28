@@ -196,15 +196,15 @@ class="badge badge-secondary" title="algorithm" >algorithm</a>
       </div>
     </header>
     <hr class="my-6">
-    <p>In bubble sort algorithm, each pair of consecutive elements are swapped if they are not in correct order. In each iteration, it places an element at its correct place. Thus in <code>n</code> iterations, all <code>n</code> elements are sorted accordingly.
-The following figure illustrates how bubble sort places the elements in correct order.
+    <p>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in <code>n</code> iterations, all <code>n</code> elements are sorted accordingly.
+The following figure illustrates how bubble sort places the elements in the correct order.
 <figure><img src="/blog/images/bubble_sort_example.gif?style=center" alt="alt bubble sort example"></figure></p>
 
 <h2 id="bubble-sort-characteristics">Bubble sort characteristics</h2>
 
 <h3 id="impractical">Impractical</h3>
 
-<p>Bubble sort is one of the fundamental sorting algorithm to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has same time complexity of insertion sort, insertion sort is more efficient than bubble sort.</p>
+<p>Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</p>
 
 <h3 id="adaptive">Adaptive</h3>
 
@@ -212,19 +212,19 @@ The following figure illustrates how bubble sort places the elements in correct 
 
 <h3 id="offline">Offline</h3>
 
-<p>Insertion sort works after receiving all the data. It does not sort the element when it receives them.</p>
+<p>Bubble sort works after receiving all the data. It does not sort the element when it receives them.</p>
 
 <h3 id="stable">Stable</h3>
 
-<p>Bubble sort is stable. Numbers with the same value appears in the output array as they appear in the input array. Let's take an input array <code>A = [3, 0, 3]</code>. In the input array the value <code>3</code> occurs 2 times; at index 0 and 2. Insertion sort ensures that in the output array the occurrences of <code>3</code> are placed as same order as of the input array.</p>
+<p>Bubble sort is stable. Numbers with the same value appear in the output array as they appear in the input array. Let's take an input array <code>A = [3, 0, 3]</code>. In the input array, the value <code>3</code> occurs two times; at index 0 and 2. Insertion sort ensures that in the output array, the occurrences of <code>3</code> are placed in the same order as the input array.</p>
 
 <h3 id="in-place">In place:</h3>
 
-<p>Bubble sort sorts the input list in place. It does not require additional list to sort the elements. It only requires a constant amount of additional memory space <code>O(1)</code>.</p>
+<p>Bubble sort sorts the input list in place. It does not require an additional list to sort the elements. It only requires a constant amount of extra memory space <code>O(1)</code>.</p>
 
 <h3 id="quadratic-time-complexity">Quadratic time complexity</h3>
 
-<p>It has a quadratic time complexity.<br></p>
+<p>It has quadratic time complexity.<br></p>
 
 <ul>
 <li>Worst Time complexity (Big-O): <code>O(n*n)</code>, where <code>n</code>: total number of elements in the list.<br></li>
@@ -382,8 +382,8 @@ if __name__ == &quot;__main__&quot;:
 <h2 id="comparison-between-bubble-sort-and-insertion-sort">Comparison between bubble sort and insertion sort</h2>
 
 <ul>
-<li>Insertion sort is efficient than bubble sort as it requires less number of swaps to sort the elements.</li>
-<li>Insertion sort is online but bubble sort is offline. That means insertion sort sorts the elements at the time of receiving each single element but bubble sort sorts the elements only after receiving all the elements.</li>
+<li>Insertion sort is more efficient than bubble sort as it requires fewer swaps to sort the elements.</li>
+<li>Insertion sort is online, but bubble sort is offline. That means insertion sort sorts the elements when receiving each element but bubble sort sorts the elements only after receiving all the elements.</li>
 </ul>
 
 <p>The following table shows the comparison between insertion sort and counting sort based on the execution time.</p>
@@ -428,11 +428,11 @@ if __name__ == &quot;__main__&quot;:
 
 
 <div style="margin: 0 auto;" class="my-4">
-    <canvas id="988"></canvas>
+    <canvas id="6"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js" integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('988').getContext('2d');
+    var ctx = document.getElementById('6').getContext('2d');
     var options = 
 {
     type: 'line',
@@ -457,7 +457,11 @@ if __name__ == &quot;__main__&quot;:
     options: {
         maintainAspectRatio: true,
         borderWidth: 3,
-        responsive: true,   
+        responsive: true,
+        interaction: {
+            mode: 'x',
+            intersect: false
+        },
         plugins: {
             title: {
                 display: true,
@@ -619,11 +623,11 @@ if __name__ == &quot;__main__&quot;:
 <ul>
 <li><a href="https://github.com/pllk/cphb/">Competitive Programmer's Handbook</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble sort Wikipedia article</a></li>
-<li><a href="https://arshovon.com/blog/insertion-sort/">Insertion sort</a></li>
+<li><a href="/blog/insertion-sort/">Insertion sort</a></li>
 <li><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition">Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li>
-<li><a href="https://arshovon.com/blog/counting-sort/">Counting sort</a></li>
-<li><a href="https://arshovon.com/blog/sorting-algorithm-comparisons/">Sorting Algorithm Comparisons</a></li>
-<li><a href="https://arshovon.com/blog/understanding-time-complexity/">Understanding Time Complexity</a></li>
+<li><a href="/blog/counting-sort/">Counting sort</a></li>
+<li><a href="/blog/sorting-algorithm-comparisons/">Sorting Algorithm Comparisons</a></li>
+<li><a href="/blog/understanding-time-complexity/">Understanding Time Complexity</a></li>
 <li><a href="https://docs.python.org/3.6/library/timeit.html#examples">timeit module documentation</a></li>
 </ul>
 
