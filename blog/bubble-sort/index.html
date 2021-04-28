@@ -11,28 +11,28 @@
 <meta name="robots" content="index,follow">
 
 <meta name="keywords" content="algorithm, sorting, time-complexity">
-<meta name="description" content="Insertion sort characteristics, algorithm, implementation, and practice challenges">
+<meta name="description" content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges">
 <meta name="author" content="Ahmedur Rahman Shovon">
 
-<meta property="og:url" content="https://arshovon.com/blog/insertion-sort/">
+<meta property="og:url" content="https://arshovon.com/blog/bubble-sort/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Insertion Sort - Ahmedur Rahman Shovon">
-<meta name="og:description" content="Insertion sort characteristics, algorithm, implementation, and practice challenges">
-<meta property="og:image" content="https://arshovon.com/blog/images/insertion_sort.png">
-<meta property="og:image:secure_url" content="https://arshovon.com/blog/images/insertion_sort.png">
+<meta property="og:title" content="Bubble Sort - Ahmedur Rahman Shovon">
+<meta name="og:description" content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges">
+<meta property="og:image" content="https://arshovon.com/blog/images/bubble_sort.png">
+<meta property="og:image:secure_url" content="https://arshovon.com/blog/images/bubble_sort.png">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="Insertion Sort - Ahmedur Rahman Shovon" />
+<meta property="og:image:alt" content="Bubble Sort - Ahmedur Rahman Shovon" />
 <meta property="og:site_name" content="Ahmedur Rahman Shovon"/>
 <meta property="og:locale" content="en-us">
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://arshovon.com/blog/images/insertion_sort.png" />
-<meta name="twitter:url" content="https://arshovon.com/blog/insertion-sort/" />
-<meta property="twitter:title" content="Insertion Sort - Ahmedur Rahman Shovon">
-<meta name="twitter:description" content="Insertion sort characteristics, algorithm, implementation, and practice challenges">
-<title>Insertion Sort - Ahmedur Rahman Shovon</title>
+<meta name="twitter:image" content="https://arshovon.com/blog/images/bubble_sort.png" />
+<meta name="twitter:url" content="https://arshovon.com/blog/bubble-sort/" />
+<meta property="twitter:title" content="Bubble Sort - Ahmedur Rahman Shovon">
+<meta name="twitter:description" content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges">
+<title>Bubble Sort - Ahmedur Rahman Shovon</title>
 
-<link rel="canonical" href="https://arshovon.com/blog/insertion-sort/">
+<link rel="canonical" href="https://arshovon.com/blog/bubble-sort/">
 
 <link rel="icon" href="https://arshovon.com/assets/images/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="https://arshovon.com/assets/images/favicon.ico"
@@ -166,16 +166,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 <main class="col-12 blog p-3 p-md-5" role="main">
   <article>
     <header class="mb-4">
-      <h3>Insertion Sort</h3>
+      <h3>Bubble Sort</h3>
       <div class="mb-3">
         <span class="float-right badge">
           Published on
-          <time datetime="2020-08-11T02:06:33&#43;06:00">
-            <i class="fa fa-calendar pr-1"></i>August 11, 2020</time>
-          
-            , Updated on
-            <time datetime="2021-04-28T15:41:30&#43;06:00">
-              <i class="fa fa-calendar pr-1"></i>April 28, 2021</time>
+          <time datetime="2021-04-28T03:03:14&#43;06:00">
+            <i class="fa fa-calendar pr-1"></i>April 28, 2021</time>
           
         </span>
         
@@ -200,27 +196,31 @@ class="badge badge-secondary" title="algorithm" >algorithm</a>
       </div>
     </header>
     <hr class="my-6">
-    <h2 id="characteristics">Characteristics</h2>
+    <p>In bubble sort algorithm, each pair of consecutive elements are swapped if they are not in correct order. In each iteration, it places an element at its correct place. Thus in <code>n</code> iterations, all <code>n</code> elements are sorted accordingly.
+The following figure illustrates how bubble sort places the elements in correct order.
+<figure><img src="/blog/images/bubble_sort_example.gif?style=center" alt="alt bubble sort example"></figure></p>
 
-<h3 id="simple-implementation">Simple implementation</h3>
+<h2 id="bubble-sort-characteristics">Bubble sort characteristics</h2>
 
-<p>Insertion sort can be implemented easily with less lines of code. It is quite efficient for small data sets. Though it has same complexity than other quadratic sorting algorithms like selection sort or bubble sort, insertion sort is more efficient.</p>
+<h3 id="impractical">Impractical</h3>
+
+<p>Bubble sort is one of the fundamental sorting algorithm to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has same time complexity of insertion sort, insertion sort is more efficient than bubble sort.</p>
 
 <h3 id="adaptive">Adaptive</h3>
 
-<p>Insertion sort is adaptive. If the input data set is already sorted, the number of steps are reduced.</p>
+<p>Bubble sort is adaptive. Bubble sort performs best when the input data set is already sorted.</p>
 
-<h3 id="online">Online</h3>
+<h3 id="offline">Offline</h3>
 
-<p>Insertion sort works on the data as it receives it. The dataset is always sorted in each step of the insertion sort. A practical example of insertion sort is sorting a hand of playing cards. Assume, at the beginning of a card game, we have no cards in the left hand. Then we take a face down card from the table and search for it's position in the left hand. To find the correct position for a card we compare the newly drawn card with each of the cards in the left hand from left to right. Then when we find the suitable spot, we insert the card into it's correct position. At any times, the cards in the left hand are sorted.</p>
+<p>Insertion sort works after receiving all the data. It does not sort the element when it receives them.</p>
 
 <h3 id="stable">Stable</h3>
 
-<p>Insertion sort is stable. Numbers with the same value appears in the output array as they appear in the input array. Let's take an input array <code>A = [3, 0, 3]</code>. In the input array the value <code>3</code> occurs 2 times; at index 0 and 2. Insertion sort ensures that in the output array the occurrences of <code>3</code> are placed as same order as of the input array.</p>
+<p>Bubble sort is stable. Numbers with the same value appears in the output array as they appear in the input array. Let's take an input array <code>A = [3, 0, 3]</code>. In the input array the value <code>3</code> occurs 2 times; at index 0 and 2. Insertion sort ensures that in the output array the occurrences of <code>3</code> are placed as same order as of the input array.</p>
 
 <h3 id="in-place">In place:</h3>
 
-<p>Insertion sort sorts the input list in place. It does not require additional list to sort the elements. It only requires a constant amount of additional memory space <code>O(1)</code>.</p>
+<p>Bubble sort sorts the input list in place. It does not require additional list to sort the elements. It only requires a constant amount of additional memory space <code>O(1)</code>.</p>
 
 <h3 id="quadratic-time-complexity">Quadratic time complexity</h3>
 
@@ -233,60 +233,68 @@ class="badge badge-secondary" title="algorithm" >algorithm</a>
 <li>Space complexity: <code>O(1)</code></li>
 </ul>
 
-<h2 id="algorithm-pseudocode">Algorithm Pseudocode</h2>
+<h2 id="bubble-sort-algorithm-pseudocode">Bubble Sort algorithm pseudocode</h2>
 
-<pre><code class="language-py">Insertion_Sort(A)
-    for i=1 to A.length-1
-        value = A[i]
-        j = i - 1
-        while j &gt;= 0 and A[j] &gt; value
-            A[j+1] = A[j]
-            j = j - 1
-        A[j+1] = value
+<pre><code class="language-py">procedure Bubble_Sort(A: list of items)
+    for i=0 to A.length-1 inclusive do
+        swapped := false
+        for j=0 to A.length-i-2 inclusive do
+            if A[j] &gt; A[j+1] then
+                swap(A[j], A[j+1])
+                swapped := true
+            end if
+        end for
+        if not swapped then
+            break
+        end if
+    end for
+end procedure
 </code></pre>
 
-<h2 id="implementation-using-python-3">Implementation using Python 3</h2>
+<h2 id="bubble-sort-implementation-using-python-3">Bubble Sort implementation using Python 3</h2>
 
 <pre><code class="language-py">&quot;&quot;&quot;
-Implementation of insertion sort algorithm
+Implementation of bubble sort algorithm
 
-Main File: insertion_sort.py
-Test File: test_insertion_sort.py
+Main File: bubble_sort.py
+Test File: test_bubble_sort.py
 &quot;&quot;&quot;
 
 
-def get_insertion_sorted_numbers(numbers):
+def get_bubble_sorted_numbers(numbers):
     &quot;&quot;&quot; Returns sorted list for a given list
+
     Arguments:
     numbers -- list of numbers
     &quot;&quot;&quot;
-    for i in range(1, len(numbers)):
-        j = i - 1
-        value = numbers[i]
-        while j &gt;= 0 and numbers[j] &gt; value:
-            numbers[j + 1] = numbers[j]
-            j -= 1
-        numbers[j + 1] = value
+    for i in range(len(numbers)):
+        swapped = False
+        for j in range(len(numbers) - i - 1):
+            if numbers[j] &gt; numbers[j + 1]:
+                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+                swapped = True
+        if not swapped:
+            break
     return numbers
 </code></pre>
 
-<h2 id="unit-testing-insertion-sort-implementation-using-python-3">Unit testing insertion sort implementation using Python 3</h2>
+<h2 id="unit-testing-bubble-sort-implementation-using-python-3">Unit testing bubble sort implementation using Python 3</h2>
 
 <pre><code class="language-py">&quot;&quot;&quot;
-Unittest of insertion sort implementation
+Unittest of bubble sort implementation
 
-Main File: insertion_sort.py
-Test File: test_insertion_sort.py
+Test File: test_bubble_sort.py
+Main File: bubble_sort.py
 &quot;&quot;&quot;
 import unittest
-from insertion_sort import get_insertion_sorted_numbers
+from bubble_sort import get_bubble_sorted_numbers
 
 
-class TestInsertionSort(unittest.TestCase):
+class TestBubbleSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_positive_unsorted(self):
         test_case = [2, 3, 1, 4, 2, 4]
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -295,7 +303,7 @@ class TestInsertionSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_positive_negative_unsorted(self):
         test_case = [2, -3, 1, -4, 2, 4]
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -304,7 +312,7 @@ class TestInsertionSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_same_values_positive(self):
         test_case = [1, 1, 1, 1]
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -313,7 +321,7 @@ class TestInsertionSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_same_values_negative(self):
         test_case = [-1, -1, -1]
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -322,7 +330,7 @@ class TestInsertionSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_single_item(self):
         test_case = [1]
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -331,7 +339,7 @@ class TestInsertionSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_empty_list(self):
         test_case = []
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -340,7 +348,7 @@ class TestInsertionSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_positive_negative_reverse(self):
         test_case = [1, 0, -1]
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -349,7 +357,7 @@ class TestInsertionSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_negative_reverse(self):
         test_case = [-1, -3, -56]
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -358,7 +366,7 @@ class TestInsertionSort(unittest.TestCase):
     def test_get_bubble_sorted_numbers_positive_negative_floating(self):
         test_case = [-1.5, 3.336, -66.3, 5]
         expected_result = sorted(test_case)
-        test_result = get_insertion_sorted_numbers(test_case.copy())
+        test_result = get_bubble_sorted_numbers(test_case.copy())
         self.assertEqual(expected_result, test_result,
                          f&quot;Failed on {test_case}, &quot;
                          f&quot;Expected {expected_result}, &quot;
@@ -369,15 +377,13 @@ if __name__ == &quot;__main__&quot;:
     unittest.main()
 </code></pre>
 
-<p><figure><img src="/blog/images/test_insertion_sort.png?style=center" alt="alt test bubble sort"></figure></p>
+<p><figure><img src="/blog/images/test_bubble_sort.png?style=center" alt="alt test bubble sort"></figure></p>
 
-<h2 id="difference-between-insertion-sort-and-counting-sort">Difference between Insertion Sort and Counting Sort</h2>
+<h2 id="comparison-between-bubble-sort-and-insertion-sort">Comparison between bubble sort and insertion sort</h2>
 
 <ul>
-<li>Insertion sort is a quadratic sorting algorithm where as counting sort uses linear time to sort a set of unsorted integers.</li>
-<li>Insertion sort's worst case performance is <code>O(n*n)</code> where as counting sort's worst case performance is <code>O(k+n)</code> <a href="https://en.wikipedia.org/wiki/Insertion_sort">[Insertion sort - Wiki]</a><a href="https://en.wikipedia.org/wiki/Counting_sort">[Counting sort - Wiki]</a>.</li>
-<li>Though insertion sort has worse time complexity than the counting sort, it is more memory efficient. It requires only <code>O(1)</code> constant space where as counting sort requires <code>O(k+n)</code> space.</li>
-<li>Another import difference between this two sorting algorithms is the online characteristics. Insertion sort works on live feeding data but counting sort works only after gathering full dataset.</li>
+<li>Insertion sort is efficient than bubble sort as it requires less number of swaps to sort the elements.</li>
+<li>Insertion sort is online but bubble sort is offline. That means insertion sort sorts the elements at the time of receiving each single element but bubble sort sorts the elements only after receiving all the elements.</li>
 </ul>
 
 <p>The following table shows the comparison between insertion sort and counting sort based on the execution time.</p>
@@ -387,8 +393,8 @@ if __name__ == &quot;__main__&quot;:
 <tr>
 <th>Set Size</th>
 <th>Maximum Value</th>
+<th>Bubble Sort Time</th>
 <th>Insertion Sort Time</th>
-<th>Counting Sort Time</th>
 </tr>
 </thead>
 
@@ -396,22 +402,22 @@ if __name__ == &quot;__main__&quot;:
 <tr>
 <td>10</td>
 <td>10</td>
-<td>0.03347 seconds</td>
-<td>0.02473 seconds</td>
+<td>0.04383 seconds</td>
+<td>0.02296 seconds</td>
 </tr>
 
 <tr>
 <td>1000</td>
 <td>1000</td>
-<td>2.59963 seconds</td>
-<td>0.02278 seconds</td>
+<td>5.54610 seconds</td>
+<td>2.67873 seconds</td>
 </tr>
 
 <tr>
 <td>10000</td>
 <td>10000</td>
-<td>29.85276 seconds</td>
-<td>0.02672 seconds</td>
+<td>68.60219 seconds</td>
+<td>30.98420 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -422,26 +428,26 @@ if __name__ == &quot;__main__&quot;:
 
 
 <div style="margin: 0 auto;" class="my-4">
-    <canvas id="710"></canvas>
+    <canvas id="988"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js" integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('710').getContext('2d');
+    var ctx = document.getElementById('988').getContext('2d');
     var options = 
 {
     type: 'line',
     data: {
         labels: ['10', '1000', '10000'],
         datasets: [{
-            label: 'Insertion sort',
-            data: [0.03347, 2.59963, 29.85276],
+            label: 'Bubble sort',
+            data: [0.04383, 5.54610, 68.60219],
             fill: false,
             borderColor: 'red',
             backgroundColor: 'red',
             tension: 0.1
         },{
-            label: 'Counting sort',
-            data: [0.02473, 0.02278, 0.02672],
+            label: 'Insertion sort',
+            data: [0.02296, 2.67873, 30.98420],
             fill: false,
             borderColor: 'green',
             backgroundColor: 'green',
@@ -456,7 +462,7 @@ if __name__ == &quot;__main__&quot;:
             title: {
                 display: true,
                 position: 'bottom',
-                text: 'Execution time comparison between insertion sort and counting sort',
+                text: 'Execution time comparison between bubble sort and insertion sort',
                 padding: {
                     top: 10,
                     bottom: 30
@@ -527,14 +533,32 @@ from timeit import timeit
 import random
 
 
+def get_bubble_sorted_numbers(numbers):
+    &quot;&quot;&quot; Returns a sorted list of numbers using bubble sort
+
+    Arguments:
+    numbers -- list of numbers
+    &quot;&quot;&quot;
+    for i in range(len(numbers)):
+        swapped = False
+        for j in range(len(numbers) - i - 1):
+            if numbers[j] &gt; numbers[j + 1]:
+                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+                swapped = True
+        if not swapped:
+            break
+    return numbers
+
+
 def get_insertion_sorted_numbers(numbers):
-    &quot;&quot;&quot; Returns sorted list for a given list
+    &quot;&quot;&quot; Returns a sorted list of numbers using insertion sort
+
     Arguments:
     numbers -- list of numbers
     &quot;&quot;&quot;
     for i in range(1, len(numbers)):
-        j = i - 1
         value = numbers[i]
+        j = i - 1
         while j &gt;= 0 and numbers[j] &gt; value:
             numbers[j + 1] = numbers[j]
             j -= 1
@@ -542,62 +566,43 @@ def get_insertion_sorted_numbers(numbers):
     return numbers
 
 
-def get_counting_sorted_numbers(numbers, max_value):
-    &quot;&quot;&quot; Returns a sorted list of non negative using counting sort
-
-    Arguments:
-    numbers -- list of non negative integers within max_value
-    max_value -- non negative integer
-    &quot;&quot;&quot;
-    sorted_numbers = [None] * len(numbers)
-    counts = [0] * (max_value + 1)
-    for i in numbers:
-        counts[i] += 1
-    counts[0] -= 1
-    for i in range(1, max_value + 1):
-        counts[i] += counts[i - 1]
-    for i in numbers[::-1]:
-        sorted_numbers[counts[i]] = i
-        counts[i] -= 1
-    return sorted_numbers
-
-
 if __name__ == &quot;__main__&quot;:
     MAX_NUMBER = 10
     small_list = [random.randint(0, MAX_NUMBER) for i in range(MAX_NUMBER)]
+    bubble_execution_time = timeit(
+        'result=get_bubble_sorted_numbers(small_list.copy())',
+        globals=globals(), number=10000)
     insertion_execution_time = timeit(
         'result=get_insertion_sorted_numbers(small_list.copy())',
         globals=globals(), number=10000)
-    counting_execution_time = timeit(
-        'result=get_counting_sorted_numbers(small_list.copy(), MAX_NUMBER)',
-        globals=globals(), number=10000)
     print(f&quot;Data set of {MAX_NUMBER} numbers:&quot;)
+    print(f&quot;Bubble sort took: {bubble_execution_time:.5f} seconds&quot;)
     print(f&quot;Insertion sort took: {insertion_execution_time:.5f} seconds&quot;)
-    print(f&quot;Counting sort took: {counting_execution_time:.5f} seconds&quot;)
 
     MAX_NUMBER = 1000
     medium_list = [random.randint(0, MAX_NUMBER) for i in range(MAX_NUMBER)]
+    bubble_execution_time = timeit(
+        'result=get_bubble_sorted_numbers(medium_list.copy())',
+        globals=globals(), number=100)
     insertion_execution_time = timeit(
         'result=get_insertion_sorted_numbers(medium_list.copy())',
         globals=globals(), number=100)
-    counting_execution_time = timeit(
-        'result=get_counting_sorted_numbers(medium_list.copy(), MAX_NUMBER)',
-        globals=globals(), number=100)
     print(f&quot;Data set of {MAX_NUMBER} numbers:&quot;)
+    print(f&quot;Bubble sort took: {bubble_execution_time:.5f} seconds&quot;)
     print(f&quot;Insertion sort took: {insertion_execution_time:.5f} seconds&quot;)
-    print(f&quot;Counting sort took: {counting_execution_time:.5f} seconds&quot;)
 
     MAX_NUMBER = 10000
     large_list = [random.randint(0, MAX_NUMBER) for i in range(MAX_NUMBER)]
+    bubble_execution_time = timeit(
+        'result=get_bubble_sorted_numbers(large_list.copy())',
+        globals=globals(), number=10)
     insertion_execution_time = timeit(
         'result=get_insertion_sorted_numbers(large_list.copy())',
         globals=globals(), number=10)
-    counting_execution_time = timeit(
-        'result=get_counting_sorted_numbers(large_list.copy(), MAX_NUMBER)',
-        globals=globals(), number=10)
     print(f&quot;Data set of {MAX_NUMBER} numbers:&quot;)
+    print(f&quot;Bubble sort took: {bubble_execution_time:.5f} seconds&quot;)
     print(f&quot;Insertion sort took: {insertion_execution_time:.5f} seconds&quot;)
-    print(f&quot;Counting sort took: {counting_execution_time:.5f} seconds&quot;)
+
 </code></pre>
 
 <h2 id="practice-challenges">Practice challenges</h2>
@@ -612,12 +617,14 @@ if __name__ == &quot;__main__&quot;:
 <h2 id="reference">Reference</h2>
 
 <ul>
+<li><a href="https://github.com/pllk/cphb/">Competitive Programmer's Handbook</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble sort Wikipedia article</a></li>
+<li><a href="https://arshovon.com/blog/insertion-sort/">Insertion sort</a></li>
 <li><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition">Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion sort Wikipedia article</a></li>
-<li><a href="https://docs.python.org/3.6/library/timeit.html#examples">timeit module documentation</a></li>
 <li><a href="https://arshovon.com/blog/counting-sort/">Counting sort</a></li>
-<li><a href="https://arshovon.com/blog/bubble-sort/">Bubble sort</a></li>
 <li><a href="https://arshovon.com/blog/sorting-algorithm-comparisons/">Sorting Algorithm Comparisons</a></li>
+<li><a href="https://arshovon.com/blog/understanding-time-complexity/">Understanding Time Complexity</a></li>
+<li><a href="https://docs.python.org/3.6/library/timeit.html#examples">timeit module documentation</a></li>
 </ul>
 
   </article>
@@ -626,6 +633,22 @@ if __name__ == &quot;__main__&quot;:
 
 <h5 class="mb-2 mt-4">Related Contents</h5>
 <div class="card-group">
+    
+    <div class="card">
+        <div class="card-body">
+            <a href="https://arshovon.com/blog/understanding-time-complexity/" class="card-title">
+                Understanding Time Complexity
+            </a>
+        </div>
+        <div class="card-footer">
+            <span class="text_muted small">
+                
+                <a href="https://arshovon.com/categories/algorithm" class="badge badge-secondary" title="algorithm" >
+                    <i class="fa fa-folder-open"></i> algorithm</a>
+                
+            </span>
+        </div>
+    </div>
     
     <div class="card">
         <div class="card-body">
@@ -645,24 +668,8 @@ if __name__ == &quot;__main__&quot;:
     
     <div class="card">
         <div class="card-body">
-            <a href="https://arshovon.com/blog/counting-sort/" class="card-title">
-                Counting Sort
-            </a>
-        </div>
-        <div class="card-footer">
-            <span class="text_muted small">
-                
-                <a href="https://arshovon.com/categories/algorithm" class="badge badge-secondary" title="algorithm" >
-                    <i class="fa fa-folder-open"></i> algorithm</a>
-                
-            </span>
-        </div>
-    </div>
-    
-    <div class="card">
-        <div class="card-body">
-            <a href="https://arshovon.com/blog/bubble-sort/" class="card-title">
-                Bubble Sort
+            <a href="https://arshovon.com/blog/insertion-sort/" class="card-title">
+                Insertion Sort
             </a>
         </div>
         <div class="card-footer">
@@ -689,38 +696,19 @@ if __name__ == &quot;__main__&quot;:
                 <i class="fa fa-chevron-left"></i> Previous Post
             </h5>
             <p class="card-text">
-                <a href="https://arshovon.com/blog/counting-sort/" class="pt-2 pb-2">
-                    Counting Sort
+                <a href="https://arshovon.com/blog/install-gatsby-on-ubuntu/" class="pt-2 pb-2">
+                    Install Gatsby on Ubuntu 20.04
                 </a>
             </p>
         </div>
         <div class="card-footer">
             <span class="text_muted small">
-                <time datetime="2020-08-09T11:07:32&#43;06:00">
-                    <i class="fa fa-calendar pr-1"></i>August 9, 2020</time>
+                <time datetime="2021-04-23T05:05:11&#43;06:00">
+                    <i class="fa fa-calendar pr-1"></i>April 23, 2021</time>
             </span>
         </div>
     </div>
     
-    
-    <div class="card mb-3 bg-light text-md-right border-light">
-        <div class="card-body">
-            <h5 class="card-title">
-                Next Post <i class="fa fa-chevron-right"></i>
-            </h5>
-            <p class="card-text">
-                <a href="https://arshovon.com/blog/sorting-algorithm-comparisons/" class="pt-2 pb-2">
-                    Sorting Algorithm Comparisons
-                </a>
-            </p>
-        </div>
-        <div class="card-footer">
-            <span class="text_muted small">
-                <time datetime="2020-08-15T02:06:33&#43;06:00">
-                    <i class="fa fa-calendar pr-1"></i>August 15, 2020</time>
-            </span>
-        </div>
-    </div>
     
 </div>
 

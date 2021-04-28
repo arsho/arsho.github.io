@@ -6,10 +6,20 @@
     <description>Recent content in algorithm on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Apr 2021 00:01:36 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 28 Apr 2021 03:03:14 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bubble Sort</title>
+      <link>https://arshovon.com/blog/bubble-sort/</link>
+      <pubDate>Wed, 28 Apr 2021 03:03:14 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/bubble-sort/</guid>
+      <description>In bubble sort algorithm, each pair of consecutive elements are swapped if they are not in correct order. In each iteration, it places an element at its correct place. Thus in n iterations, all n elements are sorted accordingly. The following figure illustrates how bubble sort places the elements in correct order. 
+Bubble sort characteristics Impractical Bubble sort is one of the fundamental sorting algorithm to learn how sorting works.</description>
+    </item>
     
     <item>
       <title>Understanding Time Complexity</title>
