@@ -18,15 +18,15 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Merge Sort - Ahmedur Rahman Shovon">
 <meta name="og:description" content="Divide and conquer strategy, merge sort characteristics, algorithm, implementation, comparison between merge sort and insertion sort, and practice challenges">
-<meta property="og:image" content="https://arshovon.com/blog/images/bubble_sort.png">
-<meta property="og:image:secure_url" content="https://arshovon.com/blog/images/bubble_sort.png">
+<meta property="og:image" content="https://arshovon.com/blog/images/merge_sort.png">
+<meta property="og:image:secure_url" content="https://arshovon.com/blog/images/merge_sort.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="Merge Sort - Ahmedur Rahman Shovon" />
 <meta property="og:site_name" content="Ahmedur Rahman Shovon"/>
 <meta property="og:locale" content="en-us">
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://arshovon.com/blog/images/bubble_sort.png" />
+<meta name="twitter:image" content="https://arshovon.com/blog/images/merge_sort.png" />
 <meta name="twitter:url" content="https://arshovon.com/blog/merge-sort/" />
 <meta property="twitter:title" content="Merge Sort - Ahmedur Rahman Shovon">
 <meta name="twitter:description" content="Divide and conquer strategy, merge sort characteristics, algorithm, implementation, comparison between merge sort and insertion sort, and practice challenges">
@@ -174,7 +174,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             <i class="fa fa-calendar pr-1"></i>April 29, 2021</time>
           
             , Updated on
-            <time datetime="2021-05-01T04:52:10&#43;06:00">
+            <time datetime="2021-05-01T04:59:33&#43;06:00">
               <i class="fa fa-calendar pr-1"></i>May 1, 2021</time>
           
         </span>
@@ -202,30 +202,30 @@ class="badge badge-secondary" title="algorithm" >algorithm</a>
     <hr class="my-6">
     <h2 id="divide-and-conquer-strategy-and-merge-sort">Divide and conquer strategy and merge sort</h2>
 
-<p>In a divide and conquer strategy a problem is divided into multiple subproblems.
-These subproblems are similar to the the original problem but smaller in size.
-Divide and conquer strategy solves these subproblems recursively.
-Then it combines the subproblems solutions to develop a final solution for the original problem.
-Thus, divide and conquer strategy has two parts: divide and conquer.</p>
+<p>In a divide and conquer strategy, a problem is divided into multiple subproblems.
+These subproblems are similar to the original problem but smaller in size.
+The divide and conquer strategy solves these subproblems recursively.
+Then it combines the solutions of the subproblems to develop a final solution for the original problem.
+Thus, the divide and conquer strategy has two parts: divide and conquer.</p>
 
 <h3 id="divide">Divide</h3>
 
-<p>In divide phase, the original problem is divided into smaller subproblems.
-Each subproblem has the same characteristics of the original problem.</p>
+<p>In the divide phase, the original problem is divided into smaller subproblems.
+Each subproblem has the same characteristics as the original problem.</p>
 
 <h3 id="conquer">Conquer</h3>
 
-<p>In this phase the subproblems are solved recursively.
-Finally the smaller results are combined to form the final solution of the original problem.</p>
+<p>In this phase, the subproblems are solved recursively.
+Finally, the smaller results are combined to form the final solution of the original problem.</p>
 
-<p>Merge sort is based on divide and conquer strategy. To sort an array of <code>n</code> element it follows the below steps:</p>
+<p>Merge sort is based on the divide and conquer strategy. To sort an array of <code>n</code> elements, it follows the below steps:</p>
 
 <ul>
 <li>It divides the unsorted array into <code>n/2</code> parts recursively until there is only one element in each part.</li>
-<li>It sorts the smaller parts and combine the smaller solutions to create the final result.</li>
+<li>It sorts the smaller parts and combines the smaller solutions to create the final result.</li>
 </ul>
 
-<p>The following figure illustrates how merge sort follows divide and conquer strategy.</p>
+<p>The following figure illustrates how merge sort follows the divide and conquer strategy.</p>
 
 
 
@@ -251,11 +251,11 @@ Finally the smaller results are combined to form the final solution of the origi
 
 <h3 id="practical">Practical</h3>
 
-<p>Merge sort is an efficient comparison based sorting algorithm. As of Perl 5.8, merge sort is the default sorting algorithm. The Linux kernel also uses merge sort for linked lists.</p>
+<p>Merge sort is an efficient comparison-based sorting algorithm. As of Perl 5.8, merge sort is the default sorting algorithm. The Linux kernel also uses merge sort for linked lists.</p>
 
 <h3 id="not-adaptive">Not Adaptive</h3>
 
-<p>Merge sort is not adaptive. It performs same on sorted, almost sorted, and unsorted list. Its performance is not dependent on whether the input data is sorted or not.</p>
+<p>Merge sort is not adaptive. It performs the same on sorted, almost sorted, and unsorted lists. Its performance is not dependent on whether the input data is sorted or not.</p>
 
 <h3 id="offline">Offline</h3>
 
@@ -267,7 +267,7 @@ Finally the smaller results are combined to form the final solution of the origi
 
 <h3 id="not-in-place">Not In place:</h3>
 
-<p>Merge sort does not sort the input list in place. It requires an additional list of <code>n</code> size to sort unlisted list of <code>n</code> elements. So, its space complexity is <code>O(n)</code>.</p>
+<p>Merge sort does not sort the input list in place. It requires an additional list of <code>n</code> size to sort unsorted list of <code>n</code> elements. So, its space complexity is <code>O(n)</code>.</p>
 
 <h3 id="loglinear-time-complexity">Loglinear time complexity</h3>
 
@@ -723,11 +723,11 @@ int main()
 
 
 <div style="margin: 0 auto;" class="my-4 border border-light">
-    <canvas id="913"></canvas>
+    <canvas id="824"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js" integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('913').getContext('2d');
+    var ctx = document.getElementById('824').getContext('2d');
     var options = 
 {
     type: 'line',

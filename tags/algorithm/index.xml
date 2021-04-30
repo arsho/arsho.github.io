@@ -17,8 +17,7 @@
       <pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate>
       
       <guid>https://arshovon.com/blog/merge-sort/</guid>
-      <description>Divide and conquer strategy and merge sort In a divide and conquer strategy a problem is divided into multiple subproblems. These subproblems are similar to the the original problem but smaller in size. Divide and conquer strategy solves these subproblems recursively. Then it combines the subproblems solutions to develop a final solution for the original problem. Thus, divide and conquer strategy has two parts: divide and conquer.
-Divide In divide phase, the original problem is divided into smaller subproblems.</description>
+      <description>Divide and conquer strategy and merge sort In a divide and conquer strategy, a problem is divided into multiple subproblems. These subproblems are similar to the original problem but smaller in size. The divide and conquer strategy solves these subproblems recursively. Then it combines the solutions of the subproblems to develop a final solution for the original problem. Thus, the divide and conquer strategy has two parts: divide and conquer.</description>
     </item>
     
     <item>
