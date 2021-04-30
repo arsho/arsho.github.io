@@ -6,10 +6,20 @@
     <description>Recent content on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Apr 2021 03:03:14 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 29 Apr 2021 01:00:15 +0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Merge Sort</title>
+      <link>https://arshovon.com/blog/merge-sort/</link>
+      <pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/merge-sort/</guid>
+      <description>Divide and conquer strategy and merge sort In a divide and conquer strategy a problem is divided into multiple subproblems. These subproblems are similar to the the original problem but smaller in size. Divide and conquer strategy solves these subproblems recursively. Then it combines the subproblems solutions to develop a final solution for the original problem. Thus, divide and conquer strategy has two parts: divide and conquer.
+Divide In divide phase, the original problem is divided into smaller subproblems.</description>
+    </item>
     
     <item>
       <title>Bubble Sort</title>
@@ -17,8 +27,8 @@
       <pubDate>Wed, 28 Apr 2021 03:03:14 +0600</pubDate>
       
       <guid>https://arshovon.com/blog/bubble-sort/</guid>
-      <description>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in n iterations, all n elements are sorted accordingly. The following figure illustrates how bubble sort places the elements in the correct order. 
-Bubble sort characteristics Impractical Bubble sort is one of the fundamental sorting algorithms to learn how sorting works.</description>
+      <description>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in n iterations, all n elements are sorted accordingly.
+Bubble sort characteristics Impractical Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</description>
     </item>
     
     <item>

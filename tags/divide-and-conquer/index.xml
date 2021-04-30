@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>divide-and-conquer on Ahmedur Rahman Shovon</title>
+    <link>https://arshovon.com/tags/divide-and-conquer/</link>
+    <description>Recent content in divide-and-conquer on Ahmedur Rahman Shovon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Apr 2021 01:00:15 +0600</lastBuildDate>
+    
+	<atom:link href="https://arshovon.com/tags/divide-and-conquer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Merge Sort</title>
+      <link>https://arshovon.com/blog/merge-sort/</link>
+      <pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/merge-sort/</guid>
+      <description>Divide and conquer strategy and merge sort In a divide and conquer strategy a problem is divided into multiple subproblems. These subproblems are similar to the the original problem but smaller in size. Divide and conquer strategy solves these subproblems recursively. Then it combines the subproblems solutions to develop a final solution for the original problem. Thus, divide and conquer strategy has two parts: divide and conquer.
+Divide In divide phase, the original problem is divided into smaller subproblems.</description>
+    </item>
+    
+  </channel>
+</rss>
