@@ -174,8 +174,8 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             <i class="fa fa-calendar pr-1"></i>April 29, 2021</time>
           
             , Updated on
-            <time datetime="2021-05-01T04:59:33&#43;06:00">
-              <i class="fa fa-calendar pr-1"></i>May 1, 2021</time>
+            <time datetime="2021-05-03T00:34:20&#43;06:00">
+              <i class="fa fa-calendar pr-1"></i>May 3, 2021</time>
           
         </span>
         
@@ -282,53 +282,47 @@ Finally, the smaller results are combined to form the final solution of the orig
 
 <h2 id="merge-sort-algorithm-pseudocode">Merge Sort algorithm pseudocode</h2>
 
-<pre><code class="language-bash">procedure Merge(A: list of items, LEFT, MID, RIGHT)
-    LEFT_A_LENGTH := MID - LEFT + 1
-    RIGHT_A_LENGTH := RIGHT - MID
-    LEFT_A[0..LEFT_A_LENGTH] a new array
-    RIGHT_A[0..RIGHT_A_LENGTH] a new array
-    for i=0 to LEFT_A_LENGTH-1 inclusive do
-        LEFT_A[i] := A[LEFT + i]
-    end for
-    for i=0 to RIGHT_A_LENGTH-1 inclusive do
-        RIGHT_A[i] := A[MID + i + 1]
-    end for
-    LEFT_A_POS := 0
-    RIGHT_A_POS := 0
+<pre><code class="language-bash">procedure Merge(A: list of items, TEMP: temporary array, LEFT, MID, RIGHT)
+    LEFT_POS := 0
+    RIGHT_POS := MID + 1
     CURRENT_POS := LEFT
-    while LEFT_A_POS &lt; LEFT_A_LENGTH AND RIGHT_A_POS &lt; RIGHT_A_LENGTH do
-        if LEFT_A[LEFT_A_POS] &lt;= RIGHT_A[RIGHT_A_POS] then
-            A[CURRENT_POS] := LEFT_A[LEFT_A_POS]
-            LEFT_A_POS := LEFT_A_POS + 1
+    while LEFT_POS &lt;= MID and RIGHT_POS &lt;= RIGHT do
+        if A[LEFT_POS] &lt;= A[RIGHT_POS] then
+            TEMP[CURRENT_POS] := A[LEFT_POS]
+            LEFT_POS := LEFT_POS + 1
         else then
-            A[CURRENT_POS] := RIGHT_A[RIGHT_A_POS]
-            RIGHT_A_POS := RIGHT_A_POS + 1
+            TEMP[CURRENT_POS] := A[RIGHT_POS]
+            RIGHT_POS := RIGHT_POS + 1
         end if
         CURRENT_POS := CURRENT_POS + 1
     end while
-    while LEFT_A_POS &lt; LEFT_A_LENGTH do
-        A[CURRENT_POS] := LEFT_A[LEFT_A_POS]
-        LEFT_A_POS := LEFT_A_POS + 1
+    while LEFT_POS &lt;= MID do
+        TEMP[CURRENT_POS] := A[LEFT_POS]
+        LEFT_POS := LEFT_POS + 1
         CURRENT_POS := CURRENT_POS + 1
     end while
-    while RIGHT_A_POS &lt; RIGHT_A_LENGTH do
-        A[CURRENT_POS] := RIGHT_A[RIGHT_A_POS]
-        RIGHT_A_POS := RIGHT_A_POS + 1
+    while RIGHT_POS &lt;= RIGHT do
+        TEMP[CURRENT_POS] := A[RIGHT_POS]
+        RIGHT_POS := RIGHT_POS + 1
         CURRENT_POS := CURRENT_POS + 1
     end while
+    for i in LEFT to RIGHT inclusive do
+        A[i] = TEMP[i]
+    end for
 end procedure
 
-procedure Split_And_Merge(A: list of items, LEFT, RIGHT)
+procedure Split_And_Merge(A: list of items, TEMP: temporary array, LEFT, RIGHT)
     if LEFT &lt; RIGHT then
         MID := ⌊(LEFT + RIGHT)⌋ / 2
-        Split_And_Merge(A, LEFT, MID)
-        Split_And_Merge(A, MID+1, RIGHT)
-        Merge(A, LEFT, MID, RIGHT)
+        Split_And_Merge(A, TEMP, LEFT, MID)
+        Split_And_Merge(A, TEMP, MID+1, RIGHT)
+        Merge(A, TEMP, LEFT, MID, RIGHT)
     end if
 end procedure
 
 procedure Merge_Sort(A: list of items, N: total items)
-    Split_And_Merge(A, 0, N - 1)
+    TEMP[0..A.LENGTH] a new array
+    Split_And_Merge(A, TEMP, 0, N - 1)
 end procedure
 </code></pre>
 
@@ -348,42 +342,41 @@ def get_merge_sorted_numbers(numbers):
     Arguments:
     numbers -- list of numbers
     &quot;&quot;&quot;
-    split_and_merge(numbers, 0, len(numbers) - 1)
+    temp = numbers.copy()
+    perform_split_and_merge(numbers, temp, 0, len(numbers) - 1)
     return numbers
 
 
-def split_and_merge(ar, left, right):
+def perform_split_and_merge(ar, temp, left, right):
     if left &lt; right:
         mid = (right + left) // 2
-        split_and_merge(ar, left, mid)
-        split_and_merge(ar, mid + 1, right)
-        merge(ar, left, mid, right)
+        perform_split_and_merge(ar, temp, left, mid)
+        perform_split_and_merge(ar, temp, mid + 1, right)
+        perform_merge(ar, temp, left, mid, right)
 
 
-def merge(ar, left, mid, right):
-    left_ar = ar[left:mid + 1]
-    right_ar = ar[mid + 1:right + 1]
-    left_ar_length = len(left_ar)
-    right_ar_length = len(right_ar)
-    left_ar_pos = 0
-    right_ar_pos = 0
+def perform_merge(ar, temp, left, mid, right):
+    left_pos = left
+    right_pos = mid + 1
     current_pos = left
-    while left_ar_pos &lt; left_ar_length and right_ar_pos &lt; right_ar_length:
-        if left_ar[left_ar_pos] &lt;= right_ar[right_ar_pos]:
-            ar[current_pos] = left_ar[left_ar_pos]
-            left_ar_pos += 1
+    while left_pos &lt;= mid and right_pos &lt;= right:
+        if ar[left_pos] &lt;= ar[right_pos]:
+            temp[current_pos] = ar[left_pos]
+            left_pos += 1
         else:
-            ar[current_pos] = right_ar[right_ar_pos]
-            right_ar_pos += 1
+            temp[current_pos] = ar[right_pos]
+            right_pos += 1
         current_pos += 1
-    while left_ar_pos &lt; left_ar_length:
-        ar[current_pos] = left_ar[left_ar_pos]
-        left_ar_pos += 1
+    while left_pos &lt;= mid:
+        temp[current_pos] = ar[left_pos]
+        left_pos += 1
         current_pos += 1
-    while right_ar_pos &lt; right_ar_length:
-        ar[current_pos] = right_ar[right_ar_pos]
-        right_ar_pos += 1
+    while right_pos &lt;= right:
+        temp[current_pos] = ar[right_pos]
+        right_pos += 1
         current_pos += 1
+    for i in range(left, right + 1):
+        ar[i] = temp[i]
 </code></pre>
 
 <h2 id="unit-testing-bubble-sort-implementation-using-python-3">Unit testing bubble sort implementation using Python 3</h2>
@@ -521,66 +514,52 @@ if __name__ == &quot;__main__&quot;:
 using namespace std;
 
 
-void combine_sorted_portion(int ar[], int left, int mid, int right)
+void perform_merge(int ar[], int temp[], int left, int mid, int right)
 {
-    int left_ar_length = mid - left + 1;
-    int right_ar_length = right - mid;
-    int left_ar[left_ar_length];
-    int right_ar[right_ar_length];
-    for(int i=0; i&lt;left_ar_length; i++)
-    {
-        left_ar[i] = ar[left + i];
-    }
-    for(int i=0; i&lt;right_ar_length; i++)
-    {
-        right_ar[i] = ar[mid + i + 1];
-    }
-    int left_ar_pos = 0;
-    int right_ar_pos = 0;
+    int left_pos = left;
+    int right_pos = mid + 1;
     int current_pos = left;
-    while (left_ar_pos &lt; left_ar_length &amp;&amp; right_ar_pos &lt; right_ar_length)
+    while (left_pos &lt;= mid &amp;&amp; right_pos &lt;= right)
     {
-        if(left_ar[left_ar_pos] &lt;= right_ar[right_ar_pos])
+        if (ar[left_pos] &lt;= ar[right_pos])
         {
-            ar[current_pos] = left_ar[left_ar_pos];
-            left_ar_pos++;
+            temp[current_pos++] = ar[left_pos++];
         }
         else
         {
-            ar[current_pos] = right_ar[right_ar_pos];
-            right_ar_pos++;
+            temp[current_pos++] = ar[right_pos++];
         }
-        current_pos++;
     }
-    while(left_ar_pos &lt; left_ar_length)
+    while (left_pos &lt;= mid)
     {
-        ar[current_pos] = left_ar[left_ar_pos];
-        left_ar_pos++;
-        current_pos++;
+        temp[current_pos++] = ar[left_pos++];
     }
-    while(right_ar_pos &lt; right_ar_length)
+    while (right_pos &lt;= right)
     {
-        ar[current_pos] = right_ar[right_ar_pos];
-        right_ar_pos++;
-        current_pos++;
+        temp[current_pos++] = ar[right_pos++];
+    }
+    for(int i=left; i &lt;= right; i++)
+    {
+        ar[i] = temp[i];
     }
 }
 
 
-void get_sorted_portion(int ar[], int left, int right)
+void perform_split_and_merge(int ar[], int temp[], int left, int right)
 {
     if(left &lt; right)
     {
         int mid = (left + right) / 2;
-        get_sorted_portion(ar, left, mid);
-        get_sorted_portion(ar, mid+1, right);
-        combine_sorted_portion(ar, left, mid, right);
+        perform_split_and_merge(ar, temp, left, mid);
+        perform_split_and_merge(ar, temp, mid+1, right);
+        perform_merge(ar, temp, left, mid, right);
     }
 }
 
 void get_merge_sorted_numbers(int ar[], int n)
 {
-    get_sorted_portion(ar, 0, n-1);
+    int temp[n];
+    perform_split_and_merge(ar, temp, 0, n-1);
 }
 
 void print_array(int ar[], int n)
@@ -630,91 +609,91 @@ int main()
 <tr>
 <td>1000</td>
 <td>1000</td>
-<td>0.02286 seconds</td>
-<td>0.50941 seconds</td>
-<td>0.24336 seconds</td>
-<td>0.00205 seconds</td>
+<td>0.02285 seconds</td>
+<td>0.51674 seconds</td>
+<td>0.24463 seconds</td>
+<td>0.00209 seconds</td>
 </tr>
 
 <tr>
 <td>2000</td>
 <td>2000</td>
-<td>0.03855 seconds</td>
-<td>2.12073 seconds</td>
-<td>0.97507 seconds</td>
-<td>0.00425 seconds</td>
+<td>0.04808 seconds</td>
+<td>2.14491 seconds</td>
+<td>0.97831 seconds</td>
+<td>0.00433 seconds</td>
 </tr>
 
 <tr>
 <td>3000</td>
 <td>3000</td>
-<td>0.06155 seconds</td>
-<td>4.95961 seconds</td>
-<td>2.24918 seconds</td>
-<td>0.00662 seconds</td>
+<td>0.07648 seconds</td>
+<td>5.05203 seconds</td>
+<td>2.2953 seconds</td>
+<td>0.00654 seconds</td>
 </tr>
 
 <tr>
 <td>4000</td>
 <td>4000</td>
-<td>0.08684 seconds</td>
-<td>8.89305 seconds</td>
-<td>4.04739 seconds</td>
-<td>0.00918 seconds</td>
+<td>0.10607 seconds</td>
+<td>9.82914 seconds</td>
+<td>4.19266 seconds</td>
+<td>0.0091 seconds</td>
 </tr>
 
 <tr>
 <td>5000</td>
 <td>5000</td>
-<td>0.1127 seconds</td>
-<td>14.7351 seconds</td>
-<td>6.39748 seconds</td>
-<td>0.01085 seconds</td>
+<td>0.14967 seconds</td>
+<td>15.07934 seconds</td>
+<td>6.75124 seconds</td>
+<td>0.01975 seconds</td>
 </tr>
 
 <tr>
 <td>6000</td>
 <td>6000</td>
-<td>0.13078 seconds</td>
-<td>20.52999 seconds</td>
-<td>9.43997 seconds</td>
-<td>0.01417 seconds</td>
+<td>0.31401 seconds</td>
+<td>21.08818 seconds</td>
+<td>9.4236 seconds</td>
+<td>0.01431 seconds</td>
 </tr>
 
 <tr>
 <td>7000</td>
 <td>7000</td>
-<td>0.15786 seconds</td>
-<td>29.27595 seconds</td>
-<td>13.06783 seconds</td>
-<td>0.0176 seconds</td>
+<td>0.20681 seconds</td>
+<td>29.10378 seconds</td>
+<td>13.71728 seconds</td>
+<td>0.01677 seconds</td>
 </tr>
 
 <tr>
 <td>8000</td>
 <td>8000</td>
-<td>0.19837 seconds</td>
-<td>35.91145 seconds</td>
-<td>16.03351 seconds</td>
-<td>0.01828 seconds</td>
+<td>0.24075 seconds</td>
+<td>39.52925 seconds</td>
+<td>17.08021 seconds</td>
+<td>0.0192 seconds</td>
 </tr>
 
 <tr>
 <td>9000</td>
 <td>9000</td>
-<td>0.19943 seconds</td>
-<td>46.29236 seconds</td>
-<td>20.18882 seconds</td>
-<td>0.02275 seconds</td>
+<td>0.25785 seconds</td>
+<td>48.37365 seconds</td>
+<td>21.51451 seconds</td>
+<td>0.0225 seconds</td>
 </tr>
 
 <tr>
 <td>10000</td>
 <td>10000</td>
-<td>0.22881 seconds</td>
-<td>57.23764 seconds</td>
-<td>26.48168 seconds</td>
-<td>0.02325 seconds</td>
+<td>0.30643 seconds</td>
+<td>59.90875 seconds</td>
+<td>25.93183 seconds</td>
+<td>0.02465 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -723,11 +702,11 @@ int main()
 
 
 <div style="margin: 0 auto;" class="my-4 border border-light">
-    <canvas id="824"></canvas>
+    <canvas id="619"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js" integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('824').getContext('2d');
+    var ctx = document.getElementById('619').getContext('2d');
     var options = 
 {
     type: 'line',
@@ -750,43 +729,43 @@ int main()
           "data": [
             {
               "x": 1000,
-              "y": 0.02286
+              "y": 0.02285
             },
             {
               "x": 2000,
-              "y": 0.03855
+              "y": 0.04808
             },
             {
               "x": 3000,
-              "y": 0.06155
+              "y": 0.07648
             },
             {
               "x": 4000,
-              "y": 0.08684
+              "y": 0.10607
             },
             {
               "x": 5000,
-              "y": 0.1127
+              "y": 0.14967
             },
             {
               "x": 6000,
-              "y": 0.13078
+              "y": 0.31401
             },
             {
               "x": 7000,
-              "y": 0.15786
+              "y": 0.20681
             },
             {
               "x": 8000,
-              "y": 0.19837
+              "y": 0.24075
             },
             {
               "x": 9000,
-              "y": 0.19943
+              "y": 0.25785
             },
             {
               "x": 10000,
-              "y": 0.22881
+              "y": 0.30643
             }
           ],
           "fill": false,
@@ -799,43 +778,43 @@ int main()
           "data": [
             {
               "x": 1000,
-              "y": 0.50941
+              "y": 0.51674
             },
             {
               "x": 2000,
-              "y": 2.12073
+              "y": 2.14491
             },
             {
               "x": 3000,
-              "y": 4.95961
+              "y": 5.05203
             },
             {
               "x": 4000,
-              "y": 8.89305
+              "y": 9.82914
             },
             {
               "x": 5000,
-              "y": 14.7351
+              "y": 15.07934
             },
             {
               "x": 6000,
-              "y": 20.52999
+              "y": 21.08818
             },
             {
               "x": 7000,
-              "y": 29.27595
+              "y": 29.10378
             },
             {
               "x": 8000,
-              "y": 35.91145
+              "y": 39.52925
             },
             {
               "x": 9000,
-              "y": 46.29236
+              "y": 48.37365
             },
             {
               "x": 10000,
-              "y": 57.23764
+              "y": 59.90875
             }
           ],
           "fill": false,
@@ -848,43 +827,43 @@ int main()
           "data": [
             {
               "x": 1000,
-              "y": 0.24336
+              "y": 0.24463
             },
             {
               "x": 2000,
-              "y": 0.97507
+              "y": 0.97831
             },
             {
               "x": 3000,
-              "y": 2.24918
+              "y": 2.2953
             },
             {
               "x": 4000,
-              "y": 4.04739
+              "y": 4.19266
             },
             {
               "x": 5000,
-              "y": 6.39748
+              "y": 6.75124
             },
             {
               "x": 6000,
-              "y": 9.43997
+              "y": 9.4236
             },
             {
               "x": 7000,
-              "y": 13.06783
+              "y": 13.71728
             },
             {
               "x": 8000,
-              "y": 16.03351
+              "y": 17.08021
             },
             {
               "x": 9000,
-              "y": 20.18882
+              "y": 21.51451
             },
             {
               "x": 10000,
-              "y": 26.48168
+              "y": 25.93183
             }
           ],
           "fill": false,
@@ -897,43 +876,43 @@ int main()
           "data": [
             {
               "x": 1000,
-              "y": 0.00205
+              "y": 0.00209
             },
             {
               "x": 2000,
-              "y": 0.00425
+              "y": 0.00433
             },
             {
               "x": 3000,
-              "y": 0.00662
+              "y": 0.00654
             },
             {
               "x": 4000,
-              "y": 0.00918
+              "y": 0.0091
             },
             {
               "x": 5000,
-              "y": 0.01085
+              "y": 0.01975
             },
             {
               "x": 6000,
-              "y": 0.01417
+              "y": 0.01431
             },
             {
               "x": 7000,
-              "y": 0.0176
+              "y": 0.01677
             },
             {
               "x": 8000,
-              "y": 0.01828
+              "y": 0.0192
             },
             {
               "x": 9000,
-              "y": 0.02275
+              "y": 0.0225
             },
             {
               "x": 10000,
-              "y": 0.02325
+              "y": 0.02465
             }
           ],
           "fill": false,
@@ -1065,48 +1044,56 @@ data = {
 }
 
 
+&quot;&quot;&quot;
+Implementation of merge sort algorithm
+
+Main File: merge_sort.py
+Test File: test_merge_sort.py
+&quot;&quot;&quot;
+
+
 def get_merge_sorted_numbers(numbers):
     &quot;&quot;&quot; Returns sorted list for a given list
 
     Arguments:
     numbers -- list of numbers
     &quot;&quot;&quot;
-    split_and_merge(numbers, 0, len(numbers) - 1)
+    temp = numbers.copy()
+    perform_split_and_merge(numbers, temp, 0, len(numbers) - 1)
     return numbers
 
 
-def split_and_merge(ar, left, right):
+def perform_split_and_merge(ar, temp, left, right):
     if left &lt; right:
         mid = (right + left) // 2
-        split_and_merge(ar, left, mid)
-        split_and_merge(ar, mid + 1, right)
-        merge(ar, left, mid, right)
+        perform_split_and_merge(ar, temp, left, mid)
+        perform_split_and_merge(ar, temp, mid + 1, right)
+        perform_merge(ar, temp, left, mid, right)
 
 
-def merge(ar, left, mid, right):
-    left_ar = ar[left:mid + 1]
-    right_ar = ar[mid + 1:right + 1]
-    left_ar_length = len(left_ar)
-    right_ar_length = len(right_ar)
-    left_ar_pos = 0
-    right_ar_pos = 0
+def perform_merge(ar, temp, left, mid, right):
+    left_pos = left
+    right_pos = mid + 1
     current_pos = left
-    while left_ar_pos &lt; left_ar_length and right_ar_pos &lt; right_ar_length:
-        if left_ar[left_ar_pos] &lt;= right_ar[right_ar_pos]:
-            ar[current_pos] = left_ar[left_ar_pos]
-            left_ar_pos += 1
+    while left_pos &lt;= mid and right_pos &lt;= right:
+        if ar[left_pos] &lt;= ar[right_pos]:
+            temp[current_pos] = ar[left_pos]
+            left_pos += 1
         else:
-            ar[current_pos] = right_ar[right_ar_pos]
-            right_ar_pos += 1
+            temp[current_pos] = ar[right_pos]
+            right_pos += 1
         current_pos += 1
-    while left_ar_pos &lt; left_ar_length:
-        ar[current_pos] = left_ar[left_ar_pos]
-        left_ar_pos += 1
+    while left_pos &lt;= mid:
+        temp[current_pos] = ar[left_pos]
+        left_pos += 1
         current_pos += 1
-    while right_ar_pos &lt; right_ar_length:
-        ar[current_pos] = right_ar[right_ar_pos]
-        right_ar_pos += 1
+    while right_pos &lt;= right:
+        temp[current_pos] = ar[right_pos]
+        right_pos += 1
         current_pos += 1
+    for i in range(left, right + 1):
+        ar[i] = temp[i]
+
 
 
 def get_bubble_sorted_numbers(numbers):
@@ -1223,8 +1210,14 @@ if __name__ == &quot;__main__&quot;:
 <h3 id="easy-difficulty-challenges">Easy difficulty challenges:</h3>
 
 <ul>
-<li><a href="https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/tutorial/">Merge sort - Hackerearth</a></li>
 <li><a href="https://practice.geeksforgeeks.org/problems/merge-sort/1">Merge sort - Geeksforgeeks</a></li>
+</ul>
+
+<h3 id="hard-difficulty-challenges">Hard difficulty challenges:</h3>
+
+<ul>
+<li><a href="https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/mergesort/">Merge sort - Hackerearth</a> : Solution can be viewed from <a href="https://gist.github.com/arsho/c7e7af845698101cef175bcb27fdb4bc">this gist</a>, I got time limit exceed using Python 3.</li>
+<li><a href="https://www.hackerrank.com/challenges/ctci-merge-sort/problem">Merge Sort: Counting Inversions - Hackerrank</a> : Solution can be viewed from <a href="https://gist.github.com/arsho/c7e7af845698101cef175bcb27fdb4bc">this gist</a>, I got time limit exceed using Python 3.</li>
 </ul>
 
 <h2 id="reference">Reference</h2>
