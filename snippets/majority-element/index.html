@@ -174,7 +174,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             <i class="fa fa-calendar pr-1"></i>August 24, 2021</time>
           
             , Updated on
-            <time datetime="2021-08-25T10:21:21-05:00">
+            <time datetime="2021-08-25T10:28:30-05:00">
               <i class="fa fa-calendar pr-1"></i>August 25, 2021</time>
           
         </span>
@@ -216,33 +216,36 @@ Output: 2
 <ul>
 <li>We can use a hash table to store the number of occurrences of each number.</li>
 <li>When the number of occurrences for a number is more than <code>⌊n / 2⌋</code>, return it.</li>
-</ul>
+<li>Time complexity: <code>O(n)</code></li>
+
+<li><p>Space complexity: <code>O(n)</code></p>
 
 <h3 id="solution-in-java">Solution in Java:</h3>
 
 <pre><code class="language-java">class Solution {
-    public int majorityElement(int[] nums) {
-        int n = nums.length;
-        int major = nums[0];
-        HashMap&lt;Integer, Integer&gt; occurrences = new HashMap&lt;Integer, Integer&gt;();
-        for(int i=0; i&lt;n; i++) {
-            int numberOfOccurrences;
-            if(occurrences.get(nums[i]) != null) {
-                numberOfOccurrences = occurrences.get(nums[i]) + 1;
-            }
-            else {
-                numberOfOccurrences = 1;
-            }
-            occurrences.put(nums[i], numberOfOccurrences);
-            if(numberOfOccurrences &gt; n/2) {
-                major = nums[i];
-                break;
-            }
+public int majorityElement(int[] nums) {
+    int n = nums.length;
+    int major = nums[0];
+    HashMap&lt;Integer, Integer&gt; occurrences = new HashMap&lt;Integer, Integer&gt;();
+    for(int i: nums) {
+        int numberOfOccurrences;
+        if(occurrences.get(i) != null) {
+            numberOfOccurrences = occurrences.get(i) + 1;
         }
-        return major;
+        else {
+            numberOfOccurrences = 1;
+        }
+        occurrences.put(i, numberOfOccurrences);
+        if(numberOfOccurrences &gt; n/2) {
+            major = i;
+            break;
+        }
     }
+    return major;
 }
-</code></pre>
+}
+</code></pre></li>
+</ul>
 
 <h3 id="solution-in-c">Solution in C++:</h3>
 
