@@ -10,29 +10,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 
-<meta name="keywords" content="read file in c, read till eof in c, read file by n lines in c">
-<meta name="description" content="read a file by n lines in C programming language">
+<meta name="keywords" content="algorithm, hash table">
+<meta name="description" content="Given an array nums of size n, return the majority element.">
 <meta name="author" content="Ahmedur Rahman Shovon">
 
-<meta property="og:url" content="https://arshovon.com/snippets/read-file-by-n-lines/">
+<meta property="og:url" content="https://arshovon.com/snippets/majority-element/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Read File by N Lines using C programming language - Ahmedur Rahman Shovon">
-<meta name="og:description" content="read a file by n lines in C programming language">
-<meta property="og:image" content="https://arshovon.com/snippets/images/read_file_by_n_lines_program_output.png">
-<meta property="og:image:secure_url" content="https://arshovon.com/snippets/images/read_file_by_n_lines_program_output.png">
+<meta property="og:title" content="Get the majority element from a given list - Ahmedur Rahman Shovon">
+<meta name="og:description" content="Given an array nums of size n, return the majority element.">
+<meta property="og:image" content="https://arshovon.com/snippets/images/majority-element.png">
+<meta property="og:image:secure_url" content="https://arshovon.com/snippets/images/majority-element.png">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="Read File by N Lines using C programming language - Ahmedur Rahman Shovon" />
+<meta property="og:image:alt" content="Get the majority element from a given list - Ahmedur Rahman Shovon" />
 <meta property="og:site_name" content="Ahmedur Rahman Shovon"/>
 <meta property="og:locale" content="en-us">
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://arshovon.com/snippets/images/read_file_by_n_lines_program_output.png" />
-<meta name="twitter:url" content="https://arshovon.com/snippets/read-file-by-n-lines/" />
-<meta property="twitter:title" content="Read File by N Lines using C programming language - Ahmedur Rahman Shovon">
-<meta name="twitter:description" content="read a file by n lines in C programming language">
-<title>Read File by N Lines using C programming language - Ahmedur Rahman Shovon</title>
+<meta name="twitter:image" content="https://arshovon.com/snippets/images/majority-element.png" />
+<meta name="twitter:url" content="https://arshovon.com/snippets/majority-element/" />
+<meta property="twitter:title" content="Get the majority element from a given list - Ahmedur Rahman Shovon">
+<meta name="twitter:description" content="Given an array nums of size n, return the majority element.">
+<title>Get the majority element from a given list - Ahmedur Rahman Shovon</title>
 
-<link rel="canonical" href="https://arshovon.com/snippets/read-file-by-n-lines/">
+<link rel="canonical" href="https://arshovon.com/snippets/majority-element/">
 
 <link rel="icon" href="https://arshovon.com/assets/images/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="https://arshovon.com/assets/images/favicon.ico"
@@ -166,12 +166,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 <main class="col-12 blog p-3 p-md-5" role="main">
   <article>
     <header class="mb-4">
-      <h3>Read File by N Lines using C programming language</h3>
+      <h3>Get the majority element from a given list</h3>
       <div class="mb-3">
         <span class="float-right badge">
           Published on
-          <time datetime="2019-09-29T12:14:12&#43;06:00">
-            <i class="fa fa-calendar pr-1"></i>September 29, 2019</time>
+          <time datetime="2021-08-24T09:23:37-05:00">
+            <i class="fa fa-calendar pr-1"></i>August 24, 2021</time>
           
             , Updated on
             <time datetime="2021-08-25T10:21:21-05:00">
@@ -182,97 +182,115 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         
         <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
-<a href="https://arshovon.com/tags/c" class="badge badge-secondary" title="c">c</a>
-
-<a href="https://arshovon.com/tags/file" class="badge badge-secondary" title="file">file</a>
+<a href="https://arshovon.com/tags/algorithm" class="badge badge-secondary" title="algorithm">algorithm</a>
 
 
         
       </div>
     </header>
     <hr class="my-6">
-    <p>Read a file by <code>n</code> lines while user pressing <code>y</code> until end of file.</p>
+    
 
-<pre><code class="language-c">/*
-Author: Ahmedur Rahman Shovon
-License: &quot;GPL&quot;
-Date: 2019/09/29
-*/
-#include &lt;stdio.h&gt;
+<p>Given an array numbers of size <code>n</code>, return the majority element.</p>
 
-/* Function that prints a line from file. Update the printf contents to change format. */
-void print_line(int line_number, char line[])
-{
-    printf(&quot;%s&quot;, line);
-}
+<h2 id="description">Description</h2>
 
-int main()
-{
-    char filename[] = &quot;data.txt&quot;;
-    FILE *file = fopen(filename, &quot;r&quot;);
-    int i = 1;
-    // Number of lines per chunk
-    int n = 3;
-    int end = n;
-    char user_choice;
-    if ( file != NULL )
-    {
-        char line[1000]; /* or other suitable maximum line size */
-        while (fgets(line, sizeof line, file) != NULL) /* read a line */
-        {
-            if(i&lt;=end)
-            {
-                print_line(i, line);
+<p>The majority element is the element that appears more than <code>⌊n / 2⌋</code> times. You may assume that the majority element always exists in the array.</p>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="example-1">Example 1:</h3>
+
+<pre><code>Input: nums = [1, 2, 2]
+Output: 2
+</code></pre>
+
+<h3 id="example-2">Example 2:</h3>
+
+<pre><code>Input: nums = [1, 2, 2, 2, 2, 1, 1]
+Output: 2
+</code></pre>
+
+<h2 id="solution">Solution</h2>
+
+<ul>
+<li>We can use a hash table to store the number of occurrences of each number.</li>
+<li>When the number of occurrences for a number is more than <code>⌊n / 2⌋</code>, return it.</li>
+</ul>
+
+<h3 id="solution-in-java">Solution in Java:</h3>
+
+<pre><code class="language-java">class Solution {
+    public int majorityElement(int[] nums) {
+        int n = nums.length;
+        int major = nums[0];
+        HashMap&lt;Integer, Integer&gt; occurrences = new HashMap&lt;Integer, Integer&gt;();
+        for(int i=0; i&lt;n; i++) {
+            int numberOfOccurrences;
+            if(occurrences.get(nums[i]) != null) {
+                numberOfOccurrences = occurrences.get(nums[i]) + 1;
             }
-            else
-            {
-                printf(&quot;Do you want to continue? Press 'y' to continue or any other key to exit: &quot;);
-                // The begining space is to ignore the enter key press
-                scanf(&quot; %c&quot;, &amp;user_choice);
-                if(user_choice == 'y')
-                {
-                    print_line(i, line);
-                    end = end + n;
-                }
-                else
-                {
-                    printf(&quot;You pressed '%c'\n&quot;, user_choice);
+            else {
+                numberOfOccurrences = 1;
+            }
+            occurrences.put(nums[i], numberOfOccurrences);
+            if(numberOfOccurrences &gt; n/2) {
+                major = nums[i];
+                break;
+            }
+        }
+        return major;
+    }
+}
+</code></pre>
+
+<h3 id="solution-in-c">Solution in C++:</h3>
+
+<pre><code class="language-cpp">class Solution {
+public:
+    int majorityElement(vector&lt;int&gt;&amp; nums) {
+        int n = nums.size();
+        int major = nums[0];
+        map&lt;int, int&gt; occurrences;
+        for(auto i: nums) {
+            if(occurrences.find(i) == occurrences.end()) {
+                occurrences[i] = 1;
+            }
+            else {
+                occurrences[i]++;
+                if(occurrences[i] &gt; n/2) {
+                    major = i;
                     break;
                 }
             }
-            i++;
         }
-        fclose(file);
+        return major;
     }
-    else
-    {
-        printf(&quot;Error in reading file&quot;);
-    }
-    return 0;
-}
-
+};
 </code></pre>
 
-<p><code>data.txt</code>:</p>
+<h3 id="solution-in-python-3">Solution in Python 3:</h3>
 
-<pre><code class="language-bash">This is line number 1 with some dummy characters
-This is line number 2 with some dummy characters
-This is line number 3 with some dummy characters
-This is line number 4 with some dummy characters
-This is line number 5 with some dummy characters
-This is line number 6 with some dummy characters
-This is line number 7 with some dummy characters
-This is line number 8 with some dummy characters
-This is line number 9 with some dummy characters
-This is line number 10 with some dummy characters
-This is line number 11 with some dummy characters
-This is line number 12 with some dummy characters
-This is line number 13 with some dummy characters
+<pre><code class="language-python">from typing import List
+
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -&gt; int:
+        occurrences = {}
+        major = nums[0]
+        for i in nums:
+            occurrences[i] = occurrences.get(i, 0) + 1
+            if occurrences[i] &gt; len(nums) / 2:
+                major = i
+                break
+        return major
 </code></pre>
 
-<p>Output:</p>
+<h3 id="reference">Reference</h3>
 
-<p><img src="/snippets/images/read_file_by_n_lines_program_output.png" alt="alt Program output of Read File by N Lines" /></p>
+<ul>
+<li><a href="https://leetcode.com/problems/majority-element/">Leetcode challenge: Majority Element</a></li>
+</ul>
 
   </article>
   
@@ -288,26 +306,6 @@ This is line number 13 with some dummy characters
                 <i class="fa fa-chevron-left"></i> Previous Post
             </h5>
             <p class="card-text">
-                <a href="https://arshovon.com/snippets/8-diamond/" class="pt-2 pb-2">
-                    8-diamond
-                </a>
-            </p>
-        </div>
-        <div class="card-footer">
-            <span class="text_muted small">
-                <time datetime="2018-08-19T20:29:37-07:00">
-                    <i class="fa fa-calendar pr-1"></i>August 19, 2018</time>
-            </span>
-        </div>
-    </div>
-    
-    
-    <div class="card mb-3 bg-light text-md-right border-light">
-        <div class="card-body">
-            <h5 class="card-title">
-                Next Post <i class="fa fa-chevron-right"></i>
-            </h5>
-            <p class="card-text">
                 <a href="https://arshovon.com/snippets/flask-bootstrap-navbar/" class="pt-2 pb-2">
                     Example of using Bootstrap&#39;s navbar in Flask
                 </a>
@@ -320,6 +318,7 @@ This is line number 13 with some dummy characters
             </span>
         </div>
     </div>
+    
     
 </div>
 
