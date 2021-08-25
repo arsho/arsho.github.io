@@ -174,7 +174,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             <i class="fa fa-calendar pr-1"></i>August 24, 2021</time>
           
             , Updated on
-            <time datetime="2021-08-25T10:47:35-05:00">
+            <time datetime="2021-08-25T11:35:45-05:00">
               <i class="fa fa-calendar pr-1"></i>August 25, 2021</time>
           
         </span>
@@ -193,7 +193,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
 <p>Given an array numbers of size <code>n</code>, return the majority element.</p>
 
-<h2 id="description">Description</h2>
+<h1 id="description">Description</h1>
 
 <p>The majority element is the element that appears more than <code>⌊n / 2⌋</code> times. You may assume that the majority element always exists in the array.</p>
 
@@ -211,7 +211,9 @@ Output: 2
 Output: 2
 </code></pre>
 
-<h2 id="solution">Solution</h2>
+<h1 id="solution">Solution</h1>
+
+<h2 id="approach-1-hash-table">Approach 1 - Hash Table</h2>
 
 <ul>
 <li>We can use a hash table to store the number of occurrences of each number.</li>
@@ -288,10 +290,41 @@ class Solution:
         return major
 </code></pre>
 
+<h2 id="approach-2-boyer-moore-voting-algorithm">Approach 2: Boyer-Moore Voting Algorithm</h2>
+
+<ul>
+<li>We can use a counter with initial value to <code>0</code> and set the first value as major element.</li>
+<li>Iterate through the given values.</li>
+<li>In each iteration, check the value of the counter. If it is <code>0</code>, sets the current value as major element. Again, if the current value is same to the major element, increase the counter value by one. Otherwise, decrease the counter value by one.</li>
+<li>Time complexity: <code>O(n)</code></li>
+<li>Space complexity: <code>O(1)</code></li>
+</ul>
+
+<h3 id="solution-in-java-1">Solution in Java:</h3>
+
+<pre><code class="language-java">class Solution {
+    public int majorityElement(int[] nums) {
+        int major = nums[0];
+        int count = 0;
+        for(int i: nums) {
+            if(count == 0) {
+                major = i;
+            }
+            if(i == major)
+                count++;
+            else
+                count--;
+        }
+        return major;
+    }
+}
+</code></pre>
+
 <h3 id="reference">Reference</h3>
 
 <ul>
 <li><a href="https://leetcode.com/problems/majority-element/">Leetcode challenge: Majority Element</a></li>
+<li><a href="https://www.cs.utexas.edu/~moore/best-ideas/mjrty/">Boyer-Moore Voting Algorithm</a></li>
 </ul>
 
   </article>
