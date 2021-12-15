@@ -1,0 +1,463 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!--Head Starts-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Cloud Blazers Penetration Testing Tool">
+    <meta name="author" content="Cloud Blazers">
+    <meta name="keywords"
+          content="arsho, harp lab, Kaplan Meier Graph">
+
+    <link rel="shortcut icon"
+          href="{{ url_for('static', filename='img/icons/uab.png') }}"/>
+
+    <link rel="canonical"
+          href="/"/>
+
+    <title>Kaplan Meier Graph</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.css"/>
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: none;
+        }
+    </style>
+    <meta name="theme-color" content="#7952b3">
+    <!--Head Ends-->
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light bg-gradient">
+<div class="container p-3 bg-white" id="container" style="display:none;">
+    <header>
+        <!--Header Starts-->
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="{{ url_for('index') }}" class="d-flex align-items-center text-dark text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                     class="text-success bi bi-cloud-check"
+                     viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                </svg>
+                &nbsp;
+                <span class="fs-4">KMPen</span>
+            </a>
+
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 text-dark text-decoration-none" href="/">
+                    <i class="bi bi-clipboard-data"></i> Analytics
+                </a>
+            </nav>
+        </div>
+
+        <!--Header Ends-->
+    </header>
+    <main>
+        <div class="p-5 mb-4 bg-light rounded-3 text-center">
+            <div class="container-fluid py-5">
+                <h3 class="display-6 fw-bold">Kaplan Meier Survival Visualization Tool</h3>
+                <div class="row justify-content-md-center mt-4">
+                    <p class="col-md-8 fs-4">
+                        <b>KMPen</b> is a visualization tool to create Kaplan Meier survival graph.
+                    </p>
+                    <div class="d-grid gap-2 d-md-block mt-4">
+                        <button class="btn btn-success py-2 mb-2 text-white text-decoration-none graph_data_btn"
+                                id="default_dataset">
+                            <i class="bi bi-ui-checks"></i> Generate with default dataset
+                        </button>
+                        <button class="btn btn-dark py-2 mb-2 text-white text-decoration-none graph_data_btn"
+                                id="random_dataset">
+                            <i class="bi bi-ui-checks"></i> Generate with random dataset
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3" id="graph">
+            <h1 class="h3 mb-3"><strong>KMPen</strong> Exposure</h1>
+            <div class="col-12">
+                <div class="card mb-2">
+                    <div class="card-header">
+                        Kaplan Meier Graph Data <span id="dataset_label"></span>
+                    </div>
+                    <div class="card-body" id="data_tables">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12">
+                <div class="card mb-2">
+                    <div class="card-header">
+                        Kaplan Meier Survival Graph
+                    </div>
+                    <div class="card-body">
+                        <canvas id="kmgraph"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</div>
+<!--Footer Starts-->
+<footer class="py-3 bg-dark mt-auto text-white border border-top border-2 border-dark">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a class="me-3 py-2 text-white text-decoration-none" href="/">
+                <i class="bi-people"></i> About
+            </a>
+            <a class="me-3 py-2 text-white text-decoration-none"
+               href="https://github.com/arsho/CBPen">
+                <i class="bi-github"></i> Code
+            </a>
+
+            <a id="back-to-top" href="#"
+               class="btn btn-light btn-lg back-to-top" role="button">
+                <i class="bi bi-arrow-up-square-fill"></i>
+            </a>
+        </p>
+        <p class="mb-1">Developed by <a href="/" class="text-white">HARP Lab</a>
+            <br>KM Pen &copy; 2021
+        </p>
+    </div>
+</footer>
+<!--Footer Ends-->
+<!--Scripts Starts-->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+        $("#container").show();
+        $("#graph").hide();
+
+        const CHART_COLORS = {
+            red: 'rgb(255, 99, 132)',
+            orange: 'rgb(255, 159, 64)',
+            yellow: 'rgb(255, 205, 86)',
+            green: 'rgb(75, 192, 192)',
+            blue: 'rgb(54, 162, 235)',
+            purple: 'rgb(153, 102, 255)',
+            grey: 'rgb(201, 203, 207)'
+        };
+
+        const DATASET_1 = [
+            [6, 1, 1],
+            [12, 1, 1],
+            [21, 1, 1],
+            [27, 1, 1],
+            [32, 1, 1],
+            [39, 1, 1],
+            [43, 1, 1],
+            [43, 1, 1],
+            [46, 1, 0],
+            [89, 1, 1],
+            [115, 1, 0],
+            [139, 1, 0],
+            [181, 1, 0],
+            [211, 1, 0],
+            [217, 1, 0],
+            [261, 1, 1],
+            [263, 1, 1],
+            [270, 1, 1],
+            [295, 1, 0],
+            [311, 1, 1],
+            [335, 1, 0],
+            [346, 1, 0],
+            [365, 1, 0]
+        ];
+        const DATASET_2 = [
+            [9, 2, 1],
+            [13, 2, 1],
+            [27, 2, 1],
+            [38, 2, 1],
+            [45, 2, 0],
+            [49, 2, 1],
+            [49, 2, 1],
+            [79, 2, 0],
+            [93, 2, 1],
+            [118, 2, 0],
+            [126, 2, 1],
+            [159, 2, 0],
+            [211, 2, 0],
+            [218, 2, 1],
+            [229, 2, 0],
+            [263, 2, 0],
+            [298, 2, 0],
+            [301, 2, 1],
+            [333, 2, 1],
+            [346, 2, 0],
+            [353, 2, 0],
+            [362, 2, 0],
+        ];
+
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function getRandomColors() {
+            var r = getRandomInt(0, 255);
+            var g = getRandomInt(0, 255);
+            var b = getRandomInt(0, 255);
+            return "rgba(" + r + "," + g + "," + b + ", 1.0)";
+        }
+
+        function get_dataset(dataset_type, number_of_groups) {
+            var dataset = [];
+            // data: Time, Group/Factor, Outcome/Censor
+            if (dataset_type == "random") {
+                for (let i = 0; i < number_of_groups; i++) {
+                    let current_dataset = [];
+                    let group_number = i + 1;
+                    for (let j = 0; j < getRandomInt(15, 45); j++) {
+                        current_dataset.push([getRandomInt(1, 500), group_number, getRandomInt(0, 1)]);
+                    }
+                    dataset.push(current_dataset);
+                }
+            } else {
+                dataset.push(DATASET_1);
+                dataset.push(DATASET_2);
+            }
+            for (let i = 0; i < dataset.length; i++) {
+                dataset[i].sort(function (a, b) {
+                    return a[0] - b[0];
+                });
+            }
+            return dataset;
+        }
+
+        function get_km_data(dataset) {
+            let time_flag = {};
+            let normal_data = [];
+            let censor_data = [];
+            let number_of_alive = dataset.length;
+            let current_probability = 1.0;
+            for (let i = 0; i < dataset.length; i++) {
+                const current_time = dataset[i][0];
+                const group = dataset[i][1];
+                const censor = dataset[i][2];
+                let death_count = 0;
+                if (censor == 1) {
+                    if (time_flag[current_time]) {
+                        continue;
+                    } else {
+                        time_flag[current_time] = true;
+                        for (let j = i; j < dataset.length; j++) {
+                            if (dataset[j][0] != current_time) {
+                                break;
+                            } else if (dataset[j][2] == 1) {
+                                death_count++;
+                            }
+                        }
+                        current_probability = current_probability * (1.0 - ((death_count * 1.0) / number_of_alive));
+                        number_of_alive -= death_count;
+                    }
+                } else {
+                    number_of_alive--;
+                    censor_data.push({"x": current_time, "y": current_probability});
+                }
+                normal_data.push({"x": current_time, "y": current_probability});
+            }
+            return {"normal_data": normal_data, "censor_data": censor_data};
+        }
+
+        function show_data(datasets) {
+
+            let empty_tables = '<div class="row">';
+            for (let i = 0; i < datasets.length; i++) {
+                let id = "datatable_" + i;
+                empty_tables += '<div class="col-12 col-md-6 mb-4">';
+                empty_tables += '<table id="' + id + '" class="table table-sm table-bordered table-striped caption-top table-responsive-md">';
+                empty_tables += '<caption class="card-subtitle text-center p-2 mb-2 bg-dark bg-gradient text-white">';
+                empty_tables += 'Dataset: ' + parseInt(i + 1);
+                empty_tables += '</caption>';
+                empty_tables += '<thead class="table-light">';
+                empty_tables += '<tr>';
+                empty_tables += '    <th>Subject</th>';
+                empty_tables += '    <th>Time</th>';
+                empty_tables += '    <th>Group</th>';
+                empty_tables += '    <th>Censor</th>';
+                empty_tables += '</tr>';
+                empty_tables += '</thead>';
+                empty_tables += '<tbody>';
+                empty_tables += '</tbody>';
+                empty_tables += '</table>';
+                empty_tables += '</div>';
+            }
+            empty_tables += '</div>';
+
+            $("#data_tables").html(empty_tables);
+
+            for (let i = 0; i < datasets.length; i++) {
+                let dataset = datasets[i];
+                let id = "datatable_" + i;
+                var data_with_index = [];
+                for (let i = 0; i < dataset.length; i++) {
+                    let current_row = [i + 1];
+                    for (let j = 0; j < dataset[i].length; j++) {
+                        current_row.push(dataset[i][j]);
+                    }
+                    data_with_index.push(current_row);
+                }
+                var table = $('#' + id).DataTable();
+                table.clear();
+                table.rows.add(data_with_index).draw();
+            }
+
+
+        }
+
+        function show_graph(datasets) {
+            let chart_data = [];
+            let default_colors = [CHART_COLORS.green, CHART_COLORS.red,
+                CHART_COLORS.purple, CHART_COLORS.blue,
+                CHART_COLORS.yellow, CHART_COLORS.orange];
+            for (let i = 0; i < datasets.length; i++) {
+                let dataset = datasets[i];
+                let km_data = get_km_data(dataset);
+                let normal_data = km_data["normal_data"];
+                let censor_data = km_data["censor_data"];
+                let color_1, color_2;
+                if (datasets.length <= 3) {
+                    color_1 = default_colors[i * 2];
+                    color_2 = default_colors[i * 2 + 1];
+                } else {
+                    color_1 = getRandomColors();
+                    color_2 = getRandomColors();
+                }
+                const line_chart_data = {
+                    type: 'line',
+                    label: 'Group ' + parseInt(i + 1),
+                    backgroundColor: color_1,
+                    borderColor: color_1,
+                    data: normal_data,
+                    fill: false,
+                    stepped: 'after',
+                    radius: 0,
+                    hitRadius: 0,
+                    borderWidth: 3,
+                };
+                const scatter_chart_data = {
+                    type: 'scatter',
+                    label: 'Group ' + parseInt(i + 1) + ' - Censored',
+                    backgroundColor: color_2,
+                    borderColor: color_2,
+                    data: censor_data,
+                    radius: 7,
+                    hoverRadius: 7,
+                    borderWidth: 3,
+                    hoverBorderWidth: 3,
+                    pointStyle: 'cross',
+                };
+                chart_data.push(scatter_chart_data);
+                chart_data.push(line_chart_data);
+            }
+
+            const config = {
+                data: {datasets: chart_data},
+                options: {
+                    plugins: {
+                        legend: {
+                            labels: {
+                                usePointStyle: true,
+                            },
+                        }
+                    },
+                    responsive: true,
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            beginAtZero: true,
+                            grace: '0%',
+                            title: {
+                                display: true,
+                                align: 'center',
+                                text: 'Time'
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            min: 0.0,
+                            max: 1.1,
+                            ticks: {
+                                stepSize: 0.1 // this worked as expected
+                            },
+                            title: {
+                                display: true,
+                                align: 'center',
+                                text: 'Survival'
+                            }
+                        }
+                    },
+                }
+            };
+
+            var ctx = document.getElementById('kmgraph').getContext('2d');
+
+            const oldChart = Chart.getChart(ctx);
+            if (typeof oldChart !== 'undefined') {
+                oldChart.destroy();
+            }
+            new Chart(ctx, config);
+
+        }
+
+        $(".graph_data_btn").on("click", function () {
+            $("#graph").hide();
+            const id = $(this).attr("id");
+            let dataset, dataset_label;
+            if (id == "random_dataset") {
+                dataset = get_dataset("random", getRandomInt(1, 4));
+                dataset_label = ": Random dataset";
+            } else {
+                dataset = get_dataset("default_dataset");
+                dataset_label = ": Dataset from Goel, et al.: Understanding survival analysis";
+            }
+
+            $("#dataset_label").html(dataset_label);
+
+            show_data(dataset);
+            show_graph(dataset);
+            $("#graph").show("slow");
+        });
+    });
+</script>
+<!--Scripts Ends-->
+
+</body>
+</html>

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Kaplan Meier survival graph</title>
+      <link>https://arshovon.com/apps/kmpen/</link>
+      <pubDate>Fri, 10 Dec 2021 11:15:10 +0600</pubDate>
+      
+      <guid>https://arshovon.com/apps/kmpen/</guid>
+      <description>Kaplan Meier Graph  .back-to-top { position: fixed; bottom: 25px; right: 25px; display: none; }     &amp;nbsp; KMPen   Analytics      Kaplan Meier Survival Visualization Tool KMPen is a visualization tool to create Kaplan Meier survival graph.  Generate with default dataset   Generate with random dataset      KMPen Exposure Kaplan Meier Graph Data      Kaplan Meier Survival Graph          About   Code    Developed by HARP Lab KM Pen &amp;copy; 2021        $(document).</description>
+    </item>
+    
+    <item>
       <title>Kids Math</title>
       <link>https://arshovon.com/apps/kids/</link>
       <pubDate>Thu, 10 Sep 2020 11:15:10 +0600</pubDate>
