@@ -55,8 +55,25 @@ const DATASET_2 = [
     [333, 2, 1],
     [346, 2, 0],
     [353, 2, 0],
-    [362, 2, 0],
+    [362, 2, 0]
 ];
+const DATASET_3 = [
+    [1, 1, 1],
+    [2, 1, 1],
+    [3, 1, 1],
+    [4, 1, 1],
+    [4.5, 1, 1],
+    [5, 1, 0]
+];
+const DATASET_4 = [
+    [0.5, 2, 1],
+    [0.75, 2, 1],
+    [1, 2, 1],
+    [1.5, 2, 0],
+    [2, 2, 1],
+    [3.5, 2, 1],
+];
+
 
 function getRandomInt(min_value, max_value) {
     min_value = Math.ceil(min_value);
@@ -135,9 +152,12 @@ $(document).ready(function () {
                 }
                 dataset.push(current_dataset);
             }
-        } else {
+        } else if (dataset_type === "default_dataset_1") {
             dataset.push(DATASET_1);
             dataset.push(DATASET_2);
+        } else if (dataset_type === "default_dataset_2") {
+            dataset.push(DATASET_3);
+            dataset.push(DATASET_4);
         }
         for (let i = 0; i < dataset.length; i++) {
             dataset[i].sort(function (a, b) {
@@ -153,9 +173,17 @@ $(document).ready(function () {
         let censor_data = [];
         let number_of_alive = dataset.length;
         let current_probability = 1.0;
+        normal_data.push({
+            "x": 0,
+            "y": current_probability
+        });
         for (let i = 0; i < dataset.length; i++) {
             const current_time = dataset[i][0];
             const censor = dataset[i][2];
+            normal_data.push({
+                "x": current_time,
+                "y": current_probability
+            });
             let death_count = 0;
             if (censor === 1) {
                 if (time_flag[current_time]) {
@@ -183,6 +211,7 @@ $(document).ready(function () {
                 "x": current_time,
                 "y": current_probability
             });
+
         }
         return {"normal_data": normal_data, "censor_data": censor_data};
     }
@@ -348,11 +377,13 @@ $(document).ready(function () {
         if (id === "random_dataset") {
             dataset = get_dataset("random", getRandomInt(1, 4));
             dataset_label = ": Random dataset";
-        } else {
-            dataset = get_dataset("default_dataset");
+        } else if (id === "default_dataset_1") {
+            dataset = get_dataset("default_dataset_1");
             dataset_label = ": Dataset from <a target='_blank' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3059453/'>Goel, et al.: Understanding survival analysis</a>";
+        } else if (id === "default_dataset_2") {
+            dataset = get_dataset("default_dataset_2");
+            dataset_label = ": Dataset from <a target='_blank' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3932959/'>Rich, et al.: A practical guide to understanding Kaplan-Meier curves</a>";
         }
-
         $("#dataset_label").html(dataset_label);
 
         show_data(dataset);
