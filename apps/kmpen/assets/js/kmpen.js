@@ -71,6 +71,39 @@ function getRandomColors() {
     return "rgba(" + r + "," + g + "," + b + ", 1.0)";
 }
 
+function get_pdf_size(points, unit) {
+    // Unit table from https://github.com/MrRio/jsPDF/blob/ddbfc0f0250ca908f8061a72fa057116b7613e78/jspdf.js#L791
+    var multiplier;
+    switch (unit) {
+        case 'pt':
+            multiplier = 1;
+            break;
+        case 'mm':
+            multiplier = 72 / 25.4;
+            break;
+        case 'cm':
+            multiplier = 72 / 2.54;
+            break;
+        case 'in':
+            multiplier = 72;
+            break;
+        case 'px':
+            multiplier = 96 / 72;
+            break;
+        case 'pc':
+            multiplier = 12;
+            break;
+        case 'em':
+            multiplier = 12;
+            break;
+        case 'ex':
+            multiplier = 6;
+        default:
+            throw ('Invalid unit: ' + unit);
+    }
+    return points * multiplier;
+}
+
 
 $(document).ready(function () {
     $(window).scroll(function () {
@@ -343,13 +376,14 @@ $(document).ready(function () {
             } else if (id === "pdf_btn") {
                 const aspect_ratio = current_chart.width / current_chart.height;
                 filename = "km_graph.pdf";
-                var pdf = new jsPDF();
-                const pdf_max_width = 620;
+                var pdf = new jsPDF('p', 'pt', 'a4');
+                const pdf_width = pdf.internal.pageSize.width;
+                const pdf_max_width = get_pdf_size(pdf_width, 'px') - 0;
                 if (current_chart.width > pdf_max_width) {
                     current_chart.resize(pdf_max_width, pdf_max_width * (1 / aspect_ratio));
                 }
-                canvas_data = current_chart.toBase64Image('image/jpeg', 1);
-                pdf.addImage(canvas_data, 'JPEG', 0, 0);
+                canvas_data = current_chart.toBase64Image();
+                pdf.addImage(canvas_data, 'PNG', 0, 20);
                 pdf.save(filename);
                 current_chart.resize();
             }
