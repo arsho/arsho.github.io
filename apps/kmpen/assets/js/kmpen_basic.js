@@ -8,6 +8,73 @@ const CHART_COLORS = {
     grey: 'rgb(201, 203, 207)'
 };
 
+const DATASET_1 = [
+    [6, 1, 1],
+    [12, 1, 1],
+    [21, 1, 1],
+    [27, 1, 1],
+    [32, 1, 1],
+    [39, 1, 1],
+    [43, 1, 1],
+    [43, 1, 1],
+    [46, 1, 0],
+    [89, 1, 1],
+    [115, 1, 0],
+    [139, 1, 0],
+    [181, 1, 0],
+    [211, 1, 0],
+    [217, 1, 0],
+    [261, 1, 1],
+    [263, 1, 1],
+    [270, 1, 1],
+    [295, 1, 0],
+    [311, 1, 1],
+    [335, 1, 0],
+    [346, 1, 0],
+    [365, 1, 0]
+];
+const DATASET_2 = [
+    [9, 2, 1],
+    [13, 2, 1],
+    [27, 2, 1],
+    [38, 2, 1],
+    [45, 2, 0],
+    [49, 2, 1],
+    [49, 2, 1],
+    [79, 2, 0],
+    [93, 2, 1],
+    [118, 2, 0],
+    [126, 2, 1],
+    [159, 2, 0],
+    [211, 2, 0],
+    [218, 2, 1],
+    [229, 2, 0],
+    [263, 2, 0],
+    [298, 2, 0],
+    [301, 2, 1],
+    [333, 2, 1],
+    [346, 2, 0],
+    [353, 2, 0],
+    [362, 2, 0]
+];
+const DATASET_3 = [
+    [1, 1, 1],
+    [2, 1, 1],
+    [3, 1, 1],
+    [4, 1, 1],
+    [4.5, 1, 1],
+    [5, 1, 0]
+];
+const DATASET_4 = [
+    [0.5, 2, 1],
+    [0.75, 2, 1],
+    [1, 2, 1],
+    [1.5, 2, 0],
+    [2, 2, 1],
+    [3.5, 2, 1],
+];
+
+
 function getRandomInt(min_value, max_value) {
     min_value = Math.ceil(min_value);
     max_value = Math.floor(max_value);
@@ -73,124 +140,72 @@ $(document).ready(function () {
     $("#container").show();
     $("#graph").hide();
 
-    function get_file_data(datafile) {
-        var rows = {};
-        var columns = [];
-        $.ajax({
-            url: '../datafiles/' + datafile,
-            type: "GET",
-            async: false,
-            success: function (data) {
-                let lines = data.split("\n");
-                if (lines.length > 2) {
-                    for (let i = 0; i < lines.length; i++) {
-                        let line = lines[i].trim();
-                        if (line !== "") {
-                            let current_data = line.split("\t");
-                            if (current_data !== "") {
-                                if (i === 0) {
-                                    columns = current_data;
-                                    continue;
-                                }
-                                let row = {};
-                                row.barcode = current_data[0];
-                                row.time = parseInt(current_data[1]);
-                                row.status = parseInt(current_data[2]);
-                                row.a1bg = current_data[3];
-                                row.group1 = current_data[4];
-                                row.group2 = current_data[5];
-                                const group = row.group1 + " + " + row.group2;
-                                if (!rows.hasOwnProperty(group)) {
-                                    rows[group] = [];
-                                }
-                                if (row.time < 0) {
-                                    continue;
-                                }
-                                rows[group].push(row);
-                            }
-                        }
-                    }
+    function get_dataset(dataset_type, number_of_groups) {
+        var dataset = [];
+        // data: Time, Group/Factor, Outcome/Censor
+        if (dataset_type === "random") {
+            for (let i = 0; i < number_of_groups; i++) {
+                let current_dataset = [];
+                let group_number = i + 1;
+                for (let j = 0; j < getRandomInt(15, 45); j++) {
+                    current_dataset.push([getRandomInt(1, 500), group_number, getRandomInt(0, 1)]);
                 }
-            },
-        });
-
-        for (const group in rows) {
-            rows[group].sort(function (a, b) {
-                return a.time - b.time;
+                dataset.push(current_dataset);
+            }
+        } else if (dataset_type === "default_dataset_1") {
+            dataset.push(DATASET_1);
+            dataset.push(DATASET_2);
+        } else if (dataset_type === "default_dataset_2") {
+            dataset.push(DATASET_3);
+            dataset.push(DATASET_4);
+        }
+        for (let i = 0; i < dataset.length; i++) {
+            dataset[i].sort(function (a, b) {
+                return a[0] - b[0];
             });
         }
-        return {"rows": rows, "columns": columns};
-    }
-
-
-    function get_dataset(dataset_type) {
-// A1BG-S-KMinput.txt  : is tab separated file. It has following columns.
-// 1.       Barcode: Patient ID
-// 2.       Time: Time in days
-// 3.       Status: patient life status (death=0, alive=1)
-// 4.       A1BG: Expression value of A1BG gene in cancer patients
-// 5.       ExpressionLevel:  is Group1, dividing patients based on A1BG expression level
-// 6.       Sex: id Group2, dividing patients based on patient’s gender
-//
-// A1BG-R-KMinput.txt  : is tab separated file. It has following columns.
-// 1.       Barcode: Patient ID
-// 2.       Time: Time in days
-// 3.       Status: patient life status (death=0, alive=1)
-// 4.       A1BG: Expression value of A1BG gene in cancer patients
-// 5.       ExpressionLevel:  is Group1, dividing patients based on A1BG expression level
-// 6.       Race: id Group2, dividing patients based on patient’s race
-
-        let data, datafile, description, label;
-        if (dataset_type === "race_dataset") {
-            datafile = 'A1BG-R-KMinput.txt';
-            description = 'Effect of A1BG expression level & race on KIRC patient survival dataset';
-            label = ": Dataset from A1BG expression level & race on KIRC patient survival dataset";
-        } else if (dataset_type === "gender_dataset") {
-            datafile = 'A1BG-S-KMinput.txt';
-            description = 'Effect of A1BG expression level & gender on KIRC patient survival dataset';
-            label = ": Dataset from A1BG expression level & gender on KIRC patient survival dataset";
-        }
-        data = get_file_data(datafile);
-        return {
-            "data": data,
-            "description": description,
-            "label": label
-        }
+        return dataset;
     }
 
     function get_km_data(dataset) {
         let time_flag = {};
         let normal_data = [];
-        let point_radius_data = [];
+        let censor_data = [];
         let number_of_alive = dataset.length;
         let current_probability = 1.0;
         normal_data.push({
-            "x": dataset[0].time,
+            "x": 0,
             "y": current_probability
         });
         for (let i = 0; i < dataset.length; i++) {
-            const current_time = dataset[i].time;
-            const is_alive = dataset[i].status;
+            const current_time = dataset[i][0];
+            const censor = dataset[i][2];
+            normal_data.push({
+                "x": current_time,
+                "y": current_probability
+            });
             let death_count = 0;
-            if (is_alive === 0) {
+            if (censor === 1) {
                 if (time_flag[current_time]) {
                     continue;
                 } else {
                     time_flag[current_time] = true;
                     for (let j = i; j < dataset.length; j++) {
-                        if (dataset[j].time !== current_time) {
+                        if (dataset[j][0] !== current_time) {
                             break;
-                        } else if (dataset[j].status === 0) {
+                        } else if (dataset[j][2] === 1) {
                             death_count++;
                         }
                     }
                     current_probability = current_probability * (1.0 - (death_count / number_of_alive));
                     number_of_alive -= death_count;
                 }
-                point_radius_data.push(0);
             } else {
                 number_of_alive--;
-                point_radius_data.push(4);
+                censor_data.push({
+                    "x": current_time,
+                    "y": current_probability
+                });
             }
             normal_data.push({
                 "x": current_time,
@@ -198,92 +213,99 @@ $(document).ready(function () {
             });
 
         }
-        return {"normal_data": normal_data, "point_radius_data": point_radius_data};
+        return {"normal_data": normal_data, "censor_data": censor_data};
     }
 
-    function show_data(rows, columns) {
+    function show_data(datasets) {
 
         let empty_tables = '<div class="row">';
-        let table_id = 1;
-        for (const group in rows) {
-            let id = "datatable_" + parseInt(table_id);
-            empty_tables += '<div class="col-12 col-md-6 mb-5">';
+        for (let i = 0; i < datasets.length; i++) {
+            let id = "datatable_" + i;
+            empty_tables += '<div class="col-12 col-md-6 mb-4">';
             empty_tables += '<table id="' + id + '" class="table table-sm table-bordered table-striped caption-top table-responsive-md">';
             empty_tables += '<caption class="card-subtitle text-center p-2 mb-2 bg-dark bg-gradient text-white">';
-            empty_tables += 'Dataset: ' + group;
+            empty_tables += 'Dataset: ' + parseInt(i + 1);
             empty_tables += '</caption>';
             empty_tables += '<thead class="table-light">';
             empty_tables += '<tr>';
-            for (let i = 0; i < columns.length; i++) {
-                empty_tables += '    <th>' + columns[i] + '</th>';
-            }
+            empty_tables += '    <th>Subject</th>';
+            empty_tables += '    <th>Time</th>';
+            empty_tables += '    <th>Group</th>';
+            empty_tables += '    <th>Censor</th>';
             empty_tables += '</tr>';
             empty_tables += '</thead>';
             empty_tables += '<tbody>';
             empty_tables += '</tbody>';
             empty_tables += '</table>';
             empty_tables += '</div>';
-            table_id++;
         }
         empty_tables += '</div>';
 
         $("#data_tables").html(empty_tables);
-        table_id = 1;
-        for (const group in rows) {
-            let dataset = rows[group];
-            let id = "datatable_" + parseInt(table_id);
-            var table_data = [];
+
+        for (let i = 0; i < datasets.length; i++) {
+            let dataset = datasets[i];
+            let id = "datatable_" + i;
+            var data_with_index = [];
             for (let i = 0; i < dataset.length; i++) {
-                let current_row = [];
-                const row = dataset[i];
-                for (const key in row) {
-                    current_row.push(row[key]);
+                let current_row = [i + 1];
+                for (let j = 0; j < dataset[i].length; j++) {
+                    current_row.push(dataset[i][j]);
                 }
-                table_data.push(current_row);
+                data_with_index.push(current_row);
             }
             var table = $('#' + id).DataTable();
             table.clear();
-            table.rows.add(table_data).draw();
-            table_id++;
+            table.rows.add(data_with_index).draw();
         }
     }
 
-    function show_graph(rows, chart_title) {
+    function show_graph(datasets) {
         let chart_data = [];
         let default_colors = [CHART_COLORS.green, CHART_COLORS.red,
             CHART_COLORS.purple, CHART_COLORS.blue,
             CHART_COLORS.yellow, CHART_COLORS.orange];
-        let color_index = 0;
-        for (const group in rows) {
-            let dataset = rows[group];
+        for (let i = 0; i < datasets.length; i++) {
+            let dataset = datasets[i];
             let km_data = get_km_data(dataset);
             let normal_data = km_data["normal_data"];
-            let point_radius_data = km_data["point_radius_data"];
-            let current_chart_color;
-
-            if (Object.keys(rows).length <= 12) {
-                current_chart_color = default_colors[color_index];
-                color_index++;
+            let censor_data = km_data["censor_data"];
+            let color_1, color_2;
+            if (datasets.length <= 3) {
+                color_1 = default_colors[i * 2];
+                color_2 = default_colors[i * 2 + 1];
             } else {
-                current_chart_color = getRandomColors();
+                color_1 = getRandomColors();
+                color_2 = getRandomColors();
             }
             const line_chart_data = {
                 type: 'line',
-                label: group + ' (n=' + parseInt(rows[group].length) + ')',
-                backgroundColor: current_chart_color,
-                borderColor: current_chart_color,
+                label: 'Group ' + parseInt(i + 1),
+                backgroundColor: color_1,
+                borderColor: color_1,
                 data: normal_data,
                 fill: false,
-                stepped: true,
-                radius: point_radius_data,
+                stepped: 'after',
+                radius: 0,
                 hitRadius: 0,
-                hoverRadius: 4,
-                borderWidth: 2,
-                hoverBorderWidth: 2,
+                borderWidth: 3,
+            };
+            const scatter_chart_data = {
+                type: 'scatter',
+                label: 'Group ' + parseInt(i + 1) + ' - Censored',
+                backgroundColor: color_2,
+                borderColor: color_2,
+                data: censor_data,
+                radius: 7,
+                hoverRadius: 7,
+                borderWidth: 3,
+                hoverBorderWidth: 3,
                 pointStyle: 'cross',
             };
+            chart_data.push(scatter_chart_data);
             chart_data.push(line_chart_data);
         }
+
 
         const canvas_background_plugin = {
             id: 'custom_canvas_background_color',
@@ -302,23 +324,9 @@ $(document).ready(function () {
             options: {
                 plugins: {
                     legend: {
-                        display: true,
-                        position: 'bottom',
                         labels: {
-                            boxWidth: 15,
-                            padding: 15
-                        }
-                    },
-                    title: {
-                        display: true,
-                        text: chart_title,
-                        padding: {
-                            top: 10,
-                            bottom: 10
+                            usePointStyle: true,
                         },
-                        font: {
-                            size: 18
-                        }
                     }
                 },
                 animation: false,
@@ -331,7 +339,7 @@ $(document).ready(function () {
                         title: {
                             display: true,
                             align: 'center',
-                            text: 'Time (days)'
+                            text: 'Time'
                         }
                     },
                     y: {
@@ -339,12 +347,12 @@ $(document).ready(function () {
                         min: 0.0,
                         max: 1.1,
                         ticks: {
-                            stepSize: 0.1
+                            stepSize: 0.1 // this worked as expected
                         },
                         title: {
                             display: true,
                             align: 'center',
-                            text: 'Survival Probability'
+                            text: 'Survival'
                         }
                     }
                 },
@@ -365,15 +373,21 @@ $(document).ready(function () {
     $(".graph_data_btn").on("click", function () {
         $("#graph").hide();
         const id = $(this).attr("id");
-        let dataset;
-        if (id === "race_dataset") {
-            dataset = get_dataset("race_dataset");
-        } else if (id === "gender_dataset") {
-            dataset = get_dataset("gender_dataset");
+        let dataset, dataset_label;
+        if (id === "random_dataset") {
+            dataset = get_dataset("random", getRandomInt(1, 4));
+            dataset_label = ": Random dataset";
+        } else if (id === "default_dataset_1") {
+            dataset = get_dataset("default_dataset_1");
+            dataset_label = ": Dataset from <a target='_blank' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3059453/'>Goel, et al.: Understanding survival analysis</a>";
+        } else if (id === "default_dataset_2") {
+            dataset = get_dataset("default_dataset_2");
+            dataset_label = ": Dataset from <a target='_blank' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3932959/'>Rich, et al.: A practical guide to understanding Kaplan-Meier curves</a>";
         }
-        $(".dataset_label").html(dataset.label);
-        show_data(dataset.data.rows, dataset.data.columns);
-        show_graph(dataset.data.rows, dataset.description);
+        $("#dataset_label").html(dataset_label);
+
+        show_data(dataset);
+        show_graph(dataset);
         $("#graph").show("slow");
     });
 
@@ -393,11 +407,11 @@ $(document).ready(function () {
             } else if (id === "pdf_btn") {
                 const aspect_ratio = current_chart.width / current_chart.height;
                 filename = "km_graph.pdf";
-                var pdf = new jsPDF('l', 'pt', 'a4');
+                var pdf = new jsPDF('p', 'pt', 'a4');
                 const pdf_width = pdf.internal.pageSize.width;
-                const pdf_width_px = get_pdf_size(pdf_width, 'px');
-                if (current_chart.width > pdf_width_px) {
-                    current_chart.resize(pdf_width, pdf_width * (1.0 / aspect_ratio));
+                const pdf_max_width = get_pdf_size(pdf_width, 'px') - 0;
+                if (current_chart.width > pdf_max_width) {
+                    current_chart.resize(pdf_max_width, pdf_max_width * (1 / aspect_ratio));
                 }
                 canvas_data = current_chart.toBase64Image();
                 pdf.addImage(canvas_data, 'PNG', 0, 20);
