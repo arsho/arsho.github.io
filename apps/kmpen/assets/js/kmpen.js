@@ -77,7 +77,7 @@ $(document).ready(function () {
         var rows = {};
         var columns = [];
         $.ajax({
-            url: '../datafiles/' + datafile,
+            url: 'datafiles/' + datafile,
             type: "GET",
             async: false,
             success: function (data) {
