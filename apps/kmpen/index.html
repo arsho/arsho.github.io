@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
-          content="Kaplan Meier Survival Visualization Tool">
+          content="Kaplan Meier Survival Probability Visualization Tool">
     <meta name="author" content="Ahmedur Rahman Shovon">
     <meta name="keywords"
           content="arsho, harp lab, Kaplan Meier Graph">
@@ -17,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="KMPen">
     <meta property="og:description"
-          content="Kaplan Meier Survival Visualization Tool">
+          content="Kaplan Meier Survival Probability Visualization Tool">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image"
           content="https://arshovon.com/apps/kmpen/screenshots/km_graph.png">
@@ -79,27 +79,22 @@
         <div class="p-5 mb-4 bg-light rounded-3 text-center">
             <div class="container-fluid py-5">
                 <h3 class="display-6 fw-bold">Kaplan Meier Survival
-                    Visualization Tool</h3>
+                    Probability Visualization Tool</h3>
                 <div class="row justify-content-md-center mt-4">
                     <p class="col-md-8 fs-4">
                         <b>KMPen</b> is a visualization tool to create Kaplan
-                        Meier survival graph.
+                        Meier survival probability graph.
                     </p>
                     <div class="d-grid gap-2 d-md-block mt-4">
-                        <button class="btn btn-success py-2 mb-2 text-white text-decoration-none graph_data_btn"
-                                id="default_dataset_1">
+                        <button class="btn btn-block btn-success py-2 mb-2 text-white text-decoration-none graph_data_btn"
+                                id="race_dataset">
                             <i class="bi bi-ui-checks"></i> Generate with
-                            default dataset - 1
+                            A1BG expression level & race on KIRC patient survival dataset
                         </button>
-                        <button class="btn btn-dark py-2 mb-2 text-white text-decoration-none graph_data_btn"
-                                id="default_dataset_2">
+                        <button class="btn btn-block btn-dark py-2 mb-2 text-white text-decoration-none graph_data_btn"
+                                id="gender_dataset">
                             <i class="bi bi-ui-checks"></i> Generate with
-                            default dataset - 2
-                        </button>
-                        <button class="btn btn-info py-2 mb-2 text-white text-decoration-none graph_data_btn"
-                                id="random_dataset">
-                            <i class="bi bi-ui-checks"></i> Generate with
-                            random dataset
+                            A1BG expression level & gender on KIRC patient survival dataset
                         </button>
 
                     </div>
@@ -112,8 +107,8 @@
             <div class="col-12">
                 <div class="card mb-2">
                     <div class="card-header">
-                        Kaplan Meier Graph Data <span
-                            id="dataset_label"></span>
+                        Kaplan Meier Graph Data
+                        <span class="dataset_label"></span>
                     </div>
                     <div class="card-body" id="data_tables">
 
@@ -124,7 +119,11 @@
             <div class="col-12">
                 <div class="card mb-2">
                     <div class="card-header">
-                        Kaplan Meier Survival Graph
+                        Kaplan Meier Survival Probability Graph
+                        <span class="dataset_label"></span>
+                        <div class="small text-muted fw-lighter">
+                            (Click on the chart legend to hide and show the relevant dataset)
+                        </div>
                     </div>
                     <div class="card-body">
                         <canvas id="kmgraph"></canvas>
@@ -186,7 +185,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
 
 <script type="text/javascript"
-        src="assets/js/kmpen_basic.js"></script>
+        src="assets/js/kmpen.js"></script>
 <!--Scripts Ends-->
 
 </body>
