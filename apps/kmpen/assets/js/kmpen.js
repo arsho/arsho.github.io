@@ -56,6 +56,14 @@ function get_pdf_size(points, unit) {
 
 
 $(document).ready(function () {
+    $("html").hide();
+    let password = prompt('Enter Password to create the graph', '');
+    if (password !== 'uab') {
+        alert("Password is incorrect. Try again after reloading the page.");
+    }
+    else{
+        $("html").show();
+    }
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
             $('#back-to-top').fadeIn();
@@ -364,6 +372,7 @@ $(document).ready(function () {
 
     $(".graph_data_btn").on("click", function () {
         $("#graph").hide();
+
         const id = $(this).attr("id");
         let dataset;
         if (id === "race_dataset") {
