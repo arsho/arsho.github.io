@@ -57,7 +57,7 @@ function get_pdf_size(points, unit) {
 
 $(document).ready(function () {
     $("html").hide();
-    let password = prompt('Enter Password to create the graph', '');
+    let password = prompt('Enter Password to access the tool', '');
     if (password !== 'uab') {
         alert("Password is incorrect. Try again after reloading the page.");
     }
