@@ -92,7 +92,6 @@ $(document).ready(function () {
                 .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 
-            // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
             const x_labels = Array.from(new Set(data.map(d => d.x)))
             const y_labels = Array.from(new Set(data.map(d => d.y)))
 
@@ -120,9 +119,9 @@ $(document).ready(function () {
                 .attr("class", "tooltip")
                 .style("background-color", "white")
                 .style("border", "solid")
-                .style("border-width", "2px")
-                .style("border-radius", "5px")
-                .style("padding", "5px")
+                .style("border-width", "1px")
+                .style("border-radius", "0px")
+                .style("padding", "2px")
 
             // Three function that change the tooltip when user hover / move / leave a cell
             const mouseover = function (event, d) {
@@ -159,8 +158,8 @@ $(document).ready(function () {
                 .attr("y", function (d) {
                     return y(d.y)
                 })
-                .attr("rx", 4)
-                .attr("ry", 4)
+                .attr("rx", 0)
+                .attr("ry", 0)
                 .attr("width", x.bandwidth())
                 .attr("height", y.bandwidth())
                 .style("fill", function (d) {
