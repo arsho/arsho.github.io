@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Aug 2021 09:23:37 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jan 2022 09:23:37 -0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>combinations</title>
+      <link>https://arshovon.com/tags/combinations/</link>
+      <pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/combinations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://arshovon.com/tags/python/</link>
+      <pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm</title>
@@ -233,15 +251,6 @@
       <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
       
       <guid>https://arshovon.com/tags/csv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://arshovon.com/tags/python/</link>
-      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/tags/python/</guid>
       <description></description>
     </item>
     
