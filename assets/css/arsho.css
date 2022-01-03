@@ -351,6 +351,10 @@ img[src$="center"] {
     text-transform: uppercase;
 }
 
+.full-width-image {
+    width: 100%;
+}
+
 /* Media Queries */
 
 /*Extra small devices (portrait phones, less than 576px), Small devices (landscape phones, 576px and up)*/
