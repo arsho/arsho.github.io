@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Adding a new column in Pandas dataframe based on existing columns</title>
+      <link>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</link>
+      <pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate>
+      
+      <guid>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</guid>
+      <description>Adding a new column in Pandas dataframe based on existing columns Pandas dataframe allows adding new columns to it based on the values of the existing columns.
+Example Scenario Suppose, a dataset contains Football match results of some matches like below:
+  Date Venue Opponent GF GA     08-27-2017 H Arsenal FC 4 0   09-16-2017 H Burnley FC 1 1    Here, GF stands for Goals For and GA stands for Goals Against (i.</description>
+    </item>
+    
+    <item>
       <title>Python&#39;s combinations and combinations with replacement</title>
       <link>https://arshovon.com/snippets/python-combinations_with_replacement/</link>
       <pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate>

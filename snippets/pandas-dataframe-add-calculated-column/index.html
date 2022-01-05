@@ -10,29 +10,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 
-<meta name="keywords" content="sort python dictionary, SORT PYTHON DICTIONARY BY KEY, SORT PYTHON DICTIONARY BY VALUE, SORT PYTHON DICTIONARY BY KEY AND VALUE">
-<meta name="description" content="Sort Python Dictionary by key, value or both">
+<meta name="keywords" content="pandas add column, dataframe add column">
+<meta name="description" content="Adding a new column in Pandas dataframe based on existing columns">
 <meta name="author" content="Ahmedur Rahman Shovon">
 
-<meta property="og:url" content="https://arshovon.com/snippets/python-sort-dictionary/">
+<meta property="og:url" content="https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Sort Python Dictionary - Ahmedur Rahman Shovon">
-<meta name="og:description" content="Sort Python Dictionary by key, value or both">
-<meta property="og:image" content="https://arshovon.com/snippets/images/sort_python_dictionary.png">
-<meta property="og:image:secure_url" content="https://arshovon.com/snippets/images/sort_python_dictionary.png">
+<meta property="og:title" content="Adding a new column in Pandas dataframe based on existing columns - Ahmedur Rahman Shovon">
+<meta name="og:description" content="Adding a new column in Pandas dataframe based on existing columns">
+<meta property="og:image" content="https://arshovon.com/snippets/images/pandas_column_add.png">
+<meta property="og:image:secure_url" content="https://arshovon.com/snippets/images/pandas_column_add.png">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="Sort Python Dictionary - Ahmedur Rahman Shovon" />
+<meta property="og:image:alt" content="Adding a new column in Pandas dataframe based on existing columns - Ahmedur Rahman Shovon" />
 <meta property="og:site_name" content="Ahmedur Rahman Shovon"/>
 <meta property="og:locale" content="en-us">
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://arshovon.com/snippets/images/sort_python_dictionary.png" />
-<meta name="twitter:url" content="https://arshovon.com/snippets/python-sort-dictionary/" />
-<meta property="twitter:title" content="Sort Python Dictionary - Ahmedur Rahman Shovon">
-<meta name="twitter:description" content="Sort Python Dictionary by key, value or both">
-<title>Sort Python Dictionary - Ahmedur Rahman Shovon</title>
+<meta name="twitter:image" content="https://arshovon.com/snippets/images/pandas_column_add.png" />
+<meta name="twitter:url" content="https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/" />
+<meta property="twitter:title" content="Adding a new column in Pandas dataframe based on existing columns - Ahmedur Rahman Shovon">
+<meta name="twitter:description" content="Adding a new column in Pandas dataframe based on existing columns">
+<title>Adding a new column in Pandas dataframe based on existing columns - Ahmedur Rahman Shovon</title>
 
-<link rel="canonical" href="https://arshovon.com/snippets/python-sort-dictionary/">
+<link rel="canonical" href="https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/">
 
 <link rel="icon" href="https://arshovon.com/assets/images/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="https://arshovon.com/assets/images/favicon.ico"
@@ -171,15 +171,11 @@ crossorigin="anonymous"></script>
 <main class="col-12 blog p-3 p-md-5" role="main">
     <article>
         <header class="mb-4">
-            <h3>Sort Python Dictionary</h3>
+            <h3>Adding a new column in Pandas dataframe based on existing columns</h3>
             <div class="mb-3">
                 <span class="float-right badge">
                     Published on
-                    <time datetime="2018-05-07T09:23:37&#43;06:00">
-                        <i class="fa fa-calendar pr-1"></i>May 7, 2018</time>
-                    
-                    , Updated on
-                    <time datetime="2022-01-05T17:26:16-06:00">
+                    <time datetime="2022-01-05T04:23:37&#43;06:00">
                         <i class="fa fa-calendar pr-1"></i>January 5, 2022</time>
                     
                 </span>
@@ -189,144 +185,103 @@ crossorigin="anonymous"></script>
 
 <a href="https://arshovon.com/tags/python" class="badge badge-secondary" title="python">python</a>
 
-<a href="https://arshovon.com/tags/dict" class="badge badge-secondary" title="dict">dict</a>
+<a href="https://arshovon.com/tags/pandas" class="badge badge-secondary" title="pandas">pandas</a>
 
 
                 
             </div>
         </header>
         <hr class="my-6">
-        
+        <h3 id="adding-a-new-column-in-pandas-dataframe-based-on-existing-columns">Adding a new column in Pandas dataframe based on existing columns</h3>
 
-<h3 id="sort-python-dict-in-various-ways">Sort Python <code>dict</code> in various ways</h3>
+<p>Pandas dataframe allows adding new columns to it based on the values of the existing columns.</p>
 
-<p><strong>Original Data</strong></p>
+<h3 id="example-scenario">Example Scenario</h3>
 
-<pre><code class="language-python">world_cup_wins = {
-    &quot;Brazil&quot;: 5,
-    &quot;Germany&quot;: 4,
-    &quot;Italy&quot;: 4,
-    &quot;Argentina&quot;: 2,
-    &quot;France&quot;: 2,
-    &quot;Uruguay&quot;: 2,
-    &quot;England&quot;: 1,
-    &quot;Spain&quot;: 1
-}
+<p>Suppose, a dataset contains Football match results of some matches like below:</p>
+
+<table class="table table-bordered table-hover table-striped">
+<thead>
+<tr>
+<th>Date</th>
+<th>Venue</th>
+<th>Opponent</th>
+<th>GF</th>
+<th>GA</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>08-27-2017</td>
+<td>H</td>
+<td>Arsenal FC</td>
+<td>4</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>09-16-2017</td>
+<td>H</td>
+<td>Burnley FC</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here, <em>GF</em> stands for <em>Goals For</em> and <em>GA</em> stands for <em>Goals Against</em> (i.e., number of goals conceded by a team).
+Now we want to add a new column called <code>Result</code> to this dataframe that will contain the result of the match.</p>
+
+<p>The condition to generate the <code>Result</code> column is:</p>
+
+<ul>
+<li>If <code>GF</code> &gt; <code>GA</code>, <code>Result</code> should contain <code>W</code></li>
+<li>If <code>GF</code> &lt; <code>GA</code>, <code>Result</code> should contain <code>L</code></li>
+<li>Otherwise <code>Result</code> should contain <code>D</code>.</li>
+</ul>
+
+<h3 id="solution-using-dataframe-apply-method">Solution using Dataframe apply method</h3>
+
+<p>We can use <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html"><code>pandas.DataFrame.apply</code></a> method to add the new <code>Result</code> column.</p>
+
+<pre><code>import pandas as pd
+
+
+def get_result(row):
+    if row['GF'] == row['GA']:
+        return 'D'
+    elif row['GF'] &gt; row['GA']:
+        return 'W'
+    return 'L'
+
+
+data = pd.read_csv(&quot;scores.csv&quot;)
+data['Result'] = data.apply(lambda row: get_result(row), axis=1)
+print(data)
 </code></pre>
 
-<h3 id="sort-dictionary-by-key-ascending">SORT DICTIONARY BY KEY ASCENDING</h3>
+<p><strong>Output:</strong></p>
 
-<pre><code class="language-python">for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0]):
-    print(key, value)
+<p><figure><img src="/snippets/images/pandas_column_add.png?style=center" alt="alt output of pandas apply method on rows"></figure></p>
+
+<p><code>scores.csv</code>:</p>
+
+<pre><code>Date,Venue,Opponent,GF,GA
+08-27-2017,H,Arsenal FC,4,0
+09-16-2017,H,Burnley FC,1,1
 </code></pre>
 
-<p>Output:</p>
+<h3 id="explanation">Explanation</h3>
 
-<pre><code>Argentina 2
-Brazil 5
-England 1
-France 2
-Germany 4
-Italy 4
-Spain 1
-Uruguay 2
-</code></pre>
-
-<h3 id="sort-dictionary-by-key-descending">SORT DICTIONARY BY KEY DESCENDING</h3>
-
-<pre><code class="language-python">for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0], reverse=True):
-    print(key, value)
-</code></pre>
-
-<p>Output:</p>
-
-<pre><code>Uruguay 2
-Spain 1
-Italy 4
-Germany 4
-France 2
-England 1
-Brazil 5
-Argentina 2
-</code></pre>
-
-<h3 id="sort-dictionary-by-value-ascending">SORT DICTIONARY BY VALUE ASCENDING</h3>
-
-<pre><code class="language-python">for key, value in sorted(world_cup_wins.items(), key=lambda x: x[1]):
-    print(key, value)
-</code></pre>
-
-<p>Output:</p>
-
-<pre><code>Spain 1
-England 1
-Uruguay 2
-Argentina 2
-France 2
-Italy 4
-Germany 4
-Brazil 5
-</code></pre>
-
-<h3 id="sort-dictionary-by-value-descending">SORT DICTIONARY BY VALUE DESCENDING</h3>
-
-<pre><code class="language-python">for key, value in sorted(world_cup_wins.items(), key=lambda x: x[1], reverse=True):
-    print(key, value)
-</code></pre>
-
-<p>Output:</p>
-
-<pre><code>Brazil 5
-Italy 4
-Germany 4
-Uruguay 2
-Argentina 2
-France 2
-Spain 1
-England 1
-</code></pre>
-
-<h3 id="sort-dictionary-by-value-ascending-and-then-by-key-ascending">SORT DICTIONARY BY VALUE ASCENDING AND THEN BY KEY ASCENDING</h3>
-
-<pre><code class="language-python">for key, value in sorted(world_cup_wins.items(), key=lambda x: (x[1], x[0])):
-    print(key, value)
-</code></pre>
-
-<p>Output:</p>
-
-<pre><code>England 1
-Spain 1
-Argentina 2
-France 2
-Uruguay 2
-Germany 4
-Italy 4
-Brazil 5
-</code></pre>
-
-<h3 id="sort-dictionary-by-value-descending-and-then-by-key-ascending">SORT DICTIONARY BY VALUE DESCENDING AND THEN BY KEY ASCENDING</h3>
-
-<pre><code class="language-python">for key, value in sorted(world_cup_wins.items(), key=lambda x: (-x[1], x[0])):
-    print(key, value)
-</code></pre>
-
-<p>Output:</p>
-
-<pre><code>Brazil 5
-Germany 4
-Italy 4
-Argentina 2
-France 2
-Uruguay 2
-England 1
-Spain 1
-</code></pre>
+<p>We check each row of the existing dataframe.
+We assign a value to the newly created <code>Result</code> column based on the condition given in the <code>get_result</code> method.
+<code>axis=1</code> in the <code>apply</code> method tells of applying the logic in all rows of the dataframe.</p>
 
 <h3 id="reference">Reference</h3>
 
 <ul>
-<li><a href="https://docs.python.org/3/library/functools.html#functools.reduce">Python official documentation on reduce</a></li>
-<li><a href="https://gist.github.com/arsho/8617405552538ed915372c0cffeec6c7#file-sort_dictionary-md">Gist file with these examples</a></li>
+<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html">Pandas official documentation on <code>pandas.DataFrame.apply</code></a></li>
 </ul>
 
 
@@ -354,25 +309,25 @@ Spain 1
 
 <div class="card-deck mt-5">
     
-    
-    <div class="card mb-3 bg-light text-md-right border-light">
+    <div class="card mb-3 bg-light border-light">
         <div class="card-body">
             <h5 class="card-title">
-                Next Post <i class="fa fa-chevron-right"></i>
+                <i class="fa fa-chevron-left"></i> Previous Post
             </h5>
             <p class="card-text">
-                <a href="https://arshovon.com/snippets/python-reduce-example/" class="pt-2 pb-2">
-                    Python Reduce Example
+                <a href="https://arshovon.com/snippets/python-combinations_with_replacement/" class="pt-2 pb-2">
+                    Python&#39;s combinations and combinations with replacement
                 </a>
             </p>
         </div>
         <div class="card-footer">
             <span class="text_muted small">
-                <time datetime="2018-05-07T09:23:37&#43;06:00">
-                    <i class="fa fa-calendar pr-1"></i>May 7, 2018</time>
+                <time datetime="2022-01-02T09:23:37-06:00">
+                    <i class="fa fa-calendar pr-1"></i>January 2, 2022</time>
             </span>
         </div>
     </div>
+    
     
 </div>
 
