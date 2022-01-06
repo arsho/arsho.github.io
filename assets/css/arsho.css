@@ -355,6 +355,11 @@ img[src$="center"] {
     width: 100%;
 }
 
+.post-thumbnail-image {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
 /* Media Queries */
 
 /*Extra small devices (portrait phones, less than 576px), Small devices (landscape phones, 576px and up)*/
