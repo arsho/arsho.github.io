@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Ahmedur Rahman Shovon</title>
+    <link>https://arshovon.com/categories/python/</link>
+    <description>Recent content in python on Ahmedur Rahman Shovon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Jan 2022 07:01:32 -0600</lastBuildDate>
+    
+	<atom:link href="https://arshovon.com/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sorting a list (Python 3)</title>
+      <link>https://arshovon.com/blog/sorting-a-list-python3/</link>
+      <pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate>
+      
+      <guid>https://arshovon.com/blog/sorting-a-list-python3/</guid>
+      <description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
+Today we will sort a given list of strings in several ways to understand the Python 3 built-in sorted function .
+Dataset We will use the 50 U.S. states as our dataset.</description>
+    </item>
+    
+  </channel>
+</rss>

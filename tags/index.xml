@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Ahmedur Rahman Shovon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jan 2022 04:23:37 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jan 2022 07:01:32 -0600</lastBuildDate>
     
 	<atom:link href="https://arshovon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>python</title>
+      <link>https://arshovon.com/tags/python/</link>
+      <pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sorting</title>
+      <link>https://arshovon.com/tags/sorting/</link>
+      <pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate>
+      
+      <guid>https://arshovon.com/tags/sorting/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>pandas</title>
@@ -17,15 +35,6 @@
       <pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate>
       
       <guid>https://arshovon.com/tags/pandas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://arshovon.com/tags/python/</link>
-      <pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate>
-      
-      <guid>https://arshovon.com/tags/python/</guid>
       <description></description>
     </item>
     
@@ -53,15 +62,6 @@
       <pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate>
       
       <guid>https://arshovon.com/tags/divide-and-conquer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sorting</title>
-      <link>https://arshovon.com/tags/sorting/</link>
-      <pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate>
-      
-      <guid>https://arshovon.com/tags/sorting/</guid>
       <description></description>
     </item>
     
