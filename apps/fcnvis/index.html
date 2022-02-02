@@ -45,7 +45,6 @@
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css"
           href="assets/css/fcnvis.css"/>
-    <!--Head Ends-->
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light bg-gradient">
 <div class="container p-3 bg-white" id="container" style="display:none;">
@@ -85,46 +84,45 @@
                         <b>FCNVis</b> is a visualization tool to create
                         Fully Connected Network
                     </p>
-                    <div class="d-grid gap-2 d-md-block mt-4">
-                        <button class="btn btn-block btn-success py-2 mb-2 text-white text-decoration-none graph_data_btn"
-                                id="subject_1_time_1_dataset">
-                            <i class="bi bi-ui-checks"></i>
-                            Show Fully Connected Network
-                        </button>
-
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="row mb-3" id="graph">
+        <div class="card">
+            <div class="card-header">
+                Select one or multiple subjects
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2 d-md-block text-start">
+                    <div class="mb-3">
+                        <label for="subject_id" class="form-label">
+                            Select subject(s)</label>
+                        <select multiple name="subject_id" id="subject_id"
+                                class="form-select mb-3">
+                        </select>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-secondary btn-block graph_data_btn">
+                            Plot MDS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row my-3" id="graph">
             <h1 class="h3 mb-3"><strong>FCNVis</strong> Exposure</h1>
             <div class="col-12">
                 <div class="card mb-2">
                     <div class="card-header">
-                        Fully Connected Network Graph
-                        <span class="dataset_label"></span>
+                        <span id="dataset_label"></span>
                         <div class="small text-muted fw-lighter">
-                            (Hover over the chart to show the
-                            relevant value)
+                            Click on the legends to toggle visibility of the subject
                         </div>
                     </div>
                     <div class="card-body">
-                        <div id="visualization_div" class="text-center"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="card mb-2">
-                    <div class="card-header">
-                        Fully Connected Network Graph
-                        <span class="dataset_label"></span>
-                        <div class="small text-muted fw-lighter">
-                            (Hover over the chart to show the
-                            relevant value)
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <canvas id="matrix_graph"></canvas>
+                        <canvas id="visualization_div">
+
+                        </canvas>
                     </div>
                     <div class="card-footer">
                         <button class="btn btn-sm btn-success download_chart my-2"
@@ -142,17 +140,6 @@
                             <i class="bi bi-file-earmark-pdf"></i>
                             Download as PDF
                         </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="card mb-2">
-                    <div class="card-header">
-                        Fully Connected Network Graph
-                        <span class="dataset_label"></span>
-                    </div>
-                    <div class="card-body">
-                        <div id="matrix_div" class="text-center col-12"></div>
                     </div>
                 </div>
             </div>
@@ -192,20 +179,18 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v6.js"></script>
-<script type="text/javascript"
-        src="assets/js/d3_basic.js"></script>
-<script type="text/javascript"
-        src="assets/js/d3_matrix.js"></script>
 
 <!-- Load Chart JS -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@1.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
 
 <script type="text/javascript"
-        src="assets/js/fcnvis_basic.js"></script>
+        src="assets/js/utils.js"></script>
+
+<script type="text/javascript"
+        src="assets/js/mds_plotter.js"></script>
+
 <!--Scripts Ends-->
 
 </body>
