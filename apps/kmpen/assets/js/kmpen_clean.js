@@ -403,5 +403,5 @@ $(document).ready(function () {
             temp_link.click();
         }
     });
-
+    $(".graph_data_btn").first().trigger( "click" );
 });
