@@ -1,12 +1,22 @@
 $(document).ready(function () {
     Chart.register(ChartDataLabels);
+    let default_colors = [CHART_COLORS.green, CHART_COLORS.red,
+        CHART_COLORS.purple, CHART_COLORS.blue, CHART_COLORS.yellow,
+        CHART_COLORS.orange];
 
     function set_subject_options() {
+        let dfc_2500_total_subjects = 316;
+        let dfc_1400_total_subjects = 10;
         let subjects = '';
-        for (var i = 1; i <= 316; i++) {
+        for (var i = 1; i <= dfc_2500_total_subjects; i++) {
             subjects += "<option value='" + i + "'>Subject " + i + "</option>";
         }
-        $("#subject_id").html(subjects);
+        subjects = '';
+        for (var i = 1; i <= dfc_1400_total_subjects; i++) {
+            subjects += "<option value='" + i + "'>Subject " + i + "</option>";
+        }
+        $("#subject_id_2500").html(subjects);
+        $("#subject_id_1400").html(subjects);
     }
 
     set_subject_options();
@@ -26,23 +36,21 @@ $(document).ready(function () {
         return $.parseJSON(rows);
     }
 
-    function get_datasets(subjects) {
-
-        let default_colors = [CHART_COLORS.green, CHART_COLORS.red,
-            CHART_COLORS.purple, CHART_COLORS.blue,
-            CHART_COLORS.yellow, CHART_COLORS.orange];
+    function get_specific_dataset(selected_subjects, data_path, data_label, fixed_color, color_start) {
         var datasets = [];
-        for (let i = 0; i < subjects.length; i++) {
+
+        for (let i = 0; i < selected_subjects.length; i++) {
             let current_chart_color;
-            if (subjects.length < 6) {
-                current_chart_color = default_colors[i];
+            if (fixed_color) {
+                current_chart_color = default_colors[color_start];
+                color_start++;
             } else {
                 current_chart_color = getRandomColors();
             }
 
-            let subject_id = subjects[i];
+            let subject_id = selected_subjects[i];
             var chart_data = [];
-            var data_path = 'subjects_mds/subject_' + subject_id + '.json';
+            var data_path = data_path + '/subject_' + subject_id + '.json';
             var rows = get_json_data(data_path);
             for (var j = 0; j < rows.length; j++) {
                 chart_data.push({
@@ -52,7 +60,7 @@ $(document).ready(function () {
                 });
             }
             let subject_data = {
-                label: 'Subject ' + subject_id.toString(),
+                label: data_label + 'Subject ' + subject_id.toString(),
                 data: chart_data,
                 borderColor: current_chart_color,
                 backgroundColor: current_chart_color,
@@ -67,11 +75,29 @@ $(document).ready(function () {
         return datasets;
     }
 
+    function get_datasets(subjects_2500, subjects_1400) {
+        let dfc_2500_data_path = 'dfc_2500_subjects_mds';
+        let dfc_2500_data_label = 'DFC 2500: ';
+        let dfc_1400_data_path = 'dfc_1400_subjects_mds';
+        let dfc_1400_data_label = 'DFC 1400: ';
+        let fixed_color = false;
+        let color_start = 0;
+        if (subjects_1400.length + subjects_2500.length <= 6) {
+            fixed_color = true;
+        }
+        let dfc_2500_dataset = get_specific_dataset(subjects_2500,
+            dfc_2500_data_path, dfc_2500_data_label,
+            fixed_color, color_start);
+        let dfc_1400_dataset = get_specific_dataset(subjects_1400,
+            dfc_1400_data_path, dfc_1400_data_label,
+            fixed_color, subjects_2500.length);
+        return dfc_2500_dataset.concat(dfc_1400_dataset);
+    }
+
     function show_graph(datasets, chart_title) {
         Chart.defaults.color = '#000';
         const canvas_background_plugin = {
-            id: 'custom_canvas_background_color',
-            beforeDraw: (chart) => {
+            id: 'custom_canvas_background_color', beforeDraw: (chart) => {
                 const ctx = chart.canvas.getContext('2d');
                 ctx.save();
                 ctx.globalCompositeOperation = 'destination-over';
@@ -82,39 +108,25 @@ $(document).ready(function () {
         };
 
         const config = {
-            type: 'bubble',
-            data: {
+            type: 'bubble', data: {
                 datasets: datasets,
-            },
-            options: {
-                animation: false,
-                responsive: true,
-                plugins: {
+            }, options: {
+                animation: false, responsive: true, plugins: {
                     datalabels: {
                         font: {
                             size: 9,
-                        },
-                        formatter: function (value) {
+                        }, formatter: function (value) {
                             return Math.round(value.label);
-                        },
-                        offset: 2,
-                        padding: 0
-                    },
-                    legend: {
+                        }, offset: 2, padding: 0
+                    }, legend: {
                         position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: chart_title,
-                        padding: {
-                            top: 10,
-                            bottom: 10
-                        },
-                        font: {
+                    }, title: {
+                        display: true, text: chart_title, padding: {
+                            top: 10, bottom: 10
+                        }, font: {
                             size: 18
                         }
-                    },
-                    tooltip: {
+                    }, tooltip: {
                         callbacks: {
                             label: function (context) {
                                 let label = "Timeframe " + context.raw.label;
@@ -123,8 +135,7 @@ $(document).ready(function () {
                         }
                     },
                 }
-            },
-            plugins: [canvas_background_plugin],
+            }, plugins: [canvas_background_plugin],
         };
 
         const ctx = document.getElementById('visualization_div').getContext('2d');
@@ -172,9 +183,11 @@ $(document).ready(function () {
         }
     });
     $(".graph_data_btn").on("click", function () {
-        var subjects = $('#subject_id option:selected')
+        var subjects_2500 = $('#subject_id_2500 option:selected')
             .toArray().map(item => item.value);
-        var datasets = get_datasets(subjects);
+        var subjects_1400 = $('#subject_id_1400 option:selected')
+            .toArray().map(item => item.value);
+        var datasets = get_datasets(subjects_2500, subjects_1400);
         $("#graph").hide();
         show_graph(datasets, "MDS for selected subjects");
         $("#graph").show("slow");
