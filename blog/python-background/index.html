@@ -10,29 +10,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 
-<meta name="keywords" content="raspberry pi, ssh, ubuntu">
-<meta name="description" content="Logging into Raspberry Pi using password less SSH key">
+<meta name="keywords" content="python">
+<meta name="description" content="how to run the Python script inside a virtual environment in the background that writes partial output to a file">
 <meta name="author" content="Ahmedur Rahman Shovon">
 
-<meta property="og:url" content="https://arshovon.com/blog/logging-to-raspberry-pi-without-password/">
+<meta property="og:url" content="https://arshovon.com/blog/python-background/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Use SSH to logging into Raspberry Pi without Password - Ahmedur Rahman Shovon">
-<meta name="og:description" content="Logging into Raspberry Pi using password less SSH key">
-<meta property="og:image" content="https://arshovon.com/blog/images/ssh_raspberry_after_login.png">
-<meta property="og:image:secure_url" content="https://arshovon.com/blog/images/ssh_raspberry_after_login.png">
+<meta property="og:title" content="Run a Python script inside a virtual environment in the background - Ahmedur Rahman Shovon">
+<meta name="og:description" content="how to run the Python script inside a virtual environment in the background that writes partial output to a file">
+<meta property="og:image" content="https://arshovon.com/blog/images/python_background.png">
+<meta property="og:image:secure_url" content="https://arshovon.com/blog/images/python_background.png">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="Use SSH to logging into Raspberry Pi without Password - Ahmedur Rahman Shovon" />
+<meta property="og:image:alt" content="Run a Python script inside a virtual environment in the background - Ahmedur Rahman Shovon" />
 <meta property="og:site_name" content="Ahmedur Rahman Shovon"/>
 <meta property="og:locale" content="en-us">
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://arshovon.com/blog/images/ssh_raspberry_after_login.png" />
-<meta name="twitter:url" content="https://arshovon.com/blog/logging-to-raspberry-pi-without-password/" />
-<meta property="twitter:title" content="Use SSH to logging into Raspberry Pi without Password - Ahmedur Rahman Shovon">
-<meta name="twitter:description" content="Logging into Raspberry Pi using password less SSH key">
-<title>Use SSH to logging into Raspberry Pi without Password - Ahmedur Rahman Shovon</title>
+<meta name="twitter:image" content="https://arshovon.com/blog/images/python_background.png" />
+<meta name="twitter:url" content="https://arshovon.com/blog/python-background/" />
+<meta property="twitter:title" content="Run a Python script inside a virtual environment in the background - Ahmedur Rahman Shovon">
+<meta name="twitter:description" content="how to run the Python script inside a virtual environment in the background that writes partial output to a file">
+<title>Run a Python script inside a virtual environment in the background - Ahmedur Rahman Shovon</title>
 
-<link rel="canonical" href="https://arshovon.com/blog/logging-to-raspberry-pi-without-password/">
+<link rel="canonical" href="https://arshovon.com/blog/python-background/">
 
 <link rel="icon" href="https://arshovon.com/assets/images/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="https://arshovon.com/assets/images/favicon.ico"
@@ -171,127 +171,137 @@ crossorigin="anonymous"></script>
 <main class="col-12 blog p-3 p-md-5" role="main">
     <article>
         <header class="mb-4">
-            <h3>Use SSH to logging into Raspberry Pi without Password</h3>
+            <h3>Run a Python script inside a virtual environment in the background</h3>
             <div class="mb-3">
                 <span class="float-right badge">
                     Published on
-                    <time datetime="2020-04-09T08:05:42&#43;06:00">
-                        <i class="fa fa-calendar pr-1"></i>April 9, 2020</time>
-                    
-                    , Updated on
-                    <time datetime="2022-03-18T06:47:16-05:00">
+                    <time datetime="2022-03-18T03:03:14-05:00">
                         <i class="fa fa-calendar pr-1"></i>March 18, 2022</time>
                     
                 </span>
                 
                 <a href="https://arshovon.com/categories/" class="badge badge-secondary" title="All categories"><i class="fa fa-folder-open"></i></a>
 
-<a href="https://arshovon.com/categories/internet-of-thinks"
-class="badge badge-secondary" title="internet of thinks" >internet of thinks</a>
+<a href="https://arshovon.com/categories/python"
+class="badge badge-secondary" title="python" >python</a>
 
 
                 
                 
                 <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
-<a href="https://arshovon.com/tags/raspberry-pi" class="badge badge-secondary" title="raspberry pi">raspberry pi</a>
-
-<a href="https://arshovon.com/tags/ssh" class="badge badge-secondary" title="ssh">ssh</a>
-
-<a href="https://arshovon.com/tags/ubuntu" class="badge badge-secondary" title="ubuntu">ubuntu</a>
+<a href="https://arshovon.com/tags/python" class="badge badge-secondary" title="python">python</a>
 
 
                 
             </div>
         </header>
         <hr class="my-6">
-        
+        <h3 id="scenario">Scenario</h3>
 
-<h1 id="scenario">Scenario</h1>
+<p>Suppose, we have a Python script that uses some Python packages. We will use a virtual environment (<code>venv</code>) to install the dependencies. Let's assume, the script requires a long time to finish. We might need to check the partial output (e.g. some debugging values) from the script before completing the script. We also want to run the script in the background without blocking a terminal window.</p>
 
-<p>We can login into remote Raspberry Pi using <code>ssh</code> command:</p>
+<p>I will mock this scenario and will show how to run the Python script inside a virtual environment in the background that writes partial output to a file.</p>
 
-<pre><code>ssh -p PORT USER@IP
-password: RASPBERRY_PASSWORD
-</code></pre>
-
-<p>As it can be seen, we require to input the Raspberry Pi&rsquo;s password each time to establish SSH connection.</p>
-
-<h1 id="solution-add-local-machine-s-ssh-key-to-raspberry-pi-for-password-less-ssh-connection">Solution: Add local machine&rsquo;s SSH key to Raspberry Pi for password less SSH connection</h1>
-
-<p>To resolve the scenario, we need to add our local machine&rsquo;s SSH key to the Raspberry Pi.</p>
+<h3 id="running-script-in-the-foreground">Running script in the foreground</h3>
 
 <ul>
-<li><p>Check if you have SSH key in local machine using:</p>
+<li>Create and activate virtual environment:
+<code>python3 -m venv venv
+source venv/bin/activate</code></li>
 
-<pre><code>ls -al ~/.ssh
+<li><p>Suppose the required packages are listed in <code>requirements.txt</code>:</p>
+
+<pre><code>numpy==1.22.3
 </code></pre></li>
 
-<li><p>If you don&rsquo;t have any SSH key, generate one:</p>
+<li><p>Install the required packages:</p>
 
-<pre><code>ssh-keygen -t rsa -b 2048
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/username/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /home/username/.ssh/id_rsa.
-Your public key has been saved in /home/username/.ssh/id_rsa.pub.
+<pre><code>pip install -r requirements.txt
 </code></pre></li>
 
-<li><p>Copy the keys to the Raspberry Pi server:</p>
+<li><p>Create a Python script (<code>background_script.py</code>):</p>
 
-<pre><code>ssh-copy-id -p PORT USER@RASPBERRY_IP_ADDRESS
-</code></pre>
-
-<p>Following prompt will be opened and you need to give the Respberry Pi&rsquo;s password:</p>
-
-<pre><code>/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s),
-to filter out any that are already installed
-/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed
--- if you are prompted now it is to install the new keys
-USER@RASPBERRY_IP_ADDRESS's password:
-Number of key(s) added: 1
+<pre><code>import time
+from datetime import datetime
+import numpy as np
+    
+count = 0
+while True:
+    current_time = datetime.now()
+    rng = np.random.default_rng()
+    random_integers = rng.integers(low=0, high=10 ** 6, size=3)
+    print(f&quot;{current_time}: {random_integers}&quot;)
+    count += 1
+    if count == 10:
+        print(f&quot;Script completed&quot;)
+        break
+    time.sleep(5)
 </code></pre></li>
 
-<li><p>Try logging into the Raspberry Pi without the password:</p>
+<li><p>Run the Python script (<code>background_script.py</code>):</p>
 
-<pre><code>ssh -p PORT USER@IP
-</code></pre>
+<pre><code>python background_script.py
+</code></pre></li>
 
-<p>It will take few seconds to logging into the Raspberry Pi and you will get access into Raspberry Pi&rsquo;s terminal.</p>
+<li><p>It will show 3 random numbers continuously each 5 seconds.
+The script takes 50 seconds to complete and will stop after printing 30 random numbers:</p>
 
-<pre><code>Linux raspberrypi 4.19.97-v7+ #1294 SMP Thu Jan 30 13:15:58 GMT 2020 armv7l
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
+<pre><code>2022-03-18 04:18:12.376506: [874273 493185 580873]
+2022-03-18 04:18:17.378234: [175390 989369 463402]
+2022-03-18 04:18:22.382138: [721299 669516 197204]
+2022-03-18 04:18:27.386138: [537835 627442 400862]
+...
+...
+Script completed
 </code></pre></li>
 </ul>
 
-<p><img src="/blog/images/ssh_raspberry_after_login.png?style=center" alt="alt logging into raspberry pi" /></p>
+<h3 id="running-script-using-bash-in-the-background">Running script using Bash in the background</h3>
 
 <ul>
-<li><p>You can now try different commands to check if you are able to execute commands. The following command will show human readable memory size of available disk space of the Raspberry Pi :</p>
+<li><p>Let's create a Shell script (<code>run_bg.sh</code>) in the same directory that activates the virtual environment and runs the Python script. We have used <code>-u</code> parameter in the Python run command that enables printing the partial outputs to the standard output:</p>
 
-<pre><code class="language-bash">df -h
+<pre><code>#!/usr/bin/env bash
+set -e
+source &quot;./venv/bin/activate&quot;
+python -u background_script.py
+</code></pre></li>
+
+<li><p>Run the script in the foreground to check if it can activate the virtual environment and runs the Python script:</p>
+
+<pre><code>./run_bg.sh
+</code></pre></li>
+
+<li><p>If the above Shell script runs without error, we try to run it in a background process using <code>nohup</code> command. This will write the partial outputs to a file (<code>custom-output.log</code>):</p>
+
+<pre><code>nohup ./run_bg.sh &gt; custom-output.log &amp;
+</code></pre></li>
+
+<li><p>We can see the partial output using:</p>
+
+<pre><code>cat custom-output.log
 </code></pre>
 
-<p><img src="/blog/images/ssh_raspberry_run_command.png?style=center" alt="alt run command in raspberry pi" /></p></li>
+<p><figure><img src="/blog/images/python_background.png" alt="alt Run Python Script in background with partial output"></figure></p></li>
+
+<li><p>Sometimes we may need to stop the script running in the background. We need to kill the process which runs the script to do so. The following command will list the process ID for the script:</p>
+
+<pre><code>ps aux | grep background_script.py
+</code></pre>
+
+<p>It will return the process details which contain the process ID, typically in the second column.
+Then we can kill the process by using:</p>
+
+<pre><code>kill PROCESS_ID
+</code></pre></li>
 </ul>
 
-<h2 id="tested-environment">Tested Environment</h2>
+<h3 id="references">References</h3>
 
 <ul>
-<li><b> Operating System</b> : Ubuntu 18.04 LTS (64-bit)</li>
-</ul>
-
-<p>The above solution should work with all Linux based operating systems and Mac OS.</p>
-
-<h2 id="reference">Reference</h2>
-
-<ul>
-<li><a href="https://serverfault.com/a/241593">How to automate SSH login with password?</a></li>
-<li><a href="https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys">Checking for existing SSH keys</a></li>
+<li><a href="https://man7.org/linux/man-pages/man1/sh.1p.html">sh command man page</a></li>
+<li><a href="https://man7.org/linux/man-pages/man1/nohup.1.html">nohup(1) — Linux manual page</a></li>
 </ul>
 
 
@@ -326,11 +336,11 @@ individual files in /usr/share/doc/*/copyright.
     </dt>
     <dd class="pl-4 pb-2">
         Shovon, A. R.
-        (2020, April 9).
-        <i>Use SSH to logging into Raspberry Pi without Password</i>.
+        (2022, March 18).
+        <i>Run a Python script inside a virtual environment in the background</i>.
         Ahmedur Rahman Shovon.
         Retrieved March 18, 2022, from
-        <a href="https://arshovon.com/blog/logging-to-raspberry-pi-without-password/">https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</a>
+        <a href="https://arshovon.com/blog/python-background/">https://arshovon.com/blog/python-background/</a>
     </dd>
 
     <dt class="pb-1">
@@ -338,12 +348,12 @@ individual files in /usr/share/doc/*/copyright.
     </dt>
     <dd class="pl-4 pb-2">
         Shovon, Ahmedur Rahman.
-        “Use SSH to logging into Raspberry Pi without Password.”
+        “Run a Python script inside a virtual environment in the background.”
         <i>Ahmedur Rahman Shovon</i>,
-        9 Apr. 2020.
+        18 Mar. 2022.
         Web.
         18 Mar. 2022.
-        <a href="https://arshovon.com/blog/logging-to-raspberry-pi-without-password/">https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</a>.
+        <a href="https://arshovon.com/blog/python-background/">https://arshovon.com/blog/python-background/</a>.
     </dd>
 
     <dt class="pb-1">
@@ -351,12 +361,12 @@ individual files in /usr/share/doc/*/copyright.
     </dt>
     <dd class="pl-4 pb-2">
 <pre>
-@misc{ shovon_2020,
+@misc{ shovon_2022,
     author = "Shovon, Ahmedur Rahman",
-    title = "Use SSH to logging into Raspberry Pi without Password",
-    year = "2020",
-    url = "https://arshovon.com/blog/logging-to-raspberry-pi-without-password/",
-    note = "[Online; accessed 18-March-2022; URL: https://arshovon.com/blog/logging-to-raspberry-pi-without-password/]"
+    title = "Run a Python script inside a virtual environment in the background",
+    year = "2022",
+    url = "https://arshovon.com/blog/python-background/",
+    note = "[Online; accessed 18-March-2022; URL: https://arshovon.com/blog/python-background/]"
 }
 </pre>
     </dd>
@@ -379,18 +389,15 @@ individual files in /usr/share/doc/*/copyright.
     
     <div class="card">
         <div class="card-body">
-            <a href="https://arshovon.com/blog/install-docker-on-raspberry-pi/" class="card-title">
-                Install Docker on Raspberry Pi
+            <a href="https://arshovon.com/blog/sorting-a-list-python3/" class="card-title">
+                Sorting a list (Python 3)
             </a>
         </div>
         <div class="card-footer">
             <span class="text_muted small">
                 
-                <a href="https://arshovon.com/categories/installation" class="badge badge-secondary" title="installation" >
-                    <i class="fa fa-folder-open"></i> installation</a>
-                
-                <a href="https://arshovon.com/categories/internet-of-thinks" class="badge badge-secondary" title="internet of thinks" >
-                    <i class="fa fa-folder-open"></i> internet of thinks</a>
+                <a href="https://arshovon.com/categories/python" class="badge badge-secondary" title="python" >
+                    <i class="fa fa-folder-open"></i> python</a>
                 
             </span>
         </div>
@@ -410,38 +417,19 @@ individual files in /usr/share/doc/*/copyright.
                 <i class="fa fa-chevron-left"></i> Previous Post
             </h5>
             <p class="card-text">
-                <a href="https://arshovon.com/blog/setup-odoo-with-docker-compose/" class="pt-2 pb-2">
-                    Setup Odoo with Docker Compose
+                <a href="https://arshovon.com/blog/sorting-a-list-python3/" class="pt-2 pb-2">
+                    Sorting a list (Python 3)
                 </a>
             </p>
         </div>
         <div class="card-footer">
             <span class="text_muted small">
-                <time datetime="2020-03-25T11:05:42&#43;06:00">
-                    <i class="fa fa-calendar pr-1"></i>March 25, 2020</time>
+                <time datetime="2022-01-16T07:01:32-06:00">
+                    <i class="fa fa-calendar pr-1"></i>January 16, 2022</time>
             </span>
         </div>
     </div>
     
-    
-    <div class="card mb-3 bg-light text-md-right border-light">
-        <div class="card-body">
-            <h5 class="card-title">
-                Next Post <i class="fa fa-chevron-right"></i>
-            </h5>
-            <p class="card-text">
-                <a href="https://arshovon.com/blog/introduction-to-django-cms/" class="pt-2 pb-2">
-                    Introduction to django CMS
-                </a>
-            </p>
-        </div>
-        <div class="card-footer">
-            <span class="text_muted small">
-                <time datetime="2020-04-10T00:01:44&#43;06:00">
-                    <i class="fa fa-calendar pr-1"></i>April 10, 2020</time>
-            </span>
-        </div>
-    </div>
     
 </div>
 
