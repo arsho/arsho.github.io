@@ -185,6 +185,9 @@ crossorigin="anonymous"></script>
 <a href="https://arshovon.com/categories/python"
 class="badge badge-secondary" title="python" >python</a>
 
+<a href="https://arshovon.com/categories/high-performance-computing"
+class="badge badge-secondary" title="High-performance computing" >High-performance computing</a>
+
 
                 
                 
@@ -296,6 +299,14 @@ Then we can kill the process by using:</p>
 <pre><code>kill PROCESS_ID
 </code></pre></li>
 </ul>
+
+<h3 id="use-case">Use case</h3>
+
+<p>I was trying to run a hefty Python script that requires a virtual environment in a cluster computing platform.
+I did not want to keep the terminal session open as the script would take days to finish.
+I also wanted to see the partial output while the script was running.</p>
+
+<p>So, I followed this approach to run the Python script inside a virtual environment in the background that wrote the partial output to a file.</p>
 
 <h3 id="references">References</h3>
 

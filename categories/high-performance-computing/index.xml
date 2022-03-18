@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>High-performance computing on Ahmedur Rahman Shovon</title>
+    <link>https://arshovon.com/categories/high-performance-computing/</link>
+    <description>Recent content in High-performance computing on Ahmedur Rahman Shovon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Mar 2022 03:03:14 -0500</lastBuildDate>
+    
+	<atom:link href="https://arshovon.com/categories/high-performance-computing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Run a Python script inside a virtual environment in the background</title>
+      <link>https://arshovon.com/blog/python-background/</link>
+      <pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate>
+      
+      <guid>https://arshovon.com/blog/python-background/</guid>
+      <description>Scenario Suppose, we have a Python script that uses some Python packages. We will use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We might need to check the partial output (e.g. some debugging values) from the script before completing the script. We also want to run the script in the background without blocking a terminal window.
+I will mock this scenario and will show how to run the Python script inside a virtual environment in the background that writes partial output to a file.</description>
+    </item>
+    
+  </channel>
+</rss>
