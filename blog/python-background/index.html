@@ -179,7 +179,7 @@ crossorigin="anonymous"></script>
                         <i class="fa fa-calendar pr-1"></i>March 18, 2022</time>
                     
                     , Updated on
-                    <time datetime="2022-03-20T09:45:27-05:00">
+                    <time datetime="2022-03-20T10:31:16-05:00">
                         <i class="fa fa-calendar pr-1"></i>March 20, 2022</time>
                     
                 </span>
@@ -206,14 +206,18 @@ class="badge badge-secondary" title="High-performance computing" >High-performan
         <hr class="my-6">
         <h3 id="scenario">Scenario</h3>
 
-<p>Suppose, we have a Python script that uses some Python packages. We will use a virtual environment (<code>venv</code>) to install the dependencies. Let's assume, the script requires a long time to finish. We might need to check the partial output (e.g. some debugging values) from the script before completing the script. We also want to run the script in the background without blocking a terminal window.</p>
+<p>Suppose, we have a Python script that uses some Python packages.
+To keep the global environment clean, we use a virtual environment (<code>venv</code>) to install the dependencies.
+Let's assume, the script requires a long time to finish.
+We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process.
+We also want to run the script in the background without blocking a terminal window.</p>
 
 <p>I will mock this scenario and will show how to run the Python script inside a virtual environment in the background that writes partial output to a file.</p>
 
 <h3 id="running-script-in-the-foreground">Running script in the foreground</h3>
 
 <ul>
-<li><p>Create and activate virtual environment:</p>
+<li><p>Create and activate virtual environment using Python 3:</p>
 
 <pre><code>python3 -m venv venv
 source venv/bin/activate
@@ -229,7 +233,7 @@ source venv/bin/activate
 <pre><code>pip install -r requirements.txt
 </code></pre></li>
 
-<li><p>Create a Python script (<code>background_script.py</code>):</p>
+<li><p>Create a Python script that generates 3 random integers and sleep for 5 seconds at each step. It continues the process until 30 integers are generated. The code is listed in <code>background_script.py</code> file:</p>
 
 <pre><code>import time
 from datetime import datetime
@@ -253,7 +257,7 @@ while True:
 <pre><code>python background_script.py
 </code></pre></li>
 
-<li><p>It will show 3 random numbers continuously each 5 seconds.
+<li><p>It shows 3 random numbers continuously each 5 seconds.
 The script takes 50 seconds to complete and will stop after printing 30 random numbers:</p>
 
 <pre><code>2022-03-18 04:18:12.376506: [874273 493185 580873]

@@ -17,8 +17,7 @@
       <pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate>
       
       <guid>https://arshovon.com/blog/python-background/</guid>
-      <description>Scenario Suppose, we have a Python script that uses some Python packages. We will use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We might need to check the partial output (e.g. some debugging values) from the script before completing the script. We also want to run the script in the background without blocking a terminal window.
-I will mock this scenario and will show how to run the Python script inside a virtual environment in the background that writes partial output to a file.</description>
+      <description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description>
     </item>
     
     <item>
