@@ -199,7 +199,6 @@ p {
 
 /* Sidebar */
 .sidebar_wrapper {
-    background: #a94442;
     color: #fff;
 }
 
@@ -208,7 +207,7 @@ p {
 }
 
 .picture_container {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.4);
     text-align: center;
     margin-left: -15px;
     margin-right: -15px;
