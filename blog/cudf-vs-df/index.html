@@ -179,7 +179,7 @@ crossorigin="anonymous"></script>
                         <i class="fa fa-calendar pr-1"></i>August 1, 2022</time>
                     
                     , Updated on
-                    <time datetime="2022-08-02T01:30:37-05:00">
+                    <time datetime="2022-08-02T09:48:38-05:00">
                         <i class="fa fa-calendar pr-1"></i>August 2, 2022</time>
                     
                 </span>
@@ -207,14 +207,12 @@ class="badge badge-secondary" title="GPGPU" >GPGPU</a>
             </div>
         </header>
         <hr class="my-6">
-        <h2 id="cudf">cuDF</h2>
-
-<p>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame.
+        <p>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame.
 It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models.
 cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model.
 It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</p>
 
-<h3 id="installation-using-conda">Installation using <code>conda</code></h3>
+<h3 id="install-using-conda">Install using <code>conda</code></h3>
 
 <ul>
 <li>Create and activate new <code>conda</code> environment:</li>
@@ -231,24 +229,10 @@ conda activate gpu_env
 <pre><code>conda install -c rapidsai -c nvidia -c numba -c conda-forge cudf=22.06 python=3.9 cudatoolkit=11.2
 </code></pre>
 
-<ul>
-<li>Create a test script <code>example.py</code>:</li>
-</ul>
-
-<pre><code>import cudf
-
-s = cudf.Series([1,2,3,None,4])
-print(s)
-</code></pre>
-
-<ul>
-<li>Run the program:</li>
-</ul>
-
-<pre><code>python example.py
-</code></pre>
-
 <h2 id="cudf-vs-pandas-dataframe-performance-comparison">cuDF vs Pandas DataFrame performance comparison</h2>
+
+<p>The following sections include the system configuration, the dataset, the benchmark code, and the benchmarking result.
+This result is generated using <code>timeit</code> module of Python.</p>
 
 <h3 id="system-configuration">System configuration</h3>
 
@@ -266,8 +250,6 @@ print(s)
 <li>Total Memory: 1.0T</li>
 <li>CPU name: AMD EPYC 7742 64-Core Processor</li>
 <li>CPU(s): 256</li>
-<li>CPU MHz: 2358.656</li>
-<li>L3 cache: 512 MiB</li>
 </ul></li>
 <li>OS information:
 
@@ -314,7 +296,7 @@ has the following properties:</p>
 
 <h3 id="benchmarks">Benchmarks</h3>
 
-<p>Benchmark program (<code>performance_comparison.py</code>) that calculates execution times for a set of operations for both cuDF and Pandas DF on the same dataset in the mentioned environment:</p>
+<p>Benchmark code (<code>performance_comparison.py</code>) calculates execution times for a set of operations for both cuDF and Pandas DF on the same dataset in the mentioned environment:</p>
 
 <pre><code class="language-python">import re
 import pandas as pd
@@ -433,7 +415,7 @@ if __name__ == &quot;__main__&quot;:
     print(f&quot;Pandas final result length: {len(result)}&quot;)
 </code></pre>
 
-<p>For <a href="https://snap.stanford.edu/data/roadNet-CA.html">California road network</a> (Leskovec 2009) benchmark result <code>python performance_comparison.py</code>:</p>
+<p>For the <a href="https://snap.stanford.edu/data/roadNet-CA.html">California road network</a> (Leskovec 2009) benchmark result <code>python performance_comparison.py</code>:</p>
 
 <pre><code class="language-shell">CUDF read csv: 7.532238s
 CUDF reverse dataframe: 0.031103s
@@ -454,11 +436,11 @@ Pandas final result length: 11066428
 
 
 <div style="margin: 0 auto;" class="my-4 border border-light">
-    <canvas id="226"></canvas>
+    <canvas id="961"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js" integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('226').getContext('2d');
+    var ctx = document.getElementById('961').getContext('2d');
     var options = 
 {
     type: 'bar',
@@ -557,8 +539,6 @@ Pandas final result length: 11066428
 </script>
 
 
-<p>This result is generated using <code>timeit</code> module of Python.</p>
-
 <p>The cuDF shows significant performance gains for the same dataset using the CPU and GPU configuration mentioned.</p>
 
 <table class="table table-bordered table-hover table-striped">
@@ -622,7 +602,7 @@ Pandas final result length: 11066428
 
 
         <div class="col-12 my-4 pb-4 border-top border-bottom">
-    <p class="text-muted text-center"><small>Advertisements</small></p>
+    <p class="text-muted text-center"><small>Advertisement</small></p>
     <script async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640"
             crossorigin="anonymous"></script>
