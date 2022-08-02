@@ -355,9 +355,7 @@ img[src$="center"] {
 }
 
 .post-thumbnail-image {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
+    max-height: 300px;
 }
 /* Media Queries */
 
