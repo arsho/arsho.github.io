@@ -179,7 +179,7 @@ crossorigin="anonymous"></script>
                         <i class="fa fa-calendar pr-1"></i>August 1, 2022</time>
                     
                     , Updated on
-                    <time datetime="2022-08-02T00:32:01-05:00">
+                    <time datetime="2022-08-02T01:30:37-05:00">
                         <i class="fa fa-calendar pr-1"></i>August 2, 2022</time>
                     
                 </span>
@@ -450,7 +450,114 @@ Pandas concat relations: 2.469050s
 Pandas final result length: 11066428
 </code></pre>
 
-<p><figure><img src="/blog/images/CUDF_VS_PANDAS.png" alt="alt cuDF vs Pandas DF execution time"></figure></p>
+
+
+
+<div style="margin: 0 auto;" class="my-4 border border-light">
+    <canvas id="226"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js" integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    var ctx = document.getElementById('226').getContext('2d');
+    var options = 
+{
+    type: 'bar',
+    data: {
+      "labels": [
+        "read csv", "reverse dataframe", "merge dataframes", "drop rows", "concat relations"
+      ],
+      "datasets": [
+        {
+          "label": "cuDF",
+          "data": [7.532238, 0.031103, 2.354040, 4.165711, 0.345340],
+          "fill": false,
+          "borderColor": "rgba(255, 99, 132, 1)",
+          "backgroundColor": "rgba(255, 99, 132, 0.8)"
+        },
+        {
+          "label": "Pandas DF",
+          "data": [67.287993, 1.622508, 80.349599, 218.142479, 2.469050],
+          "fill": false,
+          "borderColor": "rgba(75, 192, 192, 1)",
+          "backgroundColor": "rgba(75, 192, 192, 0.8)"
+        }
+      ]
+    },
+    options: {
+        maintainAspectRatio: true,
+        borderWidth: 3,
+        responsive: true,
+        interaction: {
+            mode: 'x',
+            intersect: false
+        },
+        plugins: {
+            title: {
+                display: true,
+                position: 'bottom',
+                text: 'CUDF and Pandas time for California road network dataset',
+                padding: {
+                    top: 10,
+                    bottom: 30
+                }
+            },
+            legend: {
+                display: true,                
+            },            
+            tooltip: {
+                mode: 'nearest',
+                callbacks: {
+                    title: function(context){
+                        context = context[0];
+                        var label = context.label || '';
+
+                        if (label) {
+                            label = label;
+                        }
+                        return label;
+                    },
+                    label: function(context) {
+                        var label = context.dataset.label || '';
+
+                        if (label) {
+                            label += ' : ';
+                        }
+                        if (context.parsed.y !== null) {
+                            label += context.parsed.y +" s";
+                        }
+                        return label;
+                    }
+                }
+            }            
+        },        
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Execution time in seconds'
+                },           
+                ticks: {
+                    callback: function(value, index, values) {
+                        return value+ " s";
+                    }
+                },
+            },
+            x: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Operations'
+                }
+            },
+        },
+    }
+};
+    new Chart(ctx, options);
+</script>
+
+
+<p>This result is generated using <code>timeit</code> module of Python.</p>
 
 <p>The cuDF shows significant performance gains for the same dataset using the CPU and GPU configuration mentioned.</p>
 
