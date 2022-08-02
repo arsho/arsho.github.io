@@ -179,7 +179,7 @@ crossorigin="anonymous"></script>
                         <i class="fa fa-calendar pr-1"></i>August 1, 2022</time>
                     
                     , Updated on
-                    <time datetime="2022-08-02T09:48:38-05:00">
+                    <time datetime="2022-08-02T09:59:16-05:00">
                         <i class="fa fa-calendar pr-1"></i>August 2, 2022</time>
                     
                 </span>
@@ -258,7 +258,7 @@ This result is generated using <code>timeit</code> module of Python.</p>
 <li>Kernel: Linux 5.4.0-121-generic</li>
 <li>Architecture: x86-64</li>
 </ul></li>
-<li>Python information:
+<li>Python package information:
 
 <ul>
 <li>Python version: 3.9.13</li>
@@ -266,9 +266,6 @@ This result is generated using <code>timeit</code> module of Python.</p>
 <li>cuda-python: 11.7.0</li>
 <li>cudatoolkit: 11.2.72</li>
 <li>cudf: 22.06.01</li>
-<li>cupy: 10.6.0</li>
-<li>numba: 0.56.0</li>
-<li>numpy: 1.22.4</li>
 <li>pandas: 1.4.3</li>
 </ul></li>
 </ul>
@@ -281,17 +278,8 @@ has the following properties:</p>
 <ul>
 <li>Nodes 1965206</li>
 <li>Edges 2766607</li>
-<li>Size 84M</li>
-<li>Matrix size 5533214 x 2</li>
-<li>Nodes in largest WCC  1957027 (0.996)</li>
-<li>Edges in largest WCC  2760388 (0.998)</li>
-<li>Nodes in largest SCC  1957027 (0.996)</li>
-<li>Edges in largest SCC  2760388 (0.998)</li>
-<li>Average clustering coefficient    0.0464</li>
-<li>Number of triangles   120676</li>
-<li>Fraction of closed triangles  0.02097</li>
-<li>Diameter (longest shortest path)  849</li>
-<li>90-percentile effective diameter  5e+02</li>
+<li>File size 84M</li>
+<li>Matrix size 5533214 x 2 (source - destination)</li>
 </ul>
 
 <h3 id="benchmarks">Benchmarks</h3>
@@ -436,11 +424,11 @@ Pandas final result length: 11066428
 
 
 <div style="margin: 0 auto;" class="my-4 border border-light">
-    <canvas id="961"></canvas>
+    <canvas id="515"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js" integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('961').getContext('2d');
+    var ctx = document.getElementById('515').getContext('2d');
     var options = 
 {
     type: 'bar',
@@ -539,7 +527,7 @@ Pandas final result length: 11066428
 </script>
 
 
-<p>The cuDF shows significant performance gains for the same dataset using the CPU and GPU configuration mentioned.</p>
+<p>The cuDF shows significant performance gains for the same dataset using the system configuration mentioned.</p>
 
 <table class="table table-bordered table-hover table-striped">
 <thead>
@@ -588,6 +576,10 @@ Pandas final result length: 11066428
 </tr>
 </tbody>
 </table>
+
+<h3 id="acknowledgement">Acknowledgement</h3>
+
+<p>This research used resources of the Argonne Leadership Computing Facility, which is a DOE Office of Science User Facility supported under Contract DE-AC02-06CH11357.</p>
 
 <h3 id="reference">Reference</h3>
 
