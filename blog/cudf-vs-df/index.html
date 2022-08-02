@@ -179,7 +179,7 @@ crossorigin="anonymous"></script>
                         <i class="fa fa-calendar pr-1"></i>August 1, 2022</time>
                     
                     , Updated on
-                    <time datetime="2022-08-02T00:13:50-05:00">
+                    <time datetime="2022-08-02T00:20:23-05:00">
                         <i class="fa fa-calendar pr-1"></i>August 2, 2022</time>
                     
                 </span>
@@ -217,75 +217,104 @@ It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming mod
 <h3 id="installation-using-conda">Installation using <code>conda</code></h3>
 
 <ul>
-<li>Create and activate new <code>conda</code> environment:
-<code>conda create --name gpu_env
-conda activate gpu_env</code></li>
-<li>Install packages:
-<code>conda install -c rapidsai -c nvidia -c numba -c conda-forge cudf=22.06 python=3.9 cudatoolkit=11.2</code></li>
-<li>Create a test script <code>example.py</code>:
-```
-import cudf</li>
+<li>Create and activate new <code>conda</code> environment:</li>
 </ul>
 
-<p>s = cudf.Series([1,2,3,None,4])
-print(s)</p>
-
-<pre><code>- Run the program:
+<pre><code>conda create --name gpu_env
+conda activate gpu_env
 </code></pre>
 
-<p>python example.py</p>
+<ul>
+<li>Install packages:</li>
+</ul>
 
-<pre><code>
-## cuDF vs Pandas DataFrame performance comparison
+<pre><code>conda install -c rapidsai -c nvidia -c numba -c conda-forge cudf=22.06 python=3.9 cudatoolkit=11.2
+</code></pre>
 
-### System configuration
-- GPU information:
-  - NVIDIA A100-SXM4-40GB
-  - Driver Version: 470.129.06
-  - CUDA Version: 11.4
-- Hardware information:
-  - Total Memory: 1.0T 
-  - CPU name: AMD EPYC 7742 64-Core Processor
-  - CPU(s): 256 
-  - CPU MHz: 2358.656
-  - L3 cache: 512 MiB
-- OS information:
-  - Operating System: Ubuntu 20.04.4 LTS
-  - Kernel: Linux 5.4.0-121-generic
-  - Architecture: x86-64
-- Python information:
-  - Python version: 3.9.13
-  - Conda version: conda 4.13.0 
-  - cuda-python: 11.7.0
-  - cudatoolkit: 11.2.72
-  - cudf: 22.06.01
-  - cupy: 10.6.0
-  - numba: 0.56.0 
-  - numpy: 1.22.4
-  - pandas: 1.4.3
+<ul>
+<li>Create a test script <code>example.py</code>:</li>
+</ul>
 
-### Dataset
-[California road network](https://snap.stanford.edu/data/roadNet-CA.html) (Leskovec 2009)
-has the following properties:
+<pre><code>import cudf
 
-- Nodes 1965206
-- Edges 2766607
-- Size 84M 
-- Matrix size 5533214 x 2
-- Nodes in largest WCC  1957027 (0.996)
-- Edges in largest WCC  2760388 (0.998)
-- Nodes in largest SCC  1957027 (0.996)
-- Edges in largest SCC  2760388 (0.998)
-- Average clustering coefficient    0.0464
-- Number of triangles   120676
-- Fraction of closed triangles  0.02097
-- Diameter (longest shortest path)  849
-- 90-percentile effective diameter  5e+02
+s = cudf.Series([1,2,3,None,4])
+print(s)
+</code></pre>
 
-### Benchmarks
+<ul>
+<li>Run the program:</li>
+</ul>
 
-```python
-import re
+<pre><code>python example.py
+</code></pre>
+
+<h2 id="cudf-vs-pandas-dataframe-performance-comparison">cuDF vs Pandas DataFrame performance comparison</h2>
+
+<h3 id="system-configuration">System configuration</h3>
+
+<ul>
+<li>GPU information:
+
+<ul>
+<li>NVIDIA A100-SXM4-40GB</li>
+<li>Driver Version: 470.129.06</li>
+<li>CUDA Version: 11.4</li>
+</ul></li>
+<li>Hardware information:
+
+<ul>
+<li>Total Memory: 1.0T</li>
+<li>CPU name: AMD EPYC 7742 64-Core Processor</li>
+<li>CPU(s): 256</li>
+<li>CPU MHz: 2358.656</li>
+<li>L3 cache: 512 MiB</li>
+</ul></li>
+<li>OS information:
+
+<ul>
+<li>Operating System: Ubuntu 20.04.4 LTS</li>
+<li>Kernel: Linux 5.4.0-121-generic</li>
+<li>Architecture: x86-64</li>
+</ul></li>
+<li>Python information:
+
+<ul>
+<li>Python version: 3.9.13</li>
+<li>Conda version: conda 4.13.0</li>
+<li>cuda-python: 11.7.0</li>
+<li>cudatoolkit: 11.2.72</li>
+<li>cudf: 22.06.01</li>
+<li>cupy: 10.6.0</li>
+<li>numba: 0.56.0</li>
+<li>numpy: 1.22.4</li>
+<li>pandas: 1.4.3</li>
+</ul></li>
+</ul>
+
+<h3 id="dataset">Dataset</h3>
+
+<p><a href="https://snap.stanford.edu/data/roadNet-CA.html">California road network</a> (Leskovec 2009)
+has the following properties:</p>
+
+<ul>
+<li>Nodes 1965206</li>
+<li>Edges 2766607</li>
+<li>Size 84M</li>
+<li>Matrix size 5533214 x 2</li>
+<li>Nodes in largest WCC  1957027 (0.996)</li>
+<li>Edges in largest WCC  2760388 (0.998)</li>
+<li>Nodes in largest SCC  1957027 (0.996)</li>
+<li>Edges in largest SCC  2760388 (0.998)</li>
+<li>Average clustering coefficient    0.0464</li>
+<li>Number of triangles   120676</li>
+<li>Fraction of closed triangles  0.02097</li>
+<li>Diameter (longest shortest path)  849</li>
+<li>90-percentile effective diameter  5e+02</li>
+</ul>
+
+<h3 id="benchmarks">Benchmarks</h3>
+
+<pre><code class="language-python">import re
 import pandas as pd
 import cudf
 import timeit
@@ -411,7 +440,6 @@ CUDF drop rows: 4.165711s
 CUDF concat relations: 0.345340s
 CUDF final result length: 11066428
 
-
 Pandas read csv: 67.287993s
 Pandas reverse dataframe: 1.622508s
 Pandas merge dataframes: 80.349599s
@@ -420,12 +448,11 @@ Pandas concat relations: 2.469050s
 Pandas final result length: 11066428
 </code></pre>
 
-<pre><code>![alt cuDF vs Pandas DF execution time](/blog/images/CUDF_VS_PANDAS.png)
-</code></pre>
+<p><figure><img src="/blog/images/CUDF_VS_PANDAS.png" alt="alt cuDF vs Pandas DF execution time"></figure></p>
 
 <p>The cuDF shows significant performance gains for the same dataset using the CPU and GPU configuration mentioned.</p>
 
-<table>
+<table class="table table-bordered table-hover table-responsive table-striped">
 <thead>
 <tr>
 <th>Operation</th>
