@@ -7,15 +7,14 @@
 * Website: https://arshovon.com/
 */
 @font-face {
-    font-family: 'Exo 2';
+    font-family: 'Roboto', sans-serif;
     font-display: auto;
 }
 
 body {
-    font-family: 'Exo 2', sans-serif;
-    color: #545E6C;
+    font-family: 'Roboto', sans-serif;
+    color: black;
     background: #f5f5f5;
-    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -47,8 +46,13 @@ a:focus {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
+
+.blog {
+    /*font-size: 1.2rem;*/
+}
+
 
 .wrapper {
     margin: 0 auto;
@@ -57,16 +61,16 @@ p {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.blog{
+.blog {
     background: white;
     text-align: justify;
 }
 
-.datamate_red{
+.datamate_red {
     color: #a94442;
 }
 
-.datamate_blue{
+.datamate_blue {
     color: #0a2848;
 }
 
@@ -75,42 +79,46 @@ p {
     font-weight: 500;
 }
 
-.footer{
+.footer {
     margin: 10px auto 0px auto;
 }
 
 /* Navbar */
-.navbar-blog{
+.navbar-blog {
     background: #a94442;
     color: #ffffff;
 }
 
-.navbar-blog .navbar-brand{
+.navbar-blog .navbar-brand {
     color: white;
 }
 
-.navbar-blog a{
+.navbar-blog a {
     color: #e5e5e5;
 }
 
-.navbar-blog a:hover{
+.navbar-blog a:hover {
     color: #ffffff;
 }
 
-.navbar-toggler-icon-fa{
+.navbar-toggler-icon-fa {
     color: white;
 }
 
-.navbar-container{
+.navbar-container {
     padding-right: 0;
     padding-left: 0;
 }
 
-.navbar-blog-right li:last-child a{
+.navbar-blog-right li:last-child a {
     padding-right: 0;
 }
 
 /* Content */
+.blog > article > h3 {
+    margin-top: 2rem;
+}
+
 .content_wrapper {
     background: #fff;
     padding: 30px;
@@ -134,7 +142,7 @@ p {
     margin-bottom: 20px;
 }
 
-.content_wrapper .quote_section{
+.content_wrapper .quote_section {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -288,7 +296,7 @@ p {
 
 code {
     padding: 2px 4px;
-    font-size: 90%;
+    font-size: 100%;
     background-color: #eeeeee;
 }
 
@@ -296,7 +304,7 @@ pre {
     display: block;
     padding: 9.5px;
     margin: 0 0 10px;
-    line-height: 1.4;
+    line-height: 1.5;
     word-break: break-all;
     word-wrap: break-word;
     border: 1px solid #ccc;
@@ -310,43 +318,43 @@ code {
 }
 
 img[src$="center"] {
-    display:block;
+    display: block;
     margin: 0 auto;
 }
 
-.blog>article{
+.blog > article {
     font-size: 110%;
 }
 
-.blog>article img{
+.blog > article img {
     max-width: 100%;
 }
 
-.blog>article>h1{
+.blog > article > h1 {
     font-size: 22px;
 }
 
-.blog>article>h2{
+.blog > article > h2 {
     font-size: 20px;
 }
 
-.blog>article>h3{
+.blog > article > h3 {
     font-size: 18px;
 }
 
-.blog>article>h4{
+.blog > article > h4 {
     font-size: 16px;
 }
 
-.blog>article>h5{
+.blog > article > h5 {
     font-size: 16px;
 }
 
-.blog>article>h6{
+.blog > article > h6 {
     font-size: 14px;
 }
 
-.taxonomy-title{
+.taxonomy-title {
     text-transform: uppercase;
 }
 
@@ -357,6 +365,7 @@ img[src$="center"] {
 .post-thumbnail-image {
     max-height: 300px;
 }
+
 /* Media Queries */
 
 /*Extra small devices (portrait phones, less than 576px), Small devices (landscape phones, 576px and up)*/
@@ -406,39 +415,24 @@ img[src$="center"] {
     }
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
-}
-
 @media print {
-    html{
+    html {
         margin: 0;
         padding: 0;
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
-    body{
+    body {
         background: #ffffff;
         font-size: 16px;
         padding: 0px 15px;
         margin: 0px;
     }
 
-    .wrapper{
+    .wrapper {
         padding: 0px;
         margin: 0px auto;
         width: 100%;
