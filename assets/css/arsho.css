@@ -140,6 +140,8 @@ p {
     color: #0A2848;
     margin-top: 0;
     margin-bottom: 20px;
+    padding-bottom: 6px;
+    border-bottom: 2px dashed #cccccc;
 }
 
 .content_wrapper .quote_section {
