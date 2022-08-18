@@ -42,7 +42,8 @@ type="image/x-icon"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 <script src="https://kit.fontawesome.com/9c9dff05f4.js" crossorigin="anonymous"></script>
 
@@ -73,17 +74,26 @@ crossorigin="anonymous"></script>
 <body>
     <header class="header mb-md-4 mb-lg-4 mb-xl-4">
     
-    <nav class="navbar navbar-expand-md navbar-blog">
-        <div class="container navbar-container">
-            <a class="navbar-brand" href="/">
+    <nav class="navbar navbar-expand-md navbar-light bg-white text-dark"
+         aria-label="site_top_menu">
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="/">
                 AR Shovon
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars navbar-toggler-icon-fa"></i>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#site_top_menu"
+                    aria-controls="site_top_menu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="collapse navbar-collapse" id="site_top_menu">
                 
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
     
     <li class="nav-item">
         <a class="nav-link" title="Blog posts" href="/blog">
@@ -124,7 +134,7 @@ crossorigin="anonymous"></script>
 
                 
                 
-                <ul class="navbar-nav ml-auto navbar-blog-right">
+                <ul class="navbar-nav ml-auto">
     
     <li class="nav-item">
         <a class="nav-link" title="Linkedin profile" href="https://www.linkedin.com/in/arshovon/">
@@ -157,12 +167,13 @@ crossorigin="anonymous"></script>
 </ul>
 
                 
+
             </div>
         </div>
     </nav>
 </header>
 
-    <div class="container wrapper">
+    <div class="container wrapper bg-white shadow">
         <div class="row">
             
             
@@ -171,35 +182,35 @@ crossorigin="anonymous"></script>
 
 <main class="col-12 blog p-3 p-md-5" role="main">
     <article>
-        <header class="mb-4">
-            <h3>Read File by N Lines using C programming language</h3>
-            <h6 class="text-muted">Author:
+        <header class="mb-5 text-bg-light pt-md-5 px-md-5 pb-md-2 article-header">
+            <h3 class="pt-5 fs-3 text-center">Read File by N Lines using C programming language</h3>
+            <p class="lead text-center mb-5 text-muted">Author:
             Ahmedur Rahman Shovon
-            </h6>
-            <div class="mb-3">
-                <span class="float-right badge">
+            </p>
+
+            <div class="mb-1 clearfix">
+                <small class="float-lg-end d-block d-lg-inline text-muted">
                     Published on
                     <time datetime="2019-09-29T12:14:12&#43;06:00">
-                        <i class="fa fa-calendar pr-1"></i>September 29, 2019</time>
+                        <i class="fa fa-calendar pe-1"></i>September 29, 2019</time>
                     
                     , Updated on
-                    <time datetime="2022-08-13T21:36:00-05:00">
-                        <i class="fa fa-calendar pr-1"></i>August 13, 2022</time>
+                    <time datetime="2022-08-18T14:31:56-05:00">
+                        <i class="fa fa-calendar pe-1"></i>August 18, 2022</time>
                     
-                </span>
+                </small>
                 
                 
-                <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
+                <a href="https://arshovon.com/tags/" class="badge text-bg-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
-<a href="https://arshovon.com/tags/c" class="badge badge-secondary" title="c">c</a>
+<a href="https://arshovon.com/tags/c" class="badge text-bg-secondary" title="c">c</a>
 
-<a href="https://arshovon.com/tags/file" class="badge badge-secondary" title="file">file</a>
+<a href="https://arshovon.com/tags/file" class="badge text-bg-secondary" title="file">file</a>
 
 
                 
-            </div>
+        </div>
         </header>
-        <hr class="my-6">
         <p>Read a file by <code>n</code> lines while user pressing <code>y</code> until end of file.</p>
 
 <pre><code class="language-c">/*
@@ -284,6 +295,7 @@ This is line number 13 with some dummy characters
 <p><img src="/snippets/images/read_file_by_n_lines_program_output.png" alt="alt Program output of Read File by N Lines" /></p>
 
 
+
         <div class="col-12 my-4 pb-4 border-top border-bottom">
     <p class="text-muted text-center"><small>Advertisement</small></p>
     <script async
@@ -318,7 +330,7 @@ This is line number 13 with some dummy characters
         (2019, September 29).
         <i>Read File by N Lines using C programming language</i>.
         Ahmedur Rahman Shovon.
-        Retrieved August 14, 2022, from
+        Retrieved August 18, 2022, from
         <a href="https://arshovon.com/snippets/read-file-by-n-lines/">https://arshovon.com/snippets/read-file-by-n-lines/</a>
     </dd>
 
@@ -331,7 +343,7 @@ This is line number 13 with some dummy characters
         <i>Ahmedur Rahman Shovon</i>,
         29 Sep. 2019.
         Web.
-        14 Aug. 2022.
+        18 Aug. 2022.
         <a href="https://arshovon.com/snippets/read-file-by-n-lines/">https://arshovon.com/snippets/read-file-by-n-lines/</a>.
     </dd>
 
@@ -345,7 +357,7 @@ This is line number 13 with some dummy characters
     title = "Read File by N Lines using C programming language",
     year = "2019",
     url = "https://arshovon.com/snippets/read-file-by-n-lines/",
-    note = "[Online; accessed 14-August-2022; URL: https://arshovon.com/snippets/read-file-by-n-lines/]"
+    note = "[Online; accessed 18-August-2022; URL: https://arshovon.com/snippets/read-file-by-n-lines/]"
 }
 </pre>
     </dd>
@@ -365,12 +377,13 @@ This is line number 13 with some dummy characters
 
     
 
-<div class="card-deck mt-5">
+<div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
     
+    <div class="col">
     <div class="card mb-3 bg-light border-light">
         <div class="card-body">
             <h5 class="card-title">
-                <i class="fa fa-chevron-left"></i> Previous Post
+                <i class="fa fa-chevron-left pe-1"></i> Previous Post
             </h5>
             <p class="card-text">
                 <a href="https://arshovon.com/snippets/8-diamond/" class="pt-2 pb-2">
@@ -381,16 +394,18 @@ This is line number 13 with some dummy characters
         <div class="card-footer">
             <span class="text_muted small">
                 <time datetime="2018-08-19T20:29:37-07:00">
-                    <i class="fa fa-calendar pr-1"></i>August 19, 2018</time>
+                    <i class="fa fa-calendar pe-1"></i>August 19, 2018</time>
             </span>
         </div>
     </div>
+    </div>
     
     
-    <div class="card mb-3 bg-light text-md-right border-light">
+    <div class="col">
+    <div class="card mb-3 bg-light text-md-end border-light">
         <div class="card-body">
             <h5 class="card-title">
-                Next Post <i class="fa fa-chevron-right"></i>
+                Next Post <i class="fa fa-chevron-right pe-1"></i>
             </h5>
             <p class="card-text">
                 <a href="https://arshovon.com/snippets/flask-bootstrap-navbar/" class="pt-2 pb-2">
@@ -401,9 +416,10 @@ This is line number 13 with some dummy characters
         <div class="card-footer">
             <span class="text_muted small">
                 <time datetime="2019-10-02T12:14:12&#43;06:00">
-                    <i class="fa fa-calendar pr-1"></i>October 2, 2019</time>
+                    <i class="fa fa-calendar pe-1"></i>October 2, 2019</time>
             </span>
         </div>
+    </div>
     </div>
     
 </div>
@@ -411,7 +427,7 @@ This is line number 13 with some dummy characters
 
 
     <div class="shadow-sm row p-0 m-0 footer-profile">
-    <div class="offset-md-4 col-md-8 m-auto p-md-2">
+    <div class="offset-lg-4 col-lg-8 m-auto p-lg-2">
         <div class="card border-0">
             <div class="card-body py-0 my-0">
                 <div class="row">
@@ -504,7 +520,7 @@ This is line number 13 with some dummy characters
     </div>
     <a id="back-to-top" href="#"
        class="btn m-0 p-0 back-to-top" role="button">
-        <span class="fa-stack">
+        <span class="fa-stack me-md-0 pe-md-0">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i>
         </span>
@@ -513,12 +529,13 @@ This is line number 13 with some dummy characters
 
     
 <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-  crossorigin="anonymous"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+        crossorigin="anonymous"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
 

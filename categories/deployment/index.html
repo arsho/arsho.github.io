@@ -42,7 +42,8 @@ type="image/x-icon"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 <script src="https://kit.fontawesome.com/9c9dff05f4.js" crossorigin="anonymous"></script>
 
@@ -70,17 +71,26 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 <body>
     <header class="header mb-md-4 mb-lg-4 mb-xl-4">
     
-    <nav class="navbar navbar-expand-md navbar-blog">
-        <div class="container navbar-container">
-            <a class="navbar-brand" href="/">
+    <nav class="navbar navbar-expand-md navbar-light bg-white text-dark"
+         aria-label="site_top_menu">
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="/">
                 AR Shovon
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars navbar-toggler-icon-fa"></i>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#site_top_menu"
+                    aria-controls="site_top_menu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="collapse navbar-collapse" id="site_top_menu">
                 
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
     
     <li class="nav-item">
         <a class="nav-link" title="Blog posts" href="/blog">
@@ -121,7 +131,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
                 
                 
-                <ul class="navbar-nav ml-auto navbar-blog-right">
+                <ul class="navbar-nav ml-auto">
     
     <li class="nav-item">
         <a class="nav-link" title="Linkedin profile" href="https://www.linkedin.com/in/arshovon/">
@@ -154,21 +164,22 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 </ul>
 
                 
+
             </div>
         </div>
     </nav>
 </header>
 
-    <div class="container wrapper">
+    <div class="container wrapper bg-white shadow">
         <div class="row">
             
             
             
 
 <main class="col-12 blog p-3 p-md-4 p-lg-4 p-xl-4" role="main">
-    <section class="jumbotron text-center list-jumbotron">
+    <section class="p-5 text-bg-light rounded-3 text-center list-jumbotron mb-4">
         <div class="container">
-            <h1 class="jumbotron-heading text-uppercase">deployment</h1>
+            <h1 class="text-uppercase">deployment</h1>
             <p class="lead text-muted">
                 
             </p>
@@ -201,7 +212,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
                             </div>
                             <div class="col-12 col-md-2">
-                                <span class="float-right btn btn-sm btn-outline-secondary">
+                                <span class="float-end btn btn-sm btn-outline-secondary">
                                     Read more <i class="fas fa-chevron-right"></i>
                                 </span>
 
@@ -210,16 +221,16 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
                     </div>
                 </a>
                 <div class="card-footer">
-                    <span class="float-right badge badge-light">
+                    <span class="float-end badge text-bg-light fw-normal">
                         <time datetime="2020-03-25T11:05:42&#43;06:00">
-                            <i class="fa fa-calendar pr-1"></i>March 25, 2020</time>
+                            <i class="fa fa-calendar me-1"></i>March 25, 2020</time>
                     </span>
                     
-                    <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
+                    <a href="https://arshovon.com/tags/" class="badge text-bg-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
-<a href="https://arshovon.com/tags/odoo" class="badge badge-secondary" title="odoo">odoo</a>
+<a href="https://arshovon.com/tags/odoo" class="badge text-bg-secondary" title="odoo">odoo</a>
 
-<a href="https://arshovon.com/tags/docker-compose" class="badge badge-secondary" title="docker-compose">docker-compose</a>
+<a href="https://arshovon.com/tags/docker-compose" class="badge text-bg-secondary" title="docker-compose">docker-compose</a>
 
 
                     
@@ -248,7 +259,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
                             </div>
                             <div class="col-12 col-md-2">
-                                <span class="float-right btn btn-sm btn-outline-secondary">
+                                <span class="float-end btn btn-sm btn-outline-secondary">
                                     Read more <i class="fas fa-chevron-right"></i>
                                 </span>
 
@@ -257,18 +268,18 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
                     </div>
                 </a>
                 <div class="card-footer">
-                    <span class="float-right badge badge-light">
+                    <span class="float-end badge text-bg-light fw-normal">
                         <time datetime="2020-03-14T07:05:42&#43;06:00">
-                            <i class="fa fa-calendar pr-1"></i>March 14, 2020</time>
+                            <i class="fa fa-calendar me-1"></i>March 14, 2020</time>
                     </span>
                     
-                    <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
+                    <a href="https://arshovon.com/tags/" class="badge text-bg-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
-<a href="https://arshovon.com/tags/flask" class="badge badge-secondary" title="flask">flask</a>
+<a href="https://arshovon.com/tags/flask" class="badge text-bg-secondary" title="flask">flask</a>
 
-<a href="https://arshovon.com/tags/docker" class="badge badge-secondary" title="docker">docker</a>
+<a href="https://arshovon.com/tags/docker" class="badge text-bg-secondary" title="docker">docker</a>
 
-<a href="https://arshovon.com/tags/bootstrap" class="badge badge-secondary" title="bootstrap">bootstrap</a>
+<a href="https://arshovon.com/tags/bootstrap" class="badge text-bg-secondary" title="bootstrap">bootstrap</a>
 
 
                     
@@ -297,7 +308,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
                             </div>
                             <div class="col-12 col-md-2">
-                                <span class="float-right btn btn-sm btn-outline-secondary">
+                                <span class="float-end btn btn-sm btn-outline-secondary">
                                     Read more <i class="fas fa-chevron-right"></i>
                                 </span>
 
@@ -306,20 +317,20 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
                     </div>
                 </a>
                 <div class="card-footer">
-                    <span class="float-right badge badge-light">
+                    <span class="float-end badge text-bg-light fw-normal">
                         <time datetime="2020-03-10T09:05:42&#43;06:00">
-                            <i class="fa fa-calendar pr-1"></i>March 10, 2020</time>
+                            <i class="fa fa-calendar me-1"></i>March 10, 2020</time>
                     </span>
                     
-                    <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
+                    <a href="https://arshovon.com/tags/" class="badge text-bg-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
-<a href="https://arshovon.com/tags/installation" class="badge badge-secondary" title="installation">installation</a>
+<a href="https://arshovon.com/tags/installation" class="badge text-bg-secondary" title="installation">installation</a>
 
-<a href="https://arshovon.com/tags/ubuntu" class="badge badge-secondary" title="ubuntu">ubuntu</a>
+<a href="https://arshovon.com/tags/ubuntu" class="badge text-bg-secondary" title="ubuntu">ubuntu</a>
 
-<a href="https://arshovon.com/tags/docker" class="badge badge-secondary" title="docker">docker</a>
+<a href="https://arshovon.com/tags/docker" class="badge text-bg-secondary" title="docker">docker</a>
 
-<a href="https://arshovon.com/tags/docker-compose" class="badge badge-secondary" title="docker-compose">docker-compose</a>
+<a href="https://arshovon.com/tags/docker-compose" class="badge text-bg-secondary" title="docker-compose">docker-compose</a>
 
 
                     
@@ -348,7 +359,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
                             </div>
                             <div class="col-12 col-md-2">
-                                <span class="float-right btn btn-sm btn-outline-secondary">
+                                <span class="float-end btn btn-sm btn-outline-secondary">
                                     Read more <i class="fas fa-chevron-right"></i>
                                 </span>
 
@@ -357,18 +368,18 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
                     </div>
                 </a>
                 <div class="card-footer">
-                    <span class="float-right badge badge-light">
+                    <span class="float-end badge text-bg-light fw-normal">
                         <time datetime="2020-03-10T07:05:42&#43;06:00">
-                            <i class="fa fa-calendar pr-1"></i>March 10, 2020</time>
+                            <i class="fa fa-calendar me-1"></i>March 10, 2020</time>
                     </span>
                     
-                    <a href="https://arshovon.com/tags/" class="badge badge-secondary" title="All tags"><i class="fa fa-tags"></i></a>
+                    <a href="https://arshovon.com/tags/" class="badge text-bg-secondary" title="All tags"><i class="fa fa-tags"></i></a>
 
-<a href="https://arshovon.com/tags/installation" class="badge badge-secondary" title="installation">installation</a>
+<a href="https://arshovon.com/tags/installation" class="badge text-bg-secondary" title="installation">installation</a>
 
-<a href="https://arshovon.com/tags/ubuntu" class="badge badge-secondary" title="ubuntu">ubuntu</a>
+<a href="https://arshovon.com/tags/ubuntu" class="badge text-bg-secondary" title="ubuntu">ubuntu</a>
 
-<a href="https://arshovon.com/tags/docker" class="badge badge-secondary" title="docker">docker</a>
+<a href="https://arshovon.com/tags/docker" class="badge text-bg-secondary" title="docker">docker</a>
 
 
                     
@@ -403,7 +414,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     </div>
     <a id="back-to-top" href="#"
        class="btn m-0 p-0 back-to-top" role="button">
-        <span class="fa-stack">
+        <span class="fa-stack me-md-0 pe-md-0">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i>
         </span>
@@ -412,12 +423,13 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
     
 <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-  crossorigin="anonymous"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+        crossorigin="anonymous"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
 

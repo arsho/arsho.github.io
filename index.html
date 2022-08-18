@@ -43,7 +43,8 @@ type="image/x-icon"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 <script src="https://kit.fontawesome.com/9c9dff05f4.js" crossorigin="anonymous"></script>
 
@@ -71,17 +72,26 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 <body>
     <header class="header mb-md-4 mb-lg-4 mb-xl-4">
     
-    <nav class="navbar navbar-expand-md navbar-blog">
-        <div class="container navbar-container">
-            <a class="navbar-brand" href="/">
+    <nav class="navbar navbar-expand-md navbar-light bg-white text-dark"
+         aria-label="site_top_menu">
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="/">
                 AR Shovon
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars navbar-toggler-icon-fa"></i>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#site_top_menu"
+                    aria-controls="site_top_menu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="collapse navbar-collapse" id="site_top_menu">
                 
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
     
     <li class="nav-item">
         <a class="nav-link" title="Blog posts" href="/blog">
@@ -122,7 +132,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
                 
                 
-                <ul class="navbar-nav ml-auto navbar-blog-right">
+                <ul class="navbar-nav ml-auto">
     
     <li class="nav-item">
         <a class="nav-link" title="Linkedin profile" href="https://www.linkedin.com/in/arshovon/">
@@ -155,84 +165,88 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 </ul>
 
                 
+
             </div>
         </div>
     </nav>
 </header>
 
-    <div class="container wrapper">
+    <div class="container wrapper bg-white shadow">
         <div class="row">
             
-<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 sidebar_wrapper order-xl-12 order-lg-12 order-md-12 order-sm-1 order-xs-1 order-1 bg-dark">
-    <div class="picture_container">
-    <img class="img-fluid profile_picture rounded-circle"
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 order-1 order-md-2 bg-dark text-white link-light px-0 sidebar" style="--bs-bg-opacity: .9;">
+    <div class="p-4 text-center bg-dark">
+    <img class="img-fluid rounded-circle mb-4" style="max-height: 150px;"
     src="https://arshovon.com/assets/images/shovon.png" alt="Ahmedur Rahman Shovon"/>
-    <h1 class="full_name">
+    <h4 class="text-center">
         Ahmedur Rahman Shovon
-    </h1>
-    <h3 class="steam_line">
-        Ph.D Student (Computer Science) at <a href="https://www.uab.edu/" title="University of Alabama at Birmingham">University of Alabama at Birmingham</a>
-    </h3>
+    </h4>
+    <h6 class="text-center text-muted">
+        Ph.D Student (Computer Science)
+    </h6>
+    <h6 class="text-center link-white">
+        <a href="https://www.uab.edu/" title="University of Alabama at Birmingham">University of Alabama at Birmingham</a>
+    </h6>
 </div>
 
     
-    <div class="contact_container sidebar_container">
-    <ul class="list-unstyled list_spacious contact_list">
+    <div class="p-4">
+    <ul class="list-unstyled">
         
-        <li>
-            <i class="fas fa-envelope fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fas fa-envelope fa-fw me-1"></i>
             <a href="mailto:shovon.sylhet@gmail.com" title="Email address">shovon.sylhet@gmail.com</a>
         </li>
         
-        <li>
-            <i class="fas fa-globe fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fas fa-globe fa-fw me-1"></i>
             <a href="https://arshovon.com" title="Website">arshovon.com</a>
         </li>
         
-        <li>
-            <i class="fas fa-graduation-cap fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fas fa-graduation-cap fa-fw me-1"></i>
             <a href="https://scholar.google.com/citations?hl=en&amp;user=6yvWyoYAAAAJ" title="Google Scholar Citation Profile">Ahmedur Rahman Shovon</a>
         </li>
         
-        <li>
-            <i class="fab fa-linkedin fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fab fa-linkedin fa-fw me-1"></i>
             <a href="https://www.linkedin.com/in/arshovon/" title="Linkedin profile">arshovon</a>
         </li>
         
-        <li>
-            <i class="fab fa-stack-overflow fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fab fa-stack-overflow fa-fw me-1"></i>
             <a href="https://stackoverflow.com/users/3129414/arsho" title="Stackoverflow profile">arsho</a>
         </li>
         
-        <li>
-            <i class="fab fa-github fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fab fa-github fa-fw me-1"></i>
             <a href="https://github.com/arsho/" title="Github profile">arsho</a>
         </li>
         
-        <li>
-            <i class="fab fa-hackerrank fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fab fa-hackerrank fa-fw me-1"></i>
             <a href="https://www.hackerrank.com/arsho" title="Hackerrank profile">arsho</a>
         </li>
         
-        <li>
-            <i class="fab fa-free-code-camp fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fab fa-free-code-camp fa-fw me-1"></i>
             <a href="https://www.freecodecamp.org/arsho" title="Freecodecamp profile">arsho</a>
         </li>
         
-        <li>
-            <i class="fab fa-facebook fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fab fa-facebook fa-fw me-1"></i>
             <a href="https://www.facebook.com/ars.shovon" title="Facebook profile">ars.shovon</a>
         </li>
         
-        <li>
-            <i class="fas fa-home fa-fw mr-1"></i>
+        <li class="lh-lg link-white">
+            <i class="fas fa-home fa-fw me-1"></i>
             <a href="https://en.wikipedia.org/wiki/Birmingham,_Alabama" title="Location">Birmingham, AL, United States</a>
         </li>
         
         
         
 <li>
-    <i class="fas fa-file-pdf fa-fw mr-1"></i>
+    <i class="fas fa-file-pdf fa-fw me-1"></i>
     <a title="View CV" href="cv/CV_Shovon.pdf" target="_blank" title="CV_Shovon.pdf">
         View CV
     </a>
@@ -249,20 +263,20 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <div class="interest_container sidebar_container">
-    <h2 class="container_title">
-        <i class="fas fa-book-open-reader"></i>
+    <div class="p-4">
+    <h4 class="section_title mb-3 fs-5 text-uppercase pb-2 fw-normal">
+        <i class="fas fa-book-open-reader me-1"></i>
         Interests
-    </h2>
+    </h4>
     <ul class="list-unstyled">
         
-        <li>High-Performance Computing</li>
+        <li class="lh-base">High-Performance Computing</li>
         
-        <li>Cloud Computing</li>
+        <li class="lh-base">Cloud Computing</li>
         
-        <li>Data Analytics</li>
+        <li class="lh-base">Data Analytics</li>
         
-        <li>Software Engineering</li>
+        <li class="lh-base">Software Engineering</li>
         
     </ul>
 </div>
@@ -271,102 +285,122 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
     
     
-<div class="latest_posts_snippets_container sidebar_container">
-    <h2 class="container_title">
-        <i class="fas fa-file-alt"></i>
+<div class="p-4">
+    <h2 class="section_title mb-3 fs-5 text-uppercase pb-2 fw-normal">
+        <i class="fas fa-file-alt me-1"></i>
         Latest Blog Posts
     </h2>
     <ul class="list-group list-group-flush">
         
-        <li class="list-group-item bg-transparent px-0">
-            <a href="https://arshovon.com/blog/cudf-vs-df/" class="d-block">
-                cuDF vs Pandas dataframe performance comparison
-            </a>
-            <span class="sidebar_mute_text small">
-                <time datetime="2022-08-01T08:01:14-05:00">
-                    <i class="fa fa-calendar pr-1"></i>August 1, 2022</time>
-            </span>
+        <li class="list-group-item bg-transparent px-0 lh-base">
+            <div>
+                <a href="https://arshovon.com/blog/cudf-vs-df/" class="">
+                    cuDF vs Pandas dataframe performance comparison
+                </a>
+            </div>
+            <small class="text-muted">
+                <time datetime=" 2022-08-01T08:01:14-05:00">
+                    <i class="fa fa-calendar me-1"></i>August 1, 2022</time>
+            </small>
         </li>
         
-        <li class="list-group-item bg-transparent px-0">
-            <a href="https://arshovon.com/blog/python-background/" class="d-block">
-                Run a Python script inside a virtual environment in the background
-            </a>
-            <span class="sidebar_mute_text small">
-                <time datetime="2022-03-18T03:03:14-05:00">
-                    <i class="fa fa-calendar pr-1"></i>March 18, 2022</time>
-            </span>
+        <li class="list-group-item bg-transparent px-0 lh-base">
+            <div>
+                <a href="https://arshovon.com/blog/python-background/" class="">
+                    Run a Python script inside a virtual environment in the background
+                </a>
+            </div>
+            <small class="text-muted">
+                <time datetime=" 2022-03-18T03:03:14-05:00">
+                    <i class="fa fa-calendar me-1"></i>March 18, 2022</time>
+            </small>
         </li>
         
-        <li class="list-group-item bg-transparent px-0">
-            <a href="https://arshovon.com/blog/sorting-a-list-python3/" class="d-block">
-                Sorting a list (Python 3)
-            </a>
-            <span class="sidebar_mute_text small">
-                <time datetime="2022-01-16T07:01:32-06:00">
-                    <i class="fa fa-calendar pr-1"></i>January 16, 2022</time>
-            </span>
+        <li class="list-group-item bg-transparent px-0 lh-base">
+            <div>
+                <a href="https://arshovon.com/blog/sorting-a-list-python3/" class="">
+                    Sorting a list (Python 3)
+                </a>
+            </div>
+            <small class="text-muted">
+                <time datetime=" 2022-01-16T07:01:32-06:00">
+                    <i class="fa fa-calendar me-1"></i>January 16, 2022</time>
+            </small>
         </li>
         
     </ul>
-    <a href="/blog" class="btn btn-block btn-outline-light btn-sm">
-        Read more blog posts
-    </a>
+    <div class="d-grid gap-2 mt-3">
+        <a href="/blog"
+           class="btn btn-outline-dark btn-sm">
+            Read more blog posts
+        </a>
+    </div>
+
 </div>
 
     
 
     
     
-<div class="latest_posts_snippets_container sidebar_container">
-    <h2 class="container_title">
-        <i class="fas fa-code"></i>
+<div class="p-4">
+    <h2 class="section_title mb-3 fs-5 text-uppercase pb-2 fw-normal">
+        <i class="fas fa-code me-1"></i>
         Latest Snippets
     </h2>
     <ul class="list-group list-group-flush">
         
-        <li class="list-group-item bg-transparent px-0">
-            <a href="https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/" class="d-block">
-                Adding a new column in Pandas dataframe based on existing columns
-            </a>
-            <span class="sidebar_mute_text small">
-                <time datetime="2022-01-05T04:23:37&#43;06:00">
-                    <i class="fa fa-calendar pr-1"></i>January 5, 2022</time>
-            </span>
+        <li class="list-group-item bg-transparent px-0 lh-base">
+            <div>
+                <a href="https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/" class="">
+                    Adding a new column in Pandas dataframe based on existing columns
+                </a>
+            </div>
+            <small class="text-muted">
+                <time datetime=" 2022-01-05T04:23:37&#43;06:00">
+                    <i class="fa fa-calendar me-1"></i>January 5, 2022</time>
+            </small>
         </li>
         
-        <li class="list-group-item bg-transparent px-0">
-            <a href="https://arshovon.com/snippets/python-combinations_with_replacement/" class="d-block">
-                Python&#39;s combinations and combinations with replacement
-            </a>
-            <span class="sidebar_mute_text small">
-                <time datetime="2022-01-02T09:23:37-06:00">
-                    <i class="fa fa-calendar pr-1"></i>January 2, 2022</time>
-            </span>
+        <li class="list-group-item bg-transparent px-0 lh-base">
+            <div>
+                <a href="https://arshovon.com/snippets/python-combinations_with_replacement/" class="">
+                    Python&#39;s combinations and combinations with replacement
+                </a>
+            </div>
+            <small class="text-muted">
+                <time datetime=" 2022-01-02T09:23:37-06:00">
+                    <i class="fa fa-calendar me-1"></i>January 2, 2022</time>
+            </small>
         </li>
         
-        <li class="list-group-item bg-transparent px-0">
-            <a href="https://arshovon.com/snippets/majority-element/" class="d-block">
-                Get the majority element from a given list
-            </a>
-            <span class="sidebar_mute_text small">
-                <time datetime="2021-08-24T09:23:37-05:00">
-                    <i class="fa fa-calendar pr-1"></i>August 24, 2021</time>
-            </span>
+        <li class="list-group-item bg-transparent px-0 lh-base">
+            <div>
+                <a href="https://arshovon.com/snippets/majority-element/" class="">
+                    Get the majority element from a given list
+                </a>
+            </div>
+            <small class="text-muted">
+                <time datetime=" 2021-08-24T09:23:37-05:00">
+                    <i class="fa fa-calendar me-1"></i>August 24, 2021</time>
+            </small>
         </li>
         
     </ul>
-    <a href="/snippets" class="btn btn-block btn-outline-light btn-sm">
-        Read more snippets
-    </a>
+    <div class="d-grid gap-2 mt-3">
+        <a href="/snippets"
+           class="btn btn-outline-dark btn-sm">
+            Read more snippets
+        </a>
+    </div>
+
 </div>
 
     
 
     
-    <div class="sidebar_container">
-    <h2 class="container_title">
-        <i class="fas fa-user"></i>
+    <div class="p-4">
+    <h2 class="section_title mb-3 fs-5 text-uppercase pb-2 fw-normal">
+        <i class="fas fa-user me-1"></i>
         Network Profiles
     </h2>
     <ul class="list-unstyled">
@@ -384,17 +418,16 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
     
 
-
 </div> 
 
 
             
-<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 content_wrapper order-xl-1 order-lg-1 order-md-1 order-sm-12 order-xs-12 order-12">
+<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 content_wrapper p-4 p-md-4 bg-white shadow order-2 order-md-1">
 
     
-    <section class="section summary_section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3 summary_section">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fas fa-user fa-stack-1x fa-inverse"></i>
         </span>
@@ -411,9 +444,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
         </span>
@@ -421,12 +454,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     </h2>
 
     
-    <div class="item">
-        <h3 class="item_title d-inline">Ph.D (Student) in Computer Science</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="d-inline fw-semibold">Ph.D (Student) in Computer Science</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             August 2021 - present
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.uab.edu/">The University of Alabama at Birmingham, AL, US</a>
         </div>
         <div>
@@ -434,12 +467,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">MSc in Information Technology</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="d-inline fw-semibold">MSc in Information Technology</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             December 2015 - December 2016
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.juniv.edu/">Jahangirnagar University, Bangladesh</a>
         </div>
         <div>
@@ -447,12 +480,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">BSc in Information Technology</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="d-inline fw-semibold">BSc in Information Technology</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             December 2011 - December 2015
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.juniv.edu/">Jahangirnagar University, Bangladesh</a>
         </div>
         <div>
@@ -466,9 +499,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section experience_section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
         </span>
@@ -476,12 +509,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     </h2>
 
     
-    <div class="item">
-        <h3 class="item_title d-inline">Assistant Programmer</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Assistant Programmer</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             June 2019 - August 2021
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="http://doict.gov.bd/">Department of ICT, ICT Division, Bangladesh</a>
         </div>
         <div>
@@ -489,12 +522,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">Software Engineer</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Software Engineer</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             December 2017 - June 2019
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://cefalo.com/">Cefalo</a> · Dhaka, Bangladesh
         </div>
         <div>
@@ -502,12 +535,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">Software Engineer</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Software Engineer</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             October 2016 - November 2017
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             Codalo · Dhaka, Bangladesh
         </div>
         <div>
@@ -515,12 +548,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">Freelancer</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Freelancer</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             April 2015 - August 2019
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.upwork.com/">Upwork</a>
         </div>
         <div>
@@ -534,18 +567,18 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section publication_section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-book fa-stack-1x fa-inverse"></i>
         </span>
         Publications
     </h2>
     
-    <div class="item">
+    <div class="mb-4">
         <div>
-            <span class="semi-bold">
+            <span class="fw-semibold">
                 UALCAN: An update to the integrated cancer data analysis platform
             </span><br>
             Darshan Shimoga Chandrashekar, Santhosh Kumar Karthikeyan, Praveen Kumar Korla, Henalben Patel, <strong>Ahmedur Rahman Shovon</strong>, Mohammad Athar, George J Netto, Zhaohui S Qin, Sidharth Kumar, Upender Manne, Chad J Crieghton, Sooryanarayana Varambally<br>
@@ -554,9 +587,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
+    <div class="mb-4">
         <div>
-            <span class="semi-bold">
+            <span class="fw-semibold">
                 A Resilient Fog-IoT Framework for Seamless Microservice Execution
             </span><br>
             Md Whaiduzzaman, Alistair Barros, <strong>Ahmedur Rahman Shovon</strong>, Md Razon Hossain, Colin Fidge<br>
@@ -565,9 +598,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
+    <div class="mb-4">
         <div>
-            <span class="semi-bold">
+            <span class="fw-semibold">
                 COVID-19: Update, Forecast and Assistant - An Interactive Web Portal to Provide Real-Time Information and Forecast COVID-19 Cases in Bangladesh
             </span><br>
             Md. Shahriare Satu, Md. Khalilur Rahman, Maksud Alam Rony, <strong>Ahmedur Rahman Shovon</strong>, Md. Jane Alam Adnan, Koushik Chandra Howlader, M Shamim Kaiser<br>
@@ -576,9 +609,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
+    <div class="mb-4">
         <div>
-            <span class="semi-bold">
+            <span class="fw-semibold">
                 A Privacy-preserving Mobile and Fog Computing Framework to Trace and Prevent COVID-19 Community Transmission
             </span><br>
             Md Whaiduzzaman, Md Hossain, <strong>Ahmedur Rahman Shovon</strong>, Shanto Roy, Aron Laszka, Rajkumar Buyya, Alistair Barros<br>
@@ -587,9 +620,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
+    <div class="mb-4">
         <div>
-            <span class="semi-bold">
+            <span class="fw-semibold">
                 GDPR Compliance: Implementation Use Cases for User Data Privacy in News Media Industry
             </span><br>
             <strong>Ahmedur Rahman Shovon</strong>, Shanto Roy, Arnab Kumar Shil, Tanjila Atik<br>
@@ -598,9 +631,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
+    <div class="mb-4">
         <div>
-            <span class="semi-bold">
+            <span class="fw-semibold">
                 A RESTful E-Governance Application Framework for People Identity Veriﬁcation in Cloud
             </span><br>
             <strong>Ahmedur Rahman Shovon</strong>, Shanto Roy, Tanusree Sharma, Md. Whaiduzzaman<br>
@@ -609,9 +642,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
+    <div class="mb-4">
         <div>
-            <span class="semi-bold">
+            <span class="fw-semibold">
                 Combined approach of Tokenization and Mining to secure and optimize Big Data in Cloud Storage
             </span><br>
             Shanto Roy, <strong>Ahmedur Rahman Shovon</strong>, Md. Whaiduzzaman<br>
@@ -625,9 +658,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-award fa-stack-1x fa-inverse"></i>
         </span>
@@ -635,12 +668,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     </h2>
 
     
-    <div class="item">
-        <h3 class="item_title d-inline">Blazer Graduate Research Fellowship</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Blazer Graduate Research Fellowship</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             2021 - 2022
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.uab.edu/">The University of Alabama at Birmingham, AL, US</a>
         </div>
         <div>
@@ -648,12 +681,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">National Science and Technology (NST) Fellowship</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">National Science and Technology (NST) Fellowship</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             2016 - 2017
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="http://most.gov.bd/">Ministry of Science and Technology, Bangladesh</a>
         </div>
         <div>
@@ -661,12 +694,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">University Merit Scholarships</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">University Merit Scholarships</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             2011 - 2015
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.juniv.edu/">Jahangirnagar University, Bangladesh</a>
         </div>
         <div>
@@ -674,12 +707,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">National Merit Scholarship</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">National Merit Scholarship</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             2011
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="http://www.educationboard.gov.bd/">Education Boards, Bangladesh</a>
         </div>
         <div>
@@ -693,9 +726,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-hands-helping fa-stack-1x fa-inverse"></i>
         </span>
@@ -703,12 +736,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     </h2>
 
     
-    <div class="item">
-        <h3 class="item_title d-inline">Volunteer @ The World Games 2022, Birmingham, USA</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Volunteer @ The World Games 2022, Birmingham, USA</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             July 2022
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.theworldgames.org/">International World Games Association (IWGA)</a>
         </div>
         <div>
@@ -716,12 +749,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">Judge @ Spring 2022 Research Expo, UAB</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Judge @ Spring 2022 Research Expo, UAB</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             April 2022
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.uab.edu/service-research/expo/previous-expos/fall-expo-2021">Service Learning and Undergraduate Research - UAB</a>
         </div>
         <div>
@@ -729,12 +762,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">Judge @ Fall 2021 Research Expo, UAB</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Judge @ Fall 2021 Research Expo, UAB</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             November 2021
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.uab.edu/service-research/expo/previous-expos/fall-expo-2021">Service Learning and Undergraduate Research - UAB</a>
         </div>
         <div>
@@ -742,12 +775,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">Journal reviewer @ Sustainable Cities and Society (SCS)</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Journal reviewer @ Sustainable Cities and Society (SCS)</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             November 2021
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.sciencedirect.com/journal/sustainable-cities-and-society">Elsevier</a>
         </div>
         <div>
@@ -755,12 +788,12 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div>
     
-    <div class="item">
-        <h3 class="item_title d-inline">Web Master @ IEEE SB JU</h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">Web Master @ IEEE SB JU</p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             May 2015 - October 2017
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://site.ieee.org/sb-jahangirnagar/">IEEE Student Branch · Jahangirnagar University</a>
         </div>
         <div>
@@ -774,23 +807,23 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section certification_section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-certificate fa-stack-1x fa-inverse"></i>
         </span>
         Certifications
     </h2>
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             Fundamentals of Accelerated Computing with CUDA C/C++ <a href="https://courses.nvidia.com/certificates/7dad70f55fa44577b95b42aa3618d407/">(View Certificate)</a>
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             July 30, 2022
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.nvidia.com/en-us/training/">NVIDIA Deep Learning Institute</a>
         </div>
         <div>
@@ -798,14 +831,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             Problem Solving Certification <a href="https://www.hackerrank.com/certificates/3dc56dcfc39b">(View Certificate)</a>
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             January 07, 2021
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.hackerrank.com">Hackerrank</a>
         </div>
         <div>
@@ -813,14 +846,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             C Certification <a href="https://www.hackerrank.com/certificates/90705aeae802">(View Certificate)</a>
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             September 15, 2020
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.hackerrank.com">Hackerrank</a>
         </div>
         <div>
@@ -828,14 +861,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             Rest API Certification <a href="https://www.hackerrank.com/certificates/60cc990aff6d">(View Certificate)</a>
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             July 11, 2020
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.hackerrank.com">Hackerrank</a>
         </div>
         <div>
@@ -843,14 +876,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             JavaScript Certification <a href="https://www.hackerrank.com/certificates/a102cf1c723b">(View Certificate)</a>
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             May 07, 2020
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.hackerrank.com">Hackerrank</a>
         </div>
         <div>
@@ -858,14 +891,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             Python Certification <a href="https://www.hackerrank.com/certificates/1349bcd0ea6e">(View Certificate)</a>
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             May 05, 2020
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.hackerrank.com">Hackerrank</a>
         </div>
         <div>
@@ -873,14 +906,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             The International English Language Testing System(IELTS) - Academic
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             October 31, 2019
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.britishcouncil.org/">British Council</a>
         </div>
         <div>
@@ -888,14 +921,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             Effective Object Oriented Programming <a href="https://school.cefalolab.com/20181104.pdf">(View Certificate)</a>
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             March 21, 2018 - May 30, 2018
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.cefalo.com/en/">Cefalo</a>
         </div>
         <div>
@@ -903,14 +936,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             Information Technology Passport Examination (ITEE - IP)
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             April 24, 2016
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="http://bditec.gov.bd/">Bangladesh Computer Council (BCC) governed by IPA, Japan</a>
         </div>
         <div>
@@ -918,14 +951,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             Front End Development Certification <a href="https://www.freecodecamp.com/arsho/front-end-certification">(View Certificate)</a>
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             October 22, 2015 - March 10, 2016
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
         </div>
         <div>
@@ -933,14 +966,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
         </div>
     </div> 
     
-    <div class="item">
-        <h3 class="item_title d-inline">
+    <div class="mb-4">
+        <p class="fw-semibold d-inline">
             Mobile Application Development (Android)
-        </h3>
-        <span class="font-weight-light text-muted float-xl-right float-lg-right float-md-right d-sm-block d-block">
+        </p>
+        <span class="fw-light text-muted float-xl-end float-lg-end float-md-end d-sm-block d-block">
             November 2, 2015 - January 2, 2016
         </span>
-        <div class="font-weight-light text-muted">
+        <div class="fw-light text-muted">
             <a href="http://www.bitm.org.bd/">BASIS Institute of Technology and Management (BITM)</a>
         </div>
         <div>
@@ -953,9 +986,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section achievement_section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
         </span>
@@ -964,27 +997,27 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
     <ul class="list_super_spacious list-unstyled">
         
-        <li>
+        <li class="mb-3">
             Gained 12000+ reputation in Stack Overflow - Where Developers Learn, Share, &amp; Build Careers. <a href="https://stackoverflow.com/users/3129414/arsho">(Profile link)</a>
         </li>
         
-        <li>
+        <li class="mb-3">
             Achieved 7<sup>th</sup> position in IEEEXtreme Programming Competition 9.0 out of 2,477 teams. <a href="https://en.wikipedia.org/wiki/IEEEXtreme#IEEEXtreme_9.0_(2015)">(Rank list)</a>
         </li>
         
-        <li>
+        <li class="mb-3">
             Achieved 1st position in Intra University Programming Contest, Jahangirnagar University, 2015.
         </li>
         
-        <li>
+        <li class="mb-3">
             Ranked 1st in Hackerrank Python domain worldwide. <a href="https://www.hackerrank.com/leaderboard?filter=arsho&amp;filter_on=hacker&amp;page=1&amp;track=python&amp;type=practice">(Rank list)</a>
         </li>
         
-        <li>
+        <li class="mb-3">
             Ranked 1st in Hackerrank Security domain worldwide. <a href="https://www.hackerrank.com/leaderboard?filter=arsho&amp;filter_on=hacker&amp;page=1&amp;track=security&amp;type=practice">(Rank list)</a>
         </li>
         
-        <li>
+        <li class="mb-3">
             Solved over 1000+ problems in different online judges including Hackerrank, Codeforces, Leetcode, LightOJ and Codesignal. Solved 350+ problems in UVA Online Judge. <a href="http://uhunt.felix-halim.net/id/141799">(UVA Profile)</a>, <a href="https://app.codesignal.com/profile/arsho">(Codesignal Profile)</a>, <a href="https://www.hackerrank.com/arsho">(Hackerrank Profile)</a>
         </li>
         
@@ -994,9 +1027,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section project_section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fas fa-code fa-stack-1x fa-inverse"></i>
         </span>
@@ -1005,7 +1038,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
     <ul class="list_super_spacious list-unstyled">
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://www.tradewindsnews.com/">Tradewinds</a>
             </span> -
@@ -1015,7 +1048,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://www.upstreamonline.com/">Upstream</a>
             </span> -
@@ -1025,7 +1058,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://www.rechargenews.com/">Recharge</a>
             </span> -
@@ -1035,7 +1068,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://github.com/arsho/EasyC/">Easy C</a>
             </span> -
@@ -1045,7 +1078,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://pypi.python.org/pypi/bangla/">Bangla</a>, <a href="https://pypi.python.org/pypi/opener/">Opener</a>, <a href="https://pypi.python.org/pypi/autolike/">AutoLike</a>, <a href="https://pypi.python.org/pypi/copyusb/">CopyUSB</a>
             </span> -
@@ -1055,7 +1088,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://github.com/arsho/dictmate">Dictmate</a>
             </span> -
@@ -1065,7 +1098,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://arshovon.com/apps/typespeed/">Type Speed</a>
             </span> -
@@ -1075,7 +1108,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://wordpress.org/plugins/wp-font-resizer/">WP-Font-Resizer</a>
             </span> -
@@ -1085,7 +1118,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://github.com/arsho/Meme_Creator">Meme Creator</a>
             </span> -
@@ -1095,7 +1128,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://github.com/arsho/drumpad">Drumpad Web</a>, <a href="https://github.com/arsho/drumpad_android_application">Drumpad Android</a>
             </span> -
@@ -1105,7 +1138,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://github.com/arsho/coders-theme">Coders-Theme</a>
             </span> -
@@ -1115,7 +1148,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
             </em>
         </li>
         
-        <li>
+        <li class="mb-3">
             <span class="project_title">
                 <a href="https://chrome.google.com/webstore/detail/cookie-cleaner/mkmmimjebjhpilmnfoiaaaeimnejbkmh">Cookie Cleaner</a>
             </span> -
@@ -1132,11 +1165,11 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section skill_section">
-    <h2 class="section_title">
-        <span class="fa-stack">
+    <section class="mb-3 pb-3">
+    <h2 class="section_title fs-5 text-uppercase mb-4 pb-2">
+        <span class="fa-stack me-md-0 pe-md-0 icon-left">
             <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-brain fa-stack-1x fa-inverse"></i>
         </span>
         Skills
     </h2>
@@ -1278,103 +1311,104 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     
 
     
-    <section class="section quote_section">
-    <div id="quote" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            
-            
-                <div class="carousel-item active text-center p-4">
-                    
-                    <blockquote class="blockquote text-right">
-                        <p class="mb-0">
-                            If it takes less than two minutes, then do it now.
-                        </p>
+    <section class="mb-3 pb-3">
+<div id="favourite-quote" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    
+        
+            <div class="carousel-item active text-center p-4">
+        
+                <figure class="text-end">
+                  <blockquote class="blockquote">
+                    <p>
+                        If it takes less than two minutes, then do it now.
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                        David Allen
                         
-                        <footer class="blockquote-footer">
-                            David Allen
-                            
-                            in
-                            <cite>
-                                Getting Things Done
-                            </cite>
-                            
-                        </footer>
+                        in
+                        <cite>
+                            Getting Things Done
+                        </cite>
                         
-                    </blockquote>
-                </div>
-                
-            
-            <div class="carousel-item text-center p-4">
-                
-                    <blockquote class="blockquote text-right">
-                        <p class="mb-0">
-                            Always leave the campground cleaner than you found it.
-                        </p>
-                        
-                        <footer class="blockquote-footer">
-                            The Boy Scout Rule
-                            
-                        </footer>
-                        
-                    </blockquote>
-                </div>
-                
-            
-            <div class="carousel-item text-center p-4">
-                
-                    <blockquote class="blockquote text-right">
-                        <p class="mb-0">
-                            First do it, then do it right, then do it better.
-                        </p>
-                        
-                        <footer class="blockquote-footer">
-                            Addy Osmani
-                            
-                        </footer>
-                        
-                    </blockquote>
-                </div>
-                
-            
-            <div class="carousel-item text-center p-4">
-                
-                    <blockquote class="blockquote text-right">
-                        <p class="mb-0">
-                            Code never lies; comments sometimes do.
-                        </p>
-                        
-                        <footer class="blockquote-footer">
-                            Ron Jeffries
-                            
-                        </footer>
-                        
-                    </blockquote>
-                </div>
-                
-            
-            <div class="carousel-item text-center p-4">
-                
-                    <blockquote class="blockquote text-right">
-                        <p class="mb-0">
-                            Simplicity is prerequisite for reliability.
-                        </p>
-                        
-                        <footer class="blockquote-footer">
-                            Edsger W. Dijkstra
-                            
-                            in
-                            <cite>
-                                How do we tell truths that might hurt?
-                            </cite>
-                            
-                        </footer>
-                        
-                    </blockquote>
-                </div>
-                
+                  </figcaption>
+                </figure>
             </div>
-        </div>
-    </div>
+    
+        
+            <div class="carousel-item text-center p-4">
+        
+                <figure class="text-end">
+                  <blockquote class="blockquote">
+                    <p>
+                        Always leave the campground cleaner than you found it.
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                        The Boy Scout Rule
+                        
+                  </figcaption>
+                </figure>
+            </div>
+    
+        
+            <div class="carousel-item text-center p-4">
+        
+                <figure class="text-end">
+                  <blockquote class="blockquote">
+                    <p>
+                        First do it, then do it right, then do it better.
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                        Addy Osmani
+                        
+                  </figcaption>
+                </figure>
+            </div>
+    
+        
+            <div class="carousel-item text-center p-4">
+        
+                <figure class="text-end">
+                  <blockquote class="blockquote">
+                    <p>
+                        Code never lies; comments sometimes do.
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                        Ron Jeffries
+                        
+                  </figcaption>
+                </figure>
+            </div>
+    
+        
+            <div class="carousel-item text-center p-4">
+        
+                <figure class="text-end">
+                  <blockquote class="blockquote">
+                    <p>
+                        Simplicity is prerequisite for reliability.
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                        Edsger W. Dijkstra
+                        
+                        in
+                        <cite>
+                            How do we tell truths that might hurt?
+                        </cite>
+                        
+                  </figcaption>
+                </figure>
+            </div>
+    
+
+  </div>
+</div>
 </section>
 
     
@@ -1394,7 +1428,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
     </div>
     <a id="back-to-top" href="#"
        class="btn m-0 p-0 back-to-top" role="button">
-        <span class="fa-stack">
+        <span class="fa-stack me-md-0 pe-md-0">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i>
         </span>
@@ -1403,12 +1437,13 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script>
 
     
 <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-  crossorigin="anonymous"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+        crossorigin="anonymous"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
 
