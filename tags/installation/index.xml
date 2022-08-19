@@ -1,79 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>installation on Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/tags/installation/</link>
-    <description>Recent content in installation on Ahmedur Rahman Shovon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 23 Apr 2021 05:05:11 +0600</lastBuildDate>
-    
-	<atom:link href="https://arshovon.com/tags/installation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Install Gatsby on Ubuntu 20.04</title>
-      <link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link>
-      <pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid>
-      <description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description>
-    </item>
-    
-    <item>
-      <title>Install Avro Phonetic in Ubuntu 20.04 LTS</title>
-      <link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link>
-      <pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid>
-      <description>How to install Avro Phonetic in Ubuntu 20.04 LTS  Open Ubuntu Software Search Avro Phonetic in Ubuntu Software  Click Install  Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language  Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic)  The Avro Phonetic will be added to the Input Sources  Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut   References  Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description>
-    </item>
-    
-    <item>
-      <title>Install Docker on Raspberry Pi</title>
-      <link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link>
-      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid>
-      <description>Environment   Operating System : Raspbian GNU/Linux 9 (stretch)  Model : Raspberry Pi 2 (Model B)  Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
-Raspian Information  Check the model of the Raspberry Pi:
-cat /proc/device-tree/model  It confirms that I have a Raspberry Pi 2 (Model B)
-Raspberry Pi 2 Model B Rev 1.1  Check the Operating System (OS) of the Raspberry Pi:</description>
-    </item>
-    
-    <item>
-      <title>Install Docker Compose on Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link>
-      <pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid>
-      <description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
-Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description>
-    </item>
-    
-    <item>
-      <title>Install Docker on Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</link>
-      <pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</guid>
-      <description>Why Docker? Docker is a tool for running application in an isolated environment.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>installation on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/installation/</link><description>Recent content in installation on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 23 Apr 2021 05:05:11 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description></item><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>How to install Avro Phonetic in Ubuntu 20.04 LTS Open Ubuntu Software Search Avro Phonetic in Ubuntu Software Click Install Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic) The Avro Phonetic will be added to the Input Sources Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut References Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description></item><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>Environment Operating System : Raspbian GNU/Linux 9 (stretch) Model : Raspberry Pi 2 (Model B) Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
+Raspian Information Check the model of the Raspberry Pi:
+cat /proc/device-tree/model It confirms that I have a Raspberry Pi 2 (Model B)
+Raspberry Pi 2 Model B Rev 1.1 Check the Operating System (OS) of the Raspberry Pi:</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
+Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description></item><item><title>Install Docker on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</guid><description>Why Docker? Docker is a tool for running application in an isolated environment.
 Some reasons you might want to use Docker:
-  Same environment:  Same environment in developers machines and production servers. Acts the same.  Sandbox projects:  Eliminates the risk of getting conflicts while working on different projects on same machine.  Easy working without setup hassle:  Start working directly on others projects without setting all of the environments.</description>
-    </item>
-    
-    <item>
-      <title>Install CLI Tools Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link>
-      <pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid>
-      <description>Install basic development CLI tools in Ubuntu 18.04. It includes:
- oh-my-zsh idle venv git tree  Install Git in Ubuntu 18.04 LTS  Install Git:
-sudo apt install git  Add global configuration for Git user:
-git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot;  Add SSH. Details can be found in this gist
-  Install Oh My Zsh in Ubuntu 18.04 LTS  Install Zsh:</description>
-    </item>
-    
-  </channel>
-</rss>
+Same environment: Same environment in developers machines and production servers. Acts the same. Sandbox projects: Eliminates the risk of getting conflicts while working on different projects on same machine. Easy working without setup hassle: Start working directly on others projects without setting all of the environments.</description></item><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>Install basic development CLI tools in Ubuntu 18.04. It includes:
+oh-my-zsh idle venv git tree Install Git in Ubuntu 18.04 LTS Install Git:
+sudo apt install git Add global configuration for Git user:
+git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Add SSH. Details can be found in this gist
+Install Oh My Zsh in Ubuntu 18.04 LTS Install Zsh:</description></item></channel></rss>

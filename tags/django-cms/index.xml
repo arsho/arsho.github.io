@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>django-cms on Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/tags/django-cms/</link>
-    <description>Recent content in django-cms on Ahmedur Rahman Shovon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:01:44 +0600</lastBuildDate>
-    
-	<atom:link href="https://arshovon.com/tags/django-cms/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Introduction to django CMS</title>
-      <link>https://arshovon.com/blog/introduction-to-django-cms/</link>
-      <pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/introduction-to-django-cms/</guid>
-      <description>Introduction to django CMS In this article we will:
- Learn about django CMS Analyze its features Setup an application with django CMS with full installation guidelines  About django CMS django CMS is an open source enterprise content management system based on the Django framework.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>django-cms on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/django-cms/</link><description>Recent content in django-cms on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:01:44 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/django-cms/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to django CMS</title><link>https://arshovon.com/blog/introduction-to-django-cms/</link><pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate><guid>https://arshovon.com/blog/introduction-to-django-cms/</guid><description>Introduction to django CMS In this article we will:
+Learn about django CMS Analyze its features Setup an application with django CMS with full installation guidelines About django CMS django CMS is an open source enterprise content management system based on the Django framework.
 django CMS is voted Best Open Source CMS in 2015. [Announcing the 2015 Winner for Best Open Source CMS]
-django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease.</description>
-    </item>
-    
-  </channel>
-</rss>
+django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease.</description></item></channel></rss>

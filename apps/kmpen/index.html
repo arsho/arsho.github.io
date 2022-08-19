@@ -1,87 +1,35 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Kaplan Meier Survival Probability Graph</title>
-</head>
-<body>
-<main>
-    <div>
-        <button class="graph_data_btn" genename="A1BG" ctype="KIRC" exp="">
-            Generate with A1BG expression level on KIRC patient survival
-            dataset
-        </button>
-        <button class="graph_data_btn" genename="A1BG" ctype="KIRC"
-                exp="Gender">
-            Generate with A1BG expression level & Gender on KIRC patient
-            survival
-            dataset
-        </button>
-        <button class="graph_data_btn" genename="A1BG" ctype="KIRC" exp="Race">
-            Generate with A1BG expression level & Race on KIRC patient survival
-            dataset
-        </button>
-
-        <button class="graph_data_btn" genename="A1BG" ctype="KIRP" exp="">
-            Generate with A1BG expression level on KIRP patient survival
-            dataset
-        </button>
-        <button class="graph_data_btn" genename="A1BG" ctype="KIRP"
-                exp="Gender">
-            Generate with A1BG expression level & Gender on KIRP patient
-            survival
-            dataset
-        </button>
-        <button class="graph_data_btn" genename="A1BG" ctype="KIRP" exp="Race">
-            Generate with A1BG expression level & Race on KIRP patient survival
-            dataset
-        </button>
-
-        <button class="graph_data_btn" genename="A1BG" ctype="LUAD" exp="">
-            Generate with A1BG expression level on LUAD patient survival
-            dataset
-        </button>
-        <button class="graph_data_btn" genename="A1BG" ctype="LUAD"
-                exp="Gender">
-            Generate with A1BG expression level & Gender on LUAD patient
-            survival
-            dataset
-        </button>
-        <button class="graph_data_btn" genename="A1BG" ctype="LUAD" exp="Race">
-            Generate with A1BG expression level & Race on LUAD patient survival
-            dataset
-        </button>
-    </div>
-    <div id="graph">
-        <div>
-            <h5 style="text-align: center;">
-                Click on the chart legend to hide and show the relevant dataset
-            </h5>
-            <canvas id="kmgraph"></canvas>
-        </div>
-        <div style="text-align: center;">
-            <button class="download_chart" id="png_btn">
-                Download as PNG
-            </button>
-            <button class="download_chart" id="jpeg_btn">
-                Download as JPEG
-            </button>
-            <button class="download_chart" id="pdf_btn">
-                Download as PDF
-            </button>
-        </div>
-    </div>
-</main>
-<!--Scripts Starts-->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
-
-<script type="text/javascript"
-        src="assets/js/kmpen_clean.js"></script>
-<!--Scripts Ends-->
-
-</body>
-</html>
+<!doctype html><html lang=en><head><title>Kaplan Meier Survival Probability Graph</title></head><body><main><div><button class=graph_data_btn genename=A1BG ctype=KIRC exp>
+Generate with A1BG expression level on KIRC patient survival
+dataset</button>
+<button class=graph_data_btn genename=A1BG ctype=KIRC exp=Gender>
+Generate with A1BG expression level & Gender on KIRC patient
+survival
+dataset</button>
+<button class=graph_data_btn genename=A1BG ctype=KIRC exp=Race>
+Generate with A1BG expression level & Race on KIRC patient survival
+dataset</button>
+<button class=graph_data_btn genename=A1BG ctype=KIRP exp>
+Generate with A1BG expression level on KIRP patient survival
+dataset</button>
+<button class=graph_data_btn genename=A1BG ctype=KIRP exp=Gender>
+Generate with A1BG expression level & Gender on KIRP patient
+survival
+dataset</button>
+<button class=graph_data_btn genename=A1BG ctype=KIRP exp=Race>
+Generate with A1BG expression level & Race on KIRP patient survival
+dataset</button>
+<button class=graph_data_btn genename=A1BG ctype=LUAD exp>
+Generate with A1BG expression level on LUAD patient survival
+dataset</button>
+<button class=graph_data_btn genename=A1BG ctype=LUAD exp=Gender>
+Generate with A1BG expression level & Gender on LUAD patient
+survival
+dataset</button>
+<button class=graph_data_btn genename=A1BG ctype=LUAD exp=Race>
+Generate with A1BG expression level & Race on LUAD patient survival
+dataset</button></div><div id=graph><div><h5 style=text-align:center>Click on the chart legend to hide and show the relevant dataset</h5><canvas id=kmgraph></canvas></div><div style=text-align:center><button class=download_chart id=png_btn>
+Download as PNG</button>
+<button class=download_chart id=jpeg_btn>
+Download as JPEG</button>
+<button class=download_chart id=pdf_btn>
+Download as PDF</button></div></div></main><script src=https://code.jquery.com/jquery-3.6.0.min.js integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js></script><script type=text/javascript src=assets/js/kmpen_clean.js></script></body></html>

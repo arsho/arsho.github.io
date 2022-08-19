@@ -1,436 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/</link>
-    <description>Recent content on Ahmedur Rahman Shovon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 08:01:14 -0500</lastBuildDate>
-    
-	<atom:link href="https://arshovon.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>cuDF vs Pandas dataframe performance comparison</title>
-      <link>https://arshovon.com/blog/cudf-vs-df/</link>
-      <pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate>
-      
-      <guid>https://arshovon.com/blog/cudf-vs-df/</guid>
-      <description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description>
-    </item>
-    
-    <item>
-      <title>Run a Python script inside a virtual environment in the background</title>
-      <link>https://arshovon.com/blog/python-background/</link>
-      <pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate>
-      
-      <guid>https://arshovon.com/blog/python-background/</guid>
-      <description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description>
-    </item>
-    
-    <item>
-      <title>Image Steganography</title>
-      <link>https://arshovon.com/apps/image-stego/</link>
-      <pubDate>Sun, 13 Feb 2022 11:15:10 -0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/image-stego/</guid>
-      <description>ImageStego    &amp;nbsp; ImageStego   About ImageStego   How to use      Preview Image      Options   Encryption  Decryption    Running in Encryption Mode Upload Image  Secret Key   Message to Encrypt    Encrypt Image        ImageStego does not store anything. Store the secret key and encrypted image in a secure location.</description>
-    </item>
-    
-    <item>
-      <title>Sorting a list (Python 3)</title>
-      <link>https://arshovon.com/blog/sorting-a-list-python3/</link>
-      <pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/sorting-a-list-python3/</guid>
-      <description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ahmedur Rahman Shovon</title><link>https://arshovon.com/</link><description>Recent content on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 08:01:14 -0500</lastBuildDate><atom:link href="https://arshovon.com/index.xml" rel="self" type="application/rss+xml"/><item><title>cuDF vs Pandas dataframe performance comparison</title><link>https://arshovon.com/blog/cudf-vs-df/</link><pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/cudf-vs-df/</guid><description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description></item><item><title>Run a Python script inside a virtual environment in the background</title><link>https://arshovon.com/blog/python-background/</link><pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate><guid>https://arshovon.com/blog/python-background/</guid><description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description></item><item><title>Image Steganography</title><link>https://arshovon.com/apps/image-stego/</link><pubDate>Sun, 13 Feb 2022 11:15:10 -0600</pubDate><guid>https://arshovon.com/apps/image-stego/</guid><description>ImageStego &amp;nbsp; ImageStego About ImageStego How to use Preview Image Options Encryption Decryption Running in Encryption Mode Upload Image Secret Key Message to Encrypt Encrypt Image ImageStego does not store anything. Store the secret key and encrypted image in a secure location.</description></item><item><title>Sorting a list (Python 3)</title><link>https://arshovon.com/blog/sorting-a-list-python3/</link><pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate><guid>https://arshovon.com/blog/sorting-a-list-python3/</guid><description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
 Today we will sort a given list of strings in several ways to understand the Python 3 built-in sorted function .
-Dataset We will use the 50 U.S. states as our dataset.</description>
-    </item>
-    
-    <item>
-      <title>Adding a new column in Pandas dataframe based on existing columns</title>
-      <link>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</link>
-      <pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</guid>
-      <description>Adding a new column in Pandas dataframe based on existing columns Pandas dataframe allows adding new columns to it based on the values of the existing columns.
+Dataset We will use the 50 U.S. states as our dataset.</description></item><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</guid><description>Adding a new column in Pandas dataframe based on existing columns Pandas dataframe allows adding new columns to it based on the values of the existing columns.
 Example Scenario Suppose, a dataset contains Football match results of some matches like below:
-  Date Venue Opponent GF GA     08-27-2017 H Arsenal FC 4 0   09-16-2017 H Burnley FC 1 1    Here, GF stands for Goals For and GA stands for Goals Against (i.</description>
-    </item>
-    
-    <item>
-      <title>Python&#39;s combinations and combinations with replacement</title>
-      <link>https://arshovon.com/snippets/python-combinations_with_replacement/</link>
-      <pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/python-combinations_with_replacement/</guid>
-      <description>Python&amp;rsquo;s combinations and combinations with replacement A recent Stack Overflow question had me looking at how to find a list of four numbers each from -1 to 1 that sum up to 1.
-Problem statement Generate every combination of four numbers(a.k.a. quadruplets) from (-1, -0.99, -0.98, ..., 0.98, 0.99, 1) that sum up to 1. Repetitions of numbers are allowed. For example: [0, 1, 0.12, -0.12], [0, 0, 0.5, 0.</description>
-    </item>
-    
-    <item>
-      <title>Fully connected network graph</title>
-      <link>https://arshovon.com/apps/fcnvis/</link>
-      <pubDate>Wed, 29 Dec 2021 11:15:10 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/fcnvis/</guid>
-      <description> FCNVis    &amp;nbsp; FCNVis   Analytics      Fully Connected Network Visualization Tool  FCNVis is a visualization tool to create Fully Connected Network    Select one or multiple subjects from DFC 2500, and DFC 1400  Select subject(s) from DFC 2500   Select subject(s) from DFC 1400   Plot MDS      FCNVis Exposure  Click on the legends to toggle visibility of the subject      Download as PNG   Download as JPEG   Download as PDF         About   Code    Developed by HARP Lab FCNVis &amp;copy; 2021            </description>
-    </item>
-    
-    <item>
-      <title>Kaplan Meier survival probability graph</title>
-      <link>https://arshovon.com/apps/kmpen/</link>
-      <pubDate>Fri, 10 Dec 2021 11:15:10 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/kmpen/</guid>
-      <description>  Kaplan Meier Survival Probability Graph     Generate with A1BG expression level on KIRC patient survival dataset  Generate with A1BG expression level &amp; Gender on KIRC patient survival dataset  Generate with A1BG expression level &amp; Race on KIRC patient survival dataset  Generate with A1BG expression level on KIRP patient survival dataset  Generate with A1BG expression level &amp; Gender on KIRP patient survival dataset  Generate with A1BG expression level &amp; Race on KIRP patient survival dataset  Generate with A1BG expression level on LUAD patient survival dataset  Generate with A1BG expression level &amp; Gender on LUAD patient survival dataset  Generate with A1BG expression level &amp; Race on LUAD patient survival dataset    Click on the chart legend to hide and show the relevant dataset    Download as PNG  Download as JPEG  Download as PDF          </description>
-    </item>
-    
-    <item>
-      <title>Get the majority element from a given list</title>
-      <link>https://arshovon.com/snippets/majority-element/</link>
-      <pubDate>Tue, 24 Aug 2021 09:23:37 -0500</pubDate>
-      
-      <guid>https://arshovon.com/snippets/majority-element/</guid>
-      <description>Given an array numbers of size n, return the majority element.
+Date Venue Opponent GF GA 08-27-2017 H Arsenal FC 4 0 09-16-2017 H Burnley FC 1 1 Here, GF stands for Goals For and GA stands for Goals Against (i.</description></item><item><title>Python&#39;s combinations and combinations with replacement</title><link>https://arshovon.com/snippets/python-combinations_with_replacement/</link><pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate><guid>https://arshovon.com/snippets/python-combinations_with_replacement/</guid><description>Python&amp;rsquo;s combinations and combinations with replacement A recent Stack Overflow question had me looking at how to find a list of four numbers each from -1 to 1 that sum up to 1.
+Problem statement Generate every combination of four numbers(a.k.a. quadruplets) from (-1, -0.99, -0.98, ..., 0.98, 0.99, 1) that sum up to 1. Repetitions of numbers are allowed. For example: [0, 1, 0.12, -0.12], [0, 0, 0.5, 0.</description></item><item><title>Fully connected network graph</title><link>https://arshovon.com/apps/fcnvis/</link><pubDate>Wed, 29 Dec 2021 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/fcnvis/</guid><description> FCNVis &amp;nbsp; FCNVis Analytics Fully Connected Network Visualization Tool FCNVis is a visualization tool to create Fully Connected Network Select one or multiple subjects from DFC 2500, and DFC 1400 Select subject(s) from DFC 2500 Select subject(s) from DFC 1400 Plot MDS FCNVis Exposure Click on the legends to toggle visibility of the subject Download as PNG Download as JPEG Download as PDF About Code Developed by HARP Lab FCNVis &amp;copy; 2021</description></item><item><title>Kaplan Meier survival probability graph</title><link>https://arshovon.com/apps/kmpen/</link><pubDate>Fri, 10 Dec 2021 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/kmpen/</guid><description> Kaplan Meier Survival Probability Graph Generate with A1BG expression level on KIRC patient survival dataset Generate with A1BG expression level &amp; Gender on KIRC patient survival dataset Generate with A1BG expression level &amp; Race on KIRC patient survival dataset Generate with A1BG expression level on KIRP patient survival dataset Generate with A1BG expression level &amp; Gender on KIRP patient survival dataset Generate with A1BG expression level &amp; Race on KIRP patient survival dataset Generate with A1BG expression level on LUAD patient survival dataset Generate with A1BG expression level &amp; Gender on LUAD patient survival dataset Generate with A1BG expression level &amp; Race on LUAD patient survival dataset Click on the chart legend to hide and show the relevant dataset Download as PNG Download as JPEG Download as PDF</description></item><item><title>Get the majority element from a given list</title><link>https://arshovon.com/snippets/majority-element/</link><pubDate>Tue, 24 Aug 2021 09:23:37 -0500</pubDate><guid>https://arshovon.com/snippets/majority-element/</guid><description>Given an array numbers of size n, return the majority element.
 Description The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
-Examples Example 1: Input: nums = [1, 2, 2] Output: 2  Example 2: Input: nums = [1, 2, 2, 2, 2, 1, 1] Output: 2  Solution Approach 1 - Hash Table  We can use a hash table to store the number of occurrences of each number.</description>
-    </item>
-    
-    <item>
-      <title>Merge Sort</title>
-      <link>https://arshovon.com/blog/merge-sort/</link>
-      <pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/merge-sort/</guid>
-      <description>Divide and conquer strategy and merge sort In a divide and conquer strategy, a problem is divided into multiple subproblems. These subproblems are similar to the original problem but smaller in size. The divide and conquer strategy solves these subproblems recursively. Then it combines the solutions of the subproblems to develop a final solution for the original problem. Thus, the divide and conquer strategy has two parts: divide and conquer.</description>
-    </item>
-    
-    <item>
-      <title>Bubble Sort</title>
-      <link>https://arshovon.com/blog/bubble-sort/</link>
-      <pubDate>Wed, 28 Apr 2021 03:03:14 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/bubble-sort/</guid>
-      <description>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in n iterations, all n elements are sorted accordingly.
-Bubble sort characteristics Impractical Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</description>
-    </item>
-    
-    <item>
-      <title>Install Gatsby on Ubuntu 20.04</title>
-      <link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link>
-      <pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid>
-      <description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Time Complexity</title>
-      <link>https://arshovon.com/blog/understanding-time-complexity/</link>
-      <pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/understanding-time-complexity/</guid>
-      <description>Algorithm efficiency The efficiency of an algorithm is mainly measured by time complexity and space complexity. Time complexity describes the computational time required to run an algorithm for a set of input elements. It is generally expressed as a function of the size of the input.
-Asymptotic notations Three types of asymptotic notations are used to express both the time complexity and space complexity of an algorithm. We will compare these notations by three different scenarios of the same algorithm, the linear search algorithm.</description>
-    </item>
-    
-    <item>
-      <title>Run YesWorkflow Docker Image on Ubuntu 20.04</title>
-      <link>https://arshovon.com/blog/yesworkflow-docker-run/</link>
-      <pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid>
-      <description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
-Run Docker image of YesWorkflow  Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
-import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description>
-    </item>
-    
-    <item>
-      <title>Install Avro Phonetic in Ubuntu 20.04 LTS</title>
-      <link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link>
-      <pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid>
-      <description>How to install Avro Phonetic in Ubuntu 20.04 LTS  Open Ubuntu Software Search Avro Phonetic in Ubuntu Software  Click Install  Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language  Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic)  The Avro Phonetic will be added to the Input Sources  Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut   References  Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description>
-    </item>
-    
-    <item>
-      <title>Create custom email address and attach with Gmail</title>
-      <link>https://arshovon.com/blog/custom-email-with-gmail/</link>
-      <pubDate>Wed, 14 Oct 2020 13:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/custom-email-with-gmail/</guid>
-      <description>Scenario  I have a Gmail address (e.g.: free@gmail.com) I have a domain (e.g.: example.com) I want to make a custom email address with own domain (e.g.: hello@example.com) I want to receive all the emails sent to custom email address in my Gmail (e.g.: hello@example.com -&amp;gt; free@gmail.com) I want to send email from custom email address while sending emails from my Gmail (e.g.: select hello@example.com as sender from free@gmail.com)  Solution Set up email forwarding The first step is to set up email forwarding in the domain management dashboard.</description>
-    </item>
-    
-    <item>
-      <title>Kids Math</title>
-      <link>https://arshovon.com/apps/kids/</link>
-      <pubDate>Thu, 10 Sep 2020 11:15:10 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/kids/</guid>
-      <description>Kids Math   Kids Math    Settings     Math Quiz Settings   Quiz Language English Bangla    Number of Questions 5 10 15 20 25 30 35 40 45 50    Select Operator (Multiple Allowed) + - * / Random    Maximum Number for Operand 1   Maximum Number for Operand 2      Create Quiz       Correct Answer          Wrong Answer          Very good!</description>
-    </item>
-    
-    <item>
-      <title>Install Docker on Raspberry Pi</title>
-      <link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link>
-      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid>
-      <description>Environment   Operating System : Raspbian GNU/Linux 9 (stretch)  Model : Raspberry Pi 2 (Model B)  Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
-Raspian Information  Check the model of the Raspberry Pi:
-cat /proc/device-tree/model  It confirms that I have a Raspberry Pi 2 (Model B)
-Raspberry Pi 2 Model B Rev 1.1  Check the Operating System (OS) of the Raspberry Pi:</description>
-    </item>
-    
-    <item>
-      <title>Sorting Algorithm Comparisons</title>
-      <link>https://arshovon.com/blog/sorting-algorithm-comparisons/</link>
-      <pubDate>Sat, 15 Aug 2020 02:06:33 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/sorting-algorithm-comparisons/</guid>
-      <description>Sorting Algorithm Comparisons Table   Criteria Bubble Selection Insertion Merge Quick Counting Timsort     Technique Brute force Brute force Brute force Divide-and-conquer Divide-and-conquer Non comparison Hybrid   Worst Time O(n2) O(n2) O(n2) O(nlgn) O(n2) O(k+n) O(nlgn)   Average Time Θ(n2) Θ(n2) Θ(n2) Θ(nlgn) Θ(nlgn) Θ(k+n) Θ(nlgn)   Best Time Ω(n) Ω(n2) Ω(n) Ω(nlgn) Ω(nlgn) Ω(k+n) Ω(n)   Space O(1) O(1) O(1) O(n) O(n) O(k+n) O(n)   Stable Yes No Yes Yes No Yes Yes   In-place Yes Yes Yes No Yes No    Online No No Yes No No No No   Adaptive Yes No Yes No Yes No Yes   Suitable for Sorted list  Almost sorted list List with unknown order  0&amp;lt;=A[i]&amp;lt;=k     Criteria Explanation  Technique: Methodology of the sorting algorithm.</description>
-    </item>
-    
-    <item>
-      <title>Insertion Sort</title>
-      <link>https://arshovon.com/blog/insertion-sort/</link>
-      <pubDate>Tue, 11 Aug 2020 02:06:33 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/insertion-sort/</guid>
-      <description>Characteristics Simple implementation Insertion sort can be implemented easily with less lines of code. It is quite efficient for small data sets. Though it has same complexity than other quadratic sorting algorithms like selection sort or bubble sort, insertion sort is more efficient.
+Examples Example 1: Input: nums = [1, 2, 2] Output: 2 Example 2: Input: nums = [1, 2, 2, 2, 2, 1, 1] Output: 2 Solution Approach 1 - Hash Table We can use a hash table to store the number of occurrences of each number.</description></item><item><title>Merge Sort</title><link>https://arshovon.com/blog/merge-sort/</link><pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate><guid>https://arshovon.com/blog/merge-sort/</guid><description>Divide and conquer strategy and merge sort In a divide and conquer strategy, a problem is divided into multiple subproblems. These subproblems are similar to the original problem but smaller in size. The divide and conquer strategy solves these subproblems recursively. Then it combines the solutions of the subproblems to develop a final solution for the original problem. Thus, the divide and conquer strategy has two parts: divide and conquer.</description></item><item><title>Bubble Sort</title><link>https://arshovon.com/blog/bubble-sort/</link><pubDate>Wed, 28 Apr 2021 03:03:14 +0600</pubDate><guid>https://arshovon.com/blog/bubble-sort/</guid><description>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in n iterations, all n elements are sorted accordingly.
+Bubble sort characteristics Impractical Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</description></item><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description></item><item><title>Understanding Time Complexity</title><link>https://arshovon.com/blog/understanding-time-complexity/</link><pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate><guid>https://arshovon.com/blog/understanding-time-complexity/</guid><description>Algorithm efficiency The efficiency of an algorithm is mainly measured by time complexity and space complexity. Time complexity describes the computational time required to run an algorithm for a set of input elements. It is generally expressed as a function of the size of the input.
+Asymptotic notations Three types of asymptotic notations are used to express both the time complexity and space complexity of an algorithm. We will compare these notations by three different scenarios of the same algorithm, the linear search algorithm.</description></item><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
+Run Docker image of YesWorkflow Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
+import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description></item><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>How to install Avro Phonetic in Ubuntu 20.04 LTS Open Ubuntu Software Search Avro Phonetic in Ubuntu Software Click Install Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic) The Avro Phonetic will be added to the Input Sources Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut References Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description></item><item><title>Create custom email address and attach with Gmail</title><link>https://arshovon.com/blog/custom-email-with-gmail/</link><pubDate>Wed, 14 Oct 2020 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/custom-email-with-gmail/</guid><description>Scenario I have a Gmail address (e.g.: free@gmail.com) I have a domain (e.g.: example.com) I want to make a custom email address with own domain (e.g.: hello@example.com) I want to receive all the emails sent to custom email address in my Gmail (e.g.: hello@example.com -&amp;gt; free@gmail.com) I want to send email from custom email address while sending emails from my Gmail (e.g.: select hello@example.com as sender from free@gmail.com) Solution Set up email forwarding The first step is to set up email forwarding in the domain management dashboard.</description></item><item><title>Kids Math</title><link>https://arshovon.com/apps/kids/</link><pubDate>Thu, 10 Sep 2020 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/kids/</guid><description>Kids Math Kids Math Settings Math Quiz Settings Quiz Language English Bangla Number of Questions 5 10 15 20 25 30 35 40 45 50 Select Operator (Multiple Allowed) + - * / Random Maximum Number for Operand 1 Maximum Number for Operand 2 Create Quiz Correct Answer Wrong Answer Very good!</description></item><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>Environment Operating System : Raspbian GNU/Linux 9 (stretch) Model : Raspberry Pi 2 (Model B) Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
+Raspian Information Check the model of the Raspberry Pi:
+cat /proc/device-tree/model It confirms that I have a Raspberry Pi 2 (Model B)
+Raspberry Pi 2 Model B Rev 1.1 Check the Operating System (OS) of the Raspberry Pi:</description></item><item><title>Sorting Algorithm Comparisons</title><link>https://arshovon.com/blog/sorting-algorithm-comparisons/</link><pubDate>Sat, 15 Aug 2020 02:06:33 +0600</pubDate><guid>https://arshovon.com/blog/sorting-algorithm-comparisons/</guid><description>Sorting Algorithm Comparisons Table Criteria Bubble Selection Insertion Merge Quick Counting Timsort Technique Brute force Brute force Brute force Divide-and-conquer Divide-and-conquer Non comparison Hybrid Worst Time O(n2) O(n2) O(n2) O(nlgn) O(n2) O(k+n) O(nlgn) Average Time Θ(n2) Θ(n2) Θ(n2) Θ(nlgn) Θ(nlgn) Θ(k+n) Θ(nlgn) Best Time Ω(n) Ω(n2) Ω(n) Ω(nlgn) Ω(nlgn) Ω(k+n) Ω(n) Space O(1) O(1) O(1) O(n) O(n) O(k+n) O(n) Stable Yes No Yes Yes No Yes Yes In-place Yes Yes Yes No Yes No Online No No Yes No No No No Adaptive Yes No Yes No Yes No Yes Suitable for Sorted list Almost sorted list List with unknown order 0&amp;lt;=A[i]&amp;lt;=k Criteria Explanation Technique: Methodology of the sorting algorithm.</description></item><item><title>Insertion Sort</title><link>https://arshovon.com/blog/insertion-sort/</link><pubDate>Tue, 11 Aug 2020 02:06:33 +0600</pubDate><guid>https://arshovon.com/blog/insertion-sort/</guid><description>Characteristics Simple implementation Insertion sort can be implemented easily with less lines of code. It is quite efficient for small data sets. Though it has same complexity than other quadratic sorting algorithms like selection sort or bubble sort, insertion sort is more efficient.
 Adaptive Insertion sort is adaptive. If the input data set is already sorted, the number of steps are reduced.
-Online Insertion sort works on the data as it receives it.</description>
-    </item>
-    
-    <item>
-      <title>Counting Sort</title>
-      <link>https://arshovon.com/blog/counting-sort/</link>
-      <pubDate>Sun, 09 Aug 2020 11:07:32 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/counting-sort/</guid>
-      <description>Characteristics Non negative integers with a known maximum value Counting sort can be applied if the input numbers are in the set {0, 1, .. ,k}, a set of non negative integers with a maximum value k.
-No comparisons between elements There are no comparisons between input elements that take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies the relative positions of each input element.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to django CMS</title>
-      <link>https://arshovon.com/blog/introduction-to-django-cms/</link>
-      <pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/introduction-to-django-cms/</guid>
-      <description>Introduction to django CMS In this article we will:
- Learn about django CMS Analyze its features Setup an application with django CMS with full installation guidelines  About django CMS django CMS is an open source enterprise content management system based on the Django framework.
+Online Insertion sort works on the data as it receives it.</description></item><item><title>Counting Sort</title><link>https://arshovon.com/blog/counting-sort/</link><pubDate>Sun, 09 Aug 2020 11:07:32 +0600</pubDate><guid>https://arshovon.com/blog/counting-sort/</guid><description>Characteristics Non negative integers with a known maximum value Counting sort can be applied if the input numbers are in the set {0, 1, .. ,k}, a set of non negative integers with a maximum value k.
+No comparisons between elements There are no comparisons between input elements that take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies the relative positions of each input element.</description></item><item><title>Introduction to django CMS</title><link>https://arshovon.com/blog/introduction-to-django-cms/</link><pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate><guid>https://arshovon.com/blog/introduction-to-django-cms/</guid><description>Introduction to django CMS In this article we will:
+Learn about django CMS Analyze its features Setup an application with django CMS with full installation guidelines About django CMS django CMS is an open source enterprise content management system based on the Django framework.
 django CMS is voted Best Open Source CMS in 2015. [Announcing the 2015 Winner for Best Open Source CMS]
-django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease.</description>
-    </item>
-    
-    <item>
-      <title>Use SSH to logging into Raspberry Pi without Password</title>
-      <link>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</link>
-      <pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</guid>
-      <description>Scenario We can login into remote Raspberry Pi using ssh command:
-ssh -p PORT USER@IP password: RASPBERRY_PASSWORD  As it can be seen, we require to input the Raspberry Pi&amp;rsquo;s password each time to establish SSH connection.
+django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease.</description></item><item><title>Use SSH to logging into Raspberry Pi without Password</title><link>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</link><pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate><guid>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</guid><description>Scenario We can login into remote Raspberry Pi using ssh command:
+ssh -p PORT USER@IP password: RASPBERRY_PASSWORD As it can be seen, we require to input the Raspberry Pi&amp;rsquo;s password each time to establish SSH connection.
 Solution: Add local machine&amp;rsquo;s SSH key to Raspberry Pi for password less SSH connection To resolve the scenario, we need to add our local machine&amp;rsquo;s SSH key to the Raspberry Pi.
- Check if you have SSH key in local machine using:</description>
-    </item>
-    
-    <item>
-      <title>COVID-19 World Status</title>
-      <link>https://arshovon.com/apps/c19/</link>
-      <pubDate>Sun, 05 Apr 2020 11:15:10 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/c19/</guid>
-      <description>COVID-19 World Status     COVID-19    Summary    Data    Confirmed    Death    Active    Recovered    Country    About     Code       COVID-19 World Status   Total Cases    Today&#39;s cases:      Total Deaths   (%)    Today&#39;s deaths:      Cases / Million    Deaths / Million:      Total Recovered   (%)    Affected Countries:      Active Cases    Critical cases:      Total Tests    Tests per million:                        Worldwide COVID-19 Data with Instant Search Option   Flag Country Cases Today Cases Deaths Today Deaths Tests Active Recovered Critical Cases / Million Deaths / Million Tests / Million          COVID-19 World Map(Total Confirmed Cases)   Mouse over any country to see total confirmed cases and click to see country&#39;s details.</description>
-    </item>
-    
-    <item>
-      <title>Setup Odoo with Docker Compose</title>
-      <link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link>
-      <pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid>
-      <description>What is Odoo? Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in Python, JavaScript and XML.</description>
-    </item>
-    
-    <item>
-      <title>Develop Flask Application using Docker and Bootstrap Templates</title>
-      <link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link>
-      <pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid>
-      <description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
-Environment   Operating System : Ubuntu 18.04 LTS (64-bit)  Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12  Memory : 15.3 GiB  Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description>
-    </item>
-    
-    <item>
-      <title>Install Docker Compose on Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link>
-      <pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid>
-      <description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
-Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description>
-    </item>
-    
-    <item>
-      <title>Install Docker on Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</link>
-      <pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</guid>
-      <description>Why Docker? Docker is a tool for running application in an isolated environment.
+Check if you have SSH key in local machine using:</description></item><item><title>COVID-19 World Status</title><link>https://arshovon.com/apps/c19/</link><pubDate>Sun, 05 Apr 2020 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/c19/</guid><description>COVID-19 World Status COVID-19 Summary Data Confirmed Death Active Recovered Country About Code COVID-19 World Status Total Cases Today&#39;s cases: Total Deaths (%) Today&#39;s deaths: Cases / Million Deaths / Million: Total Recovered (%) Affected Countries: Active Cases Critical cases: Total Tests Tests per million: Worldwide COVID-19 Data with Instant Search Option Flag Country Cases Today Cases Deaths Today Deaths Tests Active Recovered Critical Cases / Million Deaths / Million Tests / Million COVID-19 World Map(Total Confirmed Cases) Mouse over any country to see total confirmed cases and click to see country&#39;s details.</description></item><item><title>Setup Odoo with Docker Compose</title><link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link><pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate><guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid><description>What is Odoo? Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in Python, JavaScript and XML.</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
+Environment Operating System : Ubuntu 18.04 LTS (64-bit) Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12 Memory : 15.3 GiB Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
+Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description></item><item><title>Install Docker on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</guid><description>Why Docker? Docker is a tool for running application in an isolated environment.
 Some reasons you might want to use Docker:
-  Same environment:  Same environment in developers machines and production servers. Acts the same.  Sandbox projects:  Eliminates the risk of getting conflicts while working on different projects on same machine.  Easy working without setup hassle:  Start working directly on others projects without setting all of the environments.</description>
-    </item>
-    
-    <item>
-      <title>Run Java Program in Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</link>
-      <pubDate>Tue, 28 Jan 2020 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</guid>
-      <description>Run Java Program in Ubuntu 18.04. The program will be run using Oracle&#39;s OpenJDK JDK 8.
- Check if Java Runtime Environment(JRE) is installed in machine:
-java -version  If JRE is installed it will show the version information similar to following:
-openjdk 11.0.5 2019-10-15 OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04) OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode)  If you do not have installed JRE, install JRE using:</description>
-    </item>
-    
-    <item>
-      <title>Example of using Bootstrap&#39;s navbar in Flask</title>
-      <link>https://arshovon.com/snippets/flask-bootstrap-navbar/</link>
-      <pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/flask-bootstrap-navbar/</guid>
-      <description>Example of using Bootstrap 4&amp;rsquo;s navbar for dynamic routing in Flask.
+Same environment: Same environment in developers machines and production servers. Acts the same. Sandbox projects: Eliminates the risk of getting conflicts while working on different projects on same machine. Easy working without setup hassle: Start working directly on others projects without setting all of the environments.</description></item><item><title>Run Java Program in Ubuntu 18.04</title><link>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</link><pubDate>Tue, 28 Jan 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</guid><description>Run Java Program in Ubuntu 18.04. The program will be run using Oracle&#39;s OpenJDK JDK 8.
+Check if Java Runtime Environment(JRE) is installed in machine:
+java -version If JRE is installed it will show the version information similar to following:
+openjdk 11.0.5 2019-10-15 OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04) OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode) If you do not have installed JRE, install JRE using:</description></item><item><title>Example of using Bootstrap&#39;s navbar in Flask</title><link>https://arshovon.com/snippets/flask-bootstrap-navbar/</link><pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate><guid>https://arshovon.com/snippets/flask-bootstrap-navbar/</guid><description>Example of using Bootstrap 4&amp;rsquo;s navbar for dynamic routing in Flask.
 Directory structure:
-. ├── app.py ├── requirements.txt └── templates └── index.html  app.py:
-from flask import Flask, render_template app = Flask(__name__) @app.route(&amp;quot;/&amp;quot;) def view_home(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Home page&amp;quot;) @app.route(&amp;quot;/first&amp;quot;) def view_first_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;First page&amp;quot;) @app.route(&amp;quot;/second&amp;quot;) def view_second_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Second page&amp;quot;)  index.html:
-&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- Required meta tags --&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, shrink-to-fit=no&amp;quot;&amp;gt; &amp;lt;!</description>
-    </item>
-    
-    <item>
-      <title>Read File by N Lines using C programming language</title>
-      <link>https://arshovon.com/snippets/read-file-by-n-lines/</link>
-      <pubDate>Sun, 29 Sep 2019 12:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/read-file-by-n-lines/</guid>
-      <description>Read a file by n lines while user pressing y until end of file.
-/* Author: Ahmedur Rahman Shovon License: &amp;quot;GPL&amp;quot; Date: 2019/09/29 */ #include &amp;lt;stdio.h&amp;gt; /* Function that prints a line from file. Update the printf contents to change format. */ void print_line(int line_number, char line[]) { printf(&amp;quot;%s&amp;quot;, line); } int main() { char filename[] = &amp;quot;data.txt&amp;quot;; FILE *file = fopen(filename, &amp;quot;r&amp;quot;); int i = 1; // Number of lines per chunk int n = 3; int end = n; char user_choice; if ( file !</description>
-    </item>
-    
-    <item>
-      <title>Writing Django Custom Management Command</title>
-      <link>https://arshovon.com/blog/django-custom-command/</link>
-      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/django-custom-command/</guid>
-      <description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
- python manage.py runserver python manage.py makemigrations python manage.py migrate  These commands are built in and lies within Django itself.
+. ├── app.py ├── requirements.txt └── templates └── index.html app.py:
+from flask import Flask, render_template app = Flask(__name__) @app.route(&amp;quot;/&amp;quot;) def view_home(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Home page&amp;quot;) @app.route(&amp;quot;/first&amp;quot;) def view_first_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;First page&amp;quot;) @app.route(&amp;quot;/second&amp;quot;) def view_second_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Second page&amp;quot;) index.html:
+&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- Required meta tags --&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, shrink-to-fit=no&amp;quot;&amp;gt; &amp;lt;!</description></item><item><title>Read File by N Lines using C programming language</title><link>https://arshovon.com/snippets/read-file-by-n-lines/</link><pubDate>Sun, 29 Sep 2019 12:14:12 +0600</pubDate><guid>https://arshovon.com/snippets/read-file-by-n-lines/</guid><description>Read a file by n lines while user pressing y until end of file.
+/* Author: Ahmedur Rahman Shovon License: &amp;quot;GPL&amp;quot; Date: 2019/09/29 */ #include &amp;lt;stdio.h&amp;gt; /* Function that prints a line from file. Update the printf contents to change format. */ void print_line(int line_number, char line[]) { printf(&amp;quot;%s&amp;quot;, line); } int main() { char filename[] = &amp;quot;data.txt&amp;quot;; FILE *file = fopen(filename, &amp;quot;r&amp;quot;); int i = 1; // Number of lines per chunk int n = 3; int end = n; char user_choice; if ( file !</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
+python manage.py runserver python manage.py makemigrations python manage.py migrate These commands are built in and lies within Django itself.
 We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.
-These custom admin commands can be invoked using manage.</description>
-    </item>
-    
-    <item>
-      <title>Basic features of Saas with example</title>
-      <link>https://arshovon.com/blog/saas-basic-features/</link>
-      <pubDate>Mon, 06 May 2019 16:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/saas-basic-features/</guid>
-      <description>Sass(Syntactically Awesome Style Sheets) is the most mature, stable, and powerful professional grade CSS extension language in the world.
-Features  CSS Compatible: Sass is completely compatible with all versions of CSS. Mature: Sass has been actively supported for about 12 years by its loving Core Team. Frameworks: Popular frameworks built with Sass -&amp;gt; Compass, Bourbon, and Susy. Nesting: HTML elements are nested. But CSS elements are not nested by default.</description>
-    </item>
-    
-    <item>
-      <title>Install CLI Tools Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link>
-      <pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid>
-      <description>Install basic development CLI tools in Ubuntu 18.04. It includes:
- oh-my-zsh idle venv git tree  Install Git in Ubuntu 18.04 LTS  Install Git:
-sudo apt install git  Add global configuration for Git user:
-git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot;  Add SSH. Details can be found in this gist
-  Install Oh My Zsh in Ubuntu 18.04 LTS  Install Zsh:</description>
-    </item>
-    
-    <item>
-      <title>8-diamond</title>
-      <link>https://arshovon.com/snippets/8-diamond/</link>
-      <pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate>
-      
-      <guid>https://arshovon.com/snippets/8-diamond/</guid>
-      <description>Draw 8 of Diamond using Python
-__author__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; __license__ = &amp;quot;GPL&amp;quot; __version__ = &amp;quot;1.0.1&amp;quot; __maintainer__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; import turtle def draw(x_position, y_position, font, value): turtle.up() turtle.goto(x_position, y_position) turtle.write(value,font=font) turtle.down() turtle.hideturtle() canvas_width = 405 canvas_height = 490 turtle.setup(canvas_width, canvas_height, 0, 0) font_color = &#39;red&#39; turtle.color(font_color) turtle.title(&amp;quot;8 of diamond by arsho&amp;quot;) diamond_size = 100 small_diamond_size = 35 number_size = 40 diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, diamond_size, &amp;quot;normal&amp;quot;) small_diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, small_diamond_size, &amp;quot;normal&amp;quot;) number_font = (&amp;quot;Comic Sans MS&amp;quot;, number_size, &amp;quot;normal&amp;quot;) card_value = &amp;quot;8&amp;quot; diamond_value = &amp;quot;\u2666&amp;quot; x_position_left = -170 x_position_middle = -60 x_position_right = 50 y_position = -210 y_distance = 70 top_8_x_position = -190 top_8_y_position = 180 bottom_8_x_position = 150 bottom_8_y_position = -240 top_diamond_x_position = -193 top_diamond_y_position = 135 bottom_diamond_x_position = 145 bottom_diamond_y_position = -190 # Draw top 8 draw(top_8_x_position, top_8_y_position, number_font, card_value) # Draw top diamond draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value) # Draw bottom 8 draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value) # Draw bottom diamond draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value) for i in range(5): if i%2==0: # Draw two diamonds draw(x_position_left, y_position, diamond_font, diamond_value) draw(x_position_right, y_position, diamond_font, diamond_value) else: # Draw two diamonds draw(x_position_middle, y_position, diamond_font, diamond_value) y_position += y_distance  Output:</description>
-    </item>
-    
-    <item>
-      <title>Python Reduce Example</title>
-      <link>https://arshovon.com/snippets/python-reduce-example/</link>
-      <pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/python-reduce-example/</guid>
-      <description>  Get nth Fibonacci number using reduce from functools import reduce def get_first_n_fibonacci(n): if n&amp;lt;1: return [] ar = [0, 1] for i in range(2, n): ar.append(ar[i-1] + ar[i-2]) return ar[:n] def get_first_n_fibonacci_reduce(n): initializer = [0, 1] if n&amp;lt;2: return initializer[:n] ar = reduce(lambda fib, _: fib + [fib[-1] + fib[-2]], range(n-2), initializer) return ar if __name__ == &#39;__main__&#39;: assert get_first_n_fibonacci(5) == get_first_n_fibonacci_reduce(5) assert get_first_n_fibonacci(0) == get_first_n_fibonacci_reduce(0) assert get_first_n_fibonacci(1) == get_first_n_fibonacci_reduce(1) assert get_first_n_fibonacci(10) == get_first_n_fibonacci_reduce(10)  List multiplication using reduce from functools import reduce def get_list_multiplication(ar): result = 1 for i in ar: result *= i return result def get_list_multiplication_using_reduce(ar): return reduce(lambda x, y: x*y, ar, 1) if __name__ == &#39;__main__&#39;: ar = [3, 1, 4, 5, -23] assert get_list_multiplication(ar) == get_list_multiplication_using_reduce(ar)  Reference  Python official documentation on reduce Gist file with these examples  </description>
-    </item>
-    
-    <item>
-      <title>Sort Python Dictionary</title>
-      <link>https://arshovon.com/snippets/python-sort-dictionary/</link>
-      <pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/python-sort-dictionary/</guid>
-      <description>Sort Python dict in various ways Original Data
-world_cup_wins = { &amp;quot;Brazil&amp;quot;: 5, &amp;quot;Germany&amp;quot;: 4, &amp;quot;Italy&amp;quot;: 4, &amp;quot;Argentina&amp;quot;: 2, &amp;quot;France&amp;quot;: 2, &amp;quot;Uruguay&amp;quot;: 2, &amp;quot;England&amp;quot;: 1, &amp;quot;Spain&amp;quot;: 1 }  SORT DICTIONARY BY KEY ASCENDING for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0]): print(key, value)  Output:
-Argentina 2 Brazil 5 England 1 France 2 Germany 4 Italy 4 Spain 1 Uruguay 2  SORT DICTIONARY BY KEY DESCENDING for key, value in sorted(world_cup_wins.</description>
-    </item>
-    
-    <item>
-      <title>Periodic Table</title>
-      <link>https://arshovon.com/apps/periodic_table/</link>
-      <pubDate>Tue, 15 Sep 2015 17:15:10 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/periodic_table/</guid>
-      <description>Periodic Table   The Periodic Table  Developed by Ahmedur Rahman Shovon  &amp; Imran Pollob   Metals Non-Metals Alkali Metals Alkali Earth Metals   Transitional Metals Lanthoids Actinoids   Metaloids Halogens Noble Gas   1 H  Hydrogen1.0079
-                    2 He  Helium4.</description>
-    </item>
-    
-    <item>
-      <title>Typespeed</title>
-      <link>https://arshovon.com/apps/typespeed/</link>
-      <pubDate>Sun, 05 Oct 2014 13:15:10 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/typespeed/</guid>
-      <description>body{ background: aliceblue; } .txtarea{ margin: 2px auto; width: 80%; padding: 10px; vertical-align: top; text-align: left; height: 62%; overflow: hidden; line-height: 30px; font-family: Verdana; font-size: 24px; color: black; border: 3px solid rgb(1, 1, 10); border-radius: 7px; background: white; } .txtarea div{ display: inline; } .highlight{ background: rgb(231, 223, 221); color: rgb(20, 133, 162); padding: 3px 6px; border: 2px solid rgb(185, 164, 168); border-radius: 5px; } .ac { color: green; } .</description>
-    </item>
-    
-    <item>
-      <title>Meme Creator</title>
-      <link>https://arshovon.com/apps/meme_creator/</link>
-      <pubDate>Mon, 14 Jul 2014 16:13:50 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/meme_creator/</guid>
-      <description>Meme Creator  @import url(http://fonts.googleapis.com/css?family=Changa+One); @import url(http://fonts.googleapis.com/css?family=Kavoon); @import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great); @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One); @import url(http://fonts.googleapis.com/css?family=Galindo); body{ margin: 2px auto; } #wrapper { width: 100%; margin: 0px auto; padding: 0px; } #content { width: 95%; padding: 0px 20px; margin: 10px auto; background: rgb(247, 247, 247); border: 1px solid rgba(147, 184, 189,0.8); -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset; -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.</description>
-    </item>
-    
-    <item>
-      <title>Drumpad</title>
-      <link>https://arshovon.com/apps/drumpad/</link>
-      <pubDate>Fri, 02 Mar 2012 15:15:10 +0600</pubDate>
-      
-      <guid>https://arshovon.com/apps/drumpad/</guid>
-      <description>  Drumpad            A (Ride-Cymbal) S (Tom1) D (Tom2) F (Crash-Cymbal)   J (Bass) K (Snare) L (Open-Hi-Hat) ; (Closed-Hi-Hat)      1
-(two and four)  2
-(four on the floor)  3
-(one drop)  4
-(boom boom clap)    DRUMPAD by Shovon
-(play drums using keyboard and or with mouse)         </description>
-    </item>
-    
-  </channel>
-</rss>
+These custom admin commands can be invoked using manage.</description></item><item><title>Basic features of Saas with example</title><link>https://arshovon.com/blog/saas-basic-features/</link><pubDate>Mon, 06 May 2019 16:05:42 +0600</pubDate><guid>https://arshovon.com/blog/saas-basic-features/</guid><description>Sass(Syntactically Awesome Style Sheets) is the most mature, stable, and powerful professional grade CSS extension language in the world.
+Features CSS Compatible: Sass is completely compatible with all versions of CSS. Mature: Sass has been actively supported for about 12 years by its loving Core Team. Frameworks: Popular frameworks built with Sass -&amp;gt; Compass, Bourbon, and Susy. Nesting: HTML elements are nested. But CSS elements are not nested by default.</description></item><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>Install basic development CLI tools in Ubuntu 18.04. It includes:
+oh-my-zsh idle venv git tree Install Git in Ubuntu 18.04 LTS Install Git:
+sudo apt install git Add global configuration for Git user:
+git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Add SSH. Details can be found in this gist
+Install Oh My Zsh in Ubuntu 18.04 LTS Install Zsh:</description></item><item><title>8-diamond</title><link>https://arshovon.com/snippets/8-diamond/</link><pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate><guid>https://arshovon.com/snippets/8-diamond/</guid><description>Draw 8 of Diamond using Python
+__author__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; __license__ = &amp;quot;GPL&amp;quot; __version__ = &amp;quot;1.0.1&amp;quot; __maintainer__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; import turtle def draw(x_position, y_position, font, value): turtle.up() turtle.goto(x_position, y_position) turtle.write(value,font=font) turtle.down() turtle.hideturtle() canvas_width = 405 canvas_height = 490 turtle.setup(canvas_width, canvas_height, 0, 0) font_color = &#39;red&#39; turtle.color(font_color) turtle.title(&amp;quot;8 of diamond by arsho&amp;quot;) diamond_size = 100 small_diamond_size = 35 number_size = 40 diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, diamond_size, &amp;quot;normal&amp;quot;) small_diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, small_diamond_size, &amp;quot;normal&amp;quot;) number_font = (&amp;quot;Comic Sans MS&amp;quot;, number_size, &amp;quot;normal&amp;quot;) card_value = &amp;quot;8&amp;quot; diamond_value = &amp;quot;\u2666&amp;quot; x_position_left = -170 x_position_middle = -60 x_position_right = 50 y_position = -210 y_distance = 70 top_8_x_position = -190 top_8_y_position = 180 bottom_8_x_position = 150 bottom_8_y_position = -240 top_diamond_x_position = -193 top_diamond_y_position = 135 bottom_diamond_x_position = 145 bottom_diamond_y_position = -190 # Draw top 8 draw(top_8_x_position, top_8_y_position, number_font, card_value) # Draw top diamond draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value) # Draw bottom 8 draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value) # Draw bottom diamond draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value) for i in range(5): if i%2==0: # Draw two diamonds draw(x_position_left, y_position, diamond_font, diamond_value) draw(x_position_right, y_position, diamond_font, diamond_value) else: # Draw two diamonds draw(x_position_middle, y_position, diamond_font, diamond_value) y_position += y_distance Output:</description></item><item><title>Python Reduce Example</title><link>https://arshovon.com/snippets/python-reduce-example/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/snippets/python-reduce-example/</guid><description> Get nth Fibonacci number using reduce from functools import reduce def get_first_n_fibonacci(n): if n&amp;lt;1: return [] ar = [0, 1] for i in range(2, n): ar.append(ar[i-1] + ar[i-2]) return ar[:n] def get_first_n_fibonacci_reduce(n): initializer = [0, 1] if n&amp;lt;2: return initializer[:n] ar = reduce(lambda fib, _: fib + [fib[-1] + fib[-2]], range(n-2), initializer) return ar if __name__ == &#39;__main__&#39;: assert get_first_n_fibonacci(5) == get_first_n_fibonacci_reduce(5) assert get_first_n_fibonacci(0) == get_first_n_fibonacci_reduce(0) assert get_first_n_fibonacci(1) == get_first_n_fibonacci_reduce(1) assert get_first_n_fibonacci(10) == get_first_n_fibonacci_reduce(10) List multiplication using reduce from functools import reduce def get_list_multiplication(ar): result = 1 for i in ar: result *= i return result def get_list_multiplication_using_reduce(ar): return reduce(lambda x, y: x*y, ar, 1) if __name__ == &#39;__main__&#39;: ar = [3, 1, 4, 5, -23] assert get_list_multiplication(ar) == get_list_multiplication_using_reduce(ar) Reference Python official documentation on reduce Gist file with these examples</description></item><item><title>Sort Python Dictionary</title><link>https://arshovon.com/snippets/python-sort-dictionary/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/snippets/python-sort-dictionary/</guid><description>Sort Python dict in various ways Original Data
+world_cup_wins = { &amp;quot;Brazil&amp;quot;: 5, &amp;quot;Germany&amp;quot;: 4, &amp;quot;Italy&amp;quot;: 4, &amp;quot;Argentina&amp;quot;: 2, &amp;quot;France&amp;quot;: 2, &amp;quot;Uruguay&amp;quot;: 2, &amp;quot;England&amp;quot;: 1, &amp;quot;Spain&amp;quot;: 1 } SORT DICTIONARY BY KEY ASCENDING for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0]): print(key, value) Output:
+Argentina 2 Brazil 5 England 1 France 2 Germany 4 Italy 4 Spain 1 Uruguay 2 SORT DICTIONARY BY KEY DESCENDING for key, value in sorted(world_cup_wins.</description></item><item><title>Periodic Table</title><link>https://arshovon.com/apps/periodic_table/</link><pubDate>Tue, 15 Sep 2015 17:15:10 +0600</pubDate><guid>https://arshovon.com/apps/periodic_table/</guid><description>Periodic Table The Periodic Table Developed by Ahmedur Rahman Shovon &amp; Imran Pollob Metals Non-Metals Alkali Metals Alkali Earth Metals Transitional Metals Lanthoids Actinoids Metaloids Halogens Noble Gas 1 H Hydrogen1.0079
+2 He Helium4.</description></item><item><title>Typespeed</title><link>https://arshovon.com/apps/typespeed/</link><pubDate>Sun, 05 Oct 2014 13:15:10 +0600</pubDate><guid>https://arshovon.com/apps/typespeed/</guid><description>body{ background: aliceblue; } .txtarea{ margin: 2px auto; width: 80%; padding: 10px; vertical-align: top; text-align: left; height: 62%; overflow: hidden; line-height: 30px; font-family: Verdana; font-size: 24px; color: black; border: 3px solid rgb(1, 1, 10); border-radius: 7px; background: white; } .txtarea div{ display: inline; } .highlight{ background: rgb(231, 223, 221); color: rgb(20, 133, 162); padding: 3px 6px; border: 2px solid rgb(185, 164, 168); border-radius: 5px; } .ac { color: green; } .</description></item><item><title>Meme Creator</title><link>https://arshovon.com/apps/meme_creator/</link><pubDate>Mon, 14 Jul 2014 16:13:50 +0600</pubDate><guid>https://arshovon.com/apps/meme_creator/</guid><description>Meme Creator @import url(http://fonts.googleapis.com/css?family=Changa+One); @import url(http://fonts.googleapis.com/css?family=Kavoon); @import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great); @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One); @import url(http://fonts.googleapis.com/css?family=Galindo); body{ margin: 2px auto; } #wrapper { width: 100%; margin: 0px auto; padding: 0px; } #content { width: 95%; padding: 0px 20px; margin: 10px auto; background: rgb(247, 247, 247); border: 1px solid rgba(147, 184, 189,0.8); -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset; -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.</description></item><item><title>Drumpad</title><link>https://arshovon.com/apps/drumpad/</link><pubDate>Fri, 02 Mar 2012 15:15:10 +0600</pubDate><guid>https://arshovon.com/apps/drumpad/</guid><description> Drumpad A (Ride-Cymbal) S (Tom1) D (Tom2) F (Crash-Cymbal) J (Bass) K (Snare) L (Open-Hi-Hat) ; (Closed-Hi-Hat) 1
+(two and four) 2
+(four on the floor) 3
+(one drop) 4
+(boom boom clap) DRUMPAD by Shovon
+(play drums using keyboard and or with mouse)</description></item></channel></rss>

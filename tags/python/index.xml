@@ -1,107 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>python on Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/tags/python/</link>
-    <description>Recent content in python on Ahmedur Rahman Shovon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 08:01:14 -0500</lastBuildDate>
-    
-	<atom:link href="https://arshovon.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>cuDF vs Pandas dataframe performance comparison</title>
-      <link>https://arshovon.com/blog/cudf-vs-df/</link>
-      <pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate>
-      
-      <guid>https://arshovon.com/blog/cudf-vs-df/</guid>
-      <description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description>
-    </item>
-    
-    <item>
-      <title>Run a Python script inside a virtual environment in the background</title>
-      <link>https://arshovon.com/blog/python-background/</link>
-      <pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate>
-      
-      <guid>https://arshovon.com/blog/python-background/</guid>
-      <description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description>
-    </item>
-    
-    <item>
-      <title>Sorting a list (Python 3)</title>
-      <link>https://arshovon.com/blog/sorting-a-list-python3/</link>
-      <pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/sorting-a-list-python3/</guid>
-      <description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/python/</link><description>Recent content in python on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 08:01:14 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>cuDF vs Pandas dataframe performance comparison</title><link>https://arshovon.com/blog/cudf-vs-df/</link><pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/cudf-vs-df/</guid><description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description></item><item><title>Run a Python script inside a virtual environment in the background</title><link>https://arshovon.com/blog/python-background/</link><pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate><guid>https://arshovon.com/blog/python-background/</guid><description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description></item><item><title>Sorting a list (Python 3)</title><link>https://arshovon.com/blog/sorting-a-list-python3/</link><pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate><guid>https://arshovon.com/blog/sorting-a-list-python3/</guid><description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
 Today we will sort a given list of strings in several ways to understand the Python 3 built-in sorted function .
-Dataset We will use the 50 U.S. states as our dataset.</description>
-    </item>
-    
-    <item>
-      <title>Adding a new column in Pandas dataframe based on existing columns</title>
-      <link>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</link>
-      <pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</guid>
-      <description>Adding a new column in Pandas dataframe based on existing columns Pandas dataframe allows adding new columns to it based on the values of the existing columns.
+Dataset We will use the 50 U.S. states as our dataset.</description></item><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/snippets/pandas-dataframe-add-calculated-column/</guid><description>Adding a new column in Pandas dataframe based on existing columns Pandas dataframe allows adding new columns to it based on the values of the existing columns.
 Example Scenario Suppose, a dataset contains Football match results of some matches like below:
-  Date Venue Opponent GF GA     08-27-2017 H Arsenal FC 4 0   09-16-2017 H Burnley FC 1 1    Here, GF stands for Goals For and GA stands for Goals Against (i.</description>
-    </item>
-    
-    <item>
-      <title>Python&#39;s combinations and combinations with replacement</title>
-      <link>https://arshovon.com/snippets/python-combinations_with_replacement/</link>
-      <pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/python-combinations_with_replacement/</guid>
-      <description>Python&amp;rsquo;s combinations and combinations with replacement A recent Stack Overflow question had me looking at how to find a list of four numbers each from -1 to 1 that sum up to 1.
-Problem statement Generate every combination of four numbers(a.k.a. quadruplets) from (-1, -0.99, -0.98, ..., 0.98, 0.99, 1) that sum up to 1. Repetitions of numbers are allowed. For example: [0, 1, 0.12, -0.12], [0, 0, 0.5, 0.</description>
-    </item>
-    
-    <item>
-      <title>Writing Django Custom Management Command</title>
-      <link>https://arshovon.com/blog/django-custom-command/</link>
-      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/django-custom-command/</guid>
-      <description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
- python manage.py runserver python manage.py makemigrations python manage.py migrate  These commands are built in and lies within Django itself.
+Date Venue Opponent GF GA 08-27-2017 H Arsenal FC 4 0 09-16-2017 H Burnley FC 1 1 Here, GF stands for Goals For and GA stands for Goals Against (i.</description></item><item><title>Python&#39;s combinations and combinations with replacement</title><link>https://arshovon.com/snippets/python-combinations_with_replacement/</link><pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate><guid>https://arshovon.com/snippets/python-combinations_with_replacement/</guid><description>Python&amp;rsquo;s combinations and combinations with replacement A recent Stack Overflow question had me looking at how to find a list of four numbers each from -1 to 1 that sum up to 1.
+Problem statement Generate every combination of four numbers(a.k.a. quadruplets) from (-1, -0.99, -0.98, ..., 0.98, 0.99, 1) that sum up to 1. Repetitions of numbers are allowed. For example: [0, 1, 0.12, -0.12], [0, 0, 0.5, 0.</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
+python manage.py runserver python manage.py makemigrations python manage.py migrate These commands are built in and lies within Django itself.
 We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.
-These custom admin commands can be invoked using manage.</description>
-    </item>
-    
-    <item>
-      <title>8-diamond</title>
-      <link>https://arshovon.com/snippets/8-diamond/</link>
-      <pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate>
-      
-      <guid>https://arshovon.com/snippets/8-diamond/</guid>
-      <description>Draw 8 of Diamond using Python
-__author__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; __license__ = &amp;quot;GPL&amp;quot; __version__ = &amp;quot;1.0.1&amp;quot; __maintainer__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; import turtle def draw(x_position, y_position, font, value): turtle.up() turtle.goto(x_position, y_position) turtle.write(value,font=font) turtle.down() turtle.hideturtle() canvas_width = 405 canvas_height = 490 turtle.setup(canvas_width, canvas_height, 0, 0) font_color = &#39;red&#39; turtle.color(font_color) turtle.title(&amp;quot;8 of diamond by arsho&amp;quot;) diamond_size = 100 small_diamond_size = 35 number_size = 40 diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, diamond_size, &amp;quot;normal&amp;quot;) small_diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, small_diamond_size, &amp;quot;normal&amp;quot;) number_font = (&amp;quot;Comic Sans MS&amp;quot;, number_size, &amp;quot;normal&amp;quot;) card_value = &amp;quot;8&amp;quot; diamond_value = &amp;quot;\u2666&amp;quot; x_position_left = -170 x_position_middle = -60 x_position_right = 50 y_position = -210 y_distance = 70 top_8_x_position = -190 top_8_y_position = 180 bottom_8_x_position = 150 bottom_8_y_position = -240 top_diamond_x_position = -193 top_diamond_y_position = 135 bottom_diamond_x_position = 145 bottom_diamond_y_position = -190 # Draw top 8 draw(top_8_x_position, top_8_y_position, number_font, card_value) # Draw top diamond draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value) # Draw bottom 8 draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value) # Draw bottom diamond draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value) for i in range(5): if i%2==0: # Draw two diamonds draw(x_position_left, y_position, diamond_font, diamond_value) draw(x_position_right, y_position, diamond_font, diamond_value) else: # Draw two diamonds draw(x_position_middle, y_position, diamond_font, diamond_value) y_position += y_distance  Output:</description>
-    </item>
-    
-    <item>
-      <title>Python Reduce Example</title>
-      <link>https://arshovon.com/snippets/python-reduce-example/</link>
-      <pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/python-reduce-example/</guid>
-      <description>  Get nth Fibonacci number using reduce from functools import reduce def get_first_n_fibonacci(n): if n&amp;lt;1: return [] ar = [0, 1] for i in range(2, n): ar.append(ar[i-1] + ar[i-2]) return ar[:n] def get_first_n_fibonacci_reduce(n): initializer = [0, 1] if n&amp;lt;2: return initializer[:n] ar = reduce(lambda fib, _: fib + [fib[-1] + fib[-2]], range(n-2), initializer) return ar if __name__ == &#39;__main__&#39;: assert get_first_n_fibonacci(5) == get_first_n_fibonacci_reduce(5) assert get_first_n_fibonacci(0) == get_first_n_fibonacci_reduce(0) assert get_first_n_fibonacci(1) == get_first_n_fibonacci_reduce(1) assert get_first_n_fibonacci(10) == get_first_n_fibonacci_reduce(10)  List multiplication using reduce from functools import reduce def get_list_multiplication(ar): result = 1 for i in ar: result *= i return result def get_list_multiplication_using_reduce(ar): return reduce(lambda x, y: x*y, ar, 1) if __name__ == &#39;__main__&#39;: ar = [3, 1, 4, 5, -23] assert get_list_multiplication(ar) == get_list_multiplication_using_reduce(ar)  Reference  Python official documentation on reduce Gist file with these examples  </description>
-    </item>
-    
-    <item>
-      <title>Sort Python Dictionary</title>
-      <link>https://arshovon.com/snippets/python-sort-dictionary/</link>
-      <pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/python-sort-dictionary/</guid>
-      <description>Sort Python dict in various ways Original Data
-world_cup_wins = { &amp;quot;Brazil&amp;quot;: 5, &amp;quot;Germany&amp;quot;: 4, &amp;quot;Italy&amp;quot;: 4, &amp;quot;Argentina&amp;quot;: 2, &amp;quot;France&amp;quot;: 2, &amp;quot;Uruguay&amp;quot;: 2, &amp;quot;England&amp;quot;: 1, &amp;quot;Spain&amp;quot;: 1 }  SORT DICTIONARY BY KEY ASCENDING for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0]): print(key, value)  Output:
-Argentina 2 Brazil 5 England 1 France 2 Germany 4 Italy 4 Spain 1 Uruguay 2  SORT DICTIONARY BY KEY DESCENDING for key, value in sorted(world_cup_wins.</description>
-    </item>
-    
-  </channel>
-</rss>
+These custom admin commands can be invoked using manage.</description></item><item><title>8-diamond</title><link>https://arshovon.com/snippets/8-diamond/</link><pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate><guid>https://arshovon.com/snippets/8-diamond/</guid><description>Draw 8 of Diamond using Python
+__author__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; __license__ = &amp;quot;GPL&amp;quot; __version__ = &amp;quot;1.0.1&amp;quot; __maintainer__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; import turtle def draw(x_position, y_position, font, value): turtle.up() turtle.goto(x_position, y_position) turtle.write(value,font=font) turtle.down() turtle.hideturtle() canvas_width = 405 canvas_height = 490 turtle.setup(canvas_width, canvas_height, 0, 0) font_color = &#39;red&#39; turtle.color(font_color) turtle.title(&amp;quot;8 of diamond by arsho&amp;quot;) diamond_size = 100 small_diamond_size = 35 number_size = 40 diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, diamond_size, &amp;quot;normal&amp;quot;) small_diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, small_diamond_size, &amp;quot;normal&amp;quot;) number_font = (&amp;quot;Comic Sans MS&amp;quot;, number_size, &amp;quot;normal&amp;quot;) card_value = &amp;quot;8&amp;quot; diamond_value = &amp;quot;\u2666&amp;quot; x_position_left = -170 x_position_middle = -60 x_position_right = 50 y_position = -210 y_distance = 70 top_8_x_position = -190 top_8_y_position = 180 bottom_8_x_position = 150 bottom_8_y_position = -240 top_diamond_x_position = -193 top_diamond_y_position = 135 bottom_diamond_x_position = 145 bottom_diamond_y_position = -190 # Draw top 8 draw(top_8_x_position, top_8_y_position, number_font, card_value) # Draw top diamond draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value) # Draw bottom 8 draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value) # Draw bottom diamond draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value) for i in range(5): if i%2==0: # Draw two diamonds draw(x_position_left, y_position, diamond_font, diamond_value) draw(x_position_right, y_position, diamond_font, diamond_value) else: # Draw two diamonds draw(x_position_middle, y_position, diamond_font, diamond_value) y_position += y_distance Output:</description></item><item><title>Python Reduce Example</title><link>https://arshovon.com/snippets/python-reduce-example/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/snippets/python-reduce-example/</guid><description> Get nth Fibonacci number using reduce from functools import reduce def get_first_n_fibonacci(n): if n&amp;lt;1: return [] ar = [0, 1] for i in range(2, n): ar.append(ar[i-1] + ar[i-2]) return ar[:n] def get_first_n_fibonacci_reduce(n): initializer = [0, 1] if n&amp;lt;2: return initializer[:n] ar = reduce(lambda fib, _: fib + [fib[-1] + fib[-2]], range(n-2), initializer) return ar if __name__ == &#39;__main__&#39;: assert get_first_n_fibonacci(5) == get_first_n_fibonacci_reduce(5) assert get_first_n_fibonacci(0) == get_first_n_fibonacci_reduce(0) assert get_first_n_fibonacci(1) == get_first_n_fibonacci_reduce(1) assert get_first_n_fibonacci(10) == get_first_n_fibonacci_reduce(10) List multiplication using reduce from functools import reduce def get_list_multiplication(ar): result = 1 for i in ar: result *= i return result def get_list_multiplication_using_reduce(ar): return reduce(lambda x, y: x*y, ar, 1) if __name__ == &#39;__main__&#39;: ar = [3, 1, 4, 5, -23] assert get_list_multiplication(ar) == get_list_multiplication_using_reduce(ar) Reference Python official documentation on reduce Gist file with these examples</description></item><item><title>Sort Python Dictionary</title><link>https://arshovon.com/snippets/python-sort-dictionary/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/snippets/python-sort-dictionary/</guid><description>Sort Python dict in various ways Original Data
+world_cup_wins = { &amp;quot;Brazil&amp;quot;: 5, &amp;quot;Germany&amp;quot;: 4, &amp;quot;Italy&amp;quot;: 4, &amp;quot;Argentina&amp;quot;: 2, &amp;quot;France&amp;quot;: 2, &amp;quot;Uruguay&amp;quot;: 2, &amp;quot;England&amp;quot;: 1, &amp;quot;Spain&amp;quot;: 1 } SORT DICTIONARY BY KEY ASCENDING for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0]): print(key, value) Output:
+Argentina 2 Brazil 5 England 1 France 2 Germany 4 Italy 4 Spain 1 Uruguay 2 SORT DICTIONARY BY KEY DESCENDING for key, value in sorted(world_cup_wins.</description></item></channel></rss>

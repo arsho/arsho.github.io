@@ -1,28 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>tree on Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/tags/tree/</link>
-    <description>Recent content in tree on Ahmedur Rahman Shovon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 06 May 2019 15:05:42 +0600</lastBuildDate>
-    
-	<atom:link href="https://arshovon.com/tags/tree/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Install CLI Tools Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link>
-      <pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid>
-      <description>Install basic development CLI tools in Ubuntu 18.04. It includes:
- oh-my-zsh idle venv git tree  Install Git in Ubuntu 18.04 LTS  Install Git:
-sudo apt install git  Add global configuration for Git user:
-git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot;  Add SSH. Details can be found in this gist
-  Install Oh My Zsh in Ubuntu 18.04 LTS  Install Zsh:</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tree on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/tree/</link><description>Recent content in tree on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 06 May 2019 15:05:42 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/tree/index.xml" rel="self" type="application/rss+xml"/><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>Install basic development CLI tools in Ubuntu 18.04. It includes:
+oh-my-zsh idle venv git tree Install Git in Ubuntu 18.04 LTS Install Git:
+sudo apt install git Add global configuration for Git user:
+git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Add SSH. Details can be found in this gist
+Install Oh My Zsh in Ubuntu 18.04 LTS Install Zsh:</description></item></channel></rss>

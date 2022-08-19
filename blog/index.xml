@@ -1,264 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog on Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/blog/</link>
-    <description>Recent content in Blog on Ahmedur Rahman Shovon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 13 Sep 2018 22:31:21 +0800</lastBuildDate>
-    
-	<atom:link href="https://arshovon.com/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>cuDF vs Pandas dataframe performance comparison</title>
-      <link>https://arshovon.com/blog/cudf-vs-df/</link>
-      <pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate>
-      
-      <guid>https://arshovon.com/blog/cudf-vs-df/</guid>
-      <description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description>
-    </item>
-    
-    <item>
-      <title>Run a Python script inside a virtual environment in the background</title>
-      <link>https://arshovon.com/blog/python-background/</link>
-      <pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate>
-      
-      <guid>https://arshovon.com/blog/python-background/</guid>
-      <description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description>
-    </item>
-    
-    <item>
-      <title>Sorting a list (Python 3)</title>
-      <link>https://arshovon.com/blog/sorting-a-list-python3/</link>
-      <pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/sorting-a-list-python3/</guid>
-      <description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Ahmedur Rahman Shovon</title><link>https://arshovon.com/blog/</link><description>Recent content in Blog on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Sep 2018 22:31:21 +0800</lastBuildDate><atom:link href="https://arshovon.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>cuDF vs Pandas dataframe performance comparison</title><link>https://arshovon.com/blog/cudf-vs-df/</link><pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/cudf-vs-df/</guid><description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description></item><item><title>Run a Python script inside a virtual environment in the background</title><link>https://arshovon.com/blog/python-background/</link><pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate><guid>https://arshovon.com/blog/python-background/</guid><description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description></item><item><title>Sorting a list (Python 3)</title><link>https://arshovon.com/blog/sorting-a-list-python3/</link><pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate><guid>https://arshovon.com/blog/sorting-a-list-python3/</guid><description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
 Today we will sort a given list of strings in several ways to understand the Python 3 built-in sorted function .
-Dataset We will use the 50 U.S. states as our dataset.</description>
-    </item>
-    
-    <item>
-      <title>Merge Sort</title>
-      <link>https://arshovon.com/blog/merge-sort/</link>
-      <pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/merge-sort/</guid>
-      <description>Divide and conquer strategy and merge sort In a divide and conquer strategy, a problem is divided into multiple subproblems. These subproblems are similar to the original problem but smaller in size. The divide and conquer strategy solves these subproblems recursively. Then it combines the solutions of the subproblems to develop a final solution for the original problem. Thus, the divide and conquer strategy has two parts: divide and conquer.</description>
-    </item>
-    
-    <item>
-      <title>Bubble Sort</title>
-      <link>https://arshovon.com/blog/bubble-sort/</link>
-      <pubDate>Wed, 28 Apr 2021 03:03:14 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/bubble-sort/</guid>
-      <description>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in n iterations, all n elements are sorted accordingly.
-Bubble sort characteristics Impractical Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</description>
-    </item>
-    
-    <item>
-      <title>Install Gatsby on Ubuntu 20.04</title>
-      <link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link>
-      <pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid>
-      <description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Time Complexity</title>
-      <link>https://arshovon.com/blog/understanding-time-complexity/</link>
-      <pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/understanding-time-complexity/</guid>
-      <description>Algorithm efficiency The efficiency of an algorithm is mainly measured by time complexity and space complexity. Time complexity describes the computational time required to run an algorithm for a set of input elements. It is generally expressed as a function of the size of the input.
-Asymptotic notations Three types of asymptotic notations are used to express both the time complexity and space complexity of an algorithm. We will compare these notations by three different scenarios of the same algorithm, the linear search algorithm.</description>
-    </item>
-    
-    <item>
-      <title>Run YesWorkflow Docker Image on Ubuntu 20.04</title>
-      <link>https://arshovon.com/blog/yesworkflow-docker-run/</link>
-      <pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid>
-      <description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
-Run Docker image of YesWorkflow  Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
-import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description>
-    </item>
-    
-    <item>
-      <title>Install Avro Phonetic in Ubuntu 20.04 LTS</title>
-      <link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link>
-      <pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid>
-      <description>How to install Avro Phonetic in Ubuntu 20.04 LTS  Open Ubuntu Software Search Avro Phonetic in Ubuntu Software  Click Install  Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language  Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic)  The Avro Phonetic will be added to the Input Sources  Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut   References  Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description>
-    </item>
-    
-    <item>
-      <title>Create custom email address and attach with Gmail</title>
-      <link>https://arshovon.com/blog/custom-email-with-gmail/</link>
-      <pubDate>Wed, 14 Oct 2020 13:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/custom-email-with-gmail/</guid>
-      <description>Scenario  I have a Gmail address (e.g.: free@gmail.com) I have a domain (e.g.: example.com) I want to make a custom email address with own domain (e.g.: hello@example.com) I want to receive all the emails sent to custom email address in my Gmail (e.g.: hello@example.com -&amp;gt; free@gmail.com) I want to send email from custom email address while sending emails from my Gmail (e.g.: select hello@example.com as sender from free@gmail.com)  Solution Set up email forwarding The first step is to set up email forwarding in the domain management dashboard.</description>
-    </item>
-    
-    <item>
-      <title>Install Docker on Raspberry Pi</title>
-      <link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link>
-      <pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid>
-      <description>Environment   Operating System : Raspbian GNU/Linux 9 (stretch)  Model : Raspberry Pi 2 (Model B)  Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
-Raspian Information  Check the model of the Raspberry Pi:
-cat /proc/device-tree/model  It confirms that I have a Raspberry Pi 2 (Model B)
-Raspberry Pi 2 Model B Rev 1.1  Check the Operating System (OS) of the Raspberry Pi:</description>
-    </item>
-    
-    <item>
-      <title>Sorting Algorithm Comparisons</title>
-      <link>https://arshovon.com/blog/sorting-algorithm-comparisons/</link>
-      <pubDate>Sat, 15 Aug 2020 02:06:33 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/sorting-algorithm-comparisons/</guid>
-      <description>Sorting Algorithm Comparisons Table   Criteria Bubble Selection Insertion Merge Quick Counting Timsort     Technique Brute force Brute force Brute force Divide-and-conquer Divide-and-conquer Non comparison Hybrid   Worst Time O(n2) O(n2) O(n2) O(nlgn) O(n2) O(k+n) O(nlgn)   Average Time Θ(n2) Θ(n2) Θ(n2) Θ(nlgn) Θ(nlgn) Θ(k+n) Θ(nlgn)   Best Time Ω(n) Ω(n2) Ω(n) Ω(nlgn) Ω(nlgn) Ω(k+n) Ω(n)   Space O(1) O(1) O(1) O(n) O(n) O(k+n) O(n)   Stable Yes No Yes Yes No Yes Yes   In-place Yes Yes Yes No Yes No    Online No No Yes No No No No   Adaptive Yes No Yes No Yes No Yes   Suitable for Sorted list  Almost sorted list List with unknown order  0&amp;lt;=A[i]&amp;lt;=k     Criteria Explanation  Technique: Methodology of the sorting algorithm.</description>
-    </item>
-    
-    <item>
-      <title>Insertion Sort</title>
-      <link>https://arshovon.com/blog/insertion-sort/</link>
-      <pubDate>Tue, 11 Aug 2020 02:06:33 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/insertion-sort/</guid>
-      <description>Characteristics Simple implementation Insertion sort can be implemented easily with less lines of code. It is quite efficient for small data sets. Though it has same complexity than other quadratic sorting algorithms like selection sort or bubble sort, insertion sort is more efficient.
+Dataset We will use the 50 U.S. states as our dataset.</description></item><item><title>Merge Sort</title><link>https://arshovon.com/blog/merge-sort/</link><pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate><guid>https://arshovon.com/blog/merge-sort/</guid><description>Divide and conquer strategy and merge sort In a divide and conquer strategy, a problem is divided into multiple subproblems. These subproblems are similar to the original problem but smaller in size. The divide and conquer strategy solves these subproblems recursively. Then it combines the solutions of the subproblems to develop a final solution for the original problem. Thus, the divide and conquer strategy has two parts: divide and conquer.</description></item><item><title>Bubble Sort</title><link>https://arshovon.com/blog/bubble-sort/</link><pubDate>Wed, 28 Apr 2021 03:03:14 +0600</pubDate><guid>https://arshovon.com/blog/bubble-sort/</guid><description>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in n iterations, all n elements are sorted accordingly.
+Bubble sort characteristics Impractical Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</description></item><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description></item><item><title>Understanding Time Complexity</title><link>https://arshovon.com/blog/understanding-time-complexity/</link><pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate><guid>https://arshovon.com/blog/understanding-time-complexity/</guid><description>Algorithm efficiency The efficiency of an algorithm is mainly measured by time complexity and space complexity. Time complexity describes the computational time required to run an algorithm for a set of input elements. It is generally expressed as a function of the size of the input.
+Asymptotic notations Three types of asymptotic notations are used to express both the time complexity and space complexity of an algorithm. We will compare these notations by three different scenarios of the same algorithm, the linear search algorithm.</description></item><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
+Run Docker image of YesWorkflow Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
+import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description></item><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>How to install Avro Phonetic in Ubuntu 20.04 LTS Open Ubuntu Software Search Avro Phonetic in Ubuntu Software Click Install Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic) The Avro Phonetic will be added to the Input Sources Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut References Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description></item><item><title>Create custom email address and attach with Gmail</title><link>https://arshovon.com/blog/custom-email-with-gmail/</link><pubDate>Wed, 14 Oct 2020 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/custom-email-with-gmail/</guid><description>Scenario I have a Gmail address (e.g.: free@gmail.com) I have a domain (e.g.: example.com) I want to make a custom email address with own domain (e.g.: hello@example.com) I want to receive all the emails sent to custom email address in my Gmail (e.g.: hello@example.com -&amp;gt; free@gmail.com) I want to send email from custom email address while sending emails from my Gmail (e.g.: select hello@example.com as sender from free@gmail.com) Solution Set up email forwarding The first step is to set up email forwarding in the domain management dashboard.</description></item><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>Environment Operating System : Raspbian GNU/Linux 9 (stretch) Model : Raspberry Pi 2 (Model B) Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
+Raspian Information Check the model of the Raspberry Pi:
+cat /proc/device-tree/model It confirms that I have a Raspberry Pi 2 (Model B)
+Raspberry Pi 2 Model B Rev 1.1 Check the Operating System (OS) of the Raspberry Pi:</description></item><item><title>Sorting Algorithm Comparisons</title><link>https://arshovon.com/blog/sorting-algorithm-comparisons/</link><pubDate>Sat, 15 Aug 2020 02:06:33 +0600</pubDate><guid>https://arshovon.com/blog/sorting-algorithm-comparisons/</guid><description>Sorting Algorithm Comparisons Table Criteria Bubble Selection Insertion Merge Quick Counting Timsort Technique Brute force Brute force Brute force Divide-and-conquer Divide-and-conquer Non comparison Hybrid Worst Time O(n2) O(n2) O(n2) O(nlgn) O(n2) O(k+n) O(nlgn) Average Time Θ(n2) Θ(n2) Θ(n2) Θ(nlgn) Θ(nlgn) Θ(k+n) Θ(nlgn) Best Time Ω(n) Ω(n2) Ω(n) Ω(nlgn) Ω(nlgn) Ω(k+n) Ω(n) Space O(1) O(1) O(1) O(n) O(n) O(k+n) O(n) Stable Yes No Yes Yes No Yes Yes In-place Yes Yes Yes No Yes No Online No No Yes No No No No Adaptive Yes No Yes No Yes No Yes Suitable for Sorted list Almost sorted list List with unknown order 0&amp;lt;=A[i]&amp;lt;=k Criteria Explanation Technique: Methodology of the sorting algorithm.</description></item><item><title>Insertion Sort</title><link>https://arshovon.com/blog/insertion-sort/</link><pubDate>Tue, 11 Aug 2020 02:06:33 +0600</pubDate><guid>https://arshovon.com/blog/insertion-sort/</guid><description>Characteristics Simple implementation Insertion sort can be implemented easily with less lines of code. It is quite efficient for small data sets. Though it has same complexity than other quadratic sorting algorithms like selection sort or bubble sort, insertion sort is more efficient.
 Adaptive Insertion sort is adaptive. If the input data set is already sorted, the number of steps are reduced.
-Online Insertion sort works on the data as it receives it.</description>
-    </item>
-    
-    <item>
-      <title>Counting Sort</title>
-      <link>https://arshovon.com/blog/counting-sort/</link>
-      <pubDate>Sun, 09 Aug 2020 11:07:32 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/counting-sort/</guid>
-      <description>Characteristics Non negative integers with a known maximum value Counting sort can be applied if the input numbers are in the set {0, 1, .. ,k}, a set of non negative integers with a maximum value k.
-No comparisons between elements There are no comparisons between input elements that take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies the relative positions of each input element.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to django CMS</title>
-      <link>https://arshovon.com/blog/introduction-to-django-cms/</link>
-      <pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/introduction-to-django-cms/</guid>
-      <description>Introduction to django CMS In this article we will:
- Learn about django CMS Analyze its features Setup an application with django CMS with full installation guidelines  About django CMS django CMS is an open source enterprise content management system based on the Django framework.
+Online Insertion sort works on the data as it receives it.</description></item><item><title>Counting Sort</title><link>https://arshovon.com/blog/counting-sort/</link><pubDate>Sun, 09 Aug 2020 11:07:32 +0600</pubDate><guid>https://arshovon.com/blog/counting-sort/</guid><description>Characteristics Non negative integers with a known maximum value Counting sort can be applied if the input numbers are in the set {0, 1, .. ,k}, a set of non negative integers with a maximum value k.
+No comparisons between elements There are no comparisons between input elements that take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies the relative positions of each input element.</description></item><item><title>Introduction to django CMS</title><link>https://arshovon.com/blog/introduction-to-django-cms/</link><pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate><guid>https://arshovon.com/blog/introduction-to-django-cms/</guid><description>Introduction to django CMS In this article we will:
+Learn about django CMS Analyze its features Setup an application with django CMS with full installation guidelines About django CMS django CMS is an open source enterprise content management system based on the Django framework.
 django CMS is voted Best Open Source CMS in 2015. [Announcing the 2015 Winner for Best Open Source CMS]
-django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease.</description>
-    </item>
-    
-    <item>
-      <title>Use SSH to logging into Raspberry Pi without Password</title>
-      <link>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</link>
-      <pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</guid>
-      <description>Scenario We can login into remote Raspberry Pi using ssh command:
-ssh -p PORT USER@IP password: RASPBERRY_PASSWORD  As it can be seen, we require to input the Raspberry Pi&amp;rsquo;s password each time to establish SSH connection.
+django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease.</description></item><item><title>Use SSH to logging into Raspberry Pi without Password</title><link>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</link><pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate><guid>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</guid><description>Scenario We can login into remote Raspberry Pi using ssh command:
+ssh -p PORT USER@IP password: RASPBERRY_PASSWORD As it can be seen, we require to input the Raspberry Pi&amp;rsquo;s password each time to establish SSH connection.
 Solution: Add local machine&amp;rsquo;s SSH key to Raspberry Pi for password less SSH connection To resolve the scenario, we need to add our local machine&amp;rsquo;s SSH key to the Raspberry Pi.
- Check if you have SSH key in local machine using:</description>
-    </item>
-    
-    <item>
-      <title>Setup Odoo with Docker Compose</title>
-      <link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link>
-      <pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid>
-      <description>What is Odoo? Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in Python, JavaScript and XML.</description>
-    </item>
-    
-    <item>
-      <title>Develop Flask Application using Docker and Bootstrap Templates</title>
-      <link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link>
-      <pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid>
-      <description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
-Environment   Operating System : Ubuntu 18.04 LTS (64-bit)  Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12  Memory : 15.3 GiB  Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description>
-    </item>
-    
-    <item>
-      <title>Install Docker Compose on Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link>
-      <pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid>
-      <description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
-Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description>
-    </item>
-    
-    <item>
-      <title>Install Docker on Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</link>
-      <pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</guid>
-      <description>Why Docker? Docker is a tool for running application in an isolated environment.
+Check if you have SSH key in local machine using:</description></item><item><title>Setup Odoo with Docker Compose</title><link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link><pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate><guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid><description>What is Odoo? Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in Python, JavaScript and XML.</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
+Environment Operating System : Ubuntu 18.04 LTS (64-bit) Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12 Memory : 15.3 GiB Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
+Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description></item><item><title>Install Docker on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-18-04/</guid><description>Why Docker? Docker is a tool for running application in an isolated environment.
 Some reasons you might want to use Docker:
-  Same environment:  Same environment in developers machines and production servers. Acts the same.  Sandbox projects:  Eliminates the risk of getting conflicts while working on different projects on same machine.  Easy working without setup hassle:  Start working directly on others projects without setting all of the environments.</description>
-    </item>
-    
-    <item>
-      <title>Run Java Program in Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</link>
-      <pubDate>Tue, 28 Jan 2020 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</guid>
-      <description>Run Java Program in Ubuntu 18.04. The program will be run using Oracle&#39;s OpenJDK JDK 8.
- Check if Java Runtime Environment(JRE) is installed in machine:
-java -version  If JRE is installed it will show the version information similar to following:
-openjdk 11.0.5 2019-10-15 OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04) OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode)  If you do not have installed JRE, install JRE using:</description>
-    </item>
-    
-    <item>
-      <title>Writing Django Custom Management Command</title>
-      <link>https://arshovon.com/blog/django-custom-command/</link>
-      <pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/django-custom-command/</guid>
-      <description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
- python manage.py runserver python manage.py makemigrations python manage.py migrate  These commands are built in and lies within Django itself.
+Same environment: Same environment in developers machines and production servers. Acts the same. Sandbox projects: Eliminates the risk of getting conflicts while working on different projects on same machine. Easy working without setup hassle: Start working directly on others projects without setting all of the environments.</description></item><item><title>Run Java Program in Ubuntu 18.04</title><link>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</link><pubDate>Tue, 28 Jan 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</guid><description>Run Java Program in Ubuntu 18.04. The program will be run using Oracle&#39;s OpenJDK JDK 8.
+Check if Java Runtime Environment(JRE) is installed in machine:
+java -version If JRE is installed it will show the version information similar to following:
+openjdk 11.0.5 2019-10-15 OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04) OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode) If you do not have installed JRE, install JRE using:</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
+python manage.py runserver python manage.py makemigrations python manage.py migrate These commands are built in and lies within Django itself.
 We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.
-These custom admin commands can be invoked using manage.</description>
-    </item>
-    
-    <item>
-      <title>Basic features of Saas with example</title>
-      <link>https://arshovon.com/blog/saas-basic-features/</link>
-      <pubDate>Mon, 06 May 2019 16:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/saas-basic-features/</guid>
-      <description>Sass(Syntactically Awesome Style Sheets) is the most mature, stable, and powerful professional grade CSS extension language in the world.
-Features  CSS Compatible: Sass is completely compatible with all versions of CSS. Mature: Sass has been actively supported for about 12 years by its loving Core Team. Frameworks: Popular frameworks built with Sass -&amp;gt; Compass, Bourbon, and Susy. Nesting: HTML elements are nested. But CSS elements are not nested by default.</description>
-    </item>
-    
-    <item>
-      <title>Install CLI Tools Ubuntu 18.04</title>
-      <link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link>
-      <pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid>
-      <description>Install basic development CLI tools in Ubuntu 18.04. It includes:
- oh-my-zsh idle venv git tree  Install Git in Ubuntu 18.04 LTS  Install Git:
-sudo apt install git  Add global configuration for Git user:
-git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot;  Add SSH. Details can be found in this gist
-  Install Oh My Zsh in Ubuntu 18.04 LTS  Install Zsh:</description>
-    </item>
-    
-  </channel>
-</rss>
+These custom admin commands can be invoked using manage.</description></item><item><title>Basic features of Saas with example</title><link>https://arshovon.com/blog/saas-basic-features/</link><pubDate>Mon, 06 May 2019 16:05:42 +0600</pubDate><guid>https://arshovon.com/blog/saas-basic-features/</guid><description>Sass(Syntactically Awesome Style Sheets) is the most mature, stable, and powerful professional grade CSS extension language in the world.
+Features CSS Compatible: Sass is completely compatible with all versions of CSS. Mature: Sass has been actively supported for about 12 years by its loving Core Team. Frameworks: Popular frameworks built with Sass -&amp;gt; Compass, Bourbon, and Susy. Nesting: HTML elements are nested. But CSS elements are not nested by default.</description></item><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>Install basic development CLI tools in Ubuntu 18.04. It includes:
+oh-my-zsh idle venv git tree Install Git in Ubuntu 18.04 LTS Install Git:
+sudo apt install git Add global configuration for Git user:
+git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Add SSH. Details can be found in this gist
+Install Oh My Zsh in Ubuntu 18.04 LTS Install Zsh:</description></item></channel></rss>

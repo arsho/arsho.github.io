@@ -1,38 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>flask on Ahmedur Rahman Shovon</title>
-    <link>https://arshovon.com/tags/flask/</link>
-    <description>Recent content in flask on Ahmedur Rahman Shovon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 14 Mar 2020 07:05:42 +0600</lastBuildDate>
-    
-	<atom:link href="https://arshovon.com/tags/flask/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Develop Flask Application using Docker and Bootstrap Templates</title>
-      <link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link>
-      <pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate>
-      
-      <guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid>
-      <description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
-Environment   Operating System : Ubuntu 18.04 LTS (64-bit)  Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12  Memory : 15.3 GiB  Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description>
-    </item>
-    
-    <item>
-      <title>Example of using Bootstrap&#39;s navbar in Flask</title>
-      <link>https://arshovon.com/snippets/flask-bootstrap-navbar/</link>
-      <pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate>
-      
-      <guid>https://arshovon.com/snippets/flask-bootstrap-navbar/</guid>
-      <description>Example of using Bootstrap 4&amp;rsquo;s navbar for dynamic routing in Flask.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>flask on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/flask/</link><description>Recent content in flask on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Mar 2020 07:05:42 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/flask/index.xml" rel="self" type="application/rss+xml"/><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
+Environment Operating System : Ubuntu 18.04 LTS (64-bit) Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12 Memory : 15.3 GiB Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description></item><item><title>Example of using Bootstrap&#39;s navbar in Flask</title><link>https://arshovon.com/snippets/flask-bootstrap-navbar/</link><pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate><guid>https://arshovon.com/snippets/flask-bootstrap-navbar/</guid><description>Example of using Bootstrap 4&amp;rsquo;s navbar for dynamic routing in Flask.
 Directory structure:
-. ├── app.py ├── requirements.txt └── templates └── index.html  app.py:
-from flask import Flask, render_template app = Flask(__name__) @app.route(&amp;quot;/&amp;quot;) def view_home(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Home page&amp;quot;) @app.route(&amp;quot;/first&amp;quot;) def view_first_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;First page&amp;quot;) @app.route(&amp;quot;/second&amp;quot;) def view_second_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Second page&amp;quot;)  index.html:
-&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- Required meta tags --&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, shrink-to-fit=no&amp;quot;&amp;gt; &amp;lt;!</description>
-    </item>
-    
-  </channel>
-</rss>
+. ├── app.py ├── requirements.txt └── templates └── index.html app.py:
+from flask import Flask, render_template app = Flask(__name__) @app.route(&amp;quot;/&amp;quot;) def view_home(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Home page&amp;quot;) @app.route(&amp;quot;/first&amp;quot;) def view_first_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;First page&amp;quot;) @app.route(&amp;quot;/second&amp;quot;) def view_second_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Second page&amp;quot;) index.html:
+&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- Required meta tags --&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, shrink-to-fit=no&amp;quot;&amp;gt; &amp;lt;!</description></item></channel></rss>
