@@ -1,19 +1,30 @@
 hljs.initHighlightingOnLoad();
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-            $('#back-to-top').fadeIn();
-        } else {
-            $('#back-to-top').fadeOut();
-        }
-    });
-    // scroll body to 0px on click
-    $('#back-to-top').on("click", function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 400);
-        return false;
-    });
-    $("#container").show();
-})
+var back_to_top = document.getElementById("back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        back_to_top.classList.add("d-block");
+        back_to_top.classList.remove("d-none");
+    } else {
+        back_to_top.classList.add("d-none");
+        back_to_top.classList.remove("d-block");
+    }
+}
+
+function scroll_to_top() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+back_to_top.addEventListener('click', () => {
+    scroll_to_top();
+});
+
