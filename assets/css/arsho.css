@@ -114,10 +114,6 @@ p {
     margin: 10px auto 0px auto;
 }
 
-.profile-photo {
-    max-height: 150px;
-}
-
 /* Content */
 .blog > article > h3 {
     margin-top: 2rem;
