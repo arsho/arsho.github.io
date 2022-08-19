@@ -211,11 +211,6 @@ img[src$="center"] {
     linear-gradient(to bottom right, #545e6c 0%, transparent 3%, transparent 97%, #545e6c 100%);
 }
 
-.sidebar-control-wrapper {
-    margin-left: 3.1rem;
-    margin-bottom: -2rem;
-}
-
 @media only screen and (max-width: 600px) {
     .icon-left {
         margin-left: 0rem;
