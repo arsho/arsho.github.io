@@ -33,6 +33,18 @@ a {
     color: #1a454f;
 }
 
+.side-menu a {
+    color: initial;
+}
+
+.side-menu a:hover {
+    color: #1a454f;
+}
+
+.side-menu .list-group-item .active {
+    color: #2d7788;
+}
+
 a:focus {
     text-decoration: none;
 }
@@ -142,6 +154,10 @@ p {
     color: #0A2848;
 }
 
+.side-menu {
+    top: 25%;
+}
+
 .skill_item {
     padding-bottom: 15px;
     clear: both;
@@ -214,5 +230,11 @@ img[src$="center"] {
 
     .article-header {
         margin: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1079px) {
+    .side-menu {
+        visibility: hidden;
     }
 }
