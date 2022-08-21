@@ -41,10 +41,6 @@ a {
     color: #1a454f;
 }
 
-.side-menu .list-group-item .active {
-    color: #2d7788;
-}
-
 a:focus {
     text-decoration: none;
 }
