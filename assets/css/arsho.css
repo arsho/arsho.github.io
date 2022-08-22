@@ -34,7 +34,7 @@ a {
 }
 
 .side-menu a {
-    color: initial;
+    /*color: initial;*/
 }
 
 .side-menu a:hover {
@@ -160,6 +160,9 @@ p {
     display: block;
 }
 
+#back-to-top{
+    margin-top: -3rem;
+}
 /* Code Syntax */
 
 code {
