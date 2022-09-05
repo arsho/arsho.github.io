@@ -33,10 +33,6 @@ a {
     color: #1a454f;
 }
 
-.side-menu a {
-    /*color: initial;*/
-}
-
 .side-menu a:hover {
     color: #1a454f;
 }
@@ -151,7 +147,7 @@ p {
 }
 
 .side-menu {
-    top: 25%;
+    top: 15%;
 }
 
 .skill_item {
