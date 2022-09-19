@@ -252,7 +252,7 @@ img[src$="center"] {
         overflow: visible !important;
     }
 
-    pre, code{
+    pre, code {
         width: 100% !important;
     }
 
@@ -275,7 +275,6 @@ img[src$="center"] {
 
     @page {
         margin: 0.75cm !important;
-        /*margin-bottom: 0.5cm;*/
     }
 
     p, h2, h3 {
@@ -291,5 +290,23 @@ img[src$="center"] {
         -webkit-box-shadow: none !important;
         -moz-box-shadow: none !important;
         box-shadow: none !important;
+    }
+
+    .float-md-end{
+        float: right !important;
+        color: inherit !important;
+    }
+
+    .border-dashed-main {
+        border-bottom: 2px dashed #000000 !important;
+    }
+
+    .tooltip {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .text-muted{
+        color: inherit !important;
     }
 }

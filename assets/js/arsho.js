@@ -27,3 +27,7 @@ back_to_top.addEventListener('click', () => {
     scroll_to_top();
 });
 
+var print_btn = document.getElementById("print-button");
+print_btn.onclick = function () {
+    window.print();
+};
