@@ -1,22 +1,27 @@
+Array.prototype.shuffle = function () {
+    let m = this.length, i;
+    while (m) {
+        i = (Math.random() * m--) >>> 0;
+        [this[m], this[i]] = [this[i], this[m]]
+    }
+    return this;
+}
 $(document).ready(function () {
     Chart.register(ChartDataLabels);
     let default_colors = [CHART_COLORS.green, CHART_COLORS.red,
         CHART_COLORS.purple, CHART_COLORS.blue, CHART_COLORS.yellow,
         CHART_COLORS.orange];
-
-    function set_subject_options() {
-        let dfc_2500_total_subjects = 316;
-        let dfc_1400_total_subjects = 10;
-        let subjects = '';
-        for (var i = 1; i <= dfc_2500_total_subjects; i++) {
-            subjects += "<option value='" + i + "'>Subject " + i + "</option>";
-        }
-        subjects = '';
-        for (var i = 1; i <= dfc_1400_total_subjects; i++) {
+    // default_colors = default_colors.shuffle();
+    function set_subject_options()
+    {
+        let total_subjects = 10;
+        let subjects = '<option value="0">None</option>';
+        for (var i = 1; i <= total_subjects; i++) {
             subjects += "<option value='" + i + "'>Subject " + i + "</option>";
         }
         $("#subject_id_2500").html(subjects);
         $("#subject_id_1400").html(subjects);
+        $("#subject_id_645").html(subjects);
     }
 
     set_subject_options();
@@ -66,7 +71,7 @@ $(document).ready(function () {
                 backgroundColor: current_chart_color,
                 pointStyle: 'circle',
                 borderWidth: 1,
-                pointRadius: 8,
+                pointRadius: 4,
                 hoverRadius: 0,
                 hoverBorderWidth: 1
             };
@@ -75,14 +80,16 @@ $(document).ready(function () {
         return datasets;
     }
 
-    function get_datasets(subjects_2500, subjects_1400) {
+    function get_datasets(subjects_2500, subjects_1400, subjects_645) {
         let dfc_2500_data_path = 'dfc_2500_subjects_mds';
         let dfc_2500_data_label = 'DFC 2500: ';
         let dfc_1400_data_path = 'dfc_1400_subjects_mds';
         let dfc_1400_data_label = 'DFC 1400: ';
+        let dfc_645_data_path = 'dfc_645_subjects_mds';
+        let dfc_645_data_label = 'DFC 645: ';
         let fixed_color = false;
         let color_start = 0;
-        if (subjects_1400.length + subjects_2500.length <= 6) {
+        if (subjects_1400.length + subjects_2500.length + subjects_645.length <= 6) {
             fixed_color = true;
         }
         let dfc_2500_dataset = get_specific_dataset(subjects_2500,
@@ -90,12 +97,16 @@ $(document).ready(function () {
             fixed_color, color_start);
         let dfc_1400_dataset = get_specific_dataset(subjects_1400,
             dfc_1400_data_path, dfc_1400_data_label,
-            fixed_color, subjects_2500.length);
-        return dfc_2500_dataset.concat(dfc_1400_dataset);
+            fixed_color, subjects_2500.length + 1);
+        let dfc_645_dataset = get_specific_dataset(subjects_645,
+            dfc_645_data_path, dfc_645_data_label,
+            fixed_color, subjects_2500.length + subjects_645.length + 1);
+        return dfc_2500_dataset.concat(dfc_1400_dataset.concat(dfc_645_dataset));
     }
 
     function show_graph(datasets, chart_title) {
         Chart.defaults.color = '#000';
+        Chart.defaults.font.size = 22;
         const canvas_background_plugin = {
             id: 'custom_canvas_background_color', beforeDraw: (chart) => {
                 const ctx = chart.canvas.getContext('2d');
@@ -111,17 +122,20 @@ $(document).ready(function () {
             type: 'bubble', data: {
                 datasets: datasets,
             }, options: {
-                animation: false, responsive: true, plugins: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                plugins: {
                     datalabels: {
                         font: {
-                            size: 9,
+                            size: 0,
                         }, formatter: function (value) {
                             return Math.round(value.label);
                         }, offset: 2, padding: 0
                     }, legend: {
                         position: 'top',
                     }, title: {
-                        display: true, text: chart_title, padding: {
+                        display: false, text: chart_title, padding: {
                             top: 10, bottom: 10
                         }, font: {
                             size: 18
@@ -144,7 +158,9 @@ $(document).ready(function () {
         if (typeof old_chart !== 'undefined') {
             old_chart.destroy();
         }
-        new Chart(ctx, config);
+        chart = new Chart(ctx, config);
+        chart.canvas.style.height = '700px';
+        chart.canvas.style.width = '350px';
     }
 
     $(".download_chart").on("click", function () {
@@ -184,10 +200,12 @@ $(document).ready(function () {
     });
     $(".graph_data_btn").on("click", function () {
         var subjects_2500 = $('#subject_id_2500 option:selected')
-            .toArray().map(item => item.value);
+            .toArray().map(item => item.value).filter(item => item !== "0");
         var subjects_1400 = $('#subject_id_1400 option:selected')
-            .toArray().map(item => item.value);
-        var datasets = get_datasets(subjects_2500, subjects_1400);
+            .toArray().map(item => item.value).filter(item => item !== "0");
+        var subjects_645 = $('#subject_id_645 option:selected')
+            .toArray().map(item => item.value).filter(item => item !== "0");
+        var datasets = get_datasets(subjects_2500, subjects_1400, subjects_645);
         $("#graph").hide();
         show_graph(datasets, "MDS for selected subjects");
         $("#graph").show("slow");
