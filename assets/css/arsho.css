@@ -6,6 +6,7 @@
 * License: Creative Commons Attribution 3.0 License
 * Website: https://arshovon.com/
 */
+
 @font-face {
     font-family: 'Roboto', sans-serif;
     font-display: auto;
@@ -292,7 +293,7 @@ img[src$="center"] {
         box-shadow: none !important;
     }
 
-    .float-md-end{
+    .float-md-end {
         float: right !important;
         color: inherit !important;
     }
@@ -306,7 +307,7 @@ img[src$="center"] {
         visibility: hidden !important;
     }
 
-    .text-muted{
+    .text-muted {
         color: inherit !important;
     }
 }
