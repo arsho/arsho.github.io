@@ -26,12 +26,10 @@ a {
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     text-decoration: none;
-    color: #2d7788;
 }
 
 .wrapper a:hover {
     text-decoration: underline;
-    color: #1a454f;
 }
 
 .side-menu a:hover {
