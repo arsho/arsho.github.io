@@ -5,21 +5,30 @@ gtag('js',new Date());gtag('config','UA-119139307-1');</script><script async src
 Ahmedur Rahman Shovon</h3><div class="mb-1 clearfix d-print-none"><small class="float-lg-end d-block d-lg-inline text-muted">Published on
 <time datetime=2023-12-26T08:01:14-05:00><i class="fa fa-calendar pe-1"></i>December 26, 2023</time>
 , Updated on
-<time datetime=2023-12-27T11:03:59-06:00><i class="fa fa-calendar pe-1"></i>December 27, 2023</time></small>
+<time datetime=2023-12-27T11:31:53-06:00><i class="fa fa-calendar pe-1"></i>December 27, 2023</time></small>
 <a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/sycl class="badge text-bg-secondary" title=SYCL>SYCL</a>
 <a href=https://arshovon.com/categories/high-performance-computing class="badge text-bg-secondary" title="High-performance computing">High-performance computing</a>
 <a href=https://arshovon.com/categories/gpgpu class="badge text-bg-secondary" title=GPGPU>GPGPU</a>
-<a href=https://arshovon.com/tags/ class="badge text-bg-secondary me-1" title="All tags"><i class="fa fa-tags"></i></a><a href=https://arshovon.com/tags/sycl class="badge text-bg-secondary" title=SYCL>SYCL</a></div></header><p>SYCL is an open industry standard, not a programming language itself, developed by the Khronos Group to facilitate data parallelism in C++ for heterogeneous computing systems. This means you can write single-source C++ code that utilizes the power of various processors like CPUs, GPUs, and FPGAs in a single program. This improves code maintainability and portability across different hardware platforms.</p><p>Some characteristics of SYCL:</p><ul><li><strong>Single-source programming</strong>: Write code once and target diverse hardware architectures without rewriting for each device.</li><li><strong>Data parallelism</strong>: Leverage parallel execution for data-intensive tasks, significantly boosting performance.</li><li><strong>Abstraction layer</strong>: SYCL hides the underlying hardware complexities, providing a unified programming model for different devices.</li><li><strong>Memory management</strong>: SYCL offers various memory models (e.g., unified shared memory) to efficiently manage data movement between host and devices.</li></ul><h3 id=popular-sycl-implementations>Popular SYCL implementations:</h3><ul><li><strong>DPC++ (Data Parallel C++)</strong>: Part of Intel's oneAPI suite and also available as an open source compiler, DPC++ leverages LLVM/Clang for broad CPU and GPU support across Intel, NVIDIA, and AMD. In this post we will use DPC++ from oneAPI.</li><li><strong>ComputeCPP</strong>: Open-source and multi-backend, ComputeCPP excels on Intel and AMD hardware with good CPU and GPU coverage. NVIDIA GPU support is under development.</li><li><strong>hipSYCL</strong>: Primarily focused on NVIDIA GPUs with AMD support, hipSYCL offers multiple backends and experimental Intel GPU compatibility.</li></ul><h4 id=additional-technical-points-to-consider>Additional technical points to consider:</h4><ul><li><strong>Performance portability</strong>: While SYCL promotes code portability, achieving optimal performance on each hardware platform might require specific tuning.</li><li><strong>Learning curve</strong>: Compared to lower-level hardware-specific languages, SYCL has a gentler learning curve with support to modern C++ syntax but still requires understanding parallel programming concepts.</li><li><strong>Ecosystem</strong>: The SYCL ecosystem is evolving, with growing adoption and toolchain improvements.</li><li><strong>SYCL and IntelGPU in HPC</strong>: Aurora, the upcoming exascale supercomputer, will harness the power of SYCL and oneAPI on Intel GPUs to unlock groundbreaking scientific discoveries.</li></ul><h3 id=sycl-2020>SYCL 2020</h3><p>SYCL 2020 marked a significant milestone in the evolution of data parallelism for heterogeneous systems. DPC++ embraces the cutting-edge features introduced in the SYCL 2020 specification, empowering developers with:</p><ul><li>Unified Shared Memory (USM): Streamlined memory management with seamless data access between host and devices.</li><li>Sub-groups: Fine-grained control over parallel execution within work groups for enhanced performance and algorithm optimization.</li><li>C++17 Syntax Simplifications (CTAD): Class template argument deduction for cleaner, more concise code.</li><li>Anonymous Lambdas: Direct use of lambda expressions without explicit naming, promoting code readability and flexibility.</li></ul><p>These advancements collectively elevate the developer experience and performance capabilities of SYCL 2020, solidifying its position as a powerful and user-friendly tool for heterogeneous programming.</p><h3 id=key-attributes-of-sycl-dpc>Key attributes of SYCL (DPC++)</h3><ul><li>Single source: Supports containing both host and device code in a single source file. We can also keep them in separate files, but it is not required.</li><li>Host: CPU. Need to have C++17 support to support DPC++ and SYCL programs.</li><li>Device: GPU/FPGA/DSP/ASIC/CPU. Used for acceleration offloading.</li><li>Sharing devices: As GPU device can be used by other programs, the performance of DPC++ program may be impacted.</li><li>Kernel code: Code that runs on accelerated devices.</li><li>List of features that are supported:<ul><li>Lambdas</li><li>Operator overloading</li><li>Templates</li><li>Classes</li><li>Static polymorphism</li><li>Read only values of non-global host variables via lambda captures</li></ul></li><li>The list of features not supported by kernel code are:<ul><li>Dynamic polymorphism</li><li>Dynamic memory allocations (no new/delete operators)</li><li>Static variables</li><li>Function pointers</li><li>Runtime type information</li><li>Exception handling</li><li>No virtual member functions / variadic function can be called from kernel code</li><li>Recursion is not allowed within kernel code</li></ul></li></ul><h3 id=abstractions-for-memory-management-in-sycl-dpc>Abstractions for Memory management in SYCL (DPC++)</h3><ul><li>Unified Shared Memory (USM)<ul><li>Pointer based approach</li><li>Easier integration with existing C++ code that works on pointers</li><li>If we prefer to think about dependencies as performing one computation before another using an in-order queue, use USM</li><li>Allocation types:</li><li>device: Locates in device memory and cannot be accessed by host. Use <code>malloc_device</code></li><li>host: Locates in host memory and accessible from both host and device. Use <code>malloc_host</code></li><li>shared: Location shared and migrated automatically, accessible from both host and device. Use <code>malloc_shared</code></li><li>Supports both explicit and implicit data movement based on allocation type</li><li>Explicit: Occurs in <code>device</code> allocation using handler's <code>memcpy()</code> to transfer data from host to device and vice versa</li><li>Implicit: Occurs in <code>host</code> and <code>shared</code> allocations. No need to use <code>memcpy()</code> operation</li></ul></li><li>Buffers<ul><li>Represented by the <code>buffer</code> template class</li><li>Describe 1D/2D/3D arrays</li><li>Buffers follow implicit data movement strategy</li><li>If we prefer to think about data dependencies between kernels, choose buffers</li><li>Buffer object can be a scalar data type(<code>int</code>, <code>float</code>, <code>double</code>), <code>vector</code>+ data type or a user defined class or structure</li><li>Data structures in buffers must be C++ trivially copyable without the need of copy constructor</li><li>Can be accessed from host and device</li><li>Buffers represent data objects rather than specific memory addresses thus cannot be directly accessed like arrays</li><li>Buffers are not directly accessible, but can be accessed by <code>accessor</code> objects</li><li>Buffer access mode:</li><li><code>read</code>: Read only access</li><li><code>write</code>: Write only access. Previous content not disgarded</li><li><code>read_write</code>: Read and write access</li></ul></li><li>Images<ul><li>Specific type of buffers for image processing</li><li>Supports image formats, reading of images using sampler objects</li></ul></li></ul><h3 id=c-lambda-functions-in-sycl>C++ Lambda Functions in SYCL</h3><ul><li>Lambda functions are introduced in <code>C++11</code></li><li>Used to create anonymous function objects, can also be used with named variables</li><li>Lambda expression has the following syntax:
-<code>shell
-[ capture-list ] ( params ) -&gt; ret { body }</code></li><li><code>capture-list</code>:<ul><li>Lambda expression starts with a square bracket</li><li>Denotes how to capture variables that are used within the lambda but not passed as parameters</li><li>Comma separated list of captures</li><li>Variables from the surrounding scope mentioned in this list are available in the lambda <code>body</code></li><li>Controls the visibility and lifetime of variables captured by lambda</li><li>Global variables are not captured in lambda expression</li><li>Non-global static variables can be used in a kernel but only if they are <code>const</code></li><li>Capture a variable by value by listing the variable name in the <code>capture-list</code>. Even the value is modified in the <code>body</code>, it does not affect the original value outside the lambda.</li><li>Capture a variable by reference by listing the variable name prefixing with ampersand (<code>&amp;variable</code>). If this variable is modified in the <code>body</code>, the original variable is also modified.</li><li><code>[=]</code> shorthand to capture all variables used in the body by value and current object by reference</li><li><code>[&amp;]</code> shorthand to capture all variables used in the body by reference and current object by reference</li><li><code>[]</code> captures nothing</li><li>SYCL uses <code>[=]</code> as kernel does not support capturing variable by reference</li></ul></li><li><code>params</code>:<ul><li>List of function parameters similar to named function</li><li>In SYCL, it can be unique 1D id, or 2D/3D id</li></ul></li><li><code>ret</code>:<ul><li>Defines the return type of the lambda expression</li><li>If <code>-&gt; ret</code> is not specified, it is inferred from the return statement in the <code>body</code></li><li>Return with no value implies <code>void</code> return type</li><li>SYCL kernels must always have a <code>void</code> return type thus it is not specified in SYCL kernel</li></ul></li><li><code>body</code>:<ul><li>Contains function body</li><li>SYCL kernel body does not have any <code>return</code> statement</li></ul></li></ul><h3 id=use-dpc-using-docker-in-interactive-mode>Use DPC++ using Docker in Interactive mode</h3><p><figure><img src=/blog/images/docker-dpc++.png alt="alt Use DPC++ using Docker in Interactive mode"></figure></p><h4 id=step-1-pull-docker-image>Step 1: Pull Docker image</h4><p>Pull Docker image for Intel oneAPI Basekit, which includes essential development tools. The process may take several minutes due to the image's size (around a few gigabytes).:</p><pre><code class=language-shell>docker pull intel/oneapi-basekit:devel-ubuntu22.04
-</code></pre><h4 id=step-2-prepare-local-environment>Step 2: Prepare local environment</h4><ul><li>Open a terminal in a local directory where you plan to execute a sample SYCL program (e.g., <code>vector_add.cpp</code>).</li><li>Place your SYCL program in this directory. A sample program is provided below for reference:
-```cpp
-#include <sycl/sycl.hpp></li></ul><p>using namespace sycl;</p><p>void initialize_array(int n, double *a, double *b, double *c_result) {</p><pre><code>for (int i = 0; i &lt; n; i++) {
+<a href=https://arshovon.com/tags/ class="badge text-bg-secondary me-1" title="All tags"><i class="fa fa-tags"></i></a><a href=https://arshovon.com/tags/sycl class="badge text-bg-secondary" title=SYCL>SYCL</a></div></header><p>SYCL is an open industry standard, not a programming language itself, developed by the Khronos Group to facilitate data parallelism in C++ for heterogeneous computing systems. This means you can write single-source C++ code that utilizes the power of various processors like CPUs, GPUs, and FPGAs in a single program. This improves code maintainability and portability across different hardware platforms.</p><p>Some characteristics of SYCL:
+- <strong>Single-source programming</strong>: Write code once and target diverse hardware architectures without rewriting for each device.
+- <strong>Data parallelism</strong>: Leverage parallel execution for data-intensive tasks, significantly boosting performance.
+- <strong>Abstraction layer</strong>: SYCL hides the underlying hardware complexities, providing a unified programming model for different devices.
+- <strong>Memory management</strong>: SYCL offers various memory models (e.g., unified shared memory) to efficiently manage data movement between host and devices.</p><h3 id=popular-sycl-implementations>Popular SYCL implementations:</h3><ul><li><strong>DPC++ (Data Parallel C++)</strong>: Part of Intel&rsquo;s oneAPI suite and also available as an open source compiler, DPC++ leverages LLVM/Clang for broad CPU and GPU support across Intel, NVIDIA, and AMD. In this post we will use DPC++ from oneAPI.</li><li><strong>ComputeCPP</strong>: Open-source and multi-backend, ComputeCPP excels on Intel and AMD hardware with good CPU and GPU coverage. NVIDIA GPU support is under development.</li><li><strong>hipSYCL</strong>: Primarily focused on NVIDIA GPUs with AMD support, hipSYCL offers multiple backends and experimental Intel GPU compatibility.</li></ul><h4 id=additional-technical-points-to-consider>Additional technical points to consider:</h4><ul><li><strong>Performance portability</strong>: While SYCL promotes code portability, achieving optimal performance on each hardware platform might require specific tuning.</li><li><strong>Learning curve</strong>: Compared to lower-level hardware-specific languages, SYCL has a gentler learning curve with support to modern C++ syntax but still requires understanding parallel programming concepts.</li><li><strong>Ecosystem</strong>: The SYCL ecosystem is evolving, with growing adoption and toolchain improvements.</li><li><strong>SYCL and IntelGPU in HPC</strong>: Aurora, the upcoming exascale supercomputer, will harness the power of SYCL and oneAPI on Intel GPUs to unlock groundbreaking scientific discoveries.</li></ul><h3 id=sycl-2020>SYCL 2020</h3><p>SYCL 2020 marked a significant milestone in the evolution of data parallelism for heterogeneous systems. DPC++ embraces the cutting-edge features introduced in the SYCL 2020 specification, empowering developers with:</p><ul><li>Unified Shared Memory (USM): Streamlined memory management with seamless data access between host and devices.</li><li>Sub-groups: Fine-grained control over parallel execution within work groups for enhanced performance and algorithm optimization.</li><li>C++17 Syntax Simplifications (CTAD): Class template argument deduction for cleaner, more concise code.</li><li>Anonymous Lambdas: Direct use of lambda expressions without explicit naming, promoting code readability and flexibility.</li></ul><p>These advancements collectively elevate the developer experience and performance capabilities of SYCL 2020, solidifying its position as a powerful and user-friendly tool for heterogeneous programming.</p><h3 id=key-attributes-of-sycl-dpc>Key attributes of SYCL (DPC++)</h3><ul><li>Single source: Supports containing both host and device code in a single source file. We can also keep them in separate files, but it is not required.</li><li>Host: CPU. Need to have C++17 support to support DPC++ and SYCL programs.</li><li>Device: GPU/FPGA/DSP/ASIC/CPU. Used for acceleration offloading.</li><li>Sharing devices: As GPU device can be used by other programs, the performance of DPC++ program may be impacted.</li><li>Kernel code: Code that runs on accelerated devices.</li><li>List of features that are supported:<ul><li>Lambdas</li><li>Operator overloading</li><li>Templates</li><li>Classes</li><li>Static polymorphism</li><li>Read only values of non-global host variables via lambda captures</li></ul></li><li>The list of features not supported by kernel code are:<ul><li>Dynamic polymorphism</li><li>Dynamic memory allocations (no new/delete operators)</li><li>Static variables</li><li>Function pointers</li><li>Runtime type information</li><li>Exception handling</li><li>No virtual member functions / variadic function can be called from kernel code</li><li>Recursion is not allowed within kernel code</li></ul></li></ul><h3 id=abstractions-for-memory-management-in-sycl-dpc>Abstractions for Memory management in SYCL (DPC++)</h3><ul><li>Unified Shared Memory (USM)<ul><li>Pointer based approach</li><li>Easier integration with existing C++ code that works on pointers</li><li>If we prefer to think about dependencies as performing one computation before another using an in-order queue, use USM</li><li>Allocation types:</li><li>device: Locates in device memory and cannot be accessed by host. Use <code>malloc_device</code></li><li>host: Locates in host memory and accessible from both host and device. Use <code>malloc_host</code></li><li>shared: Location shared and migrated automatically, accessible from both host and device. Use <code>malloc_shared</code></li><li>Supports both explicit and implicit data movement based on allocation type</li><li>Explicit: Occurs in <code>device</code> allocation using handler&rsquo;s <code>memcpy()</code> to transfer data from host to device and vice versa</li><li>Implicit: Occurs in <code>host</code> and <code>shared</code> allocations. No need to use <code>memcpy()</code> operation</li></ul></li><li>Buffers<ul><li>Represented by the <code>buffer</code> template class</li><li>Describe 1D/2D/3D arrays</li><li>Buffers follow implicit data movement strategy</li><li>If we prefer to think about data dependencies between kernels, choose buffers</li><li>Buffer object can be a scalar data type(<code>int</code>, <code>float</code>, <code>double</code>), <code>vector</code>+ data type or a user defined class or structure</li><li>Data structures in buffers must be C++ trivially copyable without the need of copy constructor</li><li>Can be accessed from host and device</li><li>Buffers represent data objects rather than specific memory addresses thus cannot be directly accessed like arrays</li><li>Buffers are not directly accessible, but can be accessed by <code>accessor</code> objects</li><li>Buffer access mode:</li><li><code>read</code>: Read only access</li><li><code>write</code>: Write only access. Previous content not disgarded</li><li><code>read_write</code>: Read and write access</li></ul></li><li>Images<ul><li>Specific type of buffers for image processing</li><li>Supports image formats, reading of images using sampler objects</li></ul></li></ul><h3 id=c-lambda-functions-in-sycl>C++ Lambda Functions in SYCL</h3><ul><li>Lambda functions are introduced in <code>C++11</code></li><li>Used to create anonymous function objects, can also be used with named variables</li><li><p>Lambda expression has the following syntax:</p><pre><code class=language-shell>[ capture-list ] ( params ) -&gt; ret { body }
+</code></pre></li><li><p><code>capture-list</code>:</p><ul><li>Lambda expression starts with a square bracket</li><li>Denotes how to capture variables that are used within the lambda but not passed as parameters</li><li>Comma separated list of captures</li><li>Variables from the surrounding scope mentioned in this list are available in the lambda <code>body</code></li><li>Controls the visibility and lifetime of variables captured by lambda</li><li>Global variables are not captured in lambda expression</li><li>Non-global static variables can be used in a kernel but only if they are <code>const</code></li><li>Capture a variable by value by listing the variable name in the <code>capture-list</code>. Even the value is modified in the <code>body</code>, it does not affect the original value outside the lambda.</li><li>Capture a variable by reference by listing the variable name prefixing with ampersand (<code>&amp;variable</code>). If this variable is modified in the <code>body</code>, the original variable is also modified.</li><li><code>[=]</code> shorthand to capture all variables used in the body by value and current object by reference</li><li><code>[&amp;]</code> shorthand to capture all variables used in the body by reference and current object by reference</li><li><code>[]</code> captures nothing</li><li>SYCL uses <code>[=]</code> as kernel does not support capturing variable by reference</li></ul></li><li><p><code>params</code>:</p><ul><li>List of function parameters similar to named function</li><li>In SYCL, it can be unique 1D id, or 2D/3D id</li></ul></li><li><p><code>ret</code>:</p><ul><li>Defines the return type of the lambda expression</li><li>If <code>-&gt; ret</code> is not specified, it is inferred from the return statement in the <code>body</code></li><li>Return with no value implies <code>void</code> return type</li><li>SYCL kernels must always have a <code>void</code> return type thus it is not specified in SYCL kernel</li></ul></li><li><p><code>body</code>:</p><ul><li>Contains function body</li><li>SYCL kernel body does not have any <code>return</code> statement</li></ul></li></ul><h3 id=use-dpc-using-docker-in-interactive-mode>Use DPC++ using Docker in Interactive mode</h3><p><img src=/blog/images/docker-dpc++.png alt="alt Use DPC++ using Docker in Interactive mode"></p><h4 id=step-1-pull-docker-image>Step 1: Pull Docker image</h4><p>Pull Docker image for Intel oneAPI Basekit, which includes essential development tools. The process may take several minutes due to the image&rsquo;s size (around a few gigabytes).:</p><pre><code class=language-shell>docker pull intel/oneapi-basekit:devel-ubuntu22.04
+</code></pre><h4 id=step-2-prepare-local-environment>Step 2: Prepare local environment</h4><ul><li>Open a terminal in a local directory where you plan to execute a sample SYCL program (e.g., <code>vector_add.cpp</code>).</li><li><p>Place your SYCL program in this directory. A sample program is provided below for reference:</p><pre><code class=language-cpp>#include &lt;sycl/sycl.hpp&gt;
+
+using namespace sycl;
+
+void initialize_array(int n, double *a, double *b, double *c_result) {
+for (int i = 0; i &lt; n; i++) {
     a[i] = 1.2;
     b[i] = 2.8;
     c_result[i] = a[i] + b[i];
 }
-</code></pre><p>}</p><p>void vector_add(queue &amp;Q, int n, double *a, double *b, double *c) {</p><pre><code>buffer&lt;double, 1&gt; a_buffer(a, range&lt;1&gt;(n));
+}
+
+void vector_add(queue &amp;Q, int n, double *a, double *b, double *c) {
+buffer&lt;double, 1&gt; a_buffer(a, range&lt;1&gt;(n));
 buffer&lt;double, 1&gt; b_buffer(b, range&lt;1&gt;(n));
 buffer&lt;double, 1&gt; c_buffer(c, range&lt;1&gt;(n));
 auto task_add = Q.submit([&amp;](sycl::handler &amp;cgh) {
@@ -31,7 +40,10 @@ auto task_add = Q.submit([&amp;](sycl::handler &amp;cgh) {
     });
 });
 task_add.wait();
-</code></pre><p>}</p><p>int main() {</p><pre><code>queue Q;
+}
+
+int main() {
+queue Q;
 std::cout &lt;&lt; &quot;Running on device: &quot;
           &lt;&lt; Q.get_device().get_info&lt;info::device::name&gt;()
           &lt;&lt; std::endl;
@@ -57,16 +69,13 @@ if (mismatch == 0) {
 }
 
 return 0;
-</code></pre><p>}</p><pre><code>#### Step 3: Mount the current directory to docker run
-Mount the current directory into the Docker container to execute the SYCL program.
-The following command runs a container named `inteldpc` based on the `intel/oneapi-basekit:devel-ubuntu22.04` image, mounting the current local directory to the `/sycl_demo` directory inside the container in interactive mode.
-```shell
-docker run -v $(pwd):/sycl_demo -it --name=inteldpc intel/oneapi-basekit:devel-ubuntu22.04
-</code></pre><h4 id=step-4-list-of-available-devices-and-compiler-version-in-docker-system>Step 4: List of available devices and compiler version in Docker system</h4><ul><li>Within the Docker container, list the available devices in the system using <code>sycl-ls</code>:
-<code>shell
-root@5d3cac1a5b20:/# sycl-ls
+}
+</code></pre></li></ul><h4 id=step-3-mount-the-current-directory-to-docker-run>Step 3: Mount the current directory to docker run</h4><p>Mount the current directory into the Docker container to execute the SYCL program.
+The following command runs a container named <code>inteldpc</code> based on the <code>intel/oneapi-basekit:devel-ubuntu22.04</code> image, mounting the current local directory to the <code>/sycl_demo</code> directory inside the container in interactive mode.</p><pre><code class=language-shell>docker run -v $(pwd):/sycl_demo -it --name=inteldpc intel/oneapi-basekit:devel-ubuntu22.04
+</code></pre><h4 id=step-4-list-of-available-devices-and-compiler-version-in-docker-system>Step 4: List of available devices and compiler version in Docker system</h4><ul><li><p>Within the Docker container, list the available devices in the system using <code>sycl-ls</code>:</p><pre><code class=language-shell>root@5d3cac1a5b20:/# sycl-ls
 [opencl:acc:0] Intel(R) FPGA Emulation Platform for OpenCL(TM), Intel(R) FPGA Emulation Device 1.2 [2022.15.12.0.01_081451]
-[opencl:cpu:1] Intel(R) OpenCL, 13th Gen Intel(R) Core(TM) i9-13900H 3.0 [2022.15.12.0.01_081451]</code></li><li><p>Check the version of Intel LLVM-based compilers Intel® oneAPI DPC++/C++ Compiler:</p><pre><code class=language-shell>root@5d3cac1a5b20:/# icpx --version
+[opencl:cpu:1] Intel(R) OpenCL, 13th Gen Intel(R) Core(TM) i9-13900H 3.0 [2022.15.12.0.01_081451]
+</code></pre></li><li><p>Check the version of Intel LLVM-based compilers Intel® oneAPI DPC++/C++ Compiler:</p><pre><code class=language-shell>root@5d3cac1a5b20:/# icpx --version
 Intel(R) oneAPI DPC++/C++ Compiler 2023.0.0 (2023.0.0.20221201)
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -78,46 +87,59 @@ root@5d3cac1a5b20:/sycl_demo# ./a.out
 </code></pre></li><li><p>Upon successful execution, the program will display information about the running device and verification status:</p><pre><code class=language-shell>Running on device: 13th Gen Intel(R) Core(TM) i9-13900H
 Verification passed
 </code></pre></li><li><p>If you exit the docker interactive mode and wants to turn on the interactive mode again you need to delete the container first:</p><pre><code class=language-shell>docker rm inteldpc
-</code></pre><p>Then follow the above steps again to compile and run SYCL program in docker interactive mode.</p><h4 id=optional-step-6-compile-and-execute-sycl-program-using-makefile>(Optional) Step 6: Compile and execute SYCL program using Makefile</h4></li><li><p>It is easier to use the following <code>Makefile</code> to compile and run the program in the container interactive mode:
-```shell
-CXX = icpx
+</code></pre><p>Then follow the above steps again to compile and run SYCL program in docker interactive mode.</p></li></ul><h4 id=optional-step-6-compile-and-execute-sycl-program-using-makefile>(Optional) Step 6: Compile and execute SYCL program using Makefile</h4><ul><li><p>It is easier to use the following <code>Makefile</code> to compile and run the program in the container interactive mode:</p><pre><code class=language-shell>CXX = icpx
 CXXFLAGS = -fsycl -std=c++17 -w
 SRCS := $(wildcard *.cpp)
 PRGS := $(patsubst %.cpp,%,$(SRCS))
-RUN := $(addprefix run_, $(PRGS))</p></li></ul><p>.PHONY: run_all
-run_all: $(sort $(RUN))</p><p>.PHONY: all
-all: $(PRGS)</p><p>.PHONY: all
+RUN :=  $(addprefix run_, $(PRGS))
+
+.PHONY: run_all
+run_all: $(sort $(RUN))
+
+.PHONY: all
+all: $(PRGS)
+
+.PHONY: all
 %: %.cpp
-$(CXX) $(CXXFLAGS) -o $@ $^</p><p>run_%:%
-./$^</p><p>.PHONY: clean
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+run_%:%
+	./$^
+
+.PHONY: clean
 clean:
-rm -f $(PRGS)</p><pre><code>- Compile and run the program `vector_add.cpp` using `make` command:
-```shell
-root@5d3cac1a5b20:/sycl_demo# make vector_add
+	rm -f $(PRGS)
+</code></pre></li><li><p>Compile and run the program <code>vector_add.cpp</code> using <code>make</code> command:</p><pre><code class=language-shell>root@5d3cac1a5b20:/sycl_demo# make vector_add
 icpx -fsycl -std=c++17 -w -o vector_add vector_add.cpp
 root@5d3cac1a5b20:/sycl_demo# make run_vector_add
 ./vector_add
 Running on device: 13th Gen Intel(R) Core(TM) i9-13900H
 Verification passed
-</code></pre><h4 id=some-useful-docker-commands>Some Useful Docker Commands</h4><ul><li><p>List and delete local Docker image:</p><pre><code class=language-shell>➜  ~ docker image ls
+</code></pre></li></ul><h4 id=some-useful-docker-commands>Some Useful Docker Commands</h4><ul><li><p>List and delete local Docker image:</p><pre><code class=language-shell>➜  ~ docker image ls
 REPOSITORY                            TAG                                        IMAGE ID       CREATED        SIZE
 ghcr.io/intel/llvm/ubuntu2204_build   7ed894ab0acc8ff09262113fdb08940d22654a30   82f0019ffd14   17 hours ago   13.4GB
 # Delete a specific image using its IMAGE ID
 ➜  ~ sudo docker image remove 82f0019ffd14 -f
 Deleted: sha256:82f0019ffd14bdfc269d5f01fc28eda497fc339d367448086f4441eeae634e7a
-</code></pre></li><li><p>List and delete Docker container:
-```shell</p><h1 id=list-all-docker-containers-including-stopped-ones>List all Docker containers, including stopped ones</h1><p>docker ps -a</p></li></ul><h1 id=delete-a-specific-container-using-its-name-or-container-id>Delete a specific container using its NAME or CONTAINER ID</h1><p>docker rm <name></p><pre><code>- See disk usage in Docker:
-```shell
-➜  ~ docker system df
+</code></pre></li><li><p>List and delete Docker container:</p><pre><code class=language-shell># List all Docker containers, including stopped ones
+docker ps -a
+
+# Delete a specific container using its NAME or CONTAINER ID
+docker rm &lt;NAME&gt;
+</code></pre></li><li><p>See disk usage in Docker:</p><pre><code class=language-shell>➜  ~ docker system df
 TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
 Images          5         5         16.69GB   74.82MB (0%)
 Containers      7         0         20.95kB   20.95kB (100%)
 Local Volumes   2         2         50.18MB   0B (0%)
 Build Cache     0         0         0B        0B
-</code></pre><ul><li>Prune unused Docker data, including stopped containers, networks, and dangling images:
-```shell
-➜ ~ docker system prune
-WARNING! This will remove:<ul><li>all stopped containers</li><li>all networks not used by at least one container</li><li>all dangling images</li><li>all dangling build cache</li></ul></li></ul><p>Are you sure you want to continue? [y/N] y
+</code></pre></li><li><p>Prune unused Docker data, including stopped containers, networks, and dangling images:</p><pre><code class=language-shell>➜  ~ docker system prune
+WARNING! This will remove:
+- all stopped containers
+- all networks not used by at least one container
+- all dangling images
+- all dangling build cache
+
+Are you sure you want to continue? [y/N] y
 Deleted Containers:
 accd2f72561b96e4cebd297440083053fb7b420503a2acca1b363878c88cfbb6
 76439ff0db662783f66edf94941a4afbfb9518cebbe4378df02c550a82705919
@@ -125,14 +147,19 @@ accd2f72561b96e4cebd297440083053fb7b420503a2acca1b363878c88cfbb6
 d4857a1ac199c765539af1e1fb722267da66bc82ab7f2d5d8cd606e797645b76
 b44844e8146badf9846d2d444b43f9db459428a826946bcbc3104f3bf2b7a6e4
 4eff17fd7646f3b7f50e4e0b3bce0b22452e746662150cacc0fd0e5141a5eda7
-83cf07d8e33fa4a585dd1bed239f80105b0c0e5850c6ba8d6075d7ce62fb59ab</p><p>Deleted Networks:
-outline_default</p><p>Total reclaimed space: 20.95kB
-➜ ~ docker system df<br>TYPE TOTAL ACTIVE SIZE RECLAIMABLE
-Images 5 0 16.69GB 16.69GB (100%)
-Containers 0 0 0B 0B
-Local Volumes 2 0 50.18MB 50.18MB (100%)
-Build Cache 0 0 0B 0B
-```</p><h3 id=references>References</h3><ul><li><a href=https://library.oapen.org/handle/20.500.12657/42917>Reinders, J., Ashbaugh, B., Brodman, J., Kinsner, M., Pennycook, J., &amp; Tian, X. (2021). Data parallel C++: mastering DPC++ for programming of heterogeneous systems using C++ and SYCL (p. 548). Springer Nature.</a></li><li><a href=https://www.alcf.anl.gov/sites/default/files/2023-10/Programming_Model_SYCL.pdf>SYCL Overview by Thomas Applencourt</a></li><li><a href=https://www.khronos.org/files/sycl/sycl-2020-reference-guide.pdf>SYCL 2020 API Reference Guide</a></li><li><a href=https://intel.github.io/llvm-docs/developer/DockerBKMs.html>Docker Containers BKMs</a></li><li><a href=https://www.intel.com/content/www/us/en/developer/articles/technical/how-to-guide-for-docker-wsl-oneapi-workloads.html#gs.274vss>Docker, WSL, and oneAPI — A Quick How-To Guide</a></li><li><a href=https://github.com/oneapi-src/oneAPI-samples/tree/master/DirectProgramming/C%2B%2BSYCL>OneAPI Samples</a></li><li><a href=https://www.anl.gov/aurora>Aurora Exascale Supercomputer</a></li></ul><div class="d-print-none col-12 my-4 pb-4 border-top border-bottom"><p class="text-muted text-center"><small>Advertisement</small></p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-4737800736768640 data-ad-slot=3931195519></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div></article><h5 class="mb-2 mt-4">Cite This Work</h5><dl class="text-left mb-4"><dt class=pb-1>APA Style</dt><dd class="pl-4 pb-2">Shovon, A. R.
+83cf07d8e33fa4a585dd1bed239f80105b0c0e5850c6ba8d6075d7ce62fb59ab
+
+Deleted Networks:
+outline_default
+
+Total reclaimed space: 20.95kB
+➜  ~ docker system df   
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          5         0         16.69GB   16.69GB (100%)
+Containers      0         0         0B        0B
+Local Volumes   2         0         50.18MB   50.18MB (100%)
+Build Cache     0         0         0B        0B
+</code></pre></li></ul><h3 id=references>References</h3><ul><li><a href=https://library.oapen.org/handle/20.500.12657/42917>Reinders, J., Ashbaugh, B., Brodman, J., Kinsner, M., Pennycook, J., &amp; Tian, X. (2021). Data parallel C++: mastering DPC++ for programming of heterogeneous systems using C++ and SYCL (p. 548). Springer Nature.</a></li><li><a href=https://www.alcf.anl.gov/sites/default/files/2023-10/Programming_Model_SYCL.pdf>SYCL Overview by Thomas Applencourt</a></li><li><a href=https://www.khronos.org/files/sycl/sycl-2020-reference-guide.pdf>SYCL 2020 API Reference Guide</a></li><li><a href=https://intel.github.io/llvm-docs/developer/DockerBKMs.html>Docker Containers BKMs</a></li><li><a href=https://www.intel.com/content/www/us/en/developer/articles/technical/how-to-guide-for-docker-wsl-oneapi-workloads.html#gs.274vss>Docker, WSL, and oneAPI — A Quick How-To Guide</a></li><li><a href=https://github.com/oneapi-src/oneAPI-samples/tree/master/DirectProgramming/C%2B%2BSYCL>OneAPI Samples</a></li><li><a href=https://www.anl.gov/aurora>Aurora Exascale Supercomputer</a></li></ul><div class="d-print-none col-12 my-4 pb-4 border-top border-bottom"><p class="text-muted text-center"><small>Advertisement</small></p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-4737800736768640 data-ad-slot=3931195519></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div></article><h5 class="mb-2 mt-4">Cite This Work</h5><dl class="text-left mb-4"><dt class=pb-1>APA Style</dt><dd class="pl-4 pb-2">Shovon, A. R.
 (2023, December 26).
 <i>Introduction to SYCL and DPC&#43;&#43;</i>.
 Ahmedur Rahman Shovon.
