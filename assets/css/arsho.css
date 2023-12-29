@@ -235,8 +235,13 @@ img[src$="center"] {
 }
 
 @media print {
+    body{
+        background-color: white !important;
+    }
     .container {
         width: 100%;
+        max-width: 100% !important;
+        background-color: white !important;
     }
 
     [class*="col-lg"], [class*="col-md"], [class*="col-sm"], [class*="col-xs"] {

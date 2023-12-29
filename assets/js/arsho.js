@@ -28,6 +28,8 @@ back_to_top.addEventListener('click', () => {
 });
 
 var print_btn = document.getElementById("print-button");
-print_btn.onclick = function () {
-    window.print();
-};
+if (print_btn) {
+    print_btn.onclick = function () {
+        window.print();
+    };
+}
