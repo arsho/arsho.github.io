@@ -28,8 +28,16 @@ a {
     text-decoration: none;
 }
 
+.wrapper {
+    margin: 0 auto;
+}
+
 .wrapper a:hover {
     text-decoration: underline;
+}
+
+.blogpost{
+    max-width: 850px !important;
 }
 
 .side-menu a:hover {
@@ -48,31 +56,31 @@ a:focus {
     color: white;
 }
 
-.blog > article img {
+.blog article img {
     max-width: 100%;
 }
 
-.blog > article > h1 {
+.blog article h1 {
     font-size: 22px;
 }
 
-.blog > article > h2 {
+.blog article h2 {
     font-size: 20px;
 }
 
-.blog > article > h3 {
+.blog article h3 {
     font-size: 18px;
 }
 
-.blog > article > h4 {
+.blog article h4 {
     font-size: 16px;
 }
 
-.blog > article > h5 {
+.blog article h5 {
     font-size: 16px;
 }
 
-.blog > article > h6 {
+.blog article h6 {
     font-size: 14px;
 }
 
@@ -101,10 +109,6 @@ p {
     border-bottom: 2px dashed #cccccc;
 }
 
-.wrapper {
-    margin: 0 auto;
-}
-
 .datamate_red {
     color: #a94442;
 }
@@ -118,7 +122,7 @@ p {
 }
 
 /* Content */
-.blog > article > h3 {
+.blog article h3 {
     margin-top: 2rem;
 }
 
