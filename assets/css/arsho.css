@@ -60,29 +60,29 @@ a:focus {
     max-width: 100%;
 }
 
-.blog article h1 {
-    font-size: 22px;
-}
+/*.blog article h1 {*/
+/*    font-size: 22px;*/
+/*}*/
 
-.blog article h2 {
-    font-size: 20px;
-}
+/*.blog article h2 {*/
+/*    font-size: 20px;*/
+/*}*/
 
-.blog article h3 {
-    font-size: 18px;
-}
+/*.blog article h3 {*/
+/*    font-size: 18px;*/
+/*}*/
 
-.blog article h4 {
-    font-size: 16px;
-}
+/*.blog article h4 {*/
+/*    font-size: 16px;*/
+/*}*/
 
-.blog article h5 {
-    font-size: 16px;
-}
+/*.blog article h5 {*/
+/*    font-size: 16px;*/
+/*}*/
 
-.blog article h6 {
-    font-size: 14px;
-}
+/*.blog article h6 {*/
+/*    font-size: 14px;*/
+/*}*/
 
 .icon-left {
     margin-left: -3.1rem;
@@ -136,7 +136,7 @@ p {
 
 .progress_title {
     color: #0A2848;
-    font-size: 16px;
+    /*font-size: 16px;*/
     font-weight: 500;
     text-align: left;
     margin-bottom: 0px;
@@ -144,7 +144,7 @@ p {
 }
 
 .project_title {
-    font-size: 16px;
+    /*font-size: 16px;*/
     font-weight: 500;
     color: #0A2848;
 }
@@ -167,7 +167,7 @@ p {
 
 code {
     padding: 2px 4px;
-    font-size: 100%;
+    /*font-size: 100%;*/
     background-color: #eeeeee;
 }
 
@@ -179,6 +179,7 @@ pre {
     word-break: break-all;
     word-wrap: break-word;
     border: 1px solid #ccc;
+    background-color: #eeeeee;
 }
 
 pre,
@@ -232,11 +233,6 @@ img[src$="center"] {
     }
 }
 
-@media only screen and (max-width: 1079px) {
-    .side-menu {
-        visibility: hidden;
-    }
-}
 
 @media print {
     body{
