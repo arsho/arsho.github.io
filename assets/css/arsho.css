@@ -8,16 +8,17 @@
 */
 
 @font-face {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-display: auto;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: black;
     background: #f5f5f5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 110% !important;
 }
 
 a {
@@ -60,30 +61,6 @@ a:focus {
     max-width: 100%;
 }
 
-/*.blog article h1 {*/
-/*    font-size: 22px;*/
-/*}*/
-
-/*.blog article h2 {*/
-/*    font-size: 20px;*/
-/*}*/
-
-/*.blog article h3 {*/
-/*    font-size: 18px;*/
-/*}*/
-
-/*.blog article h4 {*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.blog article h5 {*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.blog article h6 {*/
-/*    font-size: 14px;*/
-/*}*/
-
 .icon-left {
     margin-left: -3.1rem;
 }
@@ -92,10 +69,6 @@ a:focus {
     margin: -3rem;
 }
 
-
-p {
-    line-height: 1.6;
-}
 
 .fw-semibold {
     font-weight: 500 !important;
@@ -106,6 +79,10 @@ p {
 }
 
 .border-dashed-main {
+    border-bottom: 2px dashed #cccccc;
+}
+
+.blog article h1, .blog article h2, .blog article h3, .blog article h4, .blog article h5, .blog article h6{
     border-bottom: 2px dashed #cccccc;
 }
 
@@ -166,20 +143,20 @@ p {
 /* Code Syntax */
 
 code {
-    padding: 2px 4px;
+    /*padding: 2px 4px;*/
     /*font-size: 100%;*/
-    background-color: #eeeeee;
+    background-color: #f8f8f8 !important;
 }
 
 pre {
     display: block;
-    padding: 9.5px;
+    /*padding: 9.5px;*/
     margin: 0 0 10px;
     line-height: 1.5;
     word-break: break-all;
     word-wrap: break-word;
     border: 1px solid #ccc;
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
 }
 
 pre,
@@ -221,6 +198,20 @@ img[src$="center"] {
 .list-jumbotron {
     background-image: linear-gradient(to bottom left, #545e6c 0%, transparent 3%, transparent 97%, #545e6c 100%),
     linear-gradient(to bottom right, #545e6c 0%, transparent 3%, transparent 97%, #545e6c 100%);
+}
+
+.sidebar-left {
+    /*position: sticky;*/
+    /*top: 51px;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*z-index: 1000;*/
+    /*display: block;*/
+    /*padding: 20px;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto; !* Scrollable contents if viewport is shorter than content. *!*/
+    /*background-color: #f5f5f5;*/
+    /*border-right: 1px solid #eee;*/
 }
 
 @media only screen and (max-width: 600px) {
