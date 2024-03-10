@@ -29,6 +29,10 @@ a {
     text-decoration: none;
 }
 
+a:focus {
+    text-decoration: none;
+}
+
 .wrapper {
     margin: 0 auto;
 }
@@ -37,16 +41,8 @@ a {
     text-decoration: underline;
 }
 
-.blogpost{
-    max-width: 850px !important;
-}
-
 .side-menu a:hover {
     color: #1a454f;
-}
-
-a:focus {
-    text-decoration: none;
 }
 
 .sidebar a {
@@ -82,7 +78,7 @@ a:focus {
     border-bottom: 2px dashed #cccccc;
 }
 
-.blog article h1, .blog article h2, .blog article h3, .blog article h4, .blog article h5, .blog article h6{
+.blog article h1, .blog article h2, .blog article h3, .blog article h4, .blog article h5, .blog article h6 {
     border-bottom: 2px dashed #cccccc;
 }
 
@@ -113,7 +109,6 @@ a:focus {
 
 .progress_title {
     color: #0A2848;
-    /*font-size: 16px;*/
     font-weight: 500;
     text-align: left;
     margin-bottom: 0px;
@@ -121,13 +116,8 @@ a:focus {
 }
 
 .project_title {
-    /*font-size: 16px;*/
     font-weight: 500;
     color: #0A2848;
-}
-
-.side-menu {
-    top: 7%;
 }
 
 .skill_item {
@@ -142,28 +132,15 @@ a:focus {
 
 /* Code Syntax */
 
-code {
-    /*padding: 2px 4px;*/
-    /*font-size: 100%;*/
-    background-color: #f8f8f8 !important;
-}
-
-pre {
-    display: block;
-    /*padding: 9.5px;*/
-    margin: 0 0 10px;
-    line-height: 1.5;
-    word-break: break-all;
-    word-wrap: break-word;
-    border: 1px solid #ccc;
-    /*background-color: #eeeeee;*/
-}
-
 pre,
 code {
     font-family: monocode, monospace;
     -webkit-font-smoothings: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.hljs-copy-button {
+    background-color: #0A2848 !important;
 }
 
 img[src$="center"] {
@@ -226,9 +203,10 @@ img[src$="center"] {
 
 
 @media print {
-    body{
+    body {
         background-color: white !important;
     }
+
     .container {
         width: 100%;
         max-width: 100% !important;
