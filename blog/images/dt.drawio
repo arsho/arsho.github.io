@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2024-04-19T12:31:18.322Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="LIlCLwYQ31rFj-2cetnW" version="24.2.5" type="device">
+  <diagram name="Page-1" id="RusOWR56REbjnPFn2qFq">
+    <mxGraphModel dx="1382" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uQ-FsFGHGZlxIlVIDRx--2" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillStyle=solid;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="130" y="20" width="600" height="415" as="geometry" />
+        </mxCell>
+        <mxCell id="uQ-FsFGHGZlxIlVIDRx--3" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="140" y="85" width="490" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="uQ-FsFGHGZlxIlVIDRx--4" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="150" y="127.5" width="330" height="212.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uQ-FsFGHGZlxIlVIDRx--5" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="160" y="167.5" width="210" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="uQ-FsFGHGZlxIlVIDRx--6" value="Relational Algebra (SQL)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="235" y="225" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uQ-FsFGHGZlxIlVIDRx--7" value="Datalog" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="390" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uQ-FsFGHGZlxIlVIDRx--8" value="Stratified&#xa;Datalog&#xa;(Datalog &#xa;+ Negation)" style="text;align=center;verticalAlign=middle;rounded=0;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="510" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uQ-FsFGHGZlxIlVIDRx--9" value="Prolog" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="650" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -6,7 +6,6 @@
 * License: Creative Commons Attribution 3.0 License
 * Website: https://arshovon.com/
 */
-
 @font-face {
     font-family: "Roboto", sans-serif;
     font-display: auto;
@@ -16,9 +15,20 @@ body {
     font-family: "Roboto", sans-serif;
     color: black;
     background: #f5f5f5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 110% !important;
+    font-size: 120% !important;
+}
+
+.blog{
+    font-size: 105% !important;
+}
+
+.blog p{
+    margin-bottom: 1.3rem;
+}
+
+.blog article h1, .blog article h2, .blog article h3, .blog article h4, .blog article h5, .blog article h6 {
+    border-bottom: 2px dashed #cccccc;
+    margin-top: 1.5rem;
 }
 
 a {
@@ -78,9 +88,6 @@ a:focus {
     border-bottom: 2px dashed #cccccc;
 }
 
-.blog article h1, .blog article h2, .blog article h3, .blog article h4, .blog article h5, .blog article h6 {
-    border-bottom: 2px dashed #cccccc;
-}
 
 .datamate_red {
     color: #a94442;
@@ -95,9 +102,6 @@ a:focus {
 }
 
 /* Content */
-.blog article h3 {
-    margin-top: 2rem;
-}
 
 .content_wrapper {
     text-align: justify;
@@ -177,18 +181,18 @@ img[src$="center"] {
     linear-gradient(to bottom right, #545e6c 0%, transparent 3%, transparent 97%, #545e6c 100%);
 }
 
-.sidebar-left {
-    /*position: sticky;*/
-    /*top: 51px;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*z-index: 1000;*/
-    /*display: block;*/
-    /*padding: 20px;*/
-    /*overflow-x: hidden;*/
-    /*overflow-y: auto; !* Scrollable contents if viewport is shorter than content. *!*/
-    /*background-color: #f5f5f5;*/
-    /*border-right: 1px solid #eee;*/
+img + em {
+    display: block;
+}
+
+blockquote {
+    padding: 1.0rem;
+    background: lavender;
+    border-left: 0.25rem solid #03C9A9;
+}
+
+blockquote p {
+    margin-bottom: 0.25rem;
 }
 
 @media only screen and (max-width: 600px) {
