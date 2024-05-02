@@ -17,7 +17,7 @@ Recently, when I tried to use Soufflé on Ubuntu 23.10, I faced the following er
 E: Unable to correct problems, you have held broken packages.
 </code></pre><p>This inspired me to try running Soufflé on Docker.
 Follow the previous post to <a href=https://arshovon.com/blog/install-docker-on-ubuntu-22-10/>Install Docker on Ubuntu</a>.
-For Windows users or those facing installation issues on specific Linux distributions, running Soufflé in a Docker container provides a convenient and consistent environment.</p><h4 id=steps-to-install-soufflé-on-ubuntu-using-docker>Steps to install Soufflé on Ubuntu using Docker</h4><p>In this tutorial, we will see how to use Soufflé on Docker in interactive mode.</p><h5 id=step-1-create-a-dockerfile>Step 1. Create a Dockerfile</h5><p>First, we need to create a <code>Dockerfile</code> that sets up the necessary environment for Soufflé. Save the following content in a file named <code>Dockerfile</code>:</p><p><code>Dockerfile</code>:</p><pre><code class=language-dockerfile>FROM ubuntu:20.04
+For Windows users or those facing installation issues on specific Linux distributions, running Soufflé in a Docker container provides a convenient and consistent environment.</p><h4 id=steps-to-install-soufflé-on-ubuntu-using-docker>Steps to install Soufflé on Ubuntu using Docker</h4><p>In this tutorial, we will see how to use Soufflé on Docker in interactive mode.</p><h5 id=step-1-create-a-dockerfile>Step 1. Create a Dockerfile</h5><p>First, we need to create a <code>Dockerfile</code> that sets up the necessary environment for Soufflé. Save the following content in a file named <code>Dockerfile</code>:</p><p><code>Dockerfile</code>:</p><pre><code class=language-shell>FROM ubuntu:20.04
 
 # Update package lists and install necessary packages
 RUN apt-get update &amp;&amp; \
@@ -39,7 +39,7 @@ RUN apt-get update &amp;&amp; \
 
 # Set entrypoint to bash
 CMD [&quot;/bin/bash&quot;]
-</code></pre><h5 id=step-2-create-a-sample-datalog-program>Step 2. Create a Sample Datalog Program</h5><p>In the same directory as the <code>Dockerfile</code>, let&rsquo;s create a file named <code>demo.dl</code> with the following Datalog program:</p><pre><code class=language-prolog>.decl parent(n: symbol, m: symbol)
+</code></pre><h5 id=step-2-create-a-sample-datalog-program>Step 2. Create a Sample Datalog Program</h5><p>In the same directory as the <code>Dockerfile</code>, let&rsquo;s create a file named <code>demo.dl</code> with the following Datalog program:</p><pre><code class=language-python>.decl parent(n: symbol, m: symbol)
 .decl ancestor(n: symbol, m: symbol)
 .output ancestor
 // Facts of parent: Extensional database
