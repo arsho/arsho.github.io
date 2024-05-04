@@ -195,6 +195,12 @@ blockquote p {
     margin-bottom: 0.25rem;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 25vh;
+    object-fit: contain;
+}
+
 @media only screen and (max-width: 600px) {
     .icon-left {
         margin-left: 0rem;
