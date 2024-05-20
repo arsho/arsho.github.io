@@ -14,7 +14,7 @@
 body {
     font-family: "Roboto", sans-serif;
     color: black;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
     font-size: 120% !important;
 }
 
@@ -211,8 +211,12 @@ blockquote p {
     }
 }
 
-
 @media print {
+    html, body {
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+
     body {
         background-color: white !important;
     }
@@ -292,4 +296,10 @@ blockquote p {
     .text-muted {
         color: inherit !important;
     }
+
+    section:nth-last-child(-n + 3) {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
 }
