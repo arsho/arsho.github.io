@@ -201,10 +201,6 @@ blockquote p {
     object-fit: contain;
 }
 
-.text-title-case{
-    text-transform: capitalize !important;
-}
-
 @media only screen and (max-width: 1024px) {
     .icon-left {
         margin-left: 0rem;
