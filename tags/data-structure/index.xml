@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-Structure on Ahmedur Rahman Shovon</title>
+    <link>http://localhost:1313/tags/data-structure/</link>
+    <description>Recent content in Data-Structure on Ahmedur Rahman Shovon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Nov 2023 20:53:41 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/data-structure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open addressing hashtable in CPU vs GPU</title>
+      <link>http://localhost:1313/blog/hashtable-cpu-vs-gpu/</link>
+      <pubDate>Wed, 31 Aug 2022 08:01:14 -0500</pubDate>
+      <guid>http://localhost:1313/blog/hashtable-cpu-vs-gpu/</guid>
+      <description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description>
+    </item>
+  </channel>
+</rss>

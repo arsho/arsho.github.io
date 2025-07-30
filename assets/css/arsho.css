@@ -16,6 +16,14 @@ body {
     color: black;
     /*background: #f5f5f5;*/
     font-size: 120% !important;
+    padding-top: 50px;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 64px;           /* height of your navbar */
+    margin-top: -64px;      /* same value, negative */
 }
 
 .blog {
