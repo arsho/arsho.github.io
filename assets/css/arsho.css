@@ -26,6 +26,12 @@ body {
     margin-top: -64px;      /* same value, negative */
 }
 
+.photo-thumb {
+    height: 220px;
+    width: 440px;
+    object-fit: contain;
+}
+
 .blog {
     font-size: 105% !important;
 }
