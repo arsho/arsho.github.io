@@ -34,66 +34,43 @@ if (print_btn) {
     };
 }
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
-//     const navbarCollapse = document.querySelector('.navbar-collapse');
-//
-//     navLinks.forEach(link => {
-//         link.addEventListener('click', function () {
-//             // Remove active from all nav links
-//             navLinks.forEach(l => l.classList.remove('active'));
-//             // Add active to the clicked link
-//             this.classList.add('active');
-//
-//             // Collapse navbar if open (mobile)
-//             if (navbarCollapse.classList.contains('show')) {
-//                 const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-//                 bsCollapse.hide();
-//             }
-//         });
-//     });
-// });
-//
-// document.addEventListener('DOMContentLoaded', function () {
-//     const sections = document.querySelectorAll('section[id]');
-//     const navLinks = document.querySelectorAll('.navbar .nav-link');
-//
-//     function activateLinkOnScroll() {
-//         let current = "";
-//
-//         sections.forEach(section => {
-//             const sectionTop = section.offsetTop - 70; // Adjust offset for fixed header
-//             if (window.scrollY >= sectionTop) {
-//                 current = section.getAttribute("id");
-//             }
-//         });
-//
-//         navLinks.forEach(link => {
-//             link.classList.remove("active");
-//             if (link.getAttribute("href") === `#${current}`) {
-//                 link.classList.add("active");
-//             }
-//         });
-//     }
-//
-//     window.addEventListener('scroll', activateLinkOnScroll);
-// });
-
-
 document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const sections = document.querySelectorAll('section[id]');
 
-    // Nav link click handler
+    function activateLinkOnScroll() {
+        let current = "";
+        const scrollY = window.pageYOffset;
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 80;
+            if (scrollY >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute("href");
+            if (!linkHref) return;
+            link.classList.remove("active");
+            if (
+                (linkHref === `#${current}`) ||
+                (linkHref === `/#${current}`)
+            ) {
+                link.classList.add("active");
+            }
+        });
+    }
+
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
-            // Remove active from all nav links
-            navLinks.forEach(l => l.classList.remove('active'));
-            // Add active to the clicked link
-            this.classList.add('active');
-
-            // Collapse only if not dropdown toggle (for mobile)
+            const href = this.getAttribute("href");
+            if (href.startsWith("#") || href.startsWith("/#")) {
+                // Do nothing: scroll handler will update active
+            } else {
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            }
             if (!this.classList.contains('dropdown-toggle')) {
                 if (navbarCollapse.classList.contains('show')) {
                     const bsCollapse = new bootstrap.Collapse(navbarCollapse, {toggle: false});
@@ -103,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Collapse navbar after picking a dropdown item (on mobile)
     dropdownItems.forEach(item => {
         item.addEventListener('click', function () {
             if (navbarCollapse.classList.contains('show')) {
@@ -113,28 +89,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Scroll-based nav active state (no changes)
-    const sections = document.querySelectorAll('section[id]');
-
-    function activateLinkOnScroll() {
-        let current = "";
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 70; // Adjust for header
-            if (window.scrollY >= sectionTop) {
-                current = section.getAttribute("id");
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href") === `#${current}`) {
-                link.classList.add("active");
-            }
-        });
-    }
-
     window.addEventListener('scroll', activateLinkOnScroll);
+
+    // Set initial active state after DOM loads
+    setTimeout(activateLinkOnScroll, 100);
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.getElementById('main-navbar');
