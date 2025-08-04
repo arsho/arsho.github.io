@@ -135,3 +135,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', activateLinkOnScroll);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById('main-navbar');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 60) {
+            navbar.classList.add('navbar-shrink');
+        } else {
+            navbar.classList.remove('navbar-shrink');
+        }
+    });
+});
