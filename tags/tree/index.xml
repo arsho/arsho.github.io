@@ -1,5 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tree on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/tree/</link><description>Recent content in tree on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 06 May 2019 15:05:42 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/tree/index.xml" rel="self" type="application/rss+xml"/><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>Install basic development CLI tools in Ubuntu 18.04. It includes:
-oh-my-zsh idle venv git tree Install Git in Ubuntu 18.04 LTS Install Git:
-sudo apt install git Add global configuration for Git user:
-git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Add SSH. Details can be found in this gist
-Install Oh My Zsh in Ubuntu 18.04 LTS Install Zsh:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tree on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/tree/</link><description>Recent content in Tree on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Nov 2023 20:53:41 -0600</lastBuildDate><atom:link href="https://arshovon.com/tags/tree/index.xml" rel="self" type="application/rss+xml"/><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>&lt;p&gt;Install basic development CLI tools in Ubuntu 18.04.
+It includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;idle&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;venv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tree&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-git-in-ubuntu-1804-lts"&gt;Install Git in Ubuntu 18.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install Git:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add global configuration for Git user:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.email &lt;span style="color:#e6db74"&gt;&amp;#34;you@example.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.name &lt;span style="color:#e6db74"&gt;&amp;#34;Your Name&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add SSH. Details can be found &lt;a href="https://gist.github.com/arsho/b91add3f536154386b9a4dca9373d5bb"&gt;in this gist&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-oh-my-zsh-in-ubuntu-1804-lts"&gt;Install Oh My Zsh in Ubuntu 18.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install Zsh:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install zsh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install git:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install oh-my-zsh:&lt;/p&gt;</description></item></channel></rss>

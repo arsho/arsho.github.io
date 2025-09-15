@@ -1,3 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>yesworkflow on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/yesworkflow/</link><description>Recent content in yesworkflow on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Dec 2020 15:05:42 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/yesworkflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
-Run Docker image of YesWorkflow Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
-import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yesworkflow on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/yesworkflow/</link><description>Recent content in Yesworkflow on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Nov 2023 20:53:41 -0600</lastBuildDate><atom:link href="https://arshovon.com/tags/yesworkflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>&lt;h2 id="yesworkflow"&gt;YesWorkflow&lt;/h2&gt;
+&lt;p&gt;YesWorkflow is a modeling and provenance management tool for scripting languages.&lt;/p&gt;
+&lt;h3 id="run-docker-image-of-yesworkflow"&gt;Run Docker image of YesWorkflow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download YesWorkflow repository from: &lt;a href="https://github.com/yesworkflow-org/yw-docker"&gt;https://github.com/yesworkflow-org/yw-docker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a terminal in &lt;code&gt;yw-cli&lt;/code&gt; directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a folder named &lt;code&gt;codes&lt;/code&gt; inside current directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a file &lt;code&gt;example.py&lt;/code&gt; with the following content in the &lt;code&gt;codes&lt;/code&gt; directory:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;import netCDF4
+import numpy as np
+from netCDF4 import ma
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+
+# @BEGIN main
+# @PARAM db_pth
+# @PARAM fmodel
+# @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.nc
+# @IN input_data_file @URI file:{db_pth}/NEE_first_year.nc
+# @OUT result_NEE_pdf @URI file:result_NEE.pdf
+
+def main(db_pth = &amp;#39;.&amp;#39;, fmodel = &amp;#39;clm&amp;#39;):
+
+ # @BEGIN fetch_mask
+ # @PARAM db_pth
+ # @IN g @AS input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.nc
+ # @OUT mask @AS land_water_mask
+ g = netCDF4.Dataset(db_pth+&amp;#39;/land_water_mask/LandWaterMask_Global_CRUNCEP.nc&amp;#39;, &amp;#39;r&amp;#39;)
+ mask = g.variables[&amp;#39;land_water_mask&amp;#39;]
+ mask = mask[:].swapaxes(0,1)
+ # @END fetch_mask
+
+
+ # @BEGIN load_data
+ # @PARAM db_pth
+ # @IN input_data_file @URI file:{db_pth}/NEE_first_year.nc
+ # @OUT data @AS NEE_data
+ f = netCDF4.Dataset(db_pth+&amp;#39;/NEE_first_year.nc&amp;#39;, &amp;#39;r&amp;#39;)
+ data = f.variables[&amp;#39;NEE&amp;#39;]
+ data = data[:]
+ data = data.swapaxes(0,2)
+ adj = 60*60*24*(365/12)*1000
+ data = data*adj
+ # @END load_data
+
+
+ # @BEGIN standardize_with_mask
+ # @IN data @AS NEE_data
+ # @IN mask @AS land_water_mask
+ # @OUT data @AS standardized_NEE_data
+ native = data.mean(2)
+ latShape = mask.shape[0]
+ logShape = mask.shape[1]
+ for x in range(latShape):
+ for y in range(logShape):
+ if mask[x,y] == 1 and ma.getmask(native[x,y]) == 1:
+ for index in range(data.shape[2]):
+ data[x,y,index] = 0
+ # @END standardize_with_mask
+
+
+ # @BEGIN simple_diagnose
+ # @PARAM fmodel
+ # @IN data @AS standardized_NEE_data
+ # @OUT pp @AS result_NEE_pdf @URI file:result_NEE.pdf
+ plt.imshow(np.mean(data,2))
+ plt.xlabel(&amp;#34;Mean 1982-2010 NEE [gC/m2/mon]&amp;#34;)
+ plt.title(fmodel + &amp;#34;:BG1&amp;#34;)
+ pp = PdfPages(&amp;#39;result_NEE.pdf&amp;#39;)
+ pp.savefig()
+ pp.close() 
+ # @END simple_diagnose
+
+# @END main
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Current directory structure:&lt;/p&gt;</description></item></channel></rss>

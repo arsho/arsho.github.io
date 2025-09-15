@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iot on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/iot/</link><description>Recent content in iot on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 30 Aug 2020 07:05:42 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>Environment Operating System : Raspbian GNU/Linux 9 (stretch) Model : Raspberry Pi 2 (Model B) Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
-Raspian Information Check the model of the Raspberry Pi:
-cat /proc/device-tree/model It confirms that I have a Raspberry Pi 2 (Model B)
-Raspberry Pi 2 Model B Rev 1.1 Check the Operating System (OS) of the Raspberry Pi:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Iot on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/iot/</link><description>Recent content in Iot on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Nov 2023 20:53:41 -0600</lastBuildDate><atom:link href="https://arshovon.com/tags/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>&lt;h2 id="environment"&gt;Environment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Operating System&lt;/b&gt; : Raspbian GNU/Linux 9 (stretch)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Model&lt;/b&gt; : Raspberry Pi 2 (Model B)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="docker-installation-procedure-on-raspberry-pi"&gt;Docker Installation Procedure on Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;The following steps showed the step by step installation guideline.&lt;/p&gt;
+&lt;h3 id="raspian-information"&gt;Raspian Information&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Check the model of the Raspberry Pi:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cat /proc/device-tree/model
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It confirms that I have a Raspberry Pi 2 (Model B)&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Raspberry Pi 2 Model B Rev 1.1
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Check the Operating System (OS) of the Raspberry Pi:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cat /etc/os-release
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This shows the details information of the OS.&lt;/p&gt;</description></item></channel></rss>

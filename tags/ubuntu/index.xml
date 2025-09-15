@@ -1,18 +1,230 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ubuntu on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/ubuntu/</link><description>Recent content in ubuntu on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2024 07:05:42 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>How to install NVIDIA driver and CUDA on Ubuntu 23.10</title><link>https://arshovon.com/blog/install-cuda-on-ubuntu-23-10/</link><pubDate>Sun, 05 May 2024 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cuda-on-ubuntu-23-10/</guid><description>In this blog post, I&amp;rsquo;ll guide you through the process of installing proper NVIDIA drivers and CUDA on Ubuntu 23.10.
-Scenario Let&amp;rsquo;s first understand the situation you might be facing:
-You own an NVIDIA GPU and need to install CUDA. You&amp;rsquo;re facing issues with missing NVIDIA drivers. The additional driver option in Ubuntu is displaying errors like pc-client-error-quark. Figure: The Additional Drivers interface may display errors for all available NVIDIA drivers (both proprietary and open).</description></item><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description></item><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
-Run Docker image of YesWorkflow Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
-import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description></item><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>How to install Avro Phonetic in Ubuntu 20.04 LTS Open Ubuntu Software Search Avro Phonetic in Ubuntu Software Click Install Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic) The Avro Phonetic will be added to the Input Sources Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut References Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description></item><item><title>Use SSH to logging into Raspberry Pi without Password</title><link>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</link><pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate><guid>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</guid><description>Scenario We can login into remote Raspberry Pi using ssh command:
-ssh -p PORT USER@IP password: RASPBERRY_PASSWORD As it can be seen, we require to input the Raspberry Pi&amp;rsquo;s password each time to establish SSH connection.
-Solution: Add local machine&amp;rsquo;s SSH key to Raspberry Pi for password less SSH connection To resolve the scenario, we need to add our local machine&amp;rsquo;s SSH key to the Raspberry Pi.
-Check if you have SSH key in local machine using:</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
-Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description></item><item><title>Install Docker on Ubuntu 22.10</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</guid><description>Why Docker? Docker is a tool for running application in an isolated environment.
-Some reasons you might want to use Docker:
-Same environment: Same environment in developers machines and production servers. Acts the same. Sandbox projects: Eliminates the risk of getting conflicts while working on different projects on same machine. Easy working without setup hassle: Start working directly on others projects without setting all of the environments.</description></item><item><title>Run Java Program in Ubuntu 18.04</title><link>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</link><pubDate>Tue, 28 Jan 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</guid><description>Run Java Program in Ubuntu 18.04. The program will be run using Oracle&#39;s OpenJDK JDK 8.
-Check if Java Runtime Environment(JRE) is installed in machine:
-java -version If JRE is installed it will show the version information similar to following:
-openjdk 11.0.5 2019-10-15 OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04) OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode) If you do not have installed JRE, install JRE using:</description></item><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>Install basic development CLI tools in Ubuntu 18.04. It includes:
-oh-my-zsh idle venv git tree Install Git in Ubuntu 18.04 LTS Install Git:
-sudo apt install git Add global configuration for Git user:
-git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Add SSH. Details can be found in this gist
-Install Oh My Zsh in Ubuntu 18.04 LTS Install Zsh:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/ubuntu/</link><description>Recent content in Ubuntu on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2024 22:11:33 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>How to install NVIDIA driver and CUDA on Ubuntu 23.10</title><link>https://arshovon.com/blog/install-cuda-on-ubuntu-23-10/</link><pubDate>Sun, 05 May 2024 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cuda-on-ubuntu-23-10/</guid><description>&lt;p&gt;In this blog post, I&amp;rsquo;ll guide you through the process of installing proper NVIDIA drivers and CUDA on Ubuntu 23.10.&lt;/p&gt;
+&lt;h4 id="scenario"&gt;Scenario&lt;/h4&gt;
+&lt;p&gt;Let&amp;rsquo;s first understand the situation you might be facing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You own an NVIDIA GPU and need to install CUDA.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;re facing issues with missing NVIDIA drivers.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;additional driver&lt;/code&gt; option in Ubuntu is displaying errors like &lt;code&gt;pc-client-error-quark&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../images/additional-drivers.png" alt="alt Additional drivers"&gt;
+&lt;em&gt;Figure: The &lt;code&gt;Additional Drivers&lt;/code&gt; interface may display errors for all available NVIDIA drivers (both proprietary and open). This article provides a solution to resolve this issue using the terminal.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>&lt;h3 id="what-is-gatsby"&gt;What is Gatsby?&lt;/h3&gt;
+&lt;p&gt;Gatsby is a React based build time static site generator that uses Webpack and GraphQL.
+It makes easy to work with data in React apps. It contains GraphQL data layer.
+During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time.
+As it generates the static files, Gatsby applications can be deployed in anywhere.&lt;/p&gt;</description></item><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>&lt;h2 id="yesworkflow"&gt;YesWorkflow&lt;/h2&gt;
+&lt;p&gt;YesWorkflow is a modeling and provenance management tool for scripting languages.&lt;/p&gt;
+&lt;h3 id="run-docker-image-of-yesworkflow"&gt;Run Docker image of YesWorkflow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download YesWorkflow repository from: &lt;a href="https://github.com/yesworkflow-org/yw-docker"&gt;https://github.com/yesworkflow-org/yw-docker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a terminal in &lt;code&gt;yw-cli&lt;/code&gt; directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a folder named &lt;code&gt;codes&lt;/code&gt; inside current directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a file &lt;code&gt;example.py&lt;/code&gt; with the following content in the &lt;code&gt;codes&lt;/code&gt; directory:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;import netCDF4
+import numpy as np
+from netCDF4 import ma
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+
+# @BEGIN main
+# @PARAM db_pth
+# @PARAM fmodel
+# @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.nc
+# @IN input_data_file @URI file:{db_pth}/NEE_first_year.nc
+# @OUT result_NEE_pdf @URI file:result_NEE.pdf
+
+def main(db_pth = &amp;#39;.&amp;#39;, fmodel = &amp;#39;clm&amp;#39;):
+
+ # @BEGIN fetch_mask
+ # @PARAM db_pth
+ # @IN g @AS input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.nc
+ # @OUT mask @AS land_water_mask
+ g = netCDF4.Dataset(db_pth+&amp;#39;/land_water_mask/LandWaterMask_Global_CRUNCEP.nc&amp;#39;, &amp;#39;r&amp;#39;)
+ mask = g.variables[&amp;#39;land_water_mask&amp;#39;]
+ mask = mask[:].swapaxes(0,1)
+ # @END fetch_mask
+
+
+ # @BEGIN load_data
+ # @PARAM db_pth
+ # @IN input_data_file @URI file:{db_pth}/NEE_first_year.nc
+ # @OUT data @AS NEE_data
+ f = netCDF4.Dataset(db_pth+&amp;#39;/NEE_first_year.nc&amp;#39;, &amp;#39;r&amp;#39;)
+ data = f.variables[&amp;#39;NEE&amp;#39;]
+ data = data[:]
+ data = data.swapaxes(0,2)
+ adj = 60*60*24*(365/12)*1000
+ data = data*adj
+ # @END load_data
+
+
+ # @BEGIN standardize_with_mask
+ # @IN data @AS NEE_data
+ # @IN mask @AS land_water_mask
+ # @OUT data @AS standardized_NEE_data
+ native = data.mean(2)
+ latShape = mask.shape[0]
+ logShape = mask.shape[1]
+ for x in range(latShape):
+ for y in range(logShape):
+ if mask[x,y] == 1 and ma.getmask(native[x,y]) == 1:
+ for index in range(data.shape[2]):
+ data[x,y,index] = 0
+ # @END standardize_with_mask
+
+
+ # @BEGIN simple_diagnose
+ # @PARAM fmodel
+ # @IN data @AS standardized_NEE_data
+ # @OUT pp @AS result_NEE_pdf @URI file:result_NEE.pdf
+ plt.imshow(np.mean(data,2))
+ plt.xlabel(&amp;#34;Mean 1982-2010 NEE [gC/m2/mon]&amp;#34;)
+ plt.title(fmodel + &amp;#34;:BG1&amp;#34;)
+ pp = PdfPages(&amp;#39;result_NEE.pdf&amp;#39;)
+ pp.savefig()
+ pp.close() 
+ # @END simple_diagnose
+
+# @END main
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Current directory structure:&lt;/p&gt;</description></item><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>&lt;h2 id="how-to-install-avro-phonetic-in-ubuntu-2004-lts"&gt;How to install Avro Phonetic in Ubuntu 20.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;Ubuntu Software&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Search &lt;code&gt;Avro Phonetic&lt;/code&gt; in &lt;code&gt;Ubuntu Software&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_seach_avro_phonetic.png?style=center" alt="alt Avro Phonetic in Ubuntu software"&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Install&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_install_avro_phonetic.png?style=center" alt="alt Install Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;Restart the machine or logout and then login again&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;Settings&lt;/code&gt; &amp;gt; &lt;code&gt;Region &amp;amp; Language&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_region_and_language.png?style=center" alt="alt Add Bangla Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;Click on the &lt;code&gt;+&lt;/code&gt; (plus) icon in &lt;code&gt;Input Sources&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Search for &lt;code&gt;Bangla&lt;/code&gt; and then click on &lt;code&gt;Bangla (Avro Phonetic)&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_add_input_source.png?style=center" alt="alt Add Bangla Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;Avro Phonetic&lt;/code&gt; will be added to the &lt;code&gt;Input Sources&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_input_sources.png?style=center" alt="alt Avro phonetic in Input Sources"&gt;&lt;/li&gt;
+&lt;li&gt;Now you will get a dropdown for selecting &lt;code&gt;bn&lt;/code&gt; for Bangla language in top bar right corner&lt;/li&gt;
+&lt;li&gt;You can switch between different &lt;code&gt;Input Source&lt;/code&gt; using &lt;code&gt;win&lt;/code&gt; + &lt;code&gt;space&lt;/code&gt; keyboard shortcut
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_bangla_demo.png?style=center" alt="alt Write using Bangla"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="references"&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://askubuntu.com/a/1290110/654735"&gt;Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.04 LTS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linuxconfig.org/how-to-add-and-switch-keyboard-layout-on-ubuntu-20-04-desktop"&gt;How to add and switch keyboard layout on Ubuntu 20.04 Desktop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Use SSH to logging into Raspberry Pi without Password</title><link>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</link><pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate><guid>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</guid><description>&lt;h1 id="scenario"&gt;Scenario&lt;/h1&gt;
+&lt;p&gt;We can login into remote Raspberry Pi using &lt;code&gt;ssh&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ssh -p PORT USER@IP
+password: RASPBERRY_PASSWORD
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As it can be seen, we require to input the Raspberry Pi&amp;rsquo;s password each time to establish SSH connection.&lt;/p&gt;
+&lt;h1 id="solution-add-local-machines-ssh-key-to-raspberry-pi-for-password-less-ssh-connection"&gt;Solution: Add local machine&amp;rsquo;s SSH key to Raspberry Pi for password less SSH connection&lt;/h1&gt;
+&lt;p&gt;To resolve the scenario, we need to add our local machine&amp;rsquo;s SSH key to the Raspberry Pi.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check if you have SSH key in local machine using:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ls -al ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;If you don&amp;rsquo;t have any SSH key, generate one:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ssh-keygen -t rsa -b 2048
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/username/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/username/.ssh/id_rsa.
+Your public key has been saved in /home/username/.ssh/id_rsa.pub.
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Copy the keys to the Raspberry Pi server:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ssh-copy-id -p PORT USER@RASPBERRY_IP_ADDRESS
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Following prompt will be opened and you need to give the Respberry Pi&amp;rsquo;s password:&lt;/p&gt;</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>&lt;h3 id="what-is-docker-compose"&gt;What is Docker Compose?&lt;/h3&gt;
+&lt;p&gt;Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.&lt;/p&gt;
+&lt;p&gt;Compose uses a &lt;code&gt;YML&lt;/code&gt;\&lt;code&gt;YAML&lt;/code&gt; file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.
+Some reasons you might want to use Compose :&lt;/p&gt;</description></item><item><title>Install Docker on Ubuntu 22.10</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</guid><description>&lt;h3 id="why-docker"&gt;Why Docker?&lt;/h3&gt;
+&lt;p&gt;Docker is a tool for running application in an isolated environment.&lt;/p&gt;
+&lt;p&gt;Some reasons you might want to use Docker:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Same environment: &lt;/b&gt; Same environment in developers machines and production servers. Acts the same.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Sandbox projects: &lt;/b&gt; Eliminates the risk of getting conflicts while working on different projects on same machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Easy working without setup hassle: &lt;/b&gt; Start working directly on others projects without setting all of the environments.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Debug your app, not your environment: &lt;/b&gt; Securely build and share any application, anywhere.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="container-image-dockerfile-docker-hub"&gt;Container, Image, Dockerfile, Docker Hub:&lt;/h4&gt;
+&lt;p&gt;&lt;b&gt;Container&lt;/b&gt; is a running instance of an image.
+An &lt;b&gt;image&lt;/b&gt; is a template for creating the environment you want to snapshot out of a system at a particular time.
+An image includes:&lt;/p&gt;</description></item><item><title>Run Java Program in Ubuntu 18.04</title><link>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</link><pubDate>Tue, 28 Jan 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</guid><description>&lt;p&gt;Run Java Program in Ubuntu 18.04.
+The program will be run using &lt;code&gt;Oracle's OpenJDK JDK 8&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check if Java Runtime Environment(JRE) is installed in machine:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;java -version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;If JRE is installed it will show the version information similar to following:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;openjdk 11.0.5 2019-10-15
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK Runtime Environment &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK 64-Bit Server VM &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;If you do not have installed JRE, install JRE using:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install openjdk-8-jre
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Check if Java compiler is installed in machine:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;javac -version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;If Java compiler is installed it will show the version information similar to following:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;javac 1.8.0_232
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;If you do not have installed Java compiler, install it using:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install openjdk-8-jdk
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Go to any directory and create a demo Java program. For example, we are going to create &lt;code&gt;Student.java&lt;/code&gt; as following:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Student&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		System.&lt;span style="color:#a6e22e"&gt;out&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Hello from Student class&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Compile the Java class using:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;javac Student.java
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Run the compiled program using:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;java Student
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;You will see the output like below:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Hello from Student class
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/run_java_in_terminal.png?style=center" alt="alt Run Java Program in Ubuntu 18.04"&gt;&lt;/p&gt;</description></item><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>&lt;p&gt;Install basic development CLI tools in Ubuntu 18.04.
+It includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;idle&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;venv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tree&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-git-in-ubuntu-1804-lts"&gt;Install Git in Ubuntu 18.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install Git:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add global configuration for Git user:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.email &lt;span style="color:#e6db74"&gt;&amp;#34;you@example.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.name &lt;span style="color:#e6db74"&gt;&amp;#34;Your Name&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add SSH. Details can be found &lt;a href="https://gist.github.com/arsho/b91add3f536154386b9a4dca9373d5bb"&gt;in this gist&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-oh-my-zsh-in-ubuntu-1804-lts"&gt;Install Oh My Zsh in Ubuntu 18.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install Zsh:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install zsh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install git:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install oh-my-zsh:&lt;/p&gt;</description></item></channel></rss>

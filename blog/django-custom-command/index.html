@@ -1,47 +1,56 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content=index,follow><meta name=keywords content="django custom management command,django command,write django command"><meta name=description content="Write Django custom command"><meta name=author content="Ahmedur Rahman Shovon"><meta property=og:url content=https://arshovon.com/blog/django-custom-command/><meta property=og:type content=website><meta property=og:title content="Writing Django Custom Management Command - Ahmedur Rahman Shovon"><meta name=og:description content="Write Django custom command"><meta property=og:image content=https://arshovon.com/blog/images/django_custom_command_1.png><meta property=og:image:secure_url content=https://arshovon.com/blog/images/django_custom_command_1.png><meta property=og:image:type content=image/png><meta property=og:image:alt content="Writing Django Custom Management Command - Ahmedur Rahman Shovon"><meta property=og:site_name content="Ahmedur Rahman Shovon"><meta property=og:locale content=en-us><meta name=twitter:card content=summary><meta name=twitter:image content=https://arshovon.com/blog/images/django_custom_command_1.png><meta name=twitter:url content=https://arshovon.com/blog/django-custom-command/><meta property=twitter:title content="Writing Django Custom Management Command - Ahmedur Rahman Shovon"><meta name=twitter:description content="Write Django custom command"><title>Writing Django Custom Management Command - Ahmedur Rahman Shovon</title><link rel=canonical href=https://arshovon.com/blog/django-custom-command/><link rel=icon href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel="shortcut icon" href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx crossorigin=anonymous><script src=https://kit.fontawesome.com/9c9dff05f4.js crossorigin=anonymous></script><link rel=stylesheet href=https://arshovon.com/assets/css/arsho.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-119139307-1');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/prolog.min.js integrity="sha512-JrKKSmGetELE+7du9jrRs4R9dC6QO5gFIk5s7RRI7wWdG3yueqjDOJPX/3eDc83bE/qyNjMr4gaYVqKDhjQkpg==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dockerfile.min.js integrity="sha512-y0uGK4Ql/eJrIn2uOu2Hfc/3wnQpAHlEF58pL7akgWaVnuOJ8D5Aal/VPRKyMGADVuAavg1yVdLUpn9PlnGmYA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/shell.min.js integrity="sha512-oXIjzcLt5aPmQEl6MaYwcoCX70QJZq1qiyEYE3tlOixhfsYiTKKftLjJFuRjV7wo3WTHI+wfVr3EJQfRJrMnSQ==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js integrity="sha512-64D4TOespcFsS6vnnca/aON48/6XNG61BAtQj7WG+8qAZXclMfx92cXC7l56/FuHLNY9FeDvLPqVuT3x4AptgA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js></script><link rel=stylesheet href=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css></head><header class="d-print-none header mb-md-4 mb-lg-4 mb-xl-4"><nav id=main-navbar class="navbar fixed-top bg-light navbar-expand-md navbar-light" aria-label=site_top_menu><div class="container px-md-0"><a class=navbar-brand href=/>AR Shovon</a>
-<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#site_top_menu aria-controls=site_top_menu aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=site_top_menu><div class=mx-auto><ul class="navbar-nav me-auto mb-2 mb-md-0"><li class=nav-item><a class=nav-link title=Home href=/><i class="fa fa-home fa-lg me-1"></i>Home</a></li><li class=nav-item><a class=nav-link title=Education href=/#Education><i class="fa fa-graduation-cap fa-lg me-1"></i>Education</a></li><li class=nav-item><a class=nav-link title=Experiences href=/#Experiences><i class="fa fa-briefcase fa-lg me-1"></i>Experiences</a></li><li class=nav-item><a class=nav-link title=Publications href=/#Publications><i class="fa fa-book fa-lg me-1"></i>Publications</a></li><li class=nav-item><a class=nav-link title=Projects href=/#Projects><i class="fa fa-code fa-lg me-1"></i>Projects</a></li><li class=nav-item><a class=nav-link title=Awards href=/#Awards><i class="fa fa-award fa-lg me-1"></i>Awards</a></li><li class=nav-item><a class=nav-link title=Services href=/#Services><i class="fa fa-handshake fa-lg me-1"></i>Services</a></li><li class=nav-item><a class=nav-link title="Blog posts" href=/blog><i class="fa fa-laptop-code fa-lg me-1"></i>Blog</a></li><li class=nav-item><a class=nav-link title=Apps href=/apps><i class="fa fa-globe fa-lg me-1"></i>Apps</a></li></ul></div></div></div></nav></header><body><div class="container-fluid container-xl bg-white"><div class=row><header class="text-bg-light px-md-2 pb-md-2 text-center list-jumbotron"><h1 class="pt-5 fs-3 text-center">Writing Django Custom Management Command</h1><h2 class="text-center fs-5 mb-5">By
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="index,follow"><meta name=keywords content="django custom management command,django command,write django command"><meta name=description content="Write Django custom command"><meta name=author content="Ahmedur Rahman Shovon"><meta property="og:url" content="https://arshovon.com/blog/django-custom-command/"><meta property="og:type" content="website"><meta property="og:title" content="Writing Django Custom Management Command - Ahmedur Rahman Shovon"><meta name=og:description content="Write Django custom command"><meta property="og:image" content="https://arshovon.com/blog/images/django_custom_command_1.png"><meta property="og:image:secure_url" content="https://arshovon.com/blog/images/django_custom_command_1.png"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Writing Django Custom Management Command - Ahmedur Rahman Shovon"><meta property="og:site_name" content="Ahmedur Rahman Shovon"><meta property="og:locale" content="en-us"><meta name=twitter:card content="summary"><meta name=twitter:image content="https://arshovon.com/blog/images/django_custom_command_1.png"><meta name=twitter:url content="https://arshovon.com/blog/django-custom-command/"><meta property="twitter:title" content="Writing Django Custom Management Command - Ahmedur Rahman Shovon"><meta name=twitter:description content="Write Django custom command"><title>Writing Django Custom Management Command - Ahmedur Rahman Shovon</title><link rel=canonical href=https://arshovon.com/blog/django-custom-command/><link rel=icon href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel="shortcut icon" href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx crossorigin=anonymous><script src=https://kit.fontawesome.com/9c9dff05f4.js crossorigin=anonymous></script><link rel=stylesheet href=https://arshovon.com/assets/css/arsho.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-119139307-1")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/prolog.min.js integrity="sha512-JrKKSmGetELE+7du9jrRs4R9dC6QO5gFIk5s7RRI7wWdG3yueqjDOJPX/3eDc83bE/qyNjMr4gaYVqKDhjQkpg==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dockerfile.min.js integrity="sha512-y0uGK4Ql/eJrIn2uOu2Hfc/3wnQpAHlEF58pL7akgWaVnuOJ8D5Aal/VPRKyMGADVuAavg1yVdLUpn9PlnGmYA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/shell.min.js integrity="sha512-oXIjzcLt5aPmQEl6MaYwcoCX70QJZq1qiyEYE3tlOixhfsYiTKKftLjJFuRjV7wo3WTHI+wfVr3EJQfRJrMnSQ==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js integrity="sha512-64D4TOespcFsS6vnnca/aON48/6XNG61BAtQj7WG+8qAZXclMfx92cXC7l56/FuHLNY9FeDvLPqVuT3x4AptgA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js></script><link rel=stylesheet href=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css></head><header class="d-print-none header mb-md-4 mb-lg-4 mb-xl-4"><nav id=main-navbar class="navbar fixed-top bg-light navbar-expand-md navbar-light" aria-label=site_top_menu><div class="container px-md-0"><a class=navbar-brand href=/>AR Shovon
+</a><button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#site_top_menu aria-controls=site_top_menu aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=site_top_menu><div class=mx-auto><ul class="navbar-nav me-auto mb-2 mb-md-0"><li class=nav-item><a class=nav-link title=Home href=/><i class="fa fa-home fa-lg me-1"></i>
+Home</a></li><li class=nav-item><a class=nav-link title=Education href=/#Education><i class="fa fa-graduation-cap fa-lg me-1"></i>
+Education</a></li><li class=nav-item><a class=nav-link title=Experiences href=/#Experiences><i class="fa fa-briefcase fa-lg me-1"></i>
+Experiences</a></li><li class=nav-item><a class=nav-link title=Publications href=/#Publications><i class="fa fa-book fa-lg me-1"></i>
+Publications</a></li><li class=nav-item><a class=nav-link title=Projects href=/#Projects><i class="fa fa-code fa-lg me-1"></i>
+Projects</a></li><li class=nav-item><a class=nav-link title=Awards href=/#Awards><i class="fa fa-award fa-lg me-1"></i>
+Awards</a></li><li class=nav-item><a class=nav-link title=Services href=/#Services><i class="fa fa-handshake fa-lg me-1"></i>
+Services</a></li><li class=nav-item><a class=nav-link title="Blog posts" href=/blog><i class="fa fa-laptop-code fa-lg me-1"></i>
+Blog</a></li><li class=nav-item><a class=nav-link title=Apps href=/apps><i class="fa fa-globe fa-lg me-1"></i>
+Apps</a></li></ul></div></div></div></nav></header><body><div class="container-fluid container-xl bg-white"><div class=row><header class="text-bg-light px-md-2 pb-md-2 text-center list-jumbotron"><h1 class="pt-5 fs-3 text-center">Writing Django Custom Management Command</h1><h2 class="text-center fs-5 mb-5">By
 Ahmedur Rahman Shovon</h2><div class="mb-1 clearfix d-print-none"><small class=d-block>Published
-<time datetime=2019-09-26T13:14:12&#43;06:00>September 26, 2019</time>, Updated
-<time datetime=2025-09-09T14:05:43-05:00></i>September 9, 2025</time></small>
-<span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/web-application class="badge text-bg-secondary" title="web application">web application</a></span>
-<span class=me-2><a href=https://arshovon.com/tags/ class="badge text-bg-secondary me-1" title="All tags"><i class="fa fa-tags"></i></a><a href=https://arshovon.com/tags/django class="badge text-bg-secondary" title=django>django</a>
+<time datetime=2019-09-26T13:14:12+06:00>September 26, 2019</time>, Updated
+<time datetime=2023-11-26T20:53:41-06:00></i>November 26, 2023</time>
+</small><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/web-application class="badge text-bg-secondary" title="web application">web application</a>
+</span><span class=me-2><a href=https://arshovon.com/tags/ class="badge text-bg-secondary me-1" title="All tags"><i class="fa fa-tags"></i></a>
+<a href=https://arshovon.com/tags/django class="badge text-bg-secondary" title=django>django</a>
 <a href=https://arshovon.com/tags/csv class="badge text-bg-secondary" title=csv>csv</a>
 <a href=https://arshovon.com/tags/python class="badge text-bg-secondary" title=python>python</a></span></div></header><main class="col-12 col-xl-8 offset-xl-2 blog p-0" role=main><article><div class=p-3><p>When developing application using Django framework, we extensively use various Django commands.
-Few common Django commands we use regularly are:</p><ul><li><code>python manage.py runserver</code></li><li><code>python manage.py makemigrations</code></li><li><code>python manage.py migrate</code></li></ul><p>These commands are built in and lies within Django itself.</p><p>We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.</p><p><img src=/blog/images/django_custom_command_1.png alt="alt example of django custom command"></p><p>These custom admin commands can be invoked using <code>manage.py COMMAND_NAME</code>.</p><p>To add custom Django admin command, firstly we need to add a directory <code>management/commands</code> to any of the apps folder.</p><p>Suppose, we need to write a custom Django admin command to insert some data from a CSV file to existing model.</p><p>Let&rsquo;s name the command as <code>insert_upazila_office_reports.py</code>.</p><p>We have following CSV files:</p><ul><li><code>acland_offices_rank.csv</code></li><li><code>uno_offices_rank.csv</code></li></ul><p>After placing the files in respective directories, directory structure may look like this:</p><pre><code class=language-bash>APPLICATION_ROOT
-├── manage.py
-├── PROJECT_ROOT
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── APP1
-│   ├── admin.py
-│   ├── apps.py
-│   ├── fixtures
-│   │   ├── fixture_1.json
-│   │   └── fixture_2.json
-│   ├── __init__.py
-│   ├── management
-│   │   └── commands
-│   │       ├── insert_upazila_office_reports.py
-│   │       ├── acland_offices_rank.csv
-│   │       └── uno_offices_rank.csv
-│   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── templates
-│   │   ├── base_generic.html
-│   │   └── index.html
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
-└── requirements.txt
-
-</code></pre><p>The name of the CSV file will be passed as argument to the Django command.</p><p>The desired functionality of our command is to insert data from passed CSV files to existing model.</p><p>This command will insert data from CSV file to <code>UNOOfficeReport</code> model assuming the CSV file name is passed.
-Additionally, it will insert data to <code>ACLandOfficeReport</code> model if <code>--acland</code> optional argument is passed.</p><p>Let&rsquo;s create the <code>insert_upazila_office_reports.py</code>.</p><pre><code>import csv
+Few common Django commands we use regularly are:</p><ul><li><code>python manage.py runserver</code></li><li><code>python manage.py makemigrations</code></li><li><code>python manage.py migrate</code></li></ul><p>These commands are built in and lies within Django itself.</p><p>We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.</p><p><img src=/blog/images/django_custom_command_1.png alt="alt example of django custom command"></p><p>These custom admin commands can be invoked using <code>manage.py COMMAND_NAME</code>.</p><p>To add custom Django admin command, firstly we need to add a directory <code>management/commands</code> to any of the apps folder.</p><p>Suppose, we need to write a custom Django admin command to insert some data from a CSV file to existing model.</p><p>Let&rsquo;s name the command as <code>insert_upazila_office_reports.py</code>.</p><p>We have following CSV files:</p><ul><li><code>acland_offices_rank.csv</code></li><li><code>uno_offices_rank.csv</code></li></ul><p>After placing the files in respective directories, directory structure may look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>APPLICATION_ROOT
+</span></span><span style=display:flex><span>├── manage.py
+</span></span><span style=display:flex><span>├── PROJECT_ROOT
+</span></span><span style=display:flex><span>│   ├── __init__.py
+</span></span><span style=display:flex><span>│   ├── settings.py
+</span></span><span style=display:flex><span>│   ├── urls.py
+</span></span><span style=display:flex><span>│   └── wsgi.py
+</span></span><span style=display:flex><span>├── APP1
+</span></span><span style=display:flex><span>│   ├── admin.py
+</span></span><span style=display:flex><span>│   ├── apps.py
+</span></span><span style=display:flex><span>│   ├── fixtures
+</span></span><span style=display:flex><span>│   │   ├── fixture_1.json
+</span></span><span style=display:flex><span>│   │   └── fixture_2.json
+</span></span><span style=display:flex><span>│   ├── __init__.py
+</span></span><span style=display:flex><span>│   ├── management
+</span></span><span style=display:flex><span>│   │   └── commands
+</span></span><span style=display:flex><span>│   │       ├── insert_upazila_office_reports.py
+</span></span><span style=display:flex><span>│   │       ├── acland_offices_rank.csv
+</span></span><span style=display:flex><span>│   │       └── uno_offices_rank.csv
+</span></span><span style=display:flex><span>│   ├── migrations
+</span></span><span style=display:flex><span>│   │   ├── 0001_initial.py
+</span></span><span style=display:flex><span>│   │   └── __init__.py
+</span></span><span style=display:flex><span>│   ├── models.py
+</span></span><span style=display:flex><span>│   ├── templates
+</span></span><span style=display:flex><span>│   │   ├── base_generic.html
+</span></span><span style=display:flex><span>│   │   └── index.html
+</span></span><span style=display:flex><span>│   ├── tests.py
+</span></span><span style=display:flex><span>│   ├── urls.py
+</span></span><span style=display:flex><span>│   └── views.py
+</span></span><span style=display:flex><span>└── requirements.txt
+</span></span></code></pre></div><p>The name of the CSV file will be passed as argument to the Django command.</p><p>The desired functionality of our command is to insert data from passed CSV files to existing model.</p><p>This command will insert data from CSV file to <code>UNOOfficeReport</code> model assuming the CSV file name is passed.
+Additionally, it will insert data to <code>ACLandOfficeReport</code> model if <code>--acland</code> optional argument is passed.</p><p>Let&rsquo;s create the <code>insert_upazila_office_reports.py</code>.</p><pre tabindex=0><code>import csv
 import os
 from django.apps import apps
 from django.core.management.base import BaseCommand, CommandError
@@ -49,10 +58,10 @@ from reports.models import UNOOfficeReport, ACLandOfficeReport
 
 
 class Command(BaseCommand):
-    help = &quot;Insert Upazila office reports from a CSV file. &quot; \
-           &quot;CSV file name(s) should be passed. &quot; \
-           &quot;If no optional argument (e.g.: --acland) is passed, &quot; \
-           &quot;this command will insert UNO office reports.&quot;
+    help = &#34;Insert Upazila office reports from a CSV file. &#34; \
+           &#34;CSV file name(s) should be passed. &#34; \
+           &#34;If no optional argument (e.g.: --acland) is passed, &#34; \
+           &#34;this command will insert UNO office reports.&#34;
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -61,58 +70,58 @@ class Command(BaseCommand):
     def insert_upazila_report_to_db(self, data):
         try:
             self.model_name.objects.create(
-                upazila=data[&quot;upazila&quot;],
-                rank=data[&quot;rank&quot;],
-                office_name=data[&quot;office_name&quot;]
+                upazila=data[&#34;upazila&#34;],
+                rank=data[&#34;rank&#34;],
+                office_name=data[&#34;office_name&#34;]
             )
         except Exception as e:
-            raise CommandError(&quot;Error in inserting {}: {}&quot;.format(
+            raise CommandError(&#34;Error in inserting {}: {}&#34;.format(
                 self.model_name, str(e)))
 
     def get_current_app_path(self):
-        return apps.get_app_config('reports').path
+        return apps.get_app_config(&#39;reports&#39;).path
 
     def get_csv_file(self, filename):
         app_path = self.get_current_app_path()
-        file_path = os.path.join(app_path, &quot;management&quot;,
-                                 &quot;commands&quot;, filename)
+        file_path = os.path.join(app_path, &#34;management&#34;,
+                                 &#34;commands&#34;, filename)
         return file_path
 
     def add_arguments(self, parser):
-        parser.add_argument('filenames',
-                            nargs='+',
+        parser.add_argument(&#39;filenames&#39;,
+                            nargs=&#39;+&#39;,
                             type=str,
-                            help=&quot;Inserts Upazila Office reports from CSV file&quot;)
+                            help=&#34;Inserts Upazila Office reports from CSV file&#34;)
         # Named (optional) arguments
         parser.add_argument(
-            '--acland',
-            action='store_true',
-            help='Insert AC land office reports rather than UNO office',
+            &#39;--acland&#39;,
+            action=&#39;store_true&#39;,
+            help=&#39;Insert AC land office reports rather than UNO office&#39;,
         )
 
     def handle(self, *args, **options):
-        if options['acland']:
+        if options[&#39;acland&#39;]:
             self.model_name = ACLandOfficeReport
 
-        for filename in options['filenames']:
-            self.stdout.write(self.style.SUCCESS('Reading:{}'.format(filename)))
+        for filename in options[&#39;filenames&#39;]:
+            self.stdout.write(self.style.SUCCESS(&#39;Reading:{}&#39;.format(filename)))
             file_path = self.get_csv_file(filename)
             try:
                 with open(file_path) as csv_file:
-                    csv_reader = csv.reader(csv_file, delimiter=',')
+                    csv_reader = csv.reader(csv_file, delimiter=&#39;,&#39;)
                     for row in csv_reader:
-                        if row != &quot;&quot;:
+                        if row != &#34;&#34;:
                             words = [word.strip() for word in row]
                             upazila_name = words[0]
                             office_name = words[1]
                             rank = int(words[2])
                             data = {}
-                            data[&quot;upazila&quot;] = upazila_name
-                            data[&quot;office_name&quot;] = office_name
-                            data[&quot;rank&quot;] = rank
+                            data[&#34;upazila&#34;] = upazila_name
+                            data[&#34;office_name&#34;] = office_name
+                            data[&#34;rank&#34;] = rank
                             self.insert_upazila_report_to_db(data)
                             self.stdout.write(
-                                self.style.SUCCESS('{}_{}: {}'.format(
+                                self.style.SUCCESS(&#39;{}_{}: {}&#39;.format(
                                         upazila_name, office_name,                                        
                                         rank
                                         )
@@ -121,28 +130,27 @@ class Command(BaseCommand):
 
 
             except FileNotFoundError:
-                raise CommandError(&quot;File {} does not exist&quot;.format(
+                raise CommandError(&#34;File {} does not exist&#34;.format(
                     file_path))
-</code></pre><p>We can invoke the command like:</p><pre><code>python manage.py insert_upazila_office_reports uno_offices_rank.csv
-</code></pre><p>or</p><pre><code>python manage.py insert_upazila_office_reports --acland acland_offices_rank.csv
-</code></pre><h3 id=important-fact-about-writing-custom-django-admin-command>Important fact about writing custom Django admin command</h3><ul><li>The command should be a Python class extending <code>BaseCommand</code> class from <code>django.core.management.base</code></li><li>The command file should be placed in <code>management/commands</code> directory.</li><li><p>If you implement <code>__init__</code> in your subclass of <code>BaseCommand</code>, you must call <code>BaseCommand</code>’s <code>__init__</code>:</p><pre><code>class Command(BaseCommand):
-  def __init__(self, *args, **kwargs):
-      super().__init__(*args, **kwargs)
-      # ...
-
-</code></pre></li></ul><p>Figure to get details of our custom Django admin command:</p><p><img src=/blog/images/django_custom_command_2.png alt="alt django custom command help"></p><h3 id=reference>Reference:</h3><ul><li><a href=https://docs.djangoproject.com/en/2.2/howto/custom-management-commands/>Django documentation on Writing custom django-admin commands</a></li></ul><div class="d-print-none col-12 my-4 pb-4 border-top border-bottom"><p class="text-muted text-center"><small>Advertisement</small></p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-4737800736768640 data-ad-slot=3931195519></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div></div></article><div class=p-3><h4 class="mb-2 mt-4">Citation</h4><span class=lead>Click to select citation style</span><div class="accordion mb-3" id=citations><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseOne aria-expanded=false aria-controls=flush-collapseOne>
+</code></pre><p>We can invoke the command like:</p><pre tabindex=0><code>python manage.py insert_upazila_office_reports uno_offices_rank.csv
+</code></pre><p>or</p><pre tabindex=0><code>python manage.py insert_upazila_office_reports --acland acland_offices_rank.csv
+</code></pre><h3 id=important-fact-about-writing-custom-django-admin-command>Important fact about writing custom Django admin command</h3><ul><li>The command should be a Python class extending <code>BaseCommand</code> class from <code>django.core.management.base</code></li><li>The command file should be placed in <code>management/commands</code> directory.</li><li>If you implement <code>__init__</code> in your subclass of <code>BaseCommand</code>, you must call <code>BaseCommand</code>’s <code>__init__</code>:<pre tabindex=0><code>class Command(BaseCommand):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # ...
+</code></pre></li></ul><p>Figure to get details of our custom Django admin command:</p><p><img src=/blog/images/django_custom_command_2.png alt="alt django custom command help"></p><h3 id=reference>Reference:</h3><ul><li><a href=https://docs.djangoproject.com/en/2.2/howto/custom-management-commands/>Django documentation on Writing custom django-admin commands</a></li></ul><div class="d-print-none col-12 my-4 pb-4 border-top border-bottom"><p class="text-muted text-center"><small>Advertisement</small></p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-4737800736768640 data-ad-slot=3931195519></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div></div></article><div class=p-3><h4 class="mb-2 mt-4">Citation</h4><span class=lead>Click to select citation style</span><div class="accordion mb-3" id=citations><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseOne aria-expanded=false aria-controls=flush-collapseOne>
 APA Style</button></h2><div id=flush-collapseOne class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body>Shovon, A. R.
 (2019, September 26).
 <i>Writing Django Custom Management Command</i>.
 Ahmedur Rahman Shovon.
-Retrieved September 9, 2025, from
+Retrieved September 15, 2025, from
 <a href=https://arshovon.com/blog/django-custom-command/>https://arshovon.com/blog/django-custom-command/</a></div></div></div><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseTwo aria-expanded=false aria-controls=flush-collapseTwo>
 MLA Style</button></h2><div id=flush-collapseTwo class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body>Shovon, Ahmedur Rahman.
 “Writing Django Custom Management Command.”
 <i>Ahmedur Rahman Shovon</i>,
 26 Sep. 2019.
 Web.
-9 Sep. 2025.
+15 Sep. 2025.
 <a href=https://arshovon.com/blog/django-custom-command/>https://arshovon.com/blog/django-custom-command/</a>.</div></div></div><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseThree aria-expanded=false aria-controls=flush-collapseThree>
 BibTeX entry</button></h2><div id=flush-collapseThree class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body><pre>
 @misc{shovon_2019_writing,
@@ -152,9 +160,16 @@ BibTeX entry</button></h2><div id=flush-collapseThree class="accordion-collapse 
     url = "https://arshovon.com/blog/django-custom-command/",
     note = "[Online]"
 }
-</pre></div></div></div></div><h5 class="d-print-none mb-2 mt-4">Related contents in this website</h5><div class="d-print-none card-group"><div class=card><img src=/blog/images/django_CMS_login_page.png class="card-img-top shadow" alt="Introduction to django CMS"><div class=card-body><a href=https://arshovon.com/blog/introduction-to-django-cms/><h5 class=card-title>Introduction to django CMS</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/web-application class="badge text-bg-secondary" title="web application">web application</a></span></span></div></div><div class=card><img src=/blog/images/FLASK_DOCKER_BOOTSTRAP.png class="card-img-top shadow" alt="Develop Flask Application using Docker and Bootstrap Templates"><div class=card-body><a href=https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/><h5 class=card-title>Develop Flask Application using Docker and Bootstrap Templates</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/web-application class="badge text-bg-secondary" title="web application">web application</a>
-<a href=https://arshovon.com/categories/deployment class="badge text-bg-secondary" title=deployment>deployment</a></span></span></div></div></div><div class="d-print-none row row-cols-1 row-cols-md-2 g-4 mt-2"><div class=col><div class="card mb-3 bg-light border-light h-100"><img src=/blog/images/saas_example.png class="card-img-top shadow" alt="Writing Django Custom Management Command"><div class=card-body><h5 class=card-title><i class="fa fa-chevron-left pe-1"></i>Previous post</h5><p class=card-text><a href=https://arshovon.com/blog/saas-basic-features/ class="pt-2 pb-2">Basic features of Saas with example</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2019-05-06T16:05:42&#43;06:00><i class="fa fa-calendar pe-1"></i>May 6, 2019</time></span></div></div></div><div class=col><div class="card mb-3 bg-light text-md-end border-light h-100"><img src=/blog/images/read_file_by_n_lines_program_output.png class="card-img-top shadow" alt="Writing Django Custom Management Command"><div class=card-body><h5 class=card-title>Next post <i class="fa fa-chevron-right pe-1"></i></h5><p class=card-text><a href=https://arshovon.com/blog/read-file-by-n-lines/ class="pt-2 pb-2">Read File by N Lines using C programming language</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2019-09-29T12:14:12&#43;06:00><i class="fa fa-calendar pe-1"></i>September 29, 2019</time></span></div></div></div></div><div class="d-print-none shadow-lg row p-0 m-0 mt-4 footer-profile"><div class="m-auto p-lg-2"><div class="card border-0"><div class=card-body><div class=row><div class=col-md-2><img src=/avatar/arsho.jpg class="shadow-sm img-thumbnail" alt="Ahmedur Rahman Shovon"></div><div class="col-md-10 my-auto mx-md-0 px-md-0"><h5 class="card-title m-0 p-0"><small><a href=/>Ahmedur Rahman Shovon</a></small></h5><small class="well m-0 p-0">Postdoctoral Appointee
+</pre></div></div></div></div><h5 class="d-print-none mb-2 mt-4">Related contents in this website</h5><div class="d-print-none card-group"><div class=card><img src=/blog/images/django_CMS_login_page.png class="card-img-top shadow" alt="Introduction to django CMS"><div class=card-body><a href=https://arshovon.com/blog/introduction-to-django-cms/><h5 class=card-title>Introduction to django CMS</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/web-application class="badge text-bg-secondary" title="web application">web application</a></span></span></div></div><div class=card><img src=/blog/images/FLASK_DOCKER_BOOTSTRAP.png class="card-img-top shadow" alt="Develop Flask Application using Docker and Bootstrap Templates"><div class=card-body><a href=https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/><h5 class=card-title>Develop Flask Application using Docker and Bootstrap Templates</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/web-application class="badge text-bg-secondary" title="web application">web application</a>
+<a href=https://arshovon.com/categories/deployment class="badge text-bg-secondary" title=deployment>deployment</a></span></span></div></div></div><div class="d-print-none row row-cols-1 row-cols-md-2 g-4 mt-2"><div class=col><div class="card mb-3 bg-light border-light h-100"><img src=/blog/images/saas_example.png class="card-img-top shadow" alt="Writing Django Custom Management Command"><div class=card-body><h5 class=card-title><i class="fa fa-chevron-left pe-1"></i> Previous post</h5><p class=card-text><a href=https://arshovon.com/blog/saas-basic-features/ class="pt-2 pb-2">Basic features of Saas with example</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2019-05-06T16:05:42+06:00><i class="fa fa-calendar pe-1"></i>May 6, 2019</time></span></div></div></div><div class=col><div class="card mb-3 bg-light text-md-end border-light h-100"><img src=/blog/images/read_file_by_n_lines_program_output.png class="card-img-top shadow" alt="Writing Django Custom Management Command"><div class=card-body><h5 class=card-title>Next post <i class="fa fa-chevron-right pe-1"></i></h5><p class=card-text><a href=https://arshovon.com/blog/read-file-by-n-lines/ class="pt-2 pb-2">Read File by N Lines using C programming language</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2019-09-29T12:14:12+06:00><i class="fa fa-calendar pe-1"></i>September 29, 2019</time></span></div></div></div></div><div class="d-print-none shadow-lg row p-0 m-0 mt-4 footer-profile"><div class="m-auto p-lg-2"><div class="card border-0"><div class=card-body><div class=row><div class=col-md-2><img src=/avatar/arsho.jpg class="shadow-sm img-thumbnail" alt="Ahmedur Rahman Shovon"></div><div class="col-md-10 my-auto mx-md-0 px-md-0"><h5 class="card-title m-0 p-0"><small><a href=/>Ahmedur Rahman Shovon</a></small></h5><small class="well m-0 p-0">Postdoctoral Appointee
 at
-<a href=https://anl.gov/ title="Argonne National Laboratory">Argonne National Laboratory</a></small><ul class="list-inline m-md-0 p-md-0"><li class=list-inline-item><small><i class="fas fa-graduation-cap fa-fw mr-1"></i><a href="https://scholar.google.com/citations?hl=en&amp;user=6yvWyoYAAAAJ" title="Google Scholar Citation Profile">Google Scholar</a></small></li><li class=list-inline-item><small><i class="fab fa-linkedin fa-fw mr-1"></i><a href=https://www.linkedin.com/in/arshovon/ title="Linkedin profile">arshovon</a></small></li><li class=list-inline-item><small><i class="fab fa-github fa-fw mr-1"></i><a href=https://github.com/arsho/ title="Github profile">arsho</a></small></li><li class=list-inline-item><small><i class="fas fa-file-pdf fa-fw mr-1"></i><a href=/cv/Shovon_CV.pdf title="Curriculum Vitae">Curriculum Vitae</a></small></li></ul></div></div></div></div></div></div></div></main></div></div><footer class="footer d-print-none"><div class=text-center><small>Last updated: Sep 9, 2025,
+<a href=https://anl.gov/ title="Argonne National Laboratory">Argonne National Laboratory</a></small><ul class="list-inline m-md-0 p-md-0"><li class=list-inline-item><small><i class="fas fa-graduation-cap fa-fw mr-1"></i>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=6yvWyoYAAAAJ" title="Google Scholar Citation Profile">Google Scholar</a></small></li><li class=list-inline-item><small><i class="fab fa-linkedin fa-fw mr-1"></i>
+<a href=https://www.linkedin.com/in/arshovon/ title="Linkedin profile">arshovon</a></small></li><li class=list-inline-item><small><i class="fab fa-github fa-fw mr-1"></i>
+<a href=https://github.com/arsho/ title="Github profile">arsho</a></small></li><li class=list-inline-item><small><i class="fas fa-file-pdf fa-fw mr-1"></i>
+<a href=/cv/Shovon_CV.pdf title="Curriculum Vitae">Curriculum Vitae</a></small></li></ul></div></div></div></div></div></div></div></main></div></div><footer class="footer d-print-none"><div class=text-center><small>Last updated: Nov 26, 2023,
 <a href=/privacy>Privacy Policy</a><br>© Copyright 2025 <a href=https://arshovon.com/>Ahmedur Rahman Shovon</a>&nbsp, Logos © respective owners</small></div></footer><div id=back-to-top class="d-print-none sticky-bottom float-end d-inline d-none"><button class="btn m-0 p-0 text-secondary" data-bs-toggle=tooltip data-bs-placement=top data-bs-title="Go to top">
-<span class="fa-stack me-md-0 pe-md-0"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i></span></button></div><script defer src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js integrity=sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa crossorigin=anonymous></script><script defer src=https://arshovon.com/assets/js/arsho.js></script><script>hljs.highlightAll();hljs.addPlugin(new CopyButtonPlugin());</script></body></html>
+<span class="fa-stack me-md-0 pe-md-0"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i></span></button></div><script defer src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js integrity=sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa crossorigin=anonymous></script><script defer src=https://arshovon.com/assets/js/arsho.js></script><script>hljs.highlightAll(),hljs.addPlugin(new CopyButtonPlugin)</script></body></html>

@@ -1,13 +1,254 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/python/</link><description>Recent content in python on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 09 Jun 2024 11:50:10 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Crop and merge images using Python (OpenCV)</title><link>https://arshovon.com/blog/crop-merge-images-python/</link><pubDate>Sun, 09 Jun 2024 11:50:10 -0500</pubDate><guid>https://arshovon.com/blog/crop-merge-images-python/</guid><description>Manually cropping and merging a large number of images can be a boring and time-consuming task. We can automate this boring stuff with Python and the OpenCV library1. In this tutorial, we&amp;rsquo;ll explore how to crop and merge multiple images using Python and OpenCV.
-Scenario Suppose we have a collection of similar images, and we want to crop them at a certain location before merging every two images together. The images are 600px X 600px in size, and there&amp;rsquo;s a fixed region where we want to perform the cropping.</description></item><item><title>cuDF vs Pandas dataframe performance comparison</title><link>https://arshovon.com/blog/cudf-vs-df/</link><pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/cudf-vs-df/</guid><description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description></item><item><title>Run a Python script inside a virtual environment in the background</title><link>https://arshovon.com/blog/python-background/</link><pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate><guid>https://arshovon.com/blog/python-background/</guid><description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description></item><item><title>Sorting a list (Python 3)</title><link>https://arshovon.com/blog/sorting-a-list-python3/</link><pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate><guid>https://arshovon.com/blog/sorting-a-list-python3/</guid><description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
-Today we will sort a given list of strings in several ways to understand the Python 3 built-in sorted function .
-Dataset We will use the 50 U.S. states as our dataset.</description></item><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</guid><description>Pandas dataframe allows adding new columns to it based on the values of the existing columns.
-Example Scenario Suppose, a dataset contains Football match results of some matches like below:
-Date Venue Opponent GF GA 08-27-2017 H Arsenal FC 4 0 09-16-2017 H Burnley FC 1 1 Here, GF stands for Goals For and GA stands for Goals Against (i.</description></item><item><title>Python&#39;s combinations and combinations with replacement</title><link>https://arshovon.com/blog/python-combinations_with_replacement/</link><pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate><guid>https://arshovon.com/blog/python-combinations_with_replacement/</guid><description>Python&amp;rsquo;s combinations and combinations with replacement A recent Stack Overflow question had me looking at how to find a list of four numbers each from -1 to 1 that sum up to 1.
-Problem statement Generate every combination of four numbers(a.k.a. quadruplets) from (-1, -0.99, -0.98, ..., 0.98, 0.99, 1) that sum up to 1. Repetitions of numbers are allowed. For example: [0, 1, 0.12, -0.12], [0, 0, 0.5, 0.</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
-python manage.py runserver python manage.py makemigrations python manage.py migrate These commands are built in and lies within Django itself.
-We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.
-These custom admin commands can be invoked using manage.</description></item><item><title>8-diamond</title><link>https://arshovon.com/blog/8-diamond/</link><pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate><guid>https://arshovon.com/blog/8-diamond/</guid><description>Draw 8 of Diamond using Python
-__author__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; __license__ = &amp;quot;GPL&amp;quot; __version__ = &amp;quot;1.0.1&amp;quot; __maintainer__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; import turtle def draw(x_position, y_position, font, value): turtle.up() turtle.goto(x_position, y_position) turtle.write(value,font=font) turtle.down() turtle.hideturtle() canvas_width = 405 canvas_height = 490 turtle.setup(canvas_width, canvas_height, 0, 0) font_color = &#39;red&#39; turtle.color(font_color) turtle.title(&amp;quot;8 of diamond by arsho&amp;quot;) diamond_size = 100 small_diamond_size = 35 number_size = 40 diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, diamond_size, &amp;quot;normal&amp;quot;) small_diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, small_diamond_size, &amp;quot;normal&amp;quot;) number_font = (&amp;quot;Comic Sans MS&amp;quot;, number_size, &amp;quot;normal&amp;quot;) card_value = &amp;quot;8&amp;quot; diamond_value = &amp;quot;\u2666&amp;quot; x_position_left = -170 x_position_middle = -60 x_position_right = 50 y_position = -210 y_distance = 70 top_8_x_position = -190 top_8_y_position = 180 bottom_8_x_position = 150 bottom_8_y_position = -240 top_diamond_x_position = -193 top_diamond_y_position = 135 bottom_diamond_x_position = 145 bottom_diamond_y_position = -190 # Draw top 8 draw(top_8_x_position, top_8_y_position, number_font, card_value) # Draw top diamond draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value) # Draw bottom 8 draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value) # Draw bottom diamond draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value) for i in range(5): if i%2==0: # Draw two diamonds draw(x_position_left, y_position, diamond_font, diamond_value) draw(x_position_right, y_position, diamond_font, diamond_value) else: # Draw two diamonds draw(x_position_middle, y_position, diamond_font, diamond_value) y_position += y_distance Output:</description></item><item><title>Python Reduce Example</title><link>https://arshovon.com/blog/python-reduce-example/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-reduce-example/</guid><description> Get nth Fibonacci number using reduce from functools import reduce def get_first_n_fibonacci(n): if n&amp;lt;1: return [] ar = [0, 1] for i in range(2, n): ar.append(ar[i-1] + ar[i-2]) return ar[:n] def get_first_n_fibonacci_reduce(n): initializer = [0, 1] if n&amp;lt;2: return initializer[:n] ar = reduce(lambda fib, _: fib + [fib[-1] + fib[-2]], range(n-2), initializer) return ar if __name__ == &#39;__main__&#39;: assert get_first_n_fibonacci(5) == get_first_n_fibonacci_reduce(5) assert get_first_n_fibonacci(0) == get_first_n_fibonacci_reduce(0) assert get_first_n_fibonacci(1) == get_first_n_fibonacci_reduce(1) assert get_first_n_fibonacci(10) == get_first_n_fibonacci_reduce(10) List multiplication using reduce from functools import reduce def get_list_multiplication(ar): result = 1 for i in ar: result *= i return result def get_list_multiplication_using_reduce(ar): return reduce(lambda x, y: x*y, ar, 1) if __name__ == &#39;__main__&#39;: ar = [3, 1, 4, 5, -23] assert get_list_multiplication(ar) == get_list_multiplication_using_reduce(ar) Reference Python official documentation on reduce Gist file with these examples</description></item><item><title>Sort Python Dictionary</title><link>https://arshovon.com/blog/python-sort-dictionary/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-sort-dictionary/</guid><description>Sort Python dict in various ways Original Data
-world_cup_wins = { &amp;quot;Brazil&amp;quot;: 5, &amp;quot;Germany&amp;quot;: 4, &amp;quot;Italy&amp;quot;: 4, &amp;quot;Argentina&amp;quot;: 2, &amp;quot;France&amp;quot;: 2, &amp;quot;Uruguay&amp;quot;: 2, &amp;quot;England&amp;quot;: 1, &amp;quot;Spain&amp;quot;: 1 } SORT DICTIONARY BY KEY ASCENDING for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0]): print(key, value) Output:
-Argentina 2 Brazil 5 England 1 France 2 Germany 4 Italy 4 Spain 1 Uruguay 2 SORT DICTIONARY BY KEY DESCENDING for key, value in sorted(world_cup_wins.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/python/</link><description>Recent content in Python on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Sep 2025 16:56:26 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Crop and merge images using Python (OpenCV)</title><link>https://arshovon.com/blog/crop-merge-images-python/</link><pubDate>Sun, 09 Jun 2024 11:50:10 -0500</pubDate><guid>https://arshovon.com/blog/crop-merge-images-python/</guid><description>&lt;p&gt;Manually cropping and merging a large number of images can be a boring and time-consuming task.
+We can automate this boring stuff with Python and the OpenCV library&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+In this tutorial, we&amp;rsquo;ll explore how to crop and merge multiple images using Python and OpenCV.&lt;/p&gt;
+&lt;h3 id="scenario"&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Suppose we have a collection of similar images, and we want to crop them at a certain location before merging every two images together.
+The images are &lt;code&gt;600px X 600px&lt;/code&gt; in size, and there&amp;rsquo;s a fixed region where we want to perform the cropping.&lt;/p&gt;</description></item><item><title>cuDF vs Pandas dataframe performance comparison</title><link>https://arshovon.com/blog/cudf-vs-df/</link><pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/cudf-vs-df/</guid><description>&lt;p&gt;cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame.
+It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models.
+cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model.
+It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.&lt;/p&gt;</description></item><item><title>Run a Python script inside a virtual environment in the background</title><link>https://arshovon.com/blog/python-background/</link><pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate><guid>https://arshovon.com/blog/python-background/</guid><description>&lt;h3 id="scenario"&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Suppose, we have a Python script that uses some Python packages.
+To keep the global environment clean, we use a virtual environment (&lt;code&gt;venv&lt;/code&gt;) to install the dependencies.
+Let&amp;rsquo;s assume, the script requires a long time to finish.
+We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process.
+We also want to run the script in the background without blocking a terminal window.&lt;/p&gt;</description></item><item><title>Sorting a list (Python 3)</title><link>https://arshovon.com/blog/sorting-a-list-python3/</link><pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate><guid>https://arshovon.com/blog/sorting-a-list-python3/</guid><description>&lt;p&gt;There are a lot of &lt;a href="https://arshovon.com/blog/sorting-algorithm-comparisons/"&gt;sorting algorithms&lt;/a&gt;
+such as &lt;a href="https://arshovon.com/blog/bubble-sort/"&gt;Bubble sort&lt;/a&gt;,
+&lt;a href="https://arshovon.com/blog/insertion-sort/"&gt;Insertion sort&lt;/a&gt;,
+&lt;a href="https://arshovon.com/blog/merge-sort/"&gt;Merge sort&lt;/a&gt;, &lt;a href="https://arshovon.com/blog/counting-sort/"&gt;Counting sort&lt;/a&gt;, etc.
+But most of the time, we use builtin sorting function to sort an iterable (e.g.
+list, tuple, dictionary, custom class with iterator etc.).&lt;/p&gt;
+&lt;p&gt;Today we will sort a given list of strings in several ways to understand
+the &lt;a href="https://docs.python.org/3/library/functions.html#sorted"&gt;Python 3 built-in sorted function&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h3 id="dataset"&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;We will use &lt;a href="https://en.wikipedia.org/wiki/U.S._state"&gt;the 50 U.S. states&lt;/a&gt; as
+our dataset.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;states &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Alabama&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Alaska&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Arizona&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Arkansas&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;California&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Colorado&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Connecticut&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Delaware&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Florida&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Georgia&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Hawaii&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Idaho&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Illinois&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Indiana&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Iowa&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Kansas&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Kentucky&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Louisiana&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Maine&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Maryland&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Massachusetts&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Michigan&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Minnesota&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Mississippi&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Missouri&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Montana&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Nebraska&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Nevada&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;New Hampshire&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;New Jersey&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;New Mexico&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;New York&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;North Carolina&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;North Dakota&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Ohio&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Oklahoma&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Oregon&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Pennsylvania&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Rhode Island&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;South Carolina&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;South Dakota&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Tennessee&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Texas&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Utah&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Vermont&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Virginia&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Washington&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;West Virginia&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Wisconsin&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Wyoming&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="sorting-techniques"&gt;Sorting Techniques&lt;/h2&gt;
+&lt;p&gt;Now we will sort the above &lt;code&gt;states&lt;/code&gt; list in different ways.&lt;/p&gt;</description></item><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</guid><description>&lt;p&gt;Pandas dataframe allows adding new columns to it based on the values of the existing columns.&lt;/p&gt;
+&lt;h3 id="example-scenario"&gt;Example Scenario&lt;/h3&gt;
+&lt;p&gt;Suppose, a dataset contains Football match results of some matches like below:&lt;/p&gt;
+&lt;p&gt;{.table .table-bordered .table-striped .table-hover}&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Date&lt;/th&gt;
+ &lt;th&gt;Venue&lt;/th&gt;
+ &lt;th&gt;Opponent&lt;/th&gt;
+ &lt;th&gt;GF&lt;/th&gt;
+ &lt;th&gt;GA&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;08-27-2017&lt;/td&gt;
+ &lt;td&gt;H&lt;/td&gt;
+ &lt;td&gt;Arsenal FC&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;09-16-2017&lt;/td&gt;
+ &lt;td&gt;H&lt;/td&gt;
+ &lt;td&gt;Burnley FC&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Here, &lt;em&gt;GF&lt;/em&gt; stands for &lt;em&gt;Goals For&lt;/em&gt; and &lt;em&gt;GA&lt;/em&gt; stands for &lt;em&gt;Goals Against&lt;/em&gt; (i.e., number of goals conceded by a team).
+Now we want to add a new column called &lt;code&gt;Result&lt;/code&gt; to this dataframe that will contain the result of the match.&lt;/p&gt;</description></item><item><title>Python's combinations and combinations with replacement</title><link>https://arshovon.com/blog/python-combinations_with_replacement/</link><pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate><guid>https://arshovon.com/blog/python-combinations_with_replacement/</guid><description>&lt;h3 id="pythons-combinations-and-combinations-with-replacement"&gt;Python&amp;rsquo;s combinations and combinations with replacement&lt;/h3&gt;
+&lt;p&gt;A recent &lt;a href="https://stackoverflow.com/questions/70558962/four-numbers-each-from-1-to-1-that-sum-up-to-1"&gt;Stack Overflow question&lt;/a&gt; had me looking at how to find a list of four numbers each from -1 to 1 that sum up to 1.&lt;/p&gt;
+&lt;h3 id="problem-statement"&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Generate every combination of four numbers(a.k.a. quadruplets) from &lt;code&gt;(-1, -0.99, -0.98, ..., 0.98, 0.99, 1)&lt;/code&gt; that sum up to 1. Repetitions of numbers are allowed.
+For example:
+&lt;code&gt;[0, 1, 0.12, -0.12], [0, 0, 0.5, 0.5], [1, 1, -1, 0]...&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>&lt;p&gt;When developing application using Django framework, we extensively use various Django commands.
+Few common Django commands we use regularly are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python manage.py makemigrations&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python manage.py migrate&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These commands are built in and lies within Django itself.&lt;/p&gt;
+&lt;p&gt;We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/django_custom_command_1.png" alt="alt example of django custom command"&gt;&lt;/p&gt;
+&lt;p&gt;These custom admin commands can be invoked using &lt;code&gt;manage.py COMMAND_NAME&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>8-diamond</title><link>https://arshovon.com/blog/8-diamond/</link><pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate><guid>https://arshovon.com/blog/8-diamond/</guid><description>&lt;p&gt;Draw 8 of Diamond using Python&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__author__ &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Ahmedur Rahman Shovon&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__license__ &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;GPL&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__version__ &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;1.0.1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__maintainer__ &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Ahmedur Rahman Shovon&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; turtle
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;draw&lt;/span&gt;(x_position, y_position, font, value):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;up()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;goto(x_position, y_position)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;write(value,font&lt;span style="color:#f92672"&gt;=&lt;/span&gt;font)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;down()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;hideturtle()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;canvas_width &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;405&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;canvas_height &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;490&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;setup(canvas_width, canvas_height, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;font_color &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;color(font_color)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;title(&lt;span style="color:#e6db74"&gt;&amp;#34;8 of diamond by arsho&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;diamond_size &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;small_diamond_size &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;35&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;number_size &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;40&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;diamond_font &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#e6db74"&gt;&amp;#34;Comic Sans MS&amp;#34;&lt;/span&gt;, diamond_size, &lt;span style="color:#e6db74"&gt;&amp;#34;normal&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;small_diamond_font &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#e6db74"&gt;&amp;#34;Comic Sans MS&amp;#34;&lt;/span&gt;, small_diamond_size, &lt;span style="color:#e6db74"&gt;&amp;#34;normal&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;number_font &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#e6db74"&gt;&amp;#34;Comic Sans MS&amp;#34;&lt;/span&gt;, number_size, &lt;span style="color:#e6db74"&gt;&amp;#34;normal&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;card_value &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;8&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;diamond_value &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;\u2666&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;x_position_left &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;170&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;x_position_middle &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;x_position_right &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;210&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;y_distance &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;70&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;top_8_x_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;190&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;top_8_y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;180&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bottom_8_x_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;150&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bottom_8_y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;240&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;top_diamond_x_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;193&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;top_diamond_y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;135&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bottom_diamond_x_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;145&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bottom_diamond_y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;190&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Draw top 8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draw(top_8_x_position, top_8_y_position, number_font, card_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Draw top diamond&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Draw bottom 8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Draw bottom diamond&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(&lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; i&lt;span style="color:#f92672"&gt;%&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;&lt;span style="color:#f92672"&gt;==&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# Draw two diamonds&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; draw(x_position_left, y_position, diamond_font, diamond_value) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; draw(x_position_right, y_position, diamond_font, diamond_value) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# Draw two diamonds&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; draw(x_position_middle, y_position, diamond_font, diamond_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; y_position &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; y_distance
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;</description></item><item><title>Python Reduce Example</title><link>https://arshovon.com/blog/python-reduce-example/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-reduce-example/</guid><description>&lt;h4&gt; Get &lt;code&gt;n&lt;sup&gt;th&lt;/sup&gt;&lt;/code&gt; Fibonacci number using &lt;code&gt;reduce&lt;/code&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; functools &lt;span style="color:#f92672"&gt;import&lt;/span&gt; reduce
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_first_n_fibonacci&lt;/span&gt;(n):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; n&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ar &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;, n):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ar&lt;span style="color:#f92672"&gt;.&lt;/span&gt;append(ar[i&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;+&lt;/span&gt; ar[i&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; ar[:n]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_first_n_fibonacci_reduce&lt;/span&gt;(n):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; initializer &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; n&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; initializer[:n]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ar &lt;span style="color:#f92672"&gt;=&lt;/span&gt; reduce(&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; fib, _: fib &lt;span style="color:#f92672"&gt;+&lt;/span&gt; [fib[&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;+&lt;/span&gt; fib[&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;]], range(n&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;), initializer)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; ar
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; __name__ &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_first_n_fibonacci(&lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_first_n_fibonacci_reduce(&lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_first_n_fibonacci(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_first_n_fibonacci_reduce(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_first_n_fibonacci(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_first_n_fibonacci_reduce(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_first_n_fibonacci(&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_first_n_fibonacci_reduce(&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="list-multiplication-using-reduce"&gt;List multiplication using &lt;code&gt;reduce&lt;/code&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; functools &lt;span style="color:#f92672"&gt;import&lt;/span&gt; reduce
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_list_multiplication&lt;/span&gt;(ar):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; result &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; ar:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; result &lt;span style="color:#f92672"&gt;*=&lt;/span&gt; i
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; result
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_list_multiplication_using_reduce&lt;/span&gt;(ar):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; reduce(&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x, y: x&lt;span style="color:#f92672"&gt;*&lt;/span&gt;y, ar, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; __name__ &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ar &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;, &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;23&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_list_multiplication(ar) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_list_multiplication_using_reduce(ar)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="reference"&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/functools.html#functools.reduce"&gt;Python official documentation on reduce&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gist.github.com/arsho/99a5adbdd2493e7a530dcc695ccab4bb"&gt;Gist file with these examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Sort Python Dictionary</title><link>https://arshovon.com/blog/python-sort-dictionary/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-sort-dictionary/</guid><description>&lt;h3 id="sort-python-dict-in-various-ways"&gt;Sort Python &lt;code&gt;dict&lt;/code&gt; in various ways&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Original Data&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;world_cup_wins &lt;span style="color:#f92672"&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Brazil&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Germany&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Italy&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Argentina&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;France&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Uruguay&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;England&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Spain&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="sort-dictionary-by-key-ascending"&gt;SORT DICTIONARY BY KEY ASCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Argentina 2
+Brazil 5
+England 1
+France 2
+Germany 4
+Italy 4
+Spain 1
+Uruguay 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="sort-dictionary-by-key-descending"&gt;SORT DICTIONARY BY KEY DESCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;], reverse&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;True&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Uruguay 2
+Spain 1
+Italy 4
+Germany 4
+France 2
+England 1
+Brazil 5
+Argentina 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="sort-dictionary-by-value-ascending"&gt;SORT DICTIONARY BY VALUE ASCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;</description></item></channel></rss>

@@ -1,12 +1,182 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/docker/</link><description>Recent content in docker on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 21 Apr 2024 10:17:14 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Soufflé on Ubuntu using Docker</title><link>https://arshovon.com/blog/install-souffl%C3%A9-on-ubuntu-docker/</link><pubDate>Sun, 21 Apr 2024 10:17:14 -0500</pubDate><guid>https://arshovon.com/blog/install-souffl%C3%A9-on-ubuntu-docker/</guid><description>What is Soufflé? Datalog is a logic-based query programming language that allows users to write recursive queries at-ease. Datalog does not have unified specifications for its syntax, so each implementation may differ. Soufflé1 is an open source &amp;ldquo;state of the art&amp;rdquo; Datalog engine that uses OpenMP for parallelization in C++. It provides a compiler to translate Datalog programs into efficient C++ code, enabling Soufflé to handle large datasets while maintaining fast execution speeds.</description></item><item><title>Install deal.II on Ubuntu using Docker</title><link>https://arshovon.com/blog/install-dealii-on-ubuntu-docker/</link><pubDate>Wed, 17 Apr 2024 10:17:14 -0500</pubDate><guid>https://arshovon.com/blog/install-dealii-on-ubuntu-docker/</guid><description>What is deal.II? deal.II1 is an open source software library written in C++ for solving partial differential equations (PDEs) using the finite element method (FEM). It provides a comprehensive set of tools for solving complex PDEs arising in various fields, including fluid dynamics, solid mechanics, electromagnetics, and quantum mechanics. It is designed to be flexible, efficient, and scalable, supporting parallel computing on a wide range of architectures. The library provides a high-level interface for generating meshes, defining finite element spaces, assembling and solving linear systems, and post-processing and visualizing solutions.</description></item><item><title>Introduction to SYCL and DPC&#43;&#43;</title><link>https://arshovon.com/blog/sycl-docker-interactive/</link><pubDate>Tue, 26 Dec 2023 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/sycl-docker-interactive/</guid><description>SYCL is an open industry standard, not a programming language itself, developed by the Khronos Group to facilitate data parallelism in C++ for heterogeneous computing systems. This means you can write single-source C++ code that utilizes the power of various processors like CPUs, GPUs, and FPGAs in a single program. This improves code maintainability and portability across different hardware platforms.
-Core characteristics of SYCL:
-Single-source programming: Write code once and target diverse hardware architectures without rewriting for each device.</description></item><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description></item><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
-Run Docker image of YesWorkflow Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
-import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description></item><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>Environment Operating System : Raspbian GNU/Linux 9 (stretch) Model : Raspberry Pi 2 (Model B) Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
-Raspian Information Check the model of the Raspberry Pi:
-cat /proc/device-tree/model It confirms that I have a Raspberry Pi 2 (Model B)
-Raspberry Pi 2 Model B Rev 1.1 Check the Operating System (OS) of the Raspberry Pi:</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
-Environment Operating System : Ubuntu 18.04 LTS (64-bit) Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12 Memory : 15.3 GiB Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
-Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description></item><item><title>Install Docker on Ubuntu 22.10</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</guid><description>Why Docker? Docker is a tool for running application in an isolated environment.
-Some reasons you might want to use Docker:
-Same environment: Same environment in developers machines and production servers. Acts the same. Sandbox projects: Eliminates the risk of getting conflicts while working on different projects on same machine. Easy working without setup hassle: Start working directly on others projects without setting all of the environments.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/docker/</link><description>Recent content in Docker on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2024 22:11:33 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Soufflé on Ubuntu using Docker</title><link>https://arshovon.com/blog/install-souffl%C3%A9-on-ubuntu-docker/</link><pubDate>Sun, 21 Apr 2024 10:17:14 -0500</pubDate><guid>https://arshovon.com/blog/install-souffl%C3%A9-on-ubuntu-docker/</guid><description>&lt;h4 id="what-is-soufflé"&gt;What is Soufflé?&lt;/h4&gt;
+&lt;p&gt;Datalog is a logic-based query programming language that allows users to write recursive queries at-ease.
+Datalog does not have unified specifications for its syntax, so each implementation may differ.
+Soufflé&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; is an open source &amp;ldquo;state of the art&amp;rdquo; Datalog engine that uses OpenMP for parallelization in C++.
+It provides a compiler to translate Datalog programs into efficient C++ code, enabling Soufflé to handle large datasets while maintaining fast execution speeds.
+Soufflé also offers an interpreter for quick testing and debugging of Datalog programs.
+In addition to its core functionality, Soufflé offers several advanced features&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;, including:&lt;/p&gt;</description></item><item><title>Install deal.II on Ubuntu using Docker</title><link>https://arshovon.com/blog/install-dealii-on-ubuntu-docker/</link><pubDate>Wed, 17 Apr 2024 10:17:14 -0500</pubDate><guid>https://arshovon.com/blog/install-dealii-on-ubuntu-docker/</guid><description>&lt;h4 id="what-is-dealii"&gt;What is deal.II?&lt;/h4&gt;
+&lt;p&gt;deal.II&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; is an open source software library written in C++ for solving partial differential equations (PDEs) using the finite element method (FEM).
+It provides a comprehensive set of tools for solving complex PDEs arising in various fields, including fluid dynamics, solid mechanics, electromagnetics, and quantum mechanics.
+It is designed to be flexible, efficient, and scalable, supporting parallel computing on a wide range of architectures.
+The library provides a high-level interface for generating meshes, defining finite element spaces, assembling and solving linear systems, and post-processing and visualizing solutions. It also includes adaptive mesh refinement techniques, error estimators, and a wide range of finite element formulations, including continuous and discontinuous Galerkin methods.&lt;/p&gt;</description></item><item><title>Introduction to SYCL and DPC++</title><link>https://arshovon.com/blog/sycl-docker-interactive/</link><pubDate>Tue, 26 Dec 2023 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/sycl-docker-interactive/</guid><description>&lt;p&gt;SYCL is an open industry standard, not a programming language itself, developed by the Khronos Group to facilitate data parallelism in C++ for heterogeneous computing systems. This means you can write single-source C++ code that utilizes the power of various processors like CPUs, GPUs, and FPGAs in a single program. This improves code maintainability and portability across different hardware platforms.&lt;/p&gt;
+&lt;p&gt;Core characteristics of SYCL:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Single-source programming&lt;/strong&gt;: Write code once and target diverse hardware architectures without rewriting for each device.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data parallelism&lt;/strong&gt;: Leverage parallel execution for data-intensive tasks, significantly boosting performance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abstraction layer&lt;/strong&gt;: SYCL hides the underlying hardware complexities, providing a unified programming model for different devices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory management&lt;/strong&gt;: SYCL offers various memory models (e.g., unified shared memory) to efficiently manage data movement between host and devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="popular-sycl-implementations"&gt;Popular SYCL implementations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DPC++ (Data Parallel C++)&lt;/strong&gt;: Part of Intel&amp;rsquo;s oneAPI suite and also available as an open source compiler, DPC++ leverages LLVM/Clang for broad CPU and GPU support across Intel, NVIDIA, and AMD. In this post we will use DPC++ from oneAPI.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ComputeCPP&lt;/strong&gt;: Open-source and multi-backend, ComputeCPP excels on Intel and AMD hardware with good CPU and GPU coverage. NVIDIA GPU support is under development.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hipSYCL&lt;/strong&gt;: Primarily focused on NVIDIA GPUs with AMD support, hipSYCL offers multiple backends and experimental Intel GPU compatibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="additional-technical-points-to-consider"&gt;Additional technical points to consider&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Performance portability&lt;/strong&gt;: While SYCL promotes code portability, achieving optimal performance on each hardware platform might require specific tuning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning curve&lt;/strong&gt;: Compared to lower-level hardware-specific languages, SYCL has a gentler learning curve with support to modern C++ syntax but still requires understanding parallel programming concepts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ecosystem&lt;/strong&gt;: The SYCL ecosystem is evolving, with growing adoption and toolchain improvements.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SYCL and IntelGPU in HPC&lt;/strong&gt;: Aurora, the upcoming exascale supercomputer, will harness the power of SYCL and oneAPI on Intel GPUs to unlock groundbreaking scientific discoveries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="sycl-2020"&gt;SYCL 2020&lt;/h3&gt;
+&lt;p&gt;SYCL 2020 marked a significant milestone in the evolution of data parallelism for heterogeneous systems. DPC++ embraces the cutting-edge features introduced in the SYCL 2020 specification, empowering developers with:&lt;/p&gt;</description></item><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>&lt;h3 id="what-is-gatsby"&gt;What is Gatsby?&lt;/h3&gt;
+&lt;p&gt;Gatsby is a React based build time static site generator that uses Webpack and GraphQL.
+It makes easy to work with data in React apps. It contains GraphQL data layer.
+During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time.
+As it generates the static files, Gatsby applications can be deployed in anywhere.&lt;/p&gt;</description></item><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>&lt;h2 id="yesworkflow"&gt;YesWorkflow&lt;/h2&gt;
+&lt;p&gt;YesWorkflow is a modeling and provenance management tool for scripting languages.&lt;/p&gt;
+&lt;h3 id="run-docker-image-of-yesworkflow"&gt;Run Docker image of YesWorkflow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download YesWorkflow repository from: &lt;a href="https://github.com/yesworkflow-org/yw-docker"&gt;https://github.com/yesworkflow-org/yw-docker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a terminal in &lt;code&gt;yw-cli&lt;/code&gt; directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a folder named &lt;code&gt;codes&lt;/code&gt; inside current directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a file &lt;code&gt;example.py&lt;/code&gt; with the following content in the &lt;code&gt;codes&lt;/code&gt; directory:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;import netCDF4
+import numpy as np
+from netCDF4 import ma
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+
+# @BEGIN main
+# @PARAM db_pth
+# @PARAM fmodel
+# @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.nc
+# @IN input_data_file @URI file:{db_pth}/NEE_first_year.nc
+# @OUT result_NEE_pdf @URI file:result_NEE.pdf
+
+def main(db_pth = &amp;#39;.&amp;#39;, fmodel = &amp;#39;clm&amp;#39;):
+
+ # @BEGIN fetch_mask
+ # @PARAM db_pth
+ # @IN g @AS input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.nc
+ # @OUT mask @AS land_water_mask
+ g = netCDF4.Dataset(db_pth+&amp;#39;/land_water_mask/LandWaterMask_Global_CRUNCEP.nc&amp;#39;, &amp;#39;r&amp;#39;)
+ mask = g.variables[&amp;#39;land_water_mask&amp;#39;]
+ mask = mask[:].swapaxes(0,1)
+ # @END fetch_mask
+
+
+ # @BEGIN load_data
+ # @PARAM db_pth
+ # @IN input_data_file @URI file:{db_pth}/NEE_first_year.nc
+ # @OUT data @AS NEE_data
+ f = netCDF4.Dataset(db_pth+&amp;#39;/NEE_first_year.nc&amp;#39;, &amp;#39;r&amp;#39;)
+ data = f.variables[&amp;#39;NEE&amp;#39;]
+ data = data[:]
+ data = data.swapaxes(0,2)
+ adj = 60*60*24*(365/12)*1000
+ data = data*adj
+ # @END load_data
+
+
+ # @BEGIN standardize_with_mask
+ # @IN data @AS NEE_data
+ # @IN mask @AS land_water_mask
+ # @OUT data @AS standardized_NEE_data
+ native = data.mean(2)
+ latShape = mask.shape[0]
+ logShape = mask.shape[1]
+ for x in range(latShape):
+ for y in range(logShape):
+ if mask[x,y] == 1 and ma.getmask(native[x,y]) == 1:
+ for index in range(data.shape[2]):
+ data[x,y,index] = 0
+ # @END standardize_with_mask
+
+
+ # @BEGIN simple_diagnose
+ # @PARAM fmodel
+ # @IN data @AS standardized_NEE_data
+ # @OUT pp @AS result_NEE_pdf @URI file:result_NEE.pdf
+ plt.imshow(np.mean(data,2))
+ plt.xlabel(&amp;#34;Mean 1982-2010 NEE [gC/m2/mon]&amp;#34;)
+ plt.title(fmodel + &amp;#34;:BG1&amp;#34;)
+ pp = PdfPages(&amp;#39;result_NEE.pdf&amp;#39;)
+ pp.savefig()
+ pp.close() 
+ # @END simple_diagnose
+
+# @END main
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Current directory structure:&lt;/p&gt;</description></item><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>&lt;h2 id="environment"&gt;Environment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Operating System&lt;/b&gt; : Raspbian GNU/Linux 9 (stretch)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Model&lt;/b&gt; : Raspberry Pi 2 (Model B)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="docker-installation-procedure-on-raspberry-pi"&gt;Docker Installation Procedure on Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;The following steps showed the step by step installation guideline.&lt;/p&gt;
+&lt;h3 id="raspian-information"&gt;Raspian Information&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Check the model of the Raspberry Pi:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cat /proc/device-tree/model
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It confirms that I have a Raspberry Pi 2 (Model B)&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Raspberry Pi 2 Model B Rev 1.1
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Check the Operating System (OS) of the Raspberry Pi:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cat /etc/os-release
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This shows the details information of the OS.&lt;/p&gt;</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>&lt;h3 id="prerequisite"&gt;Prerequisite&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Docker Engine&lt;/code&gt; should be installed in local machine.
+Instructions on installing &lt;code&gt;Docker Engine&lt;/code&gt; on Ubuntu can be found in this tutorial: &lt;a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/"&gt;Install Docker on Ubuntu 18.04&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="environment"&gt;Environment&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Operating System&lt;/b&gt; : Ubuntu 18.04 LTS (64-bit)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Processor&lt;/b&gt; : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Memory&lt;/b&gt; : 15.3 GiB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="code-repository"&gt;Code Repository&lt;/h3&gt;
+&lt;p&gt;All codes used in this tutorial can be found in this Github repository:
+&lt;a href="https://github.com/arsho/FlaskDockerBootstrap"&gt;https://github.com/arsho/FlaskDockerBootstrap&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="directory-structure"&gt;Directory structure&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;.
+├── app.py
+├── Dockerfile
+├── readme.md
+├── requirements.txt
+├── static
+│   ├── css
+│   |   └── bootstrap.min.css
+│   ├── images
+│   │   ├── bootstrap.png
+│   │   ├── docker.png
+│   │   └── flask.svg
+│   └── js
+│      └── bootstrap.min.js
+└── templates
+ └── index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;requirements.txt&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>&lt;h3 id="what-is-docker-compose"&gt;What is Docker Compose?&lt;/h3&gt;
+&lt;p&gt;Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.&lt;/p&gt;
+&lt;p&gt;Compose uses a &lt;code&gt;YML&lt;/code&gt;\&lt;code&gt;YAML&lt;/code&gt; file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.
+Some reasons you might want to use Compose :&lt;/p&gt;</description></item><item><title>Install Docker on Ubuntu 22.10</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</guid><description>&lt;h3 id="why-docker"&gt;Why Docker?&lt;/h3&gt;
+&lt;p&gt;Docker is a tool for running application in an isolated environment.&lt;/p&gt;
+&lt;p&gt;Some reasons you might want to use Docker:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Same environment: &lt;/b&gt; Same environment in developers machines and production servers. Acts the same.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Sandbox projects: &lt;/b&gt; Eliminates the risk of getting conflicts while working on different projects on same machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Easy working without setup hassle: &lt;/b&gt; Start working directly on others projects without setting all of the environments.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Debug your app, not your environment: &lt;/b&gt; Securely build and share any application, anywhere.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="container-image-dockerfile-docker-hub"&gt;Container, Image, Dockerfile, Docker Hub:&lt;/h4&gt;
+&lt;p&gt;&lt;b&gt;Container&lt;/b&gt; is a running instance of an image.
+An &lt;b&gt;image&lt;/b&gt; is a template for creating the environment you want to snapshot out of a system at a particular time.
+An image includes:&lt;/p&gt;</description></item></channel></rss>

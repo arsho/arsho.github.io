@@ -1,56 +1,1039 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Ahmedur Rahman Shovon</title><link>https://arshovon.com/blog/</link><description>Recent content in Blog on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Sep 2018 22:31:21 +0800</lastBuildDate><atom:link href="https://arshovon.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Crop and merge images using Python (OpenCV)</title><link>https://arshovon.com/blog/crop-merge-images-python/</link><pubDate>Sun, 09 Jun 2024 11:50:10 -0500</pubDate><guid>https://arshovon.com/blog/crop-merge-images-python/</guid><description>Manually cropping and merging a large number of images can be a boring and time-consuming task. We can automate this boring stuff with Python and the OpenCV library1. In this tutorial, we&amp;rsquo;ll explore how to crop and merge multiple images using Python and OpenCV.
-Scenario Suppose we have a collection of similar images, and we want to crop them at a certain location before merging every two images together. The images are 600px X 600px in size, and there&amp;rsquo;s a fixed region where we want to perform the cropping.</description></item><item><title>How to install NVIDIA driver and CUDA on Ubuntu 23.10</title><link>https://arshovon.com/blog/install-cuda-on-ubuntu-23-10/</link><pubDate>Sun, 05 May 2024 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cuda-on-ubuntu-23-10/</guid><description>In this blog post, I&amp;rsquo;ll guide you through the process of installing proper NVIDIA drivers and CUDA on Ubuntu 23.10.
-Scenario Let&amp;rsquo;s first understand the situation you might be facing:
-You own an NVIDIA GPU and need to install CUDA. You&amp;rsquo;re facing issues with missing NVIDIA drivers. The additional driver option in Ubuntu is displaying errors like pc-client-error-quark. Figure: The Additional Drivers interface may display errors for all available NVIDIA drivers (both proprietary and open).</description></item><item><title>Extend C drive in Windows 11 when it is grayed out</title><link>https://arshovon.com/blog/extend-c-drive-windows/</link><pubDate>Wed, 01 May 2024 05:50:10 -0500</pubDate><guid>https://arshovon.com/blog/extend-c-drive-windows/</guid><description>In this blog post, I&amp;rsquo;ll guide you through the process of extending your C drive in Windows 11, even when the &amp;ldquo;Extend&amp;rdquo; option seems unavailable.
-Scenario Let&amp;rsquo;s first understand the situation you might be facing: - Your C drive is almost full, and you&amp;rsquo;re receiving warning messages. - You have unallocated space appearing in disk management, but the &amp;ldquo;Extend&amp;rdquo; option for your C drive is grayed out, preventing you from utilizing that available space.</description></item><item><title>Introduction to Datalog as logic programming</title><link>https://arshovon.com/blog/datalog-introduction/</link><pubDate>Thu, 25 Apr 2024 10:13:14 -0500</pubDate><guid>https://arshovon.com/blog/datalog-introduction/</guid><description>Declarative programming Declarative programming is focused on specifying the desired result of a computation, without explicitly defining the step-by-step procedures (also known as control flow) to achieve that result1. It focuses on answering the question of what to achieve, rather than how to achieve it. This contrasts with imperative programming (e.g. C++, Python, JavaScript, Java etc.), which is focused on specifying the exact sequence of instructions (the how) to perform a specific task or reach a desired result (the what).</description></item><item><title>Recursive queries in SQL and Datalog</title><link>https://arshovon.com/blog/recursive-queries/</link><pubDate>Tue, 23 Apr 2024 10:13:14 -0500</pubDate><guid>https://arshovon.com/blog/recursive-queries/</guid><description>Recursive queries are a type of database query that involves recursively traversing and querying hierarchical or self-referential data structures. They are particularly useful for querying data that has a nested or hierarchical representation. Recursive queries enable developers to navigate and process these complex data structures by iteratively applying a set of rules or conditions until a termination criterion is met.
-Recursive queries in SQL Recursive queries were introduced as part of the SQL:1999 standard which is known as SQL3, a major revision to the SQL language1.</description></item><item><title>Monotonic and nonmonotonic reasoning in Datalog</title><link>https://arshovon.com/blog/monotonic-nonmonotonic-reasoning/</link><pubDate>Tue, 23 Apr 2024 07:13:14 -0500</pubDate><guid>https://arshovon.com/blog/monotonic-nonmonotonic-reasoning/</guid><description>Datalog1, a declarative logic programming language, is known for its ability to express knowledge and relationships between data. When reasoning about this knowledge, the way new information affects existing conclusions plays a crucial role. This article gives an introduction to monotonic and nonmonotonic reasoning in Datalog, exploring how adding information can influence the inferences drawn from a knowledge base.
-Monotonic reasoning: Stable and Predictable Monotonic reasoning is a fundamental concept in logic, where adding new information to a knowledge base preserves the existing conclusions.</description></item><item><title>Install Soufflé on Ubuntu using Docker</title><link>https://arshovon.com/blog/install-souffl%C3%A9-on-ubuntu-docker/</link><pubDate>Sun, 21 Apr 2024 10:17:14 -0500</pubDate><guid>https://arshovon.com/blog/install-souffl%C3%A9-on-ubuntu-docker/</guid><description>What is Soufflé? Datalog is a logic-based query programming language that allows users to write recursive queries at-ease. Datalog does not have unified specifications for its syntax, so each implementation may differ. Soufflé1 is an open source &amp;ldquo;state of the art&amp;rdquo; Datalog engine that uses OpenMP for parallelization in C++. It provides a compiler to translate Datalog programs into efficient C++ code, enabling Soufflé to handle large datasets while maintaining fast execution speeds.</description></item><item><title>Install deal.II on Ubuntu using Docker</title><link>https://arshovon.com/blog/install-dealii-on-ubuntu-docker/</link><pubDate>Wed, 17 Apr 2024 10:17:14 -0500</pubDate><guid>https://arshovon.com/blog/install-dealii-on-ubuntu-docker/</guid><description>What is deal.II? deal.II1 is an open source software library written in C++ for solving partial differential equations (PDEs) using the finite element method (FEM). It provides a comprehensive set of tools for solving complex PDEs arising in various fields, including fluid dynamics, solid mechanics, electromagnetics, and quantum mechanics. It is designed to be flexible, efficient, and scalable, supporting parallel computing on a wide range of architectures. The library provides a high-level interface for generating meshes, defining finite element spaces, assembling and solving linear systems, and post-processing and visualizing solutions.</description></item><item><title>Citation in Markdown syntax for Hugo, Jekyll, and Github Readme files</title><link>https://arshovon.com/blog/cite-in-markdown/</link><pubDate>Sat, 13 Apr 2024 18:50:10 -0500</pubDate><guid>https://arshovon.com/blog/cite-in-markdown/</guid><description>Inline citations are references to external sources directly embedded within the text itself. They serve multiple purposes, including providing evidence for claims, giving credit to original authors, and guiding readers to additional resources for further exploration.
-We can use Markdown&amp;rsquo;s footnotes1 syntax to use inline citation in Markdown (.md) files. Similar to how citations are used in academic writing, footnotes are a suitable method for referring to links, books, papers, and other sources without disrupting the flow of the text.</description></item><item><title>Introduction to SYCL and DPC&#43;&#43;</title><link>https://arshovon.com/blog/sycl-docker-interactive/</link><pubDate>Tue, 26 Dec 2023 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/sycl-docker-interactive/</guid><description>SYCL is an open industry standard, not a programming language itself, developed by the Khronos Group to facilitate data parallelism in C++ for heterogeneous computing systems. This means you can write single-source C++ code that utilizes the power of various processors like CPUs, GPUs, and FPGAs in a single program. This improves code maintainability and portability across different hardware platforms.
-Core characteristics of SYCL:
-Single-source programming: Write code once and target diverse hardware architectures without rewriting for each device.</description></item><item><title>cuDF vs Pandas dataframe performance comparison</title><link>https://arshovon.com/blog/cudf-vs-df/</link><pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/cudf-vs-df/</guid><description>cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame. It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models. cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model. It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.</description></item><item><title>Run a Python script inside a virtual environment in the background</title><link>https://arshovon.com/blog/python-background/</link><pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate><guid>https://arshovon.com/blog/python-background/</guid><description>Scenario Suppose, we have a Python script that uses some Python packages. To keep the global environment clean, we use a virtual environment (venv) to install the dependencies. Let&#39;s assume, the script requires a long time to finish. We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process. We also want to run the script in the background without blocking a terminal window.</description></item><item><title>Sorting a list (Python 3)</title><link>https://arshovon.com/blog/sorting-a-list-python3/</link><pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate><guid>https://arshovon.com/blog/sorting-a-list-python3/</guid><description>There are a lot of sorting algorithms such as Bubble sort, Insertion sort, Merge sort, Counting sort, etc. But most of the time, we use builtin sorting function to sort an iterable (e.g. list, tuple, dictionary, custom class with iterator etc.).
-Today we will sort a given list of strings in several ways to understand the Python 3 built-in sorted function .
-Dataset We will use the 50 U.S. states as our dataset.</description></item><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</guid><description>Pandas dataframe allows adding new columns to it based on the values of the existing columns.
-Example Scenario Suppose, a dataset contains Football match results of some matches like below:
-Date Venue Opponent GF GA 08-27-2017 H Arsenal FC 4 0 09-16-2017 H Burnley FC 1 1 Here, GF stands for Goals For and GA stands for Goals Against (i.</description></item><item><title>Python&#39;s combinations and combinations with replacement</title><link>https://arshovon.com/blog/python-combinations_with_replacement/</link><pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate><guid>https://arshovon.com/blog/python-combinations_with_replacement/</guid><description>Python&amp;rsquo;s combinations and combinations with replacement A recent Stack Overflow question had me looking at how to find a list of four numbers each from -1 to 1 that sum up to 1.
-Problem statement Generate every combination of four numbers(a.k.a. quadruplets) from (-1, -0.99, -0.98, ..., 0.98, 0.99, 1) that sum up to 1. Repetitions of numbers are allowed. For example: [0, 1, 0.12, -0.12], [0, 0, 0.5, 0.</description></item><item><title>Get the majority element from a given list</title><link>https://arshovon.com/blog/majority-element/</link><pubDate>Tue, 24 Aug 2021 09:23:37 -0500</pubDate><guid>https://arshovon.com/blog/majority-element/</guid><description>Given an array numbers of size n, return the majority element.
-Description The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
-Examples Example 1: Input: nums = [1, 2, 2] Output: 2 Example 2: Input: nums = [1, 2, 2, 2, 2, 1, 1] Output: 2 Solution Approach 1 - Hash Table We can use a hash table to store the number of occurrences of each number.</description></item><item><title>Merge Sort</title><link>https://arshovon.com/blog/merge-sort/</link><pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate><guid>https://arshovon.com/blog/merge-sort/</guid><description>Divide and conquer strategy and merge sort In a divide and conquer strategy, a problem is divided into multiple subproblems. These subproblems are similar to the original problem but smaller in size. The divide and conquer strategy solves these subproblems recursively. Then it combines the solutions of the subproblems to develop a final solution for the original problem. Thus, the divide and conquer strategy has two parts: divide and conquer.</description></item><item><title>Bubble Sort</title><link>https://arshovon.com/blog/bubble-sort/</link><pubDate>Wed, 28 Apr 2021 03:03:14 +0600</pubDate><guid>https://arshovon.com/blog/bubble-sort/</guid><description>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in n iterations, all n elements are sorted accordingly.
-Bubble sort characteristics Impractical Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</description></item><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>What is Gatsby? Gatsby is a React based build time static site generator that uses Webpack and GraphQL. It makes easy to work with data in React apps. It contains GraphQL data layer. During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time. As it generates the static files, Gatsby applications can be deployed in anywhere.</description></item><item><title>Understanding Time Complexity</title><link>https://arshovon.com/blog/understanding-time-complexity/</link><pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate><guid>https://arshovon.com/blog/understanding-time-complexity/</guid><description>Algorithm efficiency The efficiency of an algorithm is mainly measured by time complexity and space complexity. Time complexity describes the computational time required to run an algorithm for a set of input elements. It is generally expressed as a function of the size of the input.
-Asymptotic notations Three types of asymptotic notations are used to express both the time complexity and space complexity of an algorithm. We will compare these notations by three different scenarios of the same algorithm, the linear search algorithm.</description></item><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>YesWorkflow YesWorkflow is a modeling and provenance management tool for scripting languages.
-Run Docker image of YesWorkflow Download YesWorkflow repository from: https://github.com/yesworkflow-org/yw-docker Open a terminal in yw-cli directory. Create a folder named codes inside current directory. Create a file example.py with the following content in the codes directory:
-import netCDF4 import numpy as np from netCDF4 import ma import matplotlib.pyplot as plt from matplotlib.backends.backend_pdf import PdfPages # @BEGIN main # @PARAM db_pth # @PARAM fmodel # @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.</description></item><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>How to install Avro Phonetic in Ubuntu 20.04 LTS Open Ubuntu Software Search Avro Phonetic in Ubuntu Software Click Install Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic) The Avro Phonetic will be added to the Input Sources Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut References Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description></item><item><title>Create custom email address and attach with Gmail</title><link>https://arshovon.com/blog/custom-email-with-gmail/</link><pubDate>Wed, 14 Oct 2020 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/custom-email-with-gmail/</guid><description>Scenario I have a Gmail address (e.g.: free@gmail.com) I have a domain (e.g.: example.com) I want to make a custom email address with own domain (e.g.: hello@example.com) I want to receive all the emails sent to custom email address in my Gmail (e.g.: hello@example.com -&amp;gt; free@gmail.com) I want to send email from custom email address while sending emails from my Gmail (e.g.: select hello@example.com as sender from free@gmail.com) Solution Set up email forwarding The first step is to set up email forwarding in the domain management dashboard.</description></item><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>Environment Operating System : Raspbian GNU/Linux 9 (stretch) Model : Raspberry Pi 2 (Model B) Docker Installation Procedure on Raspberry Pi The following steps showed the step by step installation guideline.
-Raspian Information Check the model of the Raspberry Pi:
-cat /proc/device-tree/model It confirms that I have a Raspberry Pi 2 (Model B)
-Raspberry Pi 2 Model B Rev 1.1 Check the Operating System (OS) of the Raspberry Pi:</description></item><item><title>Sorting Algorithm Comparisons</title><link>https://arshovon.com/blog/sorting-algorithm-comparisons/</link><pubDate>Sat, 15 Aug 2020 02:06:33 +0600</pubDate><guid>https://arshovon.com/blog/sorting-algorithm-comparisons/</guid><description>Sorting Algorithm Comparisons Table Criteria Bubble Selection Insertion Merge Quick Counting Timsort Technique Brute force Brute force Brute force Divide-and-conquer Divide-and-conquer Non comparison Hybrid Worst Time O(n2) O(n2) O(n2) O(nlgn) O(n2) O(k+n) O(nlgn) Average Time Θ(n2) Θ(n2) Θ(n2) Θ(nlgn) Θ(nlgn) Θ(k+n) Θ(nlgn) Best Time Ω(n) Ω(n2) Ω(n) Ω(nlgn) Ω(nlgn) Ω(k+n) Ω(n) Space O(1) O(1) O(1) O(n) O(n) O(k+n) O(n) Stable Yes No Yes Yes No Yes Yes In-place Yes Yes Yes No Yes No Online No No Yes No No No No Adaptive Yes No Yes No Yes No Yes Suitable for Sorted list Almost sorted list List with unknown order 0&amp;lt;=A[i]&amp;lt;=k Criteria Explanation Technique: Methodology of the sorting algorithm.</description></item><item><title>Insertion Sort</title><link>https://arshovon.com/blog/insertion-sort/</link><pubDate>Tue, 11 Aug 2020 02:06:33 +0600</pubDate><guid>https://arshovon.com/blog/insertion-sort/</guid><description>Characteristics Simple implementation Insertion sort can be implemented easily with less lines of code. It is quite efficient for small data sets. Though it has same complexity than other quadratic sorting algorithms like selection sort or bubble sort, insertion sort is more efficient.
-Adaptive Insertion sort is adaptive. If the input data set is already sorted, the number of steps are reduced.
-Online Insertion sort works on the data as it receives it.</description></item><item><title>Counting Sort</title><link>https://arshovon.com/blog/counting-sort/</link><pubDate>Sun, 09 Aug 2020 11:07:32 +0600</pubDate><guid>https://arshovon.com/blog/counting-sort/</guid><description>Characteristics Non negative integers with a known maximum value Counting sort can be applied if the input numbers are in the set {0, 1, .. ,k}, a set of non negative integers with a maximum value k.
-No comparisons between elements There are no comparisons between input elements that take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies the relative positions of each input element.</description></item><item><title>Introduction to django CMS</title><link>https://arshovon.com/blog/introduction-to-django-cms/</link><pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate><guid>https://arshovon.com/blog/introduction-to-django-cms/</guid><description>Introduction to django CMS In this article we will:
-Learn about django CMS Analyze its features Setup an application with django CMS with full installation guidelines About django CMS django CMS is an open source enterprise content management system based on the Django framework.
-django CMS is voted Best Open Source CMS in 2015. [Announcing the 2015 Winner for Best Open Source CMS]
-django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease.</description></item><item><title>Use SSH to logging into Raspberry Pi without Password</title><link>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</link><pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate><guid>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</guid><description>Scenario We can login into remote Raspberry Pi using ssh command:
-ssh -p PORT USER@IP password: RASPBERRY_PASSWORD As it can be seen, we require to input the Raspberry Pi&amp;rsquo;s password each time to establish SSH connection.
-Solution: Add local machine&amp;rsquo;s SSH key to Raspberry Pi for password less SSH connection To resolve the scenario, we need to add our local machine&amp;rsquo;s SSH key to the Raspberry Pi.
-Check if you have SSH key in local machine using:</description></item><item><title>Setup Odoo with Docker Compose</title><link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link><pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate><guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid><description>What is Odoo? Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in Python, JavaScript and XML.</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
-Environment Operating System : Ubuntu 18.04 LTS (64-bit) Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12 Memory : 15.3 GiB Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
-Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description></item><item><title>Install Docker on Ubuntu 22.10</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</guid><description>Why Docker? Docker is a tool for running application in an isolated environment.
-Some reasons you might want to use Docker:
-Same environment: Same environment in developers machines and production servers. Acts the same. Sandbox projects: Eliminates the risk of getting conflicts while working on different projects on same machine. Easy working without setup hassle: Start working directly on others projects without setting all of the environments.</description></item><item><title>Run Java Program in Ubuntu 18.04</title><link>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</link><pubDate>Tue, 28 Jan 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</guid><description>Run Java Program in Ubuntu 18.04. The program will be run using Oracle&#39;s OpenJDK JDK 8.
-Check if Java Runtime Environment(JRE) is installed in machine:
-java -version If JRE is installed it will show the version information similar to following:
-openjdk 11.0.5 2019-10-15 OpenJDK Runtime Environment (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04) OpenJDK 64-Bit Server VM (build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode) If you do not have installed JRE, install JRE using:</description></item><item><title>Example of using Bootstrap&#39;s navbar in Flask</title><link>https://arshovon.com/blog/flask-bootstrap-navbar/</link><pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate><guid>https://arshovon.com/blog/flask-bootstrap-navbar/</guid><description>Example of using Bootstrap 4&amp;rsquo;s navbar for dynamic routing in Flask.
-Directory structure:
-. ├── app.py ├── requirements.txt └── templates └── index.html app.py:
-from flask import Flask, render_template app = Flask(__name__) @app.route(&amp;quot;/&amp;quot;) def view_home(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Home page&amp;quot;) @app.route(&amp;quot;/first&amp;quot;) def view_first_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;First page&amp;quot;) @app.route(&amp;quot;/second&amp;quot;) def view_second_page(): return render_template(&amp;quot;index.html&amp;quot;, title=&amp;quot;Second page&amp;quot;) index.html:
-&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- Required meta tags --&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, shrink-to-fit=no&amp;quot;&amp;gt; &amp;lt;!</description></item><item><title>Read File by N Lines using C programming language</title><link>https://arshovon.com/blog/read-file-by-n-lines/</link><pubDate>Sun, 29 Sep 2019 12:14:12 +0600</pubDate><guid>https://arshovon.com/blog/read-file-by-n-lines/</guid><description>Read a file by n lines while user pressing y until end of file.
-/* Author: Ahmedur Rahman Shovon License: &amp;quot;GPL&amp;quot; Date: 2019/09/29 */ #include &amp;lt;stdio.h&amp;gt; /* Function that prints a line from file. Update the printf contents to change format. */ void print_line(int line_number, char line[]) { printf(&amp;quot;%s&amp;quot;, line); } int main() { char filename[] = &amp;quot;data.txt&amp;quot;; FILE *file = fopen(filename, &amp;quot;r&amp;quot;); int i = 1; // Number of lines per chunk int n = 3; int end = n; char user_choice; if ( file !</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
-python manage.py runserver python manage.py makemigrations python manage.py migrate These commands are built in and lies within Django itself.
-We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.
-These custom admin commands can be invoked using manage.</description></item><item><title>Basic features of Saas with example</title><link>https://arshovon.com/blog/saas-basic-features/</link><pubDate>Mon, 06 May 2019 16:05:42 +0600</pubDate><guid>https://arshovon.com/blog/saas-basic-features/</guid><description>Sass(Syntactically Awesome Style Sheets) is the most mature, stable, and powerful professional grade CSS extension language in the world.
-Features CSS Compatible: Sass is completely compatible with all versions of CSS. Mature: Sass has been actively supported for about 12 years by its loving Core Team. Frameworks: Popular frameworks built with Sass -&amp;gt; Compass, Bourbon, and Susy. Nesting: HTML elements are nested. But CSS elements are not nested by default.</description></item><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>Install basic development CLI tools in Ubuntu 18.04. It includes:
-oh-my-zsh idle venv git tree Install Git in Ubuntu 18.04 LTS Install Git:
-sudo apt install git Add global configuration for Git user:
-git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Add SSH. Details can be found in this gist
-Install Oh My Zsh in Ubuntu 18.04 LTS Install Zsh:</description></item><item><title>8-diamond</title><link>https://arshovon.com/blog/8-diamond/</link><pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate><guid>https://arshovon.com/blog/8-diamond/</guid><description>Draw 8 of Diamond using Python
-__author__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; __license__ = &amp;quot;GPL&amp;quot; __version__ = &amp;quot;1.0.1&amp;quot; __maintainer__ = &amp;quot;Ahmedur Rahman Shovon&amp;quot; import turtle def draw(x_position, y_position, font, value): turtle.up() turtle.goto(x_position, y_position) turtle.write(value,font=font) turtle.down() turtle.hideturtle() canvas_width = 405 canvas_height = 490 turtle.setup(canvas_width, canvas_height, 0, 0) font_color = &#39;red&#39; turtle.color(font_color) turtle.title(&amp;quot;8 of diamond by arsho&amp;quot;) diamond_size = 100 small_diamond_size = 35 number_size = 40 diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, diamond_size, &amp;quot;normal&amp;quot;) small_diamond_font = (&amp;quot;Comic Sans MS&amp;quot;, small_diamond_size, &amp;quot;normal&amp;quot;) number_font = (&amp;quot;Comic Sans MS&amp;quot;, number_size, &amp;quot;normal&amp;quot;) card_value = &amp;quot;8&amp;quot; diamond_value = &amp;quot;\u2666&amp;quot; x_position_left = -170 x_position_middle = -60 x_position_right = 50 y_position = -210 y_distance = 70 top_8_x_position = -190 top_8_y_position = 180 bottom_8_x_position = 150 bottom_8_y_position = -240 top_diamond_x_position = -193 top_diamond_y_position = 135 bottom_diamond_x_position = 145 bottom_diamond_y_position = -190 # Draw top 8 draw(top_8_x_position, top_8_y_position, number_font, card_value) # Draw top diamond draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value) # Draw bottom 8 draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value) # Draw bottom diamond draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value) for i in range(5): if i%2==0: # Draw two diamonds draw(x_position_left, y_position, diamond_font, diamond_value) draw(x_position_right, y_position, diamond_font, diamond_value) else: # Draw two diamonds draw(x_position_middle, y_position, diamond_font, diamond_value) y_position += y_distance Output:</description></item><item><title>Python Reduce Example</title><link>https://arshovon.com/blog/python-reduce-example/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-reduce-example/</guid><description> Get nth Fibonacci number using reduce from functools import reduce def get_first_n_fibonacci(n): if n&amp;lt;1: return [] ar = [0, 1] for i in range(2, n): ar.append(ar[i-1] + ar[i-2]) return ar[:n] def get_first_n_fibonacci_reduce(n): initializer = [0, 1] if n&amp;lt;2: return initializer[:n] ar = reduce(lambda fib, _: fib + [fib[-1] + fib[-2]], range(n-2), initializer) return ar if __name__ == &#39;__main__&#39;: assert get_first_n_fibonacci(5) == get_first_n_fibonacci_reduce(5) assert get_first_n_fibonacci(0) == get_first_n_fibonacci_reduce(0) assert get_first_n_fibonacci(1) == get_first_n_fibonacci_reduce(1) assert get_first_n_fibonacci(10) == get_first_n_fibonacci_reduce(10) List multiplication using reduce from functools import reduce def get_list_multiplication(ar): result = 1 for i in ar: result *= i return result def get_list_multiplication_using_reduce(ar): return reduce(lambda x, y: x*y, ar, 1) if __name__ == &#39;__main__&#39;: ar = [3, 1, 4, 5, -23] assert get_list_multiplication(ar) == get_list_multiplication_using_reduce(ar) Reference Python official documentation on reduce Gist file with these examples</description></item><item><title>Sort Python Dictionary</title><link>https://arshovon.com/blog/python-sort-dictionary/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-sort-dictionary/</guid><description>Sort Python dict in various ways Original Data
-world_cup_wins = { &amp;quot;Brazil&amp;quot;: 5, &amp;quot;Germany&amp;quot;: 4, &amp;quot;Italy&amp;quot;: 4, &amp;quot;Argentina&amp;quot;: 2, &amp;quot;France&amp;quot;: 2, &amp;quot;Uruguay&amp;quot;: 2, &amp;quot;England&amp;quot;: 1, &amp;quot;Spain&amp;quot;: 1 } SORT DICTIONARY BY KEY ASCENDING for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0]): print(key, value) Output:
-Argentina 2 Brazil 5 England 1 France 2 Germany 4 Italy 4 Spain 1 Uruguay 2 SORT DICTIONARY BY KEY DESCENDING for key, value in sorted(world_cup_wins.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Ahmedur Rahman Shovon</title><link>https://arshovon.com/blog/</link><description>Recent content in Blog on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Sep 2025 16:56:26 -0500</lastBuildDate><atom:link href="https://arshovon.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Crop and merge images using Python (OpenCV)</title><link>https://arshovon.com/blog/crop-merge-images-python/</link><pubDate>Sun, 09 Jun 2024 11:50:10 -0500</pubDate><guid>https://arshovon.com/blog/crop-merge-images-python/</guid><description>&lt;p&gt;Manually cropping and merging a large number of images can be a boring and time-consuming task.
+We can automate this boring stuff with Python and the OpenCV library&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+In this tutorial, we&amp;rsquo;ll explore how to crop and merge multiple images using Python and OpenCV.&lt;/p&gt;
+&lt;h3 id="scenario"&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Suppose we have a collection of similar images, and we want to crop them at a certain location before merging every two images together.
+The images are &lt;code&gt;600px X 600px&lt;/code&gt; in size, and there&amp;rsquo;s a fixed region where we want to perform the cropping.&lt;/p&gt;</description></item><item><title>How to install NVIDIA driver and CUDA on Ubuntu 23.10</title><link>https://arshovon.com/blog/install-cuda-on-ubuntu-23-10/</link><pubDate>Sun, 05 May 2024 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cuda-on-ubuntu-23-10/</guid><description>&lt;p&gt;In this blog post, I&amp;rsquo;ll guide you through the process of installing proper NVIDIA drivers and CUDA on Ubuntu 23.10.&lt;/p&gt;
+&lt;h4 id="scenario"&gt;Scenario&lt;/h4&gt;
+&lt;p&gt;Let&amp;rsquo;s first understand the situation you might be facing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You own an NVIDIA GPU and need to install CUDA.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;re facing issues with missing NVIDIA drivers.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;additional driver&lt;/code&gt; option in Ubuntu is displaying errors like &lt;code&gt;pc-client-error-quark&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../images/additional-drivers.png" alt="alt Additional drivers"&gt;
+&lt;em&gt;Figure: The &lt;code&gt;Additional Drivers&lt;/code&gt; interface may display errors for all available NVIDIA drivers (both proprietary and open). This article provides a solution to resolve this issue using the terminal.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Extend C drive in Windows 11 when it is grayed out</title><link>https://arshovon.com/blog/extend-c-drive-windows/</link><pubDate>Wed, 01 May 2024 05:50:10 -0500</pubDate><guid>https://arshovon.com/blog/extend-c-drive-windows/</guid><description>&lt;p&gt;In this blog post, I&amp;rsquo;ll guide you through the process of extending your C drive in Windows 11, even when the &amp;ldquo;Extend&amp;rdquo; option seems unavailable.&lt;/p&gt;
+&lt;h4 id="scenario"&gt;Scenario&lt;/h4&gt;
+&lt;p&gt;Let&amp;rsquo;s first understand the situation you might be facing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your C drive is almost full, and you&amp;rsquo;re receiving warning messages.&lt;/li&gt;
+&lt;li&gt;You have unallocated space appearing in disk management, but the &amp;ldquo;Extend&amp;rdquo; option for your C drive is grayed out, preventing you from utilizing that available space.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="why-is-the-extend-option-grayed-out"&gt;Why Is the &amp;ldquo;Extend&amp;rdquo; Option Grayed Out?&lt;/h4&gt;
+&lt;p&gt;The &amp;ldquo;Extend&amp;rdquo; option for your C drive will be grayed out if there is no unallocated space immediately adjacent to it&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+In other words, for the &amp;ldquo;Extend&amp;rdquo; option to be available, the unallocated space must be contiguous with your C drive.&lt;/p&gt;</description></item><item><title>Introduction to Datalog as logic programming</title><link>https://arshovon.com/blog/datalog-introduction/</link><pubDate>Thu, 25 Apr 2024 10:13:14 -0500</pubDate><guid>https://arshovon.com/blog/datalog-introduction/</guid><description>&lt;h4 id="declarative-programming"&gt;Declarative programming&lt;/h4&gt;
+&lt;p&gt;Declarative programming is focused on specifying the desired result of a computation, without explicitly defining the step-by-step procedures (also known as control flow) to achieve that result&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+It focuses on answering the question of &lt;em&gt;what&lt;/em&gt; to achieve, rather than &lt;em&gt;how&lt;/em&gt; to achieve it.
+This contrasts with imperative programming (e.g. C++, Python, JavaScript, Java etc.), which is focused on specifying the exact sequence of instructions (the &lt;em&gt;how&lt;/em&gt;) to perform a specific task
+or reach a desired result (the &lt;em&gt;what&lt;/em&gt;).&lt;/p&gt;</description></item><item><title>Recursive queries in SQL and Datalog</title><link>https://arshovon.com/blog/recursive-queries/</link><pubDate>Tue, 23 Apr 2024 10:13:14 -0500</pubDate><guid>https://arshovon.com/blog/recursive-queries/</guid><description>&lt;p&gt;Recursive queries are a type of database query that involves recursively traversing and querying hierarchical or self-referential data structures.
+They are particularly useful for querying data that has a nested or hierarchical representation.
+Recursive queries enable developers to navigate and process these complex data structures by iteratively applying a set of rules or conditions until a termination criterion is met.&lt;/p&gt;
+&lt;h2 id="recursive-queries-in-sql"&gt;Recursive queries in SQL&lt;/h2&gt;
+&lt;p&gt;Recursive queries were introduced as part of the SQL:1999 standard which is known as SQL3, a major revision to the SQL language&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Prior to SQL3, SQL lacked built-in support for querying hierarchical or recursive data structures like organizational charts, bill-of-materials data, and network/graph data.
+The introduction of recursive queries in SQL3 empowered developers to effectively query hierarchical or self-referential data structures.
+Unlike traditional SQL queries that operate on a static set of rows, recursive queries enable traversal and manipulation of hierarchical data structures by iteratively executing an anchor and recursive member.&lt;/p&gt;</description></item><item><title>Monotonic and nonmonotonic reasoning in Datalog</title><link>https://arshovon.com/blog/monotonic-nonmonotonic-reasoning/</link><pubDate>Tue, 23 Apr 2024 07:13:14 -0500</pubDate><guid>https://arshovon.com/blog/monotonic-nonmonotonic-reasoning/</guid><description>&lt;p&gt;Datalog&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;, a declarative logic programming language, is known for its ability to express knowledge and relationships between data.
+When reasoning about this knowledge, the way new information affects existing conclusions plays a crucial role.
+This article gives an introduction to monotonic and nonmonotonic reasoning in Datalog, exploring how adding information can influence the inferences drawn from a knowledge base.&lt;/p&gt;
+&lt;h4 id="monotonic-reasoning-stable-and-predictable"&gt;Monotonic reasoning: Stable and Predictable&lt;/h4&gt;
+&lt;p&gt;Monotonic reasoning is a fundamental concept in logic, where adding new information to a knowledge base preserves the existing conclusions.
+In simpler terms, if a statement holds true based on the current knowledge, it remains true even after adding more information.
+It is a form of logical reasoning where adding new information to the knowledge base does not invalidate or contradict any previously derived conclusions.
+This characteristic makes monotonic reasoning predictable and reliable.&lt;/p&gt;</description></item><item><title>Install Soufflé on Ubuntu using Docker</title><link>https://arshovon.com/blog/install-souffl%C3%A9-on-ubuntu-docker/</link><pubDate>Sun, 21 Apr 2024 10:17:14 -0500</pubDate><guid>https://arshovon.com/blog/install-souffl%C3%A9-on-ubuntu-docker/</guid><description>&lt;h4 id="what-is-soufflé"&gt;What is Soufflé?&lt;/h4&gt;
+&lt;p&gt;Datalog is a logic-based query programming language that allows users to write recursive queries at-ease.
+Datalog does not have unified specifications for its syntax, so each implementation may differ.
+Soufflé&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; is an open source &amp;ldquo;state of the art&amp;rdquo; Datalog engine that uses OpenMP for parallelization in C++.
+It provides a compiler to translate Datalog programs into efficient C++ code, enabling Soufflé to handle large datasets while maintaining fast execution speeds.
+Soufflé also offers an interpreter for quick testing and debugging of Datalog programs.
+In addition to its core functionality, Soufflé offers several advanced features&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;, including:&lt;/p&gt;</description></item><item><title>Install deal.II on Ubuntu using Docker</title><link>https://arshovon.com/blog/install-dealii-on-ubuntu-docker/</link><pubDate>Wed, 17 Apr 2024 10:17:14 -0500</pubDate><guid>https://arshovon.com/blog/install-dealii-on-ubuntu-docker/</guid><description>&lt;h4 id="what-is-dealii"&gt;What is deal.II?&lt;/h4&gt;
+&lt;p&gt;deal.II&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; is an open source software library written in C++ for solving partial differential equations (PDEs) using the finite element method (FEM).
+It provides a comprehensive set of tools for solving complex PDEs arising in various fields, including fluid dynamics, solid mechanics, electromagnetics, and quantum mechanics.
+It is designed to be flexible, efficient, and scalable, supporting parallel computing on a wide range of architectures.
+The library provides a high-level interface for generating meshes, defining finite element spaces, assembling and solving linear systems, and post-processing and visualizing solutions. It also includes adaptive mesh refinement techniques, error estimators, and a wide range of finite element formulations, including continuous and discontinuous Galerkin methods.&lt;/p&gt;</description></item><item><title>Citation in Markdown syntax for Hugo, Jekyll, and Github Readme files</title><link>https://arshovon.com/blog/cite-in-markdown/</link><pubDate>Sat, 13 Apr 2024 18:50:10 -0500</pubDate><guid>https://arshovon.com/blog/cite-in-markdown/</guid><description>&lt;p&gt;Inline citations are references to external sources directly embedded within the text itself.
+They serve multiple purposes, including providing evidence for claims, giving credit to original authors,
+and guiding readers to additional resources for further exploration.&lt;/p&gt;
+&lt;p&gt;We can use Markdown&amp;rsquo;s footnotes&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; syntax to use inline citation in Markdown (&lt;code&gt;.md&lt;/code&gt;) files.
+Similar to how citations are used in academic writing, footnotes are a suitable method for referring to
+links, books, papers, and other sources without disrupting the flow of the text.
+This technique is applicable not only to GitHub README files but also to any static web generator (like Hugo&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;, Jekyll&lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;) that supports markdown syntax.&lt;/p&gt;</description></item><item><title>Introduction to SYCL and DPC++</title><link>https://arshovon.com/blog/sycl-docker-interactive/</link><pubDate>Tue, 26 Dec 2023 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/sycl-docker-interactive/</guid><description>&lt;p&gt;SYCL is an open industry standard, not a programming language itself, developed by the Khronos Group to facilitate data parallelism in C++ for heterogeneous computing systems. This means you can write single-source C++ code that utilizes the power of various processors like CPUs, GPUs, and FPGAs in a single program. This improves code maintainability and portability across different hardware platforms.&lt;/p&gt;
+&lt;p&gt;Core characteristics of SYCL:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Single-source programming&lt;/strong&gt;: Write code once and target diverse hardware architectures without rewriting for each device.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data parallelism&lt;/strong&gt;: Leverage parallel execution for data-intensive tasks, significantly boosting performance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abstraction layer&lt;/strong&gt;: SYCL hides the underlying hardware complexities, providing a unified programming model for different devices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory management&lt;/strong&gt;: SYCL offers various memory models (e.g., unified shared memory) to efficiently manage data movement between host and devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="popular-sycl-implementations"&gt;Popular SYCL implementations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DPC++ (Data Parallel C++)&lt;/strong&gt;: Part of Intel&amp;rsquo;s oneAPI suite and also available as an open source compiler, DPC++ leverages LLVM/Clang for broad CPU and GPU support across Intel, NVIDIA, and AMD. In this post we will use DPC++ from oneAPI.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ComputeCPP&lt;/strong&gt;: Open-source and multi-backend, ComputeCPP excels on Intel and AMD hardware with good CPU and GPU coverage. NVIDIA GPU support is under development.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hipSYCL&lt;/strong&gt;: Primarily focused on NVIDIA GPUs with AMD support, hipSYCL offers multiple backends and experimental Intel GPU compatibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="additional-technical-points-to-consider"&gt;Additional technical points to consider&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Performance portability&lt;/strong&gt;: While SYCL promotes code portability, achieving optimal performance on each hardware platform might require specific tuning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning curve&lt;/strong&gt;: Compared to lower-level hardware-specific languages, SYCL has a gentler learning curve with support to modern C++ syntax but still requires understanding parallel programming concepts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ecosystem&lt;/strong&gt;: The SYCL ecosystem is evolving, with growing adoption and toolchain improvements.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SYCL and IntelGPU in HPC&lt;/strong&gt;: Aurora, the upcoming exascale supercomputer, will harness the power of SYCL and oneAPI on Intel GPUs to unlock groundbreaking scientific discoveries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="sycl-2020"&gt;SYCL 2020&lt;/h3&gt;
+&lt;p&gt;SYCL 2020 marked a significant milestone in the evolution of data parallelism for heterogeneous systems. DPC++ embraces the cutting-edge features introduced in the SYCL 2020 specification, empowering developers with:&lt;/p&gt;</description></item><item><title>cuDF vs Pandas dataframe performance comparison</title><link>https://arshovon.com/blog/cudf-vs-df/</link><pubDate>Mon, 01 Aug 2022 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/cudf-vs-df/</guid><description>&lt;p&gt;cuDF is a Python GPU DataFrame library with similar functionalities to Pandas DataFrame.
+It can be used for loading, joining, aggregating, filtering, and manipulating large datasets leveraging GPU programming models.
+cuDF provides a pandas-like API, so the developers or data scientists do not need to dive deeper into the CUDA programming model.
+It is a part of the Rapids suite that utilizes the NVIDIA CUDA® programming model to expose high bandwidth memory speed and GPU parallelism.&lt;/p&gt;</description></item><item><title>Run a Python script inside a virtual environment in the background</title><link>https://arshovon.com/blog/python-background/</link><pubDate>Fri, 18 Mar 2022 03:03:14 -0500</pubDate><guid>https://arshovon.com/blog/python-background/</guid><description>&lt;h3 id="scenario"&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Suppose, we have a Python script that uses some Python packages.
+To keep the global environment clean, we use a virtual environment (&lt;code&gt;venv&lt;/code&gt;) to install the dependencies.
+Let&amp;rsquo;s assume, the script requires a long time to finish.
+We may need to check the intermediate results (e.g. print statement debugging) from the script during the execution process.
+We also want to run the script in the background without blocking a terminal window.&lt;/p&gt;</description></item><item><title>Sorting a list (Python 3)</title><link>https://arshovon.com/blog/sorting-a-list-python3/</link><pubDate>Sun, 16 Jan 2022 07:01:32 -0600</pubDate><guid>https://arshovon.com/blog/sorting-a-list-python3/</guid><description>&lt;p&gt;There are a lot of &lt;a href="https://arshovon.com/blog/sorting-algorithm-comparisons/"&gt;sorting algorithms&lt;/a&gt;
+such as &lt;a href="https://arshovon.com/blog/bubble-sort/"&gt;Bubble sort&lt;/a&gt;,
+&lt;a href="https://arshovon.com/blog/insertion-sort/"&gt;Insertion sort&lt;/a&gt;,
+&lt;a href="https://arshovon.com/blog/merge-sort/"&gt;Merge sort&lt;/a&gt;, &lt;a href="https://arshovon.com/blog/counting-sort/"&gt;Counting sort&lt;/a&gt;, etc.
+But most of the time, we use builtin sorting function to sort an iterable (e.g.
+list, tuple, dictionary, custom class with iterator etc.).&lt;/p&gt;
+&lt;p&gt;Today we will sort a given list of strings in several ways to understand
+the &lt;a href="https://docs.python.org/3/library/functions.html#sorted"&gt;Python 3 built-in sorted function&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h3 id="dataset"&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;We will use &lt;a href="https://en.wikipedia.org/wiki/U.S._state"&gt;the 50 U.S. states&lt;/a&gt; as
+our dataset.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;states &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Alabama&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Alaska&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Arizona&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Arkansas&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;California&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Colorado&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Connecticut&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Delaware&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Florida&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Georgia&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Hawaii&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Idaho&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Illinois&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Indiana&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Iowa&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Kansas&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Kentucky&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Louisiana&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Maine&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Maryland&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Massachusetts&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Michigan&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Minnesota&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Mississippi&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Missouri&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Montana&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Nebraska&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Nevada&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;New Hampshire&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;New Jersey&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;New Mexico&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;New York&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;North Carolina&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;North Dakota&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Ohio&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Oklahoma&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Oregon&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Pennsylvania&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Rhode Island&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;South Carolina&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;South Dakota&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Tennessee&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Texas&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Utah&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Vermont&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Virginia&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Washington&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;West Virginia&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Wisconsin&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;Wyoming&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="sorting-techniques"&gt;Sorting Techniques&lt;/h2&gt;
+&lt;p&gt;Now we will sort the above &lt;code&gt;states&lt;/code&gt; list in different ways.&lt;/p&gt;</description></item><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</guid><description>&lt;p&gt;Pandas dataframe allows adding new columns to it based on the values of the existing columns.&lt;/p&gt;
+&lt;h3 id="example-scenario"&gt;Example Scenario&lt;/h3&gt;
+&lt;p&gt;Suppose, a dataset contains Football match results of some matches like below:&lt;/p&gt;
+&lt;p&gt;{.table .table-bordered .table-striped .table-hover}&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Date&lt;/th&gt;
+ &lt;th&gt;Venue&lt;/th&gt;
+ &lt;th&gt;Opponent&lt;/th&gt;
+ &lt;th&gt;GF&lt;/th&gt;
+ &lt;th&gt;GA&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;08-27-2017&lt;/td&gt;
+ &lt;td&gt;H&lt;/td&gt;
+ &lt;td&gt;Arsenal FC&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;09-16-2017&lt;/td&gt;
+ &lt;td&gt;H&lt;/td&gt;
+ &lt;td&gt;Burnley FC&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Here, &lt;em&gt;GF&lt;/em&gt; stands for &lt;em&gt;Goals For&lt;/em&gt; and &lt;em&gt;GA&lt;/em&gt; stands for &lt;em&gt;Goals Against&lt;/em&gt; (i.e., number of goals conceded by a team).
+Now we want to add a new column called &lt;code&gt;Result&lt;/code&gt; to this dataframe that will contain the result of the match.&lt;/p&gt;</description></item><item><title>Python's combinations and combinations with replacement</title><link>https://arshovon.com/blog/python-combinations_with_replacement/</link><pubDate>Sun, 02 Jan 2022 09:23:37 -0600</pubDate><guid>https://arshovon.com/blog/python-combinations_with_replacement/</guid><description>&lt;h3 id="pythons-combinations-and-combinations-with-replacement"&gt;Python&amp;rsquo;s combinations and combinations with replacement&lt;/h3&gt;
+&lt;p&gt;A recent &lt;a href="https://stackoverflow.com/questions/70558962/four-numbers-each-from-1-to-1-that-sum-up-to-1"&gt;Stack Overflow question&lt;/a&gt; had me looking at how to find a list of four numbers each from -1 to 1 that sum up to 1.&lt;/p&gt;
+&lt;h3 id="problem-statement"&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Generate every combination of four numbers(a.k.a. quadruplets) from &lt;code&gt;(-1, -0.99, -0.98, ..., 0.98, 0.99, 1)&lt;/code&gt; that sum up to 1. Repetitions of numbers are allowed.
+For example:
+&lt;code&gt;[0, 1, 0.12, -0.12], [0, 0, 0.5, 0.5], [1, 1, -1, 0]...&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Get the majority element from a given list</title><link>https://arshovon.com/blog/majority-element/</link><pubDate>Tue, 24 Aug 2021 09:23:37 -0500</pubDate><guid>https://arshovon.com/blog/majority-element/</guid><description>&lt;p&gt;Given an array numbers of size &lt;code&gt;n&lt;/code&gt;, return the majority element.&lt;/p&gt;
+&lt;h1 id="description"&gt;Description&lt;/h1&gt;
+&lt;p&gt;The majority element is the element that appears more than &lt;code&gt;⌊n / 2⌋&lt;/code&gt; times. You may assume that the majority element always exists in the array.&lt;/p&gt;
+&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
+&lt;h3 id="example-1"&gt;Example 1:&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Input: nums = [1, 2, 2]
+Output: 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="example-2"&gt;Example 2:&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Input: nums = [1, 2, 2, 2, 2, 1, 1]
+Output: 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id="solution"&gt;Solution&lt;/h1&gt;
+&lt;h2 id="approach-1---hash-table"&gt;Approach 1 - Hash Table&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We can use a hash table to store the number of occurrences of each number.&lt;/li&gt;
+&lt;li&gt;When the number of occurrences for a number is more than &lt;code&gt;⌊n / 2⌋&lt;/code&gt;, return it.&lt;/li&gt;
+&lt;li&gt;Time complexity: &lt;code&gt;O(n)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Space complexity: &lt;code&gt;O(n)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution-in-java"&gt;Solution in Java:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;majorityElement&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; nums) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; n &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums.&lt;span style="color:#a6e22e"&gt;length&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; major &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums&lt;span style="color:#f92672"&gt;[&lt;/span&gt;0&lt;span style="color:#f92672"&gt;]&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; HashMap&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;Integer, Integer&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; occurrences &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; HashMap&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;Integer, Integer&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i: nums) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; numberOfOccurrences;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(occurrences.&lt;span style="color:#a6e22e"&gt;get&lt;/span&gt;(i) &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;null&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; numberOfOccurrences &lt;span style="color:#f92672"&gt;=&lt;/span&gt; occurrences.&lt;span style="color:#a6e22e"&gt;get&lt;/span&gt;(i) &lt;span style="color:#f92672"&gt;+&lt;/span&gt; 1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; numberOfOccurrences &lt;span style="color:#f92672"&gt;=&lt;/span&gt; 1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; occurrences.&lt;span style="color:#a6e22e"&gt;put&lt;/span&gt;(i, numberOfOccurrences);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(numberOfOccurrences &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; n&lt;span style="color:#f92672"&gt;/&lt;/span&gt;2) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; major &lt;span style="color:#f92672"&gt;=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; major;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="solution-in-c"&gt;Solution in C++:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; majorityElement(vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&amp;amp;&lt;/span&gt; nums) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; n &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums.size();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; major &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; map&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;, &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; occurrences;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; i: nums) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(occurrences.find(i) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; occurrences.end()) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; occurrences[i] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; occurrences[i]&lt;span style="color:#f92672"&gt;++&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(occurrences[i] &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; n&lt;span style="color:#f92672"&gt;/&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; major &lt;span style="color:#f92672"&gt;=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; major;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="solution-in-python-3"&gt;Solution in Python 3:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; typing &lt;span style="color:#f92672"&gt;import&lt;/span&gt; List
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;majorityElement&lt;/span&gt;(self, nums: List[int]) &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt; int:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; occurrences &lt;span style="color:#f92672"&gt;=&lt;/span&gt; {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; major &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; nums:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; occurrences[i] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; occurrences&lt;span style="color:#f92672"&gt;.&lt;/span&gt;get(i, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;) &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; occurrences[i] &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; len(nums) &lt;span style="color:#f92672"&gt;/&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; major &lt;span style="color:#f92672"&gt;=&lt;/span&gt; i
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; major
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="approach-2-boyer-moore-voting-algorithm"&gt;Approach 2: Boyer-Moore Voting Algorithm&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We can use a counter with initial value to &lt;code&gt;0&lt;/code&gt; and set the first value as major element.&lt;/li&gt;
+&lt;li&gt;Iterate through the given values.&lt;/li&gt;
+&lt;li&gt;In each iteration, check the value of the counter. If it is &lt;code&gt;0&lt;/code&gt;, sets the current value as major element. Again, if the current value is same to the major element, increase the counter value by one. Otherwise, decrease the counter value by one.&lt;/li&gt;
+&lt;li&gt;Time complexity: &lt;code&gt;O(n)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Space complexity: &lt;code&gt;O(1)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution-in-java-1"&gt;Solution in Java:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;majorityElement&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; nums) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; major &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums&lt;span style="color:#f92672"&gt;[&lt;/span&gt;0&lt;span style="color:#f92672"&gt;]&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; count &lt;span style="color:#f92672"&gt;=&lt;/span&gt; 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i: nums) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(count &lt;span style="color:#f92672"&gt;==&lt;/span&gt; 0) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; major &lt;span style="color:#f92672"&gt;=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(i &lt;span style="color:#f92672"&gt;==&lt;/span&gt; major)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; count&lt;span style="color:#f92672"&gt;++&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; count&lt;span style="color:#f92672"&gt;--&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; major;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="reference"&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://leetcode.com/problems/majority-element/"&gt;Leetcode challenge: Majority Element&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cs.utexas.edu/~moore/best-ideas/mjrty/"&gt;Boyer-Moore Voting Algorithm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Merge Sort</title><link>https://arshovon.com/blog/merge-sort/</link><pubDate>Thu, 29 Apr 2021 01:00:15 +0600</pubDate><guid>https://arshovon.com/blog/merge-sort/</guid><description>&lt;h2 id="divide-and-conquer-strategy-and-merge-sort"&gt;Divide and conquer strategy and merge sort&lt;/h2&gt;
+&lt;p&gt;In a divide and conquer strategy, a problem is divided into multiple subproblems.
+These subproblems are similar to the original problem but smaller in size.
+The divide and conquer strategy solves these subproblems recursively.
+Then it combines the solutions of the subproblems to develop a final solution for the original problem.
+Thus, the divide and conquer strategy has two parts: divide and conquer.&lt;/p&gt;</description></item><item><title>Bubble Sort</title><link>https://arshovon.com/blog/bubble-sort/</link><pubDate>Wed, 28 Apr 2021 03:03:14 +0600</pubDate><guid>https://arshovon.com/blog/bubble-sort/</guid><description>&lt;p&gt;In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in &lt;code&gt;n&lt;/code&gt; iterations, all &lt;code&gt;n&lt;/code&gt; elements are sorted accordingly.&lt;/p&gt;
+&lt;h2 id="bubble-sort-characteristics"&gt;Bubble sort characteristics&lt;/h2&gt;
+&lt;h3 id="impractical"&gt;Impractical&lt;/h3&gt;
+&lt;p&gt;Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.&lt;/p&gt;</description></item><item><title>Install Gatsby on Ubuntu 20.04</title><link>https://arshovon.com/blog/install-gatsby-on-ubuntu/</link><pubDate>Fri, 23 Apr 2021 05:05:11 +0600</pubDate><guid>https://arshovon.com/blog/install-gatsby-on-ubuntu/</guid><description>&lt;h3 id="what-is-gatsby"&gt;What is Gatsby?&lt;/h3&gt;
+&lt;p&gt;Gatsby is a React based build time static site generator that uses Webpack and GraphQL.
+It makes easy to work with data in React apps. It contains GraphQL data layer.
+During build time Gatsby fetches all the data, renders the entire website into static HTML, CSS, JS files with the data available at that time.
+As it generates the static files, Gatsby applications can be deployed in anywhere.&lt;/p&gt;</description></item><item><title>Understanding Time Complexity</title><link>https://arshovon.com/blog/understanding-time-complexity/</link><pubDate>Wed, 14 Apr 2021 00:01:36 +0600</pubDate><guid>https://arshovon.com/blog/understanding-time-complexity/</guid><description>&lt;h2 id="algorithm-efficiency"&gt;Algorithm efficiency&lt;/h2&gt;
+&lt;p&gt;The efficiency of an algorithm is mainly measured by time complexity and space complexity. Time complexity describes the computational time required to run an algorithm for a set of input elements. It is generally expressed as a function of the size of the input.&lt;/p&gt;
+&lt;h3 id="asymptotic-notations"&gt;Asymptotic notations&lt;/h3&gt;
+&lt;p&gt;Three types of asymptotic notations are used to express both the time complexity and space complexity of an algorithm. We will compare these notations by three different scenarios of the same algorithm, the linear search algorithm. Suppose we have a list of &lt;code&gt;n&lt;/code&gt; integer values, and we need to find the index of the first occurrence of &lt;code&gt;x&lt;/code&gt; in this list. If &lt;code&gt;x&lt;/code&gt; is not found, then we need to return -1. Now we are going to describe the three types of asymptotic notations for this linear search algorithm.&lt;/p&gt;</description></item><item><title>Run YesWorkflow Docker Image on Ubuntu 20.04</title><link>https://arshovon.com/blog/yesworkflow-docker-run/</link><pubDate>Thu, 03 Dec 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/yesworkflow-docker-run/</guid><description>&lt;h2 id="yesworkflow"&gt;YesWorkflow&lt;/h2&gt;
+&lt;p&gt;YesWorkflow is a modeling and provenance management tool for scripting languages.&lt;/p&gt;
+&lt;h3 id="run-docker-image-of-yesworkflow"&gt;Run Docker image of YesWorkflow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download YesWorkflow repository from: &lt;a href="https://github.com/yesworkflow-org/yw-docker"&gt;https://github.com/yesworkflow-org/yw-docker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a terminal in &lt;code&gt;yw-cli&lt;/code&gt; directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a folder named &lt;code&gt;codes&lt;/code&gt; inside current directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a file &lt;code&gt;example.py&lt;/code&gt; with the following content in the &lt;code&gt;codes&lt;/code&gt; directory:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;import netCDF4
+import numpy as np
+from netCDF4 import ma
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+
+# @BEGIN main
+# @PARAM db_pth
+# @PARAM fmodel
+# @IN input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.nc
+# @IN input_data_file @URI file:{db_pth}/NEE_first_year.nc
+# @OUT result_NEE_pdf @URI file:result_NEE.pdf
+
+def main(db_pth = &amp;#39;.&amp;#39;, fmodel = &amp;#39;clm&amp;#39;):
+
+ # @BEGIN fetch_mask
+ # @PARAM db_pth
+ # @IN g @AS input_mask_file @URI file:{db_pth}/land_water_mask/LandWaterMask_Global_CRUNCEP.nc
+ # @OUT mask @AS land_water_mask
+ g = netCDF4.Dataset(db_pth+&amp;#39;/land_water_mask/LandWaterMask_Global_CRUNCEP.nc&amp;#39;, &amp;#39;r&amp;#39;)
+ mask = g.variables[&amp;#39;land_water_mask&amp;#39;]
+ mask = mask[:].swapaxes(0,1)
+ # @END fetch_mask
+
+
+ # @BEGIN load_data
+ # @PARAM db_pth
+ # @IN input_data_file @URI file:{db_pth}/NEE_first_year.nc
+ # @OUT data @AS NEE_data
+ f = netCDF4.Dataset(db_pth+&amp;#39;/NEE_first_year.nc&amp;#39;, &amp;#39;r&amp;#39;)
+ data = f.variables[&amp;#39;NEE&amp;#39;]
+ data = data[:]
+ data = data.swapaxes(0,2)
+ adj = 60*60*24*(365/12)*1000
+ data = data*adj
+ # @END load_data
+
+
+ # @BEGIN standardize_with_mask
+ # @IN data @AS NEE_data
+ # @IN mask @AS land_water_mask
+ # @OUT data @AS standardized_NEE_data
+ native = data.mean(2)
+ latShape = mask.shape[0]
+ logShape = mask.shape[1]
+ for x in range(latShape):
+ for y in range(logShape):
+ if mask[x,y] == 1 and ma.getmask(native[x,y]) == 1:
+ for index in range(data.shape[2]):
+ data[x,y,index] = 0
+ # @END standardize_with_mask
+
+
+ # @BEGIN simple_diagnose
+ # @PARAM fmodel
+ # @IN data @AS standardized_NEE_data
+ # @OUT pp @AS result_NEE_pdf @URI file:result_NEE.pdf
+ plt.imshow(np.mean(data,2))
+ plt.xlabel(&amp;#34;Mean 1982-2010 NEE [gC/m2/mon]&amp;#34;)
+ plt.title(fmodel + &amp;#34;:BG1&amp;#34;)
+ pp = PdfPages(&amp;#39;result_NEE.pdf&amp;#39;)
+ pp.savefig()
+ pp.close() 
+ # @END simple_diagnose
+
+# @END main
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Current directory structure:&lt;/p&gt;</description></item><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>&lt;h2 id="how-to-install-avro-phonetic-in-ubuntu-2004-lts"&gt;How to install Avro Phonetic in Ubuntu 20.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;Ubuntu Software&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Search &lt;code&gt;Avro Phonetic&lt;/code&gt; in &lt;code&gt;Ubuntu Software&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_seach_avro_phonetic.png?style=center" alt="alt Avro Phonetic in Ubuntu software"&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Install&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_install_avro_phonetic.png?style=center" alt="alt Install Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;Restart the machine or logout and then login again&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;Settings&lt;/code&gt; &amp;gt; &lt;code&gt;Region &amp;amp; Language&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_region_and_language.png?style=center" alt="alt Add Bangla Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;Click on the &lt;code&gt;+&lt;/code&gt; (plus) icon in &lt;code&gt;Input Sources&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Search for &lt;code&gt;Bangla&lt;/code&gt; and then click on &lt;code&gt;Bangla (Avro Phonetic)&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_add_input_source.png?style=center" alt="alt Add Bangla Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;Avro Phonetic&lt;/code&gt; will be added to the &lt;code&gt;Input Sources&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_input_sources.png?style=center" alt="alt Avro phonetic in Input Sources"&gt;&lt;/li&gt;
+&lt;li&gt;Now you will get a dropdown for selecting &lt;code&gt;bn&lt;/code&gt; for Bangla language in top bar right corner&lt;/li&gt;
+&lt;li&gt;You can switch between different &lt;code&gt;Input Source&lt;/code&gt; using &lt;code&gt;win&lt;/code&gt; + &lt;code&gt;space&lt;/code&gt; keyboard shortcut
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_bangla_demo.png?style=center" alt="alt Write using Bangla"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="references"&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://askubuntu.com/a/1290110/654735"&gt;Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.04 LTS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linuxconfig.org/how-to-add-and-switch-keyboard-layout-on-ubuntu-20-04-desktop"&gt;How to add and switch keyboard layout on Ubuntu 20.04 Desktop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Create custom email address and attach with Gmail</title><link>https://arshovon.com/blog/custom-email-with-gmail/</link><pubDate>Wed, 14 Oct 2020 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/custom-email-with-gmail/</guid><description>&lt;h2 id="scenario"&gt;Scenario&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I have a Gmail address (e.g.: &lt;code&gt;free@gmail.com&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;I have a domain (e.g.: &lt;code&gt;example.com&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;I want to make a custom email address with own domain (e.g.: &lt;code&gt;hello@example.com&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;I want to receive all the emails sent to custom email address in my Gmail
+(e.g.: &lt;code&gt;hello@example.com&lt;/code&gt; -&amp;gt; &lt;code&gt;free@gmail.com&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;I want to send email from custom email address while sending emails from my Gmail
+(e.g.: select &lt;code&gt;hello@example.com&lt;/code&gt; as sender from &lt;code&gt;free@gmail.com&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/custom_email.png?style=center" alt="Custom email address"&gt;&lt;/p&gt;</description></item><item><title>Install Docker on Raspberry Pi</title><link>https://arshovon.com/blog/install-docker-on-raspberry-pi/</link><pubDate>Sun, 30 Aug 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-raspberry-pi/</guid><description>&lt;h2 id="environment"&gt;Environment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Operating System&lt;/b&gt; : Raspbian GNU/Linux 9 (stretch)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Model&lt;/b&gt; : Raspberry Pi 2 (Model B)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="docker-installation-procedure-on-raspberry-pi"&gt;Docker Installation Procedure on Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;The following steps showed the step by step installation guideline.&lt;/p&gt;
+&lt;h3 id="raspian-information"&gt;Raspian Information&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Check the model of the Raspberry Pi:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cat /proc/device-tree/model
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It confirms that I have a Raspberry Pi 2 (Model B)&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Raspberry Pi 2 Model B Rev 1.1
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Check the Operating System (OS) of the Raspberry Pi:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cat /etc/os-release
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This shows the details information of the OS.&lt;/p&gt;</description></item><item><title>Sorting Algorithm Comparisons</title><link>https://arshovon.com/blog/sorting-algorithm-comparisons/</link><pubDate>Sat, 15 Aug 2020 02:06:33 +0600</pubDate><guid>https://arshovon.com/blog/sorting-algorithm-comparisons/</guid><description>&lt;h3 id="sorting-algorithm-comparisons-table"&gt;Sorting Algorithm Comparisons Table&lt;/h3&gt;
+&lt;p&gt;{.table .table-bordered .table-striped .table-hover .table-responsive}&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Criteria&lt;/th&gt;
+ &lt;th&gt;&lt;a href="https://arshovon.com/blog/bubble-sort/"&gt;Bubble&lt;/a&gt;&lt;/th&gt;
+ &lt;th&gt;Selection&lt;/th&gt;
+ &lt;th&gt;&lt;a href="https://arshovon.com/blog/insertion-sort/"&gt;Insertion&lt;/a&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;a href="https://arshovon.com/blog/merge-sort/"&gt;Merge&lt;/a&gt;&lt;/th&gt;
+ &lt;th&gt;Quick&lt;/th&gt;
+ &lt;th&gt;&lt;a href="https://arshovon.com/blog/counting-sort/"&gt;Counting&lt;/a&gt;&lt;/th&gt;
+ &lt;th&gt;Timsort&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Technique&lt;/td&gt;
+ &lt;td&gt;Brute force&lt;/td&gt;
+ &lt;td&gt;Brute force&lt;/td&gt;
+ &lt;td&gt;Brute force&lt;/td&gt;
+ &lt;td&gt;Divide-and-conquer&lt;/td&gt;
+ &lt;td&gt;Divide-and-conquer&lt;/td&gt;
+ &lt;td&gt;Non comparison&lt;/td&gt;
+ &lt;td&gt;Hybrid&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Worst Time&lt;/td&gt;
+ &lt;td&gt;O(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+ &lt;td&gt;O(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+ &lt;td&gt;O(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+ &lt;td&gt;O(nlgn)&lt;/td&gt;
+ &lt;td&gt;O(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+ &lt;td&gt;O(k+n)&lt;/td&gt;
+ &lt;td&gt;O(nlgn)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Average Time&lt;/td&gt;
+ &lt;td&gt;Θ(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+ &lt;td&gt;Θ(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+ &lt;td&gt;Θ(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+ &lt;td&gt;Θ(nlgn)&lt;/td&gt;
+ &lt;td&gt;Θ(nlgn)&lt;/td&gt;
+ &lt;td&gt;Θ(k+n)&lt;/td&gt;
+ &lt;td&gt;Θ(nlgn)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Best Time&lt;/td&gt;
+ &lt;td&gt;Ω(n)&lt;/td&gt;
+ &lt;td&gt;Ω(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+ &lt;td&gt;Ω(n)&lt;/td&gt;
+ &lt;td&gt;Ω(nlgn)&lt;/td&gt;
+ &lt;td&gt;Ω(nlgn)&lt;/td&gt;
+ &lt;td&gt;Ω(k+n)&lt;/td&gt;
+ &lt;td&gt;Ω(n)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Space&lt;/td&gt;
+ &lt;td&gt;O(1)&lt;/td&gt;
+ &lt;td&gt;O(1)&lt;/td&gt;
+ &lt;td&gt;O(1)&lt;/td&gt;
+ &lt;td&gt;O(n)&lt;/td&gt;
+ &lt;td&gt;O(n)&lt;/td&gt;
+ &lt;td&gt;O(k+n)&lt;/td&gt;
+ &lt;td&gt;O(n)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Stable&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;In-place&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Online&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Adaptive&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;td&gt;No&lt;/td&gt;
+ &lt;td&gt;Yes&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Suitable for&lt;/td&gt;
+ &lt;td&gt;Sorted list&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Almost sorted list&lt;/td&gt;
+ &lt;td&gt;List with unknown order&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;0&amp;lt;=A[i]&amp;lt;=k&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="criteria-explanation"&gt;Criteria Explanation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technique&lt;/strong&gt;: Methodology of the sorting algorithm.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Worst Time&lt;/strong&gt;: Worst time complexity (Big-O) of the algorithm.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Average Time&lt;/strong&gt;: Average time complexity (Big-Theta) of the algorithm.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Best Time&lt;/strong&gt;: Best time complexity (Big-Omega) of the algorithm.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Space&lt;/strong&gt;: Space complexity of the algorithm.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stable&lt;/strong&gt;: Stable algorithm maintains the relative order of input elements with equal values.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;In-place&lt;/strong&gt;: In-place algorithm does not use auxiliary data structure to transform the input elements.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Online&lt;/strong&gt;: Online algorithm does not require the entire input available from the start.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Adaptive&lt;/strong&gt;: Adaptive algorithm takes the advantages of presorted array elements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="reference"&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition"&gt;Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://arshovon.com/blog/bubble-sort/"&gt;Bubble sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://arshovon.com/blog/insertion-sort/"&gt;Insertion sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://arshovon.com/blog/merge-sort/"&gt;Merge sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://arshovon.com/blog/counting-sort/"&gt;Counting sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Sorting_algorithm"&gt;Sorting Algorithm - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Timsort"&gt;Timsort - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.c2.com/?TimSort"&gt;Timsort - C2 article&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/"&gt;Analysis of different sorting techniques - Geeksforgeeks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Insertion Sort</title><link>https://arshovon.com/blog/insertion-sort/</link><pubDate>Tue, 11 Aug 2020 02:06:33 +0600</pubDate><guid>https://arshovon.com/blog/insertion-sort/</guid><description>&lt;h2 id="characteristics"&gt;Characteristics&lt;/h2&gt;
+&lt;h3 id="simple-implementation"&gt;Simple implementation&lt;/h3&gt;
+&lt;p&gt;Insertion sort can be implemented easily with less lines of code. It is quite efficient for small data sets. Though it has same complexity than other quadratic sorting algorithms like selection sort or bubble sort, insertion sort is more efficient.&lt;/p&gt;
+&lt;h3 id="adaptive"&gt;Adaptive&lt;/h3&gt;
+&lt;p&gt;Insertion sort is adaptive. If the input data set is already sorted, the number of steps are reduced.&lt;/p&gt;
+&lt;h3 id="online"&gt;Online&lt;/h3&gt;
+&lt;p&gt;Insertion sort works on the data as it receives it. The dataset is always sorted in each step of the insertion sort. A practical example of insertion sort is sorting a hand of playing cards. Assume, at the beginning of a card game, we have no cards in the left hand. Then we take a face down card from the table and search for it&amp;rsquo;s position in the left hand. To find the correct position for a card we compare the newly drawn card with each of the cards in the left hand from left to right. Then when we find the suitable spot, we insert the card into it&amp;rsquo;s correct position. At any times, the cards in the left hand are sorted.&lt;/p&gt;</description></item><item><title>Counting Sort</title><link>https://arshovon.com/blog/counting-sort/</link><pubDate>Sun, 09 Aug 2020 11:07:32 +0600</pubDate><guid>https://arshovon.com/blog/counting-sort/</guid><description>&lt;h2 id="characteristics"&gt;Characteristics&lt;/h2&gt;
+&lt;h3 id="non-negative-integers-with-a-known-maximum-value"&gt;Non negative integers with a known maximum value&lt;/h3&gt;
+&lt;p&gt;Counting sort can be applied if the input numbers are in the set &lt;code&gt;{0, 1, .. ,k}&lt;/code&gt;, a set of non negative integers with a maximum value &lt;code&gt;k&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="no-comparisons-between-elements"&gt;No comparisons between elements&lt;/h3&gt;
+&lt;p&gt;There are no comparisons between input elements that take place in counting sort. It uses array indexing to determine the relative order of the input numbers. It identifies the relative positions of each input element. For each element &lt;code&gt;x&lt;/code&gt;, counting sort counts number of elements less than &lt;code&gt;x&lt;/code&gt;. Then it uses this information to place element &lt;code&gt;x&lt;/code&gt; directly into its correct position.&lt;/p&gt;</description></item><item><title>Introduction to django CMS</title><link>https://arshovon.com/blog/introduction-to-django-cms/</link><pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate><guid>https://arshovon.com/blog/introduction-to-django-cms/</guid><description>&lt;h1 id="introduction-to-django-cms"&gt;Introduction to django CMS&lt;/h1&gt;
+&lt;p&gt;In this article we will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learn about django CMS&lt;/li&gt;
+&lt;li&gt;Analyze its features&lt;/li&gt;
+&lt;li&gt;Setup an application with django CMS with full installation guidelines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="about-django-cms"&gt;About django CMS&lt;/h2&gt;
+&lt;p&gt;django CMS is an open source enterprise content management system based on the Django framework.&lt;/p&gt;
+&lt;p&gt;django CMS is voted Best Open Source CMS in 2015. [&lt;a href="https://www.cmscritic.com/announcing-the-2015-winner-for-best-open-source-cms/"&gt;Announcing the 2015 Winner for Best Open Source CMS&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease. Developers can integrate existing Django applications with django CMS rapidly. New Django apps also can be developed which may take advantages of django CMS&amp;rsquo;s publishing and editing features.&lt;/p&gt;</description></item><item><title>Use SSH to logging into Raspberry Pi without Password</title><link>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</link><pubDate>Thu, 09 Apr 2020 08:05:42 +0600</pubDate><guid>https://arshovon.com/blog/logging-to-raspberry-pi-without-password/</guid><description>&lt;h1 id="scenario"&gt;Scenario&lt;/h1&gt;
+&lt;p&gt;We can login into remote Raspberry Pi using &lt;code&gt;ssh&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ssh -p PORT USER@IP
+password: RASPBERRY_PASSWORD
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As it can be seen, we require to input the Raspberry Pi&amp;rsquo;s password each time to establish SSH connection.&lt;/p&gt;
+&lt;h1 id="solution-add-local-machines-ssh-key-to-raspberry-pi-for-password-less-ssh-connection"&gt;Solution: Add local machine&amp;rsquo;s SSH key to Raspberry Pi for password less SSH connection&lt;/h1&gt;
+&lt;p&gt;To resolve the scenario, we need to add our local machine&amp;rsquo;s SSH key to the Raspberry Pi.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check if you have SSH key in local machine using:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ls -al ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;If you don&amp;rsquo;t have any SSH key, generate one:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ssh-keygen -t rsa -b 2048
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/username/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/username/.ssh/id_rsa.
+Your public key has been saved in /home/username/.ssh/id_rsa.pub.
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Copy the keys to the Raspberry Pi server:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ssh-copy-id -p PORT USER@RASPBERRY_IP_ADDRESS
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Following prompt will be opened and you need to give the Respberry Pi&amp;rsquo;s password:&lt;/p&gt;</description></item><item><title>Setup Odoo with Docker Compose</title><link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link><pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate><guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid><description>&lt;h2 id="what-is-odoo"&gt;What is Odoo?&lt;/h2&gt;
+&lt;p&gt;Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in	Python, JavaScript and XML. It uses PostgreSQL as database platform technology. It was renamed from OpenERP in 2014. &lt;a href="https://www.odoo.com/"&gt;[Odoo Official Website]&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/Odoo"&gt;[Wikipedia Article on Odoo]&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/List_of_ERP_software_packages#Free_and_open-source_ERP_software"&gt;[List of ERP software packages - Wikipedia]&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>&lt;h3 id="prerequisite"&gt;Prerequisite&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Docker Engine&lt;/code&gt; should be installed in local machine.
+Instructions on installing &lt;code&gt;Docker Engine&lt;/code&gt; on Ubuntu can be found in this tutorial: &lt;a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/"&gt;Install Docker on Ubuntu 18.04&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="environment"&gt;Environment&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Operating System&lt;/b&gt; : Ubuntu 18.04 LTS (64-bit)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Processor&lt;/b&gt; : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Memory&lt;/b&gt; : 15.3 GiB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="code-repository"&gt;Code Repository&lt;/h3&gt;
+&lt;p&gt;All codes used in this tutorial can be found in this Github repository:
+&lt;a href="https://github.com/arsho/FlaskDockerBootstrap"&gt;https://github.com/arsho/FlaskDockerBootstrap&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="directory-structure"&gt;Directory structure&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;.
+├── app.py
+├── Dockerfile
+├── readme.md
+├── requirements.txt
+├── static
+│   ├── css
+│   |   └── bootstrap.min.css
+│   ├── images
+│   │   ├── bootstrap.png
+│   │   ├── docker.png
+│   │   └── flask.svg
+│   └── js
+│      └── bootstrap.min.js
+└── templates
+ └── index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;requirements.txt&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>&lt;h3 id="what-is-docker-compose"&gt;What is Docker Compose?&lt;/h3&gt;
+&lt;p&gt;Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.&lt;/p&gt;
+&lt;p&gt;Compose uses a &lt;code&gt;YML&lt;/code&gt;\&lt;code&gt;YAML&lt;/code&gt; file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.
+Some reasons you might want to use Compose :&lt;/p&gt;</description></item><item><title>Install Docker on Ubuntu 22.10</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</guid><description>&lt;h3 id="why-docker"&gt;Why Docker?&lt;/h3&gt;
+&lt;p&gt;Docker is a tool for running application in an isolated environment.&lt;/p&gt;
+&lt;p&gt;Some reasons you might want to use Docker:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Same environment: &lt;/b&gt; Same environment in developers machines and production servers. Acts the same.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Sandbox projects: &lt;/b&gt; Eliminates the risk of getting conflicts while working on different projects on same machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Easy working without setup hassle: &lt;/b&gt; Start working directly on others projects without setting all of the environments.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Debug your app, not your environment: &lt;/b&gt; Securely build and share any application, anywhere.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="container-image-dockerfile-docker-hub"&gt;Container, Image, Dockerfile, Docker Hub:&lt;/h4&gt;
+&lt;p&gt;&lt;b&gt;Container&lt;/b&gt; is a running instance of an image.
+An &lt;b&gt;image&lt;/b&gt; is a template for creating the environment you want to snapshot out of a system at a particular time.
+An image includes:&lt;/p&gt;</description></item><item><title>Run Java Program in Ubuntu 18.04</title><link>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</link><pubDate>Tue, 28 Jan 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/run-java-program-ubuntu-18-04/</guid><description>&lt;p&gt;Run Java Program in Ubuntu 18.04.
+The program will be run using &lt;code&gt;Oracle's OpenJDK JDK 8&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check if Java Runtime Environment(JRE) is installed in machine:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;java -version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;If JRE is installed it will show the version information similar to following:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;openjdk 11.0.5 2019-10-15
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK Runtime Environment &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OpenJDK 64-Bit Server VM &lt;span style="color:#f92672"&gt;(&lt;/span&gt;build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04, mixed mode&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;If you do not have installed JRE, install JRE using:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install openjdk-8-jre
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Check if Java compiler is installed in machine:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;javac -version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;If Java compiler is installed it will show the version information similar to following:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;javac 1.8.0_232
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;If you do not have installed Java compiler, install it using:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install openjdk-8-jdk
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Go to any directory and create a demo Java program. For example, we are going to create &lt;code&gt;Student.java&lt;/code&gt; as following:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Student&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		System.&lt;span style="color:#a6e22e"&gt;out&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Hello from Student class&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Compile the Java class using:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;javac Student.java
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Run the compiled program using:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;java Student
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;You will see the output like below:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Hello from Student class
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/run_java_in_terminal.png?style=center" alt="alt Run Java Program in Ubuntu 18.04"&gt;&lt;/p&gt;</description></item><item><title>Example of using Bootstrap's navbar in Flask</title><link>https://arshovon.com/blog/flask-bootstrap-navbar/</link><pubDate>Wed, 02 Oct 2019 12:14:12 +0600</pubDate><guid>https://arshovon.com/blog/flask-bootstrap-navbar/</guid><description>&lt;p&gt;Example of using Bootstrap 4&amp;rsquo;s &lt;code&gt;navbar&lt;/code&gt; for dynamic routing in &lt;code&gt;Flask&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Directory structure:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.
+├── app.py
+├── requirements.txt
+└── templates
+ └── index.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;app.py&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; flask &lt;span style="color:#f92672"&gt;import&lt;/span&gt; Flask, render_template
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;app &lt;span style="color:#f92672"&gt;=&lt;/span&gt; Flask(__name__)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;@app.route&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;/&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;view_home&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; render_template(&lt;span style="color:#e6db74"&gt;&amp;#34;index.html&amp;#34;&lt;/span&gt;, title&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Home page&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;@app.route&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;/first&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;view_first_page&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; render_template(&lt;span style="color:#e6db74"&gt;&amp;#34;index.html&amp;#34;&lt;/span&gt;, title&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;First page&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;@app.route&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;/second&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;view_second_page&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; render_template(&lt;span style="color:#e6db74"&gt;&amp;#34;index.html&amp;#34;&lt;/span&gt;, title&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Second page&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;index.html&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#f92672"&gt;html&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;lang&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#f92672"&gt;head&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;!-- Required meta tags --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;meta&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;charset&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;meta&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;name&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;content&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;width=device-width, initial-scale=1, shrink-to-fit=no&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;!-- Bootstrap CSS --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;link&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;rel&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;href&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;integrity&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;crossorigin&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;anonymous&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;title&lt;/span&gt;&amp;gt;Navbar in Flask&amp;lt;/&lt;span style="color:#f92672"&gt;title&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#f92672"&gt;head&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#f92672"&gt;body&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;div&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;container&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;nav&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;navbar navbar-expand-lg navbar-light bg-light&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;a&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;navbar-brand&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;href&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;#&amp;#34;&lt;/span&gt;&amp;gt;Navbar&amp;lt;/&lt;span style="color:#f92672"&gt;a&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;button&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;navbar-toggler&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;type&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;button&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;data-toggle&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;collapse&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;data-target&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;#navbarSupportedContent&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;aria-controls&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;navbarSupportedContent&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;aria-expanded&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;false&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;aria-label&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;Toggle navigation&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;span&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;navbar-toggler-icon&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style="color:#f92672"&gt;span&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;button&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;div&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;collapse navbar-collapse&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;id&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;navbarSupportedContent&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;ul&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;navbar-nav mr-auto&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;li&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;nav-item active&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;a&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;nav-link&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;href&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;{{ url_for(&amp;#39;view_home&amp;#39;) }}&amp;#34;&lt;/span&gt;&amp;gt;Home &amp;lt;&lt;span style="color:#f92672"&gt;span&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;sr-only&amp;#34;&lt;/span&gt;&amp;gt;(current)&amp;lt;/&lt;span style="color:#f92672"&gt;span&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style="color:#f92672"&gt;a&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;li&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;li&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;nav-item&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;a&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;nav-link&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;href&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;{{ url_for(&amp;#39;view_first_page&amp;#39;) }}&amp;#34;&lt;/span&gt;&amp;gt;First Page&amp;lt;/&lt;span style="color:#f92672"&gt;a&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;li&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;li&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;nav-item&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;a&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;nav-link&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;href&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;{{ url_for(&amp;#39;view_second_page&amp;#39;) }}&amp;#34;&lt;/span&gt;&amp;gt;Second Page&amp;lt;/&lt;span style="color:#f92672"&gt;a&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;li&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;nav&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;div&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;jumbotron&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;h1&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;display-4&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 		{% if title %}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 		 {{ title }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 		{% else %}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 		 Default title
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 		{% endif %}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	 &amp;lt;/&lt;span style="color:#f92672"&gt;h1&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#f92672"&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;!-- Optional JavaScript --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;script&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;src&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;integrity&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;crossorigin&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;anonymous&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style="color:#f92672"&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;script&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;src&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;integrity&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;crossorigin&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;anonymous&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style="color:#f92672"&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#f92672"&gt;script&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;src&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;integrity&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM&amp;#34;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;crossorigin&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;anonymous&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style="color:#f92672"&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#f92672"&gt;body&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#f92672"&gt;html&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Installed packages (&lt;code&gt;requirements.txt&lt;/code&gt;):&lt;/p&gt;</description></item><item><title>Read File by N Lines using C programming language</title><link>https://arshovon.com/blog/read-file-by-n-lines/</link><pubDate>Sun, 29 Sep 2019 12:14:12 +0600</pubDate><guid>https://arshovon.com/blog/read-file-by-n-lines/</guid><description>&lt;p&gt;Read a file by &lt;code&gt;n&lt;/code&gt; lines while user pressing &lt;code&gt;y&lt;/code&gt; until end of file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-c" data-lang="c"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Author: Ahmedur Rahman Shovon
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;License: &amp;#34;GPL&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Date: 2019/09/29
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;/* Function that prints a line from file. Update the printf contents to change format. */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;print_line&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; line_number, &lt;span style="color:#66d9ef"&gt;char&lt;/span&gt; line[])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;printf&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;%s&amp;#34;&lt;/span&gt;, line);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;char&lt;/span&gt; filename[] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;data.txt&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; FILE &lt;span style="color:#f92672"&gt;*&lt;/span&gt;file &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;fopen&lt;/span&gt;(filename, &lt;span style="color:#e6db74"&gt;&amp;#34;r&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Number of lines per chunk
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; n &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; end &lt;span style="color:#f92672"&gt;=&lt;/span&gt; n;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;char&lt;/span&gt; user_choice;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; ( file &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; NULL )
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;char&lt;/span&gt; line[&lt;span style="color:#ae81ff"&gt;1000&lt;/span&gt;]; &lt;span style="color:#75715e"&gt;/* or other suitable maximum line size */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;while&lt;/span&gt; (&lt;span style="color:#a6e22e"&gt;fgets&lt;/span&gt;(line, &lt;span style="color:#66d9ef"&gt;sizeof&lt;/span&gt; line, file) &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; NULL) &lt;span style="color:#75715e"&gt;/* read a line */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(i&lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt;end)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;print_line&lt;/span&gt;(i, line);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;printf&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Do you want to continue? Press &amp;#39;y&amp;#39; to continue or any other key to exit: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// The begining space is to ignore the enter key press
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;scanf&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34; %c&amp;#34;&lt;/span&gt;, &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;user_choice);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(user_choice &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;y&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;print_line&lt;/span&gt;(i, line);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; end &lt;span style="color:#f92672"&gt;=&lt;/span&gt; end &lt;span style="color:#f92672"&gt;+&lt;/span&gt; n;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;printf&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;You pressed &amp;#39;%c&amp;#39;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;\n&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;, user_choice);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;fclose&lt;/span&gt;(file);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;printf&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Error in reading file&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;data.txt&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>&lt;p&gt;When developing application using Django framework, we extensively use various Django commands.
+Few common Django commands we use regularly are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python manage.py makemigrations&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python manage.py migrate&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These commands are built in and lies within Django itself.&lt;/p&gt;
+&lt;p&gt;We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/django_custom_command_1.png" alt="alt example of django custom command"&gt;&lt;/p&gt;
+&lt;p&gt;These custom admin commands can be invoked using &lt;code&gt;manage.py COMMAND_NAME&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Basic features of Saas with example</title><link>https://arshovon.com/blog/saas-basic-features/</link><pubDate>Mon, 06 May 2019 16:05:42 +0600</pubDate><guid>https://arshovon.com/blog/saas-basic-features/</guid><description>&lt;p&gt;Sass(Syntactically Awesome Style Sheets) is the most mature, stable, and powerful professional grade CSS extension language in the world.&lt;/p&gt;
+&lt;h3 id="features"&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CSS Compatible: Sass is completely compatible with all versions of CSS.&lt;/li&gt;
+&lt;li&gt;Mature: Sass has been actively supported for about 12 years by its loving Core Team.&lt;/li&gt;
+&lt;li&gt;Frameworks: Popular frameworks built with Sass -&amp;gt; Compass, Bourbon, and Susy.&lt;/li&gt;
+&lt;li&gt;Nesting: HTML elements are nested. But CSS elements are not nested by default. Saas provides a way to nesting elements.&lt;/li&gt;
+&lt;li&gt;Variables&lt;/li&gt;
+&lt;li&gt;Math operators&lt;/li&gt;
+&lt;li&gt;Mixin&lt;/li&gt;
+&lt;li&gt;Condition&lt;/li&gt;
+&lt;li&gt;Loop&lt;/li&gt;
+&lt;li&gt;Partial and import&lt;/li&gt;
+&lt;li&gt;Extends&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/saas_example.png?style=center" alt="alt oh-my-zsh terminal"&gt;&lt;/p&gt;</description></item><item><title>Install CLI Tools Ubuntu 18.04</title><link>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</link><pubDate>Mon, 06 May 2019 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-cli-tools-ubuntu-18-04/</guid><description>&lt;p&gt;Install basic development CLI tools in Ubuntu 18.04.
+It includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;idle&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;venv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tree&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-git-in-ubuntu-1804-lts"&gt;Install Git in Ubuntu 18.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install Git:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add global configuration for Git user:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.email &lt;span style="color:#e6db74"&gt;&amp;#34;you@example.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.name &lt;span style="color:#e6db74"&gt;&amp;#34;Your Name&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add SSH. Details can be found &lt;a href="https://gist.github.com/arsho/b91add3f536154386b9a4dca9373d5bb"&gt;in this gist&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="install-oh-my-zsh-in-ubuntu-1804-lts"&gt;Install Oh My Zsh in Ubuntu 18.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install Zsh:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install zsh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install git:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install oh-my-zsh:&lt;/p&gt;</description></item><item><title>8-diamond</title><link>https://arshovon.com/blog/8-diamond/</link><pubDate>Sun, 19 Aug 2018 20:29:37 -0700</pubDate><guid>https://arshovon.com/blog/8-diamond/</guid><description>&lt;p&gt;Draw 8 of Diamond using Python&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__author__ &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Ahmedur Rahman Shovon&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__license__ &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;GPL&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__version__ &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;1.0.1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;__maintainer__ &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Ahmedur Rahman Shovon&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; turtle
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;draw&lt;/span&gt;(x_position, y_position, font, value):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;up()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;goto(x_position, y_position)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;write(value,font&lt;span style="color:#f92672"&gt;=&lt;/span&gt;font)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;down()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;hideturtle()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;canvas_width &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;405&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;canvas_height &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;490&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;setup(canvas_width, canvas_height, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;font_color &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;color(font_color)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;turtle&lt;span style="color:#f92672"&gt;.&lt;/span&gt;title(&lt;span style="color:#e6db74"&gt;&amp;#34;8 of diamond by arsho&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;diamond_size &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;small_diamond_size &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;35&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;number_size &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;40&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;diamond_font &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#e6db74"&gt;&amp;#34;Comic Sans MS&amp;#34;&lt;/span&gt;, diamond_size, &lt;span style="color:#e6db74"&gt;&amp;#34;normal&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;small_diamond_font &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#e6db74"&gt;&amp;#34;Comic Sans MS&amp;#34;&lt;/span&gt;, small_diamond_size, &lt;span style="color:#e6db74"&gt;&amp;#34;normal&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;number_font &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#e6db74"&gt;&amp;#34;Comic Sans MS&amp;#34;&lt;/span&gt;, number_size, &lt;span style="color:#e6db74"&gt;&amp;#34;normal&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;card_value &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;8&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;diamond_value &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;\u2666&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;x_position_left &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;170&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;x_position_middle &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;x_position_right &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;210&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;y_distance &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;70&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;top_8_x_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;190&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;top_8_y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;180&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bottom_8_x_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;150&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bottom_8_y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;240&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;top_diamond_x_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;193&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;top_diamond_y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;135&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bottom_diamond_x_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;145&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bottom_diamond_y_position &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;190&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Draw top 8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draw(top_8_x_position, top_8_y_position, number_font, card_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Draw top diamond&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draw(top_diamond_x_position, top_diamond_y_position, small_diamond_font, diamond_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Draw bottom 8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draw(bottom_8_x_position, bottom_8_y_position, number_font, card_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Draw bottom diamond&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;draw(bottom_diamond_x_position, bottom_diamond_y_position, small_diamond_font, diamond_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(&lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; i&lt;span style="color:#f92672"&gt;%&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;&lt;span style="color:#f92672"&gt;==&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# Draw two diamonds&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; draw(x_position_left, y_position, diamond_font, diamond_value) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; draw(x_position_right, y_position, diamond_font, diamond_value) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# Draw two diamonds&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; draw(x_position_middle, y_position, diamond_font, diamond_value)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; y_position &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; y_distance
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;</description></item><item><title>Python Reduce Example</title><link>https://arshovon.com/blog/python-reduce-example/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-reduce-example/</guid><description>&lt;h4&gt; Get &lt;code&gt;n&lt;sup&gt;th&lt;/sup&gt;&lt;/code&gt; Fibonacci number using &lt;code&gt;reduce&lt;/code&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; functools &lt;span style="color:#f92672"&gt;import&lt;/span&gt; reduce
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_first_n_fibonacci&lt;/span&gt;(n):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; n&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ar &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;, n):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ar&lt;span style="color:#f92672"&gt;.&lt;/span&gt;append(ar[i&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;+&lt;/span&gt; ar[i&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; ar[:n]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_first_n_fibonacci_reduce&lt;/span&gt;(n):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; initializer &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; n&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; initializer[:n]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ar &lt;span style="color:#f92672"&gt;=&lt;/span&gt; reduce(&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; fib, _: fib &lt;span style="color:#f92672"&gt;+&lt;/span&gt; [fib[&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;+&lt;/span&gt; fib[&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;]], range(n&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;), initializer)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; ar
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; __name__ &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_first_n_fibonacci(&lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_first_n_fibonacci_reduce(&lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_first_n_fibonacci(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_first_n_fibonacci_reduce(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_first_n_fibonacci(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_first_n_fibonacci_reduce(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_first_n_fibonacci(&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_first_n_fibonacci_reduce(&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="list-multiplication-using-reduce"&gt;List multiplication using &lt;code&gt;reduce&lt;/code&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; functools &lt;span style="color:#f92672"&gt;import&lt;/span&gt; reduce
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_list_multiplication&lt;/span&gt;(ar):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; result &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; ar:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; result &lt;span style="color:#f92672"&gt;*=&lt;/span&gt; i
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; result
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;get_list_multiplication_using_reduce&lt;/span&gt;(ar):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; reduce(&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x, y: x&lt;span style="color:#f92672"&gt;*&lt;/span&gt;y, ar, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; __name__ &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ar &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;, &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;23&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; get_list_multiplication(ar) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; get_list_multiplication_using_reduce(ar)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="reference"&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/functools.html#functools.reduce"&gt;Python official documentation on reduce&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gist.github.com/arsho/99a5adbdd2493e7a530dcc695ccab4bb"&gt;Gist file with these examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Sort Python Dictionary</title><link>https://arshovon.com/blog/python-sort-dictionary/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-sort-dictionary/</guid><description>&lt;h3 id="sort-python-dict-in-various-ways"&gt;Sort Python &lt;code&gt;dict&lt;/code&gt; in various ways&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Original Data&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;world_cup_wins &lt;span style="color:#f92672"&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Brazil&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Germany&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Italy&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Argentina&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;France&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Uruguay&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;England&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Spain&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="sort-dictionary-by-key-ascending"&gt;SORT DICTIONARY BY KEY ASCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Argentina 2
+Brazil 5
+England 1
+France 2
+Germany 4
+Italy 4
+Spain 1
+Uruguay 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="sort-dictionary-by-key-descending"&gt;SORT DICTIONARY BY KEY DESCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;], reverse&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;True&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Uruguay 2
+Spain 1
+Italy 4
+Germany 4
+France 2
+England 1
+Brazil 5
+Argentina 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="sort-dictionary-by-value-ascending"&gt;SORT DICTIONARY BY VALUE ASCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;</description></item></channel></rss>

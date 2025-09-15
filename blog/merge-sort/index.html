@@ -1,12 +1,22 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content=index,follow><meta name=keywords content=algorithm,sorting,divide-and-conquer><meta name=description content="Divide and conquer strategy, merge sort characteristics, algorithm, implementation, comparison between merge sort and insertion sort, and practice challenges"><meta name=author content="Ahmedur Rahman Shovon"><meta property=og:url content=https://arshovon.com/blog/merge-sort/><meta property=og:type content=website><meta property=og:title content="Merge Sort - Ahmedur Rahman Shovon"><meta name=og:description content="Divide and conquer strategy, merge sort characteristics, algorithm, implementation, comparison between merge sort and insertion sort, and practice challenges"><meta property=og:image content=https://arshovon.com/blog/images/merge_sort.png><meta property=og:image:secure_url content=https://arshovon.com/blog/images/merge_sort.png><meta property=og:image:type content=image/png><meta property=og:image:alt content="Merge Sort - Ahmedur Rahman Shovon"><meta property=og:site_name content="Ahmedur Rahman Shovon"><meta property=og:locale content=en-us><meta name=twitter:card content=summary><meta name=twitter:image content=https://arshovon.com/blog/images/merge_sort.png><meta name=twitter:url content=https://arshovon.com/blog/merge-sort/><meta property=twitter:title content="Merge Sort - Ahmedur Rahman Shovon"><meta name=twitter:description content="Divide and conquer strategy, merge sort characteristics, algorithm, implementation, comparison between merge sort and insertion sort, and practice challenges"><title>Merge Sort - Ahmedur Rahman Shovon</title><link rel=canonical href=https://arshovon.com/blog/merge-sort/><link rel=icon href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel="shortcut icon" href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx crossorigin=anonymous><script src=https://kit.fontawesome.com/9c9dff05f4.js crossorigin=anonymous></script><link rel=stylesheet href=https://arshovon.com/assets/css/arsho.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-119139307-1');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/prolog.min.js integrity="sha512-JrKKSmGetELE+7du9jrRs4R9dC6QO5gFIk5s7RRI7wWdG3yueqjDOJPX/3eDc83bE/qyNjMr4gaYVqKDhjQkpg==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dockerfile.min.js integrity="sha512-y0uGK4Ql/eJrIn2uOu2Hfc/3wnQpAHlEF58pL7akgWaVnuOJ8D5Aal/VPRKyMGADVuAavg1yVdLUpn9PlnGmYA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/shell.min.js integrity="sha512-oXIjzcLt5aPmQEl6MaYwcoCX70QJZq1qiyEYE3tlOixhfsYiTKKftLjJFuRjV7wo3WTHI+wfVr3EJQfRJrMnSQ==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js integrity="sha512-64D4TOespcFsS6vnnca/aON48/6XNG61BAtQj7WG+8qAZXclMfx92cXC7l56/FuHLNY9FeDvLPqVuT3x4AptgA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js></script><link rel=stylesheet href=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css></head><header class="d-print-none header mb-md-4 mb-lg-4 mb-xl-4"><nav id=main-navbar class="navbar fixed-top bg-light navbar-expand-md navbar-light" aria-label=site_top_menu><div class="container px-md-0"><a class=navbar-brand href=/>AR Shovon</a>
-<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#site_top_menu aria-controls=site_top_menu aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=site_top_menu><div class=mx-auto><ul class="navbar-nav me-auto mb-2 mb-md-0"><li class=nav-item><a class=nav-link title=Home href=/><i class="fa fa-home fa-lg me-1"></i>Home</a></li><li class=nav-item><a class=nav-link title=Education href=/#Education><i class="fa fa-graduation-cap fa-lg me-1"></i>Education</a></li><li class=nav-item><a class=nav-link title=Experiences href=/#Experiences><i class="fa fa-briefcase fa-lg me-1"></i>Experiences</a></li><li class=nav-item><a class=nav-link title=Publications href=/#Publications><i class="fa fa-book fa-lg me-1"></i>Publications</a></li><li class=nav-item><a class=nav-link title=Projects href=/#Projects><i class="fa fa-code fa-lg me-1"></i>Projects</a></li><li class=nav-item><a class=nav-link title=Awards href=/#Awards><i class="fa fa-award fa-lg me-1"></i>Awards</a></li><li class=nav-item><a class=nav-link title=Services href=/#Services><i class="fa fa-handshake fa-lg me-1"></i>Services</a></li><li class=nav-item><a class=nav-link title="Blog posts" href=/blog><i class="fa fa-laptop-code fa-lg me-1"></i>Blog</a></li><li class=nav-item><a class=nav-link title=Apps href=/apps><i class="fa fa-globe fa-lg me-1"></i>Apps</a></li></ul></div></div></div></nav></header><body><div class="container-fluid container-xl bg-white"><div class=row><header class="text-bg-light px-md-2 pb-md-2 text-center list-jumbotron"><h1 class="pt-5 fs-3 text-center">Merge Sort</h1><h2 class="text-center fs-5 mb-5">By
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="index,follow"><meta name=keywords content="algorithm,sorting,divide-and-conquer"><meta name=description content="Divide and conquer strategy, merge sort characteristics, algorithm, implementation, comparison between merge sort and insertion sort, and practice challenges"><meta name=author content="Ahmedur Rahman Shovon"><meta property="og:url" content="https://arshovon.com/blog/merge-sort/"><meta property="og:type" content="website"><meta property="og:title" content="Merge Sort - Ahmedur Rahman Shovon"><meta name=og:description content="Divide and conquer strategy, merge sort characteristics, algorithm, implementation, comparison between merge sort and insertion sort, and practice challenges"><meta property="og:image" content="https://arshovon.com/blog/images/merge_sort.png"><meta property="og:image:secure_url" content="https://arshovon.com/blog/images/merge_sort.png"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Merge Sort - Ahmedur Rahman Shovon"><meta property="og:site_name" content="Ahmedur Rahman Shovon"><meta property="og:locale" content="en-us"><meta name=twitter:card content="summary"><meta name=twitter:image content="https://arshovon.com/blog/images/merge_sort.png"><meta name=twitter:url content="https://arshovon.com/blog/merge-sort/"><meta property="twitter:title" content="Merge Sort - Ahmedur Rahman Shovon"><meta name=twitter:description content="Divide and conquer strategy, merge sort characteristics, algorithm, implementation, comparison between merge sort and insertion sort, and practice challenges"><title>Merge Sort - Ahmedur Rahman Shovon</title><link rel=canonical href=https://arshovon.com/blog/merge-sort/><link rel=icon href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel="shortcut icon" href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx crossorigin=anonymous><script src=https://kit.fontawesome.com/9c9dff05f4.js crossorigin=anonymous></script><link rel=stylesheet href=https://arshovon.com/assets/css/arsho.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-119139307-1")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/prolog.min.js integrity="sha512-JrKKSmGetELE+7du9jrRs4R9dC6QO5gFIk5s7RRI7wWdG3yueqjDOJPX/3eDc83bE/qyNjMr4gaYVqKDhjQkpg==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dockerfile.min.js integrity="sha512-y0uGK4Ql/eJrIn2uOu2Hfc/3wnQpAHlEF58pL7akgWaVnuOJ8D5Aal/VPRKyMGADVuAavg1yVdLUpn9PlnGmYA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/shell.min.js integrity="sha512-oXIjzcLt5aPmQEl6MaYwcoCX70QJZq1qiyEYE3tlOixhfsYiTKKftLjJFuRjV7wo3WTHI+wfVr3EJQfRJrMnSQ==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js integrity="sha512-64D4TOespcFsS6vnnca/aON48/6XNG61BAtQj7WG+8qAZXclMfx92cXC7l56/FuHLNY9FeDvLPqVuT3x4AptgA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js></script><link rel=stylesheet href=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css></head><header class="d-print-none header mb-md-4 mb-lg-4 mb-xl-4"><nav id=main-navbar class="navbar fixed-top bg-light navbar-expand-md navbar-light" aria-label=site_top_menu><div class="container px-md-0"><a class=navbar-brand href=/>AR Shovon
+</a><button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#site_top_menu aria-controls=site_top_menu aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=site_top_menu><div class=mx-auto><ul class="navbar-nav me-auto mb-2 mb-md-0"><li class=nav-item><a class=nav-link title=Home href=/><i class="fa fa-home fa-lg me-1"></i>
+Home</a></li><li class=nav-item><a class=nav-link title=Education href=/#Education><i class="fa fa-graduation-cap fa-lg me-1"></i>
+Education</a></li><li class=nav-item><a class=nav-link title=Experiences href=/#Experiences><i class="fa fa-briefcase fa-lg me-1"></i>
+Experiences</a></li><li class=nav-item><a class=nav-link title=Publications href=/#Publications><i class="fa fa-book fa-lg me-1"></i>
+Publications</a></li><li class=nav-item><a class=nav-link title=Projects href=/#Projects><i class="fa fa-code fa-lg me-1"></i>
+Projects</a></li><li class=nav-item><a class=nav-link title=Awards href=/#Awards><i class="fa fa-award fa-lg me-1"></i>
+Awards</a></li><li class=nav-item><a class=nav-link title=Services href=/#Services><i class="fa fa-handshake fa-lg me-1"></i>
+Services</a></li><li class=nav-item><a class=nav-link title="Blog posts" href=/blog><i class="fa fa-laptop-code fa-lg me-1"></i>
+Blog</a></li><li class=nav-item><a class=nav-link title=Apps href=/apps><i class="fa fa-globe fa-lg me-1"></i>
+Apps</a></li></ul></div></div></div></nav></header><body><div class="container-fluid container-xl bg-white"><div class=row><header class="text-bg-light px-md-2 pb-md-2 text-center list-jumbotron"><h1 class="pt-5 fs-3 text-center">Merge Sort</h1><h2 class="text-center fs-5 mb-5">By
 Ahmedur Rahman Shovon</h2><div class="mb-1 clearfix d-print-none"><small class=d-block>Published
-<time datetime=2021-04-29T01:00:15&#43;06:00>April 29, 2021</time>, Updated
-<time datetime=2025-09-09T14:05:43-05:00></i>September 9, 2025</time></small>
-<span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span>
-<span class=me-2><a href=https://arshovon.com/tags/ class="badge text-bg-secondary me-1" title="All tags"><i class="fa fa-tags"></i></a><a href=https://arshovon.com/tags/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a>
+<time datetime=2021-04-29T01:00:15+06:00>April 29, 2021</time>, Updated
+<time datetime=2025-09-15T16:56:26-05:00></i>September 15, 2025</time>
+</small><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a>
+</span><span class=me-2><a href=https://arshovon.com/tags/ class="badge text-bg-secondary me-1" title="All tags"><i class="fa fa-tags"></i></a>
+<a href=https://arshovon.com/tags/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a>
 <a href=https://arshovon.com/tags/sorting class="badge text-bg-secondary" title=sorting>sorting</a>
 <a href=https://arshovon.com/tags/divide-and-conquer class="badge text-bg-secondary" title=divide-and-conquer>divide-and-conquer</a></span></div></header><main class="col-12 col-xl-8 offset-xl-2 blog p-0" role=main><article><div class=p-3><h2 id=divide-and-conquer-strategy-and-merge-sort>Divide and conquer strategy and merge sort</h2><p>In a divide and conquer strategy, a problem is divided into multiple subproblems.
 These subproblems are similar to the original problem but smaller in size.
@@ -14,494 +24,491 @@ The divide and conquer strategy solves these subproblems recursively.
 Then it combines the solutions of the subproblems to develop a final solution for the original problem.
 Thus, the divide and conquer strategy has two parts: divide and conquer.</p><h3 id=divide>Divide</h3><p>In the divide phase, the original problem is divided into smaller subproblems.
 Each subproblem has the same characteristics as the original problem.</p><h3 id=conquer>Conquer</h3><p>In this phase, the subproblems are solved recursively.
-Finally, the smaller results are combined to form the final solution of the original problem.</p><p>Merge sort is based on the divide and conquer strategy. To sort an array of <code>n</code> elements, it follows the below steps:</p><ul><li>It divides the unsorted array into <code>n/2</code> parts recursively until there is only one element in each part.</li><li>It sorts the smaller parts and combines the smaller solutions to create the final result.</li></ul><p>The following figure illustrates how merge sort follows the divide and conquer strategy.</p><figure class="figure py-2 mx-auto d-block"><img class="mx-auto d-block figure-img img-thumbnail border border-light" src=/blog/images/merge_sort_split_and_merge.svg><figcaption class="figure-caption text-center">Merge sort splitting and merging step</figcaption></figure><h2 id=merge-sort-characteristics>Merge sort characteristics</h2><h3 id=practical>Practical</h3><p>Merge sort is an efficient comparison-based sorting algorithm. As of Perl 5.8, merge sort is the default sorting algorithm. The Linux kernel also uses merge sort for linked lists.</p><h3 id=not-adaptive>Not Adaptive</h3><p>Merge sort is not adaptive. It performs the same on sorted, almost sorted, and unsorted lists. Its performance is not dependent on whether the input data is sorted or not.</p><h3 id=offline>Offline</h3><p>Merge sort works after receiving all the data. It does not sort the element when it receives them.</p><h3 id=stable>Stable</h3><p>Merge sort is stable. Numbers with the same value appear in the output array as they appear in the input array. Let's take an input array <code>A = [3, 0, 3]</code>. In the input array, the value <code>3</code> occurs two times; at index 0 and 2. Insertion sort ensures that in the output array, the occurrences of <code>3</code> are placed in the same order as the input array.</p><h3 id=not-in-place>Not In place:</h3><p>Merge sort does not sort the input list in place. It requires an additional list of <code>n</code> size to sort unsorted list of <code>n</code> elements. So, its space complexity is <code>O(n)</code>.</p><h3 id=loglinear-time-complexity>Loglinear time complexity</h3><p>It has loglinear time complexity.<br></p><ul><li>Worst Time complexity (Big-O): <code>O(nlogn)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Average Time complexity (Big-Theta): <code>Θ(nlogn)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Best Time complexity (Big-Omega): <code>Ω(nlogn)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Space complexity: <code>O(n)</code></li></ul><h2 id=merge-sort-algorithm-pseudocode>Merge Sort algorithm pseudocode</h2><pre><code class=language-bash>procedure Merge(A: list of items, TEMP: temporary array, LEFT, MID, RIGHT)
-    LEFT_POS := 0
-    RIGHT_POS := MID + 1
-    CURRENT_POS := LEFT
-    while LEFT_POS &lt;= MID and RIGHT_POS &lt;= RIGHT do
-        if A[LEFT_POS] &lt;= A[RIGHT_POS] then
-            TEMP[CURRENT_POS] := A[LEFT_POS]
-            LEFT_POS := LEFT_POS + 1
-        else then
-            TEMP[CURRENT_POS] := A[RIGHT_POS]
-            RIGHT_POS := RIGHT_POS + 1
-        end if
-        CURRENT_POS := CURRENT_POS + 1
-    end while
-    while LEFT_POS &lt;= MID do
-        TEMP[CURRENT_POS] := A[LEFT_POS]
-        LEFT_POS := LEFT_POS + 1
-        CURRENT_POS := CURRENT_POS + 1
-    end while
-    while RIGHT_POS &lt;= RIGHT do
-        TEMP[CURRENT_POS] := A[RIGHT_POS]
-        RIGHT_POS := RIGHT_POS + 1
-        CURRENT_POS := CURRENT_POS + 1
-    end while
-    for i in LEFT to RIGHT inclusive do
-        A[i] = TEMP[i]
-    end for
-end procedure
-
-procedure Split_And_Merge(A: list of items, TEMP: temporary array, LEFT, RIGHT)
-    if LEFT &lt; RIGHT then
-        MID := ⌊(LEFT + RIGHT)⌋ / 2
-        Split_And_Merge(A, TEMP, LEFT, MID)
-        Split_And_Merge(A, TEMP, MID+1, RIGHT)
-        Merge(A, TEMP, LEFT, MID, RIGHT)
-    end if
-end procedure
-
-procedure Merge_Sort(A: list of items, N: total items)
-    TEMP[0..A.LENGTH] a new array
-    Split_And_Merge(A, TEMP, 0, N - 1)
-end procedure
-</code></pre><h2 id=merge-sort-implementation-using-python-3>Merge Sort implementation using Python 3</h2><pre><code class=language-py>&quot;&quot;&quot;
-Implementation of merge sort algorithm
-
-Main File: merge_sort.py
-Test File: test_merge_sort.py
-&quot;&quot;&quot;
-
-
-def get_merge_sorted_numbers(numbers):
-    &quot;&quot;&quot; Returns sorted list for a given list
-
-    Arguments:
-    numbers -- list of numbers
-    &quot;&quot;&quot;
-    temp = numbers.copy()
-    perform_split_and_merge(numbers, temp, 0, len(numbers) - 1)
-    return numbers
-
-
-def perform_split_and_merge(ar, temp, left, right):
-    if left &lt; right:
-        mid = (right + left) // 2
-        perform_split_and_merge(ar, temp, left, mid)
-        perform_split_and_merge(ar, temp, mid + 1, right)
-        perform_merge(ar, temp, left, mid, right)
-
-
-def perform_merge(ar, temp, left, mid, right):
-    left_pos = left
-    right_pos = mid + 1
-    current_pos = left
-    while left_pos &lt;= mid and right_pos &lt;= right:
-        if ar[left_pos] &lt;= ar[right_pos]:
-            temp[current_pos] = ar[left_pos]
-            left_pos += 1
-        else:
-            temp[current_pos] = ar[right_pos]
-            right_pos += 1
-        current_pos += 1
-    while left_pos &lt;= mid:
-        temp[current_pos] = ar[left_pos]
-        left_pos += 1
-        current_pos += 1
-    while right_pos &lt;= right:
-        temp[current_pos] = ar[right_pos]
-        right_pos += 1
-        current_pos += 1
-    for i in range(left, right + 1):
-        ar[i] = temp[i]
-</code></pre><h2 id=unit-testing-merge-sort-implementation-using-python-3>Unit testing merge sort implementation using Python 3</h2><pre><code class=language-py>&quot;&quot;&quot;
-Unittest of merge sort implementation
-
-Main File: merge_sort.py
-Test File: test_merge_sort.py
-&quot;&quot;&quot;
-import unittest
-from merge_sort import get_merge_sorted_numbers
-
-
-class TestMergeSort(unittest.TestCase):
-    def test_get_merge_sorted_numbers_positive_unsorted(self):
-        test_case = [2, 3, 1, 4, 2, 4]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_positive_negative_unsorted(self):
-        test_case = [2, -3, 1, -4, 2, 4]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_same_values_positive(self):
-        test_case = [1, 1, 1, 1]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_same_values_negative(self):
-        test_case = [-1, -1, -1]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_single_item(self):
-        test_case = [1]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_empty_list(self):
-        test_case = []
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_positive_reverse(self):
-        test_case = [123, 56, 8]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_positive_negative_reverse(self):
-        test_case = [1, 0, -1]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_negative_reverse(self):
-        test_case = [-1, -3, -56]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_merge_sorted_numbers_positive_negative_floating(self):
-        test_case = [-1.5, 3.336, -66.3, 5]
-        expected_result = sorted(test_case)
-        test_result = get_merge_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-
-if __name__ == &quot;__main__&quot;:
-    unittest.main()
-</code></pre><figure class="figure py-2 mx-auto d-block"><img class="mx-auto d-block figure-img img-thumbnail border border-light" src=/blog/images/test_merge_sort.png alt="Unittest run"><figcaption class="figure-caption text-center">Figure: Unittest of merge sort implementation</figcaption></figure><h2 id=merge-sort-implementation-using-c>Merge Sort implementation using C++</h2><pre><code class=language-cpp>#include &lt;bits/stdc++.h&gt;
-
-using namespace std;
-
-
-void perform_merge(int ar[], int temp[], int left, int mid, int right)
-{
-    int left_pos = left;
-    int right_pos = mid + 1;
-    int current_pos = left;
-    while (left_pos &lt;= mid &amp;&amp; right_pos &lt;= right)
-    {
-        if (ar[left_pos] &lt;= ar[right_pos])
-        {
-            temp[current_pos++] = ar[left_pos++];
-        }
-        else
-        {
-            temp[current_pos++] = ar[right_pos++];
-        }
-    }
-    while (left_pos &lt;= mid)
-    {
-        temp[current_pos++] = ar[left_pos++];
-    }
-    while (right_pos &lt;= right)
-    {
-        temp[current_pos++] = ar[right_pos++];
-    }
-    for(int i=left; i &lt;= right; i++)
-    {
-        ar[i] = temp[i];
-    }
-}
-
-
-void perform_split_and_merge(int ar[], int temp[], int left, int right)
-{
-    if(left &lt; right)
-    {
-        int mid = (left + right) / 2;
-        perform_split_and_merge(ar, temp, left, mid);
-        perform_split_and_merge(ar, temp, mid+1, right);
-        perform_merge(ar, temp, left, mid, right);
-    }
-}
-
-void get_merge_sorted_numbers(int ar[], int n)
-{
-    int temp[n];
-    perform_split_and_merge(ar, temp, 0, n-1);
-}
-
-void print_array(int ar[], int n)
-{
-    for(int i=0; i&lt;n; i++)
-    {
-        cout &lt;&lt; ar[i] &lt;&lt; &quot; &quot;;
-    }
-    cout &lt;&lt; &quot;&quot; &lt;&lt;endl;
-}
-
-int main()
-{
-    int n = 6;
-    int ar[] = {2, -3, 1, -4, 2, 4};
-    cout &lt;&lt; &quot;Before sorting: &quot;;
-    print_array(ar, n);
-    get_merge_sorted_numbers(ar, n);
-    cout &lt;&lt; &quot;After sorting: &quot;;
-    print_array(ar, n);
-    return 0;
-}
-</code></pre><h2 id=comparison-between-bubble-sort-and-insertion-sort>Comparison between bubble sort and insertion sort</h2><ul><li>Insertion sort is more efficient than bubble sort as it requires fewer swaps to sort the elements.</li><li>Insertion sort is online, but bubble sort is offline. That means insertion sort sorts the elements when receiving each element but bubble sort sorts the elements only after receiving all the elements.</li></ul><p>The following table shows the execution time in seconds for merge sort, bubble sort, and insertion sort for different numbers of input elements.</p><table class="table table-bordered table-hover table-striped"><thead><tr><th>Set Size</th><th>Maximum Value</th><th>Merge sort</th><th>Bubble sort</th><th>Insertion sort</th><th>Counting sort</th></tr></thead><tbody><tr><td>1000</td><td>1000</td><td>0.02285 seconds</td><td>0.51674 seconds</td><td>0.24463 seconds</td><td>0.00209 seconds</td></tr><tr><td>2000</td><td>2000</td><td>0.04808 seconds</td><td>2.14491 seconds</td><td>0.97831 seconds</td><td>0.00433 seconds</td></tr><tr><td>3000</td><td>3000</td><td>0.07648 seconds</td><td>5.05203 seconds</td><td>2.2953 seconds</td><td>0.00654 seconds</td></tr><tr><td>4000</td><td>4000</td><td>0.10607 seconds</td><td>9.82914 seconds</td><td>4.19266 seconds</td><td>0.0091 seconds</td></tr><tr><td>5000</td><td>5000</td><td>0.14967 seconds</td><td>15.07934 seconds</td><td>6.75124 seconds</td><td>0.01975 seconds</td></tr><tr><td>6000</td><td>6000</td><td>0.31401 seconds</td><td>21.08818 seconds</td><td>9.4236 seconds</td><td>0.01431 seconds</td></tr><tr><td>7000</td><td>7000</td><td>0.20681 seconds</td><td>29.10378 seconds</td><td>13.71728 seconds</td><td>0.01677 seconds</td></tr><tr><td>8000</td><td>8000</td><td>0.24075 seconds</td><td>39.52925 seconds</td><td>17.08021 seconds</td><td>0.0192 seconds</td></tr><tr><td>9000</td><td>9000</td><td>0.25785 seconds</td><td>48.37365 seconds</td><td>21.51451 seconds</td><td>0.0225 seconds</td></tr><tr><td>10000</td><td>10000</td><td>0.30643 seconds</td><td>59.90875 seconds</td><td>25.93183 seconds</td><td>0.02465 seconds</td></tr></tbody></table><div style="margin:0 auto" class="my-4 border border-light"><canvas id=794></canvas></div><script src=https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin=anonymous></script><script type=text/javascript>var ctx=document.getElementById('794').getContext('2d');var options={type:'line',data:{"labels":["1000","2000","3000","4000","5000","6000","7000","8000","9000","10000"],"datasets":[{"label":"Merge sort","data":[{"x":1000,"y":0.02285},{"x":2000,"y":0.04808},{"x":3000,"y":0.07648},{"x":4000,"y":0.10607},{"x":5000,"y":0.14967},{"x":6000,"y":0.31401},{"x":7000,"y":0.20681},{"x":8000,"y":0.24075},{"x":9000,"y":0.25785},{"x":10000,"y":0.30643}],"fill":false,"borderColor":"red","backgroundColor":"red","tension":0.1},{"label":"Bubble sort","data":[{"x":1000,"y":0.51674},{"x":2000,"y":2.14491},{"x":3000,"y":5.05203},{"x":4000,"y":9.82914},{"x":5000,"y":15.07934},{"x":6000,"y":21.08818},{"x":7000,"y":29.10378},{"x":8000,"y":39.52925},{"x":9000,"y":48.37365},{"x":10000,"y":59.90875}],"fill":false,"borderColor":"green","backgroundColor":"green","tension":0.1},{"label":"Insertion sort","data":[{"x":1000,"y":0.24463},{"x":2000,"y":0.97831},{"x":3000,"y":2.2953},{"x":4000,"y":4.19266},{"x":5000,"y":6.75124},{"x":6000,"y":9.4236},{"x":7000,"y":13.71728},{"x":8000,"y":17.08021},{"x":9000,"y":21.51451},{"x":10000,"y":25.93183}],"fill":false,"borderColor":"blue","backgroundColor":"blue","tension":0.1},{"label":"Counting sort","data":[{"x":1000,"y":0.00209},{"x":2000,"y":0.00433},{"x":3000,"y":0.00654},{"x":4000,"y":0.0091},{"x":5000,"y":0.01975},{"x":6000,"y":0.01431},{"x":7000,"y":0.01677},{"x":8000,"y":0.0192},{"x":9000,"y":0.0225},{"x":10000,"y":0.02465}],"fill":false,"borderColor":"yellow","backgroundColor":"yellow","tension":0.1}]},options:{maintainAspectRatio:true,borderWidth:3,responsive:true,interaction:{mode:'x',intersect:false},plugins:{title:{display:true,position:'bottom',text:'Execution time comparison between bubble sort and insertion sort',padding:{top:10,bottom:30}},legend:{display:true,},tooltip:{mode:'nearest',callbacks:{title:function(context){context=context[0];var label=context.label||'';if(label){label='Input size: '+label+' elements';}
-return label;},label:function(context){var label=context.dataset.label||'';if(label){label+=' : ';}
-if(context.parsed.y!==null){label+=context.parsed.y+" ms";}
-return label;}}}},scales:{y:{beginAtZero:false,title:{display:true,text:'Execution time in seconds'},ticks:{callback:function(value,index,values){return value+" s";}}},x:{beginAtZero:false,type:'linear',title:{display:true,text:'Number of input elements'}},},}};new Chart(ctx,options);</script><p>This result is generated using <code>timeit</code> module of Python with the following code.</p><pre><code class=language-py>&quot;&quot;&quot;
-Compare execution time between merge sort, bubble sort, insertion sort, and counting sort
-&quot;&quot;&quot;
-from timeit import timeit
-import random
-import json
-
-data = {
-    &quot;input_sizes&quot;: [],
-    &quot;max_values&quot;: [],
-    &quot;data&quot;: {
-        &quot;labels&quot;: [],
-        &quot;datasets&quot;: [{
-            &quot;label&quot;: 'Merge sort',
-            &quot;data&quot;: [],
-            &quot;fill&quot;: False,
-            &quot;borderColor&quot;: 'red',
-            &quot;backgroundColor&quot;: 'red',
-            &quot;tension&quot;: 0.1
-        }, {
-            &quot;label&quot;: 'Bubble sort',
-            &quot;data&quot;: [],
-            &quot;fill&quot;: False,
-            &quot;borderColor&quot;: 'green',
-            &quot;backgroundColor&quot;: 'green',
-            &quot;tension&quot;: 0.1
-        }, {
-            &quot;label&quot;: 'Insertion sort',
-            &quot;data&quot;: [],
-            &quot;fill&quot;: False,
-            &quot;borderColor&quot;: 'blue',
-            &quot;backgroundColor&quot;: 'blue',
-            &quot;tension&quot;: 0.1
-        }, {
-            &quot;label&quot;: 'Counting sort',
-            &quot;data&quot;: [],
-            &quot;fill&quot;: False,
-            &quot;borderColor&quot;: 'yellow',
-            &quot;backgroundColor&quot;: 'yellow',
-            &quot;tension&quot;: 0.1
-        }]
-    }
-}
-
-
-&quot;&quot;&quot;
-Implementation of merge sort algorithm
-
-Main File: merge_sort.py
-Test File: test_merge_sort.py
-&quot;&quot;&quot;
-
-
-def get_merge_sorted_numbers(numbers):
-    &quot;&quot;&quot; Returns sorted list for a given list
-
-    Arguments:
-    numbers -- list of numbers
-    &quot;&quot;&quot;
-    temp = numbers.copy()
-    perform_split_and_merge(numbers, temp, 0, len(numbers) - 1)
-    return numbers
-
-
-def perform_split_and_merge(ar, temp, left, right):
-    if left &lt; right:
-        mid = (right + left) // 2
-        perform_split_and_merge(ar, temp, left, mid)
-        perform_split_and_merge(ar, temp, mid + 1, right)
-        perform_merge(ar, temp, left, mid, right)
-
-
-def perform_merge(ar, temp, left, mid, right):
-    left_pos = left
-    right_pos = mid + 1
-    current_pos = left
-    while left_pos &lt;= mid and right_pos &lt;= right:
-        if ar[left_pos] &lt;= ar[right_pos]:
-            temp[current_pos] = ar[left_pos]
-            left_pos += 1
-        else:
-            temp[current_pos] = ar[right_pos]
-            right_pos += 1
-        current_pos += 1
-    while left_pos &lt;= mid:
-        temp[current_pos] = ar[left_pos]
-        left_pos += 1
-        current_pos += 1
-    while right_pos &lt;= right:
-        temp[current_pos] = ar[right_pos]
-        right_pos += 1
-        current_pos += 1
-    for i in range(left, right + 1):
-        ar[i] = temp[i]
-
-
-
-def get_bubble_sorted_numbers(numbers):
-    &quot;&quot;&quot; Returns a sorted list of numbers using bubble sort
-
-    Arguments:
-    numbers -- list of numbers
-    &quot;&quot;&quot;
-    for i in range(len(numbers)):
-        swapped = False
-        for j in range(len(numbers) - i - 1):
-            if numbers[j] &gt; numbers[j + 1]:
-                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
-                swapped = True
-        if not swapped:
-            break
-    return numbers
-
-
-def get_insertion_sorted_numbers(numbers):
-    &quot;&quot;&quot; Returns a sorted list of numbers using insertion sort
-
-    Arguments:
-    numbers -- list of numbers
-    &quot;&quot;&quot;
-    for i in range(1, len(numbers)):
-        value = numbers[i]
-        j = i - 1
-        while j &gt;= 0 and numbers[j] &gt; value:
-            numbers[j + 1] = numbers[j]
-            j -= 1
-        numbers[j + 1] = value
-    return numbers
-
-
-def get_counting_sorted_numbers(numbers, max_value):
-    &quot;&quot;&quot; Returns a sorted list of non negative using counting sort
-
-    Arguments:
-    numbers -- list of non negative integers within max_value
-    max_value -- non negative integer
-    &quot;&quot;&quot;
-    sorted_numbers = [None] * len(numbers)
-    counts = [0] * (max_value + 1)
-    for i in numbers:
-        counts[i] += 1
-    counts[0] -= 1
-    for i in range(1, max_value + 1):
-        counts[i] += counts[i - 1]
-    for i in numbers[::-1]:
-        sorted_numbers[counts[i]] = i
-        counts[i] -= 1
-    return sorted_numbers
-
-
-def update_execution_time():
-    global data
-    merge_execution_time = round(
-        timeit('result=get_merge_sorted_numbers(unsorted.copy())',
-               globals=globals(), number=MAX_ITERATION), 5)
-    bubble_execution_time = round(
-        timeit('result=get_bubble_sorted_numbers(unsorted.copy())',
-               globals=globals(), number=MAX_ITERATION), 5)
-    insertion_execution_time = round(
-        timeit('result=get_insertion_sorted_numbers(unsorted.copy())',
-               globals=globals(), number=MAX_ITERATION), 5)
-    counting_execution_time = round(timeit(
-        'result=get_counting_sorted_numbers(unsorted.copy(), MAX_NUMBER)',
-        globals=globals(), number=MAX_ITERATION), 5)
-    execution_times = [merge_execution_time, bubble_execution_time,
-                       insertion_execution_time, counting_execution_time]
-    for i in range(len(data[&quot;data&quot;][&quot;datasets&quot;])):
-        current_execution_time = {
-            &quot;x&quot;: MAX_NUMBER,
-            &quot;y&quot;: execution_times[i]
-        }
-        data[&quot;data&quot;][&quot;datasets&quot;][i][&quot;data&quot;].append(current_execution_time)
-    data[&quot;data&quot;][&quot;labels&quot;].append(str(MAX_NUMBER))
-    data[&quot;input_sizes&quot;].append(MAX_NUMBER)
-    data[&quot;max_values&quot;].append(MAX_NUMBER)
-
-
-def print_output(data):
-    print(&quot;| Set Size | Maximum Value | &quot;, end=&quot;&quot;)
-    for algorithm in data[&quot;data&quot;][&quot;datasets&quot;]:
-        print(algorithm[&quot;label&quot;] + &quot; | &quot;, end=&quot;&quot;)
-    print(&quot;&quot;)
-    for i in range(len(data[&quot;data&quot;][&quot;datasets&quot;]) + 2):
-        if i == 0:
-            print(&quot;| &quot;, end=&quot;&quot;)
-        print(&quot;--- | &quot;, end=&quot;&quot;)
-    print(&quot;&quot;)
-    for i in range(len(data[&quot;input_sizes&quot;])):
-        print(f'| {data[&quot;input_sizes&quot;][i]} | {data[&quot;max_values&quot;][i]} | ',
-              end=&quot;&quot;)
-        for j in range(len(data[&quot;data&quot;][&quot;datasets&quot;])):
-            print(f'{data[&quot;data&quot;][&quot;datasets&quot;][j][&quot;data&quot;][i][&quot;y&quot;]} seconds | ',
-                end=&quot;&quot;)
-        print(&quot;&quot;)
-    print(json.dumps(data[&quot;data&quot;], indent=2))
-
-
-if __name__ == &quot;__main__&quot;:
-    MAX_ITERATION = 10
-    for i in range(1000, 10001, 1000):
-        MAX_NUMBER = i
-        unsorted = [random.randint(0, MAX_NUMBER) for i in range(MAX_NUMBER)]
-        update_execution_time()
-    print_output(data)
-</code></pre><h2 id=practice-challenges>Practice challenges</h2><h3 id=easy-difficulty-challenges>Easy difficulty challenges:</h3><ul><li><a href=https://practice.geeksforgeeks.org/problems/merge-sort/1>Merge sort - Geeksforgeeks</a></li></ul><h3 id=hard-difficulty-challenges>Hard difficulty challenges:</h3><ul><li><a href=https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/mergesort/>Merge sort - Hackerearth</a> : Solution can be viewed from <a href=https://gist.github.com/arsho/c7e7af845698101cef175bcb27fdb4bc>this gist</a>, I got time limit exceed using Python 3.</li><li><a href=https://www.hackerrank.com/challenges/ctci-merge-sort/problem>Merge Sort: Counting Inversions - Hackerrank</a> : Solution can be viewed from <a href=https://gist.github.com/arsho/c7e7af845698101cef175bcb27fdb4bc>this gist</a>, I got time limit exceed using Python 3.</li></ul><h2 id=reference>Reference</h2><ul><li><a href=/blog/bubble-sort/>Bubble sort</a></li><li><a href=/blog/insertion-sort/>Insertion sort</a></li><li><a href=/blog/counting-sort/>Counting sort</a></li><li><a href=/blog/sorting-algorithm-comparisons/>Sorting Algorithm Comparisons</a></li><li><a href=/blog/understanding-time-complexity/>Understanding Time Complexity</a></li><li><a href=https://mitpress.mit.edu/books/introduction-algorithms-third-edition>Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li><li><a href=https://github.com/pllk/cphb/>Competitive Programmer's Handbook</a></li><li><a href=https://www.oreilly.com/library/view/40-algorithms-every/9781789801217/>Ahmad, I. (2020). 40 Algorithms Every Programmer Should Know. [S.l.]: Packt Publishing.</a></li><li><a href=https://en.wikipedia.org/wiki/Merge_sort>Merge sort - Wikipedia article</a></li><li><a href=https://docs.python.org/3.6/library/timeit.html#examples>timeit module documentation</a></li></ul><div class="d-print-none col-12 my-4 pb-4 border-top border-bottom"><p class="text-muted text-center"><small>Advertisement</small></p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-4737800736768640 data-ad-slot=3931195519></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div></div></article><div class=p-3><h4 class="mb-2 mt-4">Citation</h4><span class=lead>Click to select citation style</span><div class="accordion mb-3" id=citations><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseOne aria-expanded=false aria-controls=flush-collapseOne>
+Finally, the smaller results are combined to form the final solution of the original problem.</p><p>Merge sort is based on the divide and conquer strategy. To sort an array of <code>n</code> elements, it follows the below steps:</p><ul><li>It divides the unsorted array into <code>n/2</code> parts recursively until there is only one element in each part.</li><li>It sorts the smaller parts and combines the smaller solutions to create the final result.</li></ul><p>The following figure illustrates how merge sort follows the divide and conquer strategy.</p><figure class="figure py-2 mx-auto d-block"><img class="mx-auto d-block figure-img img-thumbnail border border-light" src=/blog/images/merge_sort_split_and_merge.svg><figcaption class="figure-caption text-center">Merge sort splitting and merging step</figcaption></figure><h2 id=merge-sort-characteristics>Merge sort characteristics</h2><h3 id=practical>Practical</h3><p>Merge sort is an efficient comparison-based sorting algorithm. As of Perl 5.8, merge sort is the default sorting algorithm. The Linux kernel also uses merge sort for linked lists.</p><h3 id=not-adaptive>Not Adaptive</h3><p>Merge sort is not adaptive. It performs the same on sorted, almost sorted, and unsorted lists. Its performance is not dependent on whether the input data is sorted or not.</p><h3 id=offline>Offline</h3><p>Merge sort works after receiving all the data. It does not sort the element when it receives them.</p><h3 id=stable>Stable</h3><p>Merge sort is stable. Numbers with the same value appear in the output array as they appear in the input array. Let&rsquo;s take an input array <code>A = [3, 0, 3]</code>. In the input array, the value <code>3</code> occurs two times; at index 0 and 2. Insertion sort ensures that in the output array, the occurrences of <code>3</code> are placed in the same order as the input array.</p><h3 id=not-in-place>Not In place:</h3><p>Merge sort does not sort the input list in place. It requires an additional list of <code>n</code> size to sort unsorted list of <code>n</code> elements. So, its space complexity is <code>O(n)</code>.</p><h3 id=loglinear-time-complexity>Loglinear time complexity</h3><p>It has loglinear time complexity.<br></p><ul><li>Worst Time complexity (Big-O): <code>O(nlogn)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Average Time complexity (Big-Theta): <code>Θ(nlogn)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Best Time complexity (Big-Omega): <code>Ω(nlogn)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Space complexity: <code>O(n)</code></li></ul><h2 id=merge-sort-algorithm-pseudocode>Merge Sort algorithm pseudocode</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>procedure Merge<span style=color:#f92672>(</span>A: list of items, TEMP: temporary array, LEFT, MID, RIGHT<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>    LEFT_POS :<span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    RIGHT_POS :<span style=color:#f92672>=</span> MID + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    CURRENT_POS :<span style=color:#f92672>=</span> LEFT
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> LEFT_POS &lt;<span style=color:#f92672>=</span> MID and RIGHT_POS &lt;<span style=color:#f92672>=</span> RIGHT <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> A<span style=color:#f92672>[</span>LEFT_POS<span style=color:#f92672>]</span> &lt;<span style=color:#f92672>=</span> A<span style=color:#f92672>[</span>RIGHT_POS<span style=color:#f92672>]</span> <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>            TEMP<span style=color:#f92672>[</span>CURRENT_POS<span style=color:#f92672>]</span> :<span style=color:#f92672>=</span> A<span style=color:#f92672>[</span>LEFT_POS<span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span>            LEFT_POS :<span style=color:#f92672>=</span> LEFT_POS + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>            TEMP<span style=color:#f92672>[</span>CURRENT_POS<span style=color:#f92672>]</span> :<span style=color:#f92672>=</span> A<span style=color:#f92672>[</span>RIGHT_POS<span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span>            RIGHT_POS :<span style=color:#f92672>=</span> RIGHT_POS + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        end <span style=color:#66d9ef>if</span>
+</span></span><span style=display:flex><span>        CURRENT_POS :<span style=color:#f92672>=</span> CURRENT_POS + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    end <span style=color:#66d9ef>while</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> LEFT_POS &lt;<span style=color:#f92672>=</span> MID <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>        TEMP<span style=color:#f92672>[</span>CURRENT_POS<span style=color:#f92672>]</span> :<span style=color:#f92672>=</span> A<span style=color:#f92672>[</span>LEFT_POS<span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span>        LEFT_POS :<span style=color:#f92672>=</span> LEFT_POS + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        CURRENT_POS :<span style=color:#f92672>=</span> CURRENT_POS + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    end <span style=color:#66d9ef>while</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> RIGHT_POS &lt;<span style=color:#f92672>=</span> RIGHT <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>        TEMP<span style=color:#f92672>[</span>CURRENT_POS<span style=color:#f92672>]</span> :<span style=color:#f92672>=</span> A<span style=color:#f92672>[</span>RIGHT_POS<span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span>        RIGHT_POS :<span style=color:#f92672>=</span> RIGHT_POS + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        CURRENT_POS :<span style=color:#f92672>=</span> CURRENT_POS + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    end <span style=color:#66d9ef>while</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i in LEFT to RIGHT inclusive <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>        A<span style=color:#f92672>[</span>i<span style=color:#f92672>]</span> <span style=color:#f92672>=</span> TEMP<span style=color:#f92672>[</span>i<span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span>    end <span style=color:#66d9ef>for</span>
+</span></span><span style=display:flex><span>end procedure
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>procedure Split_And_Merge<span style=color:#f92672>(</span>A: list of items, TEMP: temporary array, LEFT, RIGHT<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> LEFT &lt; RIGHT <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>        MID :<span style=color:#f92672>=</span> ⌊<span style=color:#f92672>(</span>LEFT + RIGHT<span style=color:#f92672>)</span>⌋ / <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>        Split_And_Merge<span style=color:#f92672>(</span>A, TEMP, LEFT, MID<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>        Split_And_Merge<span style=color:#f92672>(</span>A, TEMP, MID+1, RIGHT<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>        Merge<span style=color:#f92672>(</span>A, TEMP, LEFT, MID, RIGHT<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>    end <span style=color:#66d9ef>if</span>
+</span></span><span style=display:flex><span>end procedure
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>procedure Merge_Sort<span style=color:#f92672>(</span>A: list of items, N: total items<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>    TEMP<span style=color:#f92672>[</span>0..A.LENGTH<span style=color:#f92672>]</span> a new array
+</span></span><span style=display:flex><span>    Split_And_Merge<span style=color:#f92672>(</span>A, TEMP, 0, N - 1<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>end procedure
+</span></span></code></pre></div><h2 id=merge-sort-implementation-using-python-3>Merge Sort implementation using Python 3</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Implementation of merge sort algorithm
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Main File: merge_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Test File: test_merge_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_merge_sorted_numbers</span>(numbers):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; Returns sorted list for a given list
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Arguments:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    numbers -- list of numbers
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    temp <span style=color:#f92672>=</span> numbers<span style=color:#f92672>.</span>copy()
+</span></span><span style=display:flex><span>    perform_split_and_merge(numbers, temp, <span style=color:#ae81ff>0</span>, len(numbers) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>perform_split_and_merge</span>(ar, temp, left, right):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> left <span style=color:#f92672>&lt;</span> right:
+</span></span><span style=display:flex><span>        mid <span style=color:#f92672>=</span> (right <span style=color:#f92672>+</span> left) <span style=color:#f92672>//</span> <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>        perform_split_and_merge(ar, temp, left, mid)
+</span></span><span style=display:flex><span>        perform_split_and_merge(ar, temp, mid <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>, right)
+</span></span><span style=display:flex><span>        perform_merge(ar, temp, left, mid, right)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>perform_merge</span>(ar, temp, left, mid, right):
+</span></span><span style=display:flex><span>    left_pos <span style=color:#f92672>=</span> left
+</span></span><span style=display:flex><span>    right_pos <span style=color:#f92672>=</span> mid <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    current_pos <span style=color:#f92672>=</span> left
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> left_pos <span style=color:#f92672>&lt;=</span> mid <span style=color:#f92672>and</span> right_pos <span style=color:#f92672>&lt;=</span> right:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> ar[left_pos] <span style=color:#f92672>&lt;=</span> ar[right_pos]:
+</span></span><span style=display:flex><span>            temp[current_pos] <span style=color:#f92672>=</span> ar[left_pos]
+</span></span><span style=display:flex><span>            left_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>            temp[current_pos] <span style=color:#f92672>=</span> ar[right_pos]
+</span></span><span style=display:flex><span>            right_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        current_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> left_pos <span style=color:#f92672>&lt;=</span> mid:
+</span></span><span style=display:flex><span>        temp[current_pos] <span style=color:#f92672>=</span> ar[left_pos]
+</span></span><span style=display:flex><span>        left_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        current_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> right_pos <span style=color:#f92672>&lt;=</span> right:
+</span></span><span style=display:flex><span>        temp[current_pos] <span style=color:#f92672>=</span> ar[right_pos]
+</span></span><span style=display:flex><span>        right_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        current_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(left, right <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
+</span></span><span style=display:flex><span>        ar[i] <span style=color:#f92672>=</span> temp[i]
+</span></span></code></pre></div><h2 id=unit-testing-merge-sort-implementation-using-python-3>Unit testing merge sort implementation using Python 3</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Unittest of merge sort implementation
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Main File: merge_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Test File: test_merge_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> unittest
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> merge_sort <span style=color:#f92672>import</span> get_merge_sorted_numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>TestMergeSort</span>(unittest<span style=color:#f92672>.</span>TestCase):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_positive_unsorted</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>4</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_positive_negative_unsorted</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>2</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>4</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_same_values_positive</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_same_values_negative</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_single_item</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_empty_list</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_positive_reverse</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>123</span>, <span style=color:#ae81ff>56</span>, <span style=color:#ae81ff>8</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_positive_negative_reverse</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>0</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_negative_reverse</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>3</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>56</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_merge_sorted_numbers_positive_negative_floating</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#f92672>-</span><span style=color:#ae81ff>1.5</span>, <span style=color:#ae81ff>3.336</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>66.3</span>, <span style=color:#ae81ff>5</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_merge_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+</span></span><span style=display:flex><span>    unittest<span style=color:#f92672>.</span>main()
+</span></span></code></pre></div><figure class="figure py-2 mx-auto d-block"><img class="mx-auto d-block figure-img img-thumbnail border border-light" src=/blog/images/test_merge_sort.png alt="Unittest run"><figcaption class="figure-caption text-center">Figure: Unittest of merge sort implementation</figcaption></figure><h2 id=merge-sort-implementation-using-c>Merge Sort implementation using C++</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;bits/stdc++.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>perform_merge</span>(<span style=color:#66d9ef>int</span> ar[], <span style=color:#66d9ef>int</span> temp[], <span style=color:#66d9ef>int</span> left, <span style=color:#66d9ef>int</span> mid, <span style=color:#66d9ef>int</span> right)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> left_pos <span style=color:#f92672>=</span> left;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> right_pos <span style=color:#f92672>=</span> mid <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> current_pos <span style=color:#f92672>=</span> left;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (left_pos <span style=color:#f92672>&lt;=</span> mid <span style=color:#f92672>&amp;&amp;</span> right_pos <span style=color:#f92672>&lt;=</span> right)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (ar[left_pos] <span style=color:#f92672>&lt;=</span> ar[right_pos])
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            temp[current_pos<span style=color:#f92672>++</span>] <span style=color:#f92672>=</span> ar[left_pos<span style=color:#f92672>++</span>];
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            temp[current_pos<span style=color:#f92672>++</span>] <span style=color:#f92672>=</span> ar[right_pos<span style=color:#f92672>++</span>];
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (left_pos <span style=color:#f92672>&lt;=</span> mid)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        temp[current_pos<span style=color:#f92672>++</span>] <span style=color:#f92672>=</span> ar[left_pos<span style=color:#f92672>++</span>];
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (right_pos <span style=color:#f92672>&lt;=</span> right)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        temp[current_pos<span style=color:#f92672>++</span>] <span style=color:#f92672>=</span> ar[right_pos<span style=color:#f92672>++</span>];
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i<span style=color:#f92672>=</span>left; i <span style=color:#f92672>&lt;=</span> right; i<span style=color:#f92672>++</span>)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        ar[i] <span style=color:#f92672>=</span> temp[i];
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>perform_split_and_merge</span>(<span style=color:#66d9ef>int</span> ar[], <span style=color:#66d9ef>int</span> temp[], <span style=color:#66d9ef>int</span> left, <span style=color:#66d9ef>int</span> right)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span>(left <span style=color:#f92672>&lt;</span> right)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>int</span> mid <span style=color:#f92672>=</span> (left <span style=color:#f92672>+</span> right) <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span>;
+</span></span><span style=display:flex><span>        perform_split_and_merge(ar, temp, left, mid);
+</span></span><span style=display:flex><span>        perform_split_and_merge(ar, temp, mid<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, right);
+</span></span><span style=display:flex><span>        perform_merge(ar, temp, left, mid, right);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>get_merge_sorted_numbers</span>(<span style=color:#66d9ef>int</span> ar[], <span style=color:#66d9ef>int</span> n)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> temp[n];
+</span></span><span style=display:flex><span>    perform_split_and_merge(ar, temp, <span style=color:#ae81ff>0</span>, n<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>print_array</span>(<span style=color:#66d9ef>int</span> ar[], <span style=color:#66d9ef>int</span> n)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>; i<span style=color:#f92672>&lt;</span>n; i<span style=color:#f92672>++</span>)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        cout <span style=color:#f92672>&lt;&lt;</span> ar[i] <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34; &#34;</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;&#34;</span> <span style=color:#f92672>&lt;&lt;</span>endl;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> n <span style=color:#f92672>=</span> <span style=color:#ae81ff>6</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> ar[] <span style=color:#f92672>=</span> {<span style=color:#ae81ff>2</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>4</span>};
+</span></span><span style=display:flex><span>    cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Before sorting: &#34;</span>;
+</span></span><span style=display:flex><span>    print_array(ar, n);
+</span></span><span style=display:flex><span>    get_merge_sorted_numbers(ar, n);
+</span></span><span style=display:flex><span>    cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;After sorting: &#34;</span>;
+</span></span><span style=display:flex><span>    print_array(ar, n);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=comparison-between-bubble-sort-and-insertion-sort>Comparison between bubble sort and insertion sort</h2><ul><li>Insertion sort is more efficient than bubble sort as it requires fewer swaps to sort the elements.</li><li>Insertion sort is online, but bubble sort is offline. That means insertion sort sorts the elements when receiving each element but bubble sort sorts the elements only after receiving all the elements.</li></ul><p>The following table shows the execution time in seconds for merge sort, bubble sort, and insertion sort for different numbers of input elements.</p><p>{.table .table-bordered .table-striped .table-hover}</p><table><thead><tr><th>Set Size</th><th>Maximum Value</th><th>Merge sort</th><th>Bubble sort</th><th>Insertion sort</th><th>Counting sort</th></tr></thead><tbody><tr><td>1000</td><td>1000</td><td>0.02285 seconds</td><td>0.51674 seconds</td><td>0.24463 seconds</td><td>0.00209 seconds</td></tr><tr><td>2000</td><td>2000</td><td>0.04808 seconds</td><td>2.14491 seconds</td><td>0.97831 seconds</td><td>0.00433 seconds</td></tr><tr><td>3000</td><td>3000</td><td>0.07648 seconds</td><td>5.05203 seconds</td><td>2.2953 seconds</td><td>0.00654 seconds</td></tr><tr><td>4000</td><td>4000</td><td>0.10607 seconds</td><td>9.82914 seconds</td><td>4.19266 seconds</td><td>0.0091 seconds</td></tr><tr><td>5000</td><td>5000</td><td>0.14967 seconds</td><td>15.07934 seconds</td><td>6.75124 seconds</td><td>0.01975 seconds</td></tr><tr><td>6000</td><td>6000</td><td>0.31401 seconds</td><td>21.08818 seconds</td><td>9.4236 seconds</td><td>0.01431 seconds</td></tr><tr><td>7000</td><td>7000</td><td>0.20681 seconds</td><td>29.10378 seconds</td><td>13.71728 seconds</td><td>0.01677 seconds</td></tr><tr><td>8000</td><td>8000</td><td>0.24075 seconds</td><td>39.52925 seconds</td><td>17.08021 seconds</td><td>0.0192 seconds</td></tr><tr><td>9000</td><td>9000</td><td>0.25785 seconds</td><td>48.37365 seconds</td><td>21.51451 seconds</td><td>0.0225 seconds</td></tr><tr><td>10000</td><td>10000</td><td>0.30643 seconds</td><td>59.90875 seconds</td><td>25.93183 seconds</td><td>0.02465 seconds</td></tr></tbody></table><div style="margin:0 auto" class="my-4 border border-light"><canvas id=420></canvas></div><script src=https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin=anonymous></script><script type=text/javascript>var ctx=document.getElementById("420").getContext("2d"),options={type:"line",data:{labels:["1000","2000","3000","4000","5000","6000","7000","8000","9000","10000"],datasets:[{label:"Merge sort",data:[{x:1e3,y:.02285},{x:2e3,y:.04808},{x:3e3,y:.07648},{x:4e3,y:.10607},{x:5e3,y:.14967},{x:6e3,y:.31401},{x:7e3,y:.20681},{x:8e3,y:.24075},{x:9e3,y:.25785},{x:1e4,y:.30643}],fill:!1,borderColor:"red",backgroundColor:"red",tension:.1},{label:"Bubble sort",data:[{x:1e3,y:.51674},{x:2e3,y:2.14491},{x:3e3,y:5.05203},{x:4e3,y:9.82914},{x:5e3,y:15.07934},{x:6e3,y:21.08818},{x:7e3,y:29.10378},{x:8e3,y:39.52925},{x:9e3,y:48.37365},{x:1e4,y:59.90875}],fill:!1,borderColor:"green",backgroundColor:"green",tension:.1},{label:"Insertion sort",data:[{x:1e3,y:.24463},{x:2e3,y:.97831},{x:3e3,y:2.2953},{x:4e3,y:4.19266},{x:5e3,y:6.75124},{x:6e3,y:9.4236},{x:7e3,y:13.71728},{x:8e3,y:17.08021},{x:9e3,y:21.51451},{x:1e4,y:25.93183}],fill:!1,borderColor:"blue",backgroundColor:"blue",tension:.1},{label:"Counting sort",data:[{x:1e3,y:.00209},{x:2e3,y:.00433},{x:3e3,y:.00654},{x:4e3,y:.0091},{x:5e3,y:.01975},{x:6e3,y:.01431},{x:7e3,y:.01677},{x:8e3,y:.0192},{x:9e3,y:.0225},{x:1e4,y:.02465}],fill:!1,borderColor:"yellow",backgroundColor:"yellow",tension:.1}]},options:{maintainAspectRatio:!0,borderWidth:3,responsive:!0,interaction:{mode:"x",intersect:!1},plugins:{title:{display:!0,position:"bottom",text:"Execution time comparison between bubble sort and insertion sort",padding:{top:10,bottom:30}},legend:{display:!0},tooltip:{mode:"nearest",callbacks:{title:function(e){e=e[0];var t=e.label||"";return t&&(t="Input size: "+t+" elements"),t},label:function(e){var t=e.dataset.label||"";return t&&(t+=" : "),e.parsed.y!==null&&(t+=e.parsed.y+" ms"),t}}}},scales:{y:{beginAtZero:!1,title:{display:!0,text:"Execution time in seconds"},ticks:{callback:function(e){return e+" s"}}},x:{beginAtZero:!1,type:"linear",title:{display:!0,text:"Number of input elements"}}}}};new Chart(ctx,options)</script><p>This result is generated using <code>timeit</code> module of Python with the following code.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Compare execution time between merge sort, bubble sort, insertion sort, and counting sort
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> timeit <span style=color:#f92672>import</span> timeit
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> random
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> json
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>data <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;input_sizes&#34;</span>: [],
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;max_values&#34;</span>: [],
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;data&#34;</span>: {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;labels&#34;</span>: [],
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;datasets&#34;</span>: [{
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;label&#34;</span>: <span style=color:#e6db74>&#39;Merge sort&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;data&#34;</span>: [],
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;fill&#34;</span>: <span style=color:#66d9ef>False</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;borderColor&#34;</span>: <span style=color:#e6db74>&#39;red&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;backgroundColor&#34;</span>: <span style=color:#e6db74>&#39;red&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;tension&#34;</span>: <span style=color:#ae81ff>0.1</span>
+</span></span><span style=display:flex><span>        }, {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;label&#34;</span>: <span style=color:#e6db74>&#39;Bubble sort&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;data&#34;</span>: [],
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;fill&#34;</span>: <span style=color:#66d9ef>False</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;borderColor&#34;</span>: <span style=color:#e6db74>&#39;green&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;backgroundColor&#34;</span>: <span style=color:#e6db74>&#39;green&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;tension&#34;</span>: <span style=color:#ae81ff>0.1</span>
+</span></span><span style=display:flex><span>        }, {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;label&#34;</span>: <span style=color:#e6db74>&#39;Insertion sort&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;data&#34;</span>: [],
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;fill&#34;</span>: <span style=color:#66d9ef>False</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;borderColor&#34;</span>: <span style=color:#e6db74>&#39;blue&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;backgroundColor&#34;</span>: <span style=color:#e6db74>&#39;blue&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;tension&#34;</span>: <span style=color:#ae81ff>0.1</span>
+</span></span><span style=display:flex><span>        }, {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;label&#34;</span>: <span style=color:#e6db74>&#39;Counting sort&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;data&#34;</span>: [],
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;fill&#34;</span>: <span style=color:#66d9ef>False</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;borderColor&#34;</span>: <span style=color:#e6db74>&#39;yellow&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;backgroundColor&#34;</span>: <span style=color:#e6db74>&#39;yellow&#39;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;tension&#34;</span>: <span style=color:#ae81ff>0.1</span>
+</span></span><span style=display:flex><span>        }]
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Implementation of merge sort algorithm
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Main File: merge_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Test File: test_merge_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_merge_sorted_numbers</span>(numbers):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; Returns sorted list for a given list
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Arguments:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    numbers -- list of numbers
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    temp <span style=color:#f92672>=</span> numbers<span style=color:#f92672>.</span>copy()
+</span></span><span style=display:flex><span>    perform_split_and_merge(numbers, temp, <span style=color:#ae81ff>0</span>, len(numbers) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>perform_split_and_merge</span>(ar, temp, left, right):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> left <span style=color:#f92672>&lt;</span> right:
+</span></span><span style=display:flex><span>        mid <span style=color:#f92672>=</span> (right <span style=color:#f92672>+</span> left) <span style=color:#f92672>//</span> <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>        perform_split_and_merge(ar, temp, left, mid)
+</span></span><span style=display:flex><span>        perform_split_and_merge(ar, temp, mid <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>, right)
+</span></span><span style=display:flex><span>        perform_merge(ar, temp, left, mid, right)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>perform_merge</span>(ar, temp, left, mid, right):
+</span></span><span style=display:flex><span>    left_pos <span style=color:#f92672>=</span> left
+</span></span><span style=display:flex><span>    right_pos <span style=color:#f92672>=</span> mid <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    current_pos <span style=color:#f92672>=</span> left
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> left_pos <span style=color:#f92672>&lt;=</span> mid <span style=color:#f92672>and</span> right_pos <span style=color:#f92672>&lt;=</span> right:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> ar[left_pos] <span style=color:#f92672>&lt;=</span> ar[right_pos]:
+</span></span><span style=display:flex><span>            temp[current_pos] <span style=color:#f92672>=</span> ar[left_pos]
+</span></span><span style=display:flex><span>            left_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>            temp[current_pos] <span style=color:#f92672>=</span> ar[right_pos]
+</span></span><span style=display:flex><span>            right_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        current_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> left_pos <span style=color:#f92672>&lt;=</span> mid:
+</span></span><span style=display:flex><span>        temp[current_pos] <span style=color:#f92672>=</span> ar[left_pos]
+</span></span><span style=display:flex><span>        left_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        current_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> right_pos <span style=color:#f92672>&lt;=</span> right:
+</span></span><span style=display:flex><span>        temp[current_pos] <span style=color:#f92672>=</span> ar[right_pos]
+</span></span><span style=display:flex><span>        right_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        current_pos <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(left, right <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
+</span></span><span style=display:flex><span>        ar[i] <span style=color:#f92672>=</span> temp[i]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_bubble_sorted_numbers</span>(numbers):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; Returns a sorted list of numbers using bubble sort
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Arguments:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    numbers -- list of numbers
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(numbers)):
+</span></span><span style=display:flex><span>        swapped <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(len(numbers) <span style=color:#f92672>-</span> i <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>):
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> numbers[j] <span style=color:#f92672>&gt;</span> numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>]:
+</span></span><span style=display:flex><span>                numbers[j], numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>], numbers[j]
+</span></span><span style=display:flex><span>                swapped <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> swapped:
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_insertion_sorted_numbers</span>(numbers):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; Returns a sorted list of numbers using insertion sort
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Arguments:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    numbers -- list of numbers
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, len(numbers)):
+</span></span><span style=display:flex><span>        value <span style=color:#f92672>=</span> numbers[i]
+</span></span><span style=display:flex><span>        j <span style=color:#f92672>=</span> i <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>while</span> j <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>and</span> numbers[j] <span style=color:#f92672>&gt;</span> value:
+</span></span><span style=display:flex><span>            numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> numbers[j]
+</span></span><span style=display:flex><span>            j <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> value
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_counting_sorted_numbers</span>(numbers, max_value):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; Returns a sorted list of non negative using counting sort
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Arguments:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    numbers -- list of non negative integers within max_value
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    max_value -- non negative integer
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    sorted_numbers <span style=color:#f92672>=</span> [<span style=color:#66d9ef>None</span>] <span style=color:#f92672>*</span> len(numbers)
+</span></span><span style=display:flex><span>    counts <span style=color:#f92672>=</span> [<span style=color:#ae81ff>0</span>] <span style=color:#f92672>*</span> (max_value <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> numbers:
+</span></span><span style=display:flex><span>        counts[i] <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    counts[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, max_value <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
+</span></span><span style=display:flex><span>        counts[i] <span style=color:#f92672>+=</span> counts[i <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> numbers[::<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]:
+</span></span><span style=display:flex><span>        sorted_numbers[counts[i]] <span style=color:#f92672>=</span> i
+</span></span><span style=display:flex><span>        counts[i] <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> sorted_numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>update_execution_time</span>():
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>global</span> data
+</span></span><span style=display:flex><span>    merge_execution_time <span style=color:#f92672>=</span> round(
+</span></span><span style=display:flex><span>        timeit(<span style=color:#e6db74>&#39;result=get_merge_sorted_numbers(unsorted.copy())&#39;</span>,
+</span></span><span style=display:flex><span>               globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span>MAX_ITERATION), <span style=color:#ae81ff>5</span>)
+</span></span><span style=display:flex><span>    bubble_execution_time <span style=color:#f92672>=</span> round(
+</span></span><span style=display:flex><span>        timeit(<span style=color:#e6db74>&#39;result=get_bubble_sorted_numbers(unsorted.copy())&#39;</span>,
+</span></span><span style=display:flex><span>               globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span>MAX_ITERATION), <span style=color:#ae81ff>5</span>)
+</span></span><span style=display:flex><span>    insertion_execution_time <span style=color:#f92672>=</span> round(
+</span></span><span style=display:flex><span>        timeit(<span style=color:#e6db74>&#39;result=get_insertion_sorted_numbers(unsorted.copy())&#39;</span>,
+</span></span><span style=display:flex><span>               globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span>MAX_ITERATION), <span style=color:#ae81ff>5</span>)
+</span></span><span style=display:flex><span>    counting_execution_time <span style=color:#f92672>=</span> round(timeit(
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;result=get_counting_sorted_numbers(unsorted.copy(), MAX_NUMBER)&#39;</span>,
+</span></span><span style=display:flex><span>        globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span>MAX_ITERATION), <span style=color:#ae81ff>5</span>)
+</span></span><span style=display:flex><span>    execution_times <span style=color:#f92672>=</span> [merge_execution_time, bubble_execution_time,
+</span></span><span style=display:flex><span>                       insertion_execution_time, counting_execution_time]
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(data[<span style=color:#e6db74>&#34;data&#34;</span>][<span style=color:#e6db74>&#34;datasets&#34;</span>])):
+</span></span><span style=display:flex><span>        current_execution_time <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;x&#34;</span>: MAX_NUMBER,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;y&#34;</span>: execution_times[i]
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        data[<span style=color:#e6db74>&#34;data&#34;</span>][<span style=color:#e6db74>&#34;datasets&#34;</span>][i][<span style=color:#e6db74>&#34;data&#34;</span>]<span style=color:#f92672>.</span>append(current_execution_time)
+</span></span><span style=display:flex><span>    data[<span style=color:#e6db74>&#34;data&#34;</span>][<span style=color:#e6db74>&#34;labels&#34;</span>]<span style=color:#f92672>.</span>append(str(MAX_NUMBER))
+</span></span><span style=display:flex><span>    data[<span style=color:#e6db74>&#34;input_sizes&#34;</span>]<span style=color:#f92672>.</span>append(MAX_NUMBER)
+</span></span><span style=display:flex><span>    data[<span style=color:#e6db74>&#34;max_values&#34;</span>]<span style=color:#f92672>.</span>append(MAX_NUMBER)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>print_output</span>(data):
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#34;| Set Size | Maximum Value | &#34;</span>, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> algorithm <span style=color:#f92672>in</span> data[<span style=color:#e6db74>&#34;data&#34;</span>][<span style=color:#e6db74>&#34;datasets&#34;</span>]:
+</span></span><span style=display:flex><span>        print(algorithm[<span style=color:#e6db74>&#34;label&#34;</span>] <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; | &#34;</span>, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(data[<span style=color:#e6db74>&#34;data&#34;</span>][<span style=color:#e6db74>&#34;datasets&#34;</span>]) <span style=color:#f92672>+</span> <span style=color:#ae81ff>2</span>):
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> i <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;| &#34;</span>, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>&#34;--- | &#34;</span>, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(data[<span style=color:#e6db74>&#34;input_sizes&#34;</span>])):
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;| </span><span style=color:#e6db74>{</span>data[<span style=color:#e6db74>&#34;input_sizes&#34;</span>][i]<span style=color:#e6db74>}</span><span style=color:#e6db74> | </span><span style=color:#e6db74>{</span>data[<span style=color:#e6db74>&#34;max_values&#34;</span>][i]<span style=color:#e6db74>}</span><span style=color:#e6db74> | &#39;</span>,
+</span></span><span style=display:flex><span>              end<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(len(data[<span style=color:#e6db74>&#34;data&#34;</span>][<span style=color:#e6db74>&#34;datasets&#34;</span>])):
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>{</span>data[<span style=color:#e6db74>&#34;data&#34;</span>][<span style=color:#e6db74>&#34;datasets&#34;</span>][j][<span style=color:#e6db74>&#34;data&#34;</span>][i][<span style=color:#e6db74>&#34;y&#34;</span>]<span style=color:#e6db74>}</span><span style=color:#e6db74> seconds | &#39;</span>,
+</span></span><span style=display:flex><span>                end<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>    print(json<span style=color:#f92672>.</span>dumps(data[<span style=color:#e6db74>&#34;data&#34;</span>], indent<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+</span></span><span style=display:flex><span>    MAX_ITERATION <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1000</span>, <span style=color:#ae81ff>10001</span>, <span style=color:#ae81ff>1000</span>):
+</span></span><span style=display:flex><span>        MAX_NUMBER <span style=color:#f92672>=</span> i
+</span></span><span style=display:flex><span>        unsorted <span style=color:#f92672>=</span> [random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, MAX_NUMBER) <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(MAX_NUMBER)]
+</span></span><span style=display:flex><span>        update_execution_time()
+</span></span><span style=display:flex><span>    print_output(data)
+</span></span></code></pre></div><h2 id=practice-challenges>Practice challenges</h2><h3 id=easy-difficulty-challenges>Easy difficulty challenges:</h3><ul><li><a href=https://practice.geeksforgeeks.org/problems/merge-sort/1>Merge sort - Geeksforgeeks</a></li></ul><h3 id=hard-difficulty-challenges>Hard difficulty challenges:</h3><ul><li><a href=https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/mergesort/>Merge sort - Hackerearth</a> : Solution can be viewed from <a href=https://gist.github.com/arsho/c7e7af845698101cef175bcb27fdb4bc>this gist</a>, I got time limit exceed using Python 3.</li><li><a href=https://www.hackerrank.com/challenges/ctci-merge-sort/problem>Merge Sort: Counting Inversions - Hackerrank</a> : Solution can be viewed from <a href=https://gist.github.com/arsho/c7e7af845698101cef175bcb27fdb4bc>this gist</a>, I got time limit exceed using Python 3.</li></ul><h2 id=reference>Reference</h2><ul><li><a href=/blog/bubble-sort/>Bubble sort</a></li><li><a href=/blog/insertion-sort/>Insertion sort</a></li><li><a href=/blog/counting-sort/>Counting sort</a></li><li><a href=/blog/sorting-algorithm-comparisons/>Sorting Algorithm Comparisons</a></li><li><a href=/blog/understanding-time-complexity/>Understanding Time Complexity</a></li><li><a href=https://mitpress.mit.edu/books/introduction-algorithms-third-edition>Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li><li><a href=https://github.com/pllk/cphb/>Competitive Programmer&rsquo;s Handbook</a></li><li><a href=https://www.oreilly.com/library/view/40-algorithms-every/9781789801217/>Ahmad, I. (2020). 40 Algorithms Every Programmer Should Know. [S.l.]: Packt Publishing.</a></li><li><a href=https://en.wikipedia.org/wiki/Merge_sort>Merge sort - Wikipedia article</a></li><li><a href=https://docs.python.org/3.6/library/timeit.html#examples>timeit module documentation</a></li></ul><div class="d-print-none col-12 my-4 pb-4 border-top border-bottom"><p class="text-muted text-center"><small>Advertisement</small></p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-4737800736768640 data-ad-slot=3931195519></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div></div></article><div class=p-3><h4 class="mb-2 mt-4">Citation</h4><span class=lead>Click to select citation style</span><div class="accordion mb-3" id=citations><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseOne aria-expanded=false aria-controls=flush-collapseOne>
 APA Style</button></h2><div id=flush-collapseOne class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body>Shovon, A. R.
 (2021, April 29).
 <i>Merge Sort</i>.
 Ahmedur Rahman Shovon.
-Retrieved September 9, 2025, from
+Retrieved September 15, 2025, from
 <a href=https://arshovon.com/blog/merge-sort/>https://arshovon.com/blog/merge-sort/</a></div></div></div><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseTwo aria-expanded=false aria-controls=flush-collapseTwo>
 MLA Style</button></h2><div id=flush-collapseTwo class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body>Shovon, Ahmedur Rahman.
 “Merge Sort.”
 <i>Ahmedur Rahman Shovon</i>,
 29 Apr. 2021.
 Web.
-9 Sep. 2025.
+15 Sep. 2025.
 <a href=https://arshovon.com/blog/merge-sort/>https://arshovon.com/blog/merge-sort/</a>.</div></div></div><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseThree aria-expanded=false aria-controls=flush-collapseThree>
 BibTeX entry</button></h2><div id=flush-collapseThree class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body><pre>
 @misc{shovon_2021_merge,
@@ -511,8 +518,16 @@ BibTeX entry</button></h2><div id=flush-collapseThree class="accordion-collapse 
     url = "https://arshovon.com/blog/merge-sort/",
     note = "[Online]"
 }
-</pre></div></div></div></div><h5 class="d-print-none mb-2 mt-4">Related contents in this website</h5><div class="d-print-none card-group"><div class=card><img src=/blog/images/bubble_sort.png class="card-img-top shadow" alt="Bubble Sort"><div class=card-body><a href=https://arshovon.com/blog/bubble-sort/><h5 class=card-title>Bubble Sort</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div><div class=card><img src=/blog/images/time_complexity.png class="card-img-top shadow" alt="Understanding Time Complexity"><div class=card-body><a href=https://arshovon.com/blog/understanding-time-complexity/><h5 class=card-title>Understanding Time Complexity</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div><div class=card><img src=/blog/images/sorting_comparison.png class="card-img-top shadow" alt="Sorting Algorithm Comparisons"><div class=card-body><a href=https://arshovon.com/blog/sorting-algorithm-comparisons/><h5 class=card-title>Sorting Algorithm Comparisons</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div></div><div class="d-print-none row row-cols-1 row-cols-md-2 g-4 mt-2"><div class=col><div class="card mb-3 bg-light border-light h-100"><img src=/blog/images/bubble_sort.png class="card-img-top shadow" alt="Merge Sort"><div class=card-body><h5 class=card-title><i class="fa fa-chevron-left pe-1"></i>Previous post</h5><p class=card-text><a href=https://arshovon.com/blog/bubble-sort/ class="pt-2 pb-2">Bubble Sort</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2021-04-28T03:03:14&#43;06:00><i class="fa fa-calendar pe-1"></i>April 28, 2021</time></span></div></div></div><div class=col><div class="card mb-3 bg-light text-md-end border-light h-100"><img src=/blog/images/majority-element.png class="card-img-top shadow" alt="Merge Sort"><div class=card-body><h5 class=card-title>Next post <i class="fa fa-chevron-right pe-1"></i></h5><p class=card-text><a href=https://arshovon.com/blog/majority-element/ class="pt-2 pb-2">Get the majority element from a given list</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2021-08-24T09:23:37-05:00><i class="fa fa-calendar pe-1"></i>August 24, 2021</time></span></div></div></div></div><div class="d-print-none shadow-lg row p-0 m-0 mt-4 footer-profile"><div class="m-auto p-lg-2"><div class="card border-0"><div class=card-body><div class=row><div class=col-md-2><img src=/avatar/arsho.jpg class="shadow-sm img-thumbnail" alt="Ahmedur Rahman Shovon"></div><div class="col-md-10 my-auto mx-md-0 px-md-0"><h5 class="card-title m-0 p-0"><small><a href=/>Ahmedur Rahman Shovon</a></small></h5><small class="well m-0 p-0">Postdoctoral Appointee
+</pre></div></div></div></div><h5 class="d-print-none mb-2 mt-4">Related contents in this website</h5><div class="d-print-none card-group"><div class=card><img src=/blog/images/bubble_sort.png class="card-img-top shadow" alt="Bubble Sort"><div class=card-body><a href=https://arshovon.com/blog/bubble-sort/><h5 class=card-title>Bubble Sort</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div><div class=card><img src=/blog/images/time_complexity.png class="card-img-top shadow" alt="Understanding Time Complexity"><div class=card-body><a href=https://arshovon.com/blog/understanding-time-complexity/><h5 class=card-title>Understanding Time Complexity</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div><div class=card><img src=/blog/images/sorting_comparison.png class="card-img-top shadow" alt="Sorting Algorithm Comparisons"><div class=card-body><a href=https://arshovon.com/blog/sorting-algorithm-comparisons/><h5 class=card-title>Sorting Algorithm Comparisons</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div></div><div class="d-print-none row row-cols-1 row-cols-md-2 g-4 mt-2"><div class=col><div class="card mb-3 bg-light border-light h-100"><img src=/blog/images/bubble_sort.png class="card-img-top shadow" alt="Merge Sort"><div class=card-body><h5 class=card-title><i class="fa fa-chevron-left pe-1"></i> Previous post</h5><p class=card-text><a href=https://arshovon.com/blog/bubble-sort/ class="pt-2 pb-2">Bubble Sort</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2021-04-28T03:03:14+06:00><i class="fa fa-calendar pe-1"></i>April 28, 2021</time></span></div></div></div><div class=col><div class="card mb-3 bg-light text-md-end border-light h-100"><img src=/blog/images/majority-element.png class="card-img-top shadow" alt="Merge Sort"><div class=card-body><h5 class=card-title>Next post <i class="fa fa-chevron-right pe-1"></i></h5><p class=card-text><a href=https://arshovon.com/blog/majority-element/ class="pt-2 pb-2">Get the majority element from a given list</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2021-08-24T09:23:37-05:00><i class="fa fa-calendar pe-1"></i>August 24, 2021</time></span></div></div></div></div><div class="d-print-none shadow-lg row p-0 m-0 mt-4 footer-profile"><div class="m-auto p-lg-2"><div class="card border-0"><div class=card-body><div class=row><div class=col-md-2><img src=/avatar/arsho.jpg class="shadow-sm img-thumbnail" alt="Ahmedur Rahman Shovon"></div><div class="col-md-10 my-auto mx-md-0 px-md-0"><h5 class="card-title m-0 p-0"><small><a href=/>Ahmedur Rahman Shovon</a></small></h5><small class="well m-0 p-0">Postdoctoral Appointee
 at
-<a href=https://anl.gov/ title="Argonne National Laboratory">Argonne National Laboratory</a></small><ul class="list-inline m-md-0 p-md-0"><li class=list-inline-item><small><i class="fas fa-graduation-cap fa-fw mr-1"></i><a href="https://scholar.google.com/citations?hl=en&amp;user=6yvWyoYAAAAJ" title="Google Scholar Citation Profile">Google Scholar</a></small></li><li class=list-inline-item><small><i class="fab fa-linkedin fa-fw mr-1"></i><a href=https://www.linkedin.com/in/arshovon/ title="Linkedin profile">arshovon</a></small></li><li class=list-inline-item><small><i class="fab fa-github fa-fw mr-1"></i><a href=https://github.com/arsho/ title="Github profile">arsho</a></small></li><li class=list-inline-item><small><i class="fas fa-file-pdf fa-fw mr-1"></i><a href=/cv/Shovon_CV.pdf title="Curriculum Vitae">Curriculum Vitae</a></small></li></ul></div></div></div></div></div></div></div></main></div></div><footer class="footer d-print-none"><div class=text-center><small>Last updated: Sep 9, 2025,
+<a href=https://anl.gov/ title="Argonne National Laboratory">Argonne National Laboratory</a></small><ul class="list-inline m-md-0 p-md-0"><li class=list-inline-item><small><i class="fas fa-graduation-cap fa-fw mr-1"></i>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=6yvWyoYAAAAJ" title="Google Scholar Citation Profile">Google Scholar</a></small></li><li class=list-inline-item><small><i class="fab fa-linkedin fa-fw mr-1"></i>
+<a href=https://www.linkedin.com/in/arshovon/ title="Linkedin profile">arshovon</a></small></li><li class=list-inline-item><small><i class="fab fa-github fa-fw mr-1"></i>
+<a href=https://github.com/arsho/ title="Github profile">arsho</a></small></li><li class=list-inline-item><small><i class="fas fa-file-pdf fa-fw mr-1"></i>
+<a href=/cv/Shovon_CV.pdf title="Curriculum Vitae">Curriculum Vitae</a></small></li></ul></div></div></div></div></div></div></div></main></div></div><footer class="footer d-print-none"><div class=text-center><small>Last updated: Sep 15, 2025,
 <a href=/privacy>Privacy Policy</a><br>© Copyright 2025 <a href=https://arshovon.com/>Ahmedur Rahman Shovon</a>&nbsp, Logos © respective owners</small></div></footer><div id=back-to-top class="d-print-none sticky-bottom float-end d-inline d-none"><button class="btn m-0 p-0 text-secondary" data-bs-toggle=tooltip data-bs-placement=top data-bs-title="Go to top">
-<span class="fa-stack me-md-0 pe-md-0"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i></span></button></div><script defer src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js integrity=sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa crossorigin=anonymous></script><script defer src=https://arshovon.com/assets/js/arsho.js></script><script>hljs.highlightAll();hljs.addPlugin(new CopyButtonPlugin());</script></body></html>
+<span class="fa-stack me-md-0 pe-md-0"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i></span></button></div><script defer src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js integrity=sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa crossorigin=anonymous></script><script defer src=https://arshovon.com/assets/js/arsho.js></script><script>hljs.highlightAll(),hljs.addPlugin(new CopyButtonPlugin)</script></body></html>

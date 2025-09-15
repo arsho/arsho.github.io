@@ -1,8 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>web application on Ahmedur Rahman Shovon</title><link>https://arshovon.com/categories/web-application/</link><description>Recent content in web application on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:01:44 +0600</lastBuildDate><atom:link href="https://arshovon.com/categories/web-application/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to django CMS</title><link>https://arshovon.com/blog/introduction-to-django-cms/</link><pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate><guid>https://arshovon.com/blog/introduction-to-django-cms/</guid><description>Introduction to django CMS In this article we will:
-Learn about django CMS Analyze its features Setup an application with django CMS with full installation guidelines About django CMS django CMS is an open source enterprise content management system based on the Django framework.
-django CMS is voted Best Open Source CMS in 2015. [Announcing the 2015 Winner for Best Open Source CMS]
-django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease.</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
-Environment Operating System : Ubuntu 18.04 LTS (64-bit) Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12 Memory : 15.3 GiB Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>When developing application using Django framework, we extensively use various Django commands. Few common Django commands we use regularly are:
-python manage.py runserver python manage.py makemigrations python manage.py migrate These commands are built in and lies within Django itself.
-We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.
-These custom admin commands can be invoked using manage.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Application on Ahmedur Rahman Shovon</title><link>https://arshovon.com/categories/web-application/</link><description>Recent content in Web Application on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Nov 2023 20:53:41 -0600</lastBuildDate><atom:link href="https://arshovon.com/categories/web-application/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to django CMS</title><link>https://arshovon.com/blog/introduction-to-django-cms/</link><pubDate>Fri, 10 Apr 2020 00:01:44 +0600</pubDate><guid>https://arshovon.com/blog/introduction-to-django-cms/</guid><description>&lt;h1 id="introduction-to-django-cms"&gt;Introduction to django CMS&lt;/h1&gt;
+&lt;p&gt;In this article we will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learn about django CMS&lt;/li&gt;
+&lt;li&gt;Analyze its features&lt;/li&gt;
+&lt;li&gt;Setup an application with django CMS with full installation guidelines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="about-django-cms"&gt;About django CMS&lt;/h2&gt;
+&lt;p&gt;django CMS is an open source enterprise content management system based on the Django framework.&lt;/p&gt;
+&lt;p&gt;django CMS is voted Best Open Source CMS in 2015. [&lt;a href="https://www.cmscritic.com/announcing-the-2015-winner-for-best-open-source-cms/"&gt;Announcing the 2015 Winner for Best Open Source CMS&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;django CMS&amp;rsquo;s lightweight core enables integrating it with other software with ease. Developers can integrate existing Django applications with django CMS rapidly. New Django apps also can be developed which may take advantages of django CMS&amp;rsquo;s publishing and editing features.&lt;/p&gt;</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>&lt;h3 id="prerequisite"&gt;Prerequisite&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Docker Engine&lt;/code&gt; should be installed in local machine.
+Instructions on installing &lt;code&gt;Docker Engine&lt;/code&gt; on Ubuntu can be found in this tutorial: &lt;a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/"&gt;Install Docker on Ubuntu 18.04&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="environment"&gt;Environment&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Operating System&lt;/b&gt; : Ubuntu 18.04 LTS (64-bit)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Processor&lt;/b&gt; : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Memory&lt;/b&gt; : 15.3 GiB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="code-repository"&gt;Code Repository&lt;/h3&gt;
+&lt;p&gt;All codes used in this tutorial can be found in this Github repository:
+&lt;a href="https://github.com/arsho/FlaskDockerBootstrap"&gt;https://github.com/arsho/FlaskDockerBootstrap&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="directory-structure"&gt;Directory structure&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;.
+├── app.py
+├── Dockerfile
+├── readme.md
+├── requirements.txt
+├── static
+│   ├── css
+│   |   └── bootstrap.min.css
+│   ├── images
+│   │   ├── bootstrap.png
+│   │   ├── docker.png
+│   │   └── flask.svg
+│   └── js
+│      └── bootstrap.min.js
+└── templates
+ └── index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;requirements.txt&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Writing Django Custom Management Command</title><link>https://arshovon.com/blog/django-custom-command/</link><pubDate>Thu, 26 Sep 2019 13:14:12 +0600</pubDate><guid>https://arshovon.com/blog/django-custom-command/</guid><description>&lt;p&gt;When developing application using Django framework, we extensively use various Django commands.
+Few common Django commands we use regularly are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python manage.py makemigrations&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python manage.py migrate&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These commands are built in and lies within Django itself.&lt;/p&gt;
+&lt;p&gt;We can also write custom Django admin command. Today I will show an example of wrinting custom Django admin command.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/django_custom_command_1.png" alt="alt example of django custom command"&gt;&lt;/p&gt;
+&lt;p&gt;These custom admin commands can be invoked using &lt;code&gt;manage.py COMMAND_NAME&lt;/code&gt;.&lt;/p&gt;</description></item></channel></rss>

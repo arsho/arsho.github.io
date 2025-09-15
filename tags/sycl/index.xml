@@ -1,3 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SYCL on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/sycl/</link><description>Recent content in SYCL on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Dec 2023 08:01:14 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/sycl/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to SYCL and DPC&#43;&#43;</title><link>https://arshovon.com/blog/sycl-docker-interactive/</link><pubDate>Tue, 26 Dec 2023 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/sycl-docker-interactive/</guid><description>SYCL is an open industry standard, not a programming language itself, developed by the Khronos Group to facilitate data parallelism in C++ for heterogeneous computing systems. This means you can write single-source C++ code that utilizes the power of various processors like CPUs, GPUs, and FPGAs in a single program. This improves code maintainability and portability across different hardware platforms.
-Core characteristics of SYCL:
-Single-source programming: Write code once and target diverse hardware architectures without rewriting for each device.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SYCL on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/sycl/</link><description>Recent content in SYCL on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 28 Dec 2023 23:02:53 -0600</lastBuildDate><atom:link href="https://arshovon.com/tags/sycl/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to SYCL and DPC++</title><link>https://arshovon.com/blog/sycl-docker-interactive/</link><pubDate>Tue, 26 Dec 2023 08:01:14 -0500</pubDate><guid>https://arshovon.com/blog/sycl-docker-interactive/</guid><description>&lt;p&gt;SYCL is an open industry standard, not a programming language itself, developed by the Khronos Group to facilitate data parallelism in C++ for heterogeneous computing systems. This means you can write single-source C++ code that utilizes the power of various processors like CPUs, GPUs, and FPGAs in a single program. This improves code maintainability and portability across different hardware platforms.&lt;/p&gt;
+&lt;p&gt;Core characteristics of SYCL:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Single-source programming&lt;/strong&gt;: Write code once and target diverse hardware architectures without rewriting for each device.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data parallelism&lt;/strong&gt;: Leverage parallel execution for data-intensive tasks, significantly boosting performance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abstraction layer&lt;/strong&gt;: SYCL hides the underlying hardware complexities, providing a unified programming model for different devices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory management&lt;/strong&gt;: SYCL offers various memory models (e.g., unified shared memory) to efficiently manage data movement between host and devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="popular-sycl-implementations"&gt;Popular SYCL implementations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DPC++ (Data Parallel C++)&lt;/strong&gt;: Part of Intel&amp;rsquo;s oneAPI suite and also available as an open source compiler, DPC++ leverages LLVM/Clang for broad CPU and GPU support across Intel, NVIDIA, and AMD. In this post we will use DPC++ from oneAPI.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ComputeCPP&lt;/strong&gt;: Open-source and multi-backend, ComputeCPP excels on Intel and AMD hardware with good CPU and GPU coverage. NVIDIA GPU support is under development.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hipSYCL&lt;/strong&gt;: Primarily focused on NVIDIA GPUs with AMD support, hipSYCL offers multiple backends and experimental Intel GPU compatibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="additional-technical-points-to-consider"&gt;Additional technical points to consider&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Performance portability&lt;/strong&gt;: While SYCL promotes code portability, achieving optimal performance on each hardware platform might require specific tuning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning curve&lt;/strong&gt;: Compared to lower-level hardware-specific languages, SYCL has a gentler learning curve with support to modern C++ syntax but still requires understanding parallel programming concepts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ecosystem&lt;/strong&gt;: The SYCL ecosystem is evolving, with growing adoption and toolchain improvements.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SYCL and IntelGPU in HPC&lt;/strong&gt;: Aurora, the upcoming exascale supercomputer, will harness the power of SYCL and oneAPI on Intel GPUs to unlock groundbreaking scientific discoveries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="sycl-2020"&gt;SYCL 2020&lt;/h3&gt;
+&lt;p&gt;SYCL 2020 marked a significant milestone in the evolution of data parallelism for heterogeneous systems. DPC++ embraces the cutting-edge features introduced in the SYCL 2020 specification, empowering developers with:&lt;/p&gt;</description></item></channel></rss>

@@ -1,20 +1,1374 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Single Page Applications on Ahmedur Rahman Shovon</title><link>https://arshovon.com/apps/</link><description>Recent content in Single Page Applications on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 05 Apr 2010 06:30:25 +0600</lastBuildDate><atom:link href="https://arshovon.com/apps/index.xml" rel="self" type="application/rss+xml"/><item><title>Image Steganography</title><link>https://arshovon.com/apps/image-stego/</link><pubDate>Sun, 13 Feb 2022 11:15:10 -0600</pubDate><guid>https://arshovon.com/apps/image-stego/</guid><description>ImageStego &amp;nbsp; ImageStego About ImageStego How to use Preview Image Options Encryption Decryption Running in Encryption Mode Upload Image Secret Key Message to Encrypt Encrypt Image ImageStego does not store anything. Store the secret key and encrypted image in a secure location.</description></item><item><title>Fully connected network graph</title><link>https://arshovon.com/apps/fcnvis/</link><pubDate>Wed, 29 Dec 2021 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/fcnvis/</guid><description> FCNVis &amp;nbsp; FCNVis Analytics Fully Connected Network Visualization Tool FCNVis is a visualization tool to create Fully Connected Network Select one or multiple subjects from DFC 2500, DFC 1400, and DFC 645 Select subject(s) from DFC 2500 Select subject(s) from DFC 1400 Select subject(s) from DFC 645 Plot MDS FCNVis Exposure Click on the legends to toggle visibility of the subject Download as PNG Download as JPEG Download as PDF About Code Developed by Shovon HARP Lab &amp;copy; 2021</description></item><item><title>Kaplan Meier survival probability graph</title><link>https://arshovon.com/apps/kmpen/</link><pubDate>Fri, 10 Dec 2021 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/kmpen/</guid><description> Kaplan Meier Survival Probability Graph Generate with A1BG expression level on KIRC patient survival dataset Generate with A1BG expression level &amp; Gender on KIRC patient survival dataset Generate with A1BG expression level &amp; Race on KIRC patient survival dataset Generate with A1BG expression level on KIRP patient survival dataset Generate with A1BG expression level &amp; Gender on KIRP patient survival dataset Generate with A1BG expression level &amp; Race on KIRP patient survival dataset Generate with A1BG expression level on LUAD patient survival dataset Generate with A1BG expression level &amp; Gender on LUAD patient survival dataset Generate with A1BG expression level &amp; Race on LUAD patient survival dataset Click on the chart legend to hide and show the relevant dataset Download as PNG Download as JPEG Download as PDF</description></item><item><title>Kids Math</title><link>https://arshovon.com/apps/kids/</link><pubDate>Thu, 10 Sep 2020 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/kids/</guid><description>Kids Math Kids Math Settings Math Quiz Settings Quiz Language English Bangla Number of Questions 5 10 15 20 25 30 35 40 45 50 Select Operator (Multiple Allowed) + - * / Random Maximum Number for Operand 1 Maximum Number for Operand 2 Create Quiz Correct Answer Wrong Answer Very good!</description></item><item><title>COVID-19 World Status</title><link>https://arshovon.com/apps/c19/</link><pubDate>Sun, 05 Apr 2020 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/c19/</guid><description>COVID-19 World Status COVID-19 Summary Data Confirmed Death Active Recovered Country About Code COVID-19 World Status Total Cases Today&#39;s cases: Total Deaths (%) Today&#39;s deaths: Cases / Million Deaths / Million: Total Recovered (%) Affected Countries: Active Cases Critical cases: Total Tests Tests per million: Worldwide COVID-19 Data with Instant Search Option Flag Country Cases Today Cases Deaths Today Deaths Tests Active Recovered Critical Cases / Million Deaths / Million Tests / Million COVID-19 World Map(Total Confirmed Cases) Mouse over any country to see total confirmed cases and click to see country&#39;s details.</description></item><item><title>Periodic Table</title><link>https://arshovon.com/apps/periodic_table/</link><pubDate>Tue, 15 Sep 2015 17:15:10 +0600</pubDate><guid>https://arshovon.com/apps/periodic_table/</guid><description>Periodic Table The Periodic Table Developed by Ahmedur Rahman Shovon &amp; Imran Pollob Metals Non-Metals Alkali Metals Alkali Earth Metals Transitional Metals Lanthoids Actinoids Metaloids Halogens Noble Gas 1 H Hydrogen1.0079
-2 He Helium4.</description></item><item><title>Typespeed</title><link>https://arshovon.com/apps/typespeed/</link><pubDate>Sun, 05 Oct 2014 13:15:10 +0600</pubDate><guid>https://arshovon.com/apps/typespeed/</guid><description>body{ background: aliceblue; } .txtarea{ margin: 2px auto; width: 80%; padding: 10px; vertical-align: top; text-align: left; height: 62%; overflow: hidden; line-height: 30px; font-family: Verdana; font-size: 24px; color: black; border: 3px solid rgb(1, 1, 10); border-radius: 7px; background: white; } .txtarea div{ display: inline; } .highlight{ background: rgb(231, 223, 221); color: rgb(20, 133, 162); padding: 3px 6px; border: 2px solid rgb(185, 164, 168); border-radius: 5px; } .ac { color: green; } .</description></item><item><title>Root finding methods</title><link>https://arshovon.com/apps/root_finding_methods/</link><pubDate>Tue, 15 Jul 2014 17:15:10 +0600</pubDate><guid>https://arshovon.com/apps/root_finding_methods/</guid><description>
-Root Finding Methods
-Home
-Bisection Method
-False Position Method
-Newton-Raphson Method
-Secant Method
-Shovon
-Root Finding Method
-Enter the equation (eg x*x*x-2*x-5):
-Bisection Method
-False Position Method
-Newton-Raphson Method
-Secant Method</description></item><item><title>Meme Creator</title><link>https://arshovon.com/apps/meme_creator/</link><pubDate>Mon, 14 Jul 2014 16:13:50 +0600</pubDate><guid>https://arshovon.com/apps/meme_creator/</guid><description>Meme Creator @import url(http://fonts.googleapis.com/css?family=Changa+One); @import url(http://fonts.googleapis.com/css?family=Kavoon); @import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great); @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One); @import url(http://fonts.googleapis.com/css?family=Galindo); body{ margin: 2px auto; } #wrapper { width: 100%; margin: 0px auto; padding: 0px; } #content { width: 95%; padding: 0px 20px; margin: 10px auto; background: rgb(247, 247, 247); border: 1px solid rgba(147, 184, 189,0.8); -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset; -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.</description></item><item><title>Drumpad</title><link>https://arshovon.com/apps/drumpad/</link><pubDate>Fri, 02 Mar 2012 15:15:10 +0600</pubDate><guid>https://arshovon.com/apps/drumpad/</guid><description> Drumpad A (Ride-Cymbal) S (Tom1) D (Tom2) F (Crash-Cymbal) J (Bass) K (Snare) L (Open-Hi-Hat) ; (Closed-Hi-Hat) 1
-(two and four) 2
-(four on the floor) 3
-(one drop) 4
-(boom boom clap) DRUMPAD by Shovon
-(play drums using keyboard and or with mouse)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Single Page Applications on Ahmedur Rahman Shovon</title><link>https://arshovon.com/apps/</link><description>Recent content in Single Page Applications on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Sep 2025 22:01:47 +0000</lastBuildDate><atom:link href="https://arshovon.com/apps/index.xml" rel="self" type="application/rss+xml"/><item><title>Image Steganography</title><link>https://arshovon.com/apps/image-stego/</link><pubDate>Sun, 13 Feb 2022 11:15:10 -0600</pubDate><guid>https://arshovon.com/apps/image-stego/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+ &lt;meta name="robots" content="index,follow"&gt;
+
+ &lt;meta name="keywords" content="ImageStego, image steganography, arsho"&gt;
+ &lt;meta name="description" content="Image steganography, hide text in image with a key"/&gt;
+ &lt;meta name="author" content="Ahmedur Rahman Shovon"&gt;
+ &lt;title&gt;ImageStego&lt;/title&gt;
+
+ &lt;!-- Open Graph Protocol--&gt;
+ &lt;meta property="og:url" content="https://arshovon.com/apps/image-stego/"&gt;
+ &lt;meta property="og:type" content="website"&gt;
+ &lt;meta property="og:title" content="ImageStego"&gt;
+ &lt;meta property="og:description" content="Image steganography, hide text in image with a key"&gt;
+ &lt;meta property="og:image" content="https://arshovon.com/apps/image-stego/screenshots/image-stego.png"&gt;
+ &lt;meta property="og:image:secure_url" content="https://arshovon.com/apps/image-stego/screenshots/image-stego.png"&gt;
+ &lt;meta property="og:image:type" content="image/png"/&gt;
+ &lt;meta property="og:image:width" content="400"/&gt;
+ &lt;meta property="og:image:height" content="300"/&gt;
+ &lt;meta property="og:image:alt" content="ImageStego"/&gt;
+ &lt;meta property="og:site_name" content="ImageStego"/&gt;
+ &lt;meta property="og:locale" content="en-us"&gt;
+
+ &lt;meta name="twitter:card" content="summary"/&gt;
+ &lt;meta name="twitter:image" content="https://arshovon.com/apps/image-stego/screenshots/image-stego.png"/&gt;
+ &lt;meta name="twitter:url" content="https://arshovon.com/apps/image-stego/"/&gt;
+ &lt;meta name="twitter:title" content="ImageStego"/&gt;
+ &lt;meta name="twitter:description" content="Image steganography, hide text in image with a key"/&gt;
+ &lt;link rel="canonical" href="https://arshovon.com/apps/image-stego/"&gt;
+
+ &lt;link rel="icon" href="https://arshovon.com/assets/images/favicon.ico" type="image/x-icon"/&gt;
+ &lt;link rel="shortcut icon" href="https://arshovon.com/assets/images/favicon.ico"
+ type="image/x-icon"/&gt;
+ &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+ rel="stylesheet"
+ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+ crossorigin="anonymous"&gt;
+ &lt;link rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"&gt;
+&lt;/head&gt;
+&lt;body class="d-flex flex-column min-vh-100 bg-light bg-gradient"&gt;
+&lt;div class="container-fluid p-3 bg-white"&gt;
+ &lt;header&gt;
+ &lt;!--Header Starts--&gt;
+ &lt;div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"&gt;
+ &lt;a href=""
+ class="d-flex align-items-center text-success text-decoration-none"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+ class="bi bi-shield-lock" viewBox="0 0 16 16"&gt;
+ &lt;path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/&gt;
+ &lt;path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/&gt;
+ &lt;/svg&gt;
+ &amp;nbsp;
+ &lt;span class="fs-4 fw-bolder"&gt;ImageStego&lt;/span&gt;
+ &lt;/a&gt;
+
+ &lt;nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"&gt;
+
+ &lt;button class="btn btn-outline-success btn-sm me-3 py-2 text-decoration-none"
+ data-bs-toggle="modal"
+ data-bs-target="#about"&gt;
+ &lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt; About ImageStego
+ &lt;/button&gt;
+
+
+ &lt;button class="btn btn-outline-dark btn-sm me-3 py-2 text-decoration-none"
+ data-bs-toggle="modal"
+ data-bs-target="#how-to-use"&gt;
+ &lt;i class="bi bi-info-circle"&gt;&lt;/i&gt; How to use
+ &lt;/button&gt;
+
+ &lt;/nav&gt;
+ &lt;/div&gt;
+ &lt;!--Header Ends--&gt;
+ &lt;/header&gt;
+ &lt;main&gt;
+ &lt;div class="row"&gt;
+ &lt;div class="col-md-8"&gt;
+ &lt;div class="card" id="preview_card"&gt;
+ &lt;div class="card-header"&gt;
+ Preview Image
+ &lt;/div&gt;
+ &lt;div class="card-body"&gt;
+ &lt;canvas class="img-thumbnail rounded mx-auto d-block shadow" id="stego_canvas"
+ resize="true"&gt;&lt;/canvas&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="col-md-4"&gt;
+ &lt;div class="card"&gt;
+ &lt;div class="card-header"&gt;
+ Options
+ &lt;/div&gt;
+ &lt;div class="card-body"&gt;
+
+ &lt;nav&gt;
+ &lt;div class="nav nav-tabs text-dark" id="nav-tab" role="tablist"&gt;
+ &lt;button onclick="encrypt_msg()" class="nav-link text-success active"
+ id="nav-encryption-tab"
+ data-bs-toggle="tab"
+ data-bs-target="#nav-encryption" type="button" role="tab"
+ aria-controls="nav-encryption"
+ aria-selected="true"&gt;Encryption
+ &lt;/button&gt;
+ &lt;button onclick="decrypt_msg()" class="nav-link text-success" id="nav-decryption-tab"
+ data-bs-toggle="tab"
+ data-bs-target="#nav-encryption" type="button" role="tab"
+ aria-controls="nav-profile" aria-selected="false"&gt;Decryption
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;/nav&gt;
+ &lt;div class="tab-content" id="nav-tabContent"&gt;
+ &lt;div class="tab-pane fade show active mt-2" id="nav-encryption" role="tabpanel"
+ aria-labelledby="nav-encryption-tab"&gt;
+ &lt;div id="operation_body_span"&gt;
+ &lt;p class="lead text-center border-bottom" id="show_mode_info"&gt;
+ Running in Encryption Mode
+ &lt;/p&gt;</description></item><item><title>Fully connected network graph</title><link>https://arshovon.com/apps/fcnvis/</link><pubDate>Wed, 29 Dec 2021 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/fcnvis/</guid><description>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+ &lt;!--Head Starts--&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+ &lt;meta name="viewport"
+ content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+ &lt;meta name="description"
+ content="Fully Connected Network Visualization Tool"&gt;
+ &lt;meta name="author" content="Ahmedur Rahman Shovon"&gt;
+ &lt;meta name="keywords"
+ content="arsho, harp lab, fully connected network visualization tool"&gt;
+
+ &lt;link rel="icon"
+ href="assets/images/favicon.ico"
+ type="image/x-icon"/&gt;
+ &lt;link rel="shortcut icon"
+ href="assets/images/favicon.ico"
+ type="image/x-icon"/&gt;
+
+ &lt;link rel="canonical"
+ href="https://arshovon.com/apps/fcnvis/"/&gt;
+
+ &lt;title&gt;FCNVis&lt;/title&gt;
+
+ &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+ rel="stylesheet"
+ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+ crossorigin="anonymous"&gt;
+ &lt;link rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"&gt;
+ &lt;link rel="stylesheet" type="text/css"
+ href="assets/css/fcnvis.css"/&gt;
+ &lt;!--Head Ends--&gt;
+&lt;/head&gt;
+&lt;body class="d-flex flex-column min-vh-100 bg-light bg-gradient"&gt;
+&lt;div class="container p-3 bg-white" id="container" style="display:none;"&gt;
+ &lt;header&gt;
+ &lt;!--Header Starts--&gt;
+ &lt;div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"&gt;
+ &lt;a href=""
+ class="d-flex align-items-center text-dark text-decoration-none"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+ fill="currentColor"
+ class="text-success bi bi-cloud-check me-1"
+ viewBox="0 0 16 16"&gt;
+ &lt;path fill-rule="evenodd"
+ d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/&gt;
+ &lt;path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/&gt;
+ &lt;/svg&gt;
+ &amp;nbsp;
+ &lt;span class="fs-4"&gt;FCNVis&lt;/span&gt;
+ &lt;/a&gt;
+
+ &lt;nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"&gt;
+ &lt;a class="me-3 py-2 text-dark text-decoration-none" href=""&gt;
+ &lt;i class="bi bi-clipboard-data me-1"&gt;&lt;/i&gt; Analytics
+ &lt;/a&gt;
+ &lt;/nav&gt;
+ &lt;/div&gt;
+ &lt;!--Header Ends--&gt;
+ &lt;/header&gt;
+ &lt;main&gt;
+ &lt;div class="p-5 mb-4 bg-light rounded-3 text-center"&gt;
+ &lt;div class="container-fluid py-5"&gt;
+ &lt;h3 class="display-6 fw-bold"&gt;
+ Fully Connected Network Visualization Tool
+ &lt;/h3&gt;
+ &lt;div class="row justify-content-md-center mt-4"&gt;
+ &lt;p class="col-md-8 fs-4"&gt;
+ &lt;b&gt;FCNVis&lt;/b&gt; is a visualization tool to create
+ Fully Connected Network
+ &lt;/p&gt;</description></item><item><title>Kaplan Meier survival probability graph</title><link>https://arshovon.com/apps/kmpen/</link><pubDate>Fri, 10 Dec 2021 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/kmpen/</guid><description>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+ &lt;title&gt;Kaplan Meier Survival Probability Graph&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;main&gt;
+ &lt;div&gt;
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="KIRC" exp=""&gt;
+ Generate with A1BG expression level on KIRC patient survival
+ dataset
+ &lt;/button&gt;
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="KIRC"
+ exp="Gender"&gt;
+ Generate with A1BG expression level &amp; Gender on KIRC patient
+ survival
+ dataset
+ &lt;/button&gt;
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="KIRC" exp="Race"&gt;
+ Generate with A1BG expression level &amp; Race on KIRC patient survival
+ dataset
+ &lt;/button&gt;
+
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="KIRP" exp=""&gt;
+ Generate with A1BG expression level on KIRP patient survival
+ dataset
+ &lt;/button&gt;
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="KIRP"
+ exp="Gender"&gt;
+ Generate with A1BG expression level &amp; Gender on KIRP patient
+ survival
+ dataset
+ &lt;/button&gt;
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="KIRP" exp="Race"&gt;
+ Generate with A1BG expression level &amp; Race on KIRP patient survival
+ dataset
+ &lt;/button&gt;
+
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="LUAD" exp=""&gt;
+ Generate with A1BG expression level on LUAD patient survival
+ dataset
+ &lt;/button&gt;
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="LUAD"
+ exp="Gender"&gt;
+ Generate with A1BG expression level &amp; Gender on LUAD patient
+ survival
+ dataset
+ &lt;/button&gt;
+ &lt;button class="graph_data_btn" genename="A1BG" ctype="LUAD" exp="Race"&gt;
+ Generate with A1BG expression level &amp; Race on LUAD patient survival
+ dataset
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div id="graph"&gt;
+ &lt;div&gt;
+ &lt;h5 style="text-align: center;"&gt;
+ Click on the chart legend to hide and show the relevant dataset
+ &lt;/h5&gt;
+ &lt;canvas id="kmgraph"&gt;&lt;/canvas&gt;
+ &lt;/div&gt;
+ &lt;div style="text-align: center;"&gt;
+ &lt;button class="download_chart" id="png_btn"&gt;
+ Download as PNG
+ &lt;/button&gt;
+ &lt;button class="download_chart" id="jpeg_btn"&gt;
+ Download as JPEG
+ &lt;/button&gt;
+ &lt;button class="download_chart" id="pdf_btn"&gt;
+ Download as PDF
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/main&gt;
+&lt;!--Scripts Starts--&gt;
+&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"
+ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+ crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"
+ src="assets/js/kmpen_clean.js"&gt;&lt;/script&gt;
+&lt;!--Scripts Ends--&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</description></item><item><title>Kids Math</title><link>https://arshovon.com/apps/kids/</link><pubDate>Thu, 10 Sep 2020 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/kids/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+ &lt;meta name="robots" content="index,follow"&gt;
+
+ &lt;meta name="keywords" content="Kids Math Quiz, Kids Math, Kids Quiz, Bangla Onko"&gt;
+ &lt;meta name="description" content="Bangla and English Math Quiz For Kids"/&gt;
+ &lt;meta name="author" content="Ahmedur Rahman Shovon"&gt;
+
+ &lt;!-- Open Graph Protocol--&gt;
+ &lt;meta property="og:url" content="https://arshovon.com/apps/kids/"&gt;
+ &lt;meta property="og:type" content="website"&gt;
+ &lt;meta property="og:title" content="Kids Math"&gt;
+ &lt;meta property="og:description" content="Bangla and English Math Quiz For Kids"&gt;
+ &lt;meta property="og:image" content="https://arshovon.com/apps/kids/screenshots/kids_math_demo.png"&gt;
+ &lt;meta property="og:image:secure_url" content="https://arshovon.com/apps/kids/screenshots/kids_math_demo.png"&gt;
+ &lt;meta property="og:image:type" content="image/png" /&gt;
+ &lt;meta property="og:image:width" content="400" /&gt;
+ &lt;meta property="og:image:height" content="300" /&gt;
+ &lt;meta property="og:image:alt" content="Kids Math" /&gt;
+ &lt;meta property="og:site_name" content="Kids Math"/&gt;
+ &lt;meta property="og:locale" content="en-us"&gt;
+
+ &lt;meta name="twitter:card" content="summary" /&gt;
+ &lt;meta name="twitter:image" content="https://arshovon.com/apps/kids/screenshots/kids_math_demo.png" /&gt;
+ &lt;meta name="twitter:url" content="https://arshovon.com/apps/kids/" /&gt;
+ &lt;meta name="twitter:title" content="Kids Math" /&gt;
+ &lt;meta name="twitter:description" content="Bangla and English Math Quiz For Kids" /&gt;
+ &lt;title&gt;Kids Math&lt;/title&gt;
+
+ &lt;link rel="canonical" href="https://arshovon.com/"&gt;
+
+ &lt;link rel="icon" href="images/favicon.ico" type="image/x-icon"/&gt;
+ &lt;link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/&gt;
+
+
+ &lt;!-- Google Font --&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&amp;display=swap" rel="stylesheet"&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Rock+Salt&amp;display=swap" rel="stylesheet"&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Galada&amp;display=swap" rel="stylesheet"&gt;
+ &lt;!-- Fontawesome CSS --&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /&gt;
+ &lt;!-- Bootstrap CSS --&gt;
+ &lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+ &lt;!-- Custom CSS --&gt;
+ &lt;link href="css/arsho.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+ &lt;div class="container content"&gt;
+ &lt;header class="blog-header py-2 mb-2 text-dark border-bottom"&gt;
+ &lt;div class="row flex-nowrap justify-content-between align-items-center"&gt;
+ &lt;div class="col-md-4 offset-md-4 text-center"&gt;
+ &lt;a onClick="window.location.reload();"&gt;
+ &lt;h3 class="blog-header-logo p-0 m-0"&gt;Kids Math&lt;/h3&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="col-md-4 d-flex justify-content-end align-items-center"&gt;
+ &lt;button class="btn btn-info" type="button" data-toggle="collapse" data-target="#quiz_settings_box" aria-expanded="false" aria-controls="quiz_settings_box"&gt;
+ &lt;i class="fa fa-cogs"&gt;&lt;/i&gt; Settings
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;/header&gt;
+
+ &lt;div class="row mb-2"&gt;
+ &lt;div class="col-md-12"&gt;
+ &lt;div class="collapse show" id="quiz_settings_box"&gt;
+ &lt;div class="card border-light"&gt;
+ &lt;div class="card-header"&gt;
+ Math Quiz Settings
+ &lt;/div&gt;
+ &lt;div class="card-body"&gt;
+ &lt;div&gt;
+ &lt;div class="form-group row"&gt;
+ &lt;label for="quiz_language" class="col-sm-4 col-form-label"&gt;Quiz Language&lt;/label&gt;
+ &lt;div class="col-sm-8"&gt;
+ &lt;select class="form-control" id="quiz_language"&gt;
+ &lt;option value="en"&gt;English&lt;/option&gt;
+ &lt;option value="bn"&gt;Bangla&lt;/option&gt;
+ &lt;/select&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="form-group row"&gt;
+ &lt;label class="col-sm-4 col-form-label" for="number_of_questions"&gt;Number of Questions&lt;/label&gt;
+ &lt;div class="col-sm-8"&gt;
+ &lt;select class="form-control" id="number_of_questions"&gt;
+ &lt;option&gt;5&lt;/option&gt;
+ &lt;option&gt;10&lt;/option&gt;
+ &lt;option&gt;15&lt;/option&gt;
+ &lt;option&gt;20&lt;/option&gt;
+ &lt;option&gt;25&lt;/option&gt;
+ &lt;option&gt;30&lt;/option&gt;
+ &lt;option&gt;35&lt;/option&gt;
+ &lt;option&gt;40&lt;/option&gt;
+ &lt;option&gt;45&lt;/option&gt;
+ &lt;option&gt;50&lt;/option&gt;
+ &lt;/select&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="form-group row"&gt;
+ &lt;label class="col-sm-4 col-form-label" for="type_of_questions"&gt;Select Operator (Multiple Allowed)&lt;/label&gt;
+ &lt;div class="col-sm-8"&gt;
+ &lt;select multiple class="form-control" id="type_of_questions"&gt;
+ &lt;option selected value="addition"&gt;+&lt;/option&gt;
+ &lt;option value="substraction"&gt;-&lt;/option&gt;
+ &lt;option value="multiplication"&gt;*&lt;/option&gt;
+ &lt;option value="division"&gt;/&lt;/option&gt;
+ &lt;option value="random"&gt;Random&lt;/option&gt;
+ &lt;/select&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="form-group row"&gt;
+ &lt;label class="col-sm-4 col-form-label" for="max_number_operand_1"&gt;Maximum Number for Operand 1&lt;/label&gt;
+ &lt;div class="col-sm-8"&gt;
+ &lt;input type="number" min="0" class="form-control" id="max_number_operand_1" placeholder="Maximum number for Operand 1" value="9"&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="form-group row"&gt;
+ &lt;label class="col-sm-4 col-form-label" for="max_number_operand_2"&gt;Maximum Number for Operand 2&lt;/label&gt;
+ &lt;div class="col-sm-8"&gt;
+ &lt;input type="number" min="0" class="form-control" id="max_number_operand_2" placeholder="Maximum number for Operand 2" value="9"&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;/div&gt;
+
+ &lt;!-- ./Form Div --&gt;
+ &lt;/div&gt;
+ &lt;!-- ./card-body --&gt;
+ &lt;/div&gt;
+ &lt;div class="card-footer"&gt;
+ &lt;button id="generate_quiz" class="btn btn-block btn-info"&gt;Create Quiz&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;!-- ./card-footer --&gt;
+ &lt;!-- ./ card --&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="mb-2 invisible" id="quiz_wrapper"&gt;
+ &lt;div class="row"&gt;
+ &lt;div class="col-6 pr-1"&gt;
+ &lt;div class="card text-center border-success text-success p-1" id="correct_answers_card"&gt;
+ &lt;div class="row align-items-center"&gt;
+ &lt;div class="col-2 p-0 pl-3"&gt;
+ &lt;i class="far fa-check-circle fa-2x"&gt;&lt;/i&gt;
+ &lt;/div&gt;
+ &lt;div class="col-10 pt-2 pb-2"&gt;
+ &lt;div class="card-body p-0"&gt;
+ &lt;h5 class="card-title m-0" id="correct_answers_title"&gt;
+ Correct Answer
+ &lt;/h5&gt;
+ &lt;h2 class="card-title m-0 mt-1" id="correct_answers_value"&gt;
+
+ &lt;/h2&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="col-6 pl-1"&gt;
+ &lt;div class="card text-center border-danger text-danger p-1" id="wrong_answers_card"&gt;
+ &lt;div class="row align-items-center"&gt;
+ &lt;div class="col-2 p-0 pl-3"&gt;
+ &lt;i class="far fa-times-circle fa-2x"&gt;&lt;/i&gt;
+ &lt;/div&gt;
+ &lt;div class="col-10 pt-2 pb-2"&gt;
+ &lt;div class="card-body p-0"&gt;
+ &lt;h5 class="card-title m-0" id="wrong_answers_title"&gt;
+ Wrong Answer
+ &lt;/h5&gt;
+ &lt;h2 class="card-title m-0 mt-1" id="wrong_answers_value"&gt;
+
+ &lt;/h2&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;!-- ./quiz_wrapper --&gt;
+ &lt;!-- celebration_deck --&gt;
+ &lt;div id="celebration_deck"&gt;
+ &lt;div class="row"&gt;
+ &lt;div class="col-12"&gt;
+ &lt;div class="card text-center text-dark mt-0 mb-2 border-0"&gt;
+ &lt;div class="row align-items-center"&gt;
+ &lt;div class="col-md-12"&gt;
+ &lt;div class="card-header bg-transparent border-0 p-0"&gt;
+ &lt;h3 class="celebration-text text-success" id="celebration_message"&gt;
+ Very good!
+ &lt;/h3&gt;
+ &lt;/div&gt;
+ &lt;div class="card-body p-0"&gt;
+ &lt;i class="fa fa-star fa-2x fa-spin text-info fa-pull-left"&gt;&lt;/i&gt;
+ &lt;i class="fa fa-trophy fa-2x text-warning"&gt;&lt;/i&gt;
+ &lt;i class="fa fa-medal fa-2x text-danger"&gt;&lt;/i&gt;
+ &lt;i class="fa fa-award fa-2x text-warning"&gt;&lt;/i&gt;
+ &lt;i class="fa fa-star fa-2x fa-spin text-info fa-pull-right"&gt;&lt;/i&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;!-- ./celebration_deck --&gt;
+
+ &lt;div class="table-responsive"&gt;
+ &lt;table class="table table-sm quiz_rows" id="quiz_rows"&gt;
+ &lt;/table&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;footer class="footer w-100 text-center d-flex align-items-center justify-content-center text-muted"&gt;
+ &lt;small&gt;
+ Developed with &lt;i class="fas fa-heart datamate_red"&gt;&lt;/i&gt; by
+ &lt;a class="text-dark" data-toggle="tooltip" data-placement="top" title="Click to visit Shovon's website" href="https://arshovon.com/"&gt;Ahmedur Rahman Shovon&lt;/a&gt;
+ &lt;/small&gt;
+&lt;/footer&gt;
+
+&lt;script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.0/dist/confetti.browser.min.js"&gt;&lt;/script&gt;
+&lt;!-- Custom JS --&gt;
+&lt;script src="js/arsho.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</description></item><item><title>COVID-19 World Status</title><link>https://arshovon.com/apps/c19/</link><pubDate>Sun, 05 Apr 2020 11:15:10 +0600</pubDate><guid>https://arshovon.com/apps/c19/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+ &lt;title&gt;COVID-19 World Status&lt;/title&gt;
+ &lt;meta name="author" content="Ahmedur Rahman Shovon"&gt;
+ &lt;meta name="keywords" content="COVID-19 World map, COVID-19, COVID-19 situation, COVID-19 tracker, CORONA tracker, COVID-19 World status, covid-19 updates, covid-19 map, corona map"&gt;
+ &lt;meta name="description" content="COVID-19 World Status with realtime tracker and interactive map"&gt;
+ &lt;link rel="icon" href="images/favicon.ico" type="image/x-icon"/&gt;
+ &lt;link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/&gt;
+ &lt;!-- Open Graph Protocol--&gt;
+ &lt;meta property="og:site_name" content="COVID-19 World Status"&gt;
+ &lt;meta property="og:title" content="COVID-19 World Status" /&gt;
+ &lt;meta property="og:type" content="software" /&gt;
+ &lt;meta property="og:url" content="https://arshovon.com/apps/c19/" /&gt;
+ &lt;meta property="og:image" content="https://arshovon.com/apps/c19/screenshots/summary.png" /&gt;
+ &lt;meta property="og:image:secure_url" content="https://arshovon.com/apps/c19/screenshots/summary.png" /&gt;
+ &lt;meta property="og:image:type" content="image/png" /&gt;
+ &lt;meta property="og:image:width" content="400" /&gt;
+ &lt;meta property="og:image:height" content="300" /&gt;
+ &lt;meta property="og:description" content="COVID-19 World Status with realtime tracker and interactive map"&gt;
+ &lt;!-- Open Graph Protocol--&gt;
+
+ &lt;!-- Load Bootstrap CSS and Font awesome from CDN --&gt;
+ &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"&gt;&lt;/script&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /&gt;
+ &lt;!-- Load data table CSS from CDN --&gt;
+ &lt;link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"&gt;
+ &lt;!-- Load jqvmap CSS from CDN --&gt;
+ &lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jqvmap.min.css"&gt;
+ &lt;!-- Load ChartJS CSS from CDN --&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" /&gt;
+ &lt;!-- Load Google web font --&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;display=swap" rel="stylesheet"&gt;
+ &lt;!-- Load custom CSS --&gt;
+ &lt;link rel="stylesheet" type="text/css" href="css/covid-19.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;nav class="navbar navbar-expand-md navbar-light bg-light fixed-top border-bottom shadow-sm"&gt;
+ &lt;a class="navbar-brand"&gt;&lt;i class="fa fa-viruses"&gt;&lt;/i&gt; COVID-19&lt;/a&gt;
+ &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"&gt;
+ &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+ &lt;/button&gt;
+
+ &lt;div class="collapse navbar-collapse" id="navbarsExampleDefault"&gt;
+ &lt;ul class="navbar-nav nav" id="top-menu-tab" role="tablist"&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a class="nav-link active" id="summary-tab" data-toggle="tab" href="#summary" role="tab" aria-controls="summary" aria-selected="true"&gt;
+ &lt;i class="fa fa-list-alt"&gt;&lt;/i&gt; Summary
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a class="nav-link" id="global-data-tab" data-toggle="tab" href="#global-data" role="tab" aria-controls="global-data" aria-selected="false"&gt;
+ &lt;i class="fa fa-table"&gt;&lt;/i&gt; Data
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a class="nav-link" id="worldmap-cases-tab" data-toggle="tab" href="#worldmap-cases" role="tab" aria-controls="worldmap-cases" aria-selected="false"&gt;
+ &lt;i class="fa fa-map"&gt;&lt;/i&gt; Confirmed
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a class="nav-link" id="worldmap-deaths-tab" data-toggle="tab" href="#worldmap-deaths" role="tab" aria-controls="worldmap-deaths" aria-selected="false"&gt;
+ &lt;i class="fa fa-map"&gt;&lt;/i&gt; Death
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a class="nav-link" id="worldmap-active-tab" data-toggle="tab" href="#worldmap-active" role="tab" aria-controls="worldmap-active" aria-selected="false"&gt;
+ &lt;i class="fa fa-map"&gt;&lt;/i&gt; Active
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a class="nav-link" id="worldmap-recovered-tab" data-toggle="tab" href="#worldmap-recovered" role="tab" aria-controls="worldmap-recovered" aria-selected="false"&gt;
+ &lt;i class="fa fa-map"&gt;&lt;/i&gt; Recovered
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a class="nav-link" id="search-country-data-tab" data-toggle="tab" href="#search-country-data" role="tab" aria-controls="search-country-data" aria-selected="false"&gt;
+ &lt;i class="fa fa-flag"&gt;&lt;/i&gt; Country
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false"&gt;
+ &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt; About
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;ul class="navbar-nav ml-auto"&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;a target="_blank" class="nav-link" title="Source Code" href="https://github.com/arsho/COVID-19/"&gt;
+ &lt;i class="fab fa-github"&gt;&lt;/i&gt;
+ Code
+ &lt;/a&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/nav&gt;
+
+ &lt;main role="main"&gt;
+ &lt;div class="container-fluid"&gt;
+ &lt;div class="row mt-2"&gt;
+ &lt;div class="col-md-12" id="content"&gt;
+ &lt;div class="tab-content" id="nav-tabContent"&gt;
+ &lt;div class="tab-pane fade show active" id="summary" role="tabpanel" aria-labelledby="summary-tab"&gt;
+ &lt;div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"&gt;
+ &lt;h3&gt;
+ COVID-19 World Status
+ &lt;/h3&gt;
+ &lt;/div&gt;
+
+ &lt;section class="jumbotron text-center"&gt;
+ &lt;div class="container-fluid"&gt;
+ &lt;div class="row"&gt;
+ &lt;div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 mb-2"&gt;
+ &lt;div class="card bg-info text-white shadow-lg rounded h-100"&gt;
+ &lt;div class="card-body"&gt;
+ &lt;h5 class="card-title"&gt;Total Cases&lt;/h5&gt;
+ &lt;p class="card-text"&gt;
+ &lt;span id="total_cases"&gt;&lt;/span&gt;
+ &lt;/p&gt;</description></item><item><title>Periodic Table</title><link>https://arshovon.com/apps/periodic_table/</link><pubDate>Tue, 15 Sep 2015 17:15:10 +0600</pubDate><guid>https://arshovon.com/apps/periodic_table/</guid><description>&lt;html&gt;
+ &lt;head&gt;
+ &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;link rel="stylesheet" href="css/bootstrap.min.css"&gt;
+ &lt;link rel="stylesheet" href="css/codepen_periodic_table.css" /&gt;
+ &lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+ &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+ &lt;link rel="shortcut icon" href="css/chemistry.png" /&gt;
+ &lt;title&gt;Periodic Table&lt;/title&gt;
+
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;div id="wrapper"&gt;
+ &lt;h1&gt;The Periodic Table&lt;/h1&gt;
+ &lt;h3&gt;
+ Developed by
+ &lt;a target="_blank" href="https://arshovon.com/" title="Ahmedur Rahman Shovon"&gt;
+&lt;span class="developer_info"&gt;Ahmedur Rahman Shovon&lt;/span&gt;
+ &lt;/a&gt;
+ &amp;
+ &lt;a target="_blank" href="https://imranpollob.com/" title="Imran Pollob"&gt;
+&lt;span class="developer_info"&gt;Imran Pollob&lt;/span&gt;
+ &lt;/a&gt;&lt;/h3&gt;
+ &lt;div id="key"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;span class="swatch element-metal"&gt;&lt;/span&gt;Metals&lt;/li&gt;
+ &lt;li&gt;&lt;span class="swatch element-non-metal"&gt;&lt;/span&gt;Non-Metals&lt;/li&gt;
+ &lt;li&gt;&lt;span class="swatch element-alkali-metal"&gt;&lt;/span&gt;Alkali Metals&lt;/li&gt;
+ &lt;li&gt;&lt;span class="swatch element-alkali-earth-metal"&gt;&lt;/span&gt;Alkali Earth Metals&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;span class="swatch element-transition-metal"&gt;&lt;/span&gt;Transitional Metals&lt;/li&gt;
+ &lt;li&gt;&lt;span class="swatch element-lanthoid"&gt;&lt;/span&gt;Lanthoids&lt;/li&gt;
+ &lt;li&gt;&lt;span class="swatch element-actinoid"&gt;&lt;/span&gt;Actinoids&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;span class="swatch element-metalloid"&gt;&lt;/span&gt;Metaloids&lt;/li&gt;
+ &lt;li&gt;&lt;span class="swatch element-halogen"&gt;&lt;/span&gt;Halogens&lt;/li&gt;
+ &lt;li&gt;&lt;span class="swatch element-noble-gas"&gt;&lt;/span&gt;Noble Gas&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/div&gt;
+ &lt;div id="elements"&gt;
+ &lt;!-- Row One --&gt;
+ &lt;div class="element-non-metal"&gt;
+ &lt;div class="chip"&gt;
+ &lt;div class="face front"&gt;
+ &lt;i&gt;1&lt;/i&gt;
+ &lt;strong&gt;H&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;div class="face back" data-toggle="modal" data-target="#myModal"&gt;
+ &lt;p&gt;Hydrogen&lt;span&gt;1.0079&lt;/span&gt;&lt;/p&gt;&lt;p&gt;
+ &lt;/p&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-blank"&gt;&lt;/div&gt;
+ &lt;div class="element-noble-gas"&gt;
+ &lt;div class="chip"&gt;
+ &lt;div class="face front"&gt;
+ &lt;i&gt;2&lt;/i&gt;
+ &lt;strong&gt;He&lt;/strong&gt;
+ &lt;/div&gt;
+
+ &lt;div class="face back" data-toggle="modal" data-target="#myModal"&gt;
+ &lt;p&gt;Helium&lt;span&gt;4.0026&lt;/span&gt;&lt;/p&gt;&lt;p&gt;
+ &lt;/p&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;!-- //Row One --&gt;
+
+ &lt;!-- Row Two --&gt;
+ &lt;div class="element-alkali-metal"&gt;
+ &lt;div class="chip"&gt;
+ &lt;div class="face front"&gt;
+ &lt;i&gt;3&lt;/i&gt;
+ &lt;strong&gt;Li&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;div class="face back" data-toggle="modal" data-target="#myModal"&gt;
+ &lt;p&gt;Lithium&lt;span&gt;6.941&lt;/span&gt;&lt;/p&gt;</description></item><item><title>Typespeed</title><link>https://arshovon.com/apps/typespeed/</link><pubDate>Sun, 05 Oct 2014 13:15:10 +0600</pubDate><guid>https://arshovon.com/apps/typespeed/</guid><description>&lt;html&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+	 &lt;meta name="robots" content="index,follow"&gt;
+
+	 &lt;meta name="keywords" content="Type speed, type testing, one minute type test"&gt;
+	 &lt;meta name="description" content="One minute type testing application with most popular English words."/&gt;
+	 &lt;meta name="author" content="Ahmedur Rahman Shovon"&gt;
+
+	 &lt;!-- Open Graph Protocol--&gt;
+	 &lt;meta property="og:url" content="https://arshovon.com/apps/typespeed/"&gt;
+	 &lt;meta property="og:type" content="website"&gt;
+	 &lt;meta property="og:title" content="Type Speed"&gt;
+	 &lt;meta property="og:description" content="One minute type testing application with most popular English words."&gt;
+	 &lt;meta property="og:image" content="https://arshovon.com/apps/typespeed/screenshots/typespeed.png"&gt;
+	 &lt;meta property="og:image:secure_url" content="https://arshovon.com/apps/typespeed/screenshots/typespeed.png"&gt;
+	 &lt;meta property="og:image:type" content="image/png" /&gt;
+	 &lt;meta property="og:image:alt" content="Type Speed" /&gt;
+	 &lt;meta property="og:site_name" content="Type Speed"/&gt;
+	 &lt;meta property="og:locale" content="en-us"&gt;
+
+	&lt;style type="text/css"&gt;
+
+		body{
+			background: aliceblue;
+		}
+		.txtarea{
+			margin: 2px auto;
+			width: 80%;
+			padding: 10px;
+			vertical-align: top;
+			text-align: left;
+			height: 62%;
+			overflow: hidden;
+			line-height: 30px;
+			font-family: Verdana;
+			font-size: 24px;
+			color: black;
+			border: 3px solid rgb(1, 1, 10);
+			border-radius: 7px;
+			background: white;
+		}
+		.txtarea div{
+			display: inline;
+		}
+		.highlight{
+			background: rgb(231, 223, 221);
+			color: rgb(20, 133, 162);
+			padding: 3px 6px;
+			border: 2px solid rgb(185, 164, 168);
+			border-radius: 5px;
+		}
+		.ac
+		{
+			color: green;
+		}
+		.wa{
+			color: red;
+		}
+		.in{
+			margin: 10px auto;
+			width: 40%;
+		}
+		input[type="text"]{
+
+			font-family: Verdana;
+			text-align: left;
+			font-size: 26px;
+			color: black;
+			border: 3px solid rgb(1, 1, 10);
+			border-radius: 7px;
+			background: white;
+			padding: 10px;
+			width: 100%;
+			outline: 0;
+		}
+		input[type="text"]:focus{
+			border: 3px solid #0d6db6;
+			color:#333;
+			border-radius: 7px;
+		}
+		#res{
+			display: none;
+			padding: 20px;
+			position: fixed;
+			left:34%;
+			top:35%;
+			border-radius: 7px;
+			line-height: 40px;
+			font-family: Verdana;
+			font-size: 28px;
+			color: black;
+			border: 3px solid rgb(1, 1, 10);
+			border-radius: 7px;
+			background: white;
+		}
+		#res h3{
+			display: inline;
+			margin: 0;
+		}
+		#res p{
+			margin: 2px;
+		}
+		#count{
+			line-height: 30px;
+			font-family: Verdana;
+			font-size: 24px;
+			color: black;
+			border: 3px solid rgb(1, 1, 10);
+			border-radius: 7px;
+			background: rgb(129, 206, 190);
+			width: 40%;
+			margin: 10px auto;
+			text-align: center;
+			padding: 5px;
+		}
+		#count p{
+			margin: 0px;
+		}
+		#reset {
+			display:block;
+			margin: 0px auto;
+			padding:5px;
+			text-decoration:none;
+			width:20%;
+			color:rgb(20, 133, 162);
+			background: #587898;
+			cursor: pointer;
+			font-family: Verdana;
+			font-size: 24px;
+			color: black;
+			border: 3px solid rgb(1, 1, 10);
+			border-radius: 7px;
+			text-align: center;
+		}
+		#reset:hover{
+			color:#fff;
+			background: #3279BB;
+			cursor: pointer;
+			border: 4px solid #0d6db6;
+		}
+		.ribbon-outer
+		{
+			width:105px;
+			height:108px;
+			overflow:hidden;
+			position:absolute;
+			top: 0px;
+			right: 0px;
+		}
+		.ribbon-inner
+		{
+			font: bold 18px Sans-Serif;
+			background: rgb(255,175,75); /* Old browsers */
+			background: -moz-linear-gradient(top, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,175,75,1)), color-stop(100%,rgba(255,146,10,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
+			text-align:center;
+			color:#FFFFFF;
+			text-align:center;
+			padding:5px;
+			top:25px;
+			right:19px;
+			width:150px;
+			position:relative;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-webkit-transition: all .5s ease-in-out;
+			-moz-transition: all .5s ease-in-out;
+			-ms-transition: all .5s ease-in-out;
+			-o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+		}
+		.ribbon-inner:hover{
+			cursor: pointer;
+			background: rgb(167,207,223);
+			background: -moz-linear-gradient(top, rgba(167,207,223,1) 0%, rgba(35,83,138,1) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,207,223,1)), color-stop(100%,rgba(35,83,138,1)));
+			background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+			background: -o-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+			background: -ms-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+			background: linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );
+			color: #fff;
+		}
+		.ribbon-inner:before, .ribbon-inner:after {
+			content: "";
+			border-top: 3px solid #CC7A29;
+			border-left: 3px solid transparent;
+			border-right: 3px solid transparent;
+			position:absolute;
+			bottom: -3px;
+		}
+		.ribbon-inner:before {
+			left: 0;
+		}
+		.ribbon-inner:after {
+			right: 0;
+		}
+		a
+		{
+			text-decoration: none;
+		}
+		.custom-menu {
+			z-index:1000;
+			position: absolute;
+			background-color:#C0C0C0;
+			border: 1px solid black;
+			padding: 2px;
+		}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+	&lt;div class="txtarea" id="words"&gt;
+	&lt;/div&gt;
+	&lt;div id="count"&gt;Time remaining &lt;span id="counter"&gt; 60&lt;/span&gt; seconds&lt;/div&gt;
+	&lt;div class="in" id="inp"&gt;
+		&lt;input type="text" id="ans" placeholder="Click here to start the quiz. Press space after each word."&gt;
+	&lt;/div&gt;
+	&lt;div id="reset"&gt;Reset&lt;/div&gt;
+	&lt;div id="res" style="display: none;"&gt;&lt;p&gt;&lt;/p&gt;</description></item><item><title>Root finding methods</title><link>https://arshovon.com/apps/root_finding_methods/</link><pubDate>Tue, 15 Jul 2014 17:15:10 +0600</pubDate><guid>https://arshovon.com/apps/root_finding_methods/</guid><description>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;title&gt;Root Finding Methods&lt;/title&gt;
+
+ &lt;!--Including required css file--&gt;
+ &lt;link rel="stylesheet" type="text/css" href="css/style.css"/&gt;
+
+ &lt;!-- [favicon] begin --&gt;
+ &lt;link rel="shortcut icon" href="image/favicon.ico"/&gt;
+ &lt;!-- [favicon] end --&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--Showing the scrolldown menu--&gt;
+&lt;div id="advanceMenu"&gt;
+ &lt;div class="ribbon"&gt;
+ &lt;div id="equation"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;/div&gt;
+ &lt;div id="showbisec"&gt;&lt;span&gt;Bisection Method&lt;/span&gt;&lt;/div&gt;
+ &lt;div id="showfalsepos"&gt;&lt;span&gt;False Position Method&lt;/span&gt;&lt;/div&gt;
+ &lt;div id="shownewtonraphson"&gt;&lt;span&gt;Newton-Raphson Method&lt;/span&gt;&lt;/div&gt;
+ &lt;div id="showsecant"&gt;&lt;span&gt;Secant Method&lt;/span&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--Showing the scrolldown menu buttons--&gt;
+&lt;div class="advanceMenuBtn"&gt;&lt;img src="image/showhide.png" alt="Show and Hide the Dashboard"/&gt;&lt;/div&gt;
+&lt;div class="closeMenuBtn"&gt;&lt;img src="image/close.png" alt="Show and Hide the Dashboard"/&gt;&lt;/div&gt;
+
+&lt;!--Showing the ribbon that connects the user to facebook--&gt;
+&lt;div id="rib" class="ribbon-outer" title="Click to visit my website"&gt;
+ &lt;div id="ribtext" class="ribbon-inner"&gt;Shovon&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--Showing the form--&gt;
+&lt;div class="login" id="formshow"&gt;
+ &lt;h2&gt;Root Finding Method&lt;/h2&gt;
+ &lt;p class="form"&gt;
+ &lt;p class="textlabel" id="inputeq"&gt;
+ &lt;label for="eq"&gt;Enter the equation (eg x*x*x-2*x-5):&lt;/label&gt;
+ &lt;input class="bigtxt" type="text" value="x*x*x-2*x-5" id="eq"/&gt;
+ &lt;/p&gt;
+ &lt;/p&gt;
+ &lt;p class="footer spfooter"&gt;
+ &lt;input type="button" id="saveeq" value="Find root" class="button formbutton bordered"&gt;
+ &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!--Showing root finding process for Bisection Method--&gt;
+&lt;div class="showres" id="bisec"&gt;
+ &lt;h2 class="showroot"&gt;Bisection Method&lt;/h2&gt;
+ &lt;p class="restextlabel" id="bisecres"&gt;&lt;/p&gt;</description></item><item><title>Meme Creator</title><link>https://arshovon.com/apps/meme_creator/</link><pubDate>Mon, 14 Jul 2014 16:13:50 +0600</pubDate><guid>https://arshovon.com/apps/meme_creator/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Meme Creator&lt;/title&gt;
+		&lt;meta name="keywords" content="meme creator, canvas, meme"&gt;
+		&lt;meta name="description" content="Create a meme with custom image"/&gt;
+		&lt;meta name="author" content="Ahmedur Rahman Shovon"&gt;
+
+		&lt;meta property="og:url" content="https://arshovon.com/"&gt;
+		&lt;meta property="og:type" content="website"&gt;
+		&lt;meta property="og:title" content="Meme Creator"&gt;
+		&lt;meta property="og:description" content="Create a meme with custom image"&gt;
+		&lt;meta property="og:image" content="https://arshovon.com/apps/meme_creator/demo/sho_gray.png"&gt;
+		&lt;meta property="og:image:secure_url" content="https://arshovon.com/apps/meme_creator/demo/sho_gray.png"&gt;
+		&lt;meta property="og:image:type" content="image/png"&gt;
+		&lt;meta property="og:image:alt" content="Meme Creator" /&gt;
+		&lt;meta property="og:site_name" content="Meme Creator"/&gt;
+		&lt;meta property="og:locale" content="en-us"&gt;
+		&lt;style&gt;
+		@import url(http://fonts.googleapis.com/css?family=Changa+One);
+		@import url(http://fonts.googleapis.com/css?family=Kavoon);
+		@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great);
+		@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
+		@import url(http://fonts.googleapis.com/css?family=Galindo);
+		body{
+			margin: 2px auto;
+		}
+		#wrapper {
+			width: 100%;
+			margin: 0px auto;
+			padding: 0px;
+		}
+		#content {
+			width: 95%;
+			padding: 0px 20px;
+			margin: 10px auto;
+			background: rgb(247, 247, 247);
+			border: 1px solid rgba(147, 184, 189,0.8);
+			-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			 -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			 box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			-webkit-box-shadow: 5px;
+			-moz-border-radius: 5px;
+				 border-radius: 5px;
+			 -o-border-radius: 5px;
+		 -webkit-border-radius: 5px;
+		}
+		#wrapper h1 {
+			background: -webkit-repeating-linear-gradient(-45deg,
+			 rgb(18, 83, 93) ,
+			 rgb(18, 83, 93) 20px,
+			 rgb(64, 111, 118) 20px,
+			 rgb(64, 111, 118) 40px,
+			 rgb(18, 83, 93) 40px);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			font-size: 26px;
+			color: rgb(6, 106, 117);
+			padding: 2px 0px;
+			font-family: Impact;
+			font-weight: bold;
+			text-align: center;
+		}
+		h1, h2 {
+			color: #363636;
+			font-family: Georgia, serif;
+			line-height: 1.8em;
+			font-weight: 500;
+			padding: 12px 0;
+			text-align: center;
+			font-size: 24px;
+			margin: 0px;
+			margin-top: 0px;
+			margin-bottom: 2px;
+		}
+		#wrapper h1:after {
+			content: ' ';
+			display: block;
+			width: 100%;
+			height: 2px;
+			margin-top: 10px;
+			background: -moz-linear-gradient(left, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%);
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), color-stop(100%,rgba(147,184,189,0)));
+			background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+			background: -o-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+			background: -ms-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+			background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+		}
+		#wrapper p{
+			margin:10px;
+		}
+		#wrapper label{
+			color: rgb(64, 92, 96);
+			font-size: 102%;
+		}
+
+		/**** advanced input styling ****/
+		/* placeholder */
+		::-webkit-input-placeholder {
+			color: rgb(190, 188, 188);
+			font-style: italic;
+		}
+		input:-moz-placeholder,
+		textarea:-moz-placeholder{
+			color: rgb(190, 188, 188);
+			font-style: italic;
+		}
+		input {
+		 outline: none;
+		}
+
+		/* all the input except submit and checkbox */
+
+		input:not([type="checkbox"]){
+			width: 93%;
+			margin-top: 4px;
+			padding: 8px 6px;
+			border: 1px solid rgb(178, 178, 178);
+			-webkit-appearance: textfield;
+			-webkit-box-sizing: content-box;
+			 -moz-box-sizing : content-box;
+			 box-sizing : content-box;
+			-webkit-border-radius: 3px;
+			 -moz-border-radius: 3px;
+			 border-radius: 3px;
+			-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+			 -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+			 box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+			-webkit-transition: all 0.2s linear;
+			 -moz-transition: all 0.2s linear;
+			 -o-transition: all 0.2s linear;
+			 transition: all 0.2s linear;
+			 font-family: Georgia,Arial;
+
+		}
+		input:not([type="checkbox"]):active,
+		input:not([type="checkbox"]):focus{
+		 color: #333;
+		 border-color: rgba(41, 92, 161, 0.4);
+		 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+		 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+		 -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+		 outline: 0 none;
+		}
+
+
+		/*styling button */
+		button{
+			width: inherit;
+			cursor: pointer;
+			background: rgb(61, 157, 179);
+			padding: 2px 20px;
+			font-family: Arial,sans-serif;
+			background: rgb(61, 157, 179);
+			color: #fff;
+			font-size: 20px;
+			border: 1px solid rgb(28, 108, 122);
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+			-webkit-border-radius: 3px;
+			 -moz-border-radius: 3px;
+			 border-radius: 3px;
+			-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+			 0px 0px 0px 3px rgb(254, 254, 254),
+			 0px 5px 3px 3px rgb(210, 210, 210);
+			 -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+			 0px 0px 0px 3px rgb(254, 254, 254),
+			 0px 5px 3px 3px rgb(210, 210, 210);
+			 box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+			 0px 0px 0px 3px rgb(254, 254, 254),
+			 0px 5px 3px 3px rgb(210, 210, 210);
+			-webkit-transition: all 0.2s linear;
+			 -moz-transition: all 0.2s linear;
+			 -o-transition: all 0.2s linear;
+			 transition: all 0.2s linear;
+		}
+		button:hover{
+			background: rgb(74, 179, 198);
+		}
+		button:active,
+		button:focus{
+			background: rgb(40, 137, 154);
+			top: 1px;
+			border: 1px solid rgb(12, 76, 87);
+			-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+			 -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+			 box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+		}
+
+		#my_canvas{
+			padding: 0;
+			margin: 10px auto;
+			margin-top: 0px;
+			border: 2px solid teal;
+			display: none;
+		}
+		#show_image{
+			display: none;
+		}
+		table{
+			margin-bottom: 10px;
+		}
+		td{
+			vertical-align: top;
+			padding-bottom: 10px;
+		}
+		td.form_td{
+			padding: 0px 5px;
+			background: rgb(247, 247, 247);
+			border: 1px solid rgba(147, 184, 189,0.8);
+			-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			 -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			 box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			-webkit-box-shadow: 5px;
+			-moz-border-radius: 5px;
+				 border-radius: 5px;
+			 -o-border-radius: 5px;
+		 -webkit-border-radius: 5px;
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+		}
+		#footer{
+			margin: 0px;
+		}
+		/*Ribbon CSS*/
+		.nicediv{
+			padding: 0px 20px;
+			margin: 0px auto;
+			margin-bottom: 10px;
+			background: rgb(247, 247, 247);
+			border: 1px solid rgba(147, 184, 189,0.8);
+			-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			 -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			 box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+			-webkit-box-shadow: 5px;
+			-moz-border-radius: 5px;
+				 border-radius: 5px;
+			 -o-border-radius: 5px;
+		 -webkit-border-radius: 5px;
+		 text-align:center;
+			padding:5px;
+			-webkit-transition: all .5s ease-in-out;
+			-moz-transition: all .5s ease-in-out;
+			-ms-transition: all .5s ease-in-out;
+			-o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+			color: rgb(6, 106, 117);
+		}
+		.nicediv:hover{
+			-webkit-transition: all .5s ease-in-out;
+			-moz-transition: all .5s ease-in-out;
+			-ms-transition: all .5s ease-in-out;
+			-o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+			cursor: pointer;
+			background: rgb(74, 179, 198);
+			color: #fff;
+			-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+			box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+		}
+		.nicediv h3{
+			 background: -webkit-repeating-linear-gradient(-45deg,
+			 rgb(18, 83, 93) ,
+			 rgb(18, 83, 93) 20px,
+			 rgb(64, 111, 118) 20px,
+			 rgb(64, 111, 118) 40px,
+			 rgb(18, 83, 93) 40px);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			font-size: 18px;
+			color: rgb(6, 106, 117);
+			font-family: Impact;
+			font-weight: normal;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+		/*checkbox*/
+		input[type=checkbox]
+		{
+			border: 1px solid #c0c0c0;
+			margin: 0 0.1em 0 0;
+			padding: 0;
+			font-size: 16px;
+			line-height: 1em;
+			width: 1.25em;
+			height: 1.25em;
+			vertical-align: text-top;
+			display: inline-block;
+			font-family: verdana;
+		}
+
+		&lt;/style&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div id="wrapper"&gt;
+		 &lt;div id="content"&gt;
+		 &lt;h1&gt;Meme Creator&lt;/h1&gt;
+		 &lt;table width="100%"&gt;
+		 	&lt;tr width="100%"&gt;
+		 		&lt;td width="70%" class="form_td"&gt;
+							&lt;p&gt;
+								&lt;img src="" alt="" id="show_image"&gt;
+							&lt;/p&gt;</description></item><item><title>Drumpad</title><link>https://arshovon.com/apps/drumpad/</link><pubDate>Fri, 02 Mar 2012 15:15:10 +0600</pubDate><guid>https://arshovon.com/apps/drumpad/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+ &lt;title&gt;Drumpad&lt;/title&gt;
+ &lt;meta name="description" content="Drumpad is a web application to play Yamaha RX15 drumpad online"&gt;
+ &lt;meta name="keywords" content="Yamaha RX15 drumpad, Play Drums, Drum Free, Drumpad"&gt;
+ &lt;meta name="author" content="Ahmedur Rahman Shovon"&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;link rel="stylesheet" href="assets/css/font.css"/&gt;
+ &lt;link rel="stylesheet" href="assets/css/style.css"/&gt;
+ &lt;link rel="shortcut icon" href="assets/image/head.ico" type="image/x-icon"&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;audio src="assets/sounds/Yamaha-RX15-Ride-Cymbal.wav" id="cymbal1"&gt;&lt;/audio&gt;
+ &lt;audio src="assets/sounds/Yamaha-RX15-Tom1.wav" id="tom1"&gt;&lt;/audio&gt;
+ &lt;audio src="assets/sounds/Yamaha-RX15-Tom2.wav" id="tom2"&gt;&lt;/audio&gt;
+ &lt;audio src="assets/sounds/Yamaha-RX15-Crash-Cymbal.wav" id="cymbal2"&gt;&lt;/audio&gt;
+ &lt;audio src="assets/sounds/Yamaha-RX15-Bass-Drum.wav" id="bass"&gt;&lt;/audio&gt;
+ &lt;audio src="assets/sounds/Yamaha-RX15-Hi-Tune-Snare.wav" id="snare"&gt;&lt;/audio&gt;
+ &lt;audio src="assets/sounds/Yamaha-RX15-Open-Hi-Hat.wav" id="hihat1"&gt;&lt;/audio&gt;
+ &lt;audio src="assets/sounds/Yamaha-RX15-Closed-Hi-Hat.wav" id="hihat2"&gt;&lt;/audio&gt;
+ &lt;div id="drum_wrapper" class="drums"&gt;
+ &lt;table class="table_space"&gt;
+ &lt;tr&gt;
+ &lt;td id="cymbal1_pad" class="drum_pad"&gt;A &lt;br&gt;&lt;small&gt;(Ride-Cymbal)&lt;/small&gt;&lt;/td&gt;
+ &lt;td id="tom1_pad" class="drum_pad"&gt;S &lt;br&gt;&lt;small&gt;(Tom1)&lt;/small&gt;&lt;/td&gt;
+ &lt;td id="tom2_pad" class="drum_pad"&gt;D &lt;br&gt;&lt;small&gt;(Tom2)&lt;/small&gt;&lt;/td&gt;
+ &lt;td id="cymbal2_pad" class="drum_pad"&gt;F &lt;br&gt;&lt;small&gt;(Crash-Cymbal)&lt;/small&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td id="bass_pad" class="drum_pad"&gt;J &lt;br&gt;&lt;small&gt;(Bass)&lt;/small&gt;&lt;/td&gt;
+ &lt;td id="snare_pad" class="drum_pad"&gt;K &lt;br&gt;&lt;small&gt;(Snare)&lt;/small&gt;&lt;/td&gt;
+ &lt;td id="hihat1_pad" class="drum_pad"&gt;L &lt;br&gt;&lt;small&gt;(Open-Hi-Hat)&lt;/small&gt;&lt;/td&gt;
+ &lt;td id="hihat2_pad" class="drum_pad"&gt;; &lt;br&gt;&lt;small&gt;(Closed-Hi-Hat)&lt;/small&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/table&gt;
+ &lt;/div&gt;
+ &lt;div class="drums_lesson"&gt;
+ &lt;table&gt;
+ &lt;tr&gt;
+ &lt;td class="lesson" id="two_and_four"&gt;
+ 1&lt;br&gt;&lt;small&gt;(two and four)&lt;/small&gt;
+ &lt;/td&gt;
+ &lt;td class="lesson" id="four_on_the_floor"&gt;
+ 2&lt;br&gt;&lt;small&gt;(four on the floor)&lt;/small&gt;
+ &lt;/td&gt;
+ &lt;td class="lesson" id="one_drop"&gt;
+ 3&lt;br&gt;&lt;small&gt;(one drop)&lt;/small&gt;
+ &lt;/td&gt;
+ &lt;td class="lesson" id="boom_boom_clap"&gt;
+ 4&lt;br&gt;&lt;small&gt;(boom boom clap)&lt;/small&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td colspan="4" class="center_td"&gt;
+ DRUMPAD by Shovon&lt;br&gt;
+ &lt;small&gt;(play drums using keyboard and or with mouse)&lt;/small&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/table&gt;
+ &lt;/div&gt;
+ &lt;script src="assets/js/jquery-2.1.0.min.js"&gt;&lt;/script&gt;
+ &lt;script src="assets/js/music.js"&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description></item></channel></rss>

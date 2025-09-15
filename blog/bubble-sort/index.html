@@ -1,238 +1,244 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content=index,follow><meta name=keywords content=algorithm,sorting,time-complexity><meta name=description content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges"><meta name=author content="Ahmedur Rahman Shovon"><meta property=og:url content=https://arshovon.com/blog/bubble-sort/><meta property=og:type content=website><meta property=og:title content="Bubble Sort - Ahmedur Rahman Shovon"><meta name=og:description content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges"><meta property=og:image content=https://arshovon.com/blog/images/bubble_sort.png><meta property=og:image:secure_url content=https://arshovon.com/blog/images/bubble_sort.png><meta property=og:image:type content=image/png><meta property=og:image:alt content="Bubble Sort - Ahmedur Rahman Shovon"><meta property=og:site_name content="Ahmedur Rahman Shovon"><meta property=og:locale content=en-us><meta name=twitter:card content=summary><meta name=twitter:image content=https://arshovon.com/blog/images/bubble_sort.png><meta name=twitter:url content=https://arshovon.com/blog/bubble-sort/><meta property=twitter:title content="Bubble Sort - Ahmedur Rahman Shovon"><meta name=twitter:description content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges"><title>Bubble Sort - Ahmedur Rahman Shovon</title><link rel=canonical href=https://arshovon.com/blog/bubble-sort/><link rel=icon href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel="shortcut icon" href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx crossorigin=anonymous><script src=https://kit.fontawesome.com/9c9dff05f4.js crossorigin=anonymous></script><link rel=stylesheet href=https://arshovon.com/assets/css/arsho.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-119139307-1');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/prolog.min.js integrity="sha512-JrKKSmGetELE+7du9jrRs4R9dC6QO5gFIk5s7RRI7wWdG3yueqjDOJPX/3eDc83bE/qyNjMr4gaYVqKDhjQkpg==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dockerfile.min.js integrity="sha512-y0uGK4Ql/eJrIn2uOu2Hfc/3wnQpAHlEF58pL7akgWaVnuOJ8D5Aal/VPRKyMGADVuAavg1yVdLUpn9PlnGmYA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/shell.min.js integrity="sha512-oXIjzcLt5aPmQEl6MaYwcoCX70QJZq1qiyEYE3tlOixhfsYiTKKftLjJFuRjV7wo3WTHI+wfVr3EJQfRJrMnSQ==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js integrity="sha512-64D4TOespcFsS6vnnca/aON48/6XNG61BAtQj7WG+8qAZXclMfx92cXC7l56/FuHLNY9FeDvLPqVuT3x4AptgA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js></script><link rel=stylesheet href=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css></head><header class="d-print-none header mb-md-4 mb-lg-4 mb-xl-4"><nav id=main-navbar class="navbar fixed-top bg-light navbar-expand-md navbar-light" aria-label=site_top_menu><div class="container px-md-0"><a class=navbar-brand href=/>AR Shovon</a>
-<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#site_top_menu aria-controls=site_top_menu aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=site_top_menu><div class=mx-auto><ul class="navbar-nav me-auto mb-2 mb-md-0"><li class=nav-item><a class=nav-link title=Home href=/><i class="fa fa-home fa-lg me-1"></i>Home</a></li><li class=nav-item><a class=nav-link title=Education href=/#Education><i class="fa fa-graduation-cap fa-lg me-1"></i>Education</a></li><li class=nav-item><a class=nav-link title=Experiences href=/#Experiences><i class="fa fa-briefcase fa-lg me-1"></i>Experiences</a></li><li class=nav-item><a class=nav-link title=Publications href=/#Publications><i class="fa fa-book fa-lg me-1"></i>Publications</a></li><li class=nav-item><a class=nav-link title=Projects href=/#Projects><i class="fa fa-code fa-lg me-1"></i>Projects</a></li><li class=nav-item><a class=nav-link title=Awards href=/#Awards><i class="fa fa-award fa-lg me-1"></i>Awards</a></li><li class=nav-item><a class=nav-link title=Services href=/#Services><i class="fa fa-handshake fa-lg me-1"></i>Services</a></li><li class=nav-item><a class=nav-link title="Blog posts" href=/blog><i class="fa fa-laptop-code fa-lg me-1"></i>Blog</a></li><li class=nav-item><a class=nav-link title=Apps href=/apps><i class="fa fa-globe fa-lg me-1"></i>Apps</a></li></ul></div></div></div></nav></header><body><div class="container-fluid container-xl bg-white"><div class=row><header class="text-bg-light px-md-2 pb-md-2 text-center list-jumbotron"><h1 class="pt-5 fs-3 text-center">Bubble Sort</h1><h2 class="text-center fs-5 mb-5">By
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="index,follow"><meta name=keywords content="algorithm,sorting,time-complexity"><meta name=description content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges"><meta name=author content="Ahmedur Rahman Shovon"><meta property="og:url" content="https://arshovon.com/blog/bubble-sort/"><meta property="og:type" content="website"><meta property="og:title" content="Bubble Sort - Ahmedur Rahman Shovon"><meta name=og:description content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges"><meta property="og:image" content="https://arshovon.com/blog/images/bubble_sort.png"><meta property="og:image:secure_url" content="https://arshovon.com/blog/images/bubble_sort.png"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Bubble Sort - Ahmedur Rahman Shovon"><meta property="og:site_name" content="Ahmedur Rahman Shovon"><meta property="og:locale" content="en-us"><meta name=twitter:card content="summary"><meta name=twitter:image content="https://arshovon.com/blog/images/bubble_sort.png"><meta name=twitter:url content="https://arshovon.com/blog/bubble-sort/"><meta property="twitter:title" content="Bubble Sort - Ahmedur Rahman Shovon"><meta name=twitter:description content="Bubble sort characteristics, algorithm, implementation, comparison between bubble sort and insertion sort, and practice challenges"><title>Bubble Sort - Ahmedur Rahman Shovon</title><link rel=canonical href=https://arshovon.com/blog/bubble-sort/><link rel=icon href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel="shortcut icon" href=https://arshovon.com/assets/images/favicon.ico type=image/x-icon><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx crossorigin=anonymous><script src=https://kit.fontawesome.com/9c9dff05f4.js crossorigin=anonymous></script><link rel=stylesheet href=https://arshovon.com/assets/css/arsho.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-119139307-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-119139307-1")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/prolog.min.js integrity="sha512-JrKKSmGetELE+7du9jrRs4R9dC6QO5gFIk5s7RRI7wWdG3yueqjDOJPX/3eDc83bE/qyNjMr4gaYVqKDhjQkpg==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dockerfile.min.js integrity="sha512-y0uGK4Ql/eJrIn2uOu2Hfc/3wnQpAHlEF58pL7akgWaVnuOJ8D5Aal/VPRKyMGADVuAavg1yVdLUpn9PlnGmYA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/shell.min.js integrity="sha512-oXIjzcLt5aPmQEl6MaYwcoCX70QJZq1qiyEYE3tlOixhfsYiTKKftLjJFuRjV7wo3WTHI+wfVr3EJQfRJrMnSQ==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js integrity="sha512-64D4TOespcFsS6vnnca/aON48/6XNG61BAtQj7WG+8qAZXclMfx92cXC7l56/FuHLNY9FeDvLPqVuT3x4AptgA==" crossorigin=anonymous referrerpolicy=no-referrer></script><script src=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js></script><link rel=stylesheet href=https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css></head><header class="d-print-none header mb-md-4 mb-lg-4 mb-xl-4"><nav id=main-navbar class="navbar fixed-top bg-light navbar-expand-md navbar-light" aria-label=site_top_menu><div class="container px-md-0"><a class=navbar-brand href=/>AR Shovon
+</a><button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#site_top_menu aria-controls=site_top_menu aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=site_top_menu><div class=mx-auto><ul class="navbar-nav me-auto mb-2 mb-md-0"><li class=nav-item><a class=nav-link title=Home href=/><i class="fa fa-home fa-lg me-1"></i>
+Home</a></li><li class=nav-item><a class=nav-link title=Education href=/#Education><i class="fa fa-graduation-cap fa-lg me-1"></i>
+Education</a></li><li class=nav-item><a class=nav-link title=Experiences href=/#Experiences><i class="fa fa-briefcase fa-lg me-1"></i>
+Experiences</a></li><li class=nav-item><a class=nav-link title=Publications href=/#Publications><i class="fa fa-book fa-lg me-1"></i>
+Publications</a></li><li class=nav-item><a class=nav-link title=Projects href=/#Projects><i class="fa fa-code fa-lg me-1"></i>
+Projects</a></li><li class=nav-item><a class=nav-link title=Awards href=/#Awards><i class="fa fa-award fa-lg me-1"></i>
+Awards</a></li><li class=nav-item><a class=nav-link title=Services href=/#Services><i class="fa fa-handshake fa-lg me-1"></i>
+Services</a></li><li class=nav-item><a class=nav-link title="Blog posts" href=/blog><i class="fa fa-laptop-code fa-lg me-1"></i>
+Blog</a></li><li class=nav-item><a class=nav-link title=Apps href=/apps><i class="fa fa-globe fa-lg me-1"></i>
+Apps</a></li></ul></div></div></div></nav></header><body><div class="container-fluid container-xl bg-white"><div class=row><header class="text-bg-light px-md-2 pb-md-2 text-center list-jumbotron"><h1 class="pt-5 fs-3 text-center">Bubble Sort</h1><h2 class="text-center fs-5 mb-5">By
 Ahmedur Rahman Shovon</h2><div class="mb-1 clearfix d-print-none"><small class=d-block>Published
-<time datetime=2021-04-28T03:03:14&#43;06:00>April 28, 2021</time>, Updated
-<time datetime=2025-09-09T14:05:43-05:00></i>September 9, 2025</time></small>
-<span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span>
-<span class=me-2><a href=https://arshovon.com/tags/ class="badge text-bg-secondary me-1" title="All tags"><i class="fa fa-tags"></i></a><a href=https://arshovon.com/tags/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a>
+<time datetime=2021-04-28T03:03:14+06:00>April 28, 2021</time>, Updated
+<time datetime=2025-09-15T16:56:26-05:00></i>September 15, 2025</time>
+</small><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a>
+</span><span class=me-2><a href=https://arshovon.com/tags/ class="badge text-bg-secondary me-1" title="All tags"><i class="fa fa-tags"></i></a>
+<a href=https://arshovon.com/tags/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a>
 <a href=https://arshovon.com/tags/sorting class="badge text-bg-secondary" title=sorting>sorting</a>
-<a href=https://arshovon.com/tags/time-complexity class="badge text-bg-secondary" title=time-complexity>time-complexity</a></span></div></header><main class="col-12 col-xl-8 offset-xl-2 blog p-0" role=main><article><div class=p-3><p>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in <code>n</code> iterations, all <code>n</code> elements are sorted accordingly.</p><h2 id=bubble-sort-characteristics>Bubble sort characteristics</h2><h3 id=impractical>Impractical</h3><p>Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</p><h3 id=adaptive>Adaptive</h3><p>Bubble sort is adaptive. Bubble sort performs best when the input data set is already sorted.</p><h3 id=offline>Offline</h3><p>Bubble sort works after receiving all the data. It does not sort the element when it receives them.</p><h3 id=stable>Stable</h3><p>Bubble sort is stable. Numbers with the same value appear in the output array as they appear in the input array. Let's take an input array <code>A = [3, 0, 3]</code>. In the input array, the value <code>3</code> occurs two times; at index 0 and 2. Insertion sort ensures that in the output array, the occurrences of <code>3</code> are placed in the same order as the input array.</p><h3 id=in-place>In place:</h3><p>Bubble sort sorts the input list in place. It does not require an additional list to sort the elements. It only requires a constant amount of extra memory space <code>O(1)</code>.</p><h3 id=quadratic-time-complexity>Quadratic time complexity</h3><p>It has quadratic time complexity.<br></p><ul><li>Worst Time complexity (Big-O): <code>O(n*n)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Average Time complexity (Big-Theta): <code>Θ(n*n)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Best Time complexity (Big-Omega): <code>Ω(n)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Space complexity: <code>O(1)</code></li></ul><h2 id=bubble-sort-algorithm-pseudocode>Bubble Sort algorithm pseudocode</h2><pre><code class=language-py>procedure Bubble_Sort(A: list of items)
-    for i=0 to A.length-1 inclusive do
-        swapped := false
-        for j=0 to A.length-i-2 inclusive do
-            if A[j] &gt; A[j+1] then
-                swap(A[j], A[j+1])
-                swapped := true
-            end if
-        end for
-        if not swapped then
-            break
-        end if
-    end for
-end procedure
-</code></pre><h2 id=bubble-sort-implementation-using-python-3>Bubble Sort implementation using Python 3</h2><pre><code class=language-py>&quot;&quot;&quot;
-Implementation of bubble sort algorithm
-
-Main File: bubble_sort.py
-Test File: test_bubble_sort.py
-&quot;&quot;&quot;
-
-
-def get_bubble_sorted_numbers(numbers):
-    &quot;&quot;&quot; Returns sorted list for a given list
-
-    Arguments:
-    numbers -- list of numbers
-    &quot;&quot;&quot;
-    for i in range(len(numbers)):
-        swapped = False
-        for j in range(len(numbers) - i - 1):
-            if numbers[j] &gt; numbers[j + 1]:
-                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
-                swapped = True
-        if not swapped:
-            break
-    return numbers
-</code></pre><h2 id=unit-testing-bubble-sort-implementation-using-python-3>Unit testing bubble sort implementation using Python 3</h2><pre><code class=language-py>&quot;&quot;&quot;
-Unittest of bubble sort implementation
-
-Test File: test_bubble_sort.py
-Main File: bubble_sort.py
-&quot;&quot;&quot;
-import unittest
-from bubble_sort import get_bubble_sorted_numbers
-
-
-class TestBubbleSort(unittest.TestCase):
-    def test_get_bubble_sorted_numbers_positive_unsorted(self):
-        test_case = [2, 3, 1, 4, 2, 4]
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_bubble_sorted_numbers_positive_negative_unsorted(self):
-        test_case = [2, -3, 1, -4, 2, 4]
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_bubble_sorted_numbers_same_values_positive(self):
-        test_case = [1, 1, 1, 1]
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_bubble_sorted_numbers_same_values_negative(self):
-        test_case = [-1, -1, -1]
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_bubble_sorted_numbers_single_item(self):
-        test_case = [1]
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_bubble_sorted_numbers_empty_list(self):
-        test_case = []
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_bubble_sorted_numbers_positive_negative_reverse(self):
-        test_case = [1, 0, -1]
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_bubble_sorted_numbers_negative_reverse(self):
-        test_case = [-1, -3, -56]
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-    def test_get_bubble_sorted_numbers_positive_negative_floating(self):
-        test_case = [-1.5, 3.336, -66.3, 5]
-        expected_result = sorted(test_case)
-        test_result = get_bubble_sorted_numbers(test_case.copy())
-        self.assertEqual(expected_result, test_result,
-                         f&quot;Failed on {test_case}, &quot;
-                         f&quot;Expected {expected_result}, &quot;
-                         f&quot;Found {test_result}&quot;)
-
-
-if __name__ == &quot;__main__&quot;:
-    unittest.main()
-</code></pre><figure class="figure py-2 mx-auto d-block"><img class="mx-auto d-block figure-img img-thumbnail border border-light" src=/blog/images/test_bubble_sort.png alt="Unittesting of bubble sort"><figcaption class="figure-caption text-center">Figure: Unittest result of bubble sort implementation</figcaption></figure><h2 id=comparison-between-bubble-sort-and-insertion-sort>Comparison between bubble sort and insertion sort</h2><ul><li>Insertion sort is more efficient than bubble sort as it requires fewer swaps to sort the elements.</li><li>Insertion sort is online, but bubble sort is offline. That means insertion sort sorts the elements when receiving each element but bubble sort sorts the elements only after receiving all the elements.</li></ul><p>The following table shows the comparison between insertion sort and counting sort based on the execution time.</p><table class="table table-bordered table-hover table-striped"><thead><tr><th>Set Size</th><th>Maximum Value</th><th>Bubble Sort Time</th><th>Insertion Sort Time</th></tr></thead><tbody><tr><td>10</td><td>10</td><td>0.04383 seconds</td><td>0.02296 seconds</td></tr><tr><td>1000</td><td>1000</td><td>5.54610 seconds</td><td>2.67873 seconds</td></tr><tr><td>10000</td><td>10000</td><td>68.60219 seconds</td><td>30.98420 seconds</td></tr></tbody></table><div style="margin:0 auto" class="my-4 border border-light"><canvas id=683></canvas></div><script src=https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin=anonymous></script><script type=text/javascript>var ctx=document.getElementById('683').getContext('2d');var options={type:'line',data:{labels:['10','1000','10000'],datasets:[{label:'Bubble sort',data:[0.04383,5.54610,68.60219],fill:false,borderColor:'red',backgroundColor:'red',tension:0.1},{label:'Insertion sort',data:[0.02296,2.67873,30.98420],fill:false,borderColor:'green',backgroundColor:'green',tension:0.1}]},options:{maintainAspectRatio:true,borderWidth:3,responsive:true,interaction:{mode:'x',intersect:false},plugins:{title:{display:true,position:'bottom',text:'Execution time comparison between bubble sort and insertion sort',padding:{top:10,bottom:30}},legend:{display:true,},tooltip:{mode:'nearest',callbacks:{title:function(context){context=context[0];var label=context.label||'';if(label){label='Input size: '+label+' elements';}
-return label;},label:function(context){var label=context.dataset.label||'';if(label){label+=' : ';}
-if(context.parsed.y!==null){label+=context.parsed.y+" s";}
-return label;}}}},scales:{y:{beginAtZero:false,title:{display:true,text:'Execution time in seconds'},ticks:{callback:function(value,index,values){return value+" s";}}},x:{beginAtZero:false,title:{display:true,text:'Number of input elements'}},},}};new Chart(ctx,options);</script><p>This result is generated using <code>timeit</code> module of Python with the following code.</p><pre><code class=language-py>&quot;&quot;&quot;
-Compare execution time between insertion sort and counting sort
-&quot;&quot;&quot;
-from timeit import timeit
-import random
-
-
-def get_bubble_sorted_numbers(numbers):
-    &quot;&quot;&quot; Returns a sorted list of numbers using bubble sort
-
-    Arguments:
-    numbers -- list of numbers
-    &quot;&quot;&quot;
-    for i in range(len(numbers)):
-        swapped = False
-        for j in range(len(numbers) - i - 1):
-            if numbers[j] &gt; numbers[j + 1]:
-                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
-                swapped = True
-        if not swapped:
-            break
-    return numbers
-
-
-def get_insertion_sorted_numbers(numbers):
-    &quot;&quot;&quot; Returns a sorted list of numbers using insertion sort
-
-    Arguments:
-    numbers -- list of numbers
-    &quot;&quot;&quot;
-    for i in range(1, len(numbers)):
-        value = numbers[i]
-        j = i - 1
-        while j &gt;= 0 and numbers[j] &gt; value:
-            numbers[j + 1] = numbers[j]
-            j -= 1
-        numbers[j + 1] = value
-    return numbers
-
-
-if __name__ == &quot;__main__&quot;:
-    MAX_NUMBER = 10
-    small_list = [random.randint(0, MAX_NUMBER) for i in range(MAX_NUMBER)]
-    bubble_execution_time = timeit(
-        'result=get_bubble_sorted_numbers(small_list.copy())',
-        globals=globals(), number=10000)
-    insertion_execution_time = timeit(
-        'result=get_insertion_sorted_numbers(small_list.copy())',
-        globals=globals(), number=10000)
-    print(f&quot;Data set of {MAX_NUMBER} numbers:&quot;)
-    print(f&quot;Bubble sort took: {bubble_execution_time:.5f} seconds&quot;)
-    print(f&quot;Insertion sort took: {insertion_execution_time:.5f} seconds&quot;)
-
-    MAX_NUMBER = 1000
-    medium_list = [random.randint(0, MAX_NUMBER) for i in range(MAX_NUMBER)]
-    bubble_execution_time = timeit(
-        'result=get_bubble_sorted_numbers(medium_list.copy())',
-        globals=globals(), number=100)
-    insertion_execution_time = timeit(
-        'result=get_insertion_sorted_numbers(medium_list.copy())',
-        globals=globals(), number=100)
-    print(f&quot;Data set of {MAX_NUMBER} numbers:&quot;)
-    print(f&quot;Bubble sort took: {bubble_execution_time:.5f} seconds&quot;)
-    print(f&quot;Insertion sort took: {insertion_execution_time:.5f} seconds&quot;)
-
-    MAX_NUMBER = 10000
-    large_list = [random.randint(0, MAX_NUMBER) for i in range(MAX_NUMBER)]
-    bubble_execution_time = timeit(
-        'result=get_bubble_sorted_numbers(large_list.copy())',
-        globals=globals(), number=10)
-    insertion_execution_time = timeit(
-        'result=get_insertion_sorted_numbers(large_list.copy())',
-        globals=globals(), number=10)
-    print(f&quot;Data set of {MAX_NUMBER} numbers:&quot;)
-    print(f&quot;Bubble sort took: {bubble_execution_time:.5f} seconds&quot;)
-    print(f&quot;Insertion sort took: {insertion_execution_time:.5f} seconds&quot;)
-
-</code></pre><h2 id=practice-challenges>Practice challenges</h2><h3 id=easy-difficulty-challenges>Easy difficulty challenges:</h3><ul><li><a href=https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/practice-problems/algorithm/bubble-sort-15-8064c987>Bubble sort - Hackerearth</a></li><li><a href=https://practice.geeksforgeeks.org/problems/bubble-sort/1>Bubble sort - Geeksforgeeks</a></li></ul><h2 id=reference>Reference</h2><ul><li><a href=https://github.com/pllk/cphb/>Competitive Programmer's Handbook</a></li><li><a href=https://en.wikipedia.org/wiki/Bubble_sort>Bubble sort Wikipedia article</a></li><li><a href=/blog/insertion-sort/>Insertion sort</a></li><li><a href=https://mitpress.mit.edu/books/introduction-algorithms-third-edition>Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li><li><a href=/blog/counting-sort/>Counting sort</a></li><li><a href=/blog/sorting-algorithm-comparisons/>Sorting Algorithm Comparisons</a></li><li><a href=/blog/understanding-time-complexity/>Understanding Time Complexity</a></li><li><a href=https://docs.python.org/3.6/library/timeit.html#examples>timeit module documentation</a></li></ul><div class="d-print-none col-12 my-4 pb-4 border-top border-bottom"><p class="text-muted text-center"><small>Advertisement</small></p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-4737800736768640 data-ad-slot=3931195519></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div></div></article><div class=p-3><h4 class="mb-2 mt-4">Citation</h4><span class=lead>Click to select citation style</span><div class="accordion mb-3" id=citations><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseOne aria-expanded=false aria-controls=flush-collapseOne>
+<a href=https://arshovon.com/tags/time-complexity class="badge text-bg-secondary" title=time-complexity>time-complexity</a></span></div></header><main class="col-12 col-xl-8 offset-xl-2 blog p-0" role=main><article><div class=p-3><p>In the bubble sort algorithm, each pair of consecutive elements are swapped if they are not in the correct order. In each iteration, it places an element at its right place. Thus in <code>n</code> iterations, all <code>n</code> elements are sorted accordingly.</p><h2 id=bubble-sort-characteristics>Bubble sort characteristics</h2><h3 id=impractical>Impractical</h3><p>Bubble sort is one of the fundamental sorting algorithms to learn how sorting works. It is not a practical sorting algorithm for its poor performance. Though bubble sort has the same time complexity as insertion sort, insertion sort is more efficient than bubble sort.</p><h3 id=adaptive>Adaptive</h3><p>Bubble sort is adaptive. Bubble sort performs best when the input data set is already sorted.</p><h3 id=offline>Offline</h3><p>Bubble sort works after receiving all the data. It does not sort the element when it receives them.</p><h3 id=stable>Stable</h3><p>Bubble sort is stable. Numbers with the same value appear in the output array as they appear in the input array. Let&rsquo;s take an input array <code>A = [3, 0, 3]</code>. In the input array, the value <code>3</code> occurs two times; at index 0 and 2. Insertion sort ensures that in the output array, the occurrences of <code>3</code> are placed in the same order as the input array.</p><h3 id=in-place>In place:</h3><p>Bubble sort sorts the input list in place. It does not require an additional list to sort the elements. It only requires a constant amount of extra memory space <code>O(1)</code>.</p><h3 id=quadratic-time-complexity>Quadratic time complexity</h3><p>It has quadratic time complexity.<br></p><ul><li>Worst Time complexity (Big-O): <code>O(n*n)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Average Time complexity (Big-Theta): <code>Θ(n*n)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Best Time complexity (Big-Omega): <code>Ω(n)</code>, where <code>n</code>: total number of elements in the list.<br></li><li>Space complexity: <code>O(1)</code></li></ul><h2 id=bubble-sort-algorithm-pseudocode>Bubble Sort algorithm pseudocode</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>procedure Bubble_Sort(A: list of items)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span> to A<span style=color:#f92672>.</span>length<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span> inclusive do
+</span></span><span style=display:flex><span>        swapped <span style=color:#f92672>:=</span> false
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> j<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span> to A<span style=color:#f92672>.</span>length<span style=color:#f92672>-</span>i<span style=color:#f92672>-</span><span style=color:#ae81ff>2</span> inclusive do
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> A[j] <span style=color:#f92672>&gt;</span> A[j<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>] then
+</span></span><span style=display:flex><span>                swap(A[j], A[j<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>])
+</span></span><span style=display:flex><span>                swapped <span style=color:#f92672>:=</span> true
+</span></span><span style=display:flex><span>            end <span style=color:#66d9ef>if</span>
+</span></span><span style=display:flex><span>        end <span style=color:#66d9ef>for</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> swapped then
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>        end <span style=color:#66d9ef>if</span>
+</span></span><span style=display:flex><span>    end <span style=color:#66d9ef>for</span>
+</span></span><span style=display:flex><span>end procedure
+</span></span></code></pre></div><h2 id=bubble-sort-implementation-using-python-3>Bubble Sort implementation using Python 3</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Implementation of bubble sort algorithm
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Main File: bubble_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Test File: test_bubble_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_bubble_sorted_numbers</span>(numbers):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; Returns sorted list for a given list
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Arguments:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    numbers -- list of numbers
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(numbers)):
+</span></span><span style=display:flex><span>        swapped <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(len(numbers) <span style=color:#f92672>-</span> i <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>):
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> numbers[j] <span style=color:#f92672>&gt;</span> numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>]:
+</span></span><span style=display:flex><span>                numbers[j], numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>], numbers[j]
+</span></span><span style=display:flex><span>                swapped <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> swapped:
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> numbers
+</span></span></code></pre></div><h2 id=unit-testing-bubble-sort-implementation-using-python-3>Unit testing bubble sort implementation using Python 3</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Unittest of bubble sort implementation
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Test File: test_bubble_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Main File: bubble_sort.py
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> unittest
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> bubble_sort <span style=color:#f92672>import</span> get_bubble_sorted_numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>TestBubbleSort</span>(unittest<span style=color:#f92672>.</span>TestCase):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_positive_unsorted</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>4</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_positive_negative_unsorted</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>2</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>4</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_same_values_positive</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_same_values_negative</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_single_item</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_empty_list</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_positive_negative_reverse</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>0</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_negative_reverse</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>3</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>56</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_get_bubble_sorted_numbers_positive_negative_floating</span>(self):
+</span></span><span style=display:flex><span>        test_case <span style=color:#f92672>=</span> [<span style=color:#f92672>-</span><span style=color:#ae81ff>1.5</span>, <span style=color:#ae81ff>3.336</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>66.3</span>, <span style=color:#ae81ff>5</span>]
+</span></span><span style=display:flex><span>        expected_result <span style=color:#f92672>=</span> sorted(test_case)
+</span></span><span style=display:flex><span>        test_result <span style=color:#f92672>=</span> get_bubble_sorted_numbers(test_case<span style=color:#f92672>.</span>copy())
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>assertEqual(expected_result, test_result,
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Failed on </span><span style=color:#e6db74>{</span>test_case<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Expected </span><span style=color:#e6db74>{</span>expected_result<span style=color:#e6db74>}</span><span style=color:#e6db74>, &#34;</span>
+</span></span><span style=display:flex><span>                         <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Found </span><span style=color:#e6db74>{</span>test_result<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+</span></span><span style=display:flex><span>    unittest<span style=color:#f92672>.</span>main()
+</span></span></code></pre></div><figure class="figure py-2 mx-auto d-block"><img class="mx-auto d-block figure-img img-thumbnail border border-light" src=/blog/images/test_bubble_sort.png alt="Unittesting of bubble sort"><figcaption class="figure-caption text-center">Figure: Unittest result of bubble sort implementation</figcaption></figure><h2 id=comparison-between-bubble-sort-and-insertion-sort>Comparison between bubble sort and insertion sort</h2><ul><li>Insertion sort is more efficient than bubble sort as it requires fewer swaps to sort the elements.</li><li>Insertion sort is online, but bubble sort is offline. That means insertion sort sorts the elements when receiving each element but bubble sort sorts the elements only after receiving all the elements.</li></ul><p>The following table shows the comparison between insertion sort and counting sort based on the execution time.</p><p>{.table .table-bordered .table-striped .table-hover}</p><table><thead><tr><th>Set Size</th><th>Maximum Value</th><th>Bubble Sort Time</th><th>Insertion Sort Time</th></tr></thead><tbody><tr><td>10</td><td>10</td><td>0.04383 seconds</td><td>0.02296 seconds</td></tr><tr><td>1000</td><td>1000</td><td>5.54610 seconds</td><td>2.67873 seconds</td></tr><tr><td>10000</td><td>10000</td><td>68.60219 seconds</td><td>30.98420 seconds</td></tr></tbody></table><div style="margin:0 auto" class="my-4 border border-light"><canvas id=383></canvas></div><script src=https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js integrity="sha256-ovnFmAOngtHmlhZzPyGrofexz4Kdik4kEobc8B9r1Yk=" crossorigin=anonymous></script><script type=text/javascript>var ctx=document.getElementById("383").getContext("2d"),options={type:"line",data:{labels:["10","1000","10000"],datasets:[{label:"Bubble sort",data:[.04383,5.5461,68.60219],fill:!1,borderColor:"red",backgroundColor:"red",tension:.1},{label:"Insertion sort",data:[.02296,2.67873,30.9842],fill:!1,borderColor:"green",backgroundColor:"green",tension:.1}]},options:{maintainAspectRatio:!0,borderWidth:3,responsive:!0,interaction:{mode:"x",intersect:!1},plugins:{title:{display:!0,position:"bottom",text:"Execution time comparison between bubble sort and insertion sort",padding:{top:10,bottom:30}},legend:{display:!0},tooltip:{mode:"nearest",callbacks:{title:function(e){e=e[0];var t=e.label||"";return t&&(t="Input size: "+t+" elements"),t},label:function(e){var t=e.dataset.label||"";return t&&(t+=" : "),e.parsed.y!==null&&(t+=e.parsed.y+" s"),t}}}},scales:{y:{beginAtZero:!1,title:{display:!0,text:"Execution time in seconds"},ticks:{callback:function(e){return e+" s"}}},x:{beginAtZero:!1,title:{display:!0,text:"Number of input elements"}}}}};new Chart(ctx,options)</script><p>This result is generated using <code>timeit</code> module of Python with the following code.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Compare execution time between insertion sort and counting sort
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> timeit <span style=color:#f92672>import</span> timeit
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> random
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_bubble_sorted_numbers</span>(numbers):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; Returns a sorted list of numbers using bubble sort
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Arguments:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    numbers -- list of numbers
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(numbers)):
+</span></span><span style=display:flex><span>        swapped <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(len(numbers) <span style=color:#f92672>-</span> i <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>):
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> numbers[j] <span style=color:#f92672>&gt;</span> numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>]:
+</span></span><span style=display:flex><span>                numbers[j], numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>], numbers[j]
+</span></span><span style=display:flex><span>                swapped <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> swapped:
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_insertion_sorted_numbers</span>(numbers):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; Returns a sorted list of numbers using insertion sort
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Arguments:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    numbers -- list of numbers
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, len(numbers)):
+</span></span><span style=display:flex><span>        value <span style=color:#f92672>=</span> numbers[i]
+</span></span><span style=display:flex><span>        j <span style=color:#f92672>=</span> i <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>while</span> j <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>and</span> numbers[j] <span style=color:#f92672>&gt;</span> value:
+</span></span><span style=display:flex><span>            numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> numbers[j]
+</span></span><span style=display:flex><span>            j <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        numbers[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> value
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> numbers
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+</span></span><span style=display:flex><span>    MAX_NUMBER <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>
+</span></span><span style=display:flex><span>    small_list <span style=color:#f92672>=</span> [random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, MAX_NUMBER) <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(MAX_NUMBER)]
+</span></span><span style=display:flex><span>    bubble_execution_time <span style=color:#f92672>=</span> timeit(
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;result=get_bubble_sorted_numbers(small_list.copy())&#39;</span>,
+</span></span><span style=display:flex><span>        globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span><span style=color:#ae81ff>10000</span>)
+</span></span><span style=display:flex><span>    insertion_execution_time <span style=color:#f92672>=</span> timeit(
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;result=get_insertion_sorted_numbers(small_list.copy())&#39;</span>,
+</span></span><span style=display:flex><span>        globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span><span style=color:#ae81ff>10000</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Data set of </span><span style=color:#e6db74>{</span>MAX_NUMBER<span style=color:#e6db74>}</span><span style=color:#e6db74> numbers:&#34;</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Bubble sort took: </span><span style=color:#e6db74>{</span>bubble_execution_time<span style=color:#e6db74>:</span><span style=color:#e6db74>.5f</span><span style=color:#e6db74>}</span><span style=color:#e6db74> seconds&#34;</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Insertion sort took: </span><span style=color:#e6db74>{</span>insertion_execution_time<span style=color:#e6db74>:</span><span style=color:#e6db74>.5f</span><span style=color:#e6db74>}</span><span style=color:#e6db74> seconds&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    MAX_NUMBER <span style=color:#f92672>=</span> <span style=color:#ae81ff>1000</span>
+</span></span><span style=display:flex><span>    medium_list <span style=color:#f92672>=</span> [random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, MAX_NUMBER) <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(MAX_NUMBER)]
+</span></span><span style=display:flex><span>    bubble_execution_time <span style=color:#f92672>=</span> timeit(
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;result=get_bubble_sorted_numbers(medium_list.copy())&#39;</span>,
+</span></span><span style=display:flex><span>        globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span><span style=color:#ae81ff>100</span>)
+</span></span><span style=display:flex><span>    insertion_execution_time <span style=color:#f92672>=</span> timeit(
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;result=get_insertion_sorted_numbers(medium_list.copy())&#39;</span>,
+</span></span><span style=display:flex><span>        globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span><span style=color:#ae81ff>100</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Data set of </span><span style=color:#e6db74>{</span>MAX_NUMBER<span style=color:#e6db74>}</span><span style=color:#e6db74> numbers:&#34;</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Bubble sort took: </span><span style=color:#e6db74>{</span>bubble_execution_time<span style=color:#e6db74>:</span><span style=color:#e6db74>.5f</span><span style=color:#e6db74>}</span><span style=color:#e6db74> seconds&#34;</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Insertion sort took: </span><span style=color:#e6db74>{</span>insertion_execution_time<span style=color:#e6db74>:</span><span style=color:#e6db74>.5f</span><span style=color:#e6db74>}</span><span style=color:#e6db74> seconds&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    MAX_NUMBER <span style=color:#f92672>=</span> <span style=color:#ae81ff>10000</span>
+</span></span><span style=display:flex><span>    large_list <span style=color:#f92672>=</span> [random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, MAX_NUMBER) <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(MAX_NUMBER)]
+</span></span><span style=display:flex><span>    bubble_execution_time <span style=color:#f92672>=</span> timeit(
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;result=get_bubble_sorted_numbers(large_list.copy())&#39;</span>,
+</span></span><span style=display:flex><span>        globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span><span style=color:#ae81ff>10</span>)
+</span></span><span style=display:flex><span>    insertion_execution_time <span style=color:#f92672>=</span> timeit(
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;result=get_insertion_sorted_numbers(large_list.copy())&#39;</span>,
+</span></span><span style=display:flex><span>        globals<span style=color:#f92672>=</span>globals(), number<span style=color:#f92672>=</span><span style=color:#ae81ff>10</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Data set of </span><span style=color:#e6db74>{</span>MAX_NUMBER<span style=color:#e6db74>}</span><span style=color:#e6db74> numbers:&#34;</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Bubble sort took: </span><span style=color:#e6db74>{</span>bubble_execution_time<span style=color:#e6db74>:</span><span style=color:#e6db74>.5f</span><span style=color:#e6db74>}</span><span style=color:#e6db74> seconds&#34;</span>)
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Insertion sort took: </span><span style=color:#e6db74>{</span>insertion_execution_time<span style=color:#e6db74>:</span><span style=color:#e6db74>.5f</span><span style=color:#e6db74>}</span><span style=color:#e6db74> seconds&#34;</span>)
+</span></span></code></pre></div><h2 id=practice-challenges>Practice challenges</h2><h3 id=easy-difficulty-challenges>Easy difficulty challenges:</h3><ul><li><a href=https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/practice-problems/algorithm/bubble-sort-15-8064c987>Bubble sort - Hackerearth</a></li><li><a href=https://practice.geeksforgeeks.org/problems/bubble-sort/1>Bubble sort - Geeksforgeeks</a></li></ul><h2 id=reference>Reference</h2><ul><li><a href=https://github.com/pllk/cphb/>Competitive Programmer&rsquo;s Handbook</a></li><li><a href=https://en.wikipedia.org/wiki/Bubble_sort>Bubble sort Wikipedia article</a></li><li><a href=/blog/insertion-sort/>Insertion sort</a></li><li><a href=https://mitpress.mit.edu/books/introduction-algorithms-third-edition>Introduction to algorithms by Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford</a></li><li><a href=/blog/counting-sort/>Counting sort</a></li><li><a href=/blog/sorting-algorithm-comparisons/>Sorting Algorithm Comparisons</a></li><li><a href=/blog/understanding-time-complexity/>Understanding Time Complexity</a></li><li><a href=https://docs.python.org/3.6/library/timeit.html#examples>timeit module documentation</a></li></ul><div class="d-print-none col-12 my-4 pb-4 border-top border-bottom"><p class="text-muted text-center"><small>Advertisement</small></p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737800736768640" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-4737800736768640 data-ad-slot=3931195519></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div></div></article><div class=p-3><h4 class="mb-2 mt-4">Citation</h4><span class=lead>Click to select citation style</span><div class="accordion mb-3" id=citations><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseOne aria-expanded=false aria-controls=flush-collapseOne>
 APA Style</button></h2><div id=flush-collapseOne class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body>Shovon, A. R.
 (2021, April 28).
 <i>Bubble Sort</i>.
 Ahmedur Rahman Shovon.
-Retrieved September 9, 2025, from
+Retrieved September 15, 2025, from
 <a href=https://arshovon.com/blog/bubble-sort/>https://arshovon.com/blog/bubble-sort/</a></div></div></div><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseTwo aria-expanded=false aria-controls=flush-collapseTwo>
 MLA Style</button></h2><div id=flush-collapseTwo class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body>Shovon, Ahmedur Rahman.
 “Bubble Sort.”
 <i>Ahmedur Rahman Shovon</i>,
 28 Apr. 2021.
 Web.
-9 Sep. 2025.
+15 Sep. 2025.
 <a href=https://arshovon.com/blog/bubble-sort/>https://arshovon.com/blog/bubble-sort/</a>.</div></div></div><div class=accordion-item><h2 class=accordion-header><button class="accordion-button collapsed lead fw-bold" type=button data-bs-toggle=collapse data-bs-target=#flush-collapseThree aria-expanded=false aria-controls=flush-collapseThree>
 BibTeX entry</button></h2><div id=flush-collapseThree class="accordion-collapse collapse" data-bs-parent=#citations><div class=accordion-body><pre>
 @misc{shovon_2021_bubble,
@@ -242,8 +248,16 @@ BibTeX entry</button></h2><div id=flush-collapseThree class="accordion-collapse 
     url = "https://arshovon.com/blog/bubble-sort/",
     note = "[Online]"
 }
-</pre></div></div></div></div><h5 class="d-print-none mb-2 mt-4">Related contents in this website</h5><div class="d-print-none card-group"><div class=card><img src=/blog/images/merge_sort.png class="card-img-top shadow" alt="Merge Sort"><div class=card-body><a href=https://arshovon.com/blog/merge-sort/><h5 class=card-title>Merge Sort</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div><div class=card><img src=/blog/images/time_complexity.png class="card-img-top shadow" alt="Understanding Time Complexity"><div class=card-body><a href=https://arshovon.com/blog/understanding-time-complexity/><h5 class=card-title>Understanding Time Complexity</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div><div class=card><img src=/blog/images/sorting_comparison.png class="card-img-top shadow" alt="Sorting Algorithm Comparisons"><div class=card-body><a href=https://arshovon.com/blog/sorting-algorithm-comparisons/><h5 class=card-title>Sorting Algorithm Comparisons</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a><a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div></div><div class="d-print-none row row-cols-1 row-cols-md-2 g-4 mt-2"><div class=col><div class="card mb-3 bg-light border-light h-100"><img src=/blog/images/gatsby_ubuntu.png class="card-img-top shadow" alt="Bubble Sort"><div class=card-body><h5 class=card-title><i class="fa fa-chevron-left pe-1"></i>Previous post</h5><p class=card-text><a href=https://arshovon.com/blog/install-gatsby-on-ubuntu/ class="pt-2 pb-2">Install Gatsby on Ubuntu 20.04</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2021-04-23T05:05:11&#43;06:00><i class="fa fa-calendar pe-1"></i>April 23, 2021</time></span></div></div></div><div class=col><div class="card mb-3 bg-light text-md-end border-light h-100"><img src=/blog/images/merge_sort.png class="card-img-top shadow" alt="Bubble Sort"><div class=card-body><h5 class=card-title>Next post <i class="fa fa-chevron-right pe-1"></i></h5><p class=card-text><a href=https://arshovon.com/blog/merge-sort/ class="pt-2 pb-2">Merge Sort</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2021-04-29T01:00:15&#43;06:00><i class="fa fa-calendar pe-1"></i>April 29, 2021</time></span></div></div></div></div><div class="d-print-none shadow-lg row p-0 m-0 mt-4 footer-profile"><div class="m-auto p-lg-2"><div class="card border-0"><div class=card-body><div class=row><div class=col-md-2><img src=/avatar/arsho.jpg class="shadow-sm img-thumbnail" alt="Ahmedur Rahman Shovon"></div><div class="col-md-10 my-auto mx-md-0 px-md-0"><h5 class="card-title m-0 p-0"><small><a href=/>Ahmedur Rahman Shovon</a></small></h5><small class="well m-0 p-0">Postdoctoral Appointee
+</pre></div></div></div></div><h5 class="d-print-none mb-2 mt-4">Related contents in this website</h5><div class="d-print-none card-group"><div class=card><img src=/blog/images/merge_sort.png class="card-img-top shadow" alt="Merge Sort"><div class=card-body><a href=https://arshovon.com/blog/merge-sort/><h5 class=card-title>Merge Sort</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div><div class=card><img src=/blog/images/time_complexity.png class="card-img-top shadow" alt="Understanding Time Complexity"><div class=card-body><a href=https://arshovon.com/blog/understanding-time-complexity/><h5 class=card-title>Understanding Time Complexity</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div><div class=card><img src=/blog/images/sorting_comparison.png class="card-img-top shadow" alt="Sorting Algorithm Comparisons"><div class=card-body><a href=https://arshovon.com/blog/sorting-algorithm-comparisons/><h5 class=card-title>Sorting Algorithm Comparisons</h5></a></div><div class=card-footer><span class="text_muted small"><span class=me-2><a href=https://arshovon.com/categories/ class="badge text-bg-secondary me-1" title="All categories"><i class="fa fa-folder-open"></i></a>
+<a href=https://arshovon.com/categories/algorithm class="badge text-bg-secondary" title=algorithm>algorithm</a></span></span></div></div></div><div class="d-print-none row row-cols-1 row-cols-md-2 g-4 mt-2"><div class=col><div class="card mb-3 bg-light border-light h-100"><img src=/blog/images/gatsby_ubuntu.png class="card-img-top shadow" alt="Bubble Sort"><div class=card-body><h5 class=card-title><i class="fa fa-chevron-left pe-1"></i> Previous post</h5><p class=card-text><a href=https://arshovon.com/blog/install-gatsby-on-ubuntu/ class="pt-2 pb-2">Install Gatsby on Ubuntu 20.04</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2021-04-23T05:05:11+06:00><i class="fa fa-calendar pe-1"></i>April 23, 2021</time></span></div></div></div><div class=col><div class="card mb-3 bg-light text-md-end border-light h-100"><img src=/blog/images/merge_sort.png class="card-img-top shadow" alt="Bubble Sort"><div class=card-body><h5 class=card-title>Next post <i class="fa fa-chevron-right pe-1"></i></h5><p class=card-text><a href=https://arshovon.com/blog/merge-sort/ class="pt-2 pb-2">Merge Sort</a></p></div><div class=card-footer><span class="text_muted small"><time datetime=2021-04-29T01:00:15+06:00><i class="fa fa-calendar pe-1"></i>April 29, 2021</time></span></div></div></div></div><div class="d-print-none shadow-lg row p-0 m-0 mt-4 footer-profile"><div class="m-auto p-lg-2"><div class="card border-0"><div class=card-body><div class=row><div class=col-md-2><img src=/avatar/arsho.jpg class="shadow-sm img-thumbnail" alt="Ahmedur Rahman Shovon"></div><div class="col-md-10 my-auto mx-md-0 px-md-0"><h5 class="card-title m-0 p-0"><small><a href=/>Ahmedur Rahman Shovon</a></small></h5><small class="well m-0 p-0">Postdoctoral Appointee
 at
-<a href=https://anl.gov/ title="Argonne National Laboratory">Argonne National Laboratory</a></small><ul class="list-inline m-md-0 p-md-0"><li class=list-inline-item><small><i class="fas fa-graduation-cap fa-fw mr-1"></i><a href="https://scholar.google.com/citations?hl=en&amp;user=6yvWyoYAAAAJ" title="Google Scholar Citation Profile">Google Scholar</a></small></li><li class=list-inline-item><small><i class="fab fa-linkedin fa-fw mr-1"></i><a href=https://www.linkedin.com/in/arshovon/ title="Linkedin profile">arshovon</a></small></li><li class=list-inline-item><small><i class="fab fa-github fa-fw mr-1"></i><a href=https://github.com/arsho/ title="Github profile">arsho</a></small></li><li class=list-inline-item><small><i class="fas fa-file-pdf fa-fw mr-1"></i><a href=/cv/Shovon_CV.pdf title="Curriculum Vitae">Curriculum Vitae</a></small></li></ul></div></div></div></div></div></div></div></main></div></div><footer class="footer d-print-none"><div class=text-center><small>Last updated: Sep 9, 2025,
+<a href=https://anl.gov/ title="Argonne National Laboratory">Argonne National Laboratory</a></small><ul class="list-inline m-md-0 p-md-0"><li class=list-inline-item><small><i class="fas fa-graduation-cap fa-fw mr-1"></i>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=6yvWyoYAAAAJ" title="Google Scholar Citation Profile">Google Scholar</a></small></li><li class=list-inline-item><small><i class="fab fa-linkedin fa-fw mr-1"></i>
+<a href=https://www.linkedin.com/in/arshovon/ title="Linkedin profile">arshovon</a></small></li><li class=list-inline-item><small><i class="fab fa-github fa-fw mr-1"></i>
+<a href=https://github.com/arsho/ title="Github profile">arsho</a></small></li><li class=list-inline-item><small><i class="fas fa-file-pdf fa-fw mr-1"></i>
+<a href=/cv/Shovon_CV.pdf title="Curriculum Vitae">Curriculum Vitae</a></small></li></ul></div></div></div></div></div></div></div></main></div></div><footer class="footer d-print-none"><div class=text-center><small>Last updated: Sep 15, 2025,
 <a href=/privacy>Privacy Policy</a><br>© Copyright 2025 <a href=https://arshovon.com/>Ahmedur Rahman Shovon</a>&nbsp, Logos © respective owners</small></div></footer><div id=back-to-top class="d-print-none sticky-bottom float-end d-inline d-none"><button class="btn m-0 p-0 text-secondary" data-bs-toggle=tooltip data-bs-placement=top data-bs-title="Go to top">
-<span class="fa-stack me-md-0 pe-md-0"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i></span></button></div><script defer src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js integrity=sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa crossorigin=anonymous></script><script defer src=https://arshovon.com/assets/js/arsho.js></script><script>hljs.highlightAll();hljs.addPlugin(new CopyButtonPlugin());</script></body></html>
+<span class="fa-stack me-md-0 pe-md-0"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-arrow-up fa-stack-1x fa-inverse"></i></span></button></div><script defer src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js integrity=sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa crossorigin=anonymous></script><script defer src=https://arshovon.com/assets/js/arsho.js></script><script>hljs.highlightAll(),hljs.addPlugin(new CopyButtonPlugin)</script></body></html>

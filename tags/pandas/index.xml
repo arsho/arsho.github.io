@@ -1,3 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pandas on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/pandas/</link><description>Recent content in pandas on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 05 Jan 2022 04:23:37 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/pandas/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</guid><description>Pandas dataframe allows adding new columns to it based on the values of the existing columns.
-Example Scenario Suppose, a dataset contains Football match results of some matches like below:
-Date Venue Opponent GF GA 08-27-2017 H Arsenal FC 4 0 09-16-2017 H Burnley FC 1 1 Here, GF stands for Goals For and GA stands for Goals Against (i.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pandas on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/pandas/</link><description>Recent content in Pandas on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Sep 2025 16:56:26 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/pandas/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</guid><description>&lt;p&gt;Pandas dataframe allows adding new columns to it based on the values of the existing columns.&lt;/p&gt;
+&lt;h3 id="example-scenario"&gt;Example Scenario&lt;/h3&gt;
+&lt;p&gt;Suppose, a dataset contains Football match results of some matches like below:&lt;/p&gt;
+&lt;p&gt;{.table .table-bordered .table-striped .table-hover}&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Date&lt;/th&gt;
+ &lt;th&gt;Venue&lt;/th&gt;
+ &lt;th&gt;Opponent&lt;/th&gt;
+ &lt;th&gt;GF&lt;/th&gt;
+ &lt;th&gt;GA&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;08-27-2017&lt;/td&gt;
+ &lt;td&gt;H&lt;/td&gt;
+ &lt;td&gt;Arsenal FC&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;09-16-2017&lt;/td&gt;
+ &lt;td&gt;H&lt;/td&gt;
+ &lt;td&gt;Burnley FC&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Here, &lt;em&gt;GF&lt;/em&gt; stands for &lt;em&gt;Goals For&lt;/em&gt; and &lt;em&gt;GA&lt;/em&gt; stands for &lt;em&gt;Goals Against&lt;/em&gt; (i.e., number of goals conceded by a team).
+Now we want to add a new column called &lt;code&gt;Result&lt;/code&gt; to this dataframe that will contain the result of the match.&lt;/p&gt;</description></item></channel></rss>

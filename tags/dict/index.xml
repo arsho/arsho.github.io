@@ -1,3 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dict on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/dict/</link><description>Recent content in dict on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 07 May 2018 09:23:37 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/dict/index.xml" rel="self" type="application/rss+xml"/><item><title>Sort Python Dictionary</title><link>https://arshovon.com/blog/python-sort-dictionary/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-sort-dictionary/</guid><description>Sort Python dict in various ways Original Data
-world_cup_wins = { &amp;quot;Brazil&amp;quot;: 5, &amp;quot;Germany&amp;quot;: 4, &amp;quot;Italy&amp;quot;: 4, &amp;quot;Argentina&amp;quot;: 2, &amp;quot;France&amp;quot;: 2, &amp;quot;Uruguay&amp;quot;: 2, &amp;quot;England&amp;quot;: 1, &amp;quot;Spain&amp;quot;: 1 } SORT DICTIONARY BY KEY ASCENDING for key, value in sorted(world_cup_wins.items(), key=lambda x: x[0]): print(key, value) Output:
-Argentina 2 Brazil 5 England 1 France 2 Germany 4 Italy 4 Spain 1 Uruguay 2 SORT DICTIONARY BY KEY DESCENDING for key, value in sorted(world_cup_wins.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dict on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/dict/</link><description>Recent content in Dict on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 10 Jun 2024 07:36:55 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/dict/index.xml" rel="self" type="application/rss+xml"/><item><title>Sort Python Dictionary</title><link>https://arshovon.com/blog/python-sort-dictionary/</link><pubDate>Mon, 07 May 2018 09:23:37 +0600</pubDate><guid>https://arshovon.com/blog/python-sort-dictionary/</guid><description>&lt;h3 id="sort-python-dict-in-various-ways"&gt;Sort Python &lt;code&gt;dict&lt;/code&gt; in various ways&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Original Data&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;world_cup_wins &lt;span style="color:#f92672"&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Brazil&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Germany&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Italy&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Argentina&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;France&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Uruguay&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;England&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Spain&amp;#34;&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="sort-dictionary-by-key-ascending"&gt;SORT DICTIONARY BY KEY ASCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Argentina 2
+Brazil 5
+England 1
+France 2
+Germany 4
+Italy 4
+Spain 1
+Uruguay 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="sort-dictionary-by-key-descending"&gt;SORT DICTIONARY BY KEY DESCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;], reverse&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;True&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Uruguay 2
+Spain 1
+Italy 4
+Germany 4
+France 2
+England 1
+Brazil 5
+Argentina 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="sort-dictionary-by-value-ascending"&gt;SORT DICTIONARY BY VALUE ASCENDING&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; key, value &lt;span style="color:#f92672"&gt;in&lt;/span&gt; sorted(world_cup_wins&lt;span style="color:#f92672"&gt;.&lt;/span&gt;items(), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x: x[&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(key, value)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;</description></item></channel></rss>

@@ -1,5 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>deployment on Ahmedur Rahman Shovon</title><link>https://arshovon.com/categories/deployment/</link><description>Recent content in deployment on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 25 Mar 2020 11:05:42 +0600</lastBuildDate><atom:link href="https://arshovon.com/categories/deployment/index.xml" rel="self" type="application/rss+xml"/><item><title>Setup Odoo with Docker Compose</title><link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link><pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate><guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid><description>What is Odoo? Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in Python, JavaScript and XML.</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>Prerequisite Docker Engine should be installed in local machine. Instructions on installing Docker Engine on Ubuntu can be found in this tutorial: Install Docker on Ubuntu 18.04
-Environment Operating System : Ubuntu 18.04 LTS (64-bit) Processor : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12 Memory : 15.3 GiB Code Repository All codes used in this tutorial can be found in this Github repository: https://github.</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>What is Docker Compose? Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
-Compose uses a YML\YAML file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.</description></item><item><title>Install Docker on Ubuntu 22.10</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</guid><description>Why Docker? Docker is a tool for running application in an isolated environment.
-Some reasons you might want to use Docker:
-Same environment: Same environment in developers machines and production servers. Acts the same. Sandbox projects: Eliminates the risk of getting conflicts while working on different projects on same machine. Easy working without setup hassle: Start working directly on others projects without setting all of the environments.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deployment on Ahmedur Rahman Shovon</title><link>https://arshovon.com/categories/deployment/</link><description>Recent content in Deployment on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2024 22:11:33 -0500</lastBuildDate><atom:link href="https://arshovon.com/categories/deployment/index.xml" rel="self" type="application/rss+xml"/><item><title>Setup Odoo with Docker Compose</title><link>https://arshovon.com/blog/setup-odoo-with-docker-compose/</link><pubDate>Wed, 25 Mar 2020 11:05:42 +0600</pubDate><guid>https://arshovon.com/blog/setup-odoo-with-docker-compose/</guid><description>&lt;h2 id="what-is-odoo"&gt;What is Odoo?&lt;/h2&gt;
+&lt;p&gt;Odoo is one of the most popular business management software which provides features like CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management in a single application. It provides an Enterprise edition and a Community edition which is LGPLv3 open source version. The source code for the framework and core ERP modules is curated by the Belgium-based Odoo S.A. Odoo was released on February 2005 and is written in	Python, JavaScript and XML. It uses PostgreSQL as database platform technology. It was renamed from OpenERP in 2014. &lt;a href="https://www.odoo.com/"&gt;[Odoo Official Website]&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/Odoo"&gt;[Wikipedia Article on Odoo]&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/List_of_ERP_software_packages#Free_and_open-source_ERP_software"&gt;[List of ERP software packages - Wikipedia]&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Develop Flask Application using Docker and Bootstrap Templates</title><link>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</link><pubDate>Sat, 14 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/develop-flask-app-using-docker-and-bootstrap/</guid><description>&lt;h3 id="prerequisite"&gt;Prerequisite&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Docker Engine&lt;/code&gt; should be installed in local machine.
+Instructions on installing &lt;code&gt;Docker Engine&lt;/code&gt; on Ubuntu can be found in this tutorial: &lt;a href="https://arshovon.com/blog/install-docker-on-ubuntu-18-04/"&gt;Install Docker on Ubuntu 18.04&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="environment"&gt;Environment&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Operating System&lt;/b&gt; : Ubuntu 18.04 LTS (64-bit)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Processor&lt;/b&gt; : Intel® Core™ i7-8750H CPU @ 2.20GHz × 12&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Memory&lt;/b&gt; : 15.3 GiB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="code-repository"&gt;Code Repository&lt;/h3&gt;
+&lt;p&gt;All codes used in this tutorial can be found in this Github repository:
+&lt;a href="https://github.com/arsho/FlaskDockerBootstrap"&gt;https://github.com/arsho/FlaskDockerBootstrap&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="directory-structure"&gt;Directory structure&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;.
+├── app.py
+├── Dockerfile
+├── readme.md
+├── requirements.txt
+├── static
+│   ├── css
+│   |   └── bootstrap.min.css
+│   ├── images
+│   │   ├── bootstrap.png
+│   │   ├── docker.png
+│   │   └── flask.svg
+│   └── js
+│      └── bootstrap.min.js
+└── templates
+ └── index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;requirements.txt&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Install Docker Compose on Ubuntu 18.04</title><link>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</link><pubDate>Tue, 10 Mar 2020 09:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-compose-on-ubuntu-18-04/</guid><description>&lt;h3 id="what-is-docker-compose"&gt;What is Docker Compose?&lt;/h3&gt;
+&lt;p&gt;Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.&lt;/p&gt;
+&lt;p&gt;Compose uses a &lt;code&gt;YML&lt;/code&gt;\&lt;code&gt;YAML&lt;/code&gt; file to configure application&amp;rsquo;s services. Then, with a single command, all the services can be started or stopped from the configuration.
+Some reasons you might want to use Compose :&lt;/p&gt;</description></item><item><title>Install Docker on Ubuntu 22.10</title><link>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</link><pubDate>Tue, 10 Mar 2020 07:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-docker-on-ubuntu-22-10/</guid><description>&lt;h3 id="why-docker"&gt;Why Docker?&lt;/h3&gt;
+&lt;p&gt;Docker is a tool for running application in an isolated environment.&lt;/p&gt;
+&lt;p&gt;Some reasons you might want to use Docker:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt; Same environment: &lt;/b&gt; Same environment in developers machines and production servers. Acts the same.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Sandbox projects: &lt;/b&gt; Eliminates the risk of getting conflicts while working on different projects on same machine.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Easy working without setup hassle: &lt;/b&gt; Start working directly on others projects without setting all of the environments.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; Debug your app, not your environment: &lt;/b&gt; Securely build and share any application, anywhere.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="container-image-dockerfile-docker-hub"&gt;Container, Image, Dockerfile, Docker Hub:&lt;/h4&gt;
+&lt;p&gt;&lt;b&gt;Container&lt;/b&gt; is a running instance of an image.
+An &lt;b&gt;image&lt;/b&gt; is a template for creating the environment you want to snapshot out of a system at a particular time.
+An image includes:&lt;/p&gt;</description></item></channel></rss>

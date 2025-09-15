@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bangla on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/bangla/</link><description>Recent content in bangla on Ahmedur Rahman Shovon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 05 Nov 2020 15:05:42 +0600</lastBuildDate><atom:link href="https://arshovon.com/tags/bangla/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>How to install Avro Phonetic in Ubuntu 20.04 LTS Open Ubuntu Software Search Avro Phonetic in Ubuntu Software Click Install Restart the machine or logout and then login again Open Settings &amp;gt; Region &amp;amp; Language Click on the + (plus) icon in Input Sources Search for Bangla and then click on Bangla (Avro Phonetic) The Avro Phonetic will be added to the Input Sources Now you will get a dropdown for selecting bn for Bangla language in top bar right corner You can switch between different Input Source using win + space keyboard shortcut References Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bangla on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/bangla/</link><description>Recent content in Bangla on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Nov 2023 20:53:41 -0600</lastBuildDate><atom:link href="https://arshovon.com/tags/bangla/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Avro Phonetic in Ubuntu 20.04 LTS</title><link>https://arshovon.com/blog/install-avro-ubuntu-20-04/</link><pubDate>Thu, 05 Nov 2020 15:05:42 +0600</pubDate><guid>https://arshovon.com/blog/install-avro-ubuntu-20-04/</guid><description>&lt;h2 id="how-to-install-avro-phonetic-in-ubuntu-2004-lts"&gt;How to install Avro Phonetic in Ubuntu 20.04 LTS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;Ubuntu Software&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Search &lt;code&gt;Avro Phonetic&lt;/code&gt; in &lt;code&gt;Ubuntu Software&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_seach_avro_phonetic.png?style=center" alt="alt Avro Phonetic in Ubuntu software"&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Install&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_install_avro_phonetic.png?style=center" alt="alt Install Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;Restart the machine or logout and then login again&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;Settings&lt;/code&gt; &amp;gt; &lt;code&gt;Region &amp;amp; Language&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_region_and_language.png?style=center" alt="alt Add Bangla Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;Click on the &lt;code&gt;+&lt;/code&gt; (plus) icon in &lt;code&gt;Input Sources&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Search for &lt;code&gt;Bangla&lt;/code&gt; and then click on &lt;code&gt;Bangla (Avro Phonetic)&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_add_input_source.png?style=center" alt="alt Add Bangla Avro Phonetic"&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;Avro Phonetic&lt;/code&gt; will be added to the &lt;code&gt;Input Sources&lt;/code&gt;
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_input_sources.png?style=center" alt="alt Avro phonetic in Input Sources"&gt;&lt;/li&gt;
+&lt;li&gt;Now you will get a dropdown for selecting &lt;code&gt;bn&lt;/code&gt; for Bangla language in top bar right corner&lt;/li&gt;
+&lt;li&gt;You can switch between different &lt;code&gt;Input Source&lt;/code&gt; using &lt;code&gt;win&lt;/code&gt; + &lt;code&gt;space&lt;/code&gt; keyboard shortcut
+&lt;img src="https://arshovon.com/blog/images/avro_phonetic_bangla_demo.png?style=center" alt="alt Write using Bangla"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="references"&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://askubuntu.com/a/1290110/654735"&gt;Stackoverflow answer: How to install Avro Phonetic in Ubuntu 20.04 LTS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linuxconfig.org/how-to-add-and-switch-keyboard-layout-on-ubuntu-20-04-desktop"&gt;How to add and switch keyboard layout on Ubuntu 20.04 Desktop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
