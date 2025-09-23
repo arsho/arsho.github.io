@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/python/</link><description>Recent content in Python on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Sep 2025 16:56:26 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Crop and merge images using Python (OpenCV)</title><link>https://arshovon.com/blog/crop-merge-images-python/</link><pubDate>Sun, 09 Jun 2024 11:50:10 -0500</pubDate><guid>https://arshovon.com/blog/crop-merge-images-python/</guid><description>&lt;p&gt;Manually cropping and merging a large number of images can be a boring and time-consuming task.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/python/</link><description>Recent content in Python on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Sep 2025 14:30:07 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Crop and merge images using Python (OpenCV)</title><link>https://arshovon.com/blog/crop-merge-images-python/</link><pubDate>Sun, 09 Jun 2024 11:50:10 -0500</pubDate><guid>https://arshovon.com/blog/crop-merge-images-python/</guid><description>&lt;p&gt;Manually cropping and merging a large number of images can be a boring and time-consuming task.
 We can automate this boring stuff with Python and the OpenCV library&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.
 In this tutorial, we&amp;rsquo;ll explore how to crop and merge multiple images using Python and OpenCV.&lt;/p&gt;
 &lt;h3 id="scenario"&gt;Scenario&lt;/h3&gt;
@@ -50,8 +50,7 @@ our dataset.&lt;/p&gt;
 &lt;p&gt;Now we will sort the above &lt;code&gt;states&lt;/code&gt; list in different ways.&lt;/p&gt;</description></item><item><title>Adding a new column in Pandas dataframe based on existing columns</title><link>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</link><pubDate>Wed, 05 Jan 2022 04:23:37 +0600</pubDate><guid>https://arshovon.com/blog/pandas-dataframe-add-calculated-column/</guid><description>&lt;p&gt;Pandas dataframe allows adding new columns to it based on the values of the existing columns.&lt;/p&gt;
 &lt;h3 id="example-scenario"&gt;Example Scenario&lt;/h3&gt;
 &lt;p&gt;Suppose, a dataset contains Football match results of some matches like below:&lt;/p&gt;
-&lt;p&gt;{.table .table-bordered .table-striped .table-hover}&lt;/p&gt;
-&lt;table&gt;
+&lt;table class="table table-bordered table-striped table-hover"&gt;
  &lt;thead&gt;
  &lt;tr&gt;
  &lt;th&gt;Date&lt;/th&gt;

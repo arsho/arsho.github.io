@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cpp on Ahmedur Rahman Shovon</title>
-    <link>http://localhost:53758/tags/cpp/</link>
+    <link>http://localhost:1313/tags/cpp/</link>
     <description>Recent content in Cpp on Ahmedur Rahman Shovon</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Sep 2025 16:56:26 -0500</lastBuildDate>
-    <atom:link href="http://localhost:53758/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started with C&#43;&#43; Build Systems: From Compiler to CMake and Ninja</title>
-      <link>http://localhost:53758/blog/c&#43;&#43;build/</link>
+      <link>http://localhost:1313/blog/c&#43;&#43;build/</link>
       <pubDate>Mon, 15 Sep 2025 11:50:10 -0500</pubDate>
-      <guid>http://localhost:53758/blog/c&#43;&#43;build/</guid>
+      <guid>http://localhost:1313/blog/c&#43;&#43;build/</guid>
       <description>&lt;h1 id=&#34;getting-started-with-c-build-systems-from-compiler-to-cmake-and-ninja&#34;&gt;Getting Started with C++ Build Systems: From Compiler to CMake and Ninja&lt;/h1&gt;&#xA;&lt;p&gt;When writing C++ code, you can compile small programs directly with a compiler such as &lt;code&gt;g++&lt;/code&gt; or &lt;code&gt;clang++&lt;/code&gt;. But as your project grows, managing multiple files, dependencies, and build configurations manually becomes error-prone. This is where &lt;strong&gt;build systems&lt;/strong&gt; come in.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;CMake&lt;/strong&gt; is a &lt;em&gt;meta-build system&lt;/em&gt;: it generates build configuration files (for Make, Ninja, Visual Studio, etc.), making your project portable across platforms and compilers.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ninja&lt;/strong&gt; is a small, fast build tool designed to replace Make. It’s optimized for speed and is widely used in large-scale C++ projects like LLVM and TensorFlow.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide will walk you through:&lt;/p&gt;</description>
     </item>
   </channel>
