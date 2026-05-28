@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Custom Domain on Ahmedur Rahman Shovon</title><link>https://arshovon.com/tags/custom-domain/</link><description>Recent content in Custom Domain on Ahmedur Rahman Shovon</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 28 May 2026 04:28:19 -0500</lastBuildDate><atom:link href="https://arshovon.com/tags/custom-domain/index.xml" rel="self" type="application/rss+xml"/><item><title>Use a custom domain with GitHub Pages</title><link>https://arshovon.com/blog/github-pages-custom-domain/</link><pubDate>Thu, 28 May 2026 03:30:00 -0500</pubDate><guid>https://arshovon.com/blog/github-pages-custom-domain/</guid><description>&lt;h2 id="scenario"&gt;Scenario&lt;/h2&gt;
+&lt;p&gt;I want to create a custom domain for a repository&amp;rsquo;s GitHub Pages site.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/github-pages-custom-domain-live-site.png?style=center" alt="GitHub Pages custom domain live site"&gt;&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;h3 id="add-the-domain-in-github-profile-settings"&gt;Add the domain in GitHub profile settings&lt;/h3&gt;
+&lt;p&gt;The first step is to verify ownership of the domain in GitHub profile settings.
+This is different from the repository settings.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to GitHub&lt;/li&gt;
+&lt;li&gt;Click your profile picture&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;Settings&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;From the left sidebar, go to &lt;code&gt;Pages&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;code&gt;Verified domains&lt;/code&gt;, click &lt;code&gt;Add a domain&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://arshovon.com/blog/images/github-pages-profile-verified-domains.png?style=center" alt="GitHub Pages verified domains"&gt;&lt;/p&gt;</description></item></channel></rss>
